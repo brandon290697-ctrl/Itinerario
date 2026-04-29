@@ -270,7 +270,7 @@
       padding: 14px;
     }
 
-    body.light-mode .quick-card:nth-child(4) {
+    body.light-mode .quick-card:nth-child(6) {
       display: none;
     }
 
@@ -363,6 +363,45 @@
       font-weight: 700;
       line-height: 1.35;
       margin-top: 8px;
+    }
+
+    .converter-card {
+      display: grid;
+      gap: 8px;
+    }
+
+    .converter-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 82px;
+      gap: 8px;
+    }
+
+    .converter-row input,
+    .converter-row select {
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+      min-width: 0;
+      padding: 8px 9px;
+    }
+
+    .converter-results {
+      color: var(--navy);
+      display: grid;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 3px;
+      line-height: 1.25;
+    }
+
+    .converter-status {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 750;
+      line-height: 1.3;
     }
 
     .cost-overview {
@@ -1038,6 +1077,56 @@
       overflow: hidden;
     }
 
+    .phrase-modal .modal-panel {
+      width: min(560px, calc(100vw - 28px));
+      grid-template-rows: auto 1fr;
+    }
+
+    .phrase-body {
+      display: grid;
+      gap: 14px;
+      padding: 18px;
+    }
+
+    .phrase-card {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+
+    .phrase-jp {
+      color: var(--navy);
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .phrase-romaji {
+      color: var(--coral);
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .phrase-es {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .phrase-controls {
+      display: flex;
+      gap: 8px;
+      justify-content: space-between;
+    }
+
+    .phrase-controls .day-tool-button {
+      border-radius: 13px;
+    }
+
     #mapCanvas {
       min-height: 420px;
       background: var(--surface-soft);
@@ -1458,6 +1547,12 @@
         min-height: 0;
         overflow: auto;
       }
+      .phrase-body {
+        padding: 14px;
+      }
+      .phrase-jp {
+        font-size: 22px;
+      }
       #mapCanvas,
       .loading-map {
         min-height: 260px;
@@ -1591,11 +1686,25 @@
 
       <section class="quick-grid">
         <article class="quick-card"><div class="label">Ciudad base</div><div class="value" id="baseCity">Osaka</div></article>
+        <article class="quick-card"><div class="label">Cuenta regresiva</div><div class="value" id="countdownValue">--</div><div class="hint" id="countdownHint">al Día 0</div></article>
         <article class="quick-card"><div class="label">Hora Japón</div><div class="value" id="japanTime">--:--</div></article>
         <article class="quick-card">
           <div class="label">Clima</div>
           <div class="value" id="weatherSummary">Consultando...</div>
           <div class="hint" id="clothingAdvice">Recomendación según clima y actividades.</div>
+        </article>
+        <article class="quick-card converter-card">
+          <div class="label">Conversor rápido</div>
+          <div class="converter-row">
+            <input id="currencyAmount" type="number" min="0" step="0.01" value="100" inputmode="decimal" aria-label="Monto a convertir">
+            <select id="currencyFrom" aria-label="Moneda base">
+              <option value="USD">USD</option>
+              <option value="JPY">JPY</option>
+              <option value="CRC">CRC</option>
+            </select>
+          </div>
+          <div class="converter-results" id="currencyResults">Consultando tipo de cambio...</div>
+          <div class="converter-status" id="currencyStatus">Tasas actuales en línea.</div>
         </article>
         <article class="quick-card"><div class="label">Viajeros</div><div class="value">2 personas</div></article>
       </section>
@@ -1606,7 +1715,7 @@
           <strong id="tripCostTotal">--</strong>
           <p id="tripCostNote">Estimado para 2 personas, sin vuelos internacionales ni hotel.</p>
         </div>
-        <div class="cost-actions" style="display: none">
+        <div class="cost-actions">
           <button class="cost-unlock-button" type="button" id="costUnlockButton">
             <span class="material-symbols-rounded" id="costUnlockIcon">lock</span>
             <span id="costUnlockLabel">Desbloquear montos</span>
@@ -1730,6 +1839,33 @@
           </div>
           <div class="status-message" id="routeStatus">Abrí una ruta para calcularla en tiempo real.</div>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal phrase-modal" id="phraseModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="phraseModalTitle">
+    <div class="modal-backdrop" data-close-phrases></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <div class="modal-kicker">Japonés útil</div>
+          <h2 class="modal-title" id="phraseModalTitle">Frases del día</h2>
+          <p class="modal-subtitle" id="phraseModalSubtitle">Frases rápidas según el contexto del itinerario.</p>
+        </div>
+        <button class="icon-button" type="button" aria-label="Cerrar frases" data-close-phrases>
+          <span class="material-symbols-rounded">close</span>
+        </button>
+      </div>
+      <div class="phrase-body">
+        <div class="phrase-card">
+          <div class="phrase-jp" id="phraseJapanese">--</div>
+          <div class="phrase-romaji" id="phraseRomaji">--</div>
+          <div class="phrase-es" id="phraseSpanish">--</div>
+        </div>
+        <div class="phrase-controls">
+          <button class="day-tool-button" type="button" id="phrasePrev"><span class="material-symbols-rounded">chevron_left</span>Anterior</button>
+          <button class="day-tool-button" type="button" id="phraseNext">Siguiente<span class="material-symbols-rounded">chevron_right</span></button>
+        </div>
       </div>
     </div>
   </section>
@@ -5615,6 +5751,12 @@
     const themeLabel = document.getElementById("themeLabel");
     const weatherSummary = document.getElementById("weatherSummary");
     const clothingAdvice = document.getElementById("clothingAdvice");
+    const countdownValue = document.getElementById("countdownValue");
+    const countdownHint = document.getElementById("countdownHint");
+    const currencyAmount = document.getElementById("currencyAmount");
+    const currencyFrom = document.getElementById("currencyFrom");
+    const currencyResults = document.getElementById("currencyResults");
+    const currencyStatus = document.getElementById("currencyStatus");
     const modal = document.getElementById("routeModal");
     const modalTitle = document.getElementById("modalTitle");
     const modalSubtitle = document.getElementById("modalSubtitle");
@@ -5626,6 +5768,14 @@
     const routeDestination = document.getElementById("routeDestination");
     const routeStatus = document.getElementById("routeStatus");
     const mapCanvas = document.getElementById("mapCanvas");
+    const phraseModal = document.getElementById("phraseModal");
+    const phraseModalTitle = document.getElementById("phraseModalTitle");
+    const phraseModalSubtitle = document.getElementById("phraseModalSubtitle");
+    const phraseJapanese = document.getElementById("phraseJapanese");
+    const phraseRomaji = document.getElementById("phraseRomaji");
+    const phraseSpanish = document.getElementById("phraseSpanish");
+    const phrasePrev = document.getElementById("phrasePrev");
+    const phraseNext = document.getElementById("phraseNext");
 
     let currentDayIndex = 0;
     let mapsPromise;
@@ -5633,6 +5783,9 @@
     let weatherRequestId = 0;
     let latestWeatherContext = null;
     let costsUnlocked = getStoredValue(storageKey("costsUnlocked")) === "1";
+    let phraseTimer;
+    let activePhrases = [];
+    let activePhraseIndex = 0;
     let map;
     let directionsRenderer;
 
@@ -5688,6 +5841,31 @@
       const storedTheme = getStoredValue(storageKey("theme"), "");
       const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
       applyTheme(storedTheme || (prefersDark ? "dark" : "light"));
+    }
+
+    function tripDateForIndex(index) {
+      return new Date(Date.UTC(2026, 9, index === 0 ? 5 : 6 + index));
+    }
+
+    function updateCountdown() {
+      const today = new Date();
+      const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+      const day0UTC = tripDateForIndex(0).getTime();
+      const diffDays = Math.ceil((day0UTC - todayUTC) / 86400000);
+
+      if (diffDays > 1) {
+        countdownValue.textContent = `${diffDays} días`;
+        countdownHint.textContent = "para el Día 0";
+      } else if (diffDays === 1) {
+        countdownValue.textContent = "Mañana";
+        countdownHint.textContent = "empieza el viaje";
+      } else if (diffDays === 0) {
+        countdownValue.textContent = "Hoy";
+        countdownHint.textContent = "Día 0";
+      } else {
+        countdownValue.textContent = "En viaje";
+        countdownHint.textContent = "según fecha real";
+      }
     }
 
     function dayText(day) {
@@ -5799,6 +5977,10 @@
       document.querySelector("[data-day-action='day-map']")?.addEventListener("click", () => {
         openDayRoutesModal(currentDayIndex);
       });
+
+      document.querySelector("[data-day-action='phrases']")?.addEventListener("click", () => {
+        openPhraseModal(currentDayIndex);
+      });
     }
 
     function getWeatherLocation(index) {
@@ -5812,7 +5994,7 @@
     }
 
     function getTripDateISO(index) {
-      const date = new Date(Date.UTC(2026, 9, index === 0 ? 5 : 6 + index));
+      const date = tripDateForIndex(index);
       return date.toISOString().slice(0, 10);
     }
 
@@ -5832,6 +6014,24 @@
       });
 
       return closestIndex;
+    }
+
+    function getAutoStartDayIndex() {
+      const today = new Date();
+      const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+      const firstUTC = tripDateForIndex(0).getTime();
+      const lastUTC = tripDateForIndex(days.length - 1).getTime();
+
+      if (todayUTC < firstUTC) return 0;
+      if (todayUTC > lastUTC) return days.length - 1;
+
+      return days.findIndex((day, index) => tripDateForIndex(index).getTime() === todayUTC);
+    }
+
+    function setActiveDay(index) {
+      const safeIndex = index >= 0 ? index : 0;
+      buttons.forEach(btn => btn.classList.toggle("active", Number(btn.dataset.day) === safeIndex));
+      renderDay(safeIndex);
     }
 
     function weatherCodeText(code) {
@@ -5870,6 +6070,136 @@
       if (!tips.length) tips.push("ropa cómoda por capas");
 
       return `${isExactForecast ? "Para este día" : "Dato actual, no fecha del viaje"}: ${tips.join(", ")}.`;
+    }
+
+    function convertCurrencyAmount(amount, fromCurrency, rates) {
+      if (!Number.isFinite(amount)) return null;
+
+      const jpy = fromCurrency === "JPY"
+        ? amount
+        : fromCurrency === "USD"
+          ? amount / rates.USD
+          : amount / rates.CRC;
+
+      return {
+        JPY: jpy,
+        USD: jpy * rates.USD,
+        CRC: jpy * rates.CRC
+      };
+    }
+
+    async function updateCurrencyConverter() {
+      if (!currencyAmount || !currencyFrom) return;
+
+      const amount = Number(currencyAmount.value);
+      const fromCurrency = currencyFrom.value;
+
+      if (!Number.isFinite(amount) || amount < 0) {
+        currencyResults.textContent = "Ingrese un monto válido.";
+        return;
+      }
+
+      currencyStatus.textContent = "Consultando tasas actuales...";
+
+      try {
+        const rates = await getJpyExchangeRates();
+        const values = convertCurrencyAmount(amount, fromCurrency, rates);
+        currencyResults.innerHTML = ["USD", "JPY", "CRC"]
+          .filter(currency => currency !== fromCurrency)
+          .map(currency => `<span>${formatMoney(values[currency], currency, currency === "CRC" ? "es-CR" : currency === "JPY" ? "ja-JP" : "en-US")}</span>`)
+          .join("");
+        currencyStatus.textContent = "Tipo de cambio actual consultado en línea.";
+      } catch (error) {
+        currencyResults.textContent = "No disponible";
+        currencyStatus.textContent = "No se pudo consultar el tipo de cambio.";
+      }
+    }
+
+    const phraseBank = {
+      general: [
+        { jp: "すみません", romaji: "Sumimasen", es: "Disculpe / perdón." },
+        { jp: "ありがとうございます", romaji: "Arigatou gozaimasu", es: "Muchas gracias." },
+        { jp: "英語は話せますか？", romaji: "Eigo wa hanasemasu ka?", es: "¿Habla inglés?" },
+        { jp: "もう一度お願いします", romaji: "Mou ichido onegaishimasu", es: "Una vez más, por favor." }
+      ],
+      transit: [
+        { jp: "この電車は難波に行きますか？", romaji: "Kono densha wa Namba ni ikimasu ka?", es: "¿Este tren va a Namba?" },
+        { jp: "この駅で乗り換えですか？", romaji: "Kono eki de norikae desu ka?", es: "¿Tengo que hacer transbordo en esta estación?" },
+        { jp: "切符はどこで買えますか？", romaji: "Kippu wa doko de kaemasu ka?", es: "¿Dónde puedo comprar el boleto?" }
+      ],
+      food: [
+        { jp: "おすすめは何ですか？", romaji: "Osusume wa nan desu ka?", es: "¿Qué recomienda?" },
+        { jp: "二人です", romaji: "Futari desu", es: "Somos dos personas." },
+        { jp: "お会計お願いします", romaji: "Okaikei onegaishimasu", es: "La cuenta, por favor." }
+      ],
+      shopping: [
+        { jp: "これはいくらですか？", romaji: "Kore wa ikura desu ka?", es: "¿Cuánto cuesta esto?" },
+        { jp: "袋をください", romaji: "Fukuro o kudasai", es: "Una bolsa, por favor." },
+        { jp: "カードは使えますか？", romaji: "Kaado wa tsukaemasu ka?", es: "¿Puedo usar tarjeta?" }
+      ],
+      hotel: [
+        { jp: "チェックインをお願いします", romaji: "Chekku-in o onegaishimasu", es: "Quisiera hacer check-in." },
+        { jp: "荷物を預けられますか？", romaji: "Nimotsu o azukeraremasu ka?", es: "¿Puedo dejar el equipaje?" },
+        { jp: "タクシーを呼んでください", romaji: "Takushii o yonde kudasai", es: "¿Puede llamar un taxi?" }
+      ],
+      temple: [
+        { jp: "写真を撮ってもいいですか？", romaji: "Shashin o totte mo ii desu ka?", es: "¿Puedo tomar fotos?" },
+        { jp: "お守りはどこですか？", romaji: "Omamori wa doko desu ka?", es: "¿Dónde están los amuletos?" }
+      ],
+      emergency: [
+        { jp: "助けてください", romaji: "Tasukete kudasai", es: "Ayuda, por favor." },
+        { jp: "病院はどこですか？", romaji: "Byouin wa doko desu ka?", es: "¿Dónde hay un hospital?" },
+        { jp: "道に迷いました", romaji: "Michi ni mayoimashita", es: "Me perdí." }
+      ]
+    };
+
+    function phraseCategoriesForDay(day) {
+      const text = dayText(day);
+      const categories = new Set(["general"]);
+
+      if (/tren|metro|bus|taxi|station|aeropuerto|vuelo|traslado|shinkansen|namba|kyoto|tokyo/.test(text)) categories.add("transit");
+      if (/desayuno|almuerzo|cena|comida|ramen|curry|sushi|caf|izakaya|takoyaki|donburi/.test(text)) categories.add("food");
+      if (/compras|tienda|souvenir|don quijote|pokemon|akihabara|shopping/.test(text)) categories.add("shopping");
+      if (/hotel|check-in|check-out|maleta|equipaje/.test(text)) categories.add("hotel");
+      if (/templo|shrine|santuario|castle|kats|yasaka|byodoin/.test(text)) categories.add("temple");
+
+      categories.add("emergency");
+      return [...categories];
+    }
+
+    function getPhrasesForDay(index) {
+      return phraseCategoriesForDay(days[index]).flatMap(category => phraseBank[category] || []);
+    }
+
+    function showPhrase(index) {
+      if (!activePhrases.length) return;
+      activePhraseIndex = (index + activePhrases.length) % activePhrases.length;
+      const phrase = activePhrases[activePhraseIndex];
+      phraseJapanese.textContent = phrase.jp;
+      phraseRomaji.textContent = phrase.romaji;
+      phraseSpanish.textContent = phrase.es;
+    }
+
+    function startPhraseRotation() {
+      clearInterval(phraseTimer);
+      phraseTimer = setInterval(() => showPhrase(activePhraseIndex + 1), 4200);
+    }
+
+    function openPhraseModal(index) {
+      activePhrases = getPhrasesForDay(index);
+      activePhraseIndex = 0;
+      phraseModalTitle.textContent = "Frases del día";
+      phraseModalSubtitle.textContent = `${days[index].dateLabel} · ${days[index].title}`;
+      phraseModal.classList.add("open");
+      phraseModal.setAttribute("aria-hidden", "false");
+      showPhrase(0);
+      startPhraseRotation();
+    }
+
+    function closePhraseModal() {
+      phraseModal.classList.remove("open");
+      phraseModal.setAttribute("aria-hidden", "true");
+      clearInterval(phraseTimer);
     }
 
     async function updateWeatherSummary(index) {
@@ -6107,6 +6437,10 @@
                 <span class="material-symbols-rounded">route</span>
                 <span>Mapa del día</span>
               </button>
+              <button class="day-tool-button" type="button" data-day-action="phrases">
+                <span class="material-symbols-rounded">translate</span>
+                <span>Frases</span>
+              </button>
               <button class="day-tool-button" type="button" data-day-action="print">
                 <span class="material-symbols-rounded">print</span>
                 <span>Imprimir</span>
@@ -6181,10 +6515,21 @@
 
     buttons.forEach(button => {
       button.addEventListener("click", () => {
-        buttons.forEach(btn => btn.classList.remove("active"));
-        button.classList.add("active");
-        renderDay(Number(button.dataset.day));
+        setActiveDay(Number(button.dataset.day));
       });
+    });
+
+    currencyAmount?.addEventListener("input", updateCurrencyConverter);
+    currencyFrom?.addEventListener("change", updateCurrencyConverter);
+
+    phrasePrev?.addEventListener("click", () => {
+      showPhrase(activePhraseIndex - 1);
+      startPhraseRotation();
+    });
+
+    phraseNext?.addEventListener("click", () => {
+      showPhrase(activePhraseIndex + 1);
+      startPhraseRotation();
     });
 
     window.addEventListener("online", () => renderDay(currentDayIndex));
@@ -6600,10 +6945,17 @@
       });
     });
 
+    document.querySelectorAll("[data-close-phrases]").forEach(element => {
+      element.addEventListener("click", closePhraseModal);
+    });
+
     document.addEventListener("keydown", event => {
       if (event.key === "Escape" && modal.classList.contains("open")) {
         modal.classList.remove("open");
         modal.setAttribute("aria-hidden", "true");
+      }
+      if (event.key === "Escape" && phraseModal.classList.contains("open")) {
+        closePhraseModal();
       }
     });
 
@@ -6619,11 +6971,12 @@
 
     updateJapanTime();
     setInterval(updateJapanTime, 60000);
+    updateCountdown();
+    setInterval(updateCountdown, 3600000);
     initTheme();
     renderCostOverview();
-    updateBaseSummary(0);
-    updateWeatherSummary(0);
-    renderDay(0);
+    updateCurrencyConverter();
+    setActiveDay(getAutoStartDayIndex());
   </script>
 </body>
 </html>
