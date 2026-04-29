@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="manifest" href="manifest.json">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Itinerario Japón 2026</title>
@@ -24,6 +23,34 @@
       --radius: 18px;
       --radius-sm: 12px;
       --shadow: 0 18px 45px rgba(23, 32, 51, 0.10);
+      --glass: rgba(255, 255, 255, 0.74);
+      --control: #ffffff;
+      --control-hover: #f8fafc;
+      --primary: #16395f;
+      --primary-ink: #ffffff;
+    }
+
+    body.dark-theme {
+      --bg: #0b111a;
+      --surface: #131b27;
+      --surface-soft: #0f1722;
+      --ink: #edf4ff;
+      --muted: #9aa8ba;
+      --line: #263244;
+      --navy: #d8ecff;
+      --blue: #7bb8f2;
+      --coral: #ff8177;
+      --mint: #143d36;
+      --mint-ink: #78e0c4;
+      --amber: #3a2e14;
+      --amber-ink: #ffd37a;
+      --shadow: 0 22px 62px rgba(0, 0, 0, 0.42);
+      --glass: rgba(19, 27, 39, 0.80);
+      --control: #182231;
+      --control-hover: #202c3d;
+      --primary: #3b82f6;
+      --primary-ink: #ffffff;
+      color-scheme: dark;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,6 +66,7 @@
       color: var(--ink);
       min-height: 100vh;
       overflow-x: hidden;
+      transition: background .22s ease, color .22s ease;
     }
 
     button, input { font: inherit; }
@@ -67,11 +95,16 @@
     }
 
     .shell {
-      background: rgba(255, 255, 255, 0.74);
+      background: var(--glass);
       border: 1px solid rgba(223, 229, 238, 0.92);
       border-radius: 28px;
       box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
       overflow: hidden;
+    }
+
+    body.dark-theme .shell {
+      border-color: rgba(83, 104, 132, 0.36);
     }
 
     .hero {
@@ -142,16 +175,92 @@
       line-height: 1.45;
     }
 
+    .theme-toggle {
+      align-items: center;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      color: white;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 13px;
+      font-weight: 900;
+      gap: 8px;
+      margin-top: 14px;
+      padding: 9px 12px;
+      transition: background .18s ease, border-color .18s ease, transform .18s ease;
+    }
+
+    .theme-toggle:hover {
+      background: rgba(255, 255, 255, 0.24);
+      transform: translateY(-1px);
+    }
+
+    .theme-toggle .material-symbols-rounded {
+      font-size: 18px;
+    }
+
+    body.dark-theme .hero {
+      background:
+        linear-gradient(rgba(5, 10, 18, 0.70), rgba(5, 10, 18, 0.52)),
+        url("https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1800&q=80");
+      background-position: center;
+      background-size: cover;
+    }
+
+    body.dark-theme .hero-panel,
+    body.dark-theme .eyebrow,
+    body.dark-theme .theme-toggle {
+      background: rgba(15, 23, 34, 0.44);
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    body.dark-theme .quick-grid {
+      background: var(--line);
+    }
+
+    body.dark-theme .quick-card,
+    body.dark-theme .content,
+    body.dark-theme .block,
+    body.dark-theme .modal-panel {
+      background: var(--surface);
+    }
+
+    body.dark-theme .block:hover {
+      border-color: rgba(123, 184, 242, 0.54);
+      box-shadow: 0 16px 38px rgba(0, 0, 0, 0.30);
+    }
+
+    body.dark-theme .day-icon,
+    body.dark-theme .icon-button,
+    body.dark-theme .detail-card,
+    body.dark-theme .metric {
+      background: var(--control);
+      border-color: var(--line);
+    }
+
+    body.dark-theme .activity-icon.travel { background: rgba(123, 184, 242, 0.16); color: #9ed0ff; }
+    body.dark-theme .activity-icon.arrival { background: rgba(120, 224, 196, 0.14); color: #8df0d0; }
+    body.dark-theme .activity-icon.money { background: rgba(255, 211, 122, 0.14); color: #ffd37a; }
+    body.dark-theme .activity-icon.shopping { background: rgba(244, 114, 182, 0.14); color: #f9a8d4; }
+    body.dark-theme .activity-icon.food { background: rgba(251, 146, 60, 0.14); color: #fdba74; }
+    body.dark-theme .activity-icon.night { background: rgba(167, 139, 250, 0.16); color: #c4b5fd; }
+    body.dark-theme .activity-icon.rest { background: rgba(45, 212, 191, 0.14); color: #5eead4; }
+    body.dark-theme .activity-icon.hotel { background: rgba(96, 165, 250, 0.14); color: #93c5fd; }
+
     body.light-mode .hero {
-      min-height: 220px;
-      padding: 26px;
+      min-height: 188px;
+      padding: 24px 26px;
+    }
+
+    body.light-mode .hero h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      max-width: 12ch;
     }
 
     body.light-mode .hero p,
     body.light-mode .hero-panel span,
-    body.light-mode .travel-dashboard,
     body.light-mode .footer-note,
-    body.light-mode .block-tools,
     body.light-mode .detail-row .detail-card:nth-child(2) {
       display: none !important;
     }
@@ -185,8 +294,7 @@
       font-size: 19px;
     }
 
-    body.light-mode .cost-overview p,
-    body.light-mode .cost-toggle-note {
+    body.light-mode .cost-overview p {
       display: none;
     }
 
@@ -230,6 +338,7 @@
       background: var(--surface);
       padding: 18px;
       min-height: 96px;
+      transition: background .22s ease, border-color .22s ease;
     }
 
     .quick-card .label {
@@ -249,7 +358,7 @@
     }
 
     .quick-card .hint {
-      color: #3c4658;
+      color: var(--muted);
       font-size: 12px;
       font-weight: 700;
       line-height: 1.35;
@@ -291,15 +400,33 @@
       margin-top: 4px;
     }
 
-    .cost-toggle-note {
+    .cost-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .cost-unlock-button {
+      align-items: center;
       background: rgba(255, 255, 255, 0.10);
       border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 999px;
       color: rgba(255, 255, 255, 0.78);
+      cursor: pointer;
+      display: inline-flex;
       font-size: 12px;
       font-weight: 900;
+      gap: 7px;
       padding: 8px 11px;
       white-space: nowrap;
+    }
+
+    .cost-unlock-button:hover {
+      background: rgba(255, 255, 255, 0.18);
+      color: white;
+    }
+
+    .cost-unlock-button .material-symbols-rounded {
+      font-size: 16px;
     }
 
     .workspace {
@@ -313,6 +440,10 @@
       background: #f8fafc;
       border-right: 1px solid var(--line);
       padding: 16px;
+    }
+
+    body.dark-theme .day-nav {
+      background: rgba(15, 23, 34, 0.92);
     }
 
     .day-nav-title {
@@ -342,22 +473,22 @@
     }
 
     .day-button:hover {
-      background: white;
+      background: var(--control);
       border-color: var(--line);
       transform: translateX(2px);
     }
 
     .day-button.active {
-      background: var(--navy);
-      border-color: var(--navy);
-      color: white;
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--primary-ink);
     }
 
     .day-icon {
       width: 40px;
       height: 40px;
       border-radius: 13px;
-      background: white;
+      background: var(--control);
       color: var(--navy);
       display: grid;
       place-items: center;
@@ -472,10 +603,56 @@
       white-space: nowrap;
     }
 
+    .energy-pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 900;
+      padding: 8px 11px;
+      white-space: nowrap;
+    }
+
+    .energy-pill.suave { background: var(--mint); color: var(--mint-ink); }
+    .energy-pill.medio { background: var(--amber); color: var(--amber-ink); }
+    .energy-pill.pesado { background: #ffe5e2; color: #9f241d; }
+
     .day-meta {
       display: grid;
       justify-items: end;
       gap: 8px;
+    }
+
+    .day-pills,
+    .day-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .day-tool-button {
+      align-items: center;
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--navy);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 6px;
+      padding: 8px 10px;
+      white-space: nowrap;
+    }
+
+    .day-tool-button:hover {
+      background: var(--primary);
+      color: var(--primary-ink);
+    }
+
+    .day-tool-button .material-symbols-rounded {
+      font-size: 16px;
     }
 
     .day-cost-pill {
@@ -513,99 +690,36 @@
       font-weight: 700;
     }
 
-    .travel-dashboard {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .dashboard-card {
+    .prep-note {
+      align-items: start;
       background: var(--surface-soft);
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 14px;
-    }
-
-    .dashboard-card h3 {
-      align-items: center;
-      color: var(--navy);
-      display: flex;
-      font-size: 14px;
-      gap: 7px;
-      line-height: 1.2;
-      margin-bottom: 10px;
-    }
-
-    .dashboard-card p {
-      color: #3c4658;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 1.45;
-    }
-
-    .chip-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-
-    .chip {
-      background: white;
-      border: 1px solid #edf1f7;
-      border-radius: 999px;
-      color: #3c4658;
-      display: inline-flex;
-      font-size: 12px;
-      font-weight: 900;
-      line-height: 1.2;
-      padding: 7px 9px;
-    }
-
-    .mini-checklist {
+      color: var(--muted);
       display: grid;
-      gap: 8px;
+      gap: 10px;
+      grid-template-columns: 26px 1fr;
+      margin-bottom: 14px;
+      padding: 12px;
     }
 
-    .check-item {
-      align-items: start;
-      color: #3c4658;
-      display: grid;
-      font-size: 13px;
-      font-weight: 750;
-      gap: 8px;
-      grid-template-columns: 18px 1fr;
-      line-height: 1.35;
-    }
-
-    .check-item input {
-      accent-color: var(--mint-ink);
+    .prep-note .material-symbols-rounded {
+      color: var(--coral);
+      font-size: 22px;
       margin-top: 1px;
     }
 
-    .quick-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .quick-link {
-      align-items: center;
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 999px;
+    .prep-note strong {
       color: var(--navy);
-      display: inline-flex;
-      font-size: 12px;
-      font-weight: 900;
-      gap: 6px;
-      padding: 8px 10px;
-      text-decoration: none;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 3px;
     }
 
-    button.quick-link {
-      cursor: pointer;
-      font: inherit;
+    .prep-note p {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.4;
     }
 
     .blocks { display: grid; gap: 12px; }
@@ -615,12 +729,14 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       overflow: hidden;
-      transition: border-color .18s ease, box-shadow .18s ease;
+      box-shadow: 0 1px 0 rgba(23, 32, 51, 0.04);
+      transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
     }
 
     .block:hover {
       border-color: #c7d2e1;
       box-shadow: 0 12px 28px rgba(23, 32, 51, 0.07);
+      transform: translateY(-1px);
     }
 
     .block.open { border-color: rgba(47, 111, 165, 0.45); }
@@ -635,7 +751,7 @@
 
     .time-box {
       background: var(--surface-soft);
-      border: 1px solid #edf1f7;
+      border: 1px solid var(--line);
       border-radius: 15px;
       padding: 12px;
     }
@@ -705,7 +821,7 @@
     }
 
     .block li {
-      color: #3c4658;
+      color: var(--muted);
       font-size: 14px;
       line-height: 1.45;
       padding-left: 17px;
@@ -726,7 +842,7 @@
     .block-cost {
       align-items: flex-start;
       background: var(--amber);
-      border: 1px solid #f5d576;
+      border: 1px solid rgba(245, 213, 118, 0.52);
       border-radius: 14px;
       color: var(--amber-ink);
       display: grid;
@@ -761,7 +877,7 @@
       height: 42px;
       border: 1px solid var(--line);
       border-radius: 13px;
-      background: white;
+      background: var(--control);
       color: var(--navy);
       cursor: pointer;
       display: grid;
@@ -770,8 +886,8 @@
     }
 
     .icon-button:hover {
-      background: var(--navy);
-      color: white;
+      background: var(--primary);
+      color: var(--primary-ink);
       transform: translateY(-1px);
     }
 
@@ -794,7 +910,7 @@
     .block-details {
       display: none;
       border-top: 1px solid var(--line);
-      background: #fbfcfe;
+      background: var(--surface-soft);
       padding: 15px;
     }
 
@@ -807,8 +923,8 @@
     }
 
     .detail-card {
-      background: white;
-      border: 1px solid #edf1f7;
+      background: var(--control);
+      border: 1px solid var(--line);
       border-radius: 15px;
       padding: 13px;
     }
@@ -821,49 +937,9 @@
     }
 
     .detail-card p {
-      color: #3c4658;
+      color: var(--muted);
       font-size: 14px;
       line-height: 1.5;
-    }
-
-    .block-tools {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      margin-top: 12px;
-    }
-
-    .tool-field {
-      display: grid;
-      gap: 6px;
-    }
-
-    .tool-field label {
-      color: var(--navy);
-      font-size: 12px;
-      font-weight: 900;
-    }
-
-    .tool-field input,
-    .tool-field select,
-    .tool-field textarea {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      color: var(--ink);
-      font-size: 13px;
-      line-height: 1.35;
-      padding: 9px 10px;
-      width: 100%;
-    }
-
-    .tool-field textarea {
-      min-height: 70px;
-      resize: vertical;
-    }
-
-    .tool-field.notes {
-      grid-column: 1 / -1;
     }
 
     .footer-note {
@@ -917,7 +993,7 @@
       width: min(980px, calc(100vw - 28px));
       max-height: min(760px, calc(100vh - 28px));
       overflow: hidden;
-      background: white;
+      background: var(--surface);
       border-radius: 24px;
       box-shadow: 0 26px 80px rgba(0, 0, 0, 0.26);
       display: grid;
@@ -964,18 +1040,18 @@
 
     #mapCanvas {
       min-height: 420px;
-      background: #eef2f6;
+      background: var(--surface-soft);
     }
 
     .route-sidebar {
       border-left: 1px solid var(--line);
       padding: 16px;
       overflow: auto;
-      background: #fbfcfe;
+      background: var(--surface-soft);
     }
 
     .metric {
-      background: white;
+      background: var(--control);
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 14px;
@@ -1024,7 +1100,7 @@
       display: grid;
       grid-template-columns: 11px 1fr;
       gap: 10px;
-      color: #3c4658;
+      color: var(--muted);
       font-size: 13px;
       line-height: 1.4;
     }
@@ -1042,7 +1118,7 @@
 
     .status-message {
       background: var(--amber);
-      border: 1px solid #f5d576;
+      border: 1px solid rgba(245, 213, 118, 0.52);
       border-radius: 14px;
       color: var(--amber-ink);
       font-size: 13px;
@@ -1061,7 +1137,7 @@
       padding: 24px;
     }
     @media (max-width: 900px) {
-      body { background: #f6f8fb; }
+      body { background: var(--bg); }
       .app { padding: 10px; }
       .shell {
         border-radius: 24px;
@@ -1117,13 +1193,14 @@
         scrollbar-width: none;
       }
       .day-nav::-webkit-scrollbar { display: none; }
+      body.dark-theme .day-nav { background: rgba(15, 23, 34, 0.94); }
       .day-nav-title { display: none; }
       .day-button {
         min-width: 152px;
         margin-bottom: 0;
         padding: 9px;
         border-color: var(--line);
-        background: white;
+        background: var(--control);
         box-shadow: 0 8px 18px rgba(23, 32, 51, 0.05);
         scroll-snap-align: start;
       }
@@ -1137,7 +1214,7 @@
       .day-info span { font-size: 11px; }
       .content {
         padding: 18px;
-        background: #ffffff;
+        background: var(--surface);
       }
       .route-line {
         flex-wrap: nowrap;
@@ -1240,6 +1317,13 @@
       .day-meta {
         justify-items: start;
       }
+      .day-pills,
+      .day-actions {
+        justify-content: flex-start;
+      }
+      .day-tool-button {
+        padding-inline: 9px;
+      }
       .day-date {
         font-size: 11px;
         margin-bottom: 7px;
@@ -1330,8 +1414,6 @@
       }
       .block-details { padding: 12px; }
       .detail-row { grid-template-columns: 1fr; }
-      .travel-dashboard { grid-template-columns: 1fr; }
-      .block-tools { grid-template-columns: 1fr; }
       .detail-card {
         border-radius: 14px;
         padding: 12px;
@@ -1437,6 +1519,55 @@
         grid-column: auto;
       }
     }
+
+    @media print {
+      body {
+        background: white;
+        color: #111827;
+      }
+
+      .app {
+        max-width: none;
+        padding: 0;
+      }
+
+      .shell {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .hero,
+      .quick-grid,
+      .cost-overview,
+      .day-nav,
+      .day-actions,
+      .route-button,
+      .chevron,
+      .modal {
+        display: none !important;
+      }
+
+      .workspace,
+      .block-main,
+      .detail-row {
+        display: block;
+      }
+
+      .content {
+        padding: 0;
+      }
+
+      .block {
+        break-inside: avoid;
+        box-shadow: none;
+        margin-bottom: 10px;
+      }
+
+      .block-details {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body class="light-mode">
@@ -1447,6 +1578,10 @@
           <div class="eyebrow"><span class="material-symbols-rounded">temple_buddhist</span> Japón 2026</div>
           <h1>Itinerario inteligente</h1>
           <p>Ruta por días con horarios, recomendaciones, traslados y mapas dentro de la misma pantalla para decidir sin abrir otra app.</p>
+          <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false">
+            <span class="material-symbols-rounded" id="themeIcon">dark_mode</span>
+            <span id="themeLabel">Tema oscuro</span>
+          </button>
         </div>
         <div class="hero-panel">
           <strong>Octubre</strong>
@@ -1471,7 +1606,12 @@
           <strong id="tripCostTotal">--</strong>
           <p id="tripCostNote">Estimado para 2 personas, sin vuelos internacionales ni hotel.</p>
         </div>
-        <div class="cost-toggle-note">Visible por bandera</div>
+        <div class="cost-actions" style="display: none">
+          <button class="cost-unlock-button" type="button" id="costUnlockButton">
+            <span class="material-symbols-rounded" id="costUnlockIcon">lock</span>
+            <span id="costUnlockLabel">Desbloquear montos</span>
+          </button>
+        </div>
       </section>
 
       <section class="workspace" id="mainWorkspace">
@@ -1608,7 +1748,8 @@
       flight: "Vuelo"
     };
 
-    const SHOW_COST_ESTIMATES = false;
+    const SHOW_COST_ESTIMATES = true;
+    const COST_UNLOCK_PASSWORD = "2997";
     const USD_TO_CRC_ESTIMATE = 460;
     const JPY_TO_USD_ESTIMATE = 0.0068;
 
@@ -5464,8 +5605,14 @@
     const costOverview = document.getElementById("costOverview");
     const tripCostTotal = document.getElementById("tripCostTotal");
     const tripCostNote = document.getElementById("tripCostNote");
+    const costUnlockButton = document.getElementById("costUnlockButton");
+    const costUnlockIcon = document.getElementById("costUnlockIcon");
+    const costUnlockLabel = document.getElementById("costUnlockLabel");
     const baseCity = document.getElementById("baseCity");
     const heroBase = document.getElementById("heroBase");
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+    const themeLabel = document.getElementById("themeLabel");
     const weatherSummary = document.getElementById("weatherSummary");
     const clothingAdvice = document.getElementById("clothingAdvice");
     const modal = document.getElementById("routeModal");
@@ -5485,6 +5632,7 @@
     let exchangeRatesPromise;
     let weatherRequestId = 0;
     let latestWeatherContext = null;
+    let costsUnlocked = getStoredValue(storageKey("costsUnlocked")) === "1";
     let map;
     let directionsRenderer;
 
@@ -5528,12 +5676,18 @@
       } catch (error) {}
     }
 
-    function escapeHtml(value) {
-      return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;");
+    function applyTheme(theme) {
+      const isDark = theme === "dark";
+      document.body.classList.toggle("dark-theme", isDark);
+      themeToggle.setAttribute("aria-pressed", String(isDark));
+      themeIcon.textContent = isDark ? "light_mode" : "dark_mode";
+      themeLabel.textContent = isDark ? "Tema claro" : "Tema oscuro";
+    }
+
+    function initTheme() {
+      const storedTheme = getStoredValue(storageKey("theme"), "");
+      const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+      applyTheme(storedTheme || (prefersDark ? "dark" : "light"));
     }
 
     function dayText(day) {
@@ -5543,215 +5697,109 @@
     function getEnergyLevel(day) {
       const text = dayText(day);
       let score = day.blocks.length;
-      if (/disney|universal|katsō|kamakura|shinkansen|aeropuerto|vuelo|halloween/.test(text)) score += 5;
-      if (/templo|parque|arashiyama|uji|odaiba|shibuya|akihabara|compras/.test(text)) score += 2;
+      if (/disney|universal|kats|kamakura|shinkansen|aeropuerto|vuelo|halloween/.test(text)) score += 5;
+      if (/templo|parque|arashiyama|uji|odaiba|shibuya|akihabara|compras|teamlab/.test(text)) score += 2;
       if (/descanso|libre|suave|relajado/.test(text)) score -= 2;
       if (score >= 15) return "Pesado";
       if (score >= 10) return "Medio";
       return "Suave";
     }
 
-    function getChecklistItems(day, index) {
+    function energyClass(day) {
+      return getEnergyLevel(day).toLowerCase();
+    }
+
+    function getPrepItems(day, index) {
       const text = dayText(day);
-      const items = ["Pasaporte/documentos", "Celular cargado", "Power bank", "Efectivo + Suica"];
-      if (/entrada|ticket|passport|disney|universal|teamlab|shinkansen|vuelo/.test(text)) items.push("Entradas o QR listos");
-      if (/maleta|equipaje|traslado|hotel|aeropuerto|shinkansen/.test(text)) items.push("Maletas y check-out/check-in revisados");
-      if (/parque|caminar|caminata|templo|shrine|castle|gion|arashiyama|uji|kamakura|odaiba|disney|universal/.test(text)) items.push("Zapatos cómodos");
-      if (/lluvia|parque|templo|outdoor|caminar|caminata/.test(text)) items.push("Paraguas compacto");
-      if (index === 0 || /vuelo|aeropuerto/.test(text)) items.push("Pases de abordar");
-      return [...new Set(items)].slice(0, 8);
+      const items = [];
+
+      if (index === 0 || /vuelo|aeropuerto|pasaporte/.test(text)) items.push("pasaporte y pases listos");
+      if (/entrada|ticket|disney|universal|teamlab|shinkansen/.test(text)) items.push("entradas o QR descargados");
+      if (/maleta|equipaje|check-out|check-in|hotel|traslado/.test(text)) items.push("maletas y hotel confirmados");
+      if (/parque|caminar|caminata|templo|shrine|castle|gion|arashiyama|uji|kamakura|odaiba|disney|universal/.test(text)) items.push("zapatos cómodos y batería externa");
+      if (/compras|souvenir|don quijote|pokemon|akihabara/.test(text)) items.push("bolsa plegable y efectivo");
+      if (latestWeatherContext?.rainy) items.push("paraguas compacto");
+
+      items.push("Suica, efectivo y celulares cargados");
+      return [...new Set(items)].slice(0, 3);
     }
 
-    function getImportantPending(day) {
-      const matches = day.blocks
-        .filter(block => /entrada|ticket|passport|disney|universal|teamlab|shinkansen|hotel|vuelo|aeropuerto|bus 29|katsō/i.test(`${block.title} ${block.items.join(" ")}`))
-        .map(block => block.title);
-      return matches.length ? matches.slice(0, 6) : ["Revisar horario de salida", "Confirmar efectivo y batería"];
-    }
-
-    function getCriticalTransfers(day) {
-      return day.blocks
-        .filter(block => block.routeInfo && /aeropuerto|station|shinkansen|tren|metro|bus|taxi|vuelo|disney|universal|traslado|regreso/i.test(`${block.title} ${block.items.join(" ")}`))
-        .map(block => block.title)
-        .slice(0, 5);
-    }
-
-    function getDayLinks(day, index) {
-      const location = getWeatherLocation(index);
-      const links = [
-        { label: `Mapa ${location.name}`, icon: "map", url: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.name + " Japan")}` }
-      ];
-      if (/disneysea/i.test(day.title)) links.push({ label: "Tickets DisneySea", icon: "confirmation_number", url: "https://www.tokyodisneyresort.co.jp/en/tds/ticket/" });
-      if (/universal/i.test(day.title)) links.push({ label: "USJ tickets", icon: "confirmation_number", url: "https://www.usj.co.jp/web/en/us/tickets/" });
-      if (/teamlab/i.test(day.title)) links.push({ label: "teamLab Osaka", icon: "auto_awesome", url: "https://www.teamlab.art/e/botanicalgarden/" });
-      if (/shinkansen|kyoto → tokyo/i.test(`${day.title} ${day.route.join(" ")}`)) links.push({ label: "JR Central", icon: "train", url: "https://global.jr-central.co.jp/en/" });
-      links.push({ label: "Clima", icon: "cloud", url: "https://open-meteo.com/" });
-      return links;
-    }
-
-    function getPlanB(day, weatherContext = latestWeatherContext) {
-      const text = dayText(day);
-      const rainy = weatherContext?.rainy;
-      if (!rainy) return "Si llueve, priorizar cafés, tiendas cubiertas, museos, estaciones grandes y mover fotos exteriores a ventanas secas.";
-      if (/osaka|dotonbori|umeda|namba/.test(text)) return "Plan B lluvia: Umeda, Namba Parks, Don Quijote, Pokémon Center, cafés y arcades.";
-      if (/kyoto|gion|nishiki|arashiyama|uji/.test(text)) return "Plan B lluvia: Nishiki Market, tiendas cubiertas, cafés de matcha, museos y taxis cortos entre zonas.";
-      if (/tokyo|asakusa|shibuya|akihabara|odaiba|disney/.test(text)) return "Plan B lluvia: centros comerciales, estaciones grandes, cafés, tiendas temáticas y reducir caminatas largas.";
-      return "Plan B lluvia: cambiar exteriores por comida, compras, museos y traslados más directos.";
-    }
-
-    function getDayKit(day) {
-      const text = dayText(day);
-      const kit = ["Suica", "power bank", "efectivo pequeño"];
-      if (/disney|universal|teamlab|vuelo|shinkansen|entrada|ticket/.test(text)) kit.push("QR/entrada lista");
-      if (/templo|parque|caminar|caminata|arashiyama|uji|kamakura|nagai|castle|gion/.test(text)) kit.push("zapatos cómodos");
-      if (/compras|souvenir|don quijote|pokemon|akihabara/.test(text)) kit.push("bolsa plegable");
-      if (/maleta|check-out|check-in|hotel|aeropuerto/.test(text)) kit.push("pasaporte a mano");
-      if (/lluvia|parque|templo|caminar/.test(text) || latestWeatherContext?.rainy) kit.push("paraguas compacto");
-      return [...new Set(kit)].slice(0, 6);
-    }
-
-    function getEmergencyTips(index) {
-      const base = getDayBase(index);
-      const station = base === "Kyoto" ? "Kyoto Station" : base === "Tokyo" ? "Tokyo Station" : "Namba Station";
-      return [
-        "Emergencias Japón: 110 policía / 119 ambulancia y bomberos",
-        `Punto de referencia: ${station}`,
-        "Guardar pasaporte, seguro y hotel en favoritos"
-      ];
-    }
-
-    function getBlockLink(block) {
-      if (block.routeInfo?.fareLookupUrl) return block.routeInfo.fareLookupUrl;
-      if (block.routeInfo) {
-        return `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(block.routeInfo.origin)}&destination=${encodeURIComponent(block.routeInfo.destination)}&travelmode=${block.routeInfo.mode === "driving" ? "driving" : block.routeInfo.mode === "walking" ? "walking" : "transit"}`;
-      }
-      return `https://www.google.com/search?q=${encodeURIComponent(block.title + " Japan official")}`;
-    }
-
-    function blockStateKey(dayIndex, blockIndex, field) {
-      return storageKey("day", dayIndex, "block", blockIndex, field);
-    }
-
-    function renderChecklist(day, index) {
-      return getChecklistItems(day, index).map((item, itemIndex) => {
-        const key = storageKey("day", index, "check", itemIndex);
-        const checked = getStoredValue(key) === "1" ? "checked" : "";
-        return `<label class="check-item"><input type="checkbox" data-store-key="${key}" ${checked}><span>${item}</span></label>`;
-      }).join("");
-    }
-
-    function actualSpendTotal(index) {
-      return days[index].blocks.reduce((sum, block, blockIndex) => {
-        const value = Number(getStoredValue(blockStateKey(index, blockIndex, "spent"), "0"));
-        return sum + (Number.isFinite(value) ? value : 0);
-      }, 0);
-    }
-
-    function renderDayDashboard(day, index) {
-      const pending = getImportantPending(day);
-      const transfers = getCriticalTransfers(day);
-      const links = getDayLinks(day, index);
+    function renderPrepNote(day, index) {
+      const items = getPrepItems(day, index);
       return `
-        <section class="travel-dashboard">
-          <article class="dashboard-card">
-            <h3><span class="material-symbols-rounded">dashboard</span> Resumen</h3>
-            <div class="chip-list">
-              <span class="chip">Base: ${getDayBase(index)}</span>
-              <span class="chip">Energía: ${getEnergyLevel(day)}</span>
-              <span class="chip">Conexión: ${navigator.onLine ? "online" : "offline"}</span>
-              <span class="chip">Gasto real: <span id="actualSpendTotal">${formatMoney(actualSpendTotal(index), "USD", "en-US")}</span></span>
-            </div>
-          </article>
-          <article class="dashboard-card">
-            <h3><span class="material-symbols-rounded">checklist</span> Checklist</h3>
-            <div class="mini-checklist">${renderChecklist(day, index)}</div>
-          </article>
-          <article class="dashboard-card">
-            <h3><span class="material-symbols-rounded">priority_high</span> Pendientes críticos</h3>
-            <div class="chip-list">${pending.map(item => `<span class="chip">${item}</span>`).join("")}</div>
-          </article>
-          <article class="dashboard-card">
-            <h3><span class="material-symbols-rounded">swap_calls</span> Traslados clave</h3>
-            <div class="chip-list">${(transfers.length ? transfers : ["Sin traslado crítico"]).map(item => `<span class="chip">${item}</span>`).join("")}</div>
-          </article>
-          <article class="dashboard-card">
-            <h3><span class="material-symbols-rounded">rainy</span> Plan B por clima</h3>
-            <p id="planBWeather">${getPlanB(day)}</p>
-          </article>
-          <article class="dashboard-card">
-            <h3><span class="material-symbols-rounded">backpack</span> Kit del día</h3>
-            <div class="chip-list">${getDayKit(day).map(item => `<span class="chip">${item}</span>`).join("")}</div>
-          </article>
-          <article class="dashboard-card">
-            <h3><span class="material-symbols-rounded">emergency_home</span> Emergencia</h3>
-            <div class="chip-list">${getEmergencyTips(index).map(item => `<span class="chip">${item}</span>`).join("")}</div>
-          </article>
-          <article class="dashboard-card">
-            <h3><span class="material-symbols-rounded">link</span> Enlaces rápidos</h3>
-            <div class="quick-actions">
-              <button class="quick-link" type="button" id="jumpToday"><span class="material-symbols-rounded">today</span>Modo hoy</button>
-              ${links.map(link => `<a class="quick-link" href="${link.url}" target="_blank" rel="noopener"><span class="material-symbols-rounded">${link.icon}</span>${link.label}</a>`).join("")}
-            </div>
-          </article>
-        </section>`;
-    }
-
-    function renderBlockTools(dayIndex, blockIndex, block) {
-      const statusKey = blockStateKey(dayIndex, blockIndex, "status");
-      const spentKey = blockStateKey(dayIndex, blockIndex, "spent");
-      const notesKey = blockStateKey(dayIndex, blockIndex, "notes");
-      const status = getStoredValue(statusKey, "pendiente");
-      const spent = getStoredValue(spentKey, "");
-      const notes = getStoredValue(notesKey, "");
-      return `
-        <div class="block-tools">
-          <div class="tool-field">
-            <label>Estado</label>
-            <select data-store-key="${statusKey}">
-              ${["pendiente", "reservado", "comprar luego", "opcional", "listo"].map(option => `<option value="${option}" ${status === option ? "selected" : ""}>${option}</option>`).join("")}
-            </select>
-          </div>
-          <div class="tool-field">
-            <label>Gasto real USD</label>
-            <input type="number" min="0" step="0.01" inputmode="decimal" data-store-key="${spentKey}" data-spend-input value="${spent}" placeholder="0.00">
-          </div>
-          <div class="tool-field notes">
-            <label>Notas</label>
-            <textarea data-store-key="${notesKey}" placeholder="Reserva, número de confirmación, cambio de plan...">${escapeHtml(notes)}</textarea>
-          </div>
-          <div class="tool-field notes">
-            <a class="quick-link" href="${getBlockLink(block)}" target="_blank" rel="noopener"><span class="material-symbols-rounded">open_in_new</span> Enlace rápido</a>
+        <div class="prep-note">
+          <span class="material-symbols-rounded">task_alt</span>
+          <div>
+            <strong>Revisar antes</strong>
+            <p id="prepNoteText">${items.join(" · ")}</p>
           </div>
         </div>`;
     }
 
-    function bindPersistentControls() {
-      document.querySelectorAll("[data-store-key]").forEach(control => {
-        const eventName = control.type === "checkbox" || control.tagName === "SELECT" ? "change" : "input";
-        control.addEventListener(eventName, () => {
-          const value = control.type === "checkbox" ? (control.checked ? "1" : "0") : control.value;
-          setStoredValue(control.dataset.storeKey, value);
-          if (control.matches("[data-spend-input]")) updateActualSpendTotal();
-        });
+    function buildDaySummary(index) {
+      const day = days[index];
+      const lines = [
+        `${day.dateLabel}`,
+        `${day.title}`,
+        `${day.subtitle}`,
+        `Base: ${getDayBase(index)}`,
+        `Energía: ${getEnergyLevel(day)}`,
+        `Ruta: ${day.route.join(" -> ")}`,
+        "",
+        "Agenda:"
+      ];
+
+      day.blocks.forEach(block => {
+        lines.push(`- ${block.time} (${block.duration}) ${block.title}`);
+        normalItems(block).slice(0, 3).forEach(item => lines.push(`  · ${item}`));
+        if (canShowCostAmounts()) {
+          costItems(block).forEach(cost => lines.push(`  · ${costTextWithCrc(cost)}`));
+        }
       });
 
-      document.getElementById("jumpToday")?.addEventListener("click", () => {
-        const index = getTodayTripIndex();
-        buttons.forEach(btn => btn.classList.toggle("active", Number(btn.dataset.day) === index));
-        renderDay(index);
+      lines.push("", `Nota: ${day.note}`);
+      return lines.join("\n");
+    }
+
+    async function copyTextToClipboard(text) {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    }
+
+    function bindDayUtilityButtons() {
+      document.querySelector("[data-day-action='copy']")?.addEventListener("click", async event => {
+        const button = event.currentTarget;
+        const label = button.querySelector("[data-action-label]");
+        try {
+          await copyTextToClipboard(buildDaySummary(currentDayIndex));
+          const previous = label.textContent;
+          label.textContent = "Copiado";
+          setTimeout(() => { label.textContent = previous; }, 1600);
+        } catch (error) {
+          window.alert("No se pudo copiar el resumen.");
+        }
+      });
+
+      document.querySelector("[data-day-action='print']")?.addEventListener("click", () => {
+        window.print();
+      });
+
+      document.querySelector("[data-day-action='day-map']")?.addEventListener("click", () => {
+        openDayRoutesModal(currentDayIndex);
       });
     }
-
-    function updateActualSpendTotal() {
-      const target = document.getElementById("actualSpendTotal");
-      if (!target) return;
-      const total = [...document.querySelectorAll("[data-spend-input]")].reduce((sum, input) => {
-        const value = Number(input.value);
-        return sum + (Number.isFinite(value) ? value : 0);
-      }, 0);
-      target.textContent = formatMoney(total, "USD", "en-US");
-    }
-
 
     function getWeatherLocation(index) {
       if (index === 0) return { name: "San José", latitude: 9.9281, longitude: -84.0907 };
@@ -5864,8 +5912,8 @@
         clothingAdvice.textContent = buildClothingAdvice(day, weather, isExactForecast);
         const hubWeatherMini = document.getElementById("hubWeatherMini");
         if (hubWeatherMini) hubWeatherMini.textContent = weatherSummary.textContent;
-        const planB = document.getElementById("planBWeather");
-        if (planB) planB.textContent = getPlanB(day, latestWeatherContext);
+        const prepNoteText = document.getElementById("prepNoteText");
+        if (prepNoteText) prepNoteText.textContent = getPrepItems(day, index).join(" · ");
       } catch (error) {
         if (requestId !== weatherRequestId) return;
         weatherSummary.textContent = "No disponible";
@@ -5953,9 +6001,42 @@
       return label;
     }
 
+    function canShowCostAmounts() {
+      return SHOW_COST_ESTIMATES && costsUnlocked;
+    }
+
+    function updateCostUnlockButton() {
+      if (!costUnlockButton) return;
+      costUnlockButton.hidden = !SHOW_COST_ESTIMATES;
+      costUnlockIcon.textContent = costsUnlocked ? "lock_open" : "lock";
+      costUnlockLabel.textContent = costsUnlocked ? "Bloquear montos" : "Desbloquear montos";
+      costUnlockButton.setAttribute("aria-pressed", costsUnlocked ? "true" : "false");
+    }
+
+    function unlockCostAmounts() {
+      if (costsUnlocked) {
+        costsUnlocked = false;
+        setStoredValue(storageKey("costsUnlocked"), "0");
+        renderCostOverview();
+        renderDay(currentDayIndex);
+        return;
+      }
+
+      const password = window.prompt("Ingrese la clave para ver los montos:");
+      if (password !== COST_UNLOCK_PASSWORD) {
+        window.alert("Clave incorrecta.");
+        return;
+      }
+
+      costsUnlocked = true;
+      setStoredValue(storageKey("costsUnlocked"), "1");
+      renderCostOverview();
+      renderDay(currentDayIndex);
+    }
+
     function renderBlockCost(block) {
       const costs = costItems(block);
-      if (!SHOW_COST_ESTIMATES || !costs.length) return "";
+      if (!canShowCostAmounts() || !costs.length) return "";
 
       return `
         <div class="block-cost">
@@ -5984,6 +6065,7 @@
     function renderCostOverview() {
       if (!SHOW_COST_ESTIMATES) {
         costOverview.hidden = true;
+        updateCostUnlockButton();
         return;
       }
 
@@ -5994,8 +6076,11 @@
         return sum;
       }, { low: 0, high: 0 });
 
-      tripCostTotal.textContent = costEstimateText(totals);
-      tripCostNote.textContent = "Estimado para 2 personas, sin vuelos internacionales ni hotel. Se puede ocultar cambiando SHOW_COST_ESTIMATES a false.";
+      tripCostTotal.textContent = costsUnlocked ? costEstimateText(totals) : "Montos bloqueados";
+      tripCostNote.textContent = costsUnlocked
+        ? "Estimado para 2 personas, sin vuelos internacionales ni hotel. Se puede ocultar cambiando SHOW_COST_ESTIMATES a false."
+        : "Presione desbloquear e ingrese la clave para ver presupuestos y costos por actividad.";
+      updateCostUnlockButton();
       costOverview.hidden = false;
     }
 
@@ -6008,13 +6093,30 @@
         <div class="day-header">
           <div><div class="day-date">${day.dateLabel}</div><h2>${day.title}</h2><p>${day.subtitle}</p></div>
           <div class="day-meta">
-            <div class="status-pill">${day.status}</div>
-            <div class="day-cost-pill" ${SHOW_COST_ESTIMATES && day.costEstimateUsd ? "" : "hidden"}>${day.costEstimateUsd ? `Costo estimado: ${costEstimateText(day.costEstimateUsd)}` : ""}</div>
+            <div class="day-pills">
+              <div class="status-pill">${day.status}</div>
+              <div class="energy-pill ${energyClass(day)}">Energía: ${getEnergyLevel(day)}</div>
+            </div>
+            <div class="day-cost-pill" ${canShowCostAmounts() && day.costEstimateUsd ? "" : "hidden"}>${day.costEstimateUsd ? `Costo estimado: ${costEstimateText(day.costEstimateUsd)}` : ""}</div>
+            <div class="day-actions">
+              <button class="day-tool-button" type="button" data-day-action="copy">
+                <span class="material-symbols-rounded">content_copy</span>
+                <span data-action-label>Copiar día</span>
+              </button>
+              <button class="day-tool-button" type="button" data-day-action="day-map">
+                <span class="material-symbols-rounded">route</span>
+                <span>Mapa del día</span>
+              </button>
+              <button class="day-tool-button" type="button" data-day-action="print">
+                <span class="material-symbols-rounded">print</span>
+                <span>Imprimir</span>
+              </button>
+            </div>
           </div>
         </div>
         <div class="route-line">${day.route.map((item, i) => `${i > 0 ? "<span>→</span>" : ""}<div>${item}</div>`).join("")}</div>
-        ${renderDayDashboard(day, index)}
-        <div class="blocks">
+        ${renderPrepNote(day, index)}
+        <div class="blocks" id="dayBlocks">
           ${day.blocks.map((block, blockIndex) => {
             const hasRouteButton = canShowRouteButton(block);
             const visibleItems = normalItems(block);
@@ -6044,7 +6146,6 @@
 				  <p>${routeDetailText(block, hasRouteButton)}</p>
 				</div>
 			  </div>
-              ${renderBlockTools(index, blockIndex, block)}
 			</div>
             </article>`;
           }).join("")}
@@ -6075,8 +6176,7 @@
         });
       });
 
-      bindPersistentControls();
-      updateActualSpendTotal();
+      bindDayUtilityButtons();
     }
 
     buttons.forEach(button => {
@@ -6089,6 +6189,14 @@
 
     window.addEventListener("online", () => renderDay(currentDayIndex));
     window.addEventListener("offline", () => renderDay(currentDayIndex));
+
+    themeToggle.addEventListener("click", () => {
+      const nextTheme = document.body.classList.contains("dark-theme") ? "light" : "dark";
+      setStoredValue(storageKey("theme"), nextTheme);
+      applyTheme(nextTheme);
+    });
+
+    costUnlockButton?.addEventListener("click", unlockCostAmounts);
 
     function loadGoogleMaps() {
       if (window.google?.maps) return Promise.resolve();
@@ -6137,16 +6245,58 @@
       }
     }
 
-    function renderRoute(block) {
-      const route = block.routeInfo;
+    function getDayRouteBlocks(index) {
+      return days[index].blocks
+        .map((block, blockIndex) => ({ block, blockIndex }))
+        .filter(({ block }) => canShowRouteButton(block));
+    }
+
+    function resetDayRoutesUI(index, routeBlocks) {
+      const day = days[index];
+      modalTitle.textContent = `Rutas del día`;
+      modalSubtitle.textContent = `${day.dateLabel} · ${day.title}`;
+      routeDuration.textContent = routeBlocks.length ? "Calculando..." : "Sin rutas";
+      routeDistance.textContent = "--";
+      routeCost.textContent = costsUnlocked ? "Ver por actividad" : "Bloqueado";
+      routeMode.textContent = "Día completo";
+      routeOrigin.textContent = routeBlocks[0]?.block.routeInfo.origin || "Sin origen";
+      routeDestination.textContent = routeBlocks[routeBlocks.length - 1]?.block.routeInfo.destination || "Sin destino";
+      routeStatus.textContent = routeBlocks.length
+        ? `Preparando ${routeBlocks.length} traslado${routeBlocks.length === 1 ? "" : "s"} del día.`
+        : "Este día no tiene traslados con mapa.";
+      mapCanvas.innerHTML = '<div class="loading-map">Cargando mapa del día...</div>';
+    }
+
+    async function openDayRoutesModal(index) {
+      const routeBlocks = getDayRouteBlocks(index);
+      resetDayRoutesUI(index, routeBlocks);
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+
+      try {
+        await loadGoogleMaps();
+        renderDayRoutes(index, routeBlocks);
+      } catch (error) {
+        routeDuration.textContent = "No disponible";
+        routeStatus.textContent = "No se pudo cargar Google Maps. Revisá que la API key esté habilitada.";
+        mapCanvas.innerHTML = '<div class="loading-map">No fue posible cargar el mapa.</div>';
+      }
+    }
+
+    function createTripMap() {
       mapCanvas.innerHTML = "";
-      map = new google.maps.Map(mapCanvas, {
+      return new google.maps.Map(mapCanvas, {
         center: { lat: 34.6937, lng: 135.5023 },
         zoom: 11,
         mapTypeControl: false,
         streetViewControl: false,
         fullscreenControl: true
       });
+    }
+
+    function renderRoute(block) {
+      const route = block.routeInfo;
+      map = createTripMap();
 
       directionsRenderer = new google.maps.DirectionsRenderer({
         map,
@@ -6176,26 +6326,7 @@
         return;
       }
 
-      const request = {
-        origin: route.origin,
-        destination: route.destination,
-        travelMode: google.maps.TravelMode[route.mode.toUpperCase()],
-        provideRouteAlternatives: false
-      };
-
-      if (route.mode === "driving") {
-        request.drivingOptions = {
-          departureTime: new Date(),
-          trafficModel: google.maps.TrafficModel.BEST_GUESS
-        };
-      }
-
-      if (route.mode === "transit") {
-        request.transitOptions = {
-          departureTime: new Date(),
-          modes: [google.maps.TransitMode.RAIL, google.maps.TransitMode.TRAIN]
-        };
-      }
+      const request = buildDirectionsRequest(route);
 
       const directionsService = new google.maps.DirectionsService();
       directionsService.route(request, (result, status) => {
@@ -6215,6 +6346,147 @@
         renderRouteFare(result.routes[0], route);
         routeStatus.textContent = "Estimación calculada al abrir el modal. Puede cambiar según tráfico, horarios y operación del transporte.";
       });
+    }
+
+    function googleTravelModeFor(route) {
+      const mode = route.mode === "local_taxi" ? "driving" : route.mode;
+      return google.maps.TravelMode[mode.toUpperCase()] || google.maps.TravelMode.TRANSIT;
+    }
+
+    function buildDirectionsRequest(route) {
+      const request = {
+        origin: route.origin,
+        destination: route.destination,
+        travelMode: googleTravelModeFor(route),
+        provideRouteAlternatives: false
+      };
+
+      if (route.mode === "driving" || route.mode === "local_taxi") {
+        request.drivingOptions = {
+          departureTime: new Date(),
+          trafficModel: google.maps.TrafficModel.BEST_GUESS
+        };
+      }
+
+      if (route.mode === "transit") {
+        request.transitOptions = {
+          departureTime: new Date(),
+          modes: [google.maps.TransitMode.RAIL, google.maps.TransitMode.TRAIN, google.maps.TransitMode.BUS]
+        };
+      }
+
+      return request;
+    }
+
+    function routeServiceRequest(directionsService, request) {
+      return new Promise(resolve => {
+        directionsService.route(request, (result, status) => {
+          resolve({ result, status });
+        });
+      });
+    }
+
+    function formatDurationSeconds(seconds) {
+      if (!seconds) return "--";
+      const hours = Math.floor(seconds / 3600);
+      const minutes = Math.round((seconds % 3600) / 60);
+      if (!hours) return `${minutes} min`;
+      return `${hours} h ${minutes ? `${minutes} min` : ""}`.trim();
+    }
+
+    function formatDistanceMeters(meters) {
+      if (!meters) return "--";
+      if (meters < 1000) return `${Math.round(meters)} m`;
+      return `${(meters / 1000).toFixed(meters >= 10000 ? 0 : 1)} km`;
+    }
+
+    function markerLabel(index, suffix = "") {
+      return `${index + 1}${suffix}`;
+    }
+
+    function addRouteMarker(position, label, title, bounds) {
+      new google.maps.Marker({ map, position, label, title });
+      bounds.extend(position);
+    }
+
+    function geocodeAddress(address) {
+      const geocoder = new google.maps.Geocoder();
+      return new Promise(resolve => {
+        geocoder.geocode({ address }, (results, status) => {
+          resolve(status === "OK" && results[0] ? results[0].geometry.location : null);
+        });
+      });
+    }
+
+    async function addReferenceSegment(route, index, bounds) {
+      const [origin, destination] = await Promise.all([
+        geocodeAddress(route.origin),
+        geocodeAddress(route.destination)
+      ]);
+
+      if (origin) addRouteMarker(origin, markerLabel(index, "A"), route.origin, bounds);
+      if (destination) addRouteMarker(destination, markerLabel(index, "B"), route.destination, bounds);
+    }
+
+    async function renderDayRoutes(index, routeBlocks) {
+      map = createTripMap();
+
+      if (!routeBlocks.length) {
+        routeDuration.textContent = "Sin rutas";
+        routeDistance.textContent = "--";
+        routeStatus.textContent = "Este día no tiene traslados marcables en el mapa.";
+        return;
+      }
+
+      const directionsService = new google.maps.DirectionsService();
+      const bounds = new google.maps.LatLngBounds();
+      const colors = ["#d84f45", "#2f6fa5", "#19705a", "#8a5a00", "#7c3aed", "#be185d", "#0f766e"];
+      let totalSeconds = 0;
+      let totalMeters = 0;
+      let drawn = 0;
+      let references = 0;
+
+      for (const [indexInDay, { block }] of routeBlocks.entries()) {
+        const route = block.routeInfo;
+
+        if (route.mode === "flight" || route.fallbackOnly) {
+          await addReferenceSegment(route, indexInDay, bounds);
+          references++;
+          continue;
+        }
+
+        const { result, status } = await routeServiceRequest(directionsService, buildDirectionsRequest(route));
+        if (status !== "OK" || !result?.routes?.length) {
+          await addReferenceSegment(route, indexInDay, bounds);
+          references++;
+          continue;
+        }
+
+        const renderer = new google.maps.DirectionsRenderer({
+          map,
+          directions: result,
+          suppressMarkers: true,
+          preserveViewport: true,
+          polylineOptions: {
+            strokeColor: colors[indexInDay % colors.length],
+            strokeOpacity: 0.88,
+            strokeWeight: 5
+          }
+        });
+
+        const leg = result.routes[0].legs[0];
+        addRouteMarker(leg.start_location, markerLabel(indexInDay, "A"), `${block.title} - origen`, bounds);
+        addRouteMarker(leg.end_location, markerLabel(indexInDay, "B"), `${block.title} - destino`, bounds);
+        totalSeconds += leg.duration_in_traffic?.value || leg.duration?.value || 0;
+        totalMeters += leg.distance?.value || 0;
+        drawn++;
+      }
+
+      if (!bounds.isEmpty()) map.fitBounds(bounds);
+
+      routeDuration.textContent = drawn ? formatDurationSeconds(totalSeconds) : "Referencial";
+      routeDistance.textContent = drawn ? formatDistanceMeters(totalMeters) : "--";
+      routeStatus.textContent = `${drawn} traslado${drawn === 1 ? "" : "s"} calculado${drawn === 1 ? "" : "s"}${references ? ` · ${references} marcado${references === 1 ? "" : "s"} como referencia` : ""}. Los tiempos pueden cambiar según tráfico y horarios.`;
     }
 
     function setRouteCostLookup(route) {
@@ -6347,6 +6619,7 @@
 
     updateJapanTime();
     setInterval(updateJapanTime, 60000);
+    initTheme();
     renderCostOverview();
     updateBaseSummary(0);
     updateWeatherSummary(0);
