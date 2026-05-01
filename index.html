@@ -7,26 +7,26 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,500,1,0" />
   <style>
     :root {
-      --bg: #eef2f6;
+      --bg: #e9f2f8;
       --surface: #ffffff;
-      --surface-soft: #f7f9fc;
-      --ink: #172033;
-      --muted: #657084;
-      --line: #dfe5ee;
-      --navy: #16395f;
-      --blue: #2f6fa5;
-      --coral: #d84f45;
+      --surface-soft: #f4f8fc;
+      --ink: #10243f;
+      --muted: #63738a;
+      --line: #dbe5f0;
+      --navy: #123b65;
+      --blue: #2386c8;
+      --coral: #f05f55;
       --mint: #dff4ec;
       --mint-ink: #19705a;
       --amber: #fff2cc;
       --amber-ink: #8a5a00;
-      --radius: 18px;
-      --radius-sm: 12px;
-      --shadow: 0 18px 45px rgba(23, 32, 51, 0.10);
-      --glass: rgba(255, 255, 255, 0.74);
+      --radius: 22px;
+      --radius-sm: 14px;
+      --shadow: 0 24px 70px rgba(16, 36, 63, 0.12);
+      --glass: rgba(255, 255, 255, 0.82);
       --control: #ffffff;
       --control-hover: #f8fafc;
-      --primary: #16395f;
+      --primary: #123b65;
       --primary-ink: #ffffff;
     }
 
@@ -153,6 +153,7 @@
     }
 
     .hero-panel {
+      justify-self: end;
       min-width: 220px;
       background: rgba(255, 255, 255, 0.16);
       border: 1px solid rgba(255, 255, 255, 0.26);
@@ -215,10 +216,6 @@
       border-color: rgba(255, 255, 255, 0.18);
     }
 
-    body.dark-theme .quick-grid {
-      background: var(--line);
-    }
-
     body.dark-theme .quick-card,
     body.dark-theme .content,
     body.dark-theme .block,
@@ -263,19 +260,6 @@
     body.light-mode .footer-note,
     body.light-mode .detail-row .detail-card:nth-child(2) {
       display: none !important;
-    }
-
-    body.light-mode .quick-card {
-      min-height: auto;
-      padding: 14px;
-    }
-
-    body.light-mode .quick-card:nth-child(6) {
-      display: none;
-    }
-
-    body.light-mode .quick-grid {
-      grid-template-columns: repeat(3, 1fr);
     }
 
     body.light-mode .content {
@@ -328,31 +312,85 @@
 
     .quick-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: var(--line);
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 10px;
+      background: var(--surface-soft);
       border-bottom: 1px solid var(--line);
+      padding: 12px;
+    }
+
+    .mobile-quick-toggle {
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--navy);
+      cursor: pointer;
+      display: none;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 7px;
+      justify-content: center;
+      margin: 8px 8px 0;
+      padding: 10px 12px;
+    }
+
+    .mobile-quick-toggle .material-symbols-rounded {
+      font-size: 17px;
     }
 
     .quick-card {
       background: var(--surface);
-      padding: 18px;
-      min-height: 96px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      display: grid;
+      gap: 8px;
+      grid-column: span 2;
+      min-height: 88px;
+      padding: 14px;
       transition: background .22s ease, border-color .22s ease;
+    }
+
+    .quick-card.weather-card,
+    .quick-card.converter-card {
+      grid-column: span 3;
+    }
+
+    .quick-card-header {
+      align-items: center;
+      display: flex;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .quick-icon {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--coral);
+      display: grid;
+      flex: 0 0 auto;
+      height: 28px;
+      place-items: center;
+      width: 28px;
+    }
+
+    .quick-icon .material-symbols-rounded {
+      font-size: 17px;
     }
 
     .quick-card .label {
       color: var(--muted);
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 800;
       letter-spacing: .06em;
       text-transform: uppercase;
-      margin-bottom: 8px;
+      min-width: 0;
     }
 
     .quick-card .value {
       color: var(--navy);
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 900;
       line-height: 1.1;
     }
@@ -415,6 +453,18 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.10);
     }
 
+    .cost-overview.locked {
+      background: transparent;
+      border-bottom: 0;
+      color: var(--muted);
+      justify-content: end;
+      padding: 0 18px 12px;
+    }
+
+    .cost-overview.locked > div:first-child {
+      display: none;
+    }
+
     .cost-overview[hidden] { display: none; }
 
     .cost-overview .label {
@@ -457,6 +507,20 @@
       gap: 7px;
       padding: 8px 11px;
       white-space: nowrap;
+    }
+
+    .cost-overview.locked .cost-unlock-button {
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--muted);
+      height: 38px;
+      justify-content: center;
+      padding: 0;
+      width: 38px;
+    }
+
+    .cost-overview.locked .cost-unlock-button span:not(.material-symbols-rounded) {
+      display: none;
     }
 
     .cost-unlock-button:hover {
@@ -631,6 +695,32 @@
       line-height: 1.45;
     }
 
+    .day-insights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .day-insight {
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--navy);
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 6px;
+      padding: 8px 10px;
+      white-space: nowrap;
+    }
+
+    .day-insight .material-symbols-rounded {
+      color: var(--coral);
+      font-size: 16px;
+    }
+
     .status-pill {
       background: var(--mint);
       border: 1px solid #bce9da;
@@ -761,6 +851,69 @@
       line-height: 1.4;
     }
 
+    .day-summary-card {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+
+    .day-summary-card summary {
+      align-items: center;
+      cursor: pointer;
+      display: grid;
+      gap: 4px 10px;
+      grid-template-columns: 34px 1fr;
+      list-style: none;
+      padding: 12px;
+    }
+
+    .day-summary-card summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .day-summary-card summary > .material-symbols-rounded {
+      align-self: center;
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--coral);
+      display: grid;
+      font-size: 19px;
+      height: 34px;
+      place-items: center;
+      width: 34px;
+    }
+
+    .day-summary-card summary strong {
+      color: var(--navy);
+      display: block;
+      font-size: 14px;
+      line-height: 1.15;
+    }
+
+    .day-summary-card summary small {
+      color: var(--muted);
+      display: block;
+      font-size: 12px;
+      font-weight: 800;
+      grid-column: 2;
+      line-height: 1.3;
+    }
+
+    .day-summary-content {
+      border-top: 1px solid var(--line);
+      display: grid;
+      gap: 10px;
+      padding: 12px;
+    }
+
+    .day-summary-content .route-line,
+    .day-summary-content .prep-note {
+      margin-bottom: 0;
+    }
+
     .blocks { display: grid; gap: 12px; }
 
     .block {
@@ -768,8 +921,34 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       overflow: hidden;
+      position: relative;
       box-shadow: 0 1px 0 rgba(23, 32, 51, 0.04);
       transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+    }
+
+    .block::before {
+      background: var(--blue);
+      content: "";
+      inset: 0 auto 0 0;
+      opacity: .72;
+      position: absolute;
+      width: 4px;
+      z-index: 0;
+    }
+
+    .block.tone-arrival::before,
+    .block.tone-hotel::before,
+    .block.tone-rest::before { background: var(--mint-ink); }
+    .block.tone-money::before { background: var(--amber-ink); }
+    .block.tone-shopping::before { background: #be185d; }
+    .block.tone-food::before { background: #c2410c; }
+    .block.tone-night::before { background: #6d28d9; }
+    .block.tone-travel::before { background: var(--blue); }
+
+    .block-main,
+    .block-details {
+      position: relative;
+      z-index: 1;
     }
 
     .block:hover {
@@ -942,6 +1121,10 @@
       transition: transform .18s ease;
     }
 
+    .icon-button .button-label {
+      display: none;
+    }
+
     .route-button { color: var(--coral); }
     .chevron { color: var(--blue); }
     .block.open .chevron .material-symbols-rounded { transform: rotate(180deg); }
@@ -1006,6 +1189,115 @@
       color: rgba(255, 255, 255, 0.78);
       font-size: 14px;
       line-height: 1.5;
+    }
+
+    .night-summary-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 42px 1fr;
+      margin-top: 16px;
+      padding: 16px;
+    }
+
+    .night-summary-card > .material-symbols-rounded {
+      background: rgba(109, 40, 217, 0.10);
+      border-radius: 14px;
+      color: #6d28d9;
+      display: grid;
+      height: 42px;
+      place-items: center;
+      width: 42px;
+    }
+
+    .night-summary-card h3 {
+      color: var(--navy);
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .night-summary-card ul {
+      display: grid;
+      gap: 6px;
+      list-style: none;
+    }
+
+    .night-summary-card li {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.4;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    .night-summary-card li::before {
+      background: var(--coral);
+      border-radius: 999px;
+      content: "";
+      height: 6px;
+      left: 0;
+      position: absolute;
+      top: 7px;
+      width: 6px;
+    }
+
+    .today-mode-exit {
+      align-items: center;
+      background: var(--primary);
+      border: 0;
+      border-radius: 999px;
+      bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+      box-shadow: 0 18px 42px rgba(16, 36, 63, 0.22);
+      color: var(--primary-ink);
+      cursor: pointer;
+      display: none;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 6px;
+      left: 50%;
+      padding: 11px 14px;
+      position: fixed;
+      transform: translateX(-50%);
+      z-index: 60;
+    }
+
+    .today-mode-exit .material-symbols-rounded {
+      font-size: 17px;
+    }
+
+    body.today-mode .hero,
+    body.today-mode .mobile-quick-toggle,
+    body.today-mode .quick-grid,
+    body.today-mode .cost-overview,
+    body.today-mode .day-nav,
+    body.today-mode .bottom-nav {
+      display: none !important;
+    }
+
+    body.today-mode .today-mode-exit {
+      display: inline-flex;
+    }
+
+    body.today-mode .app {
+      max-width: 920px;
+      padding-top: 12px;
+    }
+
+    body.today-mode .shell {
+      border-radius: 26px;
+    }
+
+    body.today-mode .workspace {
+      grid-template-columns: 1fr;
+      min-height: 0;
+    }
+
+    body.today-mode .content {
+      padding-bottom: 78px;
     }
 
     .modal {
@@ -1248,16 +1540,28 @@
         font-size: 15px;
       }
       .hero-panel {
+        justify-self: start;
         min-width: 0;
         max-width: 420px;
         padding: 14px;
       }
-      .quick-grid { grid-template-columns: repeat(2, 1fr); }
+      .quick-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 8px;
+        padding: 10px;
+      }
+      .quick-card {
+        grid-column: span 2;
+      }
+      .quick-card.weather-card,
+      .quick-card.converter-card {
+        grid-column: span 3;
+      }
       .quick-card {
         min-height: 82px;
-        padding: 14px;
+        padding: 12px;
       }
-      .quick-card .value { font-size: 20px; }
+      .quick-card .value { font-size: 18px; }
       .cost-overview {
         grid-template-columns: 1fr;
         gap: 10px;
@@ -1329,77 +1633,136 @@
         border-radius: 0;
       }
       .hero {
-        min-height: 242px;
-        padding: calc(18px + env(safe-area-inset-top, 0px)) 16px 18px;
-        gap: 14px;
+        min-height: 168px;
+        padding: calc(14px + env(safe-area-inset-top, 0px)) 16px 14px;
+        gap: 10px;
       }
       body.light-mode .hero {
-        min-height: 188px;
-        padding-bottom: 14px;
+        min-height: 150px;
+        padding-bottom: 12px;
       }
       .eyebrow {
+        margin-bottom: 10px;
         padding: 7px 10px;
         font-size: 12px;
       }
       .hero h1 {
         max-width: 10ch;
-        font-size: 34px;
+        font-size: 30px;
         line-height: 1.02;
+        margin-bottom: 0;
       }
       .hero p {
-        max-width: 31ch;
-        font-size: 13px;
-        line-height: 1.42;
+        display: none;
       }
       .hero-panel {
-        border-radius: 16px;
-        padding: 10px 12px;
+        display: none;
       }
-      .hero-panel strong {
-        font-size: 19px;
-        margin-bottom: 4px;
-      }
-      .hero-panel span {
+      .theme-toggle {
+        margin-top: 10px;
+        padding: 8px 10px;
         font-size: 12px;
-        line-height: 1.35;
       }
-      .quick-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      body.light-mode .quick-grid { grid-template-columns: 1fr 1fr; }
+      .quick-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+        padding: 8px;
+      }
+      .mobile-quick-toggle {
+        display: flex;
+      }
       .quick-card {
-        min-height: 74px;
-        padding: 12px;
+        border-radius: 13px;
+        grid-column: span 1;
+        gap: 6px;
+        min-height: 58px;
+        padding: 9px;
+      }
+      .quick-card:nth-child(1),
+      .quick-card:nth-child(2),
+      .quick-card:nth-child(3) {
+        grid-column: span 1;
+      }
+      .quick-card.weather-card,
+      .quick-card.converter-card {
+        grid-column: 1 / -1;
+      }
+      body:not(.quick-panel-open) .quick-card.weather-card,
+      body:not(.quick-panel-open) .quick-card.converter-card,
+      body:not(.quick-panel-open) .cost-overview:not([hidden]) {
+        display: none;
       }
       .quick-card .label {
-        font-size: 10px;
-        margin-bottom: 6px;
-      }
-      .quick-card .value {
-        font-size: 17px;
+        font-size: 9px;
         line-height: 1.15;
       }
+      .quick-card .value {
+        font-size: 14px;
+        line-height: 1.15;
+      }
+      .quick-card .hint {
+        display: none;
+      }
+      body.quick-panel-open .quick-card.weather-card .hint,
+      body.quick-panel-open .quick-card.converter-card .hint {
+        display: block;
+      }
+      .quick-icon {
+        display: none;
+      }
+      .quick-card-header {
+        gap: 0;
+      }
+      .converter-row {
+        grid-template-columns: minmax(0, 1fr) 86px;
+      }
+      .cost-overview {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 13px 14px;
+      }
+      .cost-overview strong {
+        font-size: 19px;
+      }
+      .cost-overview p {
+        font-size: 12px;
+      }
+      .cost-actions {
+        justify-content: flex-start;
+      }
       .day-nav {
+        gap: 7px;
         padding: 9px 10px;
         overscroll-behavior-x: contain;
         -webkit-overflow-scrolling: touch;
       }
       .day-button {
-        min-width: 128px;
-        grid-template-columns: 30px 1fr;
-        gap: 8px;
-        border-radius: 14px;
+        min-width: auto;
+        grid-template-columns: 1fr;
+        gap: 0;
+        justify-items: center;
+        padding: 10px 14px;
+        border-radius: 999px;
+        box-shadow: none;
+      }
+      .day-button.active {
+        min-width: auto;
+        border-radius: 999px;
       }
       .day-icon {
-        width: 30px;
-        height: 30px;
-        border-radius: 10px;
+        display: none;
       }
-      .day-icon .material-symbols-rounded { font-size: 18px; }
-      .day-info strong { font-size: 12px; }
+      .day-info strong {
+        font-size: 0;
+        margin: 0;
+      }
+      .day-info strong::after {
+        content: attr(data-short-label);
+        font-size: 13px;
+        font-weight: 900;
+      }
       .day-info span {
-        font-size: 10px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        display: none;
       }
       .content { padding: 15px 12px 24px; }
       .day-header { grid-template-columns: 1fr; }
@@ -1424,10 +1787,35 @@
       .day-header p {
         font-size: 14px;
       }
+      .day-insights {
+        margin-top: 12px;
+        gap: 6px;
+      }
+      .day-insight {
+        font-size: 11px;
+        padding: 7px 9px;
+      }
       .status-pill {
         width: fit-content;
         padding: 8px 11px;
         font-size: 12px;
+      }
+      .day-summary-card {
+        border-radius: 16px;
+        margin-bottom: 14px;
+      }
+      .day-summary-card summary {
+        padding: 11px;
+      }
+      .day-summary-content {
+        padding: 11px;
+      }
+      .day-summary-content .day-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .day-summary-content .day-tool-button {
+        justify-content: center;
       }
       .day-cost-pill {
         text-align: left;
@@ -1439,8 +1827,8 @@
         box-shadow: 0 8px 22px rgba(23, 32, 51, 0.05);
       }
       .block-main {
-        grid-template-columns: minmax(0, 1fr) 38px 38px;
-        gap: 9px;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        gap: 10px;
         padding: 12px;
       }
       .time-box {
@@ -1471,9 +1859,28 @@
         text-align: right;
         white-space: nowrap;
       }
+      .block-main > div:nth-child(2) {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        min-width: 0;
+      }
+      .block-main > .route-button,
+      .block-main > .chevron {
+        grid-row: 3;
+        justify-self: start;
+      }
+      .block-main > .route-button {
+        grid-column: 1;
+      }
+      .block-main > .chevron {
+        grid-column: 1;
+      }
+      .block-main > .route-button + .chevron {
+        grid-column: 2;
+      }
       .block-title-row {
-        align-items: flex-start;
-        gap: 8px;
+        align-items: center;
+        gap: 9px;
       }
       .activity-icon {
         width: 31px;
@@ -1482,13 +1889,15 @@
       }
       .activity-icon .material-symbols-rounded { font-size: 19px; }
       .block h3 {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 1.22;
+        max-width: none;
       }
       .block ul { gap: 5px; }
       .block li {
         font-size: 13px;
         line-height: 1.42;
+        max-width: 34rem;
       }
       .block-cost {
         grid-column: 1 / -1;
@@ -1497,9 +1906,20 @@
       }
       .block-cost span { font-size: 12px; }
       .icon-button {
-        width: 38px;
+        align-items: center;
+        display: inline-flex;
+        gap: 6px;
         height: 38px;
+        justify-content: center;
+        min-width: 88px;
+        padding: 0 12px;
         border-radius: 12px;
+        width: auto;
+      }
+      .icon-button .button-label {
+        display: inline;
+        font-size: 12px;
+        font-weight: 900;
       }
       .block-details { padding: 12px; }
       .detail-row { grid-template-columns: 1fr; }
@@ -1517,6 +1937,15 @@
         height: 36px;
       }
       .footer-note p { font-size: 13px; }
+      .night-summary-card {
+        border-radius: 17px;
+        grid-template-columns: 36px 1fr;
+        padding: 13px;
+      }
+      .night-summary-card > .material-symbols-rounded {
+        height: 36px;
+        width: 36px;
+      }
       .modal-panel {
         left: 0;
         right: 0;
@@ -1592,17 +2021,21 @@
 
     @media (max-width: 380px) {
       .hero {
-        min-height: 224px;
+        min-height: 154px;
       }
-      .hero h1 { font-size: 31px; }
+      .hero h1 { font-size: 28px; }
       .quick-card .value { font-size: 15px; }
+      .quick-card .label { font-size: 8px; }
+      .converter-row {
+        grid-template-columns: 1fr;
+      }
       .time-box {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr;
         gap: 5px;
       }
       .time-box span {
-        grid-column: 1 / -1;
-        grid-row: 2;
+        grid-column: auto;
+        grid-row: auto;
       }
       .time-box em {
         text-align: left;
@@ -1612,6 +2045,721 @@
       .route-points,
       .status-message {
         grid-column: auto;
+      }
+    }
+
+    /* Modern travel-app refresh */
+    body {
+      background:
+        radial-gradient(circle at 12% -10%, rgba(35, 134, 200, 0.18), transparent 34rem),
+        linear-gradient(180deg, #edf6fb 0%, var(--bg) 42%, #dfeef6 100%);
+    }
+
+    body.dark-theme {
+      background:
+        radial-gradient(circle at 12% -10%, rgba(59, 130, 246, 0.20), transparent 34rem),
+        linear-gradient(180deg, #0d1622 0%, var(--bg) 56%, #07101a 100%);
+    }
+
+    .app {
+      max-width: 1140px;
+      padding: 28px 20px 54px;
+    }
+
+    .shell {
+      border-color: rgba(255, 255, 255, 0.76);
+      border-radius: 34px;
+      box-shadow: 0 30px 90px rgba(16, 36, 63, 0.14);
+    }
+
+    .hero {
+      border-radius: 30px;
+      margin: 14px 14px 0;
+      min-height: 286px;
+      overflow: hidden;
+      padding: 32px;
+    }
+
+    .eyebrow,
+    .theme-toggle,
+    .hero-panel {
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    }
+
+    .quick-grid {
+      background: transparent;
+      border-bottom: 0;
+      padding: 14px;
+    }
+
+    .quick-card,
+    .day-summary-card,
+    .block,
+    .detail-card,
+    .metric {
+      box-shadow: 0 14px 34px rgba(16, 36, 63, 0.07);
+    }
+
+    .quick-card {
+      border-color: rgba(219, 229, 240, 0.86);
+      border-radius: 22px;
+    }
+
+    .cost-overview {
+      border-bottom: 0;
+      border-radius: 24px;
+      margin: 0 14px 14px;
+      overflow: hidden;
+    }
+
+    .workspace {
+      background: var(--surface-soft);
+      border-top: 1px solid rgba(219, 229, 240, 0.72);
+    }
+
+    .day-nav {
+      background: transparent;
+      border-right: 0;
+      padding: 18px;
+    }
+
+    .day-button {
+      background: rgba(255, 255, 255, 0.66);
+      border-color: rgba(219, 229, 240, 0.78);
+      border-radius: 19px;
+      box-shadow: 0 12px 26px rgba(16, 36, 63, 0.055);
+      margin-bottom: 8px;
+    }
+
+    .day-button:hover {
+      box-shadow: 0 16px 30px rgba(16, 36, 63, 0.08);
+    }
+
+    .day-button.active {
+      background: linear-gradient(135deg, #123b65 0%, #2386c8 100%);
+      border-color: transparent;
+      box-shadow: 0 18px 34px rgba(18, 59, 101, 0.24);
+    }
+
+    .day-icon {
+      background: rgba(255, 255, 255, 0.90);
+      border: 1px solid rgba(219, 229, 240, 0.78);
+      box-shadow: none;
+    }
+
+    .content {
+      background: transparent;
+      padding: 30px;
+    }
+
+    .day-header {
+      margin-bottom: 18px;
+    }
+
+    .day-header h2 {
+      color: var(--ink);
+      font-size: clamp(28px, 3.6vw, 38px);
+      letter-spacing: -0.01em;
+    }
+
+    .day-date {
+      color: var(--coral);
+      letter-spacing: .12em;
+    }
+
+    .status-pill,
+    .energy-pill,
+    .day-cost-pill,
+    .day-tool-button {
+      border-radius: 999px;
+      box-shadow: 0 8px 18px rgba(16, 36, 63, 0.05);
+    }
+
+    .day-summary-card {
+      background: rgba(255, 255, 255, 0.82);
+      border-color: rgba(219, 229, 240, 0.84);
+      border-radius: 24px;
+    }
+
+    .day-summary-card summary {
+      padding: 14px;
+    }
+
+    .block {
+      border-color: rgba(219, 229, 240, 0.84);
+      border-radius: 24px;
+      box-shadow: 0 16px 36px rgba(16, 36, 63, 0.075);
+    }
+
+    .block::before {
+      border-radius: 999px;
+      inset: 14px auto 14px 0;
+      width: 5px;
+    }
+
+    .block:hover {
+      box-shadow: 0 22px 42px rgba(16, 36, 63, 0.10);
+    }
+
+    .block-main {
+      padding: 18px;
+    }
+
+    .time-box {
+      background: linear-gradient(180deg, rgba(244, 248, 252, 0.96), rgba(255, 255, 255, 0.86));
+      border-color: rgba(219, 229, 240, 0.74);
+      border-radius: 18px;
+    }
+
+    .activity-icon {
+      border-radius: 15px;
+    }
+
+    .icon-button {
+      border-radius: 16px;
+      box-shadow: 0 10px 22px rgba(16, 36, 63, 0.06);
+    }
+
+    body.dark-theme .quick-card,
+    body.dark-theme .day-summary-card,
+    body.dark-theme .block,
+    body.dark-theme .day-button {
+      background: rgba(18, 28, 43, 0.92);
+      border-color: rgba(83, 104, 132, 0.36);
+      box-shadow: 0 18px 46px rgba(0, 0, 0, 0.20);
+    }
+
+    body.dark-theme .shell {
+      background: rgba(12, 19, 30, 0.86);
+      border-color: rgba(116, 139, 170, 0.28);
+    }
+
+    body.dark-theme .workspace {
+      background: #0f1722;
+      border-top-color: rgba(83, 104, 132, 0.28);
+    }
+
+    body.dark-theme .day-button:not(.active) {
+      color: #dbe8f6;
+    }
+
+    body.dark-theme .day-button.active {
+      background: linear-gradient(135deg, #4f8cff 0%, #18b6d6 100%);
+      border-color: rgba(181, 216, 255, 0.65);
+      box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.28), 0 18px 34px rgba(24, 182, 214, 0.24);
+      color: #ffffff;
+    }
+
+    body.dark-theme .day-button.active .day-info strong,
+    body.dark-theme .day-button.active .day-info span {
+      color: #ffffff;
+    }
+
+    body.dark-theme .day-button:not(.active) .day-icon {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(116, 139, 170, 0.24);
+    }
+
+    body.dark-theme .day-header h2 {
+      color: #f3f8ff;
+    }
+
+    body.dark-theme .day-insight {
+      background: rgba(255, 255, 255, 0.055);
+      border-color: rgba(116, 139, 170, 0.26);
+      color: #dbe8f6;
+      box-shadow: none;
+    }
+
+    body.dark-theme .day-summary-card summary > .material-symbols-rounded {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(116, 139, 170, 0.22);
+    }
+
+    body.dark-theme .time-box {
+      background: linear-gradient(180deg, rgba(30, 43, 61, 0.98), rgba(18, 28, 43, 0.96));
+      border-color: rgba(116, 139, 170, 0.28);
+    }
+
+    body.dark-theme .time-box strong,
+    body.dark-theme .block h3,
+    body.dark-theme .day-summary-card summary strong {
+      color: #f4f8ff;
+    }
+
+    body.dark-theme .time-box span,
+    body.dark-theme .block li,
+    body.dark-theme .day-summary-card summary small {
+      color: #aebdd0;
+    }
+
+    body.dark-theme .time-box em {
+      color: #ff9b93;
+    }
+
+    body.dark-theme .block-cost {
+      background: rgba(255, 211, 122, 0.12);
+      border-color: rgba(255, 211, 122, 0.22);
+    }
+
+    @media (max-width: 900px) {
+      .app {
+        padding: 16px;
+      }
+
+      .shell {
+        border-radius: 32px;
+      }
+
+      .hero {
+        border-radius: 28px;
+        margin: 12px 12px 0;
+      }
+
+      .day-nav {
+        background: rgba(244, 248, 252, 0.84);
+        border-bottom: 0;
+        margin: 0;
+        padding: 12px;
+      }
+
+      body.dark-theme .day-nav {
+        background: rgba(15, 23, 34, 0.80);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .app {
+        padding: 12px;
+      }
+
+      .shell {
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+      .hero {
+        border-radius: 26px;
+        margin: 10px;
+        min-height: 178px;
+        padding: calc(18px + env(safe-area-inset-top, 0px)) 18px 16px;
+      }
+
+      body.light-mode .hero {
+        min-height: 164px;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+        letter-spacing: -0.01em;
+      }
+
+      .theme-toggle {
+        margin-top: 12px;
+      }
+
+      .mobile-quick-toggle {
+        margin: 10px 10px 8px;
+        min-height: 42px;
+      }
+
+      .quick-grid {
+        padding: 0 10px 12px;
+      }
+
+      .quick-card {
+        border-radius: 18px;
+        min-height: 62px;
+      }
+
+      .day-nav {
+        background: rgba(255, 255, 255, 0.72);
+        border-radius: 24px;
+        margin: 0 10px 10px;
+        padding: 8px;
+      }
+
+      .day-button {
+        background: rgba(255, 255, 255, 0.82);
+        border-radius: 999px;
+        min-width: 48px;
+        padding: 11px 15px;
+      }
+
+      .day-button.active {
+        background: linear-gradient(135deg, #123b65 0%, #2386c8 100%);
+        box-shadow: 0 12px 22px rgba(18, 59, 101, 0.24);
+      }
+
+      .content {
+        padding: 18px 12px 24px;
+      }
+
+      .day-header {
+        background: rgba(255, 255, 255, 0.66);
+        border: 1px solid rgba(219, 229, 240, 0.78);
+        border-radius: 24px;
+        margin-bottom: 12px;
+        padding: 16px;
+      }
+
+      body.dark-theme .day-header {
+        background: rgba(19, 27, 39, 0.72);
+        border-color: rgba(83, 104, 132, 0.36);
+      }
+
+      .day-header h2 {
+        font-size: 27px;
+      }
+
+      .day-summary-card,
+      .block {
+        border-radius: 22px;
+      }
+
+      .block-main {
+        padding: 14px;
+      }
+
+      .time-box {
+        border-radius: 17px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero {
+        min-height: 162px;
+      }
+
+      .hero h1 {
+        font-size: 29px;
+      }
+    }
+
+    /* Modern UX pass */
+    body.dark-theme {
+      --bg: #111b27;
+      --surface: #182333;
+      --surface-soft: #121d2b;
+      --control: #1e2b3c;
+      --control-hover: #27364a;
+      --ink: #f2f6fb;
+      --muted: #adbacb;
+      --line: #324258;
+      --navy: #e8f2ff;
+      --primary: #3b82f6;
+    }
+
+    .hero {
+      min-height: 250px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5.2vw, 58px);
+      max-width: 11ch;
+    }
+
+    .hero p {
+      max-width: 48rem;
+    }
+
+    .workspace {
+      grid-template-columns: 1fr;
+      min-height: 0;
+    }
+
+    .day-nav {
+      align-items: center;
+      background: rgba(255, 255, 255, 0.62);
+      border-bottom: 1px solid var(--line);
+      border-right: 0;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 14px 16px;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+    }
+
+    .day-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    body.dark-theme .day-nav {
+      background: rgba(18, 29, 43, 0.88);
+    }
+
+    .day-nav-title {
+      flex: 0 0 auto;
+      margin: 0 4px 0 0;
+      white-space: nowrap;
+    }
+
+    .day-button {
+      border-color: var(--line);
+      border-radius: 999px;
+      display: grid;
+      flex: 0 0 auto;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      margin: 0;
+      min-width: 82px;
+      padding: 10px 13px;
+      scroll-snap-align: center;
+      text-align: center;
+      width: auto;
+    }
+
+    .day-button:hover {
+      transform: none;
+    }
+
+    .day-icon {
+      display: none;
+    }
+
+    .day-info strong {
+      font-size: 14px;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    .day-info span {
+      display: block;
+      font-size: 10px;
+      line-height: 1.2;
+      margin-top: 3px;
+      max-width: 76px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .day-button.active {
+      background: linear-gradient(135deg, #123b65 0%, #2386c8 100%);
+      border-color: transparent;
+      box-shadow: 0 14px 26px rgba(18, 59, 101, 0.22);
+    }
+
+    .content {
+      padding: 28px;
+    }
+
+    .day-header {
+      background: rgba(255, 255, 255, 0.58);
+      border: 1px solid rgba(219, 229, 240, 0.76);
+      border-radius: 26px;
+      padding: 18px;
+    }
+
+    body.dark-theme .day-header {
+      background: rgba(24, 35, 51, 0.82);
+      border-color: rgba(116, 139, 170, 0.24);
+    }
+
+    .day-header h2 {
+      font-size: clamp(28px, 3.2vw, 36px);
+      letter-spacing: -0.01em;
+    }
+
+    .next-step-card {
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 42px 1fr;
+      margin-top: 14px;
+      max-width: 520px;
+      padding: 12px;
+    }
+
+    .next-step-card > .material-symbols-rounded {
+      background: rgba(35, 134, 200, 0.12);
+      border-radius: 15px;
+      color: var(--blue);
+      display: grid;
+      height: 42px;
+      place-items: center;
+      width: 42px;
+    }
+
+    .next-step-card small {
+      color: var(--muted);
+      display: block;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .next-step-card strong {
+      color: var(--ink);
+      display: block;
+      font-size: 15px;
+      line-height: 1.2;
+      margin-top: 2px;
+    }
+
+    .next-step-card p {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      margin-top: 3px;
+    }
+
+    .day-insights {
+      margin-top: 12px;
+    }
+
+    .block-main {
+      grid-template-columns: 112px minmax(0, 1fr);
+    }
+
+    .block-title-row {
+      margin-bottom: 10px;
+    }
+
+    .block-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .block-actions .icon-button {
+      align-items: center;
+      display: inline-flex;
+      gap: 6px;
+      height: 38px;
+      justify-content: center;
+      min-width: 86px;
+      padding: 0 12px;
+      width: auto;
+    }
+
+    .block-actions .button-label {
+      display: inline;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .bottom-nav {
+      display: none;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        min-height: 210px;
+      }
+
+      .day-nav-title {
+        display: none;
+      }
+
+      .day-button {
+        min-width: 70px;
+      }
+
+      .day-info span {
+        display: none;
+      }
+
+      .content {
+        padding: 18px 12px 86px;
+      }
+
+      .day-header {
+        grid-template-columns: 1fr;
+        padding: 16px;
+      }
+
+      .day-header h2 {
+        font-size: 28px;
+      }
+
+      .day-insights {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 2px;
+        scrollbar-width: none;
+      }
+
+      .day-insights::-webkit-scrollbar {
+        display: none;
+      }
+
+      .day-insight {
+        flex: 0 0 auto;
+      }
+
+      .block-main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .time-box {
+        grid-column: auto;
+      }
+
+      .block-main > div:nth-child(2) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      .bottom-nav {
+        align-items: center;
+        background: rgba(255, 255, 255, 0.88);
+        border: 1px solid rgba(219, 229, 240, 0.88);
+        border-radius: 999px;
+        bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+        box-shadow: 0 18px 42px rgba(16, 36, 63, 0.18);
+        display: grid;
+        gap: 2px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        left: 50%;
+        max-width: 390px;
+        padding: 6px;
+        position: fixed;
+        transform: translateX(-50%);
+        width: calc(100% - 24px);
+        z-index: 40;
+      }
+
+      body.dark-theme .bottom-nav {
+        background: rgba(24, 35, 51, 0.92);
+        border-color: rgba(116, 139, 170, 0.28);
+      }
+
+      .bottom-nav button {
+        align-items: center;
+        background: transparent;
+        border: 0;
+        border-radius: 999px;
+        color: var(--muted);
+        cursor: pointer;
+        display: grid;
+        font-size: 10px;
+        font-weight: 900;
+        gap: 2px;
+        justify-items: center;
+        padding: 8px 6px;
+      }
+
+      .bottom-nav button:hover,
+      .bottom-nav button:focus-visible {
+        background: var(--control-hover);
+        color: var(--navy);
+        outline: none;
+      }
+
+      .bottom-nav .material-symbols-rounded {
+        font-size: 18px;
+      }
+
+      body.today-mode .today-mode-exit {
+        bottom: calc(14px + env(safe-area-inset-bottom, 0px));
       }
     }
 
@@ -1684,17 +2832,32 @@
         </div>
       </section>
 
+      <button class="mobile-quick-toggle" type="button" id="quickToggle" aria-expanded="false">
+        <span class="material-symbols-rounded" id="quickToggleIcon">expand_more</span>
+        <span id="quickToggleLabel">Ver clima, conversor y presupuesto</span>
+      </button>
+
       <section class="quick-grid">
-        <article class="quick-card"><div class="label">Ciudad base</div><div class="value" id="baseCity">Osaka</div></article>
-        <article class="quick-card"><div class="label">Cuenta regresiva</div><div class="value" id="countdownValue">--</div><div class="hint" id="countdownHint">al Día 0</div></article>
-        <article class="quick-card"><div class="label">Hora Japón</div><div class="value" id="japanTime">--:--</div></article>
         <article class="quick-card">
-          <div class="label">Clima</div>
+          <div class="quick-card-header"><span class="quick-icon"><span class="material-symbols-rounded">location_city</span></span><div class="label">Ciudad base</div></div>
+          <div class="value" id="baseCity">Osaka</div>
+        </article>
+        <article class="quick-card">
+          <div class="quick-card-header"><span class="quick-icon"><span class="material-symbols-rounded">hourglass_top</span></span><div class="label">Cuenta regresiva</div></div>
+          <div class="value" id="countdownValue">--</div>
+          <div class="hint" id="countdownHint">al Día 0</div>
+        </article>
+        <article class="quick-card">
+          <div class="quick-card-header"><span class="quick-icon"><span class="material-symbols-rounded">schedule</span></span><div class="label">Hora Japón</div></div>
+          <div class="value" id="japanTime">--:--</div>
+        </article>
+        <article class="quick-card weather-card">
+          <div class="quick-card-header"><span class="quick-icon"><span class="material-symbols-rounded">rainy</span></span><div class="label">Clima</div></div>
           <div class="value" id="weatherSummary">Consultando...</div>
           <div class="hint" id="clothingAdvice">Recomendación según clima y actividades.</div>
         </article>
         <article class="quick-card converter-card">
-          <div class="label">Conversor rápido</div>
+          <div class="quick-card-header"><span class="quick-icon"><span class="material-symbols-rounded">currency_exchange</span></span><div class="label">Conversor rápido</div></div>
           <div class="converter-row">
             <input id="currencyAmount" type="number" min="0" step="0.01" value="100" inputmode="decimal" aria-label="Monto a convertir">
             <select id="currencyFrom" aria-label="Moneda base">
@@ -1706,16 +2869,15 @@
           <div class="converter-results" id="currencyResults">Consultando tipo de cambio...</div>
           <div class="converter-status" id="currencyStatus">Tasas actuales en línea.</div>
         </article>
-        <article class="quick-card"><div class="label">Viajeros</div><div class="value">2 personas</div></article>
       </section>
 
-      <section class="cost-overview" style="display: none" id="costOverview" hidden>
+      <section class="cost-overview" id="costOverview" hidden>
         <div>
           <div class="label">Presupuesto estimado del itinerario</div>
           <strong id="tripCostTotal">--</strong>
           <p id="tripCostNote">Estimado para 2 personas, sin vuelos internacionales ni hotel.</p>
         </div>
-        <div class="cost-actions" style="display: none">
+        <div class="cost-actions">
           <button class="cost-unlock-button" type="button" id="costUnlockButton">
             <span class="material-symbols-rounded" id="costUnlockIcon">lock</span>
             <span id="costUnlockLabel">Desbloquear montos</span>
@@ -1798,6 +2960,17 @@
 
         <section class="content" id="dayContent"></section>
       </section>
+
+      <nav class="bottom-nav" id="bottomNav" aria-label="Acciones rápidas">
+        <button type="button" data-bottom-action="days"><span class="material-symbols-rounded">calendar_month</span><span>Días</span></button>
+        <button type="button" data-bottom-action="map"><span class="material-symbols-rounded">route</span><span>Mapa</span></button>
+        <button type="button" data-bottom-action="phrases"><span class="material-symbols-rounded">translate</span><span>Frases</span></button>
+        <button type="button" data-bottom-action="costs"><span class="material-symbols-rounded">payments</span><span>Costos</span></button>
+      </nav>
+      <button class="today-mode-exit" type="button" id="todayModeExit">
+        <span class="material-symbols-rounded">close_fullscreen</span>
+        Salir de solo hoy
+      </button>
     </section>
   </main>
 
@@ -5738,6 +6911,17 @@
 
     const content = document.getElementById("dayContent");
     const buttons = document.querySelectorAll(".day-button");
+    buttons.forEach(button => {
+      const label = button.querySelector(".day-info strong");
+      const sublabel = button.querySelector(".day-info span");
+      const day = days[Number(button.dataset.day)];
+      if (label && day) {
+        const compactDate = day.shortDateLabel.split(" ").slice(1).join(" ").replace(/\b\w/g, letter => letter.toUpperCase());
+        label.textContent = compactDate;
+        label.dataset.shortLabel = compactDate;
+      }
+      if (sublabel && day) sublabel.textContent = day.status;
+    });
     const costOverview = document.getElementById("costOverview");
     const tripCostTotal = document.getElementById("tripCostTotal");
     const tripCostNote = document.getElementById("tripCostNote");
@@ -5749,6 +6933,9 @@
     const themeToggle = document.getElementById("themeToggle");
     const themeIcon = document.getElementById("themeIcon");
     const themeLabel = document.getElementById("themeLabel");
+    const quickToggle = document.getElementById("quickToggle");
+    const quickToggleIcon = document.getElementById("quickToggleIcon");
+    const quickToggleLabel = document.getElementById("quickToggleLabel");
     const weatherSummary = document.getElementById("weatherSummary");
     const clothingAdvice = document.getElementById("clothingAdvice");
     const countdownValue = document.getElementById("countdownValue");
@@ -5776,6 +6963,8 @@
     const phraseSpanish = document.getElementById("phraseSpanish");
     const phrasePrev = document.getElementById("phrasePrev");
     const phraseNext = document.getElementById("phraseNext");
+    const bottomNav = document.getElementById("bottomNav");
+    const todayModeExit = document.getElementById("todayModeExit");
 
     let currentDayIndex = 0;
     let mapsPromise;
@@ -5841,6 +7030,16 @@
       const storedTheme = getStoredValue(storageKey("theme"), "");
       const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
       applyTheme(storedTheme || (prefersDark ? "dark" : "light"));
+    }
+
+    function updateQuickToggle() {
+      if (!quickToggle) return;
+      const isOpen = document.body.classList.contains("quick-panel-open");
+      quickToggle.setAttribute("aria-expanded", String(isOpen));
+      quickToggleIcon.textContent = isOpen ? "expand_less" : "expand_more";
+      quickToggleLabel.textContent = isOpen
+        ? "Ocultar clima, conversor y presupuesto"
+        : "Ver clima, conversor y presupuesto";
     }
 
     function tripDateForIndex(index) {
@@ -5956,6 +7155,18 @@
       textarea.remove();
     }
 
+    function setTodayMode(enabled) {
+      document.body.classList.toggle("today-mode", enabled);
+      document.querySelectorAll("[data-day-action='today-mode']").forEach(button => {
+        const label = button.querySelector("[data-action-label]");
+        const icon = button.querySelector(".material-symbols-rounded");
+        if (label) label.textContent = enabled ? "Salir de solo hoy" : "Solo hoy";
+        if (icon) icon.textContent = enabled ? "close_fullscreen" : "today";
+        button.setAttribute("aria-pressed", enabled ? "true" : "false");
+      });
+      if (enabled) window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
     function bindDayUtilityButtons() {
       document.querySelector("[data-day-action='copy']")?.addEventListener("click", async event => {
         const button = event.currentTarget;
@@ -5980,6 +7191,10 @@
 
       document.querySelector("[data-day-action='phrases']")?.addEventListener("click", () => {
         openPhraseModal(currentDayIndex);
+      });
+
+      document.querySelector("[data-day-action='today-mode']")?.addEventListener("click", () => {
+        setTodayMode(!document.body.classList.contains("today-mode"));
       });
     }
 
@@ -6031,6 +7246,7 @@
     function setActiveDay(index) {
       const safeIndex = index >= 0 ? index : 0;
       buttons.forEach(btn => btn.classList.toggle("active", Number(btn.dataset.day) === safeIndex));
+      buttons[safeIndex]?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
       renderDay(safeIndex);
     }
 
@@ -6411,7 +7627,80 @@
         ? "Estimado para 2 personas, sin vuelos internacionales ni hotel. Se puede ocultar cambiando SHOW_COST_ESTIMATES a false."
         : "Presione desbloquear e ingrese la clave para ver presupuestos y costos por actividad.";
       updateCostUnlockButton();
+      costOverview.classList.toggle("locked", !costsUnlocked);
       costOverview.hidden = false;
+    }
+
+    function renderDayInsights(day) {
+      const routes = day.blocks.filter(canShowRouteButton).length;
+      const firstTime = day.blocks[0]?.time || "Flexible";
+      const walkingLabel = dayHasLongWalking(day) ? "Caminar bastante" : "Ritmo cómodo";
+
+      return `
+        <div class="day-insights" aria-label="Datos rápidos del día">
+          <span class="day-insight"><span class="material-symbols-rounded">schedule</span>Inicio: ${firstTime}</span>
+          <span class="day-insight"><span class="material-symbols-rounded">list_alt</span>${day.blocks.length} actividades</span>
+          <span class="day-insight"><span class="material-symbols-rounded">map</span>${routes} rutas</span>
+          <span class="day-insight"><span class="material-symbols-rounded">directions_walk</span>${walkingLabel}</span>
+        </div>
+      `;
+    }
+
+    function renderNextStep(day) {
+      const nextBlock = day.blocks.find(block => block.time && !/por definir|flexible/i.test(block.time)) || day.blocks[0];
+      if (!nextBlock) return "";
+
+      return `
+        <div class="next-step-card">
+          <span class="material-symbols-rounded">near_me</span>
+          <div>
+            <small>Próximo paso</small>
+            <strong>${nextBlock.title}</strong>
+            <p>${nextBlock.time} · ${nextBlock.duration}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderNightSummary(index) {
+      const nextDay = days[index + 1];
+      if (!nextDay) {
+        return `
+          <div class="night-summary-card">
+            <span class="material-symbols-rounded">nightlight</span>
+            <div>
+              <h3>Cierre del viaje</h3>
+              <ul>
+                <li>Revisar documentos, maletas y objetos importantes.</li>
+                <li>Confirmar transporte al aeropuerto y hora de salida.</li>
+                <li>Dejar pasaporte y boarding pass a mano.</li>
+              </ul>
+            </div>
+          </div>
+        `;
+      }
+
+      const nextFirstBlock = nextDay.blocks[0];
+      const nextRoutes = nextDay.blocks.filter(canShowRouteButton).length;
+      const needsTickets = /universal|disney|teamlab|vuelo|shinkansen|pokemon|entrada|ticket|boleto/i.test(dayText(nextDay));
+      const clothing = dayHasLongWalking(nextDay)
+        ? "Ropa cómoda y zapatos listos para caminar."
+        : "Ropa lista según clima y ritmo del día.";
+
+      return `
+        <div class="night-summary-card">
+          <span class="material-symbols-rounded">nightlight</span>
+          <div>
+            <h3>Dejar listo para mañana</h3>
+            <ul>
+              <li>${nextFirstBlock ? `Hora de salida: ${nextFirstBlock.time} · ${nextFirstBlock.title}.` : "Confirmar hora de salida."}</li>
+              <li>${clothing}</li>
+              <li>${needsTickets ? "Entradas, reservas o QR preparados." : "Documentos, Suica y efectivo básico a mano."}</li>
+              <li>${nextRoutes ? `Revisar ${nextRoutes} ruta${nextRoutes > 1 ? "s" : ""} y estación principal.` : "Confirmar traslado principal."}</li>
+            </ul>
+          </div>
+        </div>
+      `;
     }
 
     function renderDay(index) {
@@ -6421,13 +7710,24 @@
       const day = days[index];
       content.innerHTML = `
         <div class="day-header">
-          <div><div class="day-date">${day.dateLabel}</div><h2>${day.title}</h2><p>${day.subtitle}</p></div>
+          <div><div class="day-date">${day.dateLabel}</div><h2>${day.title}</h2><p>${day.subtitle}</p>${renderNextStep(day)}${renderDayInsights(day)}</div>
           <div class="day-meta">
             <div class="day-pills">
               <div class="status-pill">${day.status}</div>
               <div class="energy-pill ${energyClass(day)}">Energía: ${getEnergyLevel(day)}</div>
             </div>
             <div class="day-cost-pill" ${canShowCostAmounts() && day.costEstimateUsd ? "" : "hidden"}>${day.costEstimateUsd ? `Costo estimado: ${costEstimateText(day.costEstimateUsd)}` : ""}</div>
+          </div>
+        </div>
+        <details class="day-summary-card">
+          <summary>
+            <span class="material-symbols-rounded">checklist</span>
+            <strong>Preparación del día</strong>
+            <small>Ruta, revisión previa y acciones rápidas</small>
+          </summary>
+          <div class="day-summary-content">
+            <div class="route-line">${day.route.map((item, i) => `${i > 0 ? "<span>→</span>" : ""}<div>${item}</div>`).join("")}</div>
+            ${renderPrepNote(day, index)}
             <div class="day-actions">
               <button class="day-tool-button" type="button" data-day-action="copy">
                 <span class="material-symbols-rounded">content_copy</span>
@@ -6445,17 +7745,19 @@
                 <span class="material-symbols-rounded">print</span>
                 <span>Imprimir</span>
               </button>
+              <button class="day-tool-button" type="button" data-day-action="today-mode" aria-pressed="${document.body.classList.contains("today-mode") ? "true" : "false"}">
+                <span class="material-symbols-rounded">${document.body.classList.contains("today-mode") ? "close_fullscreen" : "today"}</span>
+                <span data-action-label>${document.body.classList.contains("today-mode") ? "Salir de solo hoy" : "Solo hoy"}</span>
+              </button>
             </div>
           </div>
-        </div>
-        <div class="route-line">${day.route.map((item, i) => `${i > 0 ? "<span>→</span>" : ""}<div>${item}</div>`).join("")}</div>
-        ${renderPrepNote(day, index)}
+        </details>
         <div class="blocks" id="dayBlocks">
           ${day.blocks.map((block, blockIndex) => {
             const hasRouteButton = canShowRouteButton(block);
             const visibleItems = normalItems(block);
             return `
-            <article class="block">
+            <article class="block tone-${block.tone || "travel"}">
               <div class="block-main">
                 <div class="time-box"><strong>${block.time}</strong><span>${block.duration}</span><em>${block.shortDateLabel || day.shortDateLabel || block.dateLabel || day.dateLabel}</em></div>
                 <div>
@@ -6465,9 +7767,11 @@
                   </div>
                   ${visibleItems.length ? `<ul>${visibleItems.map(item => `<li>${item}</li>`).join("")}</ul>` : ""}
                   ${renderBlockCost(block)}
+                  <div class="block-actions">
+                    ${hasRouteButton ? `<button class="icon-button route-button" type="button" data-block="${blockIndex}" aria-label="Ver recorrido de ${block.title}" title="Ver recorrido">${mapIcon}<span class="button-label">Mapa</span></button>` : ""}
+                    <button class="icon-button chevron" type="button" aria-label="Ver detalles">${chevronIcon}<span class="button-label">Detalle</span></button>
+                  </div>
                 </div>
-                ${hasRouteButton ? `<button class="icon-button route-button" type="button" data-block="${blockIndex}" aria-label="Ver recorrido de ${block.title}" title="Ver recorrido">${mapIcon}</button>` : ""}
-                <button class="icon-button chevron" type="button" aria-label="Ver detalles">${chevronIcon}</button>
               </div>
               <div class="block-details">
 			  <div class="detail-row">
@@ -6484,6 +7788,7 @@
             </article>`;
           }).join("")}
         </div>
+        ${renderNightSummary(index)}
         <div class="footer-note"><strong>✓</strong><p>${day.note}</p></div>
       `;
 
@@ -6541,7 +7846,34 @@
       applyTheme(nextTheme);
     });
 
+    quickToggle?.addEventListener("click", () => {
+      document.body.classList.toggle("quick-panel-open");
+      updateQuickToggle();
+    });
+
     costUnlockButton?.addEventListener("click", unlockCostAmounts);
+    todayModeExit?.addEventListener("click", () => setTodayMode(false));
+
+    bottomNav?.addEventListener("click", event => {
+      const button = event.target.closest("button[data-bottom-action]");
+      if (!button) return;
+
+      const action = button.dataset.bottomAction;
+      if (action === "days") {
+        document.querySelector(".day-nav")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+      if (action === "map") openDayRoutesModal(currentDayIndex);
+      if (action === "phrases") openPhraseModal(currentDayIndex);
+      if (action === "costs") {
+        document.body.classList.add("quick-panel-open");
+        updateQuickToggle();
+        if (!costsUnlocked) {
+          unlockCostAmounts();
+        } else {
+          costOverview?.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+    });
 
     function loadGoogleMaps() {
       if (window.google?.maps) return Promise.resolve();
@@ -6974,6 +8306,7 @@
     updateCountdown();
     setInterval(updateCountdown, 3600000);
     initTheme();
+    updateQuickToggle();
     renderCostOverview();
     updateCurrencyConverter();
     setActiveDay(getAutoStartDayIndex());
