@@ -2650,6 +2650,10 @@
       display: none;
     }
 
+    .action-fab {
+      display: none;
+    }
+
     @media (max-width: 900px) {
       .hero {
         min-height: 210px;
@@ -2668,7 +2672,7 @@
       }
 
       .content {
-        padding: 18px 12px 86px;
+        padding: 18px 12px 24px;
       }
 
       .day-header {
@@ -2710,56 +2714,265 @@
 
       .bottom-nav {
         align-items: center;
-        background: rgba(255, 255, 255, 0.88);
-        border: 1px solid rgba(219, 229, 240, 0.88);
-        border-radius: 999px;
-        bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-        box-shadow: 0 18px 42px rgba(16, 36, 63, 0.18);
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid rgba(219, 229, 240, 0.96);
+        border-radius: 22px;
+        box-shadow: 0 22px 54px rgba(16, 36, 63, 0.22);
+        display: none;
+        gap: 6px;
+        grid-template-columns: 1fr;
+        margin: 10px auto calc(12px + env(safe-area-inset-bottom, 0px));
+        min-width: 178px;
+        padding: 8px;
+        position: static;
+        width: auto;
+      }
+
+      body.actions-open .bottom-nav {
         display: grid;
-        gap: 2px;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        left: 50%;
-        max-width: 390px;
-        padding: 6px;
-        position: fixed;
-        transform: translateX(-50%);
-        width: calc(100% - 24px);
-        z-index: 40;
       }
 
       body.dark-theme .bottom-nav {
-        background: rgba(24, 35, 51, 0.92);
-        border-color: rgba(116, 139, 170, 0.28);
+        background: rgba(13, 22, 34, 0.96);
+        border-color: rgba(116, 139, 170, 0.34);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.44);
       }
 
       .bottom-nav button {
         align-items: center;
         background: transparent;
         border: 0;
-        border-radius: 999px;
+        border-radius: 16px;
         color: var(--muted);
         cursor: pointer;
-        display: grid;
-        font-size: 10px;
+        display: flex;
+        font-size: 12px;
         font-weight: 900;
-        gap: 2px;
-        justify-items: center;
-        padding: 8px 6px;
+        gap: 9px;
+        min-height: 42px;
+        padding: 8px 10px;
+        text-align: left;
+        width: 100%;
+      }
+
+      .bottom-nav button[hidden] {
+        display: none !important;
       }
 
       .bottom-nav button:hover,
       .bottom-nav button:focus-visible {
-        background: var(--control-hover);
+        background: rgba(35, 134, 200, 0.10);
         color: var(--navy);
         outline: none;
       }
 
+      body.dark-theme .bottom-nav button {
+        color: #aebdd0;
+      }
+
+      body.dark-theme .bottom-nav button:hover,
+      body.dark-theme .bottom-nav button:focus-visible {
+        background: rgba(79, 140, 255, 0.16);
+        color: #ffffff;
+      }
+
       .bottom-nav .material-symbols-rounded {
-        font-size: 18px;
+        background: rgba(35, 134, 200, 0.10);
+        border-radius: 999px;
+        color: var(--blue);
+        display: grid;
+        font-size: 17px;
+        height: 26px;
+        place-items: center;
+        width: 26px;
+      }
+
+      .action-fab {
+        align-items: center;
+        background: linear-gradient(135deg, #123b65 0%, #2386c8 100%);
+        border: 0;
+        border-radius: 999px;
+        box-shadow: 0 18px 42px rgba(18, 59, 101, 0.32);
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 12px;
+        font-weight: 900;
+        gap: 7px;
+        min-height: 48px;
+        margin: 12px auto 0;
+        padding: 0 16px;
+        position: static;
+        width: fit-content;
+      }
+
+      .action-fab .material-symbols-rounded {
+        font-size: 20px;
+      }
+
+      body.actions-open .action-fab .material-symbols-rounded {
+        transform: rotate(45deg);
+      }
+
+      body.dark-theme .action-fab {
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.42);
+      }
+
+      body.dark-theme .bottom-nav .material-symbols-rounded {
+        background: rgba(79, 140, 255, 0.18);
+        color: #9ed0ff;
       }
 
       body.today-mode .today-mode-exit {
         bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+      }
+    }
+
+    @media (max-width: 620px) {
+      .shell {
+        overflow: hidden;
+      }
+
+      .content {
+        overflow-x: hidden;
+        padding-inline: 10px;
+      }
+
+      .day-header {
+        overflow: hidden;
+      }
+
+      .day-header h2 {
+        font-size: 24px;
+        line-height: 1.08;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+      }
+
+      .day-header p {
+        max-width: 100%;
+      }
+
+      .next-step-card {
+        grid-template-columns: 34px 1fr;
+        gap: 9px;
+        padding: 10px;
+      }
+
+      .next-step-card > .material-symbols-rounded {
+        border-radius: 12px;
+        height: 34px;
+        width: 34px;
+      }
+
+      .next-step-card strong,
+      .next-step-card p {
+        overflow-wrap: anywhere;
+      }
+
+      .day-pills {
+        gap: 7px;
+      }
+
+      .status-pill,
+      .energy-pill {
+        font-size: 11px;
+        padding: 7px 9px;
+      }
+
+      .day-summary-card summary {
+        grid-template-columns: 32px 1fr;
+      }
+
+      .day-summary-card summary > .material-symbols-rounded {
+        height: 32px;
+        width: 32px;
+      }
+
+      .block {
+        border-radius: 20px;
+      }
+
+      .block::before {
+        inset: 14px auto 14px 0;
+        width: 4px;
+      }
+
+      .block-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 13px 12px 13px 16px;
+      }
+
+      .time-box {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        grid-column: auto;
+        justify-content: flex-start;
+        min-height: 0;
+        padding: 8px 10px;
+        width: fit-content;
+      }
+
+      .time-box strong {
+        font-size: 14px;
+      }
+
+      .time-box span {
+        display: none;
+      }
+
+      .time-box em {
+        display: none;
+      }
+
+      .block-title-row {
+        align-items: flex-start;
+        gap: 9px;
+        margin-bottom: 9px;
+      }
+
+      .activity-icon {
+        height: 32px;
+        width: 32px;
+      }
+
+      .block h3 {
+        font-size: 18px;
+        line-height: 1.22;
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .block ul {
+        gap: 7px;
+      }
+
+      .block li {
+        font-size: 13px;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+      }
+
+      .block-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 260px;
+      }
+
+      .block-actions .icon-button {
+        min-width: 0;
+        width: 100%;
+      }
+
+      .block-actions .icon-button:only-child {
+        grid-column: span 1;
+      }
+
+      .night-summary-card {
+        grid-template-columns: 34px 1fr;
       }
     }
 
@@ -2961,12 +3174,16 @@
         <section class="content" id="dayContent"></section>
       </section>
 
-      <nav class="bottom-nav" id="bottomNav" aria-label="Acciones rápidas">
+      <nav class="bottom-nav" id="bottomNav" aria-label="Acciones rápidas" style="display: none;">
         <button type="button" data-bottom-action="days"><span class="material-symbols-rounded">calendar_month</span><span>Días</span></button>
         <button type="button" data-bottom-action="map"><span class="material-symbols-rounded">route</span><span>Mapa</span></button>
         <button type="button" data-bottom-action="phrases"><span class="material-symbols-rounded">translate</span><span>Frases</span></button>
         <button type="button" data-bottom-action="costs"><span class="material-symbols-rounded">payments</span><span>Costos</span></button>
       </nav>
+      <button class="action-fab" type="button" id="actionFab" aria-expanded="false" aria-controls="bottomNav">
+        <span class="material-symbols-rounded">add</span>
+        Acciones
+      </button>
       <button class="today-mode-exit" type="button" id="todayModeExit">
         <span class="material-symbols-rounded">close_fullscreen</span>
         Salir de solo hoy
@@ -6964,6 +7181,7 @@
     const phrasePrev = document.getElementById("phrasePrev");
     const phraseNext = document.getElementById("phraseNext");
     const bottomNav = document.getElementById("bottomNav");
+    const actionFab = document.getElementById("actionFab");
     const todayModeExit = document.getElementById("todayModeExit");
 
     let currentDayIndex = 0;
@@ -7557,6 +7775,10 @@
       costUnlockIcon.textContent = costsUnlocked ? "lock_open" : "lock";
       costUnlockLabel.textContent = costsUnlocked ? "Bloquear montos" : "Desbloquear montos";
       costUnlockButton.setAttribute("aria-pressed", costsUnlocked ? "true" : "false");
+      const costsAction = document.querySelector("[data-bottom-action='costs']");
+      if (costsAction) {
+        costsAction.hidden = !SHOW_COST_ESTIMATES || !costsUnlocked;
+      }
     }
 
     function unlockCostAmounts() {
@@ -7854,9 +8076,16 @@
     costUnlockButton?.addEventListener("click", unlockCostAmounts);
     todayModeExit?.addEventListener("click", () => setTodayMode(false));
 
+    actionFab?.addEventListener("click", () => {
+      const isOpen = document.body.classList.toggle("actions-open");
+      actionFab.setAttribute("aria-expanded", String(isOpen));
+    });
+
     bottomNav?.addEventListener("click", event => {
       const button = event.target.closest("button[data-bottom-action]");
       if (!button) return;
+      document.body.classList.remove("actions-open");
+      actionFab?.setAttribute("aria-expanded", "false");
 
       const action = button.dataset.bottomAction;
       if (action === "days") {
@@ -7865,13 +8094,10 @@
       if (action === "map") openDayRoutesModal(currentDayIndex);
       if (action === "phrases") openPhraseModal(currentDayIndex);
       if (action === "costs") {
+        if (!SHOW_COST_ESTIMATES || !costsUnlocked) return;
         document.body.classList.add("quick-panel-open");
         updateQuickToggle();
-        if (!costsUnlocked) {
-          unlockCostAmounts();
-        } else {
-          costOverview?.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
+        costOverview?.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     });
 
