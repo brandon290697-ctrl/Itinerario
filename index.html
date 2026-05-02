@@ -1463,6 +1463,144 @@
       border-radius: 13px;
     }
 
+    .food-modal .modal-panel {
+      width: min(760px, calc(100vw - 28px));
+      grid-template-rows: auto 1fr;
+    }
+
+    .food-body {
+      display: grid;
+      gap: 14px;
+      overflow: auto;
+      padding: 18px;
+    }
+
+    .food-controls {
+      display: grid;
+      gap: 10px;
+    }
+
+    .food-zone-select {
+      appearance: none;
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 900;
+      min-height: 46px;
+      padding: 0 14px;
+      width: 100%;
+    }
+
+    .food-category-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .food-category-chip {
+      align-items: center;
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 6px;
+      min-height: 36px;
+      padding: 0 12px;
+    }
+
+    .food-category-chip.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--primary-ink);
+    }
+
+    .food-results {
+      display: grid;
+      gap: 10px;
+    }
+
+    .food-place-card {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      display: grid;
+      gap: 9px;
+      padding: 14px;
+    }
+
+    .food-place-card header {
+      align-items: start;
+      display: grid;
+      gap: 8px;
+      grid-template-columns: 1fr auto;
+    }
+
+    .food-place-card h3 {
+      color: var(--navy);
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    .food-place-card .rating {
+      background: rgba(245, 213, 118, 0.24);
+      border: 1px solid rgba(245, 213, 118, 0.44);
+      border-radius: 999px;
+      color: var(--amber-ink);
+      font-size: 12px;
+      font-weight: 900;
+      padding: 6px 9px;
+      white-space: nowrap;
+    }
+
+    .food-place-meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .food-place-meta span {
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 8px;
+    }
+
+    .food-place-card p {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .food-place-card a {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 900;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    .food-status {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.45;
+      padding: 12px;
+    }
+
     #mapCanvas {
       min-height: 420px;
       background: var(--surface-soft);
@@ -3255,6 +3393,7 @@
       <nav class="bottom-nav" id="bottomNav" aria-label="Acciones rápidas">
         <button type="button" data-bottom-action="days"><span class="material-symbols-rounded">calendar_month</span><span>Días</span></button>
         <button type="button" data-bottom-action="map"><span class="material-symbols-rounded">route</span><span>Mapa</span></button>
+        <button type="button" data-bottom-action="food"><span class="material-symbols-rounded">restaurant</span><span>Comida</span></button>
         <button type="button" data-bottom-action="phrases"><span class="material-symbols-rounded">translate</span><span>Frases</span></button>
         <button type="button" data-bottom-action="costs"><span class="material-symbols-rounded">payments</span><span>Costos</span></button>
       </nav>
@@ -3334,6 +3473,30 @@
           <button class="day-tool-button" type="button" id="phrasePrev"><span class="material-symbols-rounded">chevron_left</span>Anterior</button>
           <button class="day-tool-button" type="button" id="phraseNext">Siguiente<span class="material-symbols-rounded">chevron_right</span></button>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal food-modal" id="foodModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="foodModalTitle">
+    <div class="modal-backdrop" data-close-food></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <div class="modal-kicker">Comida cercana</div>
+          <h2 class="modal-title" id="foodModalTitle">Dónde comer cerca</h2>
+          <p class="modal-subtitle" id="foodModalSubtitle">Sugerencias actuales con Google Places según la zona del día.</p>
+        </div>
+        <button class="icon-button" type="button" aria-label="Cerrar comida cercana" data-close-food>
+          <span class="material-symbols-rounded">close</span>
+        </button>
+      </div>
+      <div class="food-body">
+        <div class="food-controls">
+          <select class="food-zone-select" id="foodZoneSelect" aria-label="Zona del día"></select>
+          <div class="food-category-chips" id="foodCategoryChips" aria-label="Tipo de comida"></div>
+        </div>
+        <div class="food-status" id="foodStatus">Elegí una zona y tipo de comida.</div>
+        <div class="food-results" id="foodResults"></div>
       </div>
     </div>
   </section>
@@ -7607,6 +7770,13 @@
     const phraseSpanish = document.getElementById("phraseSpanish");
     const phrasePrev = document.getElementById("phrasePrev");
     const phraseNext = document.getElementById("phraseNext");
+    const foodModal = document.getElementById("foodModal");
+    const foodModalTitle = document.getElementById("foodModalTitle");
+    const foodModalSubtitle = document.getElementById("foodModalSubtitle");
+    const foodZoneSelect = document.getElementById("foodZoneSelect");
+    const foodCategoryChips = document.getElementById("foodCategoryChips");
+    const foodStatus = document.getElementById("foodStatus");
+    const foodResults = document.getElementById("foodResults");
     const bottomNav = document.getElementById("bottomNav");
     const actionFab = document.getElementById("actionFab");
     const todayModeExit = document.getElementById("todayModeExit");
@@ -7620,6 +7790,11 @@
     let phraseTimer;
     let activePhrases = [];
     let activePhraseIndex = 0;
+    let activeFoodDayIndex = 0;
+    let activeFoodCategory = "restaurant";
+    let foodPlacesMap;
+    let foodPlacesService;
+    let foodGeocoder;
     let map;
     let directionsRenderer;
 
@@ -7875,6 +8050,10 @@
         openPhraseModal(currentDayIndex);
       });
 
+      document.querySelector("[data-day-action='food']")?.addEventListener("click", () => {
+        openFoodModal(currentDayIndex);
+      });
+
       document.querySelector("[data-day-action='today-mode']")?.addEventListener("click", () => {
         setTodayMode(!document.body.classList.contains("today-mode"));
       });
@@ -8098,6 +8277,232 @@
       phraseModal.classList.remove("open");
       phraseModal.setAttribute("aria-hidden", "true");
       clearInterval(phraseTimer);
+    }
+
+    const foodCategories = [
+      { key: "restaurant", label: "Cerca", icon: "restaurant", keyword: "restaurant" },
+      { key: "ramen", label: "Ramen", icon: "ramen_dining", keyword: "ramen" },
+      { key: "sushi", label: "Sushi", icon: "set_meal", keyword: "sushi" },
+      { key: "cafe", label: "Café", icon: "local_cafe", keyword: "cafe" },
+      { key: "curry", label: "Curry", icon: "rice_bowl", keyword: "curry" },
+      { key: "izakaya", label: "Izakaya", icon: "sports_bar", keyword: "izakaya" },
+      { key: "dessert", label: "Postres", icon: "icecream", keyword: "dessert cafe" },
+      { key: "convenience", label: "Konbini", icon: "storefront", keyword: "convenience store" }
+    ];
+
+    function cleanPlaceQuery(value) {
+      if (!value || /^https?:/i.test(value)) return "";
+      return value.replace(/→/g, " ").trim();
+    }
+
+    function addFoodZone(zones, label, query) {
+      query = cleanPlaceQuery(query);
+      if (!query) return;
+      const key = query.toLowerCase();
+      if (zones.some(zone => zone.key === key)) return;
+      zones.push({ key, label: label.replace(/^.*?:\s*/, "").slice(0, 54), query });
+    }
+
+    function getFoodZonesForDay(index) {
+      const day = days[index];
+      const zones = [];
+      let lastPlace = "";
+
+      day.blocks.forEach(block => {
+        if (block.routeInfo?.destination) lastPlace = cleanPlaceQuery(block.routeInfo.destination) || lastPlace;
+        if (block.tone === "food") addFoodZone(zones, block.title, lastPlace || `${getDayBase(index)}, Japan`);
+      });
+
+      day.blocks.forEach(block => {
+        if (!block.routeInfo) return;
+        addFoodZone(zones, block.title, block.routeInfo.destination);
+      });
+
+      if (!zones.length) addFoodZone(zones, getDayBase(index), `${getDayBase(index)}, Japan`);
+      return zones.slice(0, 8);
+    }
+
+    async function ensurePlacesService() {
+      await loadGoogleMaps();
+      if (!google.maps.places && google.maps.importLibrary) {
+        await google.maps.importLibrary("places");
+      }
+      if (!google.maps.places) throw new Error("Places API no está disponible.");
+
+      if (!foodPlacesService) {
+        const mapNode = document.createElement("div");
+        mapNode.style.cssText = "height:1px;width:1px;position:absolute;left:-9999px;top:-9999px;";
+        document.body.appendChild(mapNode);
+        foodPlacesMap = new google.maps.Map(mapNode, { center: { lat: 34.6937, lng: 135.5023 }, zoom: 13 });
+        foodPlacesService = new google.maps.places.PlacesService(foodPlacesMap);
+        foodGeocoder = new google.maps.Geocoder();
+      }
+    }
+
+    function geocodeFoodZone(query) {
+      return new Promise((resolve, reject) => {
+        foodGeocoder.geocode({ address: query }, (results, status) => {
+          if (status !== "OK" || !results?.[0]) {
+            reject(new Error("No se pudo ubicar la zona."));
+            return;
+          }
+          resolve(results[0].geometry.location);
+        });
+      });
+    }
+
+    function nearbyFoodSearch(location, keyword) {
+      return new Promise((resolve, reject) => {
+        foodPlacesService.nearbySearch({
+          location,
+          radius: 1000,
+          keyword
+        }, (results, status) => {
+          if (status === google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
+            resolve([]);
+            return;
+          }
+          if (status !== google.maps.places.PlacesServiceStatus.OK) {
+            reject(new Error("No se pudo consultar Google Places."));
+            return;
+          }
+          resolve(results || []);
+        });
+      });
+    }
+
+    function distanceFromLatLng(origin, destination) {
+      const toRad = value => value * Math.PI / 180;
+      const lat1 = origin.lat();
+      const lon1 = origin.lng();
+      const lat2 = destination.lat();
+      const lon2 = destination.lng();
+      const dLat = toRad(lat2 - lat1);
+      const dLon = toRad(lon2 - lon1);
+      const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+      return 6371000 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    }
+
+    function formatDistanceMeters(meters) {
+      if (!Number.isFinite(meters)) return "distancia no disponible";
+      return meters < 1000 ? `${Math.round(meters)} m` : `${(meters / 1000).toFixed(1)} km`;
+    }
+
+    function priceLevelText(level) {
+      if (level == null) return "precio no indicado";
+      return ["gratis", "económico", "medio", "alto", "premium"][level] || "precio variable";
+    }
+
+    function foodTypeText(place, fallback) {
+      const types = place.types || [];
+      if (types.includes("cafe") || /cafe|coffee/i.test(place.name)) return "café";
+      if (types.includes("bakery")) return "panadería";
+      if (types.includes("meal_takeaway")) return "para llevar";
+      if (types.includes("convenience_store")) return "konbini";
+      if (/ramen/i.test(place.name)) return "ramen";
+      if (/sushi/i.test(place.name)) return "sushi";
+      if (/curry/i.test(place.name)) return "curry";
+      return fallback.label.toLowerCase();
+    }
+
+    function googleMapsPlaceUrl(place) {
+      const location = place.geometry?.location;
+      if (!location) return "#";
+      const query = encodeURIComponent(`${location.lat()},${location.lng()}`);
+      return `https://www.google.com/maps/search/?api=1&query=${query}&query_place_id=${place.place_id}`;
+    }
+
+    function renderFoodPlaces(results, origin, category) {
+      if (!results.length) {
+        foodResults.innerHTML = "";
+        foodStatus.textContent = "No encontré lugares para ese tipo de comida cerca de esta zona. Probá otra categoría o zona.";
+        return;
+      }
+
+      const places = results
+        .filter(place => place.geometry?.location)
+        .map(place => ({ place, distance: distanceFromLatLng(origin, place.geometry.location) }))
+        .sort((a, b) => {
+          const ratingDiff = (b.place.rating || 0) - (a.place.rating || 0);
+          return Math.abs(ratingDiff) > 0.2 ? ratingDiff : a.distance - b.distance;
+        })
+        .slice(0, 8);
+
+      foodStatus.textContent = "Resultados actuales de Google Places. Verificá horario y disponibilidad antes de ir.";
+      foodResults.innerHTML = places.map(({ place, distance }) => {
+        const rating = place.rating ? `${place.rating.toFixed(1)} (${place.user_ratings_total || 0})` : "Sin rating";
+        const open = place.opening_hours?.open_now;
+        const openText = open === true ? "Abierto ahora" : open === false ? "Cerrado ahora" : "Horario no indicado";
+        return `
+          <article class="food-place-card">
+            <header>
+              <h3>${place.name}</h3>
+              <span class="rating">★ ${rating}</span>
+            </header>
+            <div class="food-place-meta">
+              <span>${foodTypeText(place, category)}</span>
+              <span>${formatDistanceMeters(distance)}</span>
+              <span>${priceLevelText(place.price_level)}</span>
+              <span>${openText}</span>
+            </div>
+            <p>${place.vicinity || "Dirección no disponible."}</p>
+            <a href="${googleMapsPlaceUrl(place)}" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          </article>`;
+      }).join("");
+    }
+
+    async function searchFoodPlaces() {
+      const zones = getFoodZonesForDay(activeFoodDayIndex);
+      const zone = zones[Number(foodZoneSelect.value)] || zones[0];
+      const category = foodCategories.find(item => item.key === activeFoodCategory) || foodCategories[0];
+
+      foodStatus.textContent = `Buscando ${category.label.toLowerCase()} cerca de ${zone.label}...`;
+      foodResults.innerHTML = "";
+
+      try {
+        await ensurePlacesService();
+        const location = await geocodeFoodZone(zone.query);
+        const results = await nearbyFoodSearch(location, category.keyword);
+        renderFoodPlaces(results, location, category);
+      } catch (error) {
+        foodResults.innerHTML = "";
+        foodStatus.textContent = "No se pudo consultar comida cercana. Revisá que la API key tenga Places API habilitada.";
+      }
+    }
+
+    function renderFoodCategories() {
+      foodCategoryChips.innerHTML = foodCategories.map(category => `
+        <button class="food-category-chip ${category.key === activeFoodCategory ? "active" : ""}" type="button" data-food-category="${category.key}">
+          <span class="material-symbols-rounded">${category.icon}</span>${category.label}
+        </button>`).join("");
+
+      foodCategoryChips.querySelectorAll("[data-food-category]").forEach(button => {
+        button.addEventListener("click", () => {
+          activeFoodCategory = button.dataset.foodCategory;
+          renderFoodCategories();
+          searchFoodPlaces();
+        });
+      });
+    }
+
+    function openFoodModal(index) {
+      activeFoodDayIndex = index;
+      activeFoodCategory = "restaurant";
+      const day = days[index];
+      const zones = getFoodZonesForDay(index);
+
+      foodModalTitle.textContent = "Comida cercana";
+      foodModalSubtitle.textContent = `${day.dateLabel} · ${day.title}`;
+      foodZoneSelect.innerHTML = zones.map((zone, zoneIndex) => `<option value="${zoneIndex}">${zone.label}</option>`).join("");
+      renderFoodCategories();
+      foodModal.classList.add("open");
+      foodModal.setAttribute("aria-hidden", "false");
+      searchFoodPlaces();
+    }
+
+    function closeFoodModal() {
+      foodModal.classList.remove("open");
+      foodModal.setAttribute("aria-hidden", "true");
     }
 
     async function updateWeatherSummary(index) {
@@ -8450,6 +8855,10 @@
                 <span class="material-symbols-rounded">translate</span>
                 <span>Frases</span>
               </button>
+              <button class="day-tool-button" type="button" data-day-action="food">
+                <span class="material-symbols-rounded">restaurant</span>
+                <span>Comida</span>
+              </button>
               <button class="day-tool-button" type="button" data-day-action="print">
                 <span class="material-symbols-rounded">print</span>
                 <span>Imprimir</span>
@@ -8579,6 +8988,7 @@
         document.querySelector(".day-nav")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
       }
       if (action === "map") openDayRoutesModal(currentDayIndex);
+      if (action === "food") openFoodModal(currentDayIndex);
       if (action === "phrases") openPhraseModal(currentDayIndex);
       if (action === "costs") {
         if (!SHOW_COST_ESTIMATES || !costsUnlocked) return;
@@ -8595,7 +9005,7 @@
       mapsPromise = new Promise((resolve, reject) => {
         window.initTripMap = () => resolve();
         const script = document.createElement("script");
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&callback=initTripMap&language=es&region=CR&v=weekly&loading=async`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&callback=initTripMap&language=es&region=CR&v=weekly&loading=async&libraries=places`;
         script.async = true;
         script.defer = true;
         script.onerror = () => reject(new Error("No se pudo cargar Google Maps."));
@@ -8994,6 +9404,12 @@
       element.addEventListener("click", closePhraseModal);
     });
 
+    document.querySelectorAll("[data-close-food]").forEach(element => {
+      element.addEventListener("click", closeFoodModal);
+    });
+
+    foodZoneSelect?.addEventListener("change", searchFoodPlaces);
+
     document.addEventListener("keydown", event => {
       if (event.key === "Escape" && modal.classList.contains("open")) {
         modal.classList.remove("open");
@@ -9001,6 +9417,9 @@
       }
       if (event.key === "Escape" && phraseModal.classList.contains("open")) {
         closePhraseModal();
+      }
+      if (event.key === "Escape" && foodModal.classList.contains("open")) {
+        closeFoodModal();
       }
     });
 
