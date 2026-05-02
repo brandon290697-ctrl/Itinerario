@@ -604,7 +604,7 @@
 .day-button:nth-of-type(2) .day-icon { color: #19705a; }
 /* Día 2 - Universal Studios */
 .day-button:nth-of-type(3) .day-icon { color: #d84f45; }
-/* Día 3 - Osaka Castle */
+/* Día 3 - Yasaka, Castillo, Umeda y Pokémon */
 .day-button:nth-of-type(4) .day-icon { color: #b45309; }
 /* Día 4 - Darumas + teamLab */
 .day-button:nth-of-type(5) .day-icon { color: #7c3aed; }
@@ -849,6 +849,50 @@
       font-size: 13px;
       font-weight: 700;
       line-height: 1.4;
+    }
+
+    .private-plan-card {
+      background: linear-gradient(135deg, rgba(216, 79, 69, 0.10), rgba(35, 134, 200, 0.08));
+      border: 1px solid rgba(216, 79, 69, 0.22);
+      border-radius: var(--radius);
+      color: var(--muted);
+      display: grid;
+      gap: 10px;
+      padding: 13px;
+    }
+
+    .private-plan-card strong {
+      color: var(--navy);
+      display: block;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .private-plan-card p,
+    .private-plan-card li {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .private-plan-card ul {
+      display: grid;
+      gap: 6px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .private-plan-card li::before {
+      color: var(--coral);
+      content: "•";
+      margin-right: 7px;
+    }
+
+    .private-plan-card a {
+      color: var(--blue);
+      font-weight: 900;
+      text-decoration: none;
     }
 
     .day-summary-card {
@@ -2836,10 +2880,20 @@
       .content {
         overflow-x: hidden;
         padding-inline: 10px;
+        padding-bottom: 112px;
       }
 
       .day-header {
         overflow: hidden;
+      }
+
+      .day-nav,
+      .day-header,
+      .day-summary-card,
+      .block,
+      .night-summary-card,
+      .footer-note {
+        max-width: 100%;
       }
 
       .day-header h2 {
@@ -2856,7 +2910,14 @@
       .next-step-card {
         grid-template-columns: 34px 1fr;
         gap: 9px;
+        max-width: 100%;
+        min-width: 0;
+        overflow: hidden;
         padding: 10px;
+      }
+
+      .next-step-card > div {
+        min-width: 0;
       }
 
       .next-step-card > .material-symbols-rounded {
@@ -2871,7 +2932,18 @@
       }
 
       .day-pills {
+        flex-wrap: wrap;
         gap: 7px;
+        overflow: visible;
+      }
+
+      .day-insights {
+        flex-wrap: wrap;
+        overflow: visible;
+      }
+
+      .day-insight {
+        flex: 0 1 auto;
       }
 
       .status-pill,
@@ -2902,7 +2974,12 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 12px;
+        min-width: 0;
         padding: 13px 12px 13px 16px;
+      }
+
+      .block-main > div:nth-child(2) {
+        min-width: 0;
       }
 
       .time-box {
@@ -2932,6 +3009,7 @@
         align-items: flex-start;
         gap: 9px;
         margin-bottom: 9px;
+        min-width: 0;
       }
 
       .activity-icon {
@@ -3104,7 +3182,7 @@
           <button class="day-button active" data-day="0"><span class="day-icon"><span class="material-symbols-rounded">flight_takeoff</span></span><span class="day-info"><strong>Día 0</strong><span>Vuelo internacional</span></span></button>
           <button class="day-button" data-day="1"><span class="day-icon"><span class="material-symbols-rounded">flight_land</span></span><span class="day-info"><strong>Día 1</strong><span>Llegada / Osaka</span></span></button>
           <button class="day-button" data-day="2"><span class="day-icon"><span class="material-symbols-rounded">attractions</span></span><span class="day-info"><strong>Día 2</strong><span>Universal Studios</span></span></button>
-          <button class="day-button" data-day="3"><span class="day-icon"><span class="material-symbols-rounded">castle</span></span><span class="day-info"><strong>Día 3</strong><span>Osaka Castle</span></span></button>
+          <button class="day-button" data-day="3"><span class="day-icon"><span class="material-symbols-rounded">castle</span></span><span class="day-info"><strong>Día 3</strong><span>Yasaka + Pokémon</span></span></button>
           <button class="day-button" data-day="4"><span class="day-icon"><span class="material-symbols-rounded">auto_awesome</span></span><span class="day-info"><strong>Día 4</strong><span>Darumas + teamLab</span></span></button>
 		  <button class="day-button" data-day="5"><span class="day-icon"><span class="material-symbols-rounded">train</span></span><span class="day-info"><strong>Día 5</strong><span>Osaka → Kyoto</span></span></button>
 		  <button class="day-button" data-day="6"><span class="day-icon"><span class="material-symbols-rounded">temple_buddhist</span></span><span class="day-info"><strong>Día 6</strong><span>Higashiyama</span></span></button>
@@ -3174,7 +3252,7 @@
         <section class="content" id="dayContent"></section>
       </section>
 
-      <nav class="bottom-nav" id="bottomNav" aria-label="Acciones rápidas" style="display: none;">
+      <nav class="bottom-nav" id="bottomNav" aria-label="Acciones rápidas">
         <button type="button" data-bottom-action="days"><span class="material-symbols-rounded">calendar_month</span><span>Días</span></button>
         <button type="button" data-bottom-action="map"><span class="material-symbols-rounded">route</span><span>Mapa</span></button>
         <button type="button" data-bottom-action="phrases"><span class="material-symbols-rounded">translate</span><span>Frases</span></button>
@@ -3276,6 +3354,8 @@
 
     const SHOW_COST_ESTIMATES = true;
     const COST_UNLOCK_PASSWORD = "2997";
+    const PROPOSAL_DAY_UNLOCK_PASSWORD = "871987188717";
+    const PROPOSAL_DAY_INDEX = 3;
     const USD_TO_CRC_ESTIMATE = 460;
     const JPY_TO_USD_ESTIMATE = 0.0068;
 
@@ -3836,13 +3916,13 @@
     note: "Meta del día: llegar temprano, priorizar Nintendo y Harry Potter, disfrutar Halloween Horror Nights y volver al hotel con margen para recuperarse."
   },
   {
-    title: "Día 3 - Yasaka, Castillo, Pokémon y Dotonbori",
-    subtitle: "Viernes 9 de octubre - Namba Yasaka, Osaka Castle, Umeda y noche en Dotonbori",
+    title: "Día 3 - Yasaka, Castillo, Umeda, Pokémon y Dotonbori",
+    subtitle: "Viernes 9 de octubre - Namba Yasaka, Osaka Castle, Umeda, Pokémon Center Osaka, Pokémon Center Osaka DX, posible Pokémon Café y Dotonbori",
     dateLabel: "Viernes 9 de octubre de 2026",
     shortDateLabel: "Vie 9 oct",
     status: "Día completo",
-    costEstimateUsd: { low: 120, high: 215, note: "templo, castillo, comidas, Pokémon y transporte" },
-    route: ["Cross Hotel", "Namba Yasaka", "Osaka Castle", "Umeda", "Pokémon Center", "Dotonbori"],
+    costEstimateUsd: { low: 170, high: 320, note: "templo, castillo, comidas, Umeda, Pokémon Center Osaka, Pokémon Center Osaka DX, posible Pokémon Café, compras y transporte" },
+    route: ["Cross Hotel", "Namba Yasaka", "Osaka Castle", "Umeda", "Pokémon Center Osaka - Umeda", "Shinsaibashi", "Pokémon Center Osaka DX", "Pokémon Café Osaka", "Dotonbori", "Cross Hotel"],
     blocks: [
       {
         time: "6:30 am",
@@ -3991,7 +4071,7 @@
         icon: "subway",
         tone: "travel",
         items: ["Osaka Metro Chuo con conexión a Midosuji.", "Llegada a Umeda para almorzar.", "Costo estimado 2 personas: $4 - $5."],
-        detail: "Regreso a Umeda para agrupar almuerzo, Pokémon Center y tarde libre.",
+        detail: "Regreso a Umeda para almorzar y empezar la parte moderna/comercial del día.",
         routeInfo: {
           mode: "transit",
           origin: "Morinomiya Station, Osaka, Japan",
@@ -4010,78 +4090,128 @@
         title: "Almuerzo en Umeda",
         icon: "restaurant",
         tone: "food",
-        items: ["Opciones: ramen, curry, donburi o sushi.", "Presupuesto 2 personas: $28 - $40.", "Elegir algo cerca del complejo para no perder tiempo."],
-        detail: "Umeda tiene muchas opciones; conviene no cruzar demasiado para llegar luego al Pokémon Center.",
+        items: ["Llegar a Umeda después del Castillo de Osaka.", "Opciones: ramen, curry, donburi, sushi o comida rápida japonesa.", "Presupuesto 2 personas: $28 - $45.", "Aprovechar para descansar un rato antes de seguir caminando por la zona."],
+        detail: "Umeda funciona como pausa fuerte del día: almuerzo, tiendas y ambiente urbano moderno de Osaka.",
         showMap: false
       },
       {
-        time: "1:40 pm",
-        duration: "tienda",
+        time: "1:25 pm",
+        duration: "45 min",
         title: "Pokémon Center Osaka - Umeda",
         icon: "toys",
         tone: "shopping",
-        items: ["Caminar dentro del complejo hacia Pokémon Center Osaka.", "Visita estimada: 1:40 - 3:30 pm.", "Compras opcionales: $20 - $70."],
-        detail: "Bloque de tienda y souvenirs. Definir presupuesto antes ayuda a no pasarse.",
-        showMap: false
+        items: ["Visita al Pokémon Center Osaka en Umeda.", "Ideal para comparar productos con Osaka DX o buscar artículos diferentes.", "Mantenerlo controlado para no gastar todo el tiempo aquí.", "Compras opcionales 2 personas: $30 - $90."],
+        detail: "Este bloque se mantiene porque quiere conocer Umeda. La visita debe ser relativamente corta para todavía llegar bien a Shinsaibashi.",
+        routeInfo: {
+          mode: "walking",
+          origin: "Umeda Station, Osaka, Japan",
+          destination: "Pokemon Center Osaka, Osaka Station City, Osaka, Japan",
+          note: "Caminata dentro de la zona de Osaka/Umeda hacia Pokémon Center Osaka."
+        }
       },
       {
-        time: "3:30 pm",
-        duration: "libre",
-        title: "Tarde libre en Umeda",
-        icon: "shopping_bag",
+        time: "2:15 pm",
+        duration: "45 min",
+        title: "Conocer Umeda",
+        icon: "location_city",
         tone: "shopping",
-        items: ["Arcades, cafés o centros comerciales.", "Snacks 2 personas: $8 - $14.", "Buen espacio para descansar o comprar sin correr."],
-        detail: "Mantenerlo flexible. El objetivo es bajar ritmo después del castillo y Pokémon Center.",
+        items: ["Caminar por la zona de Umeda, centros comerciales y alrededores de Osaka Station.", "Ver el ambiente moderno de Osaka, tiendas y edificios altos.", "Si hay energía, considerar una parada breve por Grand Front Osaka o la zona de HEP Five.", "Mantener este bloque flexible según cansancio y clima."],
+        detail: "La idea no es recorrer todo Umeda a profundidad, sino conocer la zona, sentir el contraste con Namba/Dotonbori y aprovechar que ya están ahí.",
         showMap: false
       },
       {
-        time: "5:00 pm",
+        time: "3:00 pm",
         duration: "10-15 min",
-        title: "Metro: Umeda → Namba",
+        title: "Metro: Umeda → Shinsaibashi",
         icon: "subway",
         tone: "travel",
-        items: ["Osaka Metro Midosuji Line de regreso a Namba.", "Costo estimado 2 personas: $3 - $4."],
-        detail: "Regreso directo desde Umeda hacia Namba para cenar y pasear en Dotonbori.",
+        items: ["Osaka Metro Midosuji Line desde Umeda hacia Shinsaibashi.", "Bajarse en Shinsaibashi Station.", "Costo estimado 2 personas: $3 - $4."],
+        detail: "Traslado directo para llegar a Daimaru Shinsaibashi, donde están Pokémon Center Osaka DX y Pokémon Café Osaka.",
         routeInfo: {
           mode: "transit",
           origin: "Umeda Station, Osaka, Japan",
-          destination: "Namba Station Midosuji Line, Osaka, Japan",
-          note: "Osaka Metro Midosuji Line desde Umeda hasta Namba.",
+          destination: "Shinsaibashi Station, Osaka, Japan",
+          note: "Osaka Metro Midosuji Line desde Umeda hasta Shinsaibashi.",
           fixedDuration: "10-15 min",
           fixedDistance: "Midosuji Line",
           fareEstimateJpy: 240,
           fareEstimateLabel: "por persona",
-          fallbackMessage: "Tramo fijo de regreso a Namba por Midosuji Line."
+          fallbackMessage: "Tramo fijo hacia Shinsaibashi por Midosuji Line."
         }
       },
       {
+        time: "3:20 pm",
+        duration: "1h",
+        title: "Pokémon Center Osaka DX",
+        icon: "toys",
+        tone: "shopping",
+        items: ["Visita al Pokémon Center Osaka DX en Daimaru Shinsaibashi.", "Ideal para fotos, peluches, artículos exclusivos y souvenirs.", "Como ya visitaron Umeda, aquí conviene enfocarse en lo diferente o en el ambiente del lugar.", "Compras opcionales 2 personas: $30 - $100."],
+        detail: "Este Pokémon Center queda perfecto porque está cerca del Pokémon Café Osaka, Shinsaibashi, Dotonbori y el hotel.",
+        routeInfo: {
+          mode: "walking",
+          origin: "Shinsaibashi Station, Osaka, Japan",
+          destination: "Pokemon Center Osaka DX, Daimaru Shinsaibashi, Osaka, Japan",
+          note: "Caminata corta desde Shinsaibashi Station hasta Daimaru Shinsaibashi."
+        }
+      },
+      {
+        time: "4:30 pm",
+        duration: "reservación si se consigue",
+        title: "Pokémon Café Osaka",
+        icon: "local_cafe",
+        tone: "food",
+        items: ["Intentar conseguir reservación para Pokémon Café Osaka.", "Está junto al Pokémon Center Osaka DX, por eso encaja mejor después de Shinsaibashi.", "Presupuesto 2 personas: $35 - $60 según platos, bebidas y postres.", "Si no se consigue reservación, usar este bloque para más Shinsaibashi, compras o descanso."],
+        detail: "Este sería el cierre ideal de la parte Pokémon del día. Si no hay reserva, el día sigue funcionando bien porque ya visitaron Umeda y Osaka DX.",
+        showMap: false
+      },
+      {
         time: "5:45 pm",
+        duration: "libre",
+        title: "Shinsaibashi y descanso flexible",
+        icon: "shopping_bag",
+        tone: "shopping",
+        items: ["Pasear por Shinsaibashi-suji Shopping Street.", "Ver tiendas, arcades o comprar snacks.", "Buen momento para volver al hotel a dejar compras si llevan muchas bolsas.", "Snacks 2 personas: $8 - $16."],
+        detail: "Bloque flexible para bajar ritmo después del castillo, Umeda y la parte Pokémon. Como el hotel queda cerca, pueden decidir si descansan o siguen caminando.",
+        routeInfo: {
+          mode: "walking",
+          origin: "Pokemon Center Osaka DX, Daimaru Shinsaibashi, Osaka, Japan",
+          destination: "Shinsaibashi-Suji Shopping Street, Osaka, Japan",
+          note: "Caminata por la zona comercial de Shinsaibashi."
+        }
+      },
+      {
+        time: "6:45 pm",
         duration: "cena",
         title: "Cena en Dotonbori",
         icon: "ramen_dining",
         tone: "food",
-        items: ["Opciones: okonomiyaki, yakisoba, kushikatsu o izakaya.", "Presupuesto 2 personas: $30 - $45."],
+        items: ["Opciones: okonomiyaki, yakisoba, kushikatsu o izakaya.", "Presupuesto 2 personas: $30 - $50.", "Si ya comieron fuerte en Pokémon Café, hacer solo cena ligera o postres."],
         detail: "Cierre gastronómico del día en la zona más conveniente para volver al hotel.",
-        showMap: false
+        routeInfo: {
+          mode: "walking",
+          origin: "Daimaru Shinsaibashi, Osaka, Japan",
+          destination: "Dotonbori, Osaka, Japan",
+          note: "Caminata desde Daimaru Shinsaibashi hacia Dotonbori."
+        }
       },
       {
-        time: "7:00 pm",
+        time: "8:00 pm",
         duration: "paseo corto",
         title: "Dotonbori nocturno",
         icon: "nightlife",
         tone: "night",
-        items: ["Canal, Glico, tiendas finales y fotos.", "Mantenerlo flexible según energía."],
+        items: ["Canal, Glico, tiendas finales y fotos.", "Mantenerlo flexible según energía.", "Buen momento para fotos nocturnas sin hacer el día demasiado pesado."],
         detail: "Paseo final sin presión, con margen para volver temprano si están cansados.",
         routeInfo: {
           mode: "walking",
-          origin: "Namba Station Midosuji Line, Osaka, Japan",
-          destination: "Dotonbori, Osaka, Japan",
-          note: "Caminata desde Namba hacia Dotonbori."
+          origin: "Dotonbori, Osaka, Japan",
+          destination: "Ebisu Bridge, Dotonbori, Osaka, Japan",
+          note: "Paseo caminando por Dotonbori y zona del Glico."
         }
       },
       {
-        time: "8:45 pm",
-        duration: "15 min",
+        time: "9:15 pm",
+        duration: "10-15 min",
         title: "Regreso al Cross Hotel Osaka",
         icon: "hotel",
         tone: "hotel",
@@ -4095,7 +4225,7 @@
         }
       }
     ],
-    note: "Meta del día: combinar templo, castillo, compras y una noche tranquila en Dotonbori sin alargar demasiado la jornada."
+    note: "Meta del día: combinar Namba Yasaka, Castillo de Osaka, una visita real a Umeda, Pokémon Center Osaka en Umeda, Pokémon Center Osaka DX, posible Pokémon Café Osaka y cierre en Dotonbori. Es un día cargado, pero funciona si Umeda se mantiene como recorrido urbano breve y el Pokémon Café queda sujeto a reservación."
   },
   {
     title: "Día 4 - Katsō-ji, teamLab y despedida de Osaka",
@@ -7126,19 +7256,316 @@
 }
 ];
 
+    const publicDay3 = days[PROPOSAL_DAY_INDEX];
+    const proposalDay3 = {
+      title: "Día 3 oculto - Propuesta en Osaka Castle Park y cena romántica",
+      subtitle: "Viernes 9 de octubre - Día especial privado: propuesta sorpresa, fotos con Manu, tarde tranquila y cena romántica en Osaka",
+      dateLabel: "Viernes 9 de octubre de 2026",
+      shortDateLabel: "Vie 9 oct",
+      status: "Día oculto",
+      hidden: true,
+      energy: "medio",
+      costEstimateUsd: { low: 420, high: 650, note: "Uber/taxi, sesión con Manu, posible GoPro, desayuno, almuerzo, detalles románticos, transporte, cena especial y posible bar/postre" },
+      privateNote: "Este día no debe mostrarse en el itinerario compartido con Mar. Es el día de la propuesta sorpresa.",
+      route: ["Cross Hotel Osaka", "Jardín japonés con lago - Osaka Castle Park", "Osaka Castle Park", "Cross Hotel Osaka", "Namba", "Table36 - Swissôtel Nankai Osaka", "Dotonbori", "Cross Hotel Osaka"],
+      prepNote: {
+        title: "Importante antes de salir",
+        text: "Revisar anillo, batería del celular, efectivo, pañuelo, perfume y ubicación compartida con Manu. Mantener la excusa simple: paseo temprano por Osaka Castle Park porque se ve más bonito y menos lleno."
+      },
+      proposalDetails: {
+        photographer: "Manu",
+        date: "October 9th, 2026",
+        time: "8:00 AM - 9:00 AM",
+        location: "Japanese garden with the pond at Osaka Castle Park",
+        mapsUrl: "https://maps.app.goo.gl/GsusDNKETXPhAnGSA",
+        bookingStatus: "Confirmado",
+        depositStatus: "Pagado",
+        plan: [
+          "Compartir ubicación en vivo por Google Maps el día de la sesión.",
+          "Avisarle a Manu cómo van vestidos.",
+          "Manu fingirá ser un turista y pedirá ayuda para tomarle una foto.",
+          "Mientras Mar toma la foto, preparar discretamente el anillo.",
+          "Luego Manu ofrecerá tomarles una foto a ambos.",
+          "Manu los guiará para una pose espalda con espalda.",
+          "Cuando Mar esté de espaldas, colocarse en posición de propuesta.",
+          "Manu capturará el momento completo con cámara."
+        ],
+        balanceNote: "Confirmar antes del viaje si queda saldo pendiente en efectivo el día de la sesión."
+      },
+      insights: [
+        { icon: "favorite", text: "Día emocionalmente importante" },
+        { icon: "photo_camera", text: "Fotos con Manu de 8:00 am a 9:00 am" },
+        { icon: "restaurant", text: "Cena romántica con vista" }
+      ],
+      dinnerRecommendation: {
+        mainOption: {
+          name: "Table36",
+          location: "Swissôtel Nankai Osaka, piso 36",
+          why: "Vista panorámica de Osaka, ambiente elegante, ubicación conveniente desde Namba y sensación de celebración especial.",
+          reservationNote: "Reservar con anticipación y pedir mesa con vista. En la nota indicar que es una cena de compromiso."
+        },
+        reservationMessage: "Engagement celebration dinner. If possible, we would love a romantic table with a nice city view.",
+        backupOptions: [
+          { name: "STARDUST - Umeda Sky Building", why: "Muy romántico por la vista nocturna desde Umeda Sky Building.", note: "Más lejos de Namba, pero puede sentirse más especial por la vista." },
+          { name: "C:GRILL - Conrad Osaka", why: "Opción premium con vista, ambiente elegante y comida tipo grill/seafood.", note: "Más caro y requiere traslado hacia Nakanoshima." },
+          { name: "Kura Teppanyaki - Conrad Osaka", why: "Experiencia de teppanyaki premium, ideal si quieren algo muy especial.", note: "Buena alternativa si prefieren carne/teppanyaki en lugar de cena tipo rooftop." },
+          { name: "Restaurant ZK - Abeno Harukas", why: "Vista muy alta de Osaka y experiencia más tipo wow.", note: "Queda más lejos, por lo que requiere más logística." }
+        ]
+      },
+      blocks: [
+        {
+          time: "5:45 am",
+          duration: "inicio",
+          title: "Despertar en secreto",
+          icon: "wb_sunny",
+          tone: "rest",
+          items: ["Despertar con calma y sin mencionar que hay sesión de fotos.", "Revisar que el anillo esté seguro, accesible y bien escondido.", "Llevar pañuelo, perfume, efectivo, batería externa y celulares cargados.", "Mantener una excusa natural: paseo temprano por Osaka Castle Park porque se ve bonito y menos lleno."],
+          detail: "Este bloque es solo para usted. La prioridad es no correr y mantener la sorpresa tranquila.",
+          showMap: false
+        },
+        {
+          time: "6:10 am",
+          duration: "20 min",
+          title: "Arreglarse para la propuesta",
+          icon: "checkroom",
+          tone: "rest",
+          items: ["Usar ropa cómoda pero bonita para fotos.", "Evitar bolsos muy grandes o ropa que complique esconder el anillo.", "Revisar clima antes de salir.", "Tomar agua y comer algo pequeño si hace falta."],
+          detail: "La idea es verse bien sin levantar sospechas. Puede decir que quiere fotos bonitas temprano en el castillo.",
+          showMap: false
+        },
+        {
+          time: "6:35 am",
+          duration: "15 min",
+          title: "Desayuno muy ligero",
+          icon: "local_cafe",
+          tone: "food",
+          items: ["Comprar algo pequeño en 7-Eleven, Lawson o café cercano.", "Evitar desayuno pesado antes de las fotos.", "Opciones: café, té, agua, onigiri, pan dulce o sándwich pequeño.", "Presupuesto 2 personas: $8 - $15."],
+          detail: "Desayuno funcional para no llegar con hambre, pero sin perder tiempo.",
+          showMap: false
+        },
+        {
+          time: "6:55 am",
+          duration: "5 min",
+          title: "Confirmar ubicación con Manu",
+          icon: "location_on",
+          tone: "travel",
+          items: ["Enviar mensaje corto a Manu confirmando que van saliendo.", "Compartir ubicación en vivo por Google Maps.", "Enviar descripción de ropa de ambos.", "Confirmar que se dirigen al jardín japonés con lago."],
+          detail: "Este paso es clave para que Manu los ubique sin que Mar sospeche.",
+          showMap: false
+        },
+        {
+          time: "7:00 am",
+          duration: "20-25 min",
+          title: "Uber/taxi: Cross Hotel Osaka → Osaka Castle Park",
+          icon: "local_taxi",
+          tone: "travel",
+          items: ["Salir del Cross Hotel Osaka alrededor de las 7:00 am.", "Usar Uber/taxi para evitar estrés y llegar con margen.", "Destino: jardín japonés con lago en Osaka Castle Park.", "Presupuesto estimado: $18 - $35 según tráfico y demanda."],
+          detail: "Conviene llegar antes de las 8:00 am para ubicarse, respirar y no arruinar el flujo de la sorpresa.",
+          routeInfo: {
+            mode: "driving",
+            origin: "Cross Hotel Osaka, 2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, Japan",
+            destination: "Osaka Castle Nishinomaru Garden, Osaka, Japan",
+            note: "Traslado privado desde Cross Hotel Osaka hasta el jardín japonés con lago en Osaka Castle Park."
+          }
+        },
+        {
+          time: "7:25 am",
+          duration: "25 min",
+          title: "Llegada tranquila a Osaka Castle Park",
+          icon: "park",
+          tone: "arrival",
+          items: ["Llegar con margen y caminar despacio hacia el punto acordado.", "No buscar a Manu de forma evidente.", "Mantener el ambiente natural: fotos, paseo y vista del castillo.", "Revisar discretamente que el anillo esté listo."],
+          detail: "Este margen evita que todo se sienta forzado. La escena debe parecer un paseo normal temprano por Osaka.",
+          showMap: false
+        },
+        {
+          time: "8:00 am",
+          duration: "1h",
+          title: "Sesión sorpresa con Manu y propuesta",
+          icon: "photo_camera",
+          tone: "arrival",
+          items: ["Manu fingirá ser un turista y pedirá ayuda para tomarle una foto.", "Mientras Mar toma la foto, preparar discretamente el anillo.", "Manu ofrecerá tomarles una foto a ambos.", "Hará la pose espalda con espalda.", "Cuando Mar esté de espaldas, colocarse en posición de propuesta.", "Momento de la propuesta con Osaka Castle Park de fondo.", "Manu capturará fotos del momento completo."],
+          detail: "Este es el momento central del viaje. No apurarse: respirar, hablar desde el corazón y dejar que Manu guíe el flujo.",
+          showMap: false
+        },
+        {
+          time: "9:00 am",
+          duration: "30-45 min",
+          title: "Fotos de pareja después de la propuesta",
+          icon: "favorite",
+          tone: "arrival",
+          items: ["Fotos caminando por el parque.", "Fotos con el castillo de fondo.", "Fotos del anillo y de las manos.", "Fotos naturales, abrazos y reacción posterior.", "Dejar que Manu guíe las poses."],
+          detail: "Después de la propuesta viene la parte más bonita y relajada: fotos ya como prometidos.",
+          showMap: false
+        },
+        {
+          time: "9:45 am",
+          duration: "30 min",
+          title: "Caminar solos por Osaka Castle Park",
+          icon: "forest",
+          tone: "rest",
+          items: ["Quedarse un rato caminando sin prisa.", "Buscar una banca o zona tranquila.", "Tomarse algunas fotos propias.", "Disfrutar el momento sin correr hacia la siguiente actividad."],
+          detail: "Este bloque es importante emocionalmente. No conviene pasar directo a turismo normal después de la propuesta.",
+          showMap: false
+        },
+        {
+          time: "10:20 am",
+          duration: "opcional",
+          title: "Osaka Castle por fuera o entrada al museo",
+          icon: "castle",
+          tone: "arrival",
+          items: ["Opción suave: ver el castillo solo por fuera y tomar fotos.", "Opción completa: entrar al museo del castillo si ambos tienen energía.", "Entrada al museo: ¥600 por adulto.", "Mantener este bloque flexible según emoción, cansancio y clima."],
+          detail: "Como ya hubo una mañana emocionalmente fuerte, este bloque debe ser flexible. Si Mar está emocionada o cansada, mejor hacerlo corto.",
+          showMap: false
+        },
+        {
+          time: "11:15 am",
+          duration: "20-30 min",
+          title: "Traslado de regreso a Namba",
+          icon: "local_taxi",
+          tone: "travel",
+          items: ["Tomar Uber/taxi de vuelta al Cross Hotel o zona Namba.", "Evitar caminar demasiado después de la sesión.", "Presupuesto estimado: $18 - $35.", "Llegar al hotel para descansar y procesar el momento."],
+          detail: "Después de la propuesta, lo mejor es volver cómodo y no meter metro de inmediato.",
+          routeInfo: {
+            mode: "driving",
+            origin: "Osaka Castle Park, Osaka, Japan",
+            destination: "Cross Hotel Osaka, Osaka, Japan",
+            note: "Regreso cómodo desde Osaka Castle Park hacia Cross Hotel Osaka."
+          }
+        },
+        {
+          time: "12:00 pm",
+          duration: "1h 30m",
+          title: "Descanso en el hotel",
+          icon: "hotel",
+          tone: "hotel",
+          items: ["Volver al Cross Hotel Osaka.", "Descansar, cargar celulares y guardar el anillo/caja si hace falta.", "Escribir a Manu agradeciendo y confirmar próximos pasos de fotos.", "Tomarse un rato para llamar o escribir a familia solo si ambos quieren."],
+          detail: "Este descanso hace que el día se sienta especial y no como una agenda turística común.",
+          showMap: false
+        },
+        {
+          time: "1:45 pm",
+          duration: "almuerzo",
+          title: "Almuerzo tranquilo en Namba",
+          icon: "restaurant",
+          tone: "food",
+          items: ["Elegir algo rico pero relajado cerca del hotel.", "Opciones: ramen, sushi, curry japonés, tonkatsu o café bonito.", "Presupuesto 2 personas: $30 - $50.", "Evitar un almuerzo demasiado pesado porque la cena será especial."],
+          detail: "Almuerzo sin prisa. Este día no necesita estar cargado de atracciones.",
+          showMap: false
+        },
+        {
+          time: "3:00 pm",
+          duration: "2h",
+          title: "Tarde flexible de prometidos",
+          icon: "favorite",
+          tone: "rest",
+          items: ["Opción 1: paseo suave por Shinsaibashi y Namba.", "Opción 2: volver al hotel y dormir una siesta.", "Opción 3: café bonito para hablar del momento.", "Opción 4: comprar un detalle pequeño para recordar el día."],
+          detail: "La mejor opción probablemente sea mantener la tarde liviana. No meter Umeda, Pokémon Center ni demasiados traslados este día.",
+          showMap: false
+        },
+        {
+          time: "5:15 pm",
+          duration: "45 min",
+          title: "Prepararse para la cena romántica",
+          icon: "checkroom",
+          tone: "rest",
+          items: ["Volver al hotel para arreglarse.", "Cambiarse a ropa más bonita para la cena.", "Llevar una chaqueta ligera si hace falta.", "Confirmar la reserva y la hora de llegada."],
+          detail: "Este cambio de ritmo ayuda a que la noche se sienta como celebración formal de compromiso.",
+          showMap: false
+        },
+        {
+          time: "6:10 pm",
+          duration: "10-15 min",
+          title: "Traslado a Table36",
+          icon: "directions_walk",
+          tone: "travel",
+          items: ["Ir desde Cross Hotel Osaka hacia Swissôtel Nankai Osaka.", "Table36 queda muy conveniente por estar sobre/contiguo a la zona de Namba.", "Se puede ir caminando o en taxi corto según zapatos, clima y cansancio.", "Presupuesto taxi corto si aplica: $8 - $15."],
+          detail: "Para una noche especial, no vale la pena llegar sudados o apurados. Si van bien vestidos, taxi corto puede ser mejor.",
+          routeInfo: {
+            mode: "walking",
+            origin: "Cross Hotel Osaka, Osaka, Japan",
+            destination: "Table36, Swissôtel Nankai Osaka, Osaka, Japan",
+            note: "Traslado desde Cross Hotel Osaka hacia Table36 en Swissôtel Nankai Osaka."
+          }
+        },
+        {
+          time: "6:30 pm",
+          duration: "2h",
+          title: "Cena romántica en Table36",
+          icon: "restaurant",
+          tone: "food",
+          items: ["Cena especial de celebración por el compromiso.", "Pedir mesa con vista si es posible.", "Ideal reservar con nota: engagement celebration / proposal celebration.", "Presupuesto 2 personas: $130 - $230 o más según menú y bebidas.", "Pedir un postre especial o mensaje de felicitación si el restaurante lo permite."],
+          detail: "Table36 es la opción principal porque tiene vista panorámica de Osaka desde el piso 36 y queda muy cerca de Namba. Es especial sin complicar la logística.",
+          routeInfo: {
+            mode: "walking",
+            origin: "Cross Hotel Osaka, Osaka, Japan",
+            destination: "Table36, Swissôtel Nankai Osaka, Osaka, Japan",
+            note: "Cena romántica en Table36, Swissôtel Nankai Osaka."
+          }
+        },
+        {
+          time: "8:45 pm",
+          duration: "opcional",
+          title: "Bar36 o paseo nocturno suave",
+          icon: "nightlife",
+          tone: "night",
+          items: ["Opción A: tomar algo o postre en Bar36 si hay espacio.", "Opción B: paseo corto por Namba/Dotonbori.", "Opción C: volver directo al hotel si quieren cerrar la noche tranquilos.", "Presupuesto opcional 2 personas: $25 - $60."],
+          detail: "Bar36 también está en Swissôtel Nankai Osaka y funciona bien como cierre si quieren seguir con la vista de la ciudad.",
+          showMap: false
+        },
+        {
+          time: "9:30 pm",
+          duration: "30-45 min",
+          title: "Dotonbori nocturno como prometidos",
+          icon: "nightlife",
+          tone: "night",
+          items: ["Caminar suave por Dotonbori.", "Tomar una foto juntos en el Glico.", "Comprar un postre pequeño o bebida caliente.", "No alargar demasiado la noche si están cansados."],
+          detail: "Este paseo puede ser muy simbólico: volver a Dotonbori ya comprometidos, sin convertirlo en una noche pesada.",
+          routeInfo: {
+            mode: "walking",
+            origin: "Swissôtel Nankai Osaka, Osaka, Japan",
+            destination: "Dotonbori, Osaka, Japan",
+            note: "Paseo nocturno desde Namba hacia Dotonbori."
+          }
+        },
+        {
+          time: "10:15 pm",
+          duration: "10-15 min",
+          title: "Regreso al Cross Hotel Osaka",
+          icon: "hotel",
+          tone: "hotel",
+          items: ["Regresar caminando al hotel.", "Guardar bien el anillo, caja y cualquier recibo.", "Cargar celulares.", "Dejar respaldadas o guardadas las primeras fotos/videos si Manu manda avances."],
+          detail: "Cierre tranquilo para un día muy importante.",
+          routeInfo: {
+            mode: "walking",
+            origin: "Dotonbori, Osaka, Japan",
+            destination: "Cross Hotel Osaka, Osaka, Japan",
+            note: "Regreso final desde Dotonbori hasta Cross Hotel Osaka."
+          }
+        }
+      ],
+      note: "Meta del día: que la propuesta sea el centro del viaje, sin saturar la agenda. Después de la sesión con Manu, el día debe sentirse íntimo, tranquilo y elegante. Evitar meter Pokémon Center, Umeda, Shinsekai o demasiadas compras este día para que no pierda el sentido especial."
+    };
+
+    let proposalDayUnlocked = getStoredValue(storageKey("proposalDayUnlocked")) === "1";
+    if (proposalDayUnlocked) days[PROPOSAL_DAY_INDEX] = proposalDay3;
+
     const content = document.getElementById("dayContent");
     const buttons = document.querySelectorAll(".day-button");
-    buttons.forEach(button => {
-      const label = button.querySelector(".day-info strong");
-      const sublabel = button.querySelector(".day-info span");
-      const day = days[Number(button.dataset.day)];
-      if (label && day) {
-        const compactDate = day.shortDateLabel.split(" ").slice(1).join(" ").replace(/\b\w/g, letter => letter.toUpperCase());
-        label.textContent = compactDate;
-        label.dataset.shortLabel = compactDate;
-      }
-      if (sublabel && day) sublabel.textContent = day.status;
-    });
+    function refreshDayButtonLabels() {
+      buttons.forEach(button => {
+        const label = button.querySelector(".day-info strong");
+        const sublabel = button.querySelector(".day-info span");
+        const day = days[Number(button.dataset.day)];
+        if (label && day) {
+          const compactDate = day.shortDateLabel.split(" ").slice(1).join(" ").replace(/\b\w/g, letter => letter.toUpperCase());
+          label.textContent = compactDate;
+          label.dataset.shortLabel = compactDate;
+        }
+        if (sublabel && day) sublabel.textContent = day.status;
+      });
+    }
+    refreshDayButtonLabels();
     const costOverview = document.getElementById("costOverview");
     const tripCostTotal = document.getElementById("tripCostTotal");
     const tripCostNote = document.getElementById("tripCostNote");
@@ -7290,6 +7717,7 @@
     }
 
     function getEnergyLevel(day) {
+      if (day.energy) return day.energy.charAt(0).toUpperCase() + day.energy.slice(1);
       const text = dayText(day);
       let score = day.blocks.length;
       if (/disney|universal|kats|kamakura|shinkansen|aeropuerto|vuelo|halloween/.test(text)) score += 5;
@@ -7320,6 +7748,17 @@
     }
 
     function renderPrepNote(day, index) {
+      if (day.prepNote) {
+        return `
+        <div class="prep-note">
+          <span class="material-symbols-rounded">verified</span>
+          <div>
+            <strong>${day.prepNote.title || "Revisar antes"}</strong>
+            <p id="prepNoteText">${day.prepNote.text}</p>
+          </div>
+        </div>`;
+      }
+
       const items = getPrepItems(day, index);
       return `
         <div class="prep-note">
@@ -7328,6 +7767,31 @@
             <strong>Revisar antes</strong>
             <p id="prepNoteText">${items.join(" · ")}</p>
           </div>
+        </div>`;
+    }
+
+    function renderPrivateDayExtras(day) {
+      if (!day.hidden) return "";
+      const proposal = day.proposalDetails;
+      const dinner = day.dinnerRecommendation;
+
+      return `
+        <div class="private-plan-card">
+          ${day.privateNote ? `<div><strong>Nota privada</strong><p>${day.privateNote}</p></div>` : ""}
+          ${proposal ? `
+            <div>
+              <strong>Plan con ${proposal.photographer}</strong>
+              <p>${proposal.date} · ${proposal.time} · ${proposal.location}. Reserva: ${proposal.bookingStatus}. Depósito: ${proposal.depositStatus}.${proposal.mapsUrl ? ` <a href="${proposal.mapsUrl}" target="_blank" rel="noopener">Punto en Maps</a>` : ""}</p>
+              <ul>${proposal.plan.map(item => `<li>${item}</li>`).join("")}</ul>
+              <p>${proposal.balanceNote}</p>
+            </div>` : ""}
+          ${dinner ? `
+            <div>
+              <strong>Cena recomendada: ${dinner.mainOption.name}</strong>
+              <p>${dinner.mainOption.location}. ${dinner.mainOption.why}</p>
+              <p>${dinner.mainOption.reservationNote}</p>
+              <p><strong>Mensaje para reserva:</strong> ${dinner.reservationMessage}</p>
+            </div>` : ""}
         </div>`;
     }
 
@@ -7781,6 +8245,16 @@
       }
     }
 
+    function activateProposalDay() {
+      proposalDayUnlocked = true;
+      days[PROPOSAL_DAY_INDEX] = proposalDay3;
+      setStoredValue(storageKey("proposalDayUnlocked"), "1");
+      refreshDayButtonLabels();
+      renderCostOverview();
+      setActiveDay(PROPOSAL_DAY_INDEX);
+      window.alert("Día oculto activado. Los montos siguen bloqueados.");
+    }
+
     function unlockCostAmounts() {
       if (costsUnlocked) {
         costsUnlocked = false;
@@ -7791,6 +8265,11 @@
       }
 
       const password = window.prompt("Ingrese la clave para ver los montos:");
+      if (password === PROPOSAL_DAY_UNLOCK_PASSWORD) {
+        activateProposalDay();
+        return;
+      }
+
       if (password !== COST_UNLOCK_PASSWORD) {
         window.alert("Clave incorrecta.");
         return;
@@ -7854,6 +8333,13 @@
     }
 
     function renderDayInsights(day) {
+      if (day.insights?.length) {
+        return `
+        <div class="day-insights" aria-label="Datos rápidos del día">
+          ${day.insights.map(item => `<span class="day-insight"><span class="material-symbols-rounded">${item.icon}</span>${item.text}</span>`).join("")}
+        </div>`;
+      }
+
       const routes = day.blocks.filter(canShowRouteButton).length;
       const firstTime = day.blocks[0]?.time || "Flexible";
       const walkingLabel = dayHasLongWalking(day) ? "Caminar bastante" : "Ritmo cómodo";
@@ -7950,6 +8436,7 @@
           <div class="day-summary-content">
             <div class="route-line">${day.route.map((item, i) => `${i > 0 ? "<span>→</span>" : ""}<div>${item}</div>`).join("")}</div>
             ${renderPrepNote(day, index)}
+            ${renderPrivateDayExtras(day)}
             <div class="day-actions">
               <button class="day-tool-button" type="button" data-day-action="copy">
                 <span class="material-symbols-rounded">content_copy</span>
