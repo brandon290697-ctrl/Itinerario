@@ -491,6 +491,7 @@
 
     .cost-actions {
       display: flex;
+      gap: 8px;
       justify-content: flex-end;
     }
 
@@ -530,6 +531,205 @@
 
     .cost-unlock-button .material-symbols-rounded {
       font-size: 16px;
+    }
+
+    .reservation-modal .modal-panel {
+      width: min(860px, calc(100vw - 28px));
+      grid-template-rows: auto 1fr;
+    }
+
+    .reservation-body {
+      display: grid;
+      gap: 14px;
+      overflow: auto;
+      padding: 18px;
+    }
+
+    .reservation-summary {
+      align-items: center;
+      background:
+        radial-gradient(circle at top left, rgba(216, 79, 69, 0.16), transparent 30%),
+        linear-gradient(135deg, var(--surface), var(--surface-soft));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 46px 1fr;
+      padding: 16px;
+    }
+
+    .reservation-summary .material-symbols-rounded {
+      align-items: center;
+      background: rgba(216, 79, 69, 0.12);
+      border-radius: 16px;
+      color: var(--coral);
+      display: inline-flex;
+      font-size: 24px;
+      height: 46px;
+      justify-content: center;
+      width: 46px;
+    }
+
+    .reservation-summary strong {
+      color: var(--navy);
+      display: block;
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .reservation-summary p {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .reservation-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .reservation-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      display: grid;
+      gap: 12px;
+      padding: 15px;
+    }
+
+    .reservation-card.done {
+      opacity: .72;
+    }
+
+    .reservation-card.done h3 {
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+      text-decoration-color: rgba(25, 112, 90, 0.45);
+    }
+
+    .reservation-card header {
+      align-items: start;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr auto;
+    }
+
+    .reservation-card h3 {
+      color: var(--navy);
+      font-size: 17px;
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+
+    .reservation-card p {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .reservation-priority {
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 950;
+      padding: 6px 9px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .reservation-priority.high {
+      background: rgba(216, 79, 69, 0.14);
+      color: var(--coral);
+    }
+
+    .reservation-priority.medium {
+      background: rgba(245, 213, 118, 0.25);
+      color: var(--amber-ink);
+    }
+
+    .reservation-meta {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .reservation-meta span {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      color: var(--navy);
+      display: grid;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 3px;
+      line-height: 1.35;
+      padding: 10px;
+    }
+
+    .reservation-meta small {
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 950;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .reservation-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .reservation-action {
+      align-items: center;
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--navy);
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 6px;
+      min-height: 36px;
+      padding: 0 12px;
+      text-decoration: none;
+    }
+
+    .reservation-action .material-symbols-rounded {
+      color: var(--coral);
+      font-size: 16px;
+    }
+
+    .reservation-check {
+      align-items: center;
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--navy);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 950;
+      gap: 7px;
+      min-height: 36px;
+      padding: 0 12px;
+    }
+
+    .reservation-check .material-symbols-rounded {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .reservation-card.done .reservation-check {
+      background: var(--mint);
+      border-color: #bce9da;
+      color: var(--mint-ink);
+    }
+
+    .reservation-card.done .reservation-check .material-symbols-rounded {
+      color: var(--mint-ink);
     }
 
     .workspace {
@@ -1601,6 +1801,93 @@
       padding: 12px;
     }
 
+    .taxi-modal .modal-panel {
+      width: min(720px, calc(100vw - 28px));
+      grid-template-rows: auto 1fr;
+    }
+
+    .taxi-body {
+      display: grid;
+      gap: 14px;
+      overflow: auto;
+      padding: 18px;
+    }
+
+    .taxi-card {
+      background:
+        radial-gradient(circle at top left, rgba(35, 134, 200, 0.16), transparent 34%),
+        linear-gradient(145deg, var(--surface), var(--surface-soft));
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      box-shadow: 0 20px 54px rgba(16, 36, 63, 0.14);
+      display: grid;
+      gap: 18px;
+      padding: clamp(22px, 4vw, 34px);
+    }
+
+    .taxi-japanese {
+      color: var(--navy);
+      font-size: clamp(30px, 5vw, 48px);
+      font-weight: 950;
+      letter-spacing: 0;
+      line-height: 1.18;
+    }
+
+    .taxi-hotel-name {
+      color: var(--coral);
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 950;
+      line-height: 1.15;
+    }
+
+    .taxi-address {
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      color: var(--navy);
+      display: grid;
+      gap: 7px;
+      font-size: clamp(16px, 2.2vw, 21px);
+      font-weight: 850;
+      line-height: 1.42;
+      padding: 16px;
+    }
+
+    .taxi-helper {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .taxi-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .taxi-action {
+      align-items: center;
+      background: var(--primary);
+      border: 0;
+      border-radius: 999px;
+      color: var(--primary-ink);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 13px;
+      font-weight: 950;
+      gap: 8px;
+      min-height: 44px;
+      padding: 0 16px;
+      text-decoration: none;
+    }
+
+    .taxi-action.secondary {
+      background: var(--control);
+      border: 1px solid var(--line);
+      color: var(--navy);
+    }
+
     #mapCanvas {
       min-height: 420px;
       background: var(--surface-soft);
@@ -2198,6 +2485,32 @@
       .status-message {
         margin-top: 0;
         font-size: 12px;
+      }
+      .reservation-body {
+        padding: 14px;
+      }
+      .reservation-summary {
+        border-radius: 18px;
+        grid-template-columns: 40px 1fr;
+        padding: 13px;
+      }
+      .reservation-summary .material-symbols-rounded {
+        border-radius: 14px;
+        height: 40px;
+        width: 40px;
+      }
+      .reservation-card {
+        border-radius: 18px;
+        padding: 13px;
+      }
+      .reservation-card header {
+        grid-template-columns: 1fr;
+      }
+      .reservation-priority {
+        justify-self: start;
+      }
+      .reservation-meta {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -3307,6 +3620,10 @@
           <p id="tripCostNote">Estimado para 2 personas, sin vuelos internacionales ni hotel.</p>
         </div>
         <div class="cost-actions">
+          <button class="cost-unlock-button reservation-button" type="button" id="reservationButton" title="Reservas criticas" aria-label="Ver reservas criticas">
+            <span class="material-symbols-rounded">event_available</span>
+            <span>Reservas criticas</span>
+          </button>
           <button class="cost-unlock-button" type="button" id="costUnlockButton">
             <span class="material-symbols-rounded" id="costUnlockIcon">lock</span>
             <span id="costUnlockLabel">Desbloquear montos</span>
@@ -3394,6 +3711,7 @@
         <button type="button" data-bottom-action="days"><span class="material-symbols-rounded">calendar_month</span><span>Días</span></button>
         <button type="button" data-bottom-action="map"><span class="material-symbols-rounded">route</span><span>Mapa</span></button>
         <button type="button" data-bottom-action="food"><span class="material-symbols-rounded">restaurant</span><span>Comida</span></button>
+        <button type="button" data-bottom-action="taxi"><span class="material-symbols-rounded">local_taxi</span><span>Taxi</span></button>
         <button type="button" data-bottom-action="phrases"><span class="material-symbols-rounded">translate</span><span>Frases</span></button>
         <button type="button" data-bottom-action="costs"><span class="material-symbols-rounded">payments</span><span>Costos</span></button>
       </nav>
@@ -3501,6 +3819,69 @@
     </div>
   </section>
 
+  <section class="modal taxi-modal" id="taxiModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="taxiModalTitle">
+    <div class="modal-backdrop" data-close-taxi></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <div class="modal-kicker">Taxi card</div>
+          <h2 class="modal-title" id="taxiModalTitle">Mostrar al chofer</h2>
+          <p class="modal-subtitle" id="taxiModalSubtitle">Tarjeta grande en japonés para volver al hotel del día.</p>
+        </div>
+        <button class="icon-button" type="button" aria-label="Cerrar taxi card" data-close-taxi>
+          <span class="material-symbols-rounded">close</span>
+        </button>
+      </div>
+      <div class="taxi-body">
+        <article class="taxi-card">
+          <div class="taxi-japanese" id="taxiJapanese">このホテルまでお願いします。</div>
+          <div class="taxi-hotel-name" id="taxiHotelName">Hotel</div>
+          <div class="taxi-address">
+            <span id="taxiJapaneseAddress">住所</span>
+            <span id="taxiEnglishAddress">Address</span>
+          </div>
+          <p class="taxi-helper" id="taxiHelper">Por favor llevenos a este hotel. Gracias.</p>
+          <div class="taxi-actions">
+            <button class="taxi-action" type="button" id="taxiCopyButton">
+              <span class="material-symbols-rounded">content_copy</span>
+              Copiar tarjeta
+            </button>
+            <a class="taxi-action secondary" id="taxiMapsLink" target="_blank" rel="noopener">
+              <span class="material-symbols-rounded">map</span>
+              Abrir Maps
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal reservation-modal" id="reservationModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="reservationModalTitle">
+    <div class="modal-backdrop" data-close-reservations></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <div class="modal-kicker">Reservas criticas</div>
+          <h2 class="modal-title" id="reservationModalTitle">Fechas para reservar</h2>
+          <p class="modal-subtitle" id="reservationModalSubtitle">Ventanas recomendadas con referencia oficial cuando aplica.</p>
+        </div>
+        <button class="icon-button" type="button" aria-label="Cerrar reservas criticas" data-close-reservations>
+          <span class="material-symbols-rounded">close</span>
+        </button>
+      </div>
+      <div class="reservation-body">
+        <article class="reservation-summary">
+          <span class="material-symbols-rounded">notifications_active</span>
+          <div>
+            <strong>Lo importante primero</strong>
+            <p>Estas son las reservas con mas riesgo de agotarse o que conviene amarrar temprano. Los horarios estan convertidos a Costa Rica cuando la fuente oficial publica una hora exacta.</p>
+          </div>
+        </article>
+        <div class="reservation-list" id="reservationList"></div>
+      </div>
+    </div>
+  </section>
+
   <script>
     const GOOGLE_MAPS_API_KEY = "AIzaSyBOadpOhtgcR4xAK-dxonT8_QQwHoNZHvI";
     const mapIcon = '<span class="material-symbols-rounded" aria-hidden="true">map</span>';
@@ -3516,11 +3897,97 @@
     };
 
     const SHOW_COST_ESTIMATES = true;
-    const COST_UNLOCK_PASSWORD = "2997";
+    const COST_UNLOCK_PASSWORD = "29972997";
     const PROPOSAL_DAY_UNLOCK_PASSWORD = "871987188717";
     const PROPOSAL_DAY_INDEX = 3;
     const USD_TO_CRC_ESTIMATE = 460;
     const JPY_TO_USD_ESTIMATE = 0.0068;
+    const criticalReservations = [
+      {
+        id: "pokemon-cafe-osaka",
+        sortDate: "2026-09-08T03:00:00-06:00",
+        title: "Pokémon Café Osaka",
+        day: "Día 3",
+        visitDate: "Viernes 9 octubre 2026",
+        openCostaRica: "Mar 8 septiembre 2026 · 3:00 am CR",
+        openJapan: "Mar 8 septiembre 2026 · 6:00 pm Japón",
+        priority: "Alta",
+        note: "Reservar apenas abra: el café libera espacios 31 días antes a las 6:00 pm JST y se agota rápido.",
+        source: "https://www.pokemon-cafe.jp/en/cafe/faq/"
+      },
+      {
+        id: "usj-express",
+        sortDate: "2026-08-08T00:00:00-06:00",
+        title: "Universal Studios Japan + Express Pass",
+        day: "Día 2",
+        visitDate: "Jueves 8 octubre 2026",
+        openCostaRica: "Aprox. sáb 8 agosto 2026",
+        openJapan: "Aprox. dom 9 agosto 2026",
+        priority: "Alta",
+        note: "USJ indicó que tras Expo volvería a venta aproximadamente 2 meses antes. Halloween y Express Pass requieren monitoreo temprano.",
+        source: "https://www.usj.co.jp/company/company_e/news/2025/0421/"
+      },
+      {
+        id: "tokyo-disneysea",
+        sortDate: "2026-08-18T23:00:00-06:00",
+        title: "Tokyo DisneySea",
+        day: "Día 13",
+        visitDate: "Lunes 19 octubre 2026",
+        openCostaRica: "Mar 18 agosto 2026 · 11:00 pm CR",
+        openJapan: "Mié 19 agosto 2026 · 2:00 pm Japón",
+        priority: "Alta",
+        note: "Disney vende tickets desde las 2:00 pm JST para la misma fecha dos meses después. Comprar esa noche en Costa Rica.",
+        source: "https://www.tokyodisneyresort.jp/en/ticket/"
+      },
+      {
+        id: "shinkansen-kyoto-tokyo",
+        sortDate: "2026-09-15T19:00:00-06:00",
+        title: "Shinkansen Kyoto → Tokyo",
+        day: "Día 10",
+        visitDate: "Viernes 16 octubre 2026",
+        openCostaRica: "Mar 15 septiembre 2026 · 7:00 pm CR",
+        openJapan: "Mié 16 septiembre 2026 · 10:00 am Japón",
+        priority: "Media",
+        note: "SmartEX permite reserva oficial 1 mes antes desde las 10:00 am JST; hay opciones anticipadas, pero se confirman cerca de 1 mes antes.",
+        source: "https://smart-ex.jp/en/faq/category/detail/?id=459"
+      },
+      {
+        id: "teamlab-botanical",
+        sortDate: "2026-09-12T00:00:00-06:00",
+        title: "teamLab Botanical Garden Osaka",
+        day: "Día 4",
+        visitDate: "Sábado 10 octubre 2026",
+        openCostaRica: "Entre 12 y 26 septiembre 2026",
+        openJapan: "Entre 13 y 27 septiembre 2026",
+        priority: "Media",
+        note: "Comprar 2 a 4 semanas antes. El sitio oficial advierte que los tickets del día pueden agotarse.",
+        source: "https://art.team-lab.cn/en/e/botanicalgarden/"
+      },
+      {
+        id: "pokepark-kanto",
+        sortDate: "2026-08-21T00:00:00-06:00",
+        title: "PokéPark KANTO",
+        day: "Día 15",
+        visitDate: "Miércoles 21 octubre 2026",
+        openCostaRica: "Monitorear desde agosto 2026",
+        openJapan: "Monitorear desde agosto 2026",
+        priority: "Alta",
+        note: "La web oficial indica que los tickets pueden agotarse y que algunas zonas usan tickets de acceso limitado en app.",
+        source: "https://www.pokepark-kanto.co.jp/ppark/ticketInfo/type/index?languageKind=en_US"
+      },
+      {
+        id: "pokemon-cafe-tokyo",
+        sortDate: "2026-09-20T03:00:00-06:00",
+        title: "Pokémon Café Tokyo / Nihonbashi",
+        day: "Día 15",
+        visitDate: "Miércoles 21 octubre 2026",
+        openCostaRica: "Dom 20 septiembre 2026 · 3:00 am CR",
+        openJapan: "Dom 20 septiembre 2026 · 6:00 pm Japón",
+        priority: "Alta",
+        note: "Misma regla oficial: 31 días antes a las 6:00 pm JST. Usar otro correo si también reservan Osaka.",
+        source: "https://www.pokemon-cafe.jp/en/cafe/faq/"
+      },
+    ];
 
     const days = [
   {
@@ -7734,6 +8201,7 @@
     const costUnlockButton = document.getElementById("costUnlockButton");
     const costUnlockIcon = document.getElementById("costUnlockIcon");
     const costUnlockLabel = document.getElementById("costUnlockLabel");
+    const reservationButton = document.getElementById("reservationButton");
     const baseCity = document.getElementById("baseCity");
     const heroBase = document.getElementById("heroBase");
     const themeToggle = document.getElementById("themeToggle");
@@ -7776,6 +8244,18 @@
     const foodCategoryChips = document.getElementById("foodCategoryChips");
     const foodStatus = document.getElementById("foodStatus");
     const foodResults = document.getElementById("foodResults");
+    const taxiModal = document.getElementById("taxiModal");
+    const taxiModalTitle = document.getElementById("taxiModalTitle");
+    const taxiModalSubtitle = document.getElementById("taxiModalSubtitle");
+    const taxiJapanese = document.getElementById("taxiJapanese");
+    const taxiHotelName = document.getElementById("taxiHotelName");
+    const taxiJapaneseAddress = document.getElementById("taxiJapaneseAddress");
+    const taxiEnglishAddress = document.getElementById("taxiEnglishAddress");
+    const taxiHelper = document.getElementById("taxiHelper");
+    const taxiCopyButton = document.getElementById("taxiCopyButton");
+    const taxiMapsLink = document.getElementById("taxiMapsLink");
+    const reservationModal = document.getElementById("reservationModal");
+    const reservationList = document.getElementById("reservationList");
     const bottomNav = document.getElementById("bottomNav");
     const actionFab = document.getElementById("actionFab");
     const todayModeExit = document.getElementById("todayModeExit");
@@ -7794,6 +8274,7 @@
     let foodPlacesMap;
     let foodPlacesService;
     let foodGeocoder;
+    let activeTaxiCardText = "";
     let map;
     let directionsRenderer;
 
@@ -7811,6 +8292,39 @@
       if (index <= 4) return "Osaka";
       if (index <= 9) return "Kyoto";
       return "Tokyo";
+    }
+
+    function getTaxiDestination(index) {
+      if (index <= 4) {
+        return {
+          city: "Osaka",
+          name: "Cross Hotel Osaka",
+          japaneseName: "クロスホテル大阪",
+          japaneseAddress: "〒542-0085 大阪府大阪市中央区心斎橋筋2丁目5-15",
+          englishAddress: "2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, 542-0085, Japan",
+          mapsQuery: "Cross Hotel Osaka, 2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, Japan"
+        };
+      }
+
+      if (index <= 9) {
+        return {
+          city: "Kyoto",
+          name: "Henn na Hotel Premier Kyoto Sanjo",
+          japaneseName: "変なホテルプレミア京都 三条",
+          japaneseAddress: "京都府京都市中京区河原町通三条上る恵比須町周辺",
+          englishAddress: "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+          mapsQuery: "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan"
+        };
+      }
+
+      return {
+        city: "Tokyo",
+        name: "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+        japaneseName: "変なホテルプレミア東京 浅草田原町",
+        japaneseAddress: "〒111-0042 東京都台東区寿3丁目19-8",
+        englishAddress: "3-19-8 Kotobuki, Taito-ku, Tokyo 111-0042, Japan",
+        mapsQuery: "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, 3-19-8 Kotobuki, Taito-ku, Tokyo, Japan"
+      };
     }
 
     function updateBaseSummary(index) {
@@ -8059,6 +8573,10 @@
 
       document.querySelector("[data-day-action='food']")?.addEventListener("click", () => {
         openFoodModal(currentDayIndex);
+      });
+
+      document.querySelector("[data-day-action='taxi']")?.addEventListener("click", () => {
+        openTaxiModal(currentDayIndex);
       });
 
       document.querySelector("[data-day-action='today-mode']")?.addEventListener("click", () => {
@@ -8605,6 +9123,127 @@
       foodModal.setAttribute("aria-hidden", "true");
     }
 
+    function buildTaxiCardText(destination) {
+      return [
+        "このホテルまでお願いします。",
+        destination.japaneseName,
+        destination.japaneseAddress,
+        "",
+        "Please take us to this hotel.",
+        destination.name,
+        destination.englishAddress
+      ].join("\n");
+    }
+
+    function openTaxiModal(index) {
+      const destination = getTaxiDestination(index);
+      activeTaxiCardText = buildTaxiCardText(destination);
+
+      taxiModalTitle.textContent = `Taxi card - ${destination.city}`;
+      taxiModalSubtitle.textContent = "Mostrá esta tarjeta al chofer para volver al hotel.";
+      taxiJapanese.textContent = "このホテルまでお願いします。";
+      taxiHotelName.textContent = `${destination.japaneseName} / ${destination.name}`;
+      taxiJapaneseAddress.textContent = destination.japaneseAddress;
+      taxiEnglishAddress.textContent = destination.englishAddress;
+      taxiHelper.textContent = "Please take us to this hotel. Thank you.";
+      taxiMapsLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(destination.mapsQuery)}`;
+
+      taxiModal.classList.add("open");
+      taxiModal.setAttribute("aria-hidden", "false");
+    }
+
+    function closeTaxiModal() {
+      taxiModal.classList.remove("open");
+      taxiModal.setAttribute("aria-hidden", "true");
+    }
+
+    function reservationDoneKey(id) {
+      return storageKey(`reservationDone:${id}`);
+    }
+
+    function isReservationDone(id) {
+      return getStoredValue(reservationDoneKey(id)) === "1";
+    }
+
+    function setReservationDone(id, done) {
+      setStoredValue(reservationDoneKey(id), done ? "1" : "0");
+    }
+
+    function orderedCriticalReservations() {
+      return [...criticalReservations].sort((a, b) => {
+        const doneA = isReservationDone(a.id);
+        const doneB = isReservationDone(b.id);
+        if (doneA !== doneB) return doneA ? 1 : -1;
+        return new Date(a.sortDate) - new Date(b.sortDate);
+      });
+    }
+
+    function renderCriticalReservations() {
+      reservationList.innerHTML = orderedCriticalReservations().map(item => {
+        const priorityClass = item.priority === "Alta" ? "high" : "medium";
+        const done = isReservationDone(item.id);
+        return `
+          <article class="reservation-card ${done ? "done" : ""}">
+            <header>
+              <div>
+                <h3>${item.title}</h3>
+                <p>${item.note}</p>
+              </div>
+              <span class="reservation-priority ${priorityClass}">${item.priority}</span>
+            </header>
+            <div class="reservation-meta">
+              <span><small>Día del viaje</small>${item.day} · ${item.visitDate}</span>
+              <span><small>Abrir / revisar en Costa Rica</small>${item.openCostaRica}</span>
+              <span><small>Hora Japón</small>${item.openJapan}</span>
+              <span><small>Estado recomendado</small>Crear recordatorio y revisar disponibilidad</span>
+            </div>
+            <div class="reservation-actions">
+              <button class="reservation-check" type="button" data-reservation-check="${item.id}" aria-pressed="${done ? "true" : "false"}">
+                <span class="material-symbols-rounded">${done ? "check_circle" : "radio_button_unchecked"}</span>
+                ${done ? "Reservado" : "Marcar reservado"}
+              </button>
+              <a class="reservation-action" href="${item.source}" target="_blank" rel="noopener">
+                <span class="material-symbols-rounded">open_in_new</span>
+                Fuente oficial
+              </a>
+              <button class="reservation-action" type="button" data-reservation-day="${item.day}">
+                <span class="material-symbols-rounded">event</span>
+                Ver día
+              </button>
+            </div>
+          </article>`;
+      }).join("");
+
+      reservationList.querySelectorAll("[data-reservation-check]").forEach(button => {
+        button.addEventListener("click", () => {
+          const id = button.dataset.reservationCheck;
+          setReservationDone(id, !isReservationDone(id));
+          renderCriticalReservations();
+        });
+      });
+
+      reservationList.querySelectorAll("[data-reservation-day]").forEach(button => {
+        button.addEventListener("click", () => {
+          const match = button.dataset.reservationDay.match(/\d+/);
+          if (!match) return;
+          const dayIndex = Number(match[0]);
+          closeReservationModal();
+          if (dayIndex >= 0 && dayIndex < days.length) setActiveDay(dayIndex);
+        });
+      });
+    }
+
+    function openReservationModal() {
+      renderCriticalReservations();
+      reservationModal.classList.add("open");
+      reservationModal.setAttribute("aria-hidden", "false");
+    }
+
+    function closeReservationModal() {
+      reservationModal.classList.remove("open");
+      reservationModal.setAttribute("aria-hidden", "true");
+    }
+
     async function updateWeatherSummary(index) {
       const requestId = ++weatherRequestId;
       const day = days[index];
@@ -8959,6 +9598,10 @@
                 <span class="material-symbols-rounded">restaurant</span>
                 <span>Comida</span>
               </button>
+              <button class="day-tool-button" type="button" data-day-action="taxi">
+                <span class="material-symbols-rounded">local_taxi</span>
+                <span>Taxi</span>
+              </button>
               <button class="day-tool-button" type="button" data-day-action="print">
                 <span class="material-symbols-rounded">print</span>
                 <span>Imprimir</span>
@@ -9070,6 +9713,7 @@
     });
 
     costUnlockButton?.addEventListener("click", unlockCostAmounts);
+    reservationButton?.addEventListener("click", openReservationModal);
     todayModeExit?.addEventListener("click", () => setTodayMode(false));
 
     actionFab?.addEventListener("click", () => {
@@ -9089,6 +9733,7 @@
       }
       if (action === "map") openDayRoutesModal(currentDayIndex);
       if (action === "food") openFoodModal(currentDayIndex);
+      if (action === "taxi") openTaxiModal(currentDayIndex);
       if (action === "phrases") openPhraseModal(currentDayIndex);
       if (action === "costs") {
         if (!SHOW_COST_ESTIMATES || !costsUnlocked) return;
@@ -9508,7 +10153,26 @@
       element.addEventListener("click", closeFoodModal);
     });
 
+    document.querySelectorAll("[data-close-taxi]").forEach(element => {
+      element.addEventListener("click", closeTaxiModal);
+    });
+
+    document.querySelectorAll("[data-close-reservations]").forEach(element => {
+      element.addEventListener("click", closeReservationModal);
+    });
+
     foodZoneSelect?.addEventListener("change", searchFoodPlaces);
+
+    taxiCopyButton?.addEventListener("click", async () => {
+      try {
+        await copyTextToClipboard(activeTaxiCardText);
+        const original = taxiCopyButton.innerHTML;
+        taxiCopyButton.innerHTML = '<span class="material-symbols-rounded">check</span>Copiado';
+        setTimeout(() => { taxiCopyButton.innerHTML = original; }, 1600);
+      } catch (error) {
+        window.alert("No se pudo copiar la tarjeta.");
+      }
+    });
 
     document.addEventListener("keydown", event => {
       if (event.key === "Escape" && modal.classList.contains("open")) {
@@ -9520,6 +10184,12 @@
       }
       if (event.key === "Escape" && foodModal.classList.contains("open")) {
         closeFoodModal();
+      }
+      if (event.key === "Escape" && taxiModal.classList.contains("open")) {
+        closeTaxiModal();
+      }
+      if (event.key === "Escape" && reservationModal.classList.contains("open")) {
+        closeReservationModal();
       }
     });
 
