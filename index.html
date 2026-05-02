@@ -7710,8 +7710,7 @@
       note: "Meta del día: que la propuesta sea el centro del viaje, sin saturar la agenda. Después de la sesión con Manu, el día debe sentirse íntimo, tranquilo y elegante. Evitar meter Pokémon Center, Umeda, Shinsekai o demasiadas compras este día para que no pierda el sentido especial."
     };
 
-    let proposalDayUnlocked = getStoredValue(storageKey("proposalDayUnlocked")) === "1";
-    if (proposalDayUnlocked) days[PROPOSAL_DAY_INDEX] = proposalDay3;
+    let proposalDayUnlocked = false;
 
     const content = document.getElementById("dayContent");
     const buttons = document.querySelectorAll(".day-button");
@@ -7837,6 +7836,14 @@
         localStorage.setItem(key, value);
       } catch (error) {}
     }
+
+    function removeStoredValue(key) {
+      try {
+        localStorage.removeItem(key);
+      } catch (error) {}
+    }
+
+    removeStoredValue(storageKey("proposalDayUnlocked"));
 
     function applyTheme(theme) {
       const isDark = theme === "dark";
@@ -8746,7 +8753,7 @@
     function activateProposalDay() {
       proposalDayUnlocked = true;
       days[PROPOSAL_DAY_INDEX] = proposalDay3;
-      setStoredValue(storageKey("proposalDayUnlocked"), "1");
+      removeStoredValue(storageKey("proposalDayUnlocked"));
       refreshDayButtonLabels();
       renderCostOverview();
       setActiveDay(PROPOSAL_DAY_INDEX);
