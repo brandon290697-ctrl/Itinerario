@@ -8405,6 +8405,98 @@
       return fallback.label.toLowerCase();
     }
 
+    function foodDescriptionText(place, category) {
+      const name = (place.name || "").toLowerCase();
+      const types = place.types || [];
+      const typeText = foodTypeText(place, category);
+
+      const knownPlaces = [
+        { pattern: /ichiran/, text: "Ramen tonkotsu estilo Hakata, ideal si quieren algo rápido, clásico y muy japonés." },
+        { pattern: /ippudo/, text: "Ramen tonkotsu con opciones populares de caldo, gyoza y acompañamientos." },
+        { pattern: /sushiro|kura sushi|くら寿司|スシロー/, text: "Sushi giratorio casual: nigiri, rolls, sopas y platos pequeños a buen precio." },
+        { pattern: /coco|ichibanya|coco壱|coco ichi/, text: "Curry japonés personalizable con arroz, toppings y nivel de picante." },
+        { pattern: /yoshinoya|sukiya|matsuya/, text: "Comida rápida japonesa: gyudon, bowls de arroz, curry y sets sencillos." },
+        { pattern: /starbucks/, text: "Café, bebidas frías/calientes, postres y algo liviano para descansar." },
+        { pattern: /doutor|tully|komeda/, text: "Cafetería japonesa para café, sándwiches, tostadas y postres sencillos." },
+        { pattern: /lawson|7-eleven|familymart|family mart/, text: "Konbini para onigiri, sándwiches, café, bebidas, postres y snacks rápidos." },
+        { pattern: /mos burger|mcdonald|burger king|shake shack/, text: "Hamburguesas y comida rápida, útil si quieren algo familiar y sin complicarse." },
+        { pattern: /torikizoku/, text: "Izakaya de yakitori: brochetas de pollo, platos pequeños y bebidas." },
+        { pattern: /ohsho|餃子の王将/, text: "Gyoza, arroz frito, ramen y platos chinos-japoneses casuales." },
+        { pattern: /daruma|kushikatsu/, text: "Kushikatsu de Osaka: brochetas empanizadas y fritas, muy típico para probar." },
+        { pattern: /551|horai|蓬莱/, text: "Famoso por nikuman/bollos al vapor y dumplings para comer rápido o llevar." },
+        { pattern: /rikuro|りくろー/, text: "Cheesecake japonés esponjoso, buena parada de postre o souvenir dulce." }
+      ];
+
+      const known = knownPlaces.find(item => item.pattern.test(name));
+      if (known) return known.text;
+
+      if (/ramen|らーめん|ラーメン|menya|麺/.test(name) || typeText === "ramen") {
+        return "Ramen japonés: fideos en caldo, normalmente con chashu, huevo, cebollín y toppings.";
+      }
+
+      if (/sushi|鮨|寿司/.test(name) || typeText === "sushi") {
+        return "Sushi y pescado: nigiri, rolls, sashimi o sets para compartir según el local.";
+      }
+
+      if (/udon|うどん/.test(name)) {
+        return "Udon: fideos gruesos en caldo, tempura y bowls calientes o fríos.";
+      }
+
+      if (/soba|そば/.test(name)) {
+        return "Soba: fideos de trigo sarraceno, buena opción ligera con tempura o caldo.";
+      }
+
+      if (/tonkatsu|とんかつ|katsu/.test(name)) {
+        return "Tonkatsu/katsu: cerdo o pollo empanizado, arroz, repollo y salsa japonesa.";
+      }
+
+      if (/yakitori|焼鳥|izakaya|居酒屋/.test(name) || typeText === "izakaya") {
+        return "Izakaya: platos pequeños para compartir, yakitori, fritos, arroz y bebidas.";
+      }
+
+      if (/okonomiyaki|お好み焼/.test(name)) {
+        return "Okonomiyaki: plato típico de Osaka tipo tortilla/pancake salado con salsa y toppings.";
+      }
+
+      if (/takoyaki|たこ焼/.test(name)) {
+        return "Takoyaki: bolitas de pulpo típicas de Osaka, perfectas como snack callejero.";
+      }
+
+      if (/curry|カレー/.test(name) || typeText === "curry") {
+        return "Curry japonés: arroz con salsa espesa, katsu, vegetales o toppings.";
+      }
+
+      if (/bbq|yakiniku|焼肉|wagyu|steak/.test(name)) {
+        return "Carne/yakiniku: cortes a la parrilla, wagyu o menú de carne más especial.";
+      }
+
+      if (/tempura|天ぷら/.test(name)) {
+        return "Tempura: mariscos o vegetales fritos ligeros, normalmente con arroz o soba.";
+      }
+
+      if (/bakery|boulanger|パン|bread/.test(name) || types.includes("bakery")) {
+        return "Panadería: panes japoneses, bollería, postres y opciones rápidas para llevar.";
+      }
+
+      if (types.includes("cafe") || typeText === "café") {
+        return "Café para pausa corta: bebidas, postres, sándwiches o comida ligera.";
+      }
+
+      if (types.includes("convenience_store") || typeText === "konbini") {
+        return "Konbini para resolver rápido: onigiri, bentos, sándwiches, café, bebidas y snacks.";
+      }
+
+      if (types.includes("bar")) {
+        return "Bar o izakaya: bebidas, snacks y platos pequeños; mejor para tarde/noche.";
+      }
+
+      if (types.includes("meal_takeaway")) {
+        return "Comida para llevar: útil si quieren comer rápido o volver al hotel.";
+      }
+
+      return "Restaurante cercano para comida japonesa o casual; revisar fotos del menú en Google Maps antes de ir.";
+    }
+
     function googleMapsPlaceUrl(place) {
       const location = place.geometry?.location;
       if (!location) return "#";
@@ -8445,6 +8537,7 @@
               <span>${priceLevelText(place.price_level)}</span>
               <span>${openText}</span>
             </div>
+            <p>${foodDescriptionText(place, category)}</p>
             <p>${place.vicinity || "Dirección no disponible."}</p>
             <a href="${googleMapsPlaceUrl(place)}" target="_blank" rel="noopener">Abrir en Google Maps</a>
           </article>`;
