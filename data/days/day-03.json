@@ -87,12 +87,12 @@
     {
       "time": "7:40 am",
       "duration": "10 min",
-      "title": "Caminata hacia Namba Station del metro",
+      "title": "Caminata hacia Namba Station",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
         "Destino: Namba Station, Osaka Metro Midosuji Line.",
-        "Buscar la entrada del metro rojo.",
+        "Buscar la entrada de la línea correcta.",
         "Costo: $0."
       ],
       "detail": "Este punto importa porque no es la misma zona exacta de trenes privados: buscar Osaka Metro / Midosuji Line.",
@@ -106,7 +106,7 @@
     {
       "time": "7:55 am",
       "duration": "10 min",
-      "title": "Metro: Namba → Umeda",
+      "title": "Transporte público: Namba → Umeda",
       "icon": "subway",
       "tone": "travel",
       "items": [
@@ -130,7 +130,7 @@
     {
       "time": "8:10 am",
       "duration": "20 min",
-      "title": "Metro: Umeda → Morinomiya",
+      "title": "Transporte público: Umeda → Morinomiya",
       "icon": "subway",
       "tone": "travel",
       "items": [
@@ -206,7 +206,7 @@
     {
       "time": "11:55 am",
       "duration": "20 min",
-      "title": "Metro: Morinomiya → Umeda",
+      "title": "Transporte público: Morinomiya → Umeda",
       "icon": "subway",
       "tone": "travel",
       "items": [
@@ -280,7 +280,7 @@
     {
       "time": "3:00 pm",
       "duration": "10-15 min",
-      "title": "Metro: Umeda → Shinsaibashi",
+      "title": "Transporte público: Umeda → Shinsaibashi",
       "icon": "subway",
       "tone": "travel",
       "items": [

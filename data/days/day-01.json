@@ -233,7 +233,7 @@
       "items": [
         "Salir del Cross Hotel Osaka hacia Namba Station.",
         "Ir sin maletas, solo con bolso liviano.",
-        "Tener Suica/ICOCA lista para entrar al metro.",
+        "Tener Suica/ICOCA lista para entrar al transporte público.",
         "Costo: $0."
       ],
       "detail": "Primer tramo para moverse hacia Shinsekai. Es mejor ir en transporte público o taxi corto porque ya vienen cansados del viaje.",
@@ -248,7 +248,7 @@
     {
       "time": "5:15 pm",
       "duration": "5:15 - 5:25 pm",
-      "title": "Metro: Namba → Dobutsuen-mae / Ebisucho",
+      "title": "Transporte público: Namba → Dobutsuen-mae / Ebisucho",
       "icon": "subway",
       "tone": "travel",
       "items": [
@@ -382,7 +382,7 @@
     {
       "time": "7:25 pm",
       "duration": "7:25 - 7:40 pm",
-      "title": "Metro: Shinsekai → Namba / Dotonbori",
+      "title": "Transporte público: Shinsekai → Namba / Dotonbori",
       "icon": "subway",
       "tone": "travel",
       "items": [

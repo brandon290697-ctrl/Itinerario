@@ -76,7 +76,7 @@
     {
       "time": "7:30 am",
       "duration": "10 min",
-      "title": "Metro: Namba → Umeda",
+      "title": "Transporte público: Namba → Umeda",
       "icon": "subway",
       "tone": "travel",
       "items": [
@@ -310,7 +310,7 @@
     {
       "time": "3:35 pm",
       "duration": "35 min",
-      "title": "Metro: Umeda → Nagai",
+      "title": "Transporte público: Umeda → Nagai",
       "icon": "subway",
       "tone": "travel",
       "items": [
@@ -426,7 +426,7 @@
     {
       "time": "7:20 pm",
       "duration": "25 min",
-      "title": "Metro: Nagai → Namba",
+      "title": "Transporte público: Nagai → Namba",
       "icon": "subway",
       "tone": "travel",
       "items": [

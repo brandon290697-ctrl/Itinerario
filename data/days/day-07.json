@@ -55,8 +55,8 @@
       ],
       "detail": "El objetivo es llegar temprano a Arashiyama, no hacer un desayuno largo.",
       "location": {
-        "name": "Sanjo / hotel",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo breakfast"
+        "name": "Gojo Karasuma / hotel",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma breakfast"
       },
       "showMap": false,
       "marPick": false
@@ -75,10 +75,10 @@
       "detail": "Traslado principal del día hacia la zona natural de Kyoto.",
       "routeInfo": {
         "mode": "transit",
-        "origin": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
         "destination": "Arashiyama, Kyoto, Japan",
         "note": "Ruta recomendada desde el hotel hacia Arashiyama.",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo to Arashiyama Kyoto"
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma to Arashiyama Kyoto"
       },
       "marPick": false
     },
@@ -256,7 +256,7 @@
       "icon": "train",
       "tone": "travel",
       "items": [
-        "Volver desde Arashiyama hacia Sanjo/Kawaramachi.",
+        "Volver desde Arashiyama hacia Gojo Karasuma/Kawaramachi.",
         "Descansar un rato en el hotel.",
         "Costo 2 personas: $10 - $20."
       ],
@@ -264,9 +264,9 @@
       "routeInfo": {
         "mode": "transit",
         "origin": "Arashiyama, Kyoto, Japan",
-        "destination": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "destination": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
         "note": "Regreso desde Arashiyama al hotel.",
-        "mapsQuery": "Arashiyama Kyoto to Henn na Hotel Premier Kyoto Sanjo"
+        "mapsQuery": "Arashiyama Kyoto to Henn na Hotel Premier Kyoto Gojo Karasuma"
       },
       "marPick": false
     },
@@ -283,7 +283,7 @@
       ],
       "detail": "Día bonito pero de caminata; cerrar sin apurarse.",
       "location": {
-        "name": "Kawaramachi / Sanjo",
+        "name": "Kawaramachi / Gojo Karasuma",
         "mapsQuery": "Kawaramachi Sanjo Kyoto dinner"
       },
       "showMap": false,

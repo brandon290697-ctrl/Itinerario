@@ -3924,6 +3924,7 @@
       transit: "Transporte público",
       walking: "Caminando",
       bicycling: "Bicicleta",
+      local_taxi: "Taxi",
       flight: "Vuelo"
     };
 
@@ -4179,11 +4180,11 @@
       if (index <= 9) {
         return {
           city: "Kyoto",
-          name: "Henn na Hotel Premier Kyoto Sanjo",
+          name: "Henn na Hotel Premier Kyoto Gojo Karasuma",
           japaneseName: "変なホテルプレミア京都 三条",
           japaneseAddress: "京都府京都市中京区河原町通三条上る恵比須町周辺",
-          englishAddress: "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
-          mapsQuery: "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan"
+          englishAddress: "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
+          mapsQuery: "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan"
         };
       }
 
@@ -5649,7 +5650,6 @@
     }
 
     function routeModeLabel(route) {
-      if (route.mode === "transit" && route.transitModes?.includes("SUBWAY")) return "Metro";
       return travelModes[route.mode] || "Ruta";
     }
 
@@ -5662,7 +5662,9 @@
         await loadGoogleMaps();
         renderRoute(block);
       } catch (error) {
-        routeDuration.textContent = "No disponible";
+        routeDuration.textContent = block.routeInfo?.fixedDuration || "No disponible";
+        routeDistance.textContent = block.routeInfo?.fixedDistance || "--";
+        setRouteCostLookup(block.routeInfo || {});
         routeStatus.textContent = "No se pudo cargar Google Maps. Revisá que la API key esté habilitada para Maps JavaScript API y Directions API.";
         mapCanvas.innerHTML = '<div class="loading-map">No fue posible cargar el mapa.</div>';
       }
@@ -5700,7 +5702,8 @@
         await loadGoogleMaps();
         renderDayRoutes(index, routeBlocks);
       } catch (error) {
-        routeDuration.textContent = "No disponible";
+        const estimatedBlocks = routeBlocks.filter(({ block }) => block.routeInfo?.fixedDuration);
+        routeDuration.textContent = estimatedBlocks.length ? "Ver estimados por actividad" : "No disponible";
         routeStatus.textContent = "No se pudo cargar Google Maps. Revisá que la API key esté habilitada.";
         mapCanvas.innerHTML = '<div class="loading-map">No fue posible cargar el mapa.</div>';
       }
@@ -5764,8 +5767,8 @@
 
         directionsRenderer.setDirections(result);
         const leg = result.routes[0].legs[0];
-        routeDuration.textContent = leg.duration_in_traffic?.text || leg.duration?.text || "No disponible";
-        routeDistance.textContent = leg.distance?.text || "--";
+        routeDuration.textContent = leg.duration_in_traffic?.text || leg.duration?.text || route.fixedDuration || "No disponible";
+        routeDistance.textContent = leg.distance?.text || route.fixedDistance || "--";
         renderRouteFare(result.routes[0], route);
         routeStatus.textContent = "Estimación calculada al abrir el modal. Puede cambiar según tráfico, horarios y operación del transporte.";
       });

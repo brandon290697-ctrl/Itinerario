@@ -62,8 +62,8 @@
       ],
       "detail": "Mejor desayunar antes del traslado para no depender de las tiendas turísticas cerca del templo.",
       "location": {
-        "name": "Henn na Hotel Premier Kyoto Sanjo / Sanjo",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo breakfast"
+        "name": "Henn na Hotel Premier Kyoto Gojo Karasuma / Gojo Karasuma",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma breakfast"
       },
       "showMap": false,
       "marPick": false
@@ -82,10 +82,10 @@
       "detail": "Este taxi vale la pena porque ahorra cansancio desde temprano.",
       "routeInfo": {
         "mode": "driving",
-        "origin": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
         "destination": "Kiyomizu-dera, Kyoto, Japan",
         "note": "Taxi recomendado desde el hotel hasta la zona de Kiyomizu-dera.",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo to Kiyomizu-dera"
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma to Kiyomizu-dera"
       },
       "marPick": false
     },
@@ -370,7 +370,7 @@
       ],
       "detail": "Después de Nishiki, la cena puede ser más ligera si ya probaron varios snacks.",
       "location": {
-        "name": "Kawaramachi / Sanjo",
+        "name": "Kawaramachi / Gojo Karasuma",
         "mapsQuery": "Kawaramachi Sanjo Kyoto dinner"
       },
       "showMap": false,
@@ -391,9 +391,9 @@
       "routeInfo": {
         "mode": "walking",
         "origin": "Nishiki Market, Kyoto, Japan",
-        "destination": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "destination": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
         "note": "Regreso caminando desde Nishiki Market al hotel.",
-        "mapsQuery": "Nishiki Market to Henn na Hotel Premier Kyoto Sanjo"
+        "mapsQuery": "Nishiki Market to Henn na Hotel Premier Kyoto Gojo Karasuma"
       },
       "marPick": false
     }

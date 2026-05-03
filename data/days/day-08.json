@@ -60,7 +60,7 @@
       ],
       "detail": "El día funciona mejor si llegan a Uji antes del movimiento fuerte.",
       "location": {
-        "name": "Kyoto Station / Sanjo",
+        "name": "Kyoto Station / Gojo Karasuma",
         "mapsQuery": "Kyoto Station breakfast"
       },
       "showMap": false,
@@ -327,22 +327,28 @@
     },
     {
       "time": "4:40 pm",
-      "duration": "20-30 min",
-      "title": "Kyoto Station → Hotel",
-      "icon": "train",
+      "duration": "8-12 min",
+      "title": "Kyoto Station → Henn na Hotel Premier Kyoto Gojo Karasuma",
+      "icon": "local_taxi",
       "tone": "travel",
       "items": [
-        "Traslado desde Kyoto Station al hotel.",
-        "Descansar un rato antes de cenar.",
-        "Costo 2 personas: $6 - $15."
+        "Tomar taxi corto desde Kyoto Station hacia el hotel.",
+        "Ideal con maletas para no hacer transbordos ni caminar cargados.",
+        "Dejar maletas si todavía no hay check-in.",
+        "Presupuesto 2 personas: $8 - $15."
       ],
-      "detail": "Volver al hotel ayuda a cerrar Uji con calma.",
+      "detail": "El hotel correcto está en Gojo Karasuma, bastante cerca de Kyoto Station. Con maletas conviene taxi corto.",
       "routeInfo": {
-        "mode": "transit",
+        "mode": "local_taxi",
         "origin": "Kyoto Station, Kyoto, Japan",
-        "destination": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
-        "note": "Regreso desde Kyoto Station hacia el hotel.",
-        "mapsQuery": "Kyoto Station to Henn na Hotel Premier Kyoto Sanjo"
+        "destination": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
+        "note": "Taxi corto desde Kyoto Station hacia Henn na Hotel Premier Kyoto Gojo Karasuma.",
+        "mapsQuery": "Kyoto Station to Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
+        "fixedDuration": "8-12 min",
+        "fixedDistance": "Taxi corto",
+        "fareEstimateJpy": 1200,
+        "fareEstimateLabel": "aprox. por taxi",
+        "fallbackMessage": "Tiempo estimado para taxi corto desde Kyoto Station hasta Henn na Hotel Premier Kyoto Gojo Karasuma."
       },
       "marPick": false
     },
@@ -359,7 +365,7 @@
       ],
       "detail": "Día de Uji debe cerrar suave.",
       "location": {
-        "name": "Sanjo / Kawaramachi",
+        "name": "Gojo Karasuma / Kawaramachi",
         "mapsQuery": "Sanjo Kawaramachi Kyoto dinner"
       },
       "showMap": false,

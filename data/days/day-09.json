@@ -57,30 +57,36 @@
       ],
       "detail": "Desayuno funcional para llegar temprano a Inari.",
       "location": {
-        "name": "Sanjo / hotel",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo breakfast"
+        "name": "Gojo Karasuma / hotel",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma breakfast"
       },
       "showMap": false,
       "marPick": false
     },
     {
       "time": "7:00 am",
-      "duration": "30-40 min",
+      "duration": "8-12 min",
       "title": "Hotel → Kyoto Station",
-      "icon": "train",
+      "icon": "local_taxi",
       "tone": "travel",
       "items": [
-        "Moverse hacia Kyoto Station.",
-        "Ubicar JR Nara Line.",
-        "Dirección: Inari / Nara."
+        "Tomar taxi corto desde el hotel hacia Kyoto Station.",
+        "Llegar con margen para comprar snacks/bento si hace falta.",
+        "Evitar caminar con maletas.",
+        "Presupuesto 2 personas: $8 - $15."
       ],
-      "detail": "Tramo inicial para llegar a Fushimi Inari.",
+      "detail": "Desde Gojo Karasuma a Kyoto Station conviene taxi corto por comodidad con maletas.",
       "routeInfo": {
-        "mode": "transit",
-        "origin": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "mode": "local_taxi",
+        "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
         "destination": "Kyoto Station, Kyoto, Japan",
-        "note": "Traslado desde el hotel a Kyoto Station.",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo to Kyoto Station"
+        "note": "Taxi corto desde Henn na Hotel Premier Kyoto Gojo Karasuma hacia Kyoto Station.",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan to Kyoto Station",
+        "fixedDuration": "8-12 min",
+        "fixedDistance": "Taxi corto",
+        "fareEstimateJpy": 1200,
+        "fareEstimateLabel": "aprox. por taxi",
+        "fallbackMessage": "Tiempo estimado para taxi corto desde Henn na Hotel Premier Kyoto Gojo Karasuma hasta Kyoto Station."
       },
       "marPick": false
     },
@@ -342,9 +348,9 @@
       "routeInfo": {
         "mode": "walking",
         "origin": "Kawaramachi, Kyoto, Japan",
-        "destination": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "destination": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
         "note": "Regreso hacia el hotel desde Kyoto centro.",
-        "mapsQuery": "Kawaramachi Kyoto to Henn na Hotel Premier Kyoto Sanjo"
+        "mapsQuery": "Kawaramachi Kyoto to Henn na Hotel Premier Kyoto Gojo Karasuma"
       },
       "marPick": false
     }
