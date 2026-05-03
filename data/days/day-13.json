@@ -1,42 +1,600 @@
 {
-  "title": "Día 13 - DisneySea",
-  "subtitle": "Lun 19 oct - Tokyo pendiente de revisar",
+  "title": "Día 13 - Tokyo DisneySea",
+  "subtitle": "Lunes 19 de octubre - día completo en Tokyo DisneySea desde Hotel Sunroute Ginza",
   "dateLabel": "Lunes 19 de octubre de 2026",
   "shortDateLabel": "Lun 19 oct",
-  "status": "Próximamente",
+  "status": "DisneySea",
+  "costEstimateUsd": {
+    "low": 260,
+    "high": 480,
+    "note": "entradas DisneySea, transporte, comidas, snacks, souvenirs y posibles Premier Access; no incluye hotel"
+  },
   "route": [
-    "Tokyo - pendiente"
+    "Hotel Sunroute Ginza",
+    "Ginza-itchome Station",
+    "Yurakucho Station",
+    "Tokyo Station",
+    "Maihama Station",
+    "Resort Gateway Station",
+    "Tokyo DisneySea Station",
+    "Tokyo DisneySea",
+    "Maihama Station",
+    "Tokyo Station",
+    "Ginza",
+    "Hotel Sunroute Ginza"
+  ],
+  "marStops": [
+    "Tokyo DisneySea"
   ],
   "blocks": [
     {
-      "time": "Por definir",
-      "duration": "próximamente",
-      "title": "Tokyo - próximamente",
-      "icon": "pending",
+      "time": "5:45 am",
+      "duration": "inicio",
+      "title": "Despertar temprano para DisneySea",
+      "icon": "alarm",
       "tone": "rest",
       "items": [
-        "Este día de Tokyo todavía no está revisado.",
-        "Falta definir ruta real, horarios, comidas, tiendas, reservas y presupuesto.",
-        "No usar este bloque como plan final todavía."
+        "Levantarse temprano.",
+        "Revisar entradas de Tokyo DisneySea.",
+        "Revisar app oficial de Tokyo Disney Resort.",
+        "Preparar pasaportes/copia, celular, batería externa, agua, pañuelos y bolso cómodo.",
+        "Llevar ropa y zapatos muy cómodos porque será día completo de parque."
       ],
-      "detail": "Placeholder temporal para Tokyo. Se completará cuando trabajemos esta ciudad con el mismo detalle que Osaka y Kyoto.",
-      "showMap": false
-    }
-  ],
-  "note": "Pendiente: este día de Tokyo todavía no ha sido revisado ni confirmado.",
-  "marStops": [],
-  "prepNote": {
-    "title": "Próximamente",
-    "text": "Los días de Tokyo todavía no están revisados. Se completarán después con rutas, horarios, paradas favoritas y presupuesto."
-  },
-  "insights": [
-    {
-      "icon": "pending",
-      "text": "Pendiente de revisar"
+      "detail": "DisneySea requiere salir temprano. La idea es llegar antes de la apertura para aprovechar mejor el día y organizar Premier Access/Standby Pass si aplica.",
+      "showMap": false,
+      "marPick": false
     },
     {
-      "icon": "edit_calendar",
-      "text": "Se completará pronto"
+      "time": "6:10 am",
+      "duration": "6:10 - 6:30 am",
+      "title": "Desayuno rápido cerca del hotel",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Comprar desayuno rápido en convenience store o café cercano.",
+        "Opciones: café, onigiri, sándwich, pan dulce, yogurt o agua.",
+        "Comprar agua extra para el parque.",
+        "Presupuesto 2 personas: $12 - $25."
+      ],
+      "detail": "Mejor desayuno portátil y rápido para no perder el tren temprano hacia Maihama.",
+      "location": {
+        "name": "Hotel Sunroute Ginza / Ginza",
+        "mapsQuery": "Hotel Sunroute Ginza convenience store breakfast"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "6:30 am",
+      "duration": "5-8 min",
+      "title": "Caminata hotel → Ginza-itchome Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del Hotel Sunroute Ginza hacia Ginza-itchome Station.",
+        "Buscar Tokyo Metro Yurakucho Line.",
+        "Tener Suica/ICOCA lista.",
+        "Costo: $0."
+      ],
+      "detail": "Se separa la caminata del tramo en metro para que el mapa no marque todo como caminata.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "destination": "Ginza-itchome Station, Tokyo, Japan",
+        "note": "Caminata desde Hotel Sunroute Ginza hasta Ginza-itchome Station.",
+        "fixedDuration": "5-8 min",
+        "mapsQuery": "Hotel Sunroute Ginza to Ginza-itchome Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:40 am",
+      "duration": "2-3 min",
+      "title": "Metro: Ginza-itchome → Yurakucho",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Entrar a Ginza-itchome Station.",
+        "Tomar Tokyo Metro Yurakucho Line.",
+        "Dirección: Shin-Kiba.",
+        "Bajarse en Yurakucho Station.",
+        "Es 1 estación.",
+        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
+      ],
+      "detail": "Este tramo acerca el hotel a la conexión JR para llegar a Tokyo Station y tomar Keiyo Line hacia Maihama.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Ginza-itchome Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
+        "destination": "Yurakucho Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
+        "note": "Tokyo Metro Yurakucho Line desde Ginza-itchome hasta Yurakucho.",
+        "fixedDuration": "2-3 min",
+        "fixedDistance": "Tokyo Metro Yurakucho Line",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Yurakucho Line: Ginza-itchome → Yurakucho.",
+        "mapsQuery": "Ginza-itchome Station Yurakucho Line to Yurakucho Station by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:45 am",
+      "duration": "8-12 min",
+      "title": "Transbordo Yurakucho → Tokyo Station / Keiyo Line",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Yurakucho.",
+        "Conectar hacia JR / Tokyo Station.",
+        "Buscar señales hacia JR Keiyo Line.",
+        "Tener paciencia porque el acceso a Keiyo Line en Tokyo Station puede sentirse largo.",
+        "Mantenerse juntos y no correr."
+      ],
+      "detail": "Para Disney desde Tokyo Station, el punto importante es llegar a JR Keiyo Line. El transbordo puede tomar más de lo esperado por la distancia interna.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Yurakucho Station, Tokyo, Japan",
+        "destination": "Tokyo Station Keiyo Line platform, Tokyo, Japan",
+        "note": "Conexión caminando desde Yurakucho/Tokyo Station hacia andenes de JR Keiyo Line.",
+        "fixedDuration": "8-15 min",
+        "mapsQuery": "Yurakucho Station to Tokyo Station Keiyo Line platform walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "7:00 am",
+      "duration": "15-20 min",
+      "title": "JR Keiyo Line: Tokyo Station → Maihama",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Keiyo Line desde Tokyo Station.",
+        "Dirección: Soga / Kaihin-Makuhari / Maihama, según tren.",
+        "Bajarse en Maihama Station.",
+        "Costo estimado 2 personas: ¥460 - ¥700 aprox."
+      ],
+      "detail": "Maihama es la estación principal para Tokyo Disney Resort. Este tramo debe quedar como tren, no caminata.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Tokyo Station, JR Keiyo Line, Tokyo, Japan",
+        "destination": "Maihama Station, JR Keiyo Line, Chiba, Japan",
+        "note": "JR Keiyo Line desde Tokyo Station hasta Maihama Station.",
+        "fixedDuration": "15-20 min",
+        "fixedDistance": "JR Keiyo Line",
+        "fareEstimateJpy": 230,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Keiyo Line: Tokyo Station → Maihama Station.",
+        "mapsQuery": "Tokyo Station JR Keiyo Line to Maihama Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "7:25 am",
+      "duration": "7:25 - 7:40 am",
+      "title": "Llegada a Maihama Station",
+      "icon": "train",
+      "tone": "arrival",
+      "items": [
+        "Bajarse en Maihama Station.",
+        "Seguir señales hacia Tokyo Disney Resort Line.",
+        "Comprar o usar IC card para Disney Resort Line.",
+        "No detenerse demasiado en tiendas de la estación al llegar."
+      ],
+      "detail": "La prioridad es llegar a la entrada de DisneySea con margen. Ikspiari y tiendas pueden quedar para la salida si todavía hay energía.",
+      "location": {
+        "name": "Maihama Station",
+        "mapsQuery": "Maihama Station Tokyo Disney Resort"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "7:40 am",
+      "duration": "10-15 min",
+      "title": "Disney Resort Line: Resort Gateway → Tokyo DisneySea Station",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Entrar a Resort Gateway Station.",
+        "Tomar Disney Resort Line.",
+        "Bajarse en Tokyo DisneySea Station.",
+        "Costo estimado 2 personas: ¥600 aprox."
+      ],
+      "detail": "Este tramo conecta Maihama con la entrada de DisneySea. Es parte de la experiencia del resort.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Resort Gateway Station, Maihama, Chiba, Japan",
+        "destination": "Tokyo DisneySea Station, Chiba, Japan",
+        "note": "Disney Resort Line desde Resort Gateway Station hasta Tokyo DisneySea Station.",
+        "fixedDuration": "10-15 min",
+        "fixedDistance": "Disney Resort Line",
+        "fareEstimateJpy": 300,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Disney Resort Line hacia Tokyo DisneySea Station.",
+        "mapsQuery": "Resort Gateway Station to Tokyo DisneySea Station Disney Resort Line",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "7:55 am",
+      "duration": "7:55 - 8:30 am",
+      "title": "Entrada / fila de Tokyo DisneySea",
+      "icon": "confirmation_number",
+      "tone": "arrival",
+      "items": [
+        "Llegar a la entrada de Tokyo DisneySea.",
+        "Tener entradas listas en la app.",
+        "Revisar mapas, horarios y disponibilidad de Premier Access o Standby Pass.",
+        "Definir prioridades antes de entrar.",
+        "Tener agua y batería lista."
+      ],
+      "detail": "Este bloque es clave. Al entrar al parque, revisar inmediatamente la app para organizar Fantasy Springs, Soaring, Journey y otros favoritos según disponibilidad real.",
+      "location": {
+        "name": "Tokyo DisneySea Entrance",
+        "mapsQuery": "Tokyo DisneySea Entrance"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:30 am",
+      "duration": "8:30 - 9:00 am",
+      "title": "Ingreso a Tokyo DisneySea",
+      "icon": "castle",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar: Tokyo DisneySea.",
+        "Entrar al parque.",
+        "Revisar app oficial apenas entren.",
+        "Reservar Premier Access / Standby Pass si aplica.",
+        "Tomar fotos iniciales en Mediterranean Harbor."
+      ],
+      "detail": "Tokyo DisneySea es uno de los días fuertes de Tokyo. La estrategia debe ajustarse en tiempo real con la app del parque.",
+      "location": {
+        "name": "Tokyo DisneySea",
+        "mapsQuery": "Tokyo DisneySea Chiba Japan"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "9:00 am",
+      "duration": "9:00 - 11:00 am",
+      "title": "Bloque de prioridad: Fantasy Springs / atracciones principales",
+      "icon": "auto_awesome",
+      "tone": "arrival",
+      "items": [
+        "Priorizar Fantasy Springs si tienen acceso disponible.",
+        "Revisar opciones como Anna and Elsa's Frozen Journey, Rapunzel's Lantern Festival o Peter Pan según disponibilidad.",
+        "Usar Premier Access / Standby Pass si aplica.",
+        "No perder demasiado tiempo en tiendas temprano."
+      ],
+      "detail": "Este bloque depende de las reglas y disponibilidad del parque ese día. La idea es usar las primeras horas para lo más demandado.",
+      "location": {
+        "name": "Fantasy Springs - Tokyo DisneySea",
+        "mapsQuery": "Fantasy Springs Tokyo DisneySea"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "11:00 am",
+      "duration": "11:00 - 12:15 pm",
+      "title": "Atracciones fuertes de la mañana",
+      "icon": "attractions",
+      "tone": "arrival",
+      "items": [
+        "Revisar tiempos de espera en la app.",
+        "Priorizar Soaring: Fantastic Flight si está viable.",
+        "Considerar Journey to the Center of the Earth.",
+        "Considerar Indiana Jones Adventure o Tower of Terror según ruta y filas.",
+        "Tomar agua entre atracciones."
+      ],
+      "detail": "La mañana debe usarse para atracciones de alta demanda. No conviene cruzar el parque sin revisar tiempos de espera.",
+      "location": {
+        "name": "Tokyo DisneySea attractions",
+        "mapsQuery": "Tokyo DisneySea attractions Soaring Journey to the Center of the Earth"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "12:15 pm",
+      "duration": "12:15 - 1:20 pm",
+      "title": "Almuerzo dentro de DisneySea",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almorzar dentro del parque.",
+        "Opciones según zona: comida rápida temática, restaurante casual o snack fuerte.",
+        "Evitar esperar a tener demasiada hambre.",
+        "Presupuesto 2 personas: $35 - $70."
+      ],
+      "detail": "Elegir restaurante según ubicación real y filas. En DisneySea caminar de más cansa mucho.",
+      "location": {
+        "name": "Tokyo DisneySea restaurants",
+        "mapsQuery": "Tokyo DisneySea restaurants"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:20 pm",
+      "duration": "1:20 - 1:40 pm",
+      "title": "Reorganizar ruta de la tarde",
+      "icon": "map",
+      "tone": "rest",
+      "items": [
+        "Revisar tiempos de espera en la app.",
+        "Revisar shows, snacks y reservas disponibles.",
+        "Definir si conviene seguir atracciones o hacer tiendas/fotos.",
+        "Ir al baño y rellenar agua."
+      ],
+      "detail": "Después del almuerzo, la estrategia debe actualizarse. DisneySea funciona mejor si se adapta a la app y no a un orden rígido.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:40 pm",
+      "duration": "1:40 - 4:00 pm",
+      "title": "Tarde de atracciones y zonas temáticas",
+      "icon": "explore",
+      "tone": "arrival",
+      "items": [
+        "Recorrer zonas como Mysterious Island, Arabian Coast, Mermaid Lagoon, Port Discovery o Lost River Delta.",
+        "Ajustar según esperas reales.",
+        "Hacer fotos en zonas bonitas.",
+        "Comprar snacks especiales si aparecen en ruta."
+      ],
+      "detail": "DisneySea es muy visual. La tarde no debe ser solo correr entre atracciones; también vale la pena disfrutar el parque.",
+      "location": {
+        "name": "Tokyo DisneySea themed ports",
+        "mapsQuery": "Tokyo DisneySea themed ports"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "4:00 pm",
+      "duration": "4:00 - 5:00 pm",
+      "title": "Snack / café / descanso",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Hacer pausa para café, snack o postre.",
+        "Buscar algún snack especial de temporada.",
+        "Sentarse un rato si ya están cansados.",
+        "Presupuesto 2 personas: $15 - $35."
+      ],
+      "detail": "Esta pausa es importante para no llegar agotados a la noche del parque.",
+      "location": {
+        "name": "Tokyo DisneySea snacks",
+        "mapsQuery": "Tokyo DisneySea snacks"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "5:00 pm",
+      "duration": "5:00 - 6:30 pm",
+      "title": "Tiendas y souvenirs Disney",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "items": [
+        "Revisar tiendas principales del parque.",
+        "Buscar souvenirs de DisneySea, Duffy, ShellieMay, Fantasy Springs o temporada.",
+        "Comprar antes del cierre para no hacerlo con todo el mundo al final.",
+        "Compras opcionales 2 personas: $50 - $180."
+      ],
+      "detail": "DisneySea tiene souvenirs específicos que no siempre se ven igual en Disney Store. Conviene revisar con calma.",
+      "location": {
+        "name": "Tokyo DisneySea shops",
+        "mapsQuery": "Tokyo DisneySea shops souvenirs"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "6:30 pm",
+      "duration": "6:30 - 7:30 pm",
+      "title": "Cena dentro del parque",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cenar dentro de DisneySea.",
+        "Elegir restaurante según zona y energía.",
+        "Comprar agua para el regreso.",
+        "Presupuesto 2 personas: $40 - $80."
+      ],
+      "detail": "Cenar dentro del parque permite disfrutar la noche sin salir con hambre hacia Tokyo.",
+      "location": {
+        "name": "Tokyo DisneySea dinner",
+        "mapsQuery": "Tokyo DisneySea restaurants dinner"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "7:30 pm",
+      "duration": "7:30 - 8:30 pm",
+      "title": "Noche en DisneySea / show / últimas fotos",
+      "icon": "nightlight",
+      "tone": "night",
+      "items": [
+        "Ver el ambiente nocturno del parque.",
+        "Revisar si hay show nocturno disponible.",
+        "Tomar últimas fotos en Mediterranean Harbor.",
+        "Hacer una última atracción si las filas bajan."
+      ],
+      "detail": "La noche en DisneySea es parte importante de la experiencia. No salir demasiado temprano si todavía tienen energía.",
+      "location": {
+        "name": "Mediterranean Harbor Tokyo DisneySea",
+        "mapsQuery": "Mediterranean Harbor Tokyo DisneySea night"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:30 pm",
+      "duration": "8:30 - 8:45 pm",
+      "title": "Salida de DisneySea → Tokyo DisneySea Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del parque con calma.",
+        "Caminar hacia Tokyo DisneySea Station.",
+        "Tener Suica/ICOCA lista.",
+        "Mantener compras juntas."
+      ],
+      "detail": "Después del parque puede haber bastante gente, así que conviene moverse sin correr pero con claridad.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tokyo DisneySea exit, Chiba, Japan",
+        "destination": "Tokyo DisneySea Station, Chiba, Japan",
+        "note": "Caminata desde la salida de Tokyo DisneySea hacia Tokyo DisneySea Station.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Tokyo DisneySea exit to Tokyo DisneySea Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:45 pm",
+      "duration": "10-15 min",
+      "title": "Disney Resort Line: DisneySea → Resort Gateway",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar Disney Resort Line desde Tokyo DisneySea Station.",
+        "Bajarse en Resort Gateway Station.",
+        "Caminar hacia Maihama Station.",
+        "Costo estimado 2 personas: ¥600 aprox."
+      ],
+      "detail": "Primer tramo del regreso hacia Tokyo.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Tokyo DisneySea Station, Chiba, Japan",
+        "destination": "Resort Gateway Station, Maihama, Chiba, Japan",
+        "note": "Disney Resort Line desde Tokyo DisneySea Station hasta Resort Gateway Station.",
+        "fixedDuration": "10-15 min",
+        "fixedDistance": "Disney Resort Line",
+        "fareEstimateJpy": 300,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Disney Resort Line desde DisneySea hacia Resort Gateway.",
+        "mapsQuery": "Tokyo DisneySea Station to Resort Gateway Station Disney Resort Line",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:00 pm",
+      "duration": "5-8 min",
+      "title": "Caminata Resort Gateway → Maihama Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Resort Gateway Station.",
+        "Caminar hacia Maihama Station.",
+        "Buscar JR Keiyo Line hacia Tokyo.",
+        "Costo: $0."
+      ],
+      "detail": "Conectar de vuelta hacia JR para regresar a Ginza/Tokyo Station.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Resort Gateway Station, Maihama, Chiba, Japan",
+        "destination": "Maihama Station, Chiba, Japan",
+        "note": "Caminata desde Resort Gateway Station hacia Maihama Station.",
+        "fixedDuration": "5-8 min",
+        "mapsQuery": "Resort Gateway Station to Maihama Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:10 pm",
+      "duration": "15-20 min",
+      "title": "JR Keiyo Line: Maihama → Tokyo Station",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Keiyo Line desde Maihama Station.",
+        "Dirección: Tokyo.",
+        "Bajarse en Tokyo Station.",
+        "Costo estimado 2 personas: ¥460 - ¥700 aprox."
+      ],
+      "detail": "Regreso principal desde Disney hacia Tokyo. Este tramo debe quedar como tren.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Maihama Station, JR Keiyo Line, Chiba, Japan",
+        "destination": "Tokyo Station, JR Keiyo Line, Tokyo, Japan",
+        "note": "JR Keiyo Line desde Maihama Station hasta Tokyo Station.",
+        "fixedDuration": "15-20 min",
+        "fixedDistance": "JR Keiyo Line",
+        "fareEstimateJpy": 230,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Keiyo Line: Maihama Station → Tokyo Station.",
+        "mapsQuery": "Maihama Station JR Keiyo Line to Tokyo Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:35 pm",
+      "duration": "10-15 min",
+      "title": "Tokyo Station → Hotel Sunroute Ginza",
+      "icon": "local_taxi",
+      "tone": "travel",
+      "items": [
+        "Tomar taxi corto desde Tokyo Station hacia Hotel Sunroute Ginza.",
+        "Recomendado por cansancio y compras del parque.",
+        "Presupuesto estimado 2 personas: $10 - $20.",
+        "Guardar bien souvenirs y celulares."
+      ],
+      "detail": "Después de DisneySea, el taxi corto evita caminar de más desde Tokyo Station. Vale la pena por comodidad.",
+      "routeInfo": {
+        "mode": "driving",
+        "origin": "Tokyo Station, Tokyo, Japan",
+        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "note": "Taxi corto desde Tokyo Station hacia Hotel Sunroute Ginza.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Tokyo Station to Hotel Sunroute Ginza by taxi"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:55 pm",
+      "duration": "cierre",
+      "title": "Llegada al hotel y recuperación",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Guardar souvenirs y compras de Disney.",
+        "Cargar celulares y batería externa.",
+        "Tomar agua.",
+        "Descansar bien porque el Día 14 toca Akihabara + Odaiba.",
+        "No extender la noche."
+      ],
+      "detail": "DisneySea es un día largo. Lo más importante al llegar es recuperarse.",
+      "showMap": false,
+      "marPick": false
     }
-  ]
+  ],
+  "note": "Meta del día: dedicar el día completo a Tokyo DisneySea desde Hotel Sunroute Ginza, saliendo temprano, usando JR Keiyo Line hacia Maihama, priorizando Fantasy Springs/atracciones principales según app oficial, disfrutando tiendas y ambiente nocturno, y regresando cómodo en taxi corto desde Tokyo Station al hotel."
 }

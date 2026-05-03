@@ -1,42 +1,928 @@
 {
-  "title": "Día 12 - Shibuya + Shinjuku",
-  "subtitle": "Dom 18 oct - Tokyo pendiente de revisar",
+  "title": "Día 12 - Shibuya + Harajuku + Shinjuku",
+  "subtitle": "Domingo 18 de octubre - Hachiko, Pokémon Center Shibuya, tiendas de Mar, Harajuku, Harry Potter Shop, Ayuntamiento de Tokio y Godzilla Head",
   "dateLabel": "Domingo 18 de octubre de 2026",
   "shortDateLabel": "Dom 18 oct",
-  "status": "Próximamente",
+  "status": "Shibuya + Harajuku + Shinjuku",
+  "costEstimateUsd": {
+    "low": 230,
+    "high": 430,
+    "note": "transporte local, comida, cafés, tiendas de Shibuya, Harajuku, Shinjuku y compras moderadas"
+  },
   "route": [
-    "Tokyo - pendiente"
+    "Hotel Sunroute Ginza",
+    "Ginza-itchome Station",
+    "Nagatacho Station",
+    "Shibuya Station",
+    "Hachiko Square",
+    "Shibuya Crossing",
+    "Pokémon Center Shibuya",
+    "Mandarake Shibuya",
+    "Loft Shibuya",
+    "Disney Store Shibuya",
+    "MEGA Don Quijote Shibuya",
+    "Yoroshi Cosmetics",
+    "Harajuku Station",
+    "Takeshita Street Entrance Arch / Meiji Street",
+    "Harry Potter Shop Harajuku",
+    "Shinjuku Station",
+    "Ayuntamiento de Tokio",
+    "Godzilla Head",
+    "Ginza Station",
+    "Hotel Sunroute Ginza"
+  ],
+  "marStops": [
+    "Hachiko Square",
+    "Pokémon Center Shibuya",
+    "Mandarake Shibuya",
+    "Disney Store",
+    "MEGA Don Quijote",
+    "Loft",
+    "Yoroshi Cosmetics",
+    "Takeshita Street Entrance Arch / Meiji Street",
+    "Harry Potter Shop Harajuku",
+    "Ayuntamiento de Tokio",
+    "Godzilla Head"
+  ],
+  "animeFigureStops": [
+    "Pokémon Center Shibuya",
+    "Mandarake Shibuya"
   ],
   "blocks": [
     {
-      "time": "Por definir",
-      "duration": "próximamente",
-      "title": "Tokyo - próximamente",
-      "icon": "pending",
+      "time": "7:30 am",
+      "duration": "inicio",
+      "title": "Despertar en Ginza",
+      "icon": "wb_sunny",
       "tone": "rest",
       "items": [
-        "Este día de Tokyo todavía no está revisado.",
-        "Falta definir ruta real, horarios, comidas, tiendas, reservas y presupuesto.",
-        "No usar este bloque como plan final todavía."
+        "Levantarse con calma.",
+        "Preparar batería externa, celular/cámara y efectivo.",
+        "Llevar bolso cómodo para compras.",
+        "Revisar clima antes de salir.",
+        "Usar zapatos cómodos porque este día tiene bastante caminata urbana."
       ],
-      "detail": "Placeholder temporal para Tokyo. Se completará cuando trabajemos esta ciudad con el mismo detalle que Osaka y Kyoto.",
-      "showMap": false
-    }
-  ],
-  "note": "Pendiente: este día de Tokyo todavía no ha sido revisado ni confirmado.",
-  "marStops": [],
-  "prepNote": {
-    "title": "Próximamente",
-    "text": "Los días de Tokyo todavía no están revisados. Se completarán después con rutas, horarios, paradas favoritas y presupuesto."
-  },
-  "insights": [
-    {
-      "icon": "pending",
-      "text": "Pendiente de revisar"
+      "detail": "Este es uno de los días más cargados de Tokyo por compras, calles, tiendas y traslados entre zonas. Conviene salir temprano, pero sin hacerlo tan pesado como Disney.",
+      "showMap": false,
+      "marPick": false
     },
     {
-      "icon": "edit_calendar",
-      "text": "Se completará pronto"
+      "time": "8:00 am",
+      "duration": "8:00 - 8:35 am",
+      "title": "Desayuno cerca del Hotel Sunroute Ginza",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayuno ligero cerca del hotel.",
+        "Opciones: café, bakery japonesa, convenience store o restaurante cercano.",
+        "Comprar agua antes de salir.",
+        "Presupuesto 2 personas: $18 - $30."
+      ],
+      "detail": "Desayuno práctico antes de moverse a Shibuya. Este día tiene muchas tiendas, así que mejor salir ya desayunados.",
+      "location": {
+        "name": "Hotel Sunroute Ginza / Ginza",
+        "mapsQuery": "Hotel Sunroute Ginza breakfast nearby"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:40 am",
+      "duration": "5-8 min",
+      "title": "Caminata hotel → Ginza-itchome Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del Hotel Sunroute Ginza hacia Ginza-itchome Station.",
+        "Buscar la entrada de Tokyo Metro Yurakucho Line.",
+        "Tener Suica/ICOCA lista.",
+        "Costo: $0."
+      ],
+      "detail": "Se separa la caminata al metro del tramo en tren para que el mapa no lo marque como caminata completa.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "destination": "Ginza-itchome Station, Tokyo, Japan",
+        "note": "Caminata desde Hotel Sunroute Ginza hasta Ginza-itchome Station.",
+        "fixedDuration": "5-8 min",
+        "mapsQuery": "Hotel Sunroute Ginza to Ginza-itchome Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:50 am",
+      "duration": "8-10 min",
+      "title": "Metro: Ginza-itchome → Nagatacho",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Entrar a Ginza-itchome Station.",
+        "Tomar Tokyo Metro Yurakucho Line.",
+        "Dirección: Wakoshi / Ikebukuro.",
+        "Bajarse en Nagatacho Station.",
+        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
+      ],
+      "detail": "Primer tramo de metro hacia Shibuya. Usar estaciones exactas evita que Maps interprete el recorrido como caminata urbana.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Ginza-itchome Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
+        "destination": "Nagatacho Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
+        "note": "Tokyo Metro Yurakucho Line desde Ginza-itchome Station hasta Nagatacho Station.",
+        "fixedDuration": "8-10 min",
+        "fixedDistance": "Tokyo Metro Yurakucho Line",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Yurakucho Line: Ginza-itchome → Nagatacho.",
+        "mapsQuery": "Ginza-itchome Station Yurakucho Line to Nagatacho Station by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:00 am",
+      "duration": "5-8 min",
+      "title": "Transbordo en Nagatacho",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Nagatacho Station.",
+        "Seguir señales hacia Tokyo Metro Hanzomon Line.",
+        "Buscar dirección Shibuya.",
+        "Mantenerse juntos porque la estación puede sentirse grande."
+      ],
+      "detail": "Nagatacho es una estación de conexión. Este bloque evita que el traslado se vea como un solo salto sin instrucciones.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Nagatacho Station Yurakucho Line platform, Tokyo, Japan",
+        "destination": "Nagatacho Station Hanzomon Line platform, Tokyo, Japan",
+        "note": "Transbordo interno en Nagatacho desde Yurakucho Line hacia Hanzomon Line.",
+        "fixedDuration": "5-8 min",
+        "mapsQuery": "Nagatacho Station transfer Yurakucho Line to Hanzomon Line"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:10 am",
+      "duration": "8-10 min",
+      "title": "Metro: Nagatacho → Shibuya",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Tomar Tokyo Metro Hanzomon Line.",
+        "Dirección: Shibuya / Chuo-Rinkan.",
+        "Bajarse en Shibuya Station.",
+        "Seguir señales hacia Hachiko Exit."
+      ],
+      "detail": "Segundo tramo hacia Shibuya. Llegar por estación permite empezar directamente en Hachiko y Shibuya Crossing.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Nagatacho Station, Tokyo Metro Hanzomon Line, Tokyo, Japan",
+        "destination": "Shibuya Station, Tokyo Metro Hanzomon Line, Tokyo, Japan",
+        "note": "Tokyo Metro Hanzomon Line desde Nagatacho Station hasta Shibuya Station.",
+        "fixedDuration": "8-10 min",
+        "fixedDistance": "Tokyo Metro Hanzomon Line",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Hanzomon Line: Nagatacho → Shibuya.",
+        "mapsQuery": "Nagatacho Station Hanzomon Line to Shibuya Station Hanzomon Line by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:25 am",
+      "duration": "5-10 min",
+      "title": "Salida Hachiko en Shibuya Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir por Hachiko Exit.",
+        "Ubicar Hachiko Square.",
+        "Preparar cámara/celular.",
+        "Costo: $0."
+      ],
+      "detail": "Hachiko Exit es la salida más lógica para empezar el día en Shibuya.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Shibuya Station, Tokyo, Japan",
+        "destination": "Hachiko Square, Shibuya, Tokyo, Japan",
+        "note": "Caminata interna/salida desde Shibuya Station hacia Hachiko Square.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Shibuya Station Hachiko Exit to Hachiko Square walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:35 am",
+      "duration": "20 min",
+      "title": "Hachiko Square",
+      "icon": "pets",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Tomar foto con la estatua de Hachiko.",
+        "Ubicarse en la zona principal de Shibuya.",
+        "Costo: $0."
+      ],
+      "detail": "Buen inicio para el día de Shibuya porque está junto al cruce y es punto icónico.",
+      "location": {
+        "name": "Hachiko Square",
+        "mapsQuery": "Hachiko Square Shibuya Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "9:55 am",
+      "duration": "20 min",
+      "title": "Shibuya Crossing",
+      "icon": "crossing",
+      "tone": "arrival",
+      "items": [
+        "Cruzar Shibuya Crossing.",
+        "Tomar fotos/video del cruce.",
+        "Ver el movimiento desde la zona de Hachiko o desde algún punto elevado si les queda cómodo.",
+        "Costo: $0."
+      ],
+      "detail": "Aunque no está escrito separado en la lista de Mar, va naturalmente con Hachiko y es parte esencial de Shibuya.",
+      "location": {
+        "name": "Shibuya Crossing",
+        "mapsQuery": "Shibuya Crossing Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "10:15 am",
+      "duration": "10-15 min",
+      "title": "Caminata Hachiko → Shibuya PARCO",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Hachiko/Shibuya Crossing hacia Shibuya PARCO.",
+        "Subir hacia el piso de tiendas de personajes.",
+        "Mantener el bolso cómodo porque aquí puede haber compras.",
+        "Costo: $0."
+      ],
+      "detail": "Shibuya PARCO es clave porque ahí está Pokémon Center Shibuya.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hachiko Square, Shibuya, Tokyo, Japan",
+        "destination": "Shibuya PARCO, Tokyo, Japan",
+        "note": "Caminata desde Hachiko Square hacia Shibuya PARCO.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Hachiko Square to Shibuya PARCO walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:30 am",
+      "duration": "10:30 - 11:30 am",
+      "title": "Pokémon Center Shibuya",
+      "icon": "toys",
+      "tone": "shopping",
+      "marListStop": true,
+      "animeFigureStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Visitar Pokémon Center Shibuya en Shibuya PARCO.",
+        "Buscar peluches, figuras pequeñas, llaveros, ropa y artículos exclusivos.",
+        "Comparar con Pokémon Center Osaka DX / Kyoto / Skytree.",
+        "Compras opcionales 2 personas: $30 - $120."
+      ],
+      "detail": "Este es uno de los puntos fuertes de Shibuya para Mar y también sirve como parada de personajes/anime para usted.",
+      "location": {
+        "name": "Pokémon Center Shibuya",
+        "mapsQuery": "Pokemon Center Shibuya Shibuya PARCO Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "11:30 am",
+      "duration": "10 min",
+      "title": "Caminata Shibuya PARCO → Mandarake Shibuya",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Shibuya PARCO hacia Mandarake Shibuya.",
+        "Caminar por calles comerciales de Shibuya.",
+        "Mantener compras organizadas.",
+        "Costo: $0."
+      ],
+      "detail": "Mandarake entra perfecto después de Pokémon porque mantiene el bloque de anime/coleccionables.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Shibuya PARCO, Tokyo, Japan",
+        "destination": "Mandarake Shibuya, Tokyo, Japan",
+        "note": "Caminata desde Shibuya PARCO hacia Mandarake Shibuya.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Shibuya PARCO to Mandarake Shibuya walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:40 am",
+      "duration": "40 min",
+      "title": "Mandarake Shibuya",
+      "icon": "storefront",
+      "tone": "shopping",
+      "marListStop": true,
+      "animeFigureStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Buscar manga, coleccionables, figuras pequeñas, goods y productos de segunda mano.",
+        "Buena parada para anime sin convertir este día en Akihabara.",
+        "Compras opcionales 2 personas: $20 - $100."
+      ],
+      "detail": "Mandarake es la parada más alineada con su interés de figuras/anime en este día. Las compras fuertes de figuras todavía quedan mejor para Akihabara.",
+      "location": {
+        "name": "Mandarake Shibuya",
+        "mapsQuery": "Mandarake Shibuya Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "12:20 pm",
+      "duration": "12:20 - 1:20 pm",
+      "title": "Almuerzo en Shibuya",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almorzar en Shibuya.",
+        "Opciones: ramen, sushi casual, curry japonés, tonkatsu, udon o hamburguesa japonesa.",
+        "Elegir algo cerca para no perder tiempo de tiendas.",
+        "Presupuesto 2 personas: $35 - $70."
+      ],
+      "detail": "Después de Pokémon y Mandarake conviene hacer pausa antes del bloque de compras de Mar.",
+      "location": {
+        "name": "Shibuya restaurants",
+        "mapsQuery": "Shibuya Tokyo lunch restaurants"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:20 pm",
+      "duration": "10 min",
+      "title": "Caminata almuerzo → Loft Shibuya",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar hacia Loft Shibuya.",
+        "Mantener compras organizadas.",
+        "Costo: $0."
+      ],
+      "detail": "Loft inicia el bloque de tiendas de Mar en Shibuya.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Shibuya, Tokyo, Japan",
+        "destination": "Loft Shibuya, Tokyo, Japan",
+        "note": "Caminata dentro de Shibuya hacia Loft.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Shibuya to Loft Shibuya walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "1:30 pm",
+      "duration": "35 min",
+      "title": "Loft Shibuya",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Papelería, lifestyle, regalos, cosmética, accesorios y objetos curiosos.",
+        "Buena tienda para souvenirs útiles.",
+        "Compras opcionales 2 personas: $20 - $80."
+      ],
+      "detail": "Loft es una parada muy buena para compras variadas sin depender de tiendas de lujo.",
+      "location": {
+        "name": "Loft Shibuya",
+        "mapsQuery": "Loft Shibuya Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "2:05 pm",
+      "duration": "10 min",
+      "title": "Caminata Loft → Disney Store Shibuya",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Loft Shibuya hacia Disney Store.",
+        "Caminar por zona comercial de Shibuya.",
+        "Costo: $0."
+      ],
+      "detail": "Disney Store queda dentro del bloque de compras de Shibuya y no requiere traslado grande.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Loft Shibuya, Tokyo, Japan",
+        "destination": "Disney Store Shibuya, Tokyo, Japan",
+        "note": "Caminata desde Loft Shibuya hacia Disney Store Shibuya.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Loft Shibuya to Disney Store Shibuya walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "2:15 pm",
+      "duration": "30 min",
+      "title": "Disney Store Shibuya",
+      "icon": "storefront",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Tienda Disney para souvenirs, artículos de personajes y regalos.",
+        "Buena parada antes del día de DisneySea para ver productos.",
+        "Compras opcionales 2 personas: $20 - $80."
+      ],
+      "detail": "Se integra como parada concreta de Shibuya, no como alternativa.",
+      "location": {
+        "name": "Disney Store Shibuya",
+        "mapsQuery": "Disney Store Shibuya Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "2:45 pm",
+      "duration": "10 min",
+      "title": "Caminata Disney Store → MEGA Don Quijote Shibuya",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Disney Store hacia MEGA Don Quijote Shibuya.",
+        "Preparar lista mental de compras para no perder demasiado tiempo.",
+        "Costo: $0."
+      ],
+      "detail": "MEGA Don Quijote puede absorber mucho tiempo, por eso conviene entrar con prioridades.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Disney Store Shibuya, Tokyo, Japan",
+        "destination": "MEGA Don Quijote Shibuya, Tokyo, Japan",
+        "note": "Caminata desde Disney Store hacia MEGA Don Quijote Shibuya.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Disney Store Shibuya to MEGA Don Quijote Shibuya walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "2:55 pm",
+      "duration": "45 min",
+      "title": "MEGA Don Quijote Shibuya",
+      "icon": "shopping_cart",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Comprar snacks, cosméticos, artículos japoneses, souvenirs y cosas curiosas.",
+        "Revisar precios, pero no comprar demasiado pesado porque aún falta Harajuku/Shinjuku.",
+        "Compras opcionales 2 personas: $30 - $120."
+      ],
+      "detail": "MEGA Don Quijote es muy buena parada, pero debe mantenerse controlada para no cargar bolsas todo el día.",
+      "location": {
+        "name": "MEGA Don Quijote Shibuya",
+        "mapsQuery": "MEGA Don Quijote Shibuya Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "3:40 pm",
+      "duration": "20-30 min",
+      "title": "Yoroshi Cosmetics",
+      "icon": "spa",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Bloque para cosméticos o compras de belleza en Shibuya.",
+        "Mantenerlo corto para no atrasar Harajuku.",
+        "Compras opcionales 2 personas: $15 - $70."
+      ],
+      "detail": "Este bloque se deja como parada de compras específica de Mar dentro de Shibuya. Si la ubicación exacta cambia, usar el mapsQuery desde la lista guardada.",
+      "location": {
+        "name": "Yoroshi Cosmetics",
+        "mapsQuery": "Yoroshi Cosmetics Shibuya Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "4:10 pm",
+      "duration": "10-15 min",
+      "title": "Caminata Shibuya → JR Shibuya Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Volver hacia JR Shibuya Station.",
+        "Buscar JR Yamanote Line.",
+        "Dirección: Harajuku / Shinjuku.",
+        "Costo caminata: $0."
+      ],
+      "detail": "Separar este tramo ayuda a que el mapa no convierta Shibuya → Harajuku en una caminata larga si la intención es usar tren.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "MEGA Don Quijote Shibuya, Tokyo, Japan",
+        "destination": "JR Shibuya Station, Tokyo, Japan",
+        "note": "Caminata desde zona de compras de Shibuya hacia JR Shibuya Station.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "MEGA Don Quijote Shibuya to JR Shibuya Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:25 pm",
+      "duration": "3-5 min",
+      "title": "JR Yamanote: Shibuya → Harajuku",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yamanote Line desde Shibuya Station.",
+        "Dirección: Shinjuku / Ikebukuro.",
+        "Bajarse en Harajuku Station.",
+        "Es 1 estación.",
+        "Costo estimado 2 personas: ¥300 aprox."
+      ],
+      "detail": "Este traslado debe ser en tren para no gastar energía caminando desde Shibuya hasta Harajuku.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "JR Shibuya Station, Yamanote Line, Tokyo, Japan",
+        "destination": "JR Harajuku Station, Yamanote Line, Tokyo, Japan",
+        "note": "JR Yamanote Line desde Shibuya Station hasta Harajuku Station.",
+        "fixedDuration": "3-5 min",
+        "fixedDistance": "JR Yamanote Line",
+        "fareEstimateJpy": 150,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yamanote Line: Shibuya → Harajuku.",
+        "mapsQuery": "JR Shibuya Station Yamanote Line to JR Harajuku Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:35 pm",
+      "duration": "5-10 min",
+      "title": "Caminata Harajuku Station → Takeshita Street Entrance",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Harajuku Station.",
+        "Caminar hacia Takeshita Street Entrance Arch.",
+        "Ubicar Meiji Street como referencia.",
+        "Costo: $0."
+      ],
+      "detail": "Este tramo sí es caminando porque Takeshita queda justo al salir de Harajuku.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "JR Harajuku Station, Tokyo, Japan",
+        "destination": "Takeshita Street Entrance Arch, Tokyo, Japan",
+        "note": "Caminata desde Harajuku Station hacia Takeshita Street Entrance.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "JR Harajuku Station to Takeshita Street Entrance Arch walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:45 pm",
+      "duration": "4:45 - 5:25 pm",
+      "title": "Takeshita Street Entrance Arch / Meiji Street",
+      "icon": "streetview",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Entrar por Takeshita Street Entrance Arch.",
+        "Caminar por la zona de Harajuku.",
+        "Ver tiendas, snacks, crepas, ropa y ambiente juvenil.",
+        "Presupuesto 2 personas: $15 - $50."
+      ],
+      "detail": "Harajuku se mete como bloque de tarde, no como día completo. Es suficiente para cumplir la parte de Mar sin destruir el itinerario.",
+      "location": {
+        "name": "Takeshita Street Entrance Arch / Meiji Street",
+        "mapsQuery": "Takeshita Street Entrance Arch Harajuku Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "5:25 pm",
+      "duration": "10 min",
+      "title": "Caminata Takeshita → Harry Potter Shop Harajuku",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Takeshita/Meiji Street hacia Harry Potter Shop Harajuku.",
+        "Mantener compras compactas.",
+        "Costo: $0."
+      ],
+      "detail": "El Harry Potter Shop queda muy bien conectado con el bloque de Harajuku.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Takeshita Street Entrance Arch, Tokyo, Japan",
+        "destination": "Harry Potter Shop Harajuku, Tokyo, Japan",
+        "note": "Caminata desde Takeshita Street hacia Harry Potter Shop Harajuku.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Takeshita Street Entrance Arch to Harry Potter Shop Harajuku walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:35 pm",
+      "duration": "35 min",
+      "title": "Harry Potter Shop Harajuku",
+      "icon": "auto_fix_high",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Tienda temática de Harry Potter en Harajuku.",
+        "Buscar artículos de colección, papelería, ropa o souvenirs.",
+        "Compras opcionales 2 personas: $20 - $100."
+      ],
+      "detail": "Buena parada porque conecta con el interés de fantasía/personajes y no requiere desviarse demasiado.",
+      "location": {
+        "name": "Harry Potter Shop Harajuku",
+        "mapsQuery": "Harry Potter Shop Harajuku Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "6:10 pm",
+      "duration": "10 min",
+      "title": "Caminata Harry Potter Shop → Harajuku Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Volver hacia JR Harajuku Station.",
+        "Buscar JR Yamanote Line.",
+        "Dirección: Shinjuku / Ikebukuro.",
+        "Costo caminata: $0."
+      ],
+      "detail": "Se vuelve a Harajuku Station para ir a Shinjuku sin caminar de más.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Harry Potter Shop Harajuku, Tokyo, Japan",
+        "destination": "JR Harajuku Station, Tokyo, Japan",
+        "note": "Caminata desde Harry Potter Shop Harajuku hacia JR Harajuku Station.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Harry Potter Shop Harajuku to JR Harajuku Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:20 pm",
+      "duration": "5 min",
+      "title": "JR Yamanote: Harajuku → Shinjuku",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yamanote Line desde Harajuku Station.",
+        "Dirección: Shinjuku / Ikebukuro.",
+        "Bajarse en Shinjuku Station.",
+        "Costo estimado 2 personas: ¥300 aprox."
+      ],
+      "detail": "Traslado corto y directo hacia Shinjuku para cerrar el día con mirador, Godzilla y cena.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "JR Harajuku Station, Yamanote Line, Tokyo, Japan",
+        "destination": "JR Shinjuku Station, Yamanote Line, Tokyo, Japan",
+        "note": "JR Yamanote Line desde Harajuku Station hasta Shinjuku Station.",
+        "fixedDuration": "5 min",
+        "fixedDistance": "JR Yamanote Line",
+        "fareEstimateJpy": 150,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yamanote Line: Harajuku → Shinjuku.",
+        "mapsQuery": "JR Harajuku Station Yamanote Line to JR Shinjuku Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:30 pm",
+      "duration": "15-20 min",
+      "title": "Caminata Shinjuku Station → Ayuntamiento de Tokio",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Shinjuku Station hacia Tokyo Metropolitan Government Building.",
+        "Seguir señales hacia el lado oeste de Shinjuku.",
+        "Caminar con calma porque Shinjuku Station es grande.",
+        "Costo: $0."
+      ],
+      "detail": "El Ayuntamiento queda en el lado oeste de Shinjuku. Separar este tramo ayuda a evitar confusión dentro de la estación.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "JR Shinjuku Station, Tokyo, Japan",
+        "destination": "Tokyo Metropolitan Government Building, Tokyo, Japan",
+        "note": "Caminata desde Shinjuku Station hacia el Ayuntamiento de Tokio.",
+        "fixedDuration": "15-20 min",
+        "mapsQuery": "JR Shinjuku Station to Tokyo Metropolitan Government Building walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:50 pm",
+      "duration": "40 min",
+      "title": "Ayuntamiento de Tokio",
+      "icon": "apartment",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Ver el edificio del Gobierno Metropolitano de Tokyo.",
+        "Subir al observatorio si está abierto y hay fila razonable.",
+        "Buena vista gratuita de Tokyo.",
+        "Costo: $0."
+      ],
+      "detail": "Este bloque funciona bien al atardecer/noche. Si el observatorio está abierto, puede ser una vista muy buena sin pagar mirador.",
+      "location": {
+        "name": "Ayuntamiento de Tokio / Tokyo Metropolitan Government Building",
+        "mapsQuery": "Tokyo Metropolitan Government Building Observatory Shinjuku"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "7:30 pm",
+      "duration": "20-25 min",
+      "title": "Caminata Ayuntamiento → Godzilla Head",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde el Ayuntamiento hacia Kabukicho.",
+        "Pasar por zona urbana de Shinjuku.",
+        "Mantenerse en calles principales.",
+        "Costo: $0."
+      ],
+      "detail": "Es una caminata más larga dentro de Shinjuku, pero permite conectar el lado oeste con Kabukicho sin otro tren.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tokyo Metropolitan Government Building, Tokyo, Japan",
+        "destination": "Godzilla Head, Shinjuku, Tokyo, Japan",
+        "note": "Caminata desde el Ayuntamiento de Tokio hacia Godzilla Head en Kabukicho.",
+        "fixedDuration": "20-25 min",
+        "mapsQuery": "Tokyo Metropolitan Government Building to Godzilla Head Shinjuku walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:00 pm",
+      "duration": "20 min",
+      "title": "Godzilla Head",
+      "icon": "theater_comedy",
+      "tone": "night",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Ver Godzilla Head en Kabukicho.",
+        "Tomar fotos de la zona nocturna de Shinjuku.",
+        "Costo: $0."
+      ],
+      "detail": "Godzilla Head queda perfecto como punto de noche en Shinjuku.",
+      "location": {
+        "name": "Godzilla Head",
+        "mapsQuery": "Godzilla Head Shinjuku Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "8:20 pm",
+      "duration": "8:20 - 9:30 pm",
+      "title": "Cena en Shinjuku",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cenar en Shinjuku.",
+        "Opciones: ramen, izakaya, sushi casual, yakiniku, curry japonés o tonkatsu.",
+        "Evitar alejarse demasiado de Shinjuku Station para facilitar el regreso.",
+        "Presupuesto 2 personas: $45 - $90."
+      ],
+      "detail": "Después de un día largo, la cena debe ser buena pero práctica. Shinjuku tiene muchísimas opciones.",
+      "location": {
+        "name": "Shinjuku restaurants",
+        "mapsQuery": "Shinjuku Tokyo dinner restaurants near Godzilla Head"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "9:30 pm",
+      "duration": "10-15 min",
+      "title": "Caminata cena → Shinjuku Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Volver hacia Shinjuku Station.",
+        "Buscar Tokyo Metro Marunouchi Line.",
+        "Dirección: Ginza / Ikebukuro según andén correcto hacia Ginza.",
+        "Mantener compras juntas."
+      ],
+      "detail": "Shinjuku Station puede ser confusa, así que conviene volver con margen y sin correr.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Godzilla Head, Shinjuku, Tokyo, Japan",
+        "destination": "Shinjuku Station Marunouchi Line, Tokyo, Japan",
+        "note": "Caminata desde Kabukicho/Godzilla Head hacia Shinjuku Station para tomar Marunouchi Line.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Godzilla Head Shinjuku to Shinjuku Station Marunouchi Line walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:45 pm",
+      "duration": "16-20 min",
+      "title": "Metro: Shinjuku → Ginza",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Tomar Tokyo Metro Marunouchi Line desde Shinjuku Station.",
+        "Dirección: Ikebukuro pasando por Ginza.",
+        "Bajarse en Ginza Station.",
+        "Costo estimado 2 personas: ¥420 aprox."
+      ],
+      "detail": "Este regreso debe ir como metro directo para no marcar caminata. Ginza Station deja cerca del hotel.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Shinjuku Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
+        "destination": "Ginza Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
+        "note": "Tokyo Metro Marunouchi Line desde Shinjuku Station hasta Ginza Station.",
+        "fixedDuration": "16-20 min",
+        "fixedDistance": "Tokyo Metro Marunouchi Line",
+        "fareEstimateJpy": 210,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Marunouchi Line: Shinjuku → Ginza.",
+        "mapsQuery": "Shinjuku Station Marunouchi Line to Ginza Station Marunouchi Line by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:05 pm",
+      "duration": "8-12 min",
+      "title": "Caminata Ginza Station → Hotel Sunroute Ginza",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Ginza Station.",
+        "Caminar hacia Hotel Sunroute Ginza.",
+        "Comprar agua/snack si hace falta.",
+        "Costo: $0."
+      ],
+      "detail": "Último tramo del día. Cerrar y descansar porque al día siguiente toca DisneySea.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Ginza Station, Tokyo, Japan",
+        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "note": "Caminata desde Ginza Station hacia Hotel Sunroute Ginza.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "Ginza Station to Hotel Sunroute Ginza walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:20 pm",
+      "duration": "cierre",
+      "title": "Llegada al hotel y preparación para DisneySea",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Guardar compras de Shibuya, Harajuku y Shinjuku.",
+        "Cargar celulares y batería externa.",
+        "Dejar ropa y bolso listos para DisneySea.",
+        "Revisar entradas, app de Disney y horarios.",
+        "Dormir lo antes posible."
+      ],
+      "detail": "Este día es largo. La prioridad al llegar es preparar DisneySea para no correr al día siguiente.",
+      "showMap": false,
+      "marPick": false
     }
-  ]
+  ],
+  "note": "Meta del día: dedicar el día urbano fuerte de Tokyo a Shibuya, Harajuku y Shinjuku desde Hotel Sunroute Ginza, integrando explícitamente las paradas de Mar: Hachiko Square, Pokémon Center Shibuya, Mandarake Shibuya, Disney Store, MEGA Don Quijote, Loft, Yoroshi Cosmetics, Takeshita Street, Harry Potter Shop Harajuku, Ayuntamiento de Tokio y Godzilla Head. El interés de anime/figuras se cubre con Pokémon Center Shibuya y Mandarake, dejando las compras fuertes de figuras para Akihabara."
 }

@@ -1,42 +1,656 @@
 {
-  "title": "Día 15 - PokePark + Pokémon Cafe",
-  "subtitle": "Mié 21 oct - Tokyo pendiente de revisar",
+  "title": "Día 15 - PokéPark KANTO + Pokémon Center Tokyo DX",
+  "subtitle": "Miércoles 21 de octubre - PokéPark KANTO en Yomiuriland, regreso a Ginza/Nihonbashi, Pokémon Center Tokyo DX y posible Pokémon Café",
   "dateLabel": "Miércoles 21 de octubre de 2026",
   "shortDateLabel": "Mié 21 oct",
-  "status": "Próximamente",
+  "status": "Pokémon day",
+  "costEstimateUsd": {
+    "low": 260,
+    "high": 520,
+    "note": "entrada PokéPark/Yomiuriland, transporte, comida temática, Pokémon Center Tokyo DX, posible Pokémon Café, snacks y compras"
+  },
   "route": [
-    "Tokyo - pendiente"
+    "Hotel Sunroute Ginza",
+    "Ginza-itchome Station",
+    "Shinjuku Station",
+    "Keio-yomiuri-land Station",
+    "Yomiuriland / PokéPark KANTO",
+    "Keio-yomiuri-land Station",
+    "Shinjuku Station",
+    "Nihonbashi Station",
+    "Pokémon Center Tokyo DX",
+    "Pokémon Café Tokyo",
+    "Matsumoto Kiyoshi",
+    "Hotel Sunroute Ginza"
+  ],
+  "marStops": [
+    "PokePark Kanto",
+    "Pokémon Center Tokyo DX",
+    "Matsumoto Kiyoshi"
+  ],
+  "animeFigureStops": [
+    "PokéPark KANTO",
+    "Pokémon Center Tokyo DX",
+    "Pokémon Café Tokyo"
   ],
   "blocks": [
     {
-      "time": "Por definir",
-      "duration": "próximamente",
-      "title": "Tokyo - próximamente",
-      "icon": "pending",
+      "time": "6:45 am",
+      "duration": "inicio",
+      "title": "Despertar en Ginza",
+      "icon": "wb_sunny",
       "tone": "rest",
       "items": [
-        "Este día de Tokyo todavía no está revisado.",
-        "Falta definir ruta real, horarios, comidas, tiendas, reservas y presupuesto.",
-        "No usar este bloque como plan final todavía."
+        "Levantarse temprano porque PokéPark queda fuera del centro de Tokyo.",
+        "Revisar entradas/reservas de PokéPark KANTO y Yomiuriland.",
+        "Preparar celular, batería externa, pasaportes/copia, efectivo y Suica/ICOCA.",
+        "Llevar zapatos cómodos porque será día de parque y caminata.",
+        "Dejar espacio en bolso para compras Pokémon."
       ],
-      "detail": "Placeholder temporal para Tokyo. Se completará cuando trabajemos esta ciudad con el mismo detalle que Osaka y Kyoto.",
-      "showMap": false
-    }
-  ],
-  "note": "Pendiente: este día de Tokyo todavía no ha sido revisado ni confirmado.",
-  "marStops": [],
-  "prepNote": {
-    "title": "Próximamente",
-    "text": "Los días de Tokyo todavía no están revisados. Se completarán después con rutas, horarios, paradas favoritas y presupuesto."
-  },
-  "insights": [
-    {
-      "icon": "pending",
-      "text": "Pendiente de revisar"
+      "detail": "Este día depende de tener entrada/reserva confirmada para PokéPark KANTO. Conviene salir temprano para llegar sin estrés a Yomiuriland.",
+      "showMap": false,
+      "marPick": false
     },
     {
-      "icon": "edit_calendar",
-      "text": "Se completará pronto"
+      "time": "7:15 am",
+      "duration": "7:15 - 7:40 am",
+      "title": "Desayuno rápido cerca del hotel",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayuno práctico cerca del Hotel Sunroute Ginza.",
+        "Opciones: café, convenience store, bakery japonesa, onigiri o sándwich.",
+        "Comprar agua antes de salir.",
+        "Presupuesto 2 personas: $15 - $28."
+      ],
+      "detail": "Mejor comer algo antes de salir porque el traslado a Yomiuriland toma más tiempo que otros días.",
+      "location": {
+        "name": "Hotel Sunroute Ginza / Ginza",
+        "mapsQuery": "Hotel Sunroute Ginza convenience store breakfast"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "7:45 am",
+      "duration": "5-8 min",
+      "title": "Caminata hotel → Ginza-itchome Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del Hotel Sunroute Ginza hacia Ginza-itchome Station.",
+        "Buscar Tokyo Metro Yurakucho Line.",
+        "Tener Suica/ICOCA lista.",
+        "Costo: $0."
+      ],
+      "detail": "Se separa la caminata del tramo en metro para que el mapa no marque todo como caminata.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "destination": "Ginza-itchome Station, Tokyo, Japan",
+        "note": "Caminata desde Hotel Sunroute Ginza hasta Ginza-itchome Station.",
+        "fixedDuration": "5-8 min",
+        "mapsQuery": "Hotel Sunroute Ginza to Ginza-itchome Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "7:55 am",
+      "duration": "8-10 min",
+      "title": "Metro: Ginza-itchome → Nagatacho",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Entrar a Ginza-itchome Station.",
+        "Tomar Tokyo Metro Yurakucho Line.",
+        "Dirección: Wakoshi / Ikebukuro.",
+        "Bajarse en Nagatacho Station.",
+        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
+      ],
+      "detail": "Primer tramo hacia Shinjuku. Se usa metro para conectar desde Ginza hacia la zona oeste de Tokyo.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Ginza-itchome Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
+        "destination": "Nagatacho Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
+        "note": "Tokyo Metro Yurakucho Line desde Ginza-itchome Station hasta Nagatacho Station.",
+        "fixedDuration": "8-10 min",
+        "fixedDistance": "Tokyo Metro Yurakucho Line",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Yurakucho Line: Ginza-itchome → Nagatacho.",
+        "mapsQuery": "Ginza-itchome Station Yurakucho Line to Nagatacho Station by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:05 am",
+      "duration": "5-8 min",
+      "title": "Transbordo en Nagatacho",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Nagatacho Station.",
+        "Seguir señales hacia Tokyo Metro Hanzomon Line.",
+        "Buscar dirección Shibuya.",
+        "Mantenerse juntos porque la estación puede sentirse grande."
+      ],
+      "detail": "Este transbordo conecta la línea Yurakucho con Hanzomon para llegar hacia Shibuya y luego Shinjuku.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Nagatacho Station Yurakucho Line platform, Tokyo, Japan",
+        "destination": "Nagatacho Station Hanzomon Line platform, Tokyo, Japan",
+        "note": "Transbordo interno en Nagatacho desde Yurakucho Line hacia Hanzomon Line.",
+        "fixedDuration": "5-8 min",
+        "mapsQuery": "Nagatacho Station transfer Yurakucho Line to Hanzomon Line walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:15 am",
+      "duration": "8-10 min",
+      "title": "Metro: Nagatacho → Shibuya",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Tomar Tokyo Metro Hanzomon Line.",
+        "Dirección: Shibuya / Chuo-Rinkan.",
+        "Bajarse en Shibuya Station.",
+        "Prepararse para conexión hacia Shinjuku."
+      ],
+      "detail": "Segundo tramo hacia el oeste de Tokyo. Desde Shibuya se conecta rápido con JR hacia Shinjuku.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Nagatacho Station, Tokyo Metro Hanzomon Line, Tokyo, Japan",
+        "destination": "Shibuya Station, Tokyo Metro Hanzomon Line, Tokyo, Japan",
+        "note": "Tokyo Metro Hanzomon Line desde Nagatacho Station hasta Shibuya Station.",
+        "fixedDuration": "8-10 min",
+        "fixedDistance": "Tokyo Metro Hanzomon Line",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Hanzomon Line: Nagatacho → Shibuya.",
+        "mapsQuery": "Nagatacho Station Hanzomon Line to Shibuya Station Hanzomon Line by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:25 am",
+      "duration": "8-12 min",
+      "title": "Transbordo Shibuya Metro → JR Shibuya",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Salir de la zona Tokyo Metro en Shibuya.",
+        "Seguir señales hacia JR Yamanote Line.",
+        "Buscar dirección Shinjuku / Ikebukuro.",
+        "Tener paciencia porque Shibuya Station puede ser confusa."
+      ],
+      "detail": "Este transbordo se separa para evitar que el traslado Ginza → Yomiuriland quede demasiado genérico.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Shibuya Station Hanzomon Line platform, Tokyo, Japan",
+        "destination": "JR Shibuya Station, Tokyo, Japan",
+        "note": "Transbordo interno en Shibuya desde Tokyo Metro Hanzomon Line hacia JR Yamanote Line.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "Shibuya Station Hanzomon Line to JR Shibuya Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:40 am",
+      "duration": "7-10 min",
+      "title": "JR Yamanote: Shibuya → Shinjuku",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yamanote Line desde Shibuya Station.",
+        "Dirección: Shinjuku / Ikebukuro.",
+        "Bajarse en Shinjuku Station.",
+        "Costo estimado 2 personas: ¥340 aprox."
+      ],
+      "detail": "Este tramo acerca al punto de conexión hacia Yomiuriland.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "JR Shibuya Station, Yamanote Line, Tokyo, Japan",
+        "destination": "JR Shinjuku Station, Yamanote Line, Tokyo, Japan",
+        "note": "JR Yamanote Line desde Shibuya Station hasta Shinjuku Station.",
+        "fixedDuration": "7-10 min",
+        "fixedDistance": "JR Yamanote Line",
+        "fareEstimateJpy": 170,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yamanote Line: Shibuya → Shinjuku.",
+        "mapsQuery": "JR Shibuya Station Yamanote Line to JR Shinjuku Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:50 am",
+      "duration": "10-15 min",
+      "title": "Transbordo JR Shinjuku → Keio Line",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Shinjuku Station.",
+        "Seguir señales hacia Keio Line.",
+        "Buscar tren hacia Keio-yomiuri-land / Hashimoto / Keio-Tama-Center según ruta disponible.",
+        "Confirmar si hay tren directo o si hace falta transbordo en Chofu."
+      ],
+      "detail": "Shinjuku es grande. Este bloque es importante porque el acceso a Keio Line puede tomar tiempo si no conocen la estación.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "JR Shinjuku Station, Tokyo, Japan",
+        "destination": "Keio Shinjuku Station, Tokyo, Japan",
+        "note": "Transbordo interno desde JR Shinjuku hacia Keio Line.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "JR Shinjuku Station to Keio Shinjuku Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:05 am",
+      "duration": "25-35 min",
+      "title": "Keio Line: Shinjuku → Keio-yomiuri-land",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar Keio Line desde Shinjuku.",
+        "Dirección: Hashimoto / Keio-Tama-Center según tren.",
+        "Si Maps lo indica, hacer transbordo en Chofu hacia Keio Sagamihara Line.",
+        "Bajarse en Keio-yomiuri-land Station.",
+        "Costo estimado 2 personas: ¥700 - ¥900 aprox."
+      ],
+      "detail": "Este es el tramo principal hacia Yomiuriland/PokéPark KANTO. Conviene seguir Google Maps en vivo porque algunos trenes pueden requerir transbordo.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Keio Shinjuku Station, Tokyo, Japan",
+        "destination": "Keio-yomiuri-land Station, Tokyo, Japan",
+        "note": "Keio Line / Keio Sagamihara Line desde Shinjuku hasta Keio-yomiuri-land Station. Puede requerir transbordo en Chofu según tren.",
+        "fixedDuration": "25-35 min",
+        "fixedDistance": "Keio Line / Keio Sagamihara Line",
+        "fareEstimateJpy": 390,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo hacia Yomiuriland: Shinjuku → Keio-yomiuri-land, con posible transbordo en Chofu.",
+        "mapsQuery": "Keio Shinjuku Station to Keio-yomiuri-land Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:40 am",
+      "duration": "10-20 min",
+      "title": "Keio-yomiuri-land Station → Yomiuriland / PokéPark KANTO",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Keio-yomiuri-land Station.",
+        "Seguir señales hacia Yomiuriland.",
+        "Usar la ruta que indique el parque/Maps ese día: bus, góndola o caminata según operación disponible.",
+        "Tener entradas/reservas listas antes de llegar al acceso."
+      ],
+      "detail": "PokéPark KANTO está dentro de Yomiuriland. Este último tramo puede variar según el acceso disponible, por eso conviene revisar la ruta oficial y Google Maps el mismo día.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Keio-yomiuri-land Station, Tokyo, Japan",
+        "destination": "Yomiuriland, Tokyo, Japan",
+        "note": "Último tramo desde Keio-yomiuri-land Station hacia Yomiuriland / PokéPark KANTO. Revisar bus, góndola o acceso indicado ese día.",
+        "fixedDuration": "10-20 min",
+        "mapsQuery": "Keio-yomiuri-land Station to Yomiuriland PokéPark KANTO",
+        "transitModes": [
+          "BUS",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:00 am",
+      "duration": "10:00 am - 2:30 pm",
+      "title": "PokéPark KANTO / Yomiuriland",
+      "icon": "catching_pokemon",
+      "tone": "arrival",
+      "marListStop": true,
+      "animeFigureStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar: PokePark Kanto.",
+        "Entrar a Yomiuriland / PokéPark KANTO con entradas/reserva listas.",
+        "Recorrer las áreas principales del parque Pokémon.",
+        "Priorizar Pokémon Forest y Sedge Town si están disponibles con su tipo de entrada.",
+        "Revisar horarios de shows, encuentros, tienda y comida temática.",
+        "Comprar merch exclusivo si les gusta.",
+        "Presupuesto 2 personas: alto y variable según entrada/compras."
+      ],
+      "detail": "PokéPark KANTO es el bloque principal del día. La página oficial lo describe como un área Pokémon dentro de Yomiuriland con zonas como Pokémon Forest y Sedge Town, así que este día debe dejar bastante margen para recorrerlo sin correr.",
+      "location": {
+        "name": "PokéPark KANTO / Yomiuriland",
+        "mapsQuery": "PokéPark KANTO Yomiuriland Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "2:30 pm",
+      "duration": "2:30 - 3:00 pm",
+      "title": "Salida de PokéPark / pausa antes del regreso",
+      "icon": "local_cafe",
+      "tone": "rest",
+      "items": [
+        "Hacer pausa antes de volver a Tokyo centro.",
+        "Ir al baño.",
+        "Comprar agua o snack.",
+        "Revisar compras y guardar bien merch.",
+        "Confirmar ruta de regreso a Keio-yomiuri-land Station."
+      ],
+      "detail": "Antes del regreso conviene ordenar bolsas y descansar un poco. El regreso a Nihonbashi/Ginza toma tiempo.",
+      "location": {
+        "name": "Yomiuriland",
+        "mapsQuery": "Yomiuriland Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "3:00 pm",
+      "duration": "10-20 min",
+      "title": "Yomiuriland → Keio-yomiuri-land Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Yomiuriland hacia Keio-yomiuri-land Station.",
+        "Usar el acceso disponible: bus, góndola o caminata según operación.",
+        "Tener Suica/ICOCA lista.",
+        "Costo variable según opción."
+      ],
+      "detail": "Se repite el último tramo en sentido contrario para conectar con Keio Line.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Yomiuriland, Tokyo, Japan",
+        "destination": "Keio-yomiuri-land Station, Tokyo, Japan",
+        "note": "Regreso desde Yomiuriland / PokéPark KANTO hacia Keio-yomiuri-land Station.",
+        "fixedDuration": "10-20 min",
+        "mapsQuery": "Yomiuriland to Keio-yomiuri-land Station",
+        "transitModes": [
+          "BUS",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "3:25 pm",
+      "duration": "25-35 min",
+      "title": "Keio Line: Keio-yomiuri-land → Shinjuku",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar Keio Sagamihara Line / Keio Line de regreso.",
+        "Dirección: Shinjuku.",
+        "Hacer transbordo en Chofu si Maps lo indica.",
+        "Bajarse en Shinjuku Station.",
+        "Costo estimado 2 personas: ¥700 - ¥900 aprox."
+      ],
+      "detail": "Regreso principal desde Yomiuriland hacia Tokyo centro.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Keio-yomiuri-land Station, Tokyo, Japan",
+        "destination": "Keio Shinjuku Station, Tokyo, Japan",
+        "note": "Keio Sagamihara Line / Keio Line desde Keio-yomiuri-land Station hasta Shinjuku. Puede requerir transbordo en Chofu.",
+        "fixedDuration": "25-35 min",
+        "fixedDistance": "Keio Line / Keio Sagamihara Line",
+        "fareEstimateJpy": 390,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo de regreso hacia Shinjuku desde Keio-yomiuri-land.",
+        "mapsQuery": "Keio-yomiuri-land Station to Keio Shinjuku Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:00 pm",
+      "duration": "10-15 min",
+      "title": "Transbordo Keio Shinjuku → Tokyo Metro Marunouchi",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Llegar a Shinjuku.",
+        "Seguir señales hacia Tokyo Metro Marunouchi Line.",
+        "Buscar dirección Ginza / Tokyo Station.",
+        "Mantener compras Pokémon juntas."
+      ],
+      "detail": "Este transbordo permite volver a la zona de Ginza/Nihonbashi sin caminar demasiado.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Keio Shinjuku Station, Tokyo, Japan",
+        "destination": "Shinjuku Station Tokyo Metro Marunouchi Line, Tokyo, Japan",
+        "note": "Transbordo interno desde Keio Shinjuku hacia Tokyo Metro Marunouchi Line.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Keio Shinjuku Station to Shinjuku Station Marunouchi Line walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:15 pm",
+      "duration": "16-20 min",
+      "title": "Metro: Shinjuku → Ginza",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Tomar Tokyo Metro Marunouchi Line desde Shinjuku.",
+        "Dirección: Ikebukuro pasando por Ginza.",
+        "Bajarse en Ginza Station.",
+        "Costo estimado 2 personas: ¥420 aprox."
+      ],
+      "detail": "Regreso hacia la zona del hotel y Nihonbashi.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Shinjuku Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
+        "destination": "Ginza Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
+        "note": "Tokyo Metro Marunouchi Line desde Shinjuku Station hasta Ginza Station.",
+        "fixedDuration": "16-20 min",
+        "fixedDistance": "Tokyo Metro Marunouchi Line",
+        "fareEstimateJpy": 210,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Marunouchi Line: Shinjuku → Ginza.",
+        "mapsQuery": "Shinjuku Station Marunouchi Line to Ginza Station Marunouchi Line by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:40 pm",
+      "duration": "15-20 min",
+      "title": "Descanso corto en el hotel",
+      "icon": "hotel",
+      "tone": "rest",
+      "items": [
+        "Regresar brevemente al Hotel Sunroute Ginza.",
+        "Dejar bolsas grandes o compras de PokéPark.",
+        "Cargar teléfono si hace falta.",
+        "Salir más livianos hacia Nihonbashi."
+      ],
+      "detail": "Como el hotel está en Ginza, conviene hacer una pausa y dejar compras antes de ir a Pokémon Center Tokyo DX.",
+      "location": {
+        "name": "Hotel Sunroute Ginza",
+        "mapsQuery": "Hotel Sunroute Ginza Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "5:05 pm",
+      "duration": "15-20 min",
+      "title": "Caminata hotel → Pokémon Center Tokyo DX",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del Hotel Sunroute Ginza hacia Nihonbashi.",
+        "Caminar hacia Pokémon Center Tokyo DX.",
+        "Ir sin bolsas grandes para comprar más cómodo.",
+        "Costo: $0."
+      ],
+      "detail": "Desde Ginza, Pokémon Center Tokyo DX queda manejable caminando o en taxi corto. Si están cansados, taxi corto también es válido.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "destination": "Pokémon Center Tokyo DX, Nihonbashi, Tokyo, Japan",
+        "note": "Caminata desde Hotel Sunroute Ginza hacia Pokémon Center Tokyo DX en Nihonbashi.",
+        "fixedDuration": "15-20 min",
+        "mapsQuery": "Hotel Sunroute Ginza to Pokémon Center Tokyo DX walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:30 pm",
+      "duration": "5:30 - 6:30 pm",
+      "title": "Pokémon Center Tokyo DX",
+      "icon": "catching_pokemon",
+      "tone": "shopping",
+      "marListStop": true,
+      "animeFigureStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Visitar Pokémon Center Tokyo DX en Nihonbashi.",
+        "Buscar productos diferentes a Osaka, Kyoto, Shibuya y Skytree.",
+        "Revisar peluches, figuras pequeñas, cartas, llaveros, ropa y souvenirs.",
+        "Compras opcionales 2 personas: $40 - $150."
+      ],
+      "detail": "Pokémon Center Tokyo DX es una parada muy fuerte para cerrar el día Pokémon. Queda cerca de Ginza, por eso calza perfecto después de volver de PokéPark.",
+      "location": {
+        "name": "Pokémon Center Tokyo DX",
+        "mapsQuery": "Pokémon Center Tokyo DX Nihonbashi Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "6:30 pm",
+      "duration": "5-10 min",
+      "title": "Caminata interna Pokémon Center DX → Pokémon Café",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Moverse desde Pokémon Center Tokyo DX hacia Pokémon Café Tokyo.",
+        "Tener reserva lista si lograron conseguirla.",
+        "Llegar unos minutos antes de la hora reservada.",
+        "Mantener compras organizadas."
+      ],
+      "detail": "Pokémon Café está asociado a la zona de Pokémon Center Tokyo DX, así que es el cierre ideal si consiguen reservación.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Pokémon Center Tokyo DX, Nihonbashi, Tokyo, Japan",
+        "destination": "Pokémon Café Tokyo, Nihonbashi, Tokyo, Japan",
+        "note": "Traslado interno/corto desde Pokémon Center Tokyo DX hacia Pokémon Café Tokyo.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Pokémon Center Tokyo DX to Pokémon Café Tokyo walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:45 pm",
+      "duration": "reservación",
+      "title": "Pokémon Café Tokyo",
+      "icon": "local_cafe",
+      "tone": "food",
+      "animeFigureStop": true,
+      "items": [
+        "Bloque con reservación previa.",
+        "Cena o merienda temática Pokémon.",
+        "Revisar menú, postres y bebidas especiales.",
+        "Presupuesto 2 personas: $45 - $90."
+      ],
+      "detail": "Este bloque depende totalmente de conseguir reservación. Si no se consigue, se reemplaza por cena en Nihonbashi/Ginza y más tiempo en Pokémon Center Tokyo DX.",
+      "location": {
+        "name": "Pokémon Café Tokyo",
+        "mapsQuery": "Pokémon Café Tokyo Nihonbashi"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:00 pm",
+      "duration": "20-30 min",
+      "title": "Matsumoto Kiyoshi / farmacia japonesa",
+      "icon": "local_pharmacy",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Comprar cosméticos, skincare, medicamentos básicos permitidos, snacks o artículos japoneses.",
+        "Mantener compras controladas para no sobrecargar maleta.",
+        "Presupuesto 2 personas: $20 - $100."
+      ],
+      "detail": "Matsumoto Kiyoshi se mete al final porque en Ginza/Nihonbashi hay opciones cercanas y es una compra práctica antes de volver al hotel.",
+      "location": {
+        "name": "Matsumoto Kiyoshi Ginza / Nihonbashi",
+        "mapsQuery": "Matsumoto Kiyoshi Ginza Nihonbashi Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "8:35 pm",
+      "duration": "10-20 min",
+      "title": "Regreso al Hotel Sunroute Ginza",
+      "icon": "bedtime",
+      "tone": "travel",
+      "items": [
+        "Volver caminando o en taxi corto al hotel.",
+        "Guardar compras de Pokémon Center / Pokémon Café / farmacia.",
+        "Cargar celulares y batería externa.",
+        "Revisar el Día 16: Kamakura."
+      ],
+      "detail": "Después de un día largo fuera del centro, cerrar temprano ayuda a recuperar energía.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Pokémon Café Tokyo, Nihonbashi, Tokyo, Japan",
+        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "note": "Regreso caminando desde Nihonbashi hacia Hotel Sunroute Ginza. Si están cansados, usar taxi corto.",
+        "fixedDuration": "15-25 min",
+        "mapsQuery": "Pokémon Café Tokyo Nihonbashi to Hotel Sunroute Ginza walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:00 pm",
+      "duration": "cierre",
+      "title": "Llegada al hotel y ordenar compras Pokémon",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Guardar merch de PokéPark y Pokémon Center.",
+        "Separar figuras/peluches para no dañarlos.",
+        "Cargar celulares.",
+        "Tomar agua y descansar.",
+        "Dormir con margen para el día de Kamakura."
+      ],
+      "detail": "Este día puede terminar con muchas compras Pokémon, así que conviene ordenar antes de que se acumulen bolsas.",
+      "showMap": false,
+      "marPick": false
     }
-  ]
+  ],
+  "note": "Meta del día: dedicar el día completo al universo Pokémon desde Hotel Sunroute Ginza: PokéPark KANTO/Yomiuriland como bloque principal, regreso con pausa en el hotel, Pokémon Center Tokyo DX, posible Pokémon Café Tokyo y Matsumoto Kiyoshi como parada final de compras. La entrada a PokéPark debe revisarse y reservarse con anticipación."
 }

@@ -1,20 +1,23 @@
 {
-  "title": "Día 10 - Kyoto → Tokyo",
-  "subtitle": "Viernes 16 de octubre - traslado de Kyoto a Tokyo",
+  "title": "Día 10 - Kyoto → Tokyo / llegada a Ginza",
+  "subtitle": "Viernes 16 de octubre - traslado de Kyoto a Tokyo, check-in en Hotel Sunroute Ginza y tarde suave en Ginza",
   "dateLabel": "Viernes 16 de octubre de 2026",
   "shortDateLabel": "Vie 16 oct",
-  "status": "Traslado",
+  "status": "Traslado + Ginza",
   "costEstimateUsd": {
-    "low": 180,
-    "high": 320,
-    "note": "tren Kyoto-Tokyo, comida, transporte local y snacks"
+    "low": 190,
+    "high": 340,
+    "note": "tren Kyoto-Tokyo, transporte local, comida, cena y paseo suave en Ginza"
   },
   "route": [
     "Henn na Hotel Premier Kyoto Gojo Karasuma",
+    "Gojo Station",
     "Kyoto Station",
     "Tokyo Station",
-    "Asakusa",
-    "Henn na Hotel Premier Tokyo Asakusa"
+    "Hotel Sunroute Ginza",
+    "Ginza",
+    "Tokyo Station / Marunouchi",
+    "Hotel Sunroute Ginza"
   ],
   "marStops": [],
   "blocks": [
@@ -27,24 +30,27 @@
       "items": [
         "Revisar compras de Kyoto.",
         "Empacar con calma.",
-        "Tener boletos, pasaportes y reservas a mano."
+        "Separar documentos, pasaportes, boletos y reservas.",
+        "Dejar a mano cargadores, batería externa y algo de efectivo.",
+        "Confirmar horario del tren Kyoto → Tokyo."
       ],
-      "detail": "Día de traslado largo. Mejor no meter más turismo fuerte de Kyoto.",
+      "detail": "Día de traslado largo. La prioridad es salir de Kyoto sin estrés y llegar a Tokyo con energía para una tarde suave.",
       "showMap": false,
       "marPick": false
     },
     {
       "time": "8:00 am",
-      "duration": "desayuno",
+      "duration": "8:00 - 8:40 am",
       "title": "Desayuno cerca del hotel",
       "icon": "local_cafe",
       "tone": "food",
       "items": [
-        "Desayuno rápido y cómodo.",
-        "Presupuesto 2 personas: $18 - $30.",
-        "Evitar ir lejos antes del tren."
+        "Desayuno rápido y cómodo cerca del hotel.",
+        "Opciones: convenience store, café o bakery cercana.",
+        "Evitar ir lejos antes del tren.",
+        "Presupuesto 2 personas: $18 - $30."
       ],
-      "detail": "La prioridad es llegar bien a Kyoto Station.",
+      "detail": "La prioridad es comer algo práctico y no complicar la salida hacia Kyoto Station.",
       "location": {
         "name": "Henn na Hotel Premier Kyoto Gojo Karasuma / Gojo Karasuma",
         "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma breakfast"
@@ -60,10 +66,11 @@
       "tone": "hotel",
       "items": [
         "Hacer check-out.",
-        "Confirmar que no queda nada en la habitación.",
-        "Salir hacia Kyoto Station."
+        "Confirmar que no queda nada en habitación, baño, caja fuerte o cargadores.",
+        "Ordenar maletas para moverse cómodo en estación.",
+        "Salir hacia Gojo Station."
       ],
-      "detail": "Última revisión antes de moverse a Tokyo.",
+      "detail": "Última revisión antes de moverse a Tokyo. Mejor salir con margen porque Kyoto Station puede ser grande y concurrida.",
       "location": {
         "name": "Henn na Hotel Premier Kyoto Gojo Karasuma",
         "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma"
@@ -72,35 +79,80 @@
       "marPick": false
     },
     {
+      "time": "9:20 am",
+      "duration": "5-7 min",
+      "title": "Caminata hotel → Gojo Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del hotel hacia Gojo Station.",
+        "Caminar con maletas hacia la entrada de Kyoto Subway Karasuma Line.",
+        "Tener Suica/ICOCA lista.",
+        "Costo: $0."
+      ],
+      "detail": "Se separa la caminata del tramo en metro para que el mapa no mezcle todo como caminata.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
+        "destination": "Gojo Station, Kyoto, Japan",
+        "note": "Caminata corta desde el hotel hacia Gojo Station.",
+        "fixedDuration": "5-7 min",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma to Gojo Station Kyoto walking"
+      },
+      "marPick": false
+    },
+    {
       "time": "9:30 am",
-      "duration": "8-12 min",
-      "title": "Hotel → Kyoto Station",
+      "duration": "3-5 min",
+      "title": "Metro: Gojo Station → Kyoto Station",
       "icon": "train",
       "tone": "travel",
       "items": [
-        "Caminar desde el hotel hacia Gojo Station.",
-        "Tomar Kyoto Subway Karasuma Line desde Gojo Station hasta Kyoto Station.",
-        "Llegar con margen para comprar snacks/bento si hace falta.",
-        "Presupuesto 2 personas: $3 - $5."
+        "Entrar a Gojo Station.",
+        "Tomar Kyoto Subway Karasuma Line.",
+        "Dirección: Kyoto / Takeda.",
+        "Bajarse en Kyoto Station.",
+        "Costo estimado 2 personas: ¥440 aprox."
       ],
-      "detail": "Desde Gojo Karasuma conviene caminar a Gojo Station y tomar Karasuma Line directo a Kyoto Station.",
+      "detail": "Desde Gojo Karasuma conviene tomar Karasuma Line directo a Kyoto Station. Es un tramo corto y práctico con maletas.",
       "routeInfo": {
         "mode": "transit",
-        "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
+        "origin": "Gojo Station, Kyoto Subway Karasuma Line, Kyoto, Japan",
         "destination": "Kyoto Station, Kyoto, Japan",
-        "note": "Caminata corta a Gojo Station y Kyoto Subway Karasuma Line hacia Kyoto Station.",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan to Kyoto Station by train",
-        "fixedDuration": "8-12 min",
-        "fixedDistance": "Caminata corta + Kyoto Subway Karasuma Line",
+        "note": "Kyoto Subway Karasuma Line desde Gojo Station hasta Kyoto Station.",
+        "fixedDuration": "3-5 min",
+        "fixedDistance": "Kyoto Subway Karasuma Line",
         "fareEstimateJpy": 220,
         "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Estimado fijo: caminata corta a Gojo Station y Karasuma Line hasta Kyoto Station.",
+        "fallbackMessage": "Tramo fijo en Kyoto Subway Karasuma Line: Gojo Station → Kyoto Station.",
+        "mapsQuery": "Gojo Station Kyoto Subway Karasuma Line to Kyoto Station by subway",
         "transitModes": [
           "SUBWAY",
           "RAIL",
           "TRAIN"
         ]
       },
+      "marPick": false
+    },
+    {
+      "time": "9:40 am",
+      "duration": "9:40 - 10:20 am",
+      "title": "Kyoto Station - ubicar andén y comprar snacks",
+      "icon": "confirmation_number",
+      "tone": "travel",
+      "items": [
+        "Ubicar zona de Shinkansen o tren reservado hacia Tokyo.",
+        "Comprar bento, agua, café o snacks para el viaje.",
+        "Ir al baño antes de abordar.",
+        "Revisar número de tren, vagón y asientos.",
+        "Llegar al andén con margen."
+      ],
+      "detail": "Kyoto Station es grande. Este bloque evita correr con maletas y permite abordar el tren con calma.",
+      "location": {
+        "name": "Kyoto Station",
+        "mapsQuery": "Kyoto Station Shinkansen gates"
+      },
+      "showMap": false,
       "marPick": false
     },
     {
@@ -111,59 +163,221 @@
       "tone": "travel",
       "items": [
         "Tren de Kyoto hacia Tokyo.",
-        "Comprar bento, agua o snacks antes de subir.",
-        "Presupuesto variable según tren y reserva."
+        "Guardar maletas en espacio designado o sobre los asientos si aplica.",
+        "Comer bento/snack durante el trayecto.",
+        "Revisar llegada a Tokyo Station antes de bajar."
       ],
-      "detail": "Traslado principal del día.",
+      "detail": "Traslado principal del día. Mantener boletos y pasaportes accesibles.",
       "routeInfo": {
         "mode": "transit",
         "origin": "Kyoto Station, Kyoto, Japan",
         "destination": "Tokyo Station, Tokyo, Japan",
-        "note": "Traslado Kyoto → Tokyo.",
-        "mapsQuery": "Kyoto Station to Tokyo Station"
+        "note": "Traslado Kyoto → Tokyo en Shinkansen o tren reservado.",
+        "fixedDuration": "2h 15m - 2h 45m",
+        "fixedDistance": "Tokaido Shinkansen",
+        "fallbackMessage": "Tramo fijo Kyoto Station → Tokyo Station.",
+        "mapsQuery": "Kyoto Station to Tokyo Station by Shinkansen",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
       },
       "marPick": false
     },
     {
-      "time": "1:30 pm",
-      "duration": "45-60 min",
-      "title": "Tokyo Station → Asakusa",
-      "icon": "subway",
-      "tone": "travel",
+      "time": "1:15 pm",
+      "duration": "1:15 - 1:35 pm",
+      "title": "Llegada a Tokyo Station",
+      "icon": "train",
+      "tone": "arrival",
       "items": [
-        "Traslado hacia Asakusa.",
-        "Llegar al hotel y dejar maletas.",
-        "Presupuesto 2 personas: $6 - $15."
+        "Bajar del tren con calma.",
+        "Revisar que no quede nada en el asiento o portaequipaje.",
+        "Seguir señales hacia salida Yaesu / Marunouchi según ruta al hotel.",
+        "Ubicar si conviene taxi o metro hacia Ginza."
       ],
-      "detail": "Primer contacto con Tokyo, sin cargar demasiado el día.",
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Tokyo Station, Tokyo, Japan",
-        "destination": "Henn na Hotel Premier Tokyo Asakusa, Tokyo, Japan",
-        "note": "Traslado desde Tokyo Station hacia el hotel en Asakusa.",
-        "mapsQuery": "Tokyo Station to Henn na Hotel Premier Tokyo Asakusa"
-      },
-      "marPick": false
-    },
-    {
-      "time": "3:00 pm",
-      "duration": "descanso",
-      "title": "Check-in / descanso en Tokyo",
-      "icon": "hotel",
-      "tone": "hotel",
-      "items": [
-        "Check-in o dejar maletas.",
-        "Descansar después del traslado.",
-        "Revisar el plan de Tokyo."
-      ],
-      "detail": "No conviene llegar a Tokyo y meter un día demasiado pesado.",
+      "detail": "Tokyo Station es muy grande. Con maletas, vale la pena tomarse unos minutos para orientarse antes de moverse al hotel.",
       "location": {
-        "name": "Henn na Hotel Premier Tokyo Asakusa",
-        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa"
+        "name": "Tokyo Station",
+        "mapsQuery": "Tokyo Station Yaesu Exit"
       },
       "showMap": false,
       "marPick": false
+    },
+    {
+      "time": "1:35 pm",
+      "duration": "10-15 min",
+      "title": "Taxi corto: Tokyo Station → Hotel Sunroute Ginza",
+      "icon": "local_taxi",
+      "tone": "travel",
+      "items": [
+        "Tomar taxi corto desde Tokyo Station hacia Hotel Sunroute Ginza.",
+        "Recomendado por comodidad al llegar con maletas desde Kyoto.",
+        "Guardar dirección del hotel en japonés o en Google Maps.",
+        "Presupuesto estimado 2 personas: $10 - $20."
+      ],
+      "detail": "Aunque se puede llegar en metro/caminata, con maletas es más cómodo usar taxi corto desde Tokyo Station hasta Ginza.",
+      "routeInfo": {
+        "mode": "driving",
+        "origin": "Tokyo Station, Tokyo, Japan",
+        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "note": "Taxi corto desde Tokyo Station hacia Hotel Sunroute Ginza.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Tokyo Station to Hotel Sunroute Ginza by taxi"
+      },
+      "marPick": false
+    },
+    {
+      "time": "2:00 pm",
+      "duration": "2:00 - 3:30 pm",
+      "title": "Llegada a Hotel Sunroute Ginza / dejar maletas",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Llegar al Hotel Sunroute Ginza.",
+        "Hacer check-in si ya está disponible.",
+        "Si todavía no permiten check-in, dejar maletas en recepción.",
+        "Descansar un rato en lobby o tomar algo cerca.",
+        "Revisar el plan de la tarde."
+      ],
+      "detail": "El cambio de hotel a Ginza mejora la logística de Tokyo. Este día debe mantenerse suave para no llegar agotados.",
+      "location": {
+        "name": "Hotel Sunroute Ginza",
+        "mapsQuery": "Hotel Sunroute Ginza Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "3:30 pm",
+      "duration": "3:30 - 3:45 pm",
+      "title": "Caminata hotel → Ginza principal",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del hotel hacia la zona principal de Ginza.",
+        "Caminar hacia Ginza-itchome / Chuo-dori.",
+        "Ubicar tiendas, cafés y estaciones cercanas.",
+        "Costo: $0."
+      ],
+      "detail": "Primer contacto con Tokyo desde una zona elegante, caminable y tranquila para empezar.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "destination": "Ginza, Tokyo, Japan",
+        "note": "Caminata desde Hotel Sunroute Ginza hacia la zona principal de Ginza.",
+        "fixedDuration": "8-15 min",
+        "mapsQuery": "Hotel Sunroute Ginza to Ginza Tokyo walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "3:45 pm",
+      "duration": "3:45 - 5:15 pm",
+      "title": "Paseo suave por Ginza",
+      "icon": "location_city",
+      "tone": "shopping",
+      "items": [
+        "Caminar por Ginza sin agenda pesada.",
+        "Ver tiendas, cafeterías y calles principales.",
+        "Tomar fotos del primer contacto con Tokyo.",
+        "Comprar snacks o farmacia si hace falta.",
+        "Presupuesto flexible 2 personas: $20 - $70."
+      ],
+      "detail": "Ginza es buena para una tarde de llegada porque permite caminar sin presión y regresar fácil al hotel.",
+      "location": {
+        "name": "Ginza",
+        "mapsQuery": "Ginza Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "5:15 pm",
+      "duration": "15-20 min",
+      "title": "Caminata Ginza → Tokyo Station / Marunouchi",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Ginza hacia Tokyo Station / Marunouchi.",
+        "Ir sin prisa, viendo edificios y tiendas.",
+        "Usar esta caminata como paseo de reconocimiento.",
+        "Costo: $0."
+      ],
+      "detail": "Tokyo Station / Marunouchi queda suficientemente cerca para una tarde suave desde Ginza.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Ginza, Tokyo, Japan",
+        "destination": "Tokyo Station Marunouchi, Tokyo, Japan",
+        "note": "Caminata desde Ginza hacia Tokyo Station / Marunouchi.",
+        "fixedDuration": "15-20 min",
+        "mapsQuery": "Ginza Tokyo to Tokyo Station Marunouchi walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:40 pm",
+      "duration": "5:40 - 6:30 pm",
+      "title": "Tokyo Station / Marunouchi suave",
+      "icon": "apartment",
+      "tone": "arrival",
+      "items": [
+        "Pasear por la zona de Tokyo Station / Marunouchi.",
+        "Ver la fachada de Tokyo Station si están del lado correcto.",
+        "Entrar a alguna tienda o café si hay energía.",
+        "No convertirlo en día de compras fuerte."
+      ],
+      "detail": "Este bloque sirve para ubicarse en Tokyo Station, que será clave para varios traslados posteriores.",
+      "location": {
+        "name": "Tokyo Station / Marunouchi",
+        "mapsQuery": "Tokyo Station Marunouchi Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "6:45 pm",
+      "duration": "6:45 - 8:15 pm",
+      "title": "Cena tranquila en Ginza / Tokyo Station",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cena cerca de Ginza, Tokyo Station o Yurakucho.",
+        "Opciones: ramen, sushi casual, izakaya, curry japonés o comida en centro comercial.",
+        "No hacer cena demasiado larga.",
+        "Presupuesto 2 personas: $45 - $85."
+      ],
+      "detail": "Primera noche en Tokyo. Mejor cena cómoda, buena y cerca del hotel.",
+      "location": {
+        "name": "Ginza / Tokyo Station / Yurakucho",
+        "mapsQuery": "Ginza Tokyo Station Yurakucho dinner"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:15 pm",
+      "duration": "15-20 min",
+      "title": "Regreso caminando al Hotel Sunroute Ginza",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Volver caminando al hotel.",
+        "Comprar agua o snacks si hace falta.",
+        "Cargar teléfonos y batería externa.",
+        "Revisar el plan del Día 11: Asakusa + Skytree."
+      ],
+      "detail": "Cerrar temprano ayuda a empezar bien Tokyo al día siguiente.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tokyo Station Marunouchi, Tokyo, Japan",
+        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "note": "Regreso caminando desde Tokyo Station / Marunouchi hacia Hotel Sunroute Ginza.",
+        "fixedDuration": "15-20 min",
+        "mapsQuery": "Tokyo Station Marunouchi to Hotel Sunroute Ginza walking"
+      },
+      "marPick": false
     }
   ],
-  "note": "Meta del día: salir de Kyoto sin estrés y llegar a Tokyo con energía para la siguiente etapa del viaje."
+  "note": "Meta del día: salir de Kyoto sin estrés, llegar a Tokyo Station, instalarse en Hotel Sunroute Ginza y tener una primera tarde suave por Ginza/Tokyo Station sin cargar demasiado el itinerario."
 }

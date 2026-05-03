@@ -1,44 +1,298 @@
 {
-  "title": "Día 18 - Regreso",
-  "subtitle": "Sáb 24 oct - regreso pendiente de revisar",
+  "title": "Día 18 - Regreso desde Tokyo / Narita",
+  "subtitle": "Sábado 24 de octubre - salida muy temprano desde Hotel Sunroute Ginza hacia Narita para vuelo de 9:35 am",
   "dateLabel": "Sábado 24 de octubre de 2026",
   "shortDateLabel": "Sáb 24 oct",
-  "status": "Próximamente",
+  "status": "Regreso temprano",
+  "costEstimateUsd": {
+    "low": 80,
+    "high": 180,
+    "note": "taxi corto a Tokyo Station, tren/bus hacia Narita, desayuno/snacks rápidos y compras mínimas en aeropuerto; sin vuelos internacionales"
+  },
+  "flightInfo": {
+    "departureAirport": "Narita International Airport",
+    "departureTime": "9:35 am",
+    "recommendedAirportArrival": "6:30 am - 6:45 am",
+    "hotelDepartureTarget": "5:00 am - 5:15 am",
+    "note": "Vuelo internacional temprano. No meter turismo ni compras largas este día."
+  },
   "route": [
-    "Tokyo",
-    "Narita / aeropuerto",
-    "Costa Rica"
+    "Hotel Sunroute Ginza",
+    "Tokyo Station",
+    "Narita Airport Terminal correspondiente",
+    "Check-in aerolínea",
+    "Equipaje",
+    "Seguridad",
+    "Migración de salida",
+    "Desayuno rápido / compras mínimas",
+    "Gate",
+    "Vuelo 9:35 am"
   ],
+  "marStops": [],
   "blocks": [
     {
-      "time": "Por definir",
-      "duration": "próximamente",
-      "title": "Regreso - próximamente",
-      "icon": "pending",
+      "time": "4:15 am",
+      "duration": "inicio",
+      "title": "Despertar muy temprano",
+      "icon": "alarm",
       "tone": "rest",
       "items": [
-        "Este día todavía no está revisado.",
-        "Falta confirmar salida del hotel, ruta al aeropuerto, horarios y margen de seguridad.",
-        "No usar este bloque como plan final todavía."
+        "Levantarse apenas suene la alarma.",
+        "No dejar empaque para esta mañana.",
+        "Revisar pasaportes, boletos, reservas y documentos.",
+        "Confirmar terminal de salida en Narita.",
+        "Revisar que baterías externas, cámaras y electrónicos vayan en equipaje de mano."
       ],
-      "detail": "Placeholder temporal para el regreso. Se completará cuando revisemos la etapa de Tokyo.",
-      "showMap": false
-    }
-  ],
-  "note": "Pendiente: revisar el día de regreso desde Tokyo y dejarlo listo con tiempos reales.",
-  "marStops": [],
-  "prepNote": {
-    "title": "Próximamente",
-    "text": "El día de regreso todavía no está revisado. Falta definir horarios, ruta al aeropuerto y margen de salida."
-  },
-  "insights": [
-    {
-      "icon": "pending",
-      "text": "Pendiente de revisar"
+      "detail": "Como el vuelo sale a las 9:35 am, este día debe ser completamente operativo. Todo debe quedar empacado desde la noche anterior.",
+      "showMap": false,
+      "marPick": false
     },
     {
-      "icon": "edit_calendar",
-      "text": "Se completará pronto"
+      "time": "4:30 am",
+      "duration": "4:30 - 4:50 am",
+      "title": "Revisión final de habitación y maletas",
+      "icon": "luggage",
+      "tone": "rest",
+      "items": [
+        "Cerrar maletas.",
+        "Revisar baño, cama, caja fuerte, gavetas y enchufes.",
+        "Confirmar que no quede nada cargando.",
+        "Separar pasaportes, boarding pass, efectivo, tarjetas y celulares.",
+        "Dejar a mano snacks, agua y audífonos."
+      ],
+      "detail": "Última revisión completa antes de bajar a recepción. Especial cuidado con caja fuerte, cargadores y documentos.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "4:50 am",
+      "duration": "check-out",
+      "title": "Check-out en Hotel Sunroute Ginza",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Bajar a recepción.",
+        "Hacer check-out.",
+        "Confirmar que no haya cargos pendientes.",
+        "Pedir taxi si no está solicitado desde la noche anterior.",
+        "Tener Tokyo Station o el punto de salida hacia Narita listo en Google Maps."
+      ],
+      "detail": "Lo ideal es pedir el taxi la noche anterior o confirmar con recepción para evitar esperar demasiado de madrugada.",
+      "location": {
+        "name": "Hotel Sunroute Ginza",
+        "mapsQuery": "Hotel Sunroute Ginza Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "5:00 am",
+      "duration": "10-15 min",
+      "title": "Taxi corto: Hotel Sunroute Ginza → Tokyo Station",
+      "icon": "local_taxi",
+      "tone": "travel",
+      "items": [
+        "Tomar taxi corto desde Hotel Sunroute Ginza hacia Tokyo Station.",
+        "Recomendado por comodidad con maletas y hora temprana.",
+        "Presupuesto estimado 2 personas: $10 - $20.",
+        "Pedir que los deje cerca del acceso al servicio hacia Narita."
+      ],
+      "detail": "A esta hora no conviene caminar con maletas ni depender de conexiones complejas. Taxi corto hasta Tokyo Station es lo más práctico.",
+      "routeInfo": {
+        "mode": "driving",
+        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "destination": "Tokyo Station, Tokyo, Japan",
+        "note": "Taxi corto desde Hotel Sunroute Ginza hacia Tokyo Station.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Hotel Sunroute Ginza to Tokyo Station by taxi"
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:15 am",
+      "duration": "5:15 - 5:35 am",
+      "title": "Tokyo Station - ubicar transporte hacia Narita",
+      "icon": "confirmation_number",
+      "tone": "travel",
+      "items": [
+        "Llegar a Tokyo Station.",
+        "Ubicar el transporte elegido hacia Narita.",
+        "Confirmar terminal correcta del vuelo.",
+        "Comprar o validar boletos si no los tienen listos.",
+        "Ir al baño antes del trayecto si hay tiempo."
+      ],
+      "detail": "Para vuelo de 9:35 am, el margen aquí es importante. Idealmente ya deben haber definido la noche anterior si usarán Narita Express, bus aeroportuario o una ruta equivalente.",
+      "location": {
+        "name": "Tokyo Station",
+        "mapsQuery": "Tokyo Station Narita Airport train bus"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "5:35 am",
+      "duration": "60-90 min",
+      "title": "Traslado Tokyo Station → Narita Airport",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar el transporte elegido hacia Narita Airport.",
+        "Confirmar que va a la terminal correcta.",
+        "Guardar maletas en espacio designado.",
+        "Mantener pasaportes, boarding pass y celulares a mano.",
+        "Descansar durante el trayecto."
+      ],
+      "detail": "La meta es llegar a Narita entre 6:30 am y 6:45 am. Si el transporte público no calza bien con horarios reales, considerar bus aeroportuario reservado o taxi/servicio privado, aunque sea más caro.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Tokyo Station, Tokyo, Japan",
+        "destination": "Narita International Airport, Chiba, Japan",
+        "note": "Traslado desde Tokyo Station hacia Narita Airport. Confirmar servicio exacto y terminal la noche anterior.",
+        "fixedDuration": "60-90 min",
+        "fixedDistance": "Tokyo Station → Narita Airport",
+        "fallbackMessage": "Tramo principal de regreso al aeropuerto. Confirmar terminal, horario y servicio elegido el día anterior.",
+        "mapsQuery": "Tokyo Station to Narita International Airport by train or airport bus",
+        "transitModes": [
+          "RAIL",
+          "TRAIN",
+          "BUS"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:35 am",
+      "duration": "6:35 - 6:50 am",
+      "title": "Llegada a Narita Airport",
+      "icon": "flight_takeoff",
+      "tone": "arrival",
+      "items": [
+        "Llegar a Narita Airport.",
+        "Confirmar terminal correcta.",
+        "Ubicar mostradores de la aerolínea.",
+        "Reorganizar maletas antes del check-in.",
+        "Verificar que documentos y artículos de mano estén accesibles."
+      ],
+      "detail": "Esta es la hora objetivo para llegar. Para un vuelo internacional de 9:35 am, llegar cerca de 6:35 am da margen razonable para check-in, equipaje, seguridad y migración.",
+      "location": {
+        "name": "Narita International Airport",
+        "mapsQuery": "Narita International Airport departures"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "6:50 am",
+      "duration": "6:50 - 7:30 am",
+      "title": "Check-in y entrega de equipaje",
+      "icon": "luggage",
+      "tone": "travel",
+      "items": [
+        "Hacer check-in con la aerolínea.",
+        "Entregar maletas facturadas.",
+        "Confirmar asientos y conexiones.",
+        "Confirmar si el equipaje va directo al destino final.",
+        "Guardar comprobantes de equipaje."
+      ],
+      "detail": "Antes de entregar maletas, revisar que no vayan baterías externas, documentos, medicamentos necesarios o electrónicos importantes en equipaje facturado.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "7:30 am",
+      "duration": "7:30 - 8:05 am",
+      "title": "Seguridad y migración de salida",
+      "icon": "security",
+      "tone": "travel",
+      "items": [
+        "Pasar control de seguridad.",
+        "Pasar migración de salida.",
+        "Tener pasaporte y boarding pass a mano.",
+        "Guardar líquidos y electrónicos según indicaciones.",
+        "No dejar compras, documentos o electrónicos en bandejas."
+      ],
+      "detail": "Este bloque puede variar por filas. Mejor pasar controles primero y dejar compras/desayuno para después.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:05 am",
+      "duration": "8:05 - 8:40 am",
+      "title": "Desayuno rápido / compras mínimas en Narita",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayunar algo rápido dentro de zona internacional.",
+        "Comprar agua si está permitido después de seguridad.",
+        "Comprar souvenirs pequeños solo si sobra tiempo.",
+        "Evitar compras grandes o perderse lejos del gate.",
+        "Presupuesto 2 personas: $20 - $60."
+      ],
+      "detail": "No convertir esto en compras largas. El vuelo sale temprano y hay que llegar al gate con calma.",
+      "location": {
+        "name": "Narita Airport departures shops",
+        "mapsQuery": "Narita Airport departure shops restaurants"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:40 am",
+      "duration": "8:40 - 9:00 am",
+      "title": "Ir al gate",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Revisar pantalla de vuelos.",
+        "Confirmar gate y hora de abordaje.",
+        "Caminar hacia el gate con margen.",
+        "Ir al baño antes de abordar.",
+        "Tener pasaporte y boarding pass listos."
+      ],
+      "detail": "Narita puede requerir caminatas internas largas según el gate. No esperar al último momento.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Narita International Airport departures shopping area",
+        "destination": "Narita International Airport departure gate",
+        "note": "Caminata interna desde zona de tiendas/restaurantes hacia el gate de salida.",
+        "fixedDuration": "10-25 min",
+        "mapsQuery": "Narita International Airport departures to departure gate walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:00 am",
+      "duration": "espera / abordaje",
+      "title": "Espera en gate y abordaje",
+      "icon": "event_seat",
+      "tone": "rest",
+      "items": [
+        "Esperar en el gate.",
+        "Tener pasaporte y boarding pass listos.",
+        "Cargar celular si hay enchufe disponible.",
+        "Revisar que audífonos, cargador y documentos estén en bolso de mano.",
+        "Abordar cuando llamen su grupo."
+      ],
+      "detail": "Última revisión antes de subir al avión. Mantener documentos siempre accesibles.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "9:35 am",
+      "duration": "según itinerario",
+      "title": "Vuelo de regreso desde Narita",
+      "icon": "flight",
+      "tone": "travel",
+      "items": [
+        "Salida del vuelo internacional desde Narita.",
+        "Guardar bien documentos y recibos importantes.",
+        "Ajustar reloj según siguiente destino.",
+        "Descansar durante el vuelo."
+      ],
+      "detail": "Cierre del viaje Japón 2026.",
+      "showMap": false,
+      "marPick": false
     }
-  ]
+  ],
+  "note": "Meta del día: salir muy temprano de Hotel Sunroute Ginza, llegar a Narita alrededor de 6:30 am - 6:45 am para el vuelo internacional de 9:35 am, completar check-in, seguridad y migración sin estrés, y dejar solo un margen corto para desayuno o compras mínimas."
 }

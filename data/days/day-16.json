@@ -1,42 +1,670 @@
 {
-  "title": "Día 16 - Kamakura",
-  "subtitle": "Jue 22 oct - Tokyo pendiente de revisar",
+  "title": "Día 16 - Kamakura desde Tokyo",
+  "subtitle": "Jueves 22 de octubre - pueblo costero, templos, Komachi-dori, Hase, Gran Buda, playa y regreso a Ginza",
   "dateLabel": "Jueves 22 de octubre de 2026",
   "shortDateLabel": "Jue 22 oct",
-  "status": "Próximamente",
+  "status": "Kamakura romántico",
+  "costEstimateUsd": {
+    "low": 170,
+    "high": 310,
+    "note": "transporte Tokyo-Kamakura, templos, comida, snacks, café, playa y cena ligera; sin hotel"
+  },
   "route": [
-    "Tokyo - pendiente"
+    "Hotel Sunroute Ginza",
+    "Ginza Station",
+    "Tokyo Station",
+    "Kamakura Station",
+    "Komachi-dori",
+    "Tsurugaoka Hachimangu",
+    "Kamakura Station",
+    "Hase Station",
+    "Kotoku-in / Gran Buda de Kamakura",
+    "Hase-dera",
+    "Yuigahama Beach",
+    "Kamakura Station",
+    "Tokyo Station",
+    "Hotel Sunroute Ginza"
+  ],
+  "marStops": [],
+  "romanticStops": [
+    "Komachi-dori",
+    "Tsurugaoka Hachimangu",
+    "Hase-dera",
+    "Yuigahama Beach"
   ],
   "blocks": [
     {
-      "time": "Por definir",
-      "duration": "próximamente",
-      "title": "Tokyo - próximamente",
-      "icon": "pending",
+      "time": "7:00 am",
+      "duration": "inicio",
+      "title": "Despertar en Ginza",
+      "icon": "wb_sunny",
       "tone": "rest",
       "items": [
-        "Este día de Tokyo todavía no está revisado.",
-        "Falta definir ruta real, horarios, comidas, tiendas, reservas y presupuesto.",
-        "No usar este bloque como plan final todavía."
+        "Levantarse con calma.",
+        "Preparar batería externa, celular/cámara y efectivo.",
+        "Llevar zapatos cómodos.",
+        "Llevar una chaqueta ligera si el clima está fresco.",
+        "Preparar bolso liviano porque será un día de pueblo, templos y playa."
       ],
-      "detail": "Placeholder temporal para Tokyo. Se completará cuando trabajemos esta ciudad con el mismo detalle que Osaka y Kyoto.",
-      "showMap": false
-    }
-  ],
-  "note": "Pendiente: este día de Tokyo todavía no ha sido revisado ni confirmado.",
-  "marStops": [],
-  "prepNote": {
-    "title": "Próximamente",
-    "text": "Los días de Tokyo todavía no están revisados. Se completarán después con rutas, horarios, paradas favoritas y presupuesto."
-  },
-  "insights": [
-    {
-      "icon": "pending",
-      "text": "Pendiente de revisar"
+      "detail": "Este día es más romántico y tranquilo que los anteriores. La idea es salir temprano, pero no con la presión de Disney o PokéPark.",
+      "showMap": false,
+      "marPick": false
     },
     {
-      "icon": "edit_calendar",
-      "text": "Se completará pronto"
+      "time": "7:30 am",
+      "duration": "7:30 - 8:00 am",
+      "title": "Desayuno cerca del Hotel Sunroute Ginza",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayuno práctico cerca del hotel.",
+        "Opciones: café, bakery japonesa, convenience store, onigiri o sándwich.",
+        "Comprar agua antes de salir.",
+        "Presupuesto 2 personas: $15 - $28."
+      ],
+      "detail": "Conviene desayunar antes de salir porque el traslado a Kamakura toma alrededor de una hora o más.",
+      "location": {
+        "name": "Hotel Sunroute Ginza / Ginza",
+        "mapsQuery": "Hotel Sunroute Ginza breakfast nearby"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:05 am",
+      "duration": "8-12 min",
+      "title": "Caminata hotel → Ginza Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del Hotel Sunroute Ginza hacia Ginza Station.",
+        "Buscar Tokyo Metro Marunouchi Line.",
+        "Tener Suica/ICOCA lista.",
+        "Costo: $0."
+      ],
+      "detail": "Se separa la caminata al metro del tramo en tren para que el mapa no marque todo como caminata.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "destination": "Ginza Station, Tokyo, Japan",
+        "note": "Caminata desde Hotel Sunroute Ginza hacia Ginza Station.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "Hotel Sunroute Ginza to Ginza Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:20 am",
+      "duration": "3-5 min",
+      "title": "Metro: Ginza → Tokyo Station",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Entrar a Ginza Station.",
+        "Tomar Tokyo Metro Marunouchi Line.",
+        "Dirección: Ikebukuro.",
+        "Bajarse en Tokyo Station.",
+        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
+      ],
+      "detail": "Este tramo conecta Ginza con Tokyo Station para tomar JR hacia Kamakura.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Ginza Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
+        "destination": "Tokyo Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
+        "note": "Tokyo Metro Marunouchi Line desde Ginza Station hasta Tokyo Station.",
+        "fixedDuration": "3-5 min",
+        "fixedDistance": "Tokyo Metro Marunouchi Line",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Marunouchi Line: Ginza → Tokyo Station.",
+        "mapsQuery": "Ginza Station Marunouchi Line to Tokyo Station by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:30 am",
+      "duration": "10-15 min",
+      "title": "Transbordo en Tokyo Station hacia JR Yokosuka Line",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Tokyo Station.",
+        "Seguir señales hacia JR Yokosuka Line.",
+        "Buscar tren con dirección Zushi / Kurihama.",
+        "Confirmar que el tren se detenga en Kamakura Station.",
+        "Tener paciencia porque Tokyo Station es grande."
+      ],
+      "detail": "Este transbordo es importante porque Tokyo Station puede ser confusa. Mejor buscar con calma la línea JR Yokosuka.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tokyo Station Marunouchi Line platform, Tokyo, Japan",
+        "destination": "Tokyo Station JR Yokosuka Line platform, Tokyo, Japan",
+        "note": "Transbordo interno en Tokyo Station desde Marunouchi Line hacia JR Yokosuka Line.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Tokyo Station Marunouchi Line to JR Yokosuka Line platform walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:50 am",
+      "duration": "55-65 min",
+      "title": "JR Yokosuka Line: Tokyo Station → Kamakura",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yokosuka Line desde Tokyo Station.",
+        "Dirección: Zushi / Kurihama.",
+        "Bajarse en Kamakura Station.",
+        "Tramo directo y cómodo.",
+        "Costo estimado 2 personas: ¥1,900 - ¥2,200 aprox."
+      ],
+      "detail": "Este es el traslado principal del día. Kamakura se siente como escapada de pueblo/playa desde Tokyo.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Tokyo Station, JR Yokosuka Line, Tokyo, Japan",
+        "destination": "Kamakura Station, Kanagawa, Japan",
+        "note": "JR Yokosuka Line desde Tokyo Station hasta Kamakura Station.",
+        "fixedDuration": "55-65 min",
+        "fixedDistance": "JR Yokosuka Line",
+        "fareEstimateJpy": 950,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yokosuka Line: Tokyo Station → Kamakura Station.",
+        "mapsQuery": "Tokyo Station JR Yokosuka Line to Kamakura Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:55 am",
+      "duration": "10 min",
+      "title": "Llegada a Kamakura Station",
+      "icon": "train",
+      "tone": "arrival",
+      "items": [
+        "Bajarse en Kamakura Station.",
+        "Salir hacia East Exit.",
+        "Ubicar Komachi-dori.",
+        "Ir al baño si hace falta antes de empezar el paseo.",
+        "Costo: $0."
+      ],
+      "detail": "Kamakura Station será el punto base para iniciar el recorrido por el centro histórico.",
+      "location": {
+        "name": "Kamakura Station",
+        "mapsQuery": "Kamakura Station Kanagawa"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "10:05 am",
+      "duration": "5 min",
+      "title": "Caminata Kamakura Station → Komachi-dori",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir por East Exit.",
+        "Caminar hacia Komachi-dori.",
+        "Entrar a la calle comercial principal.",
+        "Costo: $0."
+      ],
+      "detail": "Komachi-dori queda justo cerca de la estación y es la forma más bonita de entrar al ambiente de Kamakura.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Kamakura Station, Kanagawa, Japan",
+        "destination": "Komachi-dori Street, Kamakura, Kanagawa, Japan",
+        "note": "Caminata desde Kamakura Station hacia Komachi-dori.",
+        "fixedDuration": "3-5 min",
+        "mapsQuery": "Kamakura Station to Komachi-dori Street walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:10 am",
+      "duration": "10:10 - 11:00 am",
+      "title": "Komachi-dori",
+      "icon": "storefront",
+      "tone": "shopping",
+      "items": [
+        "Caminar por Komachi-dori.",
+        "Ver tiendas, snacks, dulces, recuerdos y cafés.",
+        "Comprar algo pequeño si les llama la atención.",
+        "Probar snacks de Kamakura si hay antojo.",
+        "Presupuesto 2 personas: $15 - $45."
+      ],
+      "detail": "Komachi-dori da ese ambiente de pueblo japonés que usted quería, con tiendas pequeñas y paseo tranquilo.",
+      "location": {
+        "name": "Komachi-dori Street",
+        "mapsQuery": "Komachi-dori Street Kamakura"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "11:00 am",
+      "duration": "10-15 min",
+      "title": "Caminata Komachi-dori → Tsurugaoka Hachimangu",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Seguir caminando desde Komachi-dori hacia Tsurugaoka Hachimangu.",
+        "Pasar por la avenida principal si desean fotos.",
+        "Costo: $0."
+      ],
+      "detail": "El santuario queda al final natural del paseo desde Komachi-dori.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Komachi-dori Street, Kamakura, Kanagawa, Japan",
+        "destination": "Tsurugaoka Hachimangu, Kamakura, Kanagawa, Japan",
+        "note": "Caminata desde Komachi-dori hacia Tsurugaoka Hachimangu.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Komachi-dori Street to Tsurugaoka Hachimangu walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:15 am",
+      "duration": "11:15 am - 12:10 pm",
+      "title": "Tsurugaoka Hachimangu",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "romanticStop": true,
+      "items": [
+        "Visitar el santuario principal de Kamakura.",
+        "Subir con calma las escaleras.",
+        "Tomar fotos de la entrada, estanques y edificios.",
+        "Entrada libre.",
+        "Donación opcional: $0 - $5."
+      ],
+      "detail": "Es una parada clásica y bonita para empezar Kamakura con algo cultural antes de moverse hacia Hase y la playa.",
+      "location": {
+        "name": "Tsurugaoka Hachimangu",
+        "mapsQuery": "Tsurugaoka Hachimangu Kamakura"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "12:10 pm",
+      "duration": "12:10 - 12:25 pm",
+      "title": "Regreso caminando hacia zona de almuerzo",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar de regreso hacia Komachi-dori o alrededores de Kamakura Station.",
+        "Buscar restaurante cercano.",
+        "Evitar alejarse mucho para conectar luego con Enoden.",
+        "Costo: $0."
+      ],
+      "detail": "Conviene almorzar cerca del centro antes de ir hacia Hase.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tsurugaoka Hachimangu, Kamakura, Kanagawa, Japan",
+        "destination": "Kamakura Station, Kanagawa, Japan",
+        "note": "Regreso caminando desde Tsurugaoka Hachimangu hacia Kamakura Station / Komachi-dori.",
+        "fixedDuration": "15-20 min",
+        "mapsQuery": "Tsurugaoka Hachimangu to Kamakura Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "12:30 pm",
+      "duration": "12:30 - 1:30 pm",
+      "title": "Almuerzo en Kamakura",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almorzar cerca de Komachi-dori o Kamakura Station.",
+        "Opciones: soba, donburi, curry japonés, sushi casual, tempura o café bonito.",
+        "Elegir algo tranquilo y no demasiado pesado.",
+        "Presupuesto 2 personas: $35 - $70."
+      ],
+      "detail": "Kamakura se disfruta más si no se corre. Almuerzo tranquilo antes de ir a Hase.",
+      "location": {
+        "name": "Kamakura Station / Komachi-dori restaurants",
+        "mapsQuery": "Kamakura Station Komachi-dori lunch restaurants"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:35 pm",
+      "duration": "5 min",
+      "title": "Caminata restaurante → Kamakura Station / Enoden",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Volver hacia Kamakura Station.",
+        "Buscar la línea Enoden.",
+        "Dirección: Hase / Fujisawa.",
+        "Tener Suica/ICOCA lista."
+      ],
+      "detail": "Enoden es parte bonita del día porque conecta el centro de Kamakura con Hase y la zona costera.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Komachi-dori Street, Kamakura, Kanagawa, Japan",
+        "destination": "Kamakura Station Enoden Line, Kanagawa, Japan",
+        "note": "Caminata desde la zona de Komachi-dori hacia la entrada de Enoden en Kamakura Station.",
+        "fixedDuration": "5-8 min",
+        "mapsQuery": "Komachi-dori Street to Kamakura Station Enoden Line walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "1:45 pm",
+      "duration": "5 min",
+      "title": "Enoden: Kamakura → Hase",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar Enoden Line desde Kamakura Station.",
+        "Dirección: Fujisawa.",
+        "Bajarse en Hase Station.",
+        "Costo estimado 2 personas: ¥400 - ¥500 aprox."
+      ],
+      "detail": "Tramo corto y bonito hacia Hase, zona del Gran Buda, Hase-dera y playa.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Kamakura Station, Enoden Line, Kanagawa, Japan",
+        "destination": "Hase Station, Enoden Line, Kanagawa, Japan",
+        "note": "Enoden Line desde Kamakura Station hasta Hase Station.",
+        "fixedDuration": "5 min",
+        "fixedDistance": "Enoden Line",
+        "fareEstimateJpy": 220,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Enoden Line: Kamakura → Hase.",
+        "mapsQuery": "Kamakura Station Enoden Line to Hase Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "1:55 pm",
+      "duration": "10-15 min",
+      "title": "Caminata Hase Station → Kotoku-in / Gran Buda",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Hase Station.",
+        "Caminar hacia Kotoku-in.",
+        "Seguir señales hacia el Gran Buda.",
+        "Costo caminata: $0."
+      ],
+      "detail": "El Gran Buda queda a una caminata cómoda desde Hase Station.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hase Station, Kamakura, Kanagawa, Japan",
+        "destination": "Kotoku-in, Kamakura, Kanagawa, Japan",
+        "note": "Caminata desde Hase Station hacia Kotoku-in / Gran Buda.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Hase Station to Kotoku-in Great Buddha Kamakura walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "2:10 pm",
+      "duration": "2:10 - 2:50 pm",
+      "title": "Kotoku-in / Gran Buda de Kamakura",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "items": [
+        "Visitar el Gran Buda de Kamakura.",
+        "Tomar fotos del Daibutsu.",
+        "Recorrer el recinto con calma.",
+        "Entrada aproximada: ¥300 por persona."
+      ],
+      "detail": "Es una de las imágenes más reconocibles de Kamakura y vale la pena como parada cultural fuerte del día.",
+      "location": {
+        "name": "Kotoku-in / Great Buddha of Kamakura",
+        "mapsQuery": "Kotoku-in Great Buddha Kamakura"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "2:50 pm",
+      "duration": "10-15 min",
+      "title": "Caminata Kotoku-in → Hase-dera",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Kotoku-in hacia Hase-dera.",
+        "Pasar por calles pequeñas de Hase.",
+        "Costo: $0."
+      ],
+      "detail": "Hase-dera queda relativamente cerca y ofrece una de las vistas más bonitas de la zona.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Kotoku-in, Kamakura, Kanagawa, Japan",
+        "destination": "Hase-dera Temple, Kamakura, Kanagawa, Japan",
+        "note": "Caminata desde Kotoku-in hacia Hase-dera.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Kotoku-in to Hase-dera Temple Kamakura walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "3:05 pm",
+      "duration": "3:05 - 4:05 pm",
+      "title": "Hase-dera",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "romanticStop": true,
+      "items": [
+        "Visitar Hase-dera.",
+        "Subir al mirador si está abierto.",
+        "Ver vistas hacia Kamakura y el mar.",
+        "Tomar fotos tranquilas.",
+        "Entrada aproximada: ¥400 por persona."
+      ],
+      "detail": "Hase-dera es de las paradas más bonitas y románticas del día por la vista hacia el mar.",
+      "location": {
+        "name": "Hase-dera Temple",
+        "mapsQuery": "Hase-dera Temple Kamakura"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "4:05 pm",
+      "duration": "15-20 min",
+      "title": "Caminata Hase-dera → Yuigahama Beach",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Hase-dera hacia Yuigahama Beach.",
+        "Caminar hacia la zona de playa.",
+        "Comprar bebida o snack si aparece algo cerca.",
+        "Costo: $0."
+      ],
+      "detail": "Este tramo conecta el templo con la parte de playa, que es justamente el estilo romántico/pueblo costero que buscaban.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hase-dera Temple, Kamakura, Kanagawa, Japan",
+        "destination": "Yuigahama Beach, Kamakura, Kanagawa, Japan",
+        "note": "Caminata desde Hase-dera hacia Yuigahama Beach.",
+        "fixedDuration": "15-20 min",
+        "mapsQuery": "Hase-dera Temple to Yuigahama Beach walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:30 pm",
+      "duration": "4:30 - 5:30 pm",
+      "title": "Yuigahama Beach",
+      "icon": "beach_access",
+      "tone": "rest",
+      "romanticStop": true,
+      "items": [
+        "Caminar por la playa.",
+        "Tomar fotos suaves al atardecer si el clima ayuda.",
+        "Sentarse un rato a descansar.",
+        "No meterse al mar si no es planificado.",
+        "Snack/bebida 2 personas: $10 - $25."
+      ],
+      "detail": "Este es el bloque romántico del día. La idea no es hacer mucho, sino estar juntos en una playa tranquila antes de volver a Tokyo.",
+      "location": {
+        "name": "Yuigahama Beach",
+        "mapsQuery": "Yuigahama Beach Kamakura"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "5:30 pm",
+      "duration": "10-15 min",
+      "title": "Caminata Yuigahama Beach → Hase Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde la playa hacia Hase Station.",
+        "Preparar Suica/ICOCA.",
+        "Buscar dirección Kamakura.",
+        "Costo caminata: $0."
+      ],
+      "detail": "Regreso desde la playa hacia Enoden para volver al centro de Kamakura.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Yuigahama Beach, Kamakura, Kanagawa, Japan",
+        "destination": "Hase Station, Kamakura, Kanagawa, Japan",
+        "note": "Caminata desde Yuigahama Beach hacia Hase Station.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Yuigahama Beach to Hase Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:45 pm",
+      "duration": "5 min",
+      "title": "Enoden: Hase → Kamakura",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar Enoden Line desde Hase Station.",
+        "Dirección: Kamakura.",
+        "Bajarse en Kamakura Station.",
+        "Costo estimado 2 personas: ¥400 - ¥500 aprox."
+      ],
+      "detail": "Tramo corto de regreso hacia Kamakura Station.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Hase Station, Enoden Line, Kanagawa, Japan",
+        "destination": "Kamakura Station, Enoden Line, Kanagawa, Japan",
+        "note": "Enoden Line desde Hase Station hasta Kamakura Station.",
+        "fixedDuration": "5 min",
+        "fixedDistance": "Enoden Line",
+        "fareEstimateJpy": 220,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Enoden Line: Hase → Kamakura.",
+        "mapsQuery": "Hase Station Enoden Line to Kamakura Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:00 pm",
+      "duration": "6:00 - 7:00 pm",
+      "title": "Cena ligera o café final en Kamakura",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cenar temprano cerca de Kamakura Station o Komachi-dori.",
+        "Opciones: soba, curry, donburi, ramen o café bonito.",
+        "También puede ser solo café/postre si almorzaron fuerte.",
+        "Presupuesto 2 personas: $35 - $70."
+      ],
+      "detail": "Cenar en Kamakura evita regresar a Tokyo con hambre y cierra bien el día de pueblo costero.",
+      "location": {
+        "name": "Kamakura Station restaurants",
+        "mapsQuery": "Kamakura Station dinner restaurants"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "7:10 pm",
+      "duration": "55-65 min",
+      "title": "JR Yokosuka Line: Kamakura → Tokyo Station",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yokosuka Line desde Kamakura Station.",
+        "Dirección: Tokyo / Chiba.",
+        "Bajarse en Tokyo Station.",
+        "Costo estimado 2 personas: ¥1,900 - ¥2,200 aprox."
+      ],
+      "detail": "Regreso directo hacia Tokyo Station. Puede ser buen momento para descansar en el tren.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Kamakura Station, JR Yokosuka Line, Kanagawa, Japan",
+        "destination": "Tokyo Station, JR Yokosuka Line, Tokyo, Japan",
+        "note": "JR Yokosuka Line desde Kamakura Station hasta Tokyo Station.",
+        "fixedDuration": "55-65 min",
+        "fixedDistance": "JR Yokosuka Line",
+        "fareEstimateJpy": 950,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yokosuka Line: Kamakura Station → Tokyo Station.",
+        "mapsQuery": "Kamakura Station JR Yokosuka Line to Tokyo Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:15 pm",
+      "duration": "10-15 min",
+      "title": "Taxi corto: Tokyo Station → Hotel Sunroute Ginza",
+      "icon": "local_taxi",
+      "tone": "travel",
+      "items": [
+        "Llegar a Tokyo Station.",
+        "Tomar taxi corto hacia Hotel Sunroute Ginza.",
+        "Recomendado por cansancio del día.",
+        "Presupuesto estimado 2 personas: $10 - $20."
+      ],
+      "detail": "Después de Kamakura, el taxi corto desde Tokyo Station al hotel vale la pena para no caminar más.",
+      "routeInfo": {
+        "mode": "driving",
+        "origin": "Tokyo Station, Tokyo, Japan",
+        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "note": "Taxi corto desde Tokyo Station hacia Hotel Sunroute Ginza.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Tokyo Station to Hotel Sunroute Ginza by taxi"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:35 pm",
+      "duration": "cierre",
+      "title": "Llegada al hotel y descanso",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Llegar al Hotel Sunroute Ginza.",
+        "Guardar compras pequeñas de Kamakura.",
+        "Cargar celulares y batería externa.",
+        "Tomar agua y descansar.",
+        "Revisar el Día 17: compras finales / cierre de Tokyo."
+      ],
+      "detail": "Día romántico y de ritmo más tranquilo. Conviene cerrar temprano para llegar bien al último día completo en Tokyo.",
+      "showMap": false,
+      "marPick": false
     }
-  ]
+  ],
+  "note": "Meta del día: hacer una escapada romántica y tranquila a Kamakura desde Hotel Sunroute Ginza, combinando pueblo, templos, Komachi-dori, Tsurugaoka Hachimangu, Gran Buda, Hase-dera, playa en Yuigahama y regreso cómodo a Tokyo."
 }

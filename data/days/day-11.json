@@ -1,42 +1,601 @@
 {
-  "title": "Día 11 - Asakusa + Skytree",
-  "subtitle": "Sáb 17 oct - Tokyo pendiente de revisar",
+  "title": "Día 11 - Asakusa + Skytree + tiendas de personajes",
+  "subtitle": "Sábado 17 de octubre - Sensō-ji, tiendas tradicionales de Asakusa, Masudaen, Kaida, Tokyo Skytree, Solamachi, Pokémon Center y JUMP SHOP",
   "dateLabel": "Sábado 17 de octubre de 2026",
   "shortDateLabel": "Sáb 17 oct",
-  "status": "Próximamente",
+  "status": "Asakusa + Skytree",
+  "costEstimateUsd": {
+    "low": 180,
+    "high": 340,
+    "note": "transporte local, comida, snacks, tiendas tradicionales, Solamachi, Pokémon Center, JUMP SHOP, Skytree y compras moderadas"
+  },
   "route": [
-    "Tokyo - pendiente"
+    "Hotel Sunroute Ginza",
+    "Takaracho Station",
+    "Asakusa Station",
+    "Kaminarimon",
+    "Nakamise-dori",
+    "Sensō-ji",
+    "Masudaen Sohonten",
+    "カイダ酒店 Kaida",
+    "Asakusa shopping streets",
+    "Sumida River",
+    "Tokyo Skytree",
+    "Tokyo Solamachi",
+    "Pokémon Center SKYTREE TOWN",
+    "JUMP SHOP Tokyo Skytree Town Solamachi",
+    "Oshiage Station",
+    "Takaracho Station",
+    "Hotel Sunroute Ginza"
+  ],
+  "marStops": [
+    "Sensō-ji",
+    "Masudaen Sohonten",
+    "カイダ酒店 Kaida",
+    "Tokyo Skytree"
+  ],
+  "animeFigureStops": [
+    "Pokémon Center SKYTREE TOWN",
+    "JUMP SHOP Tokyo Skytree Town Solamachi",
+    "Tokyo Solamachi character shops"
   ],
   "blocks": [
     {
-      "time": "Por definir",
-      "duration": "próximamente",
-      "title": "Tokyo - próximamente",
-      "icon": "pending",
+      "time": "7:30 am",
+      "duration": "inicio",
+      "title": "Despertar en Ginza",
+      "icon": "wb_sunny",
       "tone": "rest",
       "items": [
-        "Este día de Tokyo todavía no está revisado.",
-        "Falta definir ruta real, horarios, comidas, tiendas, reservas y presupuesto.",
-        "No usar este bloque como plan final todavía."
+        "Levantarse con calma.",
+        "Preparar batería externa, cámara/celular y efectivo.",
+        "Llevar bolso cómodo porque habrá tiendas y compras pequeñas.",
+        "Revisar clima antes de salir.",
+        "Dejar claro que este día es más de paseo tradicional + Skytree, no de compras pesadas de figuras."
       ],
-      "detail": "Placeholder temporal para Tokyo. Se completará cuando trabajemos esta ciudad con el mismo detalle que Osaka y Kyoto.",
-      "showMap": false
-    }
-  ],
-  "note": "Pendiente: este día de Tokyo todavía no ha sido revisado ni confirmado.",
-  "marStops": [],
-  "prepNote": {
-    "title": "Próximamente",
-    "text": "Los días de Tokyo todavía no están revisados. Se completarán después con rutas, horarios, paradas favoritas y presupuesto."
-  },
-  "insights": [
-    {
-      "icon": "pending",
-      "text": "Pendiente de revisar"
+      "detail": "Primer día completo en Tokyo. Conviene empezar temprano porque Asakusa se llena bastante durante la mañana.",
+      "showMap": false,
+      "marPick": false
     },
     {
-      "icon": "edit_calendar",
-      "text": "Se completará pronto"
+      "time": "8:00 am",
+      "duration": "8:00 - 8:35 am",
+      "title": "Desayuno cerca del Hotel Sunroute Ginza",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayuno ligero cerca del hotel.",
+        "Opciones: café, bakery japonesa, convenience store o restaurante cercano.",
+        "Comprar agua antes de salir.",
+        "Presupuesto 2 personas: $18 - $30."
+      ],
+      "detail": "Desayuno práctico para salir hacia Asakusa sin perder demasiado tiempo.",
+      "location": {
+        "name": "Hotel Sunroute Ginza / Ginza",
+        "mapsQuery": "Hotel Sunroute Ginza breakfast nearby"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:40 am",
+      "duration": "5-8 min",
+      "title": "Caminata hotel → Takaracho Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del Hotel Sunroute Ginza hacia Takaracho Station.",
+        "Buscar la entrada de Toei Asakusa Line.",
+        "Tener Suica/ICOCA lista.",
+        "Costo: $0."
+      ],
+      "detail": "Para Asakusa conviene usar Takaracho Station porque conecta con Toei Asakusa Line hacia Asakusa sin hacer una ruta rara desde Ginza.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "destination": "Takaracho Station, Tokyo, Japan",
+        "note": "Caminata desde Hotel Sunroute Ginza hasta Takaracho Station.",
+        "fixedDuration": "5-8 min",
+        "mapsQuery": "Hotel Sunroute Ginza to Takaracho Station Tokyo walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:50 am",
+      "duration": "15-20 min",
+      "title": "Metro: Takaracho → Asakusa",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Entrar a Takaracho Station.",
+        "Tomar Toei Asakusa Line.",
+        "Dirección: Asakusa / Oshiage.",
+        "Bajarse en Asakusa Station.",
+        "Costo estimado 2 personas: ¥560 aprox."
+      ],
+      "detail": "Este tramo debe manejarse como transporte público, no como caminata. Usar estaciones exactas evita que Maps sugiera caminar por zonas generales.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Takaracho Station, Toei Asakusa Line, Tokyo, Japan",
+        "destination": "Asakusa Station, Toei Asakusa Line, Tokyo, Japan",
+        "note": "Toei Asakusa Line desde Takaracho Station hasta Asakusa Station.",
+        "fixedDuration": "15-20 min",
+        "fixedDistance": "Toei Asakusa Line",
+        "fareEstimateJpy": 280,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Toei Asakusa Line: Takaracho Station → Asakusa Station.",
+        "mapsQuery": "Takaracho Station Toei Asakusa Line to Asakusa Station Toei Asakusa Line by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:10 am",
+      "duration": "9:10 - 9:25 am",
+      "title": "Caminata Asakusa Station → Kaminarimon",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Asakusa Station.",
+        "Caminar hacia Kaminarimon Gate.",
+        "Ubicar la linterna gigante roja.",
+        "Costo: $0."
+      ],
+      "detail": "Kaminarimon es la entrada clásica hacia Nakamise-dori y Sensō-ji.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Asakusa Station, Tokyo, Japan",
+        "destination": "Kaminarimon Gate, Tokyo, Japan",
+        "note": "Caminata desde Asakusa Station hasta Kaminarimon.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Asakusa Station to Kaminarimon Gate walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:25 am",
+      "duration": "20 min",
+      "title": "Kaminarimon Gate",
+      "icon": "photo_camera",
+      "tone": "arrival",
+      "items": [
+        "Tomar fotos en la entrada principal de Asakusa.",
+        "Ver la linterna gigante.",
+        "Entrar hacia Nakamise-dori.",
+        "Costo: $0."
+      ],
+      "detail": "Aunque no estaba escrito en la lista de Mar, es el acceso natural para llegar a Sensō-ji.",
+      "location": {
+        "name": "Kaminarimon Gate",
+        "mapsQuery": "Kaminarimon Gate Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "9:45 am",
+      "duration": "9:45 - 10:25 am",
+      "title": "Nakamise-dori",
+      "icon": "storefront",
+      "tone": "shopping",
+      "items": [
+        "Caminar por Nakamise-dori hacia Sensō-ji.",
+        "Ver tiendas de dulces, recuerdos, abanicos, snacks y souvenirs.",
+        "Comprar algo pequeño si les gusta.",
+        "Presupuesto 2 personas: $15 - $40."
+      ],
+      "detail": "Este tramo convierte la llegada a Sensō-ji en un paseo completo, no solo en ir directo al templo.",
+      "location": {
+        "name": "Nakamise-dori Street",
+        "mapsQuery": "Nakamise-dori Street Asakusa Tokyo"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Kaminarimon Gate, Tokyo, Japan",
+        "destination": "Sensō-ji, Tokyo, Japan",
+        "note": "Caminata por Nakamise-dori desde Kaminarimon hacia Sensō-ji.",
+        "fixedDuration": "10-15 min sin paradas",
+        "mapsQuery": "Kaminarimon Gate to Senso-ji via Nakamise-dori walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:30 am",
+      "duration": "10:30 - 11:30 am",
+      "title": "Sensō-ji",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Visitar el templo Sensō-ji.",
+        "Tomar fotos del templo principal y la pagoda.",
+        "Hacer omikuji si quieren.",
+        "Entrada libre.",
+        "Donación opcional: $0 - $5."
+      ],
+      "detail": "Sensō-ji es el punto fuerte del día en Asakusa. Conviene hacerlo en la mañana antes de que esté más lleno.",
+      "location": {
+        "name": "Sensō-ji",
+        "mapsQuery": "Senso-ji Temple Asakusa Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "11:30 am",
+      "duration": "10 min",
+      "title": "Caminata Sensō-ji → Masudaen Sohonten",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de la zona de Sensō-ji hacia Masudaen Sohonten.",
+        "Caminar por calles comerciales de Asakusa.",
+        "Costo: $0."
+      ],
+      "detail": "Masudaen entra bien después del templo porque mantiene el tono tradicional de Asakusa.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Sensō-ji, Tokyo, Japan",
+        "destination": "Masudaen Sohonten, Tokyo, Japan",
+        "note": "Caminata desde Sensō-ji hacia Masudaen Sohonten.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Senso-ji Temple to Masudaen Sohonten Asakusa walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:40 am",
+      "duration": "30 min",
+      "title": "Masudaen Sohonten",
+      "icon": "emoji_food_beverage",
+      "tone": "food",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Tienda tradicional de té / productos japoneses.",
+        "Buena parada para comprar té, dulces o recuerdos.",
+        "Presupuesto 2 personas: $10 - $40."
+      ],
+      "detail": "Perfecto para una compra pequeña y tradicional antes del almuerzo.",
+      "location": {
+        "name": "Masudaen Sohonten",
+        "mapsQuery": "Masudaen Sohonten Asakusa Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "12:10 pm",
+      "duration": "12:10 - 1:15 pm",
+      "title": "Almuerzo en Asakusa",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almorzar en Asakusa.",
+        "Opciones: tempura, soba, sushi casual, tonkatsu, ramen o comida tradicional.",
+        "Mantener el almuerzo cerca para seguir con tiendas de Mar.",
+        "Presupuesto 2 personas: $35 - $70."
+      ],
+      "detail": "Asakusa tiene muchas opciones tradicionales, así que conviene comer aquí antes de moverse hacia Skytree.",
+      "location": {
+        "name": "Asakusa restaurants",
+        "mapsQuery": "Asakusa Tokyo lunch restaurants"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:20 pm",
+      "duration": "10-15 min",
+      "title": "Caminata almuerzo → カイダ酒店 Kaida",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde la zona de almuerzo hacia カイダ酒店 Kaida.",
+        "Mantenerse en la zona de Asakusa.",
+        "Costo: $0."
+      ],
+      "detail": "Kaida queda como parada de tienda local dentro del bloque de Asakusa.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Asakusa, Tokyo, Japan",
+        "destination": "カイダ酒店 Kaida, Tokyo, Japan",
+        "note": "Caminata dentro de Asakusa hacia カイダ酒店 Kaida.",
+        "fixedDuration": "5-15 min",
+        "mapsQuery": "Asakusa Tokyo to カイダ酒店 Kaida walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "1:35 pm",
+      "duration": "25 min",
+      "title": "カイダ酒店 Kaida",
+      "icon": "storefront",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Tienda local de la zona de Asakusa.",
+        "Entrar a mirar productos y comprar algo pequeño si les llama la atención.",
+        "Presupuesto flexible: $10 - $40."
+      ],
+      "detail": "Se deja como parada definida de Mar dentro de Asakusa, no como alternativa vaga.",
+      "location": {
+        "name": "カイダ酒店 Kaida",
+        "mapsQuery": "カイダ酒店 Kaida Asakusa Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "2:00 pm",
+      "duration": "2:00 - 2:40 pm",
+      "title": "Paseo corto por tiendas tradicionales de Asakusa",
+      "icon": "storefront",
+      "tone": "shopping",
+      "items": [
+        "Caminar por calles comerciales alrededor de Asakusa.",
+        "Ver tiendas tradicionales, snacks, souvenirs pequeños o dulces japoneses.",
+        "No hacer compra fuerte de kimono/haori aquí porque eso queda para Kyoto.",
+        "Presupuesto flexible: $10 - $40."
+      ],
+      "detail": "Se elimina Konjyaku Kimono Tatsumi como parada fuerte para no duplicar la compra de kimono. Este bloque queda como paseo ligero tradicional antes de ir a Skytree.",
+      "location": {
+        "name": "Asakusa shopping streets",
+        "mapsQuery": "Asakusa traditional shopping streets Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "2:40 pm",
+      "duration": "20-30 min",
+      "title": "Caminata Asakusa → Sumida River → Tokyo Skytree",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Asakusa hacia el río Sumida.",
+        "Cruzar o caminar con vista hacia Tokyo Skytree.",
+        "Tomar fotos del Skytree desde el camino.",
+        "Costo: $0."
+      ],
+      "detail": "La caminata de Asakusa a Skytree es bonita porque conecta el Tokyo tradicional con el Tokyo moderno.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Asakusa, Tokyo, Japan",
+        "destination": "Tokyo Skytree, Tokyo, Japan",
+        "note": "Caminata desde Asakusa hacia Tokyo Skytree pasando por la zona del río Sumida.",
+        "fixedDuration": "20-30 min",
+        "mapsQuery": "Asakusa to Tokyo Skytree via Sumida River walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "3:15 pm",
+      "duration": "3:15 - 4:15 pm",
+      "title": "Tokyo Skytree",
+      "icon": "tower",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Ver Tokyo Skytree y la zona de Tokyo Solamachi.",
+        "Subir al mirador si quieren hacerlo ese día.",
+        "Comprar entrada con anticipación si deciden subir.",
+        "Presupuesto mirador 2 personas: $35 - $70 aprox. según nivel/entrada."
+      ],
+      "detail": "Skytree funciona como cierre visual del día. Si no suben al mirador, igual vale la pena por Solamachi y las fotos.",
+      "location": {
+        "name": "Tokyo Skytree",
+        "mapsQuery": "Tokyo Skytree Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "4:15 pm",
+      "duration": "4:15 - 4:35 pm",
+      "title": "Caminata Skytree → Solamachi 4F",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Entrar a Tokyo Solamachi desde la zona de Skytree.",
+        "Subir hacia East Yard 4F.",
+        "Buscar tiendas de personajes y anime.",
+        "Costo: $0."
+      ],
+      "detail": "Este bloque prepara la parte de tiendas de personajes sin meter Akihabara todavía.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tokyo Skytree, Tokyo, Japan",
+        "destination": "Tokyo Solamachi East Yard 4F, Tokyo, Japan",
+        "note": "Caminata interna desde Skytree hacia la zona de tiendas de personajes en Tokyo Solamachi.",
+        "fixedDuration": "5-15 min",
+        "mapsQuery": "Tokyo Skytree to Tokyo Solamachi East Yard 4F walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:35 pm",
+      "duration": "4:35 - 5:15 pm",
+      "title": "Pokémon Center SKYTREE TOWN",
+      "icon": "toys",
+      "tone": "shopping",
+      "animeFigureStop": true,
+      "items": [
+        "Tienda oficial de Pokémon dentro de Tokyo Solamachi.",
+        "Buscar peluches, figuras pequeñas, llaveros, cartas, ropa o artículos exclusivos.",
+        "Buena parada aunque ya tengan Pokémon Center DX otro día, porque este tiene temática Skytree/Rayquaza.",
+        "Compras opcionales 2 personas: $30 - $100."
+      ],
+      "detail": "No es una tienda de figuras anime pesada como Akihabara, pero sí es una tienda muy buena de personajes y coleccionables dentro del recorrido del día.",
+      "location": {
+        "name": "Pokémon Center SKYTREE TOWN",
+        "mapsQuery": "Pokemon Center SKYTREE TOWN Tokyo Solamachi"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "5:15 pm",
+      "duration": "5:15 - 5:55 pm",
+      "title": "JUMP SHOP Tokyo Skytree Town Solamachi",
+      "icon": "storefront",
+      "tone": "shopping",
+      "animeFigureStop": true,
+      "items": [
+        "Tienda oficial de Shonen Jump en Tokyo Solamachi.",
+        "Buscar goods de One Piece, Jujutsu Kaisen, My Hero Academia, Dragon Ball u otras series Jump.",
+        "Puede haber llaveros, acrílicos, figuras pequeñas, papelería, camisetas o souvenirs.",
+        "Compras opcionales 2 personas: $20 - $80."
+      ],
+      "detail": "Este bloque sí responde al interés de ver tiendas de anime sin romper el día de Asakusa/Skytree. Para figuras grandes, lo ideal sigue siendo Akihabara el Día 14.",
+      "location": {
+        "name": "JUMP SHOP Tokyo Skytree Town Solamachi",
+        "mapsQuery": "JUMP SHOP Tokyo Skytree Town Solamachi"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "5:55 pm",
+      "duration": "5:55 - 6:30 pm",
+      "title": "Tokyo Solamachi - tiendas de personajes y snacks",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "animeFigureStop": true,
+      "items": [
+        "Pasear por otras tiendas de personajes dentro de Solamachi.",
+        "Buscar figuras pequeñas, gashapon, dulces temáticos, souvenirs o tiendas de personajes.",
+        "Comprar snacks o postre.",
+        "Presupuesto 2 personas: $20 - $80."
+      ],
+      "detail": "Este es el bloque personal suyo para ver tiendas de personajes/anime sin convertir el día en Akihabara. El día fuerte de figuras queda para Akihabara.",
+      "location": {
+        "name": "Tokyo Solamachi character shops",
+        "mapsQuery": "Tokyo Solamachi character shops anime goods"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "6:30 pm",
+      "duration": "6:30 - 7:30 pm",
+      "title": "Cena en Skytree / Solamachi",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cenar en Tokyo Solamachi o alrededores de Skytree.",
+        "Opciones: ramen, sushi casual, tonkatsu, curry, tempura o restaurante con vista.",
+        "Presupuesto 2 personas: $45 - $90."
+      ],
+      "detail": "Cenar aquí evita regresar con hambre a Ginza y permite cerrar el día con calma.",
+      "location": {
+        "name": "Tokyo Solamachi restaurants",
+        "mapsQuery": "Tokyo Solamachi restaurants dinner"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "7:35 pm",
+      "duration": "8-12 min",
+      "title": "Caminata Skytree → Oshiage Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Tokyo Skytree / Solamachi hacia Oshiage Station.",
+        "Buscar Toei Asakusa Line.",
+        "Tener Suica/ICOCA lista.",
+        "Costo: $0."
+      ],
+      "detail": "Oshiage es la estación más práctica para volver desde Skytree hacia la zona de Ginza/Takaracho.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tokyo Skytree, Tokyo, Japan",
+        "destination": "Oshiage Station, Tokyo, Japan",
+        "note": "Caminata desde Tokyo Skytree / Solamachi hacia Oshiage Station.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "Tokyo Skytree to Oshiage Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "7:50 pm",
+      "duration": "20-25 min",
+      "title": "Metro: Oshiage → Takaracho",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Entrar a Oshiage Station.",
+        "Tomar Toei Asakusa Line hacia Takaracho.",
+        "Bajarse en Takaracho Station.",
+        "Costo estimado 2 personas: ¥560 aprox."
+      ],
+      "detail": "Este regreso debe quedar como transporte público, no como caminata. Oshiage conecta muy bien con Takaracho por Toei Asakusa Line.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Oshiage Station, Toei Asakusa Line, Tokyo, Japan",
+        "destination": "Takaracho Station, Toei Asakusa Line, Tokyo, Japan",
+        "note": "Toei Asakusa Line desde Oshiage Station hasta Takaracho Station.",
+        "fixedDuration": "20-25 min",
+        "fixedDistance": "Toei Asakusa Line",
+        "fareEstimateJpy": 280,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Toei Asakusa Line: Oshiage Station → Takaracho Station.",
+        "mapsQuery": "Oshiage Station Toei Asakusa Line to Takaracho Station Toei Asakusa Line by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:15 pm",
+      "duration": "5-8 min",
+      "title": "Caminata Takaracho Station → Hotel Sunroute Ginza",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Takaracho Station.",
+        "Caminar hacia Hotel Sunroute Ginza.",
+        "Comprar agua o snack si hace falta.",
+        "Costo: $0."
+      ],
+      "detail": "Último tramo corto del día. Cerrar temprano ayuda a guardar energía para Shibuya, Harajuku y Shinjuku.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Takaracho Station, Tokyo, Japan",
+        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
+        "note": "Caminata desde Takaracho Station hacia Hotel Sunroute Ginza.",
+        "fixedDuration": "5-8 min",
+        "mapsQuery": "Takaracho Station Tokyo to Hotel Sunroute Ginza walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:25 pm",
+      "duration": "cierre",
+      "title": "Llegada al hotel y descanso",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Guardar compras de Asakusa / Skytree / Solamachi.",
+        "Cargar celulares y batería externa.",
+        "Revisar el Día 12: Shibuya + Harajuku + Shinjuku.",
+        "Dormir con buen margen."
+      ],
+      "detail": "Día completo pero equilibrado: Asakusa tradicional en la mañana, tiendas de Mar al mediodía, Skytree y tiendas de personajes por la tarde.",
+      "showMap": false,
+      "marPick": false
     }
-  ]
+  ],
+  "note": "Meta del día: dedicar un día completo a Asakusa y Skytree desde Hotel Sunroute Ginza, integrando explícitamente las paradas de Mar: Sensō-ji, Masudaen Sohonten, カイダ酒店 Kaida y Tokyo Skytree. La compra de kimono/haori queda para Kyoto, y el interés de anime/figuras se cubre suavemente con Pokémon Center SKYTREE TOWN, JUMP SHOP y tiendas de personajes en Solamachi; las figuras fuertes quedan para Akihabara."
 }
