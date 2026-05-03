@@ -1,182 +1,42 @@
 {
   "title": "Día 11 - Asakusa + Skytree",
-  "subtitle": "Sábado 17 de octubre - Templo, paseo tradicional y vistas de Tokyo",
+  "subtitle": "Sáb 17 oct - Tokyo pendiente de revisar",
   "dateLabel": "Sábado 17 de octubre de 2026",
   "shortDateLabel": "Sáb 17 oct",
-  "status": "Tokyo clásico",
-  "costEstimateUsd": {
-    "low": 150,
-    "high": 260,
-    "note": "templo, comida, Skytree y transporte"
-  },
+  "status": "Próximamente",
   "route": [
-    "Hotel Asakusa",
-    "Senso-ji",
-    "Nakamise Street",
-    "Sumida River",
-    "Tokyo Skytree"
+    "Tokyo - pendiente"
   ],
   "blocks": [
     {
-      "time": "8:00 am",
-      "duration": "inicio",
-      "title": "Despertar",
-      "icon": "alarm",
+      "time": "Por definir",
+      "duration": "próximamente",
+      "title": "Tokyo - próximamente",
+      "icon": "pending",
       "tone": "rest",
       "items": [
-        "Levantarse con calma.",
-        "Prepararse para caminar bastante.",
-        "Llevar efectivo para compras pequeñas."
+        "Este día de Tokyo todavía no está revisado.",
+        "Falta definir ruta real, horarios, comidas, tiendas, reservas y presupuesto.",
+        "No usar este bloque como plan final todavía."
       ],
+      "detail": "Placeholder temporal para Tokyo. Se completará cuando trabajemos esta ciudad con el mismo detalle que Osaka y Kyoto.",
       "showMap": false
-    },
-    {
-      "time": "8:30 am",
-      "duration": "8:30 - 9:15 am",
-      "title": "Desayuno",
-      "icon": "local_cafe",
-      "tone": "food",
-      "items": [
-        "Desayuno cerca del hotel.",
-        "Opciones: café, bakery o convenience store.",
-        "Presupuesto 2 personas: $20 - $35."
-      ],
-      "showMap": false
-    },
-    {
-      "time": "9:20 am",
-      "duration": "5-10 min",
-      "title": "Hotel → Senso-ji",
-      "icon": "directions_walk",
-      "tone": "travel",
-      "items": [
-        "Caminata desde el hotel.",
-        "Trayecto corto.",
-        "Llegar antes de que se llene."
-      ],
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Henn na Hotel Premier Tokyo Asakusa, Tokyo, Japan",
-        "destination": "Senso-ji, Asakusa, Tokyo, Japan"
-      }
-    },
-    {
-      "time": "9:30 am",
-      "duration": "9:30 - 11:00 am",
-      "title": "Senso-ji",
-      "icon": "temple_buddhist",
-      "tone": "arrival",
-      "items": [
-        "Visitar templo principal.",
-        "Tomar fotos.",
-        "Disfrutar el ambiente temprano."
-      ],
-      "detail": "Ir temprano hace que la experiencia sea mucho más tranquila.",
-      "showMap": false
-    },
-    {
-      "time": "11:00 am",
-      "duration": "11:00 - 12:30 pm",
-      "title": "Nakamise Street",
-      "icon": "shopping_bag",
-      "tone": "shopping",
-      "items": [
-        "Recorrer tiendas tradicionales.",
-        "Comprar souvenirs.",
-        "Probar snacks.",
-        "$20 - $50."
-      ],
-      "showMap": false
-    },
-    {
-      "time": "12:45 pm",
-      "duration": "12:45 - 1:45 pm",
-      "title": "Almuerzo",
-      "icon": "ramen_dining",
-      "tone": "food",
-      "items": [
-        "Comer cerca de Asakusa.",
-        "Opciones: tempura, ramen, sushi.",
-        "$30 - $55."
-      ],
-      "showMap": false
-    },
-    {
-      "time": "2:00 pm",
-      "duration": "2:00 - 3:00 pm",
-      "title": "Paseo por Sumida River",
-      "icon": "water",
-      "tone": "night",
-      "items": [
-        "Caminar junto al río.",
-        "Fotos con Skytree.",
-        "Ambiente relajado."
-      ],
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Senso-ji, Tokyo, Japan",
-        "destination": "Sumida River Walk, Tokyo, Japan"
-      }
-    },
-    {
-      "time": "3:15 pm",
-      "duration": "10-15 min",
-      "title": "Sumida → Tokyo Skytree",
-      "icon": "directions_walk",
-      "tone": "travel",
-      "items": [
-        "Caminata hacia Skytree.",
-        "Ruta directa."
-      ],
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Sumida River Walk, Tokyo, Japan",
-        "destination": "Tokyo Skytree, Tokyo, Japan"
-      }
-    },
-    {
-      "time": "3:30 pm",
-      "duration": "3:30 - 6:30 pm",
-      "title": "Tokyo Skytree",
-      "icon": "location_city",
-      "tone": "arrival",
-      "items": [
-        "Subir al mirador.",
-        "Ver atardecer.",
-        "Recorrer tiendas.",
-        "Entrada 2 personas: $40 - $70."
-      ],
-      "detail": "Intentar quedarse hasta que anochezca.",
-      "showMap": false
-    },
-    {
-      "time": "7:00 pm",
-      "duration": "7:00 - 8:30 pm",
-      "title": "Cena",
-      "icon": "dinner_dining",
-      "tone": "food",
-      "items": [
-        "Cenar en Skytree o Asakusa.",
-        "Opciones: sushi, ramen, izakaya.",
-        "$45 - $80."
-      ]
-    },
-    {
-      "time": "8:45 pm",
-      "duration": "regreso",
-      "title": "Regreso al hotel",
-      "icon": "bedtime",
-      "tone": "rest",
-      "items": [
-        "Volver caminando o taxi corto.",
-        "Preparar siguiente día."
-      ],
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Tokyo Skytree, Tokyo, Japan",
-        "destination": "Henn na Hotel Premier Tokyo Asakusa, Tokyo, Japan"
-      }
     }
   ],
-  "note": "Meta del día: explorar Tokyo tradicional, disfrutar Asakusa y cerrar con vistas desde Skytree."
+  "note": "Pendiente: este día de Tokyo todavía no ha sido revisado ni confirmado.",
+  "marStops": [],
+  "prepNote": {
+    "title": "Próximamente",
+    "text": "Los días de Tokyo todavía no están revisados. Se completarán después con rutas, horarios, paradas favoritas y presupuesto."
+  },
+  "insights": [
+    {
+      "icon": "pending",
+      "text": "Pendiente de revisar"
+    },
+    {
+      "icon": "edit_calendar",
+      "text": "Se completará pronto"
+    }
+  ]
 }

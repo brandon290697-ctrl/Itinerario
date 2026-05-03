@@ -1,202 +1,42 @@
 {
   "title": "Día 14 - Akihabara + Odaiba",
-  "subtitle": "Martes 20 de octubre - Anime, tecnología y Gundam gigante",
+  "subtitle": "Mar 20 oct - Tokyo pendiente de revisar",
   "dateLabel": "Martes 20 de octubre de 2026",
   "shortDateLabel": "Mar 20 oct",
-  "status": "Geek / tecnología",
-  "costEstimateUsd": {
-    "low": 170,
-    "high": 300,
-    "note": "transporte, comida, compras y experiencias"
-  },
+  "status": "Próximamente",
   "route": [
-    "Asakusa",
-    "Akihabara",
-    "Odaiba",
-    "Hotel"
+    "Tokyo - pendiente"
   ],
   "blocks": [
     {
-      "time": "6:00 am",
-      "duration": "inicio",
-      "title": "Despertar temprano",
-      "icon": "alarm",
+      "time": "Por definir",
+      "duration": "próximamente",
+      "title": "Tokyo - próximamente",
+      "icon": "pending",
       "tone": "rest",
       "items": [
-        "Inicio temprano del día.",
-        "Prepararse sin prisa.",
-        "Batería externa lista."
+        "Este día de Tokyo todavía no está revisado.",
+        "Falta definir ruta real, horarios, comidas, tiendas, reservas y presupuesto.",
+        "No usar este bloque como plan final todavía."
       ],
-      "detail": "Mantener ritmo temprano del viaje maximiza el día.",
+      "detail": "Placeholder temporal para Tokyo. Se completará cuando trabajemos esta ciudad con el mismo detalle que Osaka y Kyoto.",
       "showMap": false
-    },
-    {
-      "time": "6:20 am",
-      "duration": "6:20 - 6:45 am",
-      "title": "Desayuno ligero",
-      "icon": "local_cafe",
-      "tone": "food",
-      "items": [
-        "Convenience store o café.",
-        "Comida rápida.",
-        "$10 - $20."
-      ],
-      "showMap": false
-    },
-    {
-      "time": "7:00 am",
-      "duration": "10-15 min",
-      "title": "Asakusa → Akihabara",
-      "icon": "train",
-      "tone": "travel",
-      "items": [
-        "Metro directo.",
-        "Trayecto corto.",
-        "$3 - $6."
-      ],
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Asakusa Station, Tokyo, Japan",
-        "destination": "Akihabara Station, Tokyo, Japan"
-      }
-    },
-    {
-      "time": "7:20 am",
-      "duration": "7:20 - 9:30 am",
-      "title": "Akihabara sin multitudes",
-      "icon": "directions_walk",
-      "tone": "arrival",
-      "items": [
-        "Caminar la zona.",
-        "Tomar fotos tranquilas.",
-        "Ubicar tiendas importantes."
-      ],
-      "detail": "Este es el mejor momento visual del barrio.",
-      "showMap": false
-    },
-    {
-      "time": "9:30 am",
-      "duration": "9:30 - 10:00 am",
-      "title": "Pausa / café",
-      "icon": "local_cafe",
-      "tone": "food",
-      "items": [
-        "Descanso corto.",
-        "Café o snack.",
-        "$10 - $20."
-      ]
-    },
-    {
-      "time": "10:00 am",
-      "duration": "10:00 - 1:30 pm",
-      "title": "Akihabara full (tiendas abiertas)",
-      "icon": "sports_esports",
-      "tone": "shopping",
-      "items": [
-        "Tiendas de anime.",
-        "Figuras, manga, collectibles.",
-        "Arcades.",
-        "$40 - $120."
-      ],
-      "detail": "Bloque principal del día.",
-      "showMap": false
-    },
-    {
-      "time": "1:30 pm",
-      "duration": "1:30 - 2:30 pm",
-      "title": "Almuerzo",
-      "icon": "ramen_dining",
-      "tone": "food",
-      "items": [
-        "Ramen o comida japonesa.",
-        "$30 - $55."
-      ]
-    },
-    {
-      "time": "2:45 pm",
-      "duration": "45-60 min",
-      "title": "Akihabara → Odaiba",
-      "icon": "train",
-      "tone": "travel",
-      "items": [
-        "Metro + línea Yurikamome.",
-        "Trayecto panorámico.",
-        "$6 - $12."
-      ],
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Akihabara Station, Tokyo, Japan",
-        "destination": "Daiba Station, Tokyo, Japan",
-        "note": "Ruta típica con cambio hacia la línea Yurikamome."
-      }
-    },
-    {
-      "time": "3:45 pm",
-      "duration": "3:45 - 5:30 pm",
-      "title": "Gundam Unicorn + DiverCity",
-      "icon": "precision_manufacturing",
-      "tone": "arrival",
-      "items": [
-        "Ver Gundam tamaño real.",
-        "Fotos.",
-        "Explorar DiverCity.",
-        "$0 - $40."
-      ],
-      "detail": "Uno de los puntos más icónicos del viaje.",
-      "showMap": false
-    },
-    {
-      "time": "5:30 pm",
-      "duration": "5:30 - 7:00 pm",
-      "title": "Odaiba al atardecer",
-      "icon": "water",
-      "tone": "night",
-      "items": [
-        "Caminar zona costera.",
-        "Ver skyline de Tokyo.",
-        "Fotos."
-      ],
-      "detail": "Momento clave del día.",
-      "showMap": false
-    },
-    {
-      "time": "7:15 pm",
-      "duration": "7:15 - 8:45 pm",
-      "title": "Cena en Odaiba",
-      "icon": "dinner_dining",
-      "tone": "food",
-      "items": [
-        "Cena con vista.",
-        "$45 - $80."
-      ]
-    },
-    {
-      "time": "9:00 pm",
-      "duration": "50-70 min",
-      "title": "Odaiba → Asakusa",
-      "icon": "subway",
-      "tone": "travel",
-      "items": [
-        "Metro regreso.",
-        "$8 - $15."
-      ],
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Daiba Station, Tokyo, Japan",
-        "destination": "Asakusa Station, Tokyo, Japan"
-      }
-    },
-    {
-      "time": "10:15 pm",
-      "duration": "cierre",
-      "title": "Regreso al hotel",
-      "icon": "bedtime",
-      "tone": "rest",
-      "items": [
-        "Descansar.",
-        "Preparar día siguiente."
-      ]
     }
   ],
-  "note": "Meta del día: aprovechar Akihabara temprano y cerrar con Odaiba al atardecer."
+  "note": "Pendiente: este día de Tokyo todavía no ha sido revisado ni confirmado.",
+  "marStops": [],
+  "prepNote": {
+    "title": "Próximamente",
+    "text": "Los días de Tokyo todavía no están revisados. Se completarán después con rutas, horarios, paradas favoritas y presupuesto."
+  },
+  "insights": [
+    {
+      "icon": "pending",
+      "text": "Pendiente de revisar"
+    },
+    {
+      "icon": "edit_calendar",
+      "text": "Se completará pronto"
+    }
+  ]
 }

@@ -1,178 +1,42 @@
 {
   "title": "Día 12 - Shibuya + Shinjuku",
-  "subtitle": "Domingo 18 de octubre - Cruce icónico, compras y noche en Tokyo",
+  "subtitle": "Dom 18 oct - Tokyo pendiente de revisar",
   "dateLabel": "Domingo 18 de octubre de 2026",
   "shortDateLabel": "Dom 18 oct",
-  "status": "Ciudad / nightlife",
-  "costEstimateUsd": {
-    "low": 180,
-    "high": 320,
-    "note": "transporte, comida, compras y cena especial"
-  },
+  "status": "Próximamente",
   "route": [
-    "Asakusa",
-    "Shibuya",
-    "Shinjuku",
-    "Hotel"
+    "Tokyo - pendiente"
   ],
   "blocks": [
     {
-      "time": "8:30 am",
-      "duration": "inicio",
-      "title": "Despertar tranquilo",
-      "icon": "bedtime",
+      "time": "Por definir",
+      "duration": "próximamente",
+      "title": "Tokyo - próximamente",
+      "icon": "pending",
       "tone": "rest",
       "items": [
-        "Día urbano, no tan físico.",
-        "Prepararse para caminar bastante.",
-        "Llevar batería externa."
+        "Este día de Tokyo todavía no está revisado.",
+        "Falta definir ruta real, horarios, comidas, tiendas, reservas y presupuesto.",
+        "No usar este bloque como plan final todavía."
       ],
-      "showMap": false
-    },
-    {
-      "time": "9:00 am",
-      "duration": "9:00 - 9:45 am",
-      "title": "Desayuno",
-      "icon": "local_cafe",
-      "tone": "food",
-      "items": [
-        "Desayuno en Asakusa.",
-        "Opciones: café, bakery o 7-Eleven.",
-        "$20 - $35."
-      ],
-      "showMap": false
-    },
-    {
-      "time": "10:00 am",
-      "duration": "40-50 min",
-      "title": "Asakusa → Shibuya",
-      "icon": "subway",
-      "tone": "travel",
-      "items": [
-        "Metro (Ginza Line o combinación).",
-        "Ruta directa hacia Shibuya.",
-        "$6 - $10."
-      ],
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Asakusa Station, Tokyo, Japan",
-        "destination": "Shibuya Station, Tokyo, Japan"
-      }
-    },
-    {
-      "time": "11:00 am",
-      "duration": "11:00 - 12:30 pm",
-      "title": "Shibuya Crossing + Hachiko",
-      "icon": "location_city",
-      "tone": "arrival",
-      "items": [
-        "Ver el cruce más famoso del mundo.",
-        "Fotos con Hachiko.",
-        "Explorar alrededores."
-      ],
-      "detail": "Ir antes del mediodía es más cómodo que en la noche.",
-      "showMap": false
-    },
-    {
-      "time": "12:30 pm",
-      "duration": "12:30 - 2:00 pm",
-      "title": "Almuerzo en Shibuya",
-      "icon": "ramen_dining",
-      "tone": "food",
-      "items": [
-        "Opciones: ramen, sushi, gyudon.",
-        "$30 - $55."
-      ],
-      "showMap": false
-    },
-    {
-      "time": "2:00 pm",
-      "duration": "2:00 - 5:00 pm",
-      "title": "Compras en Shibuya",
-      "icon": "shopping_bag",
-      "tone": "shopping",
-      "items": [
-        "Shibuya 109.",
-        "Tiendas de ropa y lifestyle.",
-        "Don Quijote.",
-        "$40 - $120."
-      ],
-      "detail": "Bloque libre para explorar tiendas sin presión.",
-      "showMap": false
-    },
-    {
-      "time": "5:15 pm",
-      "duration": "15 min",
-      "title": "Shibuya → Shinjuku",
-      "icon": "train",
-      "tone": "travel",
-      "items": [
-        "JR Yamanote Line.",
-        "Trayecto corto (~15 min).",
-        "$3 - $6."
-      ],
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Shibuya Station, Tokyo, Japan",
-        "destination": "Shinjuku Station, Tokyo, Japan"
-      }
-    },
-    {
-      "time": "5:45 pm",
-      "duration": "5:45 - 7:30 pm",
-      "title": "Shinjuku (atardecer + noche)",
-      "icon": "nightlife",
-      "tone": "night",
-      "items": [
-        "Explorar Kabukicho.",
-        "Luces de neón.",
-        "Fotos nocturnas.",
-        "Ambiente de ciudad."
-      ],
-      "detail": "Aquí empieza el Tokyo más intenso visualmente.",
-      "showMap": false
-    },
-    {
-      "time": "7:30 pm",
-      "duration": "7:30 - 9:00 pm",
-      "title": "Cena en Shinjuku",
-      "icon": "dinner_dining",
-      "tone": "food",
-      "items": [
-        "Opciones: yakiniku, ramen premium o izakaya.",
-        "$50 - $90."
-      ],
-      "detail": "Buena noche para una cena más especial.",
-      "showMap": false
-    },
-    {
-      "time": "9:15 pm",
-      "duration": "40-50 min",
-      "title": "Shinjuku → Asakusa",
-      "icon": "subway",
-      "tone": "travel",
-      "items": [
-        "Metro de regreso.",
-        "$6 - $10."
-      ],
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Shinjuku Station, Tokyo, Japan",
-        "destination": "Asakusa Station, Tokyo, Japan"
-      }
-    },
-    {
-      "time": "10:15 pm",
-      "duration": "cierre",
-      "title": "Regreso al hotel",
-      "icon": "bedtime",
-      "tone": "rest",
-      "items": [
-        "Descansar.",
-        "Preparar día siguiente."
-      ],
+      "detail": "Placeholder temporal para Tokyo. Se completará cuando trabajemos esta ciudad con el mismo detalle que Osaka y Kyoto.",
       "showMap": false
     }
   ],
-  "note": "Meta del día: vivir el Tokyo moderno, mezclar Shibuya con Shinjuku y disfrutar la ciudad de día y de noche."
+  "note": "Pendiente: este día de Tokyo todavía no ha sido revisado ni confirmado.",
+  "marStops": [],
+  "prepNote": {
+    "title": "Próximamente",
+    "text": "Los días de Tokyo todavía no están revisados. Se completarán después con rutas, horarios, paradas favoritas y presupuesto."
+  },
+  "insights": [
+    {
+      "icon": "pending",
+      "text": "Pendiente de revisar"
+    },
+    {
+      "icon": "edit_calendar",
+      "text": "Se completará pronto"
+    }
+  ]
 }

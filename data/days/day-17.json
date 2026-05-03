@@ -1,123 +1,42 @@
 {
   "title": "Día 17 - Tokyo libre / cierre",
-  "subtitle": "Viernes 23 de octubre - Día flexible para repetir, comprar o cerrar el viaje",
+  "subtitle": "Vie 23 oct - Tokyo pendiente de revisar",
   "dateLabel": "Viernes 23 de octubre de 2026",
   "shortDateLabel": "Vie 23 oct",
-  "status": "Flexible",
-  "costEstimateUsd": {
-    "low": 120,
-    "high": 250,
-    "note": "transporte, comida y compras finales"
-  },
+  "status": "Próximamente",
   "route": [
-    "Hotel",
-    "Tokyo libre",
-    "Hotel"
+    "Tokyo - pendiente"
   ],
   "blocks": [
     {
-      "time": "7:30 am",
-      "duration": "inicio",
-      "title": "Despertar temprano",
-      "icon": "alarm",
+      "time": "Por definir",
+      "duration": "próximamente",
+      "title": "Tokyo - próximamente",
+      "icon": "pending",
       "tone": "rest",
       "items": [
-        "Último día completo en Tokyo.",
-        "Mantener ritmo del viaje.",
-        "Prepararse para un día flexible."
+        "Este día de Tokyo todavía no está revisado.",
+        "Falta definir ruta real, horarios, comidas, tiendas, reservas y presupuesto.",
+        "No usar este bloque como plan final todavía."
       ],
+      "detail": "Placeholder temporal para Tokyo. Se completará cuando trabajemos esta ciudad con el mismo detalle que Osaka y Kyoto.",
       "showMap": false
-    },
-    {
-      "time": "8:00 am",
-      "duration": "8:00 - 8:45 am",
-      "title": "Desayuno",
-      "icon": "local_cafe",
-      "tone": "food",
-      "items": [
-        "Desayuno tranquilo.",
-        "$20 - $35."
-      ]
-    },
-    {
-      "time": "9:00 am",
-      "duration": "9:00 am - 1:00 pm",
-      "title": "Bloque libre principal",
-      "icon": "explore",
-      "tone": "arrival",
-      "items": [
-        "Repetir lugar favorito.",
-        "Ir a otro Pokémon Center.",
-        "Últimas compras.",
-        "Explorar algo pendiente."
-      ],
-      "detail": "Este bloque depende completamente de cómo se hayan sentido los días anteriores.",
-      "showMap": false
-    },
-    {
-      "time": "1:00 pm",
-      "duration": "1:00 - 2:00 pm",
-      "title": "Almuerzo",
-      "icon": "ramen_dining",
-      "tone": "food",
-      "items": [
-        "Comida final en Tokyo.",
-        "$30 - $55."
-      ]
-    },
-    {
-      "time": "2:00 pm",
-      "duration": "2:00 - 5:00 pm",
-      "title": "Compras finales / recuerdos",
-      "icon": "shopping_bag",
-      "tone": "shopping",
-      "items": [
-        "Souvenirs.",
-        "Don Quijote.",
-        "Regalos.",
-        "$40 - $120."
-      ],
-      "detail": "No dejar compras para el aeropuerto.",
-      "showMap": false
-    },
-    {
-      "time": "5:00 pm",
-      "duration": "5:00 - 6:30 pm",
-      "title": "Regreso al hotel + maletas",
-      "icon": "luggage",
-      "tone": "hotel",
-      "items": [
-        "Ordenar maletas.",
-        "Empacar compras.",
-        "Preparar documentos."
-      ],
-      "showMap": false
-    },
-    {
-      "time": "6:45 pm",
-      "duration": "6:45 - 8:30 pm",
-      "title": "Cena de despedida",
-      "icon": "dinner_dining",
-      "tone": "food",
-      "items": [
-        "Cena especial.",
-        "Opciones: sushi premium, yakiniku o izakaya.",
-        "$60 - $120."
-      ],
-      "detail": "Última cena en Japón, vale la pena hacerla memorable.",
-      "showMap": false
-    },
-    {
-      "time": "9:00 pm",
-      "duration": "cierre",
-      "title": "Regreso + preparación final",
-      "icon": "bedtime",
-      "tone": "rest",
-      "items": [
-        "Dejar todo listo para el aeropuerto.",
-        "Dormir temprano."
-      ]
     }
   ],
-  "note": "Meta del día: cerrar Tokyo sin estrés y dejar todo listo para el regreso."
+  "note": "Pendiente: este día de Tokyo todavía no ha sido revisado ni confirmado.",
+  "marStops": [],
+  "prepNote": {
+    "title": "Próximamente",
+    "text": "Los días de Tokyo todavía no están revisados. Se completarán después con rutas, horarios, paradas favoritas y presupuesto."
+  },
+  "insights": [
+    {
+      "icon": "pending",
+      "text": "Pendiente de revisar"
+    },
+    {
+      "icon": "edit_calendar",
+      "text": "Se completará pronto"
+    }
+  ]
 }
