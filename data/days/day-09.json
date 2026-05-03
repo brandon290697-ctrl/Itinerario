@@ -1,29 +1,31 @@
 {
-  "title": "Día 9 - Fushimi Inari + Kyoto Centro",
-  "subtitle": "Jueves 15 de octubre - Torii temprano, Daimaru, Ichiran, Pokémon Center Kyoto, Nintendo y Ghibli Store",
+  "title": "Día 9 - Fushimi Inari + Mimuro Kimonos + Kyoto Centro",
+  "subtitle": "Jueves 15 de octubre - Torii temprano, Mimuro Kimonos, Ichiran, Daimaru, Pokémon Center Kyoto, Nintendo y Ghibli Store",
   "dateLabel": "Jueves 15 de octubre de 2026",
   "shortDateLabel": "Jue 15 oct",
-  "status": "Torii + Compras",
+  "status": "Torii + Kimonos + Compras",
   "costEstimateUsd": {
-    "low": 230,
-    "high": 390,
-    "note": "transporte, comida, Pokémon, Nintendo, Daimaru, Ichiran, Ghibli y compras"
+    "low": 260,
+    "high": 500,
+    "note": "transporte, comida, Pokémon, Nintendo, Daimaru, Ichiran, Ghibli, Mimuro Kimonos y compras opcionales; no contempla compra grande de kimono de alto valor"
   },
   "route": [
     "Hotel",
     "Kyoto Station",
     "Fushimi Inari",
-    "Kawaramachi",
-    "Daimaru Kyoto",
+    "Mimuro Kimonos",
     "ICHIRAN Kyoto Karasuma",
+    "Daimaru Kyoto",
     "Pokémon Center Kyoto",
     "Nintendo KYOTO",
     "Donguri Kyowakoku / Ghibli Store",
+    "Kawaramachi / Shijo",
     "Hotel"
   ],
   "marStops": [
-    "Daimaru Kyoto",
+    "Mimuro Kimonos",
     "ICHIRAN Kyoto Karasuma",
+    "Daimaru Kyoto",
     "Pokémon Center Kyoto",
     "Nintendo KYOTO",
     "Donguri Kyowakoku / Ghibli Store"
@@ -38,9 +40,10 @@
       "items": [
         "Salir temprano para llegar a Fushimi Inari antes de las multitudes.",
         "Llevar zapatos cómodos y ropa ligera.",
-        "Preparar efectivo y batería externa."
+        "Preparar efectivo y batería externa.",
+        "Llevar pasaporte por si compran en Mimuro Kimonos y aplica tax-free."
       ],
-      "detail": "Fushimi Inari entre 7 y 9 am es completamente diferente a llegar al mediodía. Vale totalmente madrugar.",
+      "detail": "Fushimi Inari entre 7 y 9 am es completamente diferente a llegar al mediodía. Vale totalmente madrugar. Después el día cambia a compras especiales y Kyoto centro.",
       "showMap": false,
       "marPick": false
     },
@@ -55,7 +58,7 @@
         "Algo ligero y portátil.",
         "Presupuesto 2 personas: $12 - $25."
       ],
-      "detail": "Desayuno funcional para llegar temprano a Inari.",
+      "detail": "Desayuno funcional para llegar temprano a Inari sin atrasar el bloque de Mimuro Kimonos.",
       "location": {
         "name": "Gojo Karasuma / hotel",
         "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma breakfast"
@@ -124,7 +127,7 @@
     },
     {
       "time": "7:50 am",
-      "duration": "2h",
+      "duration": "7:50 - 9:50 am",
       "title": "Fushimi Inari Taisha",
       "icon": "temple_buddhist",
       "tone": "arrival",
@@ -134,7 +137,7 @@
         "Entrada libre.",
         "Donación opcional: $0 - $5."
       ],
-      "detail": "Ya era parte fuerte del itinerario original y vale mantenerlo.",
+      "detail": "Ya era parte fuerte del itinerario original y vale mantenerlo. Lo ideal es no extenderlo demasiado para llegar a Mimuro Kimonos con tiempo real de compra.",
       "location": {
         "name": "Fushimi Inari Taisha",
         "mapsQuery": "Fushimi Inari Taisha Kyoto"
@@ -149,55 +152,91 @@
       "marPick": false
     },
     {
-      "time": "10:15 am",
-      "duration": "40-50 min",
-      "title": "Fushimi Inari → Kawaramachi / Kyoto centro",
+      "time": "10:00 am",
+      "duration": "35-45 min",
+      "title": "Fushimi Inari → Mimuro Kimonos",
       "icon": "train",
       "tone": "travel",
       "items": [
-        "Regresar hacia zona centro.",
-        "Ir hacia Kawaramachi/Shijo.",
-        "Preparar bloque de tiendas."
+        "Salir de Fushimi Inari hacia la zona de Nakagyo.",
+        "Usar tren/subway según indique Maps en el momento.",
+        "Mimuro queda mejor como parada previa al bloque de Kyoto centro.",
+        "Presupuesto 2 personas: $6 - $12."
       ],
-      "detail": "Después del templo, el día cambia a compras y comida.",
+      "detail": "Este traslado evita regresar primero a Kawaramachi y después desviarse. Conviene ir directo a Mimuro para aprovechar la mañana.",
       "routeInfo": {
         "mode": "transit",
         "origin": "Fushimi Inari Taisha, Kyoto, Japan",
-        "destination": "Kawaramachi, Kyoto, Japan",
-        "note": "Traslado hacia Kyoto centro.",
-        "mapsQuery": "Fushimi Inari Taisha to Kawaramachi Kyoto"
+        "destination": "Mimuro Kimonos, Kyoto, Japan",
+        "note": "Traslado desde Fushimi Inari hacia Mimuro Kimonos en Nakagyo.",
+        "mapsQuery": "Fushimi Inari Taisha to Mimuro Kimonos Kyoto by train",
+        "fixedDuration": "35-45 min",
+        "fixedDistance": "Tren/subway + caminata corta",
+        "fallbackMessage": "Estimado fijo: traslado desde Fushimi Inari hacia la zona de Nakagyo para visitar Mimuro Kimonos.",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN",
+          "BUS"
+        ]
       },
       "marPick": false
     },
     {
-      "time": "11:15 am",
-      "duration": "45 min",
-      "title": "Daimaru Kyoto",
-      "icon": "shopping_bag",
+      "time": "10:45 am",
+      "duration": "10:45 am - 12:15 pm",
+      "title": "Mimuro Kimonos",
+      "icon": "checkroom",
       "tone": "shopping",
       "marListStop": true,
       "items": [
-        "Tienda departamental para compras y paseo.",
-        "También puede servir para baño, descanso y compras de comida.",
-        "Compras opcionales: $20 - $80."
+        "Tienda tradicional de kimonos/yukatas en Kyoto.",
+        "Reservar tiempo suficiente para ver telas, estilos, tallas y accesorios.",
+        "Ideal para que Mar vea opciones con calma sin sentir que es una parada corrida.",
+        "Llevar pasaporte por si aplica tax-free.",
+        "Tiempo recomendado: 1h 15m - 1h 45m.",
+        "Compras opcionales: muy variable según kimono, yukata, obi o accesorios."
       ],
-      "detail": "Daimaru queda bien dentro del bloque de Kyoto centro.",
+      "detail": "Mimuro conviene hacerlo como compra especial del viaje, no como parada rápida. Por eso se le reserva 1h 30m. Si no compran nada grande, igual funciona como experiencia tradicional bonita dentro de Kyoto.",
       "location": {
-        "name": "Daimaru Kyoto",
-        "mapsQuery": "Daimaru Kyoto"
+        "name": "Mimuro Kimonos",
+        "mapsQuery": "Mimuro Kimonos Kyoto"
       },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "12:15 pm",
+      "duration": "20-25 min",
+      "title": "Mimuro Kimonos → ICHIRAN Kyoto Karasuma",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Moverse desde Mimuro hacia la zona de Karasuma/Shijo.",
+        "Ir directo a almorzar para no atrasar el bloque de tiendas.",
+        "Presupuesto 2 personas: $0 - $6 según si caminan o usan transporte."
+      ],
+      "detail": "Después de Mimuro conviene ir directo a Ichiran. Así el día queda ordenado: templo temprano, kimono a media mañana y compras modernas por la tarde.",
       "routeInfo": {
-        "mode": "walking",
-        "origin": "Kawaramachi, Kyoto, Japan",
-        "destination": "Daimaru Kyoto, Kyoto, Japan",
-        "note": "Caminata hacia Daimaru Kyoto.",
-        "mapsQuery": "Kawaramachi Kyoto to Daimaru Kyoto"
+        "mode": "transit",
+        "origin": "Mimuro Kimonos, Kyoto, Japan",
+        "destination": "ICHIRAN Kyoto Karasuma, Kyoto, Japan",
+        "note": "Traslado desde Mimuro Kimonos hacia Ichiran Kyoto Karasuma.",
+        "mapsQuery": "Mimuro Kimonos Kyoto to ICHIRAN Kyoto Karasuma",
+        "fixedDuration": "20-25 min",
+        "fixedDistance": "Caminata o transporte corto hacia Karasuma/Shijo",
+        "fallbackMessage": "Estimado fijo: Mimuro Kimonos hacia zona Karasuma/Shijo para almorzar en Ichiran.",
+        "transitModes": [
+          "SUBWAY",
+          "BUS",
+          "WALK"
+        ]
       },
       "marPick": false
     },
     {
-      "time": "12:15 pm",
-      "duration": "almuerzo",
+      "time": "12:45 pm",
+      "duration": "12:45 - 1:30 pm",
       "title": "ICHIRAN Kyoto Karasuma",
       "icon": "ramen_dining",
       "tone": "food",
@@ -207,23 +246,44 @@
         "Presupuesto 2 personas: $25 - $40.",
         "Ramen como comida principal del bloque de Kyoto centro."
       ],
-      "detail": "Ichiran funciona bien como almuerzo dentro del bloque de centro.",
+      "detail": "Ichiran funciona bien después de Mimuro porque queda dentro de la zona que conecta con Daimaru, Pokémon Center y Nintendo.",
       "location": {
         "name": "ICHIRAN Kyoto Karasuma",
         "mapsQuery": "ICHIRAN Kyoto Karasuma Kyoto"
       },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:40 pm",
+      "duration": "1:40 - 2:15 pm",
+      "title": "Daimaru Kyoto",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Tienda departamental para compras y paseo.",
+        "También puede servir para baño, descanso y compras de comida.",
+        "Bloque reducido para darle espacio a Mimuro Kimonos.",
+        "Compras opcionales: $20 - $80."
+      ],
+      "detail": "Daimaru se mantiene, pero más corto. Ya no conviene darle 45 minutos completos porque Mimuro ocupa el bloque fuerte de compras tradicionales.",
+      "location": {
+        "name": "Daimaru Kyoto",
+        "mapsQuery": "Daimaru Kyoto"
+      },
       "routeInfo": {
         "mode": "walking",
-        "origin": "Daimaru Kyoto, Kyoto, Japan",
-        "destination": "ICHIRAN Kyoto Karasuma, Kyoto, Japan",
-        "note": "Caminata hacia Ichiran Kyoto Karasuma.",
-        "mapsQuery": "Daimaru Kyoto to ICHIRAN Kyoto Karasuma"
+        "origin": "ICHIRAN Kyoto Karasuma, Kyoto, Japan",
+        "destination": "Daimaru Kyoto, Kyoto, Japan",
+        "note": "Caminata corta desde Ichiran hacia Daimaru Kyoto.",
+        "mapsQuery": "ICHIRAN Kyoto Karasuma to Daimaru Kyoto"
       },
       "marPick": false
     },
     {
-      "time": "1:30 pm",
-      "duration": "1h",
+      "time": "2:30 pm",
+      "duration": "2:30 - 3:30 pm",
       "title": "Pokémon Center Kyoto",
       "icon": "toys",
       "tone": "shopping",
@@ -233,23 +293,23 @@
         "Comparar con Osaka y Tokyo.",
         "Compras opcionales: $30 - $100."
       ],
-      "detail": "Uno de los puntos fuertes de Kyoto centro.",
+      "detail": "Uno de los puntos fuertes de Kyoto centro. Se mantiene con una hora completa porque probablemente sea una parada importante para ustedes.",
       "location": {
         "name": "Pokémon Center Kyoto",
         "mapsQuery": "Pokemon Center Kyoto"
       },
       "routeInfo": {
         "mode": "walking",
-        "origin": "ICHIRAN Kyoto Karasuma, Kyoto, Japan",
+        "origin": "Daimaru Kyoto, Kyoto, Japan",
         "destination": "Pokemon Center Kyoto, Kyoto, Japan",
         "note": "Caminata hacia Pokémon Center Kyoto.",
-        "mapsQuery": "ICHIRAN Kyoto Karasuma to Pokemon Center Kyoto"
+        "mapsQuery": "Daimaru Kyoto to Pokemon Center Kyoto"
       },
       "marPick": false
     },
     {
-      "time": "2:45 pm",
-      "duration": "1h",
+      "time": "3:45 pm",
+      "duration": "3:45 - 4:45 pm",
       "title": "Nintendo KYOTO",
       "icon": "sports_esports",
       "tone": "shopping",
@@ -259,7 +319,7 @@
         "Ideal para souvenirs de Mario, Zelda, Kirby, Animal Crossing y más.",
         "Compras opcionales: $30 - $120."
       ],
-      "detail": "Está muy bien combinarlo con Pokémon Center Kyoto.",
+      "detail": "Está muy bien combinarlo con Pokémon Center Kyoto. Mantener una hora completa para no correr.",
       "location": {
         "name": "Nintendo KYOTO",
         "mapsQuery": "Nintendo KYOTO Kyoto Takashimaya"
@@ -274,8 +334,8 @@
       "marPick": false
     },
     {
-      "time": "4:00 pm",
-      "duration": "45 min",
+      "time": "5:00 pm",
+      "duration": "5:00 - 5:45 pm",
       "title": "Donguri Kyowakoku / Ghibli Store",
       "icon": "storefront",
       "tone": "shopping",
@@ -283,9 +343,10 @@
       "items": [
         "Tienda de Studio Ghibli.",
         "Ideal para regalos o recuerdos pequeños.",
+        "Si están cansados o cargados con bolsas, esta parada puede quedar flexible.",
         "Compras opcionales: $20 - $80."
       ],
-      "detail": "Funciona bien como cierre de tiendas temáticas.",
+      "detail": "Funciona bien como cierre de tiendas temáticas. Si Mimuro toma más de 1h 30m, esta es la parada más fácil de recortar.",
       "location": {
         "name": "Donguri Kyowakoku / Ghibli Store",
         "mapsQuery": "Donguri Kyowakoku Kyoto Ghibli Store"
@@ -300,18 +361,18 @@
       "marPick": false
     },
     {
-      "time": "5:00 pm",
-      "duration": "1h",
-      "title": "Tiempo libre en Kawaramachi / Shijo",
+      "time": "6:00 pm",
+      "duration": "30 min",
+      "title": "Pausa / ordenar compras en Kawaramachi",
       "icon": "shopping_bag",
       "tone": "shopping",
       "items": [
-        "Comprar algo pendiente.",
-        "Volver a Daimaru o Takashimaya.",
-        "Descansar en café.",
-        "Presupuesto flexible: $20 - $100."
+        "Revisar bolsas y compras.",
+        "Descansar antes de cenar.",
+        "Tomar café, agua o snack si hace falta.",
+        "Presupuesto flexible: $10 - $30."
       ],
-      "detail": "Bloque definido de compras finales en Kyoto centro.",
+      "detail": "Este bloque reemplaza el tiempo libre largo original. Sirve como colchón por si Mimuro, Pokémon o Nintendo toman más tiempo.",
       "location": {
         "name": "Kawaramachi / Shijo",
         "mapsQuery": "Kawaramachi Shijo Kyoto shopping"
@@ -320,7 +381,7 @@
       "marPick": false
     },
     {
-      "time": "6:30 pm",
+      "time": "6:45 pm",
       "duration": "cena",
       "title": "Cena en Kyoto centro",
       "icon": "dinner_dining",
@@ -330,7 +391,7 @@
         "Opciones: izakaya, sushi, curry japonés, tempura o ramen.",
         "Presupuesto 2 personas: $45 - $80."
       ],
-      "detail": "Cerrar el último día completo de Kyoto sin irse demasiado tarde.",
+      "detail": "Cerrar el último día completo de Kyoto sin irse demasiado tarde. Al día siguiente toca traslado a Tokyo.",
       "location": {
         "name": "Kawaramachi / Shijo",
         "mapsQuery": "Kawaramachi Shijo Kyoto dinner"
@@ -347,9 +408,10 @@
       "items": [
         "Regresar al hotel.",
         "Ordenar compras.",
+        "Separar lo comprado en Mimuro Kimonos para que no se maltrate.",
         "Preparar maletas para Tokyo."
       ],
-      "detail": "Al día siguiente toca traslado Kyoto → Tokyo.",
+      "detail": "Al día siguiente toca traslado Kyoto → Tokyo. Mejor dejar compras y ropa listas desde esta noche.",
       "routeInfo": {
         "mode": "walking",
         "origin": "Kawaramachi, Kyoto, Japan",
@@ -360,5 +422,5 @@
       "marPick": false
     }
   ],
-  "note": "Meta del día: mantener Fushimi Inari e incluir las paradas favoritas de Kyoto centro: Daimaru Kyoto, ICHIRAN Kyoto Karasuma, Pokémon Center Kyoto, Nintendo KYOTO y Donguri Kyowakoku."
+  "note": "Meta del día: mantener Fushimi Inari temprano, agregar Mimuro Kimonos como compra especial de Kyoto y cerrar con las paradas favoritas de Kyoto centro: ICHIRAN Kyoto Karasuma, Daimaru Kyoto, Pokémon Center Kyoto, Nintendo KYOTO y Donguri Kyowakoku. El bloque más flexible es Ghibli Store o la pausa de Kawaramachi si Mimuro toma más tiempo."
 }
