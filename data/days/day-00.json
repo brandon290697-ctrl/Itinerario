@@ -1,0 +1,131 @@
+{
+  "title": "Día 0 - Vuelo internacional",
+  "subtitle": "Lunes 5 de octubre - Salida desde Costa Rica",
+  "dateLabel": "Lunes 5 de octubre de 2026",
+  "shortDateLabel": "Lun 5 oct",
+  "status": "Vuelo internacional",
+  "energy": "medio",
+  "costEstimateUsd": {
+    "low": 60,
+    "high": 140,
+    "note": "traslados al aeropuerto, comidas, snacks y compras pequeñas; sin vuelos internacionales"
+  },
+  "route": [
+    "Casa",
+    "Aeropuerto en Costa Rica",
+    "Ciudad de México",
+    "Monterrey",
+    "Narita"
+  ],
+  "marStops": [],
+  "prepNote": {
+    "title": "Preparación del día",
+    "text": "Ruta, revisión previa y acciones rápidas antes del vuelo internacional."
+  },
+  "blocks": [
+    {
+      "time": "9:30 am",
+      "duration": "sugerido",
+      "title": "Salida desde casa",
+      "icon": "home",
+      "tone": "travel",
+      "items": [
+        "Salir con margen por tráfico hacia el aeropuerto.",
+        "Confirmar pasaporte, pases de abordar y documentos principales."
+      ],
+      "detail": "Primera salida del viaje. Mantener margen amplio para llegar sin estrés al aeropuerto.",
+      "routeInfo": {
+        "mode": "driving",
+        "origin": "San José, Costa Rica",
+        "destination": "Juan Santamaría International Airport, Costa Rica",
+        "note": "Traslado desde casa hacia el aeropuerto. Ajustar origen exacto si hace falta.",
+        "mapsQuery": "San Jose Costa Rica to Juan Santamaria International Airport"
+      }
+    },
+    {
+      "time": "10:30 am",
+      "duration": "llegada sugerida",
+      "title": "Aeropuerto en Costa Rica",
+      "icon": "luggage",
+      "tone": "travel",
+      "items": [
+        "Hacer check-in, entrega de equipaje y migración con calma.",
+        "Comprar agua o snacks antes de abordar.",
+        "Tener celular cargado y power bank listo."
+      ],
+      "detail": "Este bloque no necesita mapa: es una lista de preparación dentro del aeropuerto.",
+      "showMap": false
+    },
+    {
+      "time": "1:30 pm",
+      "duration": "vuelo",
+      "title": "Salida de Costa Rica",
+      "icon": "flight_takeoff",
+      "tone": "travel",
+      "items": [
+        "Guardar documentos después de abordar.",
+        "Aprovechar el primer tramo para descansar.",
+        "Tener a mano audífonos, cargador y una capa ligera."
+      ],
+      "detail": "Primer tramo internacional del viaje.",
+      "showMap": false
+    },
+    {
+      "time": "5:00 pm",
+      "duration": "conexión",
+      "title": "Llegada a Ciudad de México",
+      "icon": "connecting_airports",
+      "tone": "arrival",
+      "items": [
+        "Revisar pantalla de conexiones.",
+        "Confirmar puerta y horario del siguiente tramo.",
+        "Comprar agua o comida si el tiempo lo permite."
+      ],
+      "detail": "Mantener el foco en la conexión y no alejarse demasiado del área de salida.",
+      "showMap": false
+    },
+    {
+      "time": "7:00 pm",
+      "duration": "vuelo",
+      "title": "Vuelo hacia Monterrey",
+      "icon": "flight",
+      "tone": "travel",
+      "items": [
+        "Tramo corto de conexión.",
+        "Revisar que todos los objetos personales sigan a mano.",
+        "Aprovechar para descansar un poco."
+      ],
+      "detail": "Segundo tramo antes del vuelo largo hacia Japón.",
+      "showMap": false
+    },
+    {
+      "time": "9:00 pm",
+      "duration": "espera técnica",
+      "title": "Llegada a Monterrey / espera técnica",
+      "icon": "schedule",
+      "tone": "rest",
+      "items": [
+        "Revisar puerta del vuelo a Narita.",
+        "Cargar teléfono si hay toma disponible.",
+        "Comprar agua y snack para el vuelo largo."
+      ],
+      "detail": "Prepararse para el tramo más largo del viaje.",
+      "showMap": false
+    },
+    {
+      "time": "11:00 pm",
+      "duration": "vuelo largo",
+      "title": "Salida rumbo a Narita, Japón",
+      "icon": "flight_takeoff",
+      "tone": "travel",
+      "items": [
+        "Guardar documentos en un lugar seguro.",
+        "Intentar dormir lo antes posible.",
+        "Ajustar reloj mental a horario de Japón."
+      ],
+      "detail": "Vuelo largo hacia Japón. Prioridad: descanso, hidratación y mantener lo esencial a mano.",
+      "showMap": false
+    }
+  ],
+  "note": "Meta del día: salir con calma de Costa Rica, manejar conexiones sin estrés y descansar lo más posible antes de llegar a Japón."
+}

@@ -1,0 +1,370 @@
+{
+  "title": "Día 8 - Uji completo",
+  "subtitle": "Miércoles 14 de octubre - Uji Station, Byodo-in, Omotesando, Starbucks, Tsuen y Ujigami",
+  "dateLabel": "Miércoles 14 de octubre de 2026",
+  "shortDateLabel": "Mié 14 oct",
+  "status": "Uji + té",
+  "costEstimateUsd": {
+    "low": 150,
+    "high": 250,
+    "note": "trenes, entrada Byodo-in, comida, té, café, snacks y compras"
+  },
+  "route": [
+    "Hotel",
+    "Kyoto Station",
+    "Uji Station",
+    "Byodo-in Omotesando",
+    "Starbucks Uji",
+    "Byodo-in Front Gate",
+    "Byodo-in Hoodo",
+    "Tsuen Main Branch",
+    "Ujigami Shrine",
+    "Kyoto"
+  ],
+  "marStops": [
+    "Uji Station",
+    "Byodo-in Omotesando",
+    "Starbucks Coffee - Kyoto Uji Byodo-in Omotesando",
+    "Byodo-in Omotemon / Front Gate",
+    "Byodo-in Hoodo",
+    "Tsuen Main Branch",
+    "Santuario Ujigami"
+  ],
+  "blocks": [
+    {
+      "time": "6:30 am",
+      "duration": "inicio",
+      "title": "Despertar temprano",
+      "icon": "alarm",
+      "tone": "rest",
+      "items": [
+        "Uji conviene hacerlo con calma desde temprano.",
+        "Llevar zapatos cómodos.",
+        "Llevar efectivo para té, snacks y entradas.",
+        "Preparar cámara/celular."
+      ],
+      "detail": "Día más tranquilo, enfocado en té, templos y paseo bonito.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "7:00 am",
+      "duration": "desayuno",
+      "title": "Desayuno ligero",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayuno cerca del hotel o en Kyoto Station.",
+        "Presupuesto 2 personas: $15 - $25.",
+        "No hacerlo demasiado largo para llegar temprano a Uji."
+      ],
+      "detail": "El día funciona mejor si llegan a Uji antes del movimiento fuerte.",
+      "location": {
+        "name": "Kyoto Station / Sanjo",
+        "mapsQuery": "Kyoto Station breakfast"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "7:40 am",
+      "duration": "40-50 min",
+      "title": "Kyoto → Uji Station",
+      "icon": "train",
+      "tone": "travel",
+      "marListStop": true,
+      "items": [
+        "Traslado hacia Uji Station.",
+        "Costo 2 personas: $8 - $14."
+      ],
+      "detail": "Uji Station será el punto de entrada al recorrido.",
+      "location": {
+        "name": "Uji Station",
+        "mapsQuery": "Uji Station Kyoto"
+      },
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Kyoto Station, Kyoto, Japan",
+        "destination": "Uji Station, Uji, Kyoto, Japan",
+        "note": "JR Nara Line desde Kyoto Station hasta Uji Station.",
+        "fixedDuration": "30-35 min",
+        "fixedDistance": "JR Nara Line",
+        "fareEstimateJpy": 330,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Nara Line.",
+        "mapsQuery": "Kyoto Station to Uji Station Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:35 am",
+      "duration": "30 min",
+      "title": "Uji Station y caminata inicial",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Llegada a Uji Station.",
+        "Caminar hacia la zona de Byodo-in Omotesando.",
+        "Primeras fotos y ambiente de Uji.",
+        "Costo: $0."
+      ],
+      "detail": "Inicio suave del día en Uji.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Uji Station, Uji, Kyoto, Japan",
+        "destination": "Byodo-in Omotesando, Uji, Kyoto, Japan",
+        "note": "Caminata desde Uji Station hacia Byodo-in Omotesando.",
+        "mapsQuery": "Uji Station to Byodo-in Omotesando Uji Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:05 am",
+      "duration": "45 min",
+      "title": "Byodo-in Omotesando",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Calle comercial hacia Byodo-in.",
+        "Tiendas de té, dulces y souvenirs.",
+        "Presupuesto 2 personas: $15 - $40."
+      ],
+      "detail": "Recorrido comercial principal de Uji antes de entrar al templo.",
+      "location": {
+        "name": "Byodo-in Omotesando",
+        "mapsQuery": "Byodo-in Omotesando Uji Kyoto"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "9:50 am",
+      "duration": "30 min",
+      "title": "Starbucks Coffee - Kyoto Uji Byodo-in Omotesando",
+      "icon": "local_cafe",
+      "tone": "food",
+      "marListStop": true,
+      "items": [
+        "Café bonito de la zona de Uji.",
+        "Ideal para descanso, baño y fotos.",
+        "Presupuesto 2 personas: $12 - $22."
+      ],
+      "detail": "Calza perfecto antes de entrar al bloque principal de Byodo-in.",
+      "location": {
+        "name": "Starbucks Coffee - Kyoto Uji Byodo-in Omotesando",
+        "mapsQuery": "Starbucks Coffee Kyoto Uji Byodo-in Omotesando"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Byodo-in Omotesando, Uji, Kyoto, Japan",
+        "destination": "Starbucks Coffee Kyoto Uji Byodo-in Omotesando, Uji, Kyoto, Japan",
+        "note": "Parada de café en Byodo-in Omotesando.",
+        "mapsQuery": "Byodo-in Omotesando to Starbucks Coffee Kyoto Uji Byodo-in Omotesando"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:30 am",
+      "duration": "15 min",
+      "title": "Byodo-in Omotemon / Front Gate",
+      "icon": "gate",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Entrada principal de Byodo-in.",
+        "Fotos antes de entrar.",
+        "Comprar entrada."
+      ],
+      "detail": "Este punto ayuda a que el recorrido de Byodo-in quede claro.",
+      "location": {
+        "name": "Byodo-in Omotemon / Front Gate",
+        "mapsQuery": "Byodo-in Omotemon Front Gate Uji Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Starbucks Coffee Kyoto Uji Byodo-in Omotesando, Uji, Kyoto, Japan",
+        "destination": "Byodo-in Omotemon Front Gate, Uji, Kyoto, Japan",
+        "note": "Caminata hacia la entrada principal de Byodo-in.",
+        "mapsQuery": "Starbucks Coffee Kyoto Uji Byodo-in Omotesando to Byodo-in Omotemon Front Gate"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:45 am",
+      "duration": "1h 30m",
+      "title": "Byodo-in Hoodo",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Ver el Phoenix Hall / Hoodo.",
+        "Recorrer jardines y museo.",
+        "Entrada estimada: ¥600 por persona."
+      ],
+      "detail": "Este es el punto principal de Uji. No conviene apurarlo.",
+      "location": {
+        "name": "Byodo-in Hoodo",
+        "mapsQuery": "Byodo-in Phoenix Hall Uji Kyoto"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "12:30 pm",
+      "duration": "almuerzo",
+      "title": "Almuerzo en Uji",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almuerzo por Byodo-in Omotesando o cerca del río.",
+        "Opciones: soba, matcha soba, donburi, tempura o comida japonesa ligera.",
+        "Presupuesto 2 personas: $35 - $60."
+      ],
+      "detail": "Uji es buen lugar para comida tranquila, no para correr.",
+      "location": {
+        "name": "Byodo-in Omotesando / Uji River",
+        "mapsQuery": "Byodo-in Omotesando Uji lunch"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:45 pm",
+      "duration": "30 min",
+      "title": "Tsuen Main Branch",
+      "icon": "emoji_food_beverage",
+      "tone": "food",
+      "marListStop": true,
+      "items": [
+        "Té tradicional en Uji.",
+        "Compra o pausa corta.",
+        "Presupuesto 2 personas: $12 - $30."
+      ],
+      "detail": "Muy alineado con el día de Uji y el tema de té.",
+      "location": {
+        "name": "Tsuen Main Branch",
+        "mapsQuery": "Tsuen Main Branch Uji Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Byodo-in Omotesando, Uji, Kyoto, Japan",
+        "destination": "Tsuen Main Branch, Uji, Kyoto, Japan",
+        "note": "Caminata hacia Tsuen Main Branch.",
+        "mapsQuery": "Byodo-in Omotesando to Tsuen Main Branch Uji Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "2:30 pm",
+      "duration": "45 min",
+      "title": "Santuario Ujigami",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Santuario importante y más tranquilo.",
+        "Entrada libre.",
+        "Donación opcional."
+      ],
+      "detail": "Buen cierre cultural para el día de Uji.",
+      "location": {
+        "name": "Santuario Ujigami",
+        "mapsQuery": "Ujigami Shrine Uji Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tsuen Main Branch, Uji, Kyoto, Japan",
+        "destination": "Ujigami Shrine, Uji, Kyoto, Japan",
+        "note": "Caminata hacia Santuario Ujigami.",
+        "mapsQuery": "Tsuen Main Branch to Ujigami Shrine Uji Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "3:30 pm",
+      "duration": "45 min",
+      "title": "Regreso por Byodo-in Omotesando",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "items": [
+        "Últimas compras de té, dulces o souvenirs.",
+        "Volver sin correr hacia Uji Station.",
+        "Presupuesto 2 personas: $15 - $50."
+      ],
+      "detail": "Bloque definido para cerrar compras de Uji antes de regresar a Kyoto.",
+      "location": {
+        "name": "Byodo-in Omotesando",
+        "mapsQuery": "Byodo-in Omotesando Uji Kyoto"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "4:00 pm",
+      "duration": "30-35 min",
+      "title": "Uji Station → Kyoto Station",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Regreso directo a Kyoto.",
+        "Costo 2 personas: $8 - $14."
+      ],
+      "detail": "Regreso directo a Kyoto para descansar antes de la cena.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Uji Station, Kyoto, Japan",
+        "destination": "Kyoto Station, Kyoto, Japan",
+        "note": "JR Nara Line de regreso desde Uji hasta Kyoto Station.",
+        "fixedDuration": "30-35 min",
+        "fixedDistance": "JR Nara Line",
+        "fareEstimateJpy": 330,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo de regreso en JR Nara Line.",
+        "mapsQuery": "Uji Station to Kyoto Station"
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:40 pm",
+      "duration": "20-30 min",
+      "title": "Kyoto Station → Hotel",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Traslado desde Kyoto Station al hotel.",
+        "Descansar un rato antes de cenar.",
+        "Costo 2 personas: $6 - $15."
+      ],
+      "detail": "Volver al hotel ayuda a cerrar Uji con calma.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Kyoto Station, Kyoto, Japan",
+        "destination": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "note": "Regreso desde Kyoto Station hacia el hotel.",
+        "mapsQuery": "Kyoto Station to Henn na Hotel Premier Kyoto Sanjo"
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:30 pm",
+      "duration": "6:30 - 8:00 pm",
+      "title": "Cena en Kyoto",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cena relajada.",
+        "Opciones: ramen, sushi o izakaya.",
+        "Presupuesto 2 personas: $45 - $80."
+      ],
+      "detail": "Día de Uji debe cerrar suave.",
+      "location": {
+        "name": "Sanjo / Kawaramachi",
+        "mapsQuery": "Sanjo Kawaramachi Kyoto dinner"
+      },
+      "showMap": false,
+      "marPick": false
+    }
+  ],
+  "note": "Meta del día: vivir Uji temprano, tranquilo y sin multitudes, con todos los traslados bien cubiertos y las paradas favoritas integradas."
+}

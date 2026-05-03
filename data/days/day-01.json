@@ -1,0 +1,529 @@
+{
+  "title": "Día 1 - Llegada a Japón / Osaka",
+  "subtitle": "Miércoles 7 de octubre - Narita, vuelo a Osaka, Shinsekai y primera noche en Dotonbori",
+  "dateLabel": "Miércoles 7 de octubre de 2026",
+  "shortDateLabel": "Mié 7 oct",
+  "status": "Llegada + Osaka",
+  "costEstimateUsd": {
+    "low": 125,
+    "high": 225,
+    "note": "traslados locales, comidas, Shinsekai, Magic Cafe & Bar, Dotonbori y primera noche; sin vuelo Narita-Kansai"
+  },
+  "route": [
+    "Narita",
+    "Kansai",
+    "Namba",
+    "Cross Hotel",
+    "Shinsekai",
+    "Magic Cafe & Bar Shinsekai",
+    "Dotonbori",
+    "Ramen Hayashida Dotonbori store",
+    "Men joy Life",
+    "Cross Hotel"
+  ],
+  "marStops": [
+    "Magic Cafe & Bar Shinsekai",
+    "Ramen Hayashida Dotonbori store",
+    "Men joy Life"
+  ],
+  "blocks": [
+    {
+      "time": "6:30 am",
+      "duration": "6:30 - 7:45 am",
+      "title": "Llegada a Japón - primeros pasos en Narita",
+      "icon": "flight_land",
+      "tone": "arrival",
+      "items": [
+        "6:30 am - Aterrizaje en Narita.",
+        "6:30 - 7:10 am - Migración.",
+        "7:10 - 7:30 am - Recoger equipaje.",
+        "7:30 - 7:45 am - Aduanas y salida a zona pública."
+      ],
+      "detail": "Primer objetivo del día: salir a zona pública con calma, sin perder documentos ni conexión con el siguiente vuelo.",
+      "showMap": false
+    },
+    {
+      "time": "7:45 am",
+      "duration": "prioridad",
+      "title": "Primero que todo: dinero, internet y transporte",
+      "icon": "payments",
+      "tone": "money",
+      "items": [
+        "Cambiar dólares a yenes en casas de cambio dentro del aeropuerto.",
+        "Cambiar solo lo necesario para el primer día.",
+        "Activar eSIM de Japón ilimitada o por días.",
+        "Comprar 2 tarjetas Suica en máquinas expendedoras JR.",
+        "eSIM + recarga inicial Suica 2 personas: $35 - $90."
+      ],
+      "detail": "Resolver esto en Narita ahorra fricción después: efectivo básico, internet activo y transporte listo antes de moverse por Japón.",
+      "showMap": false
+    },
+    {
+      "time": "8:30 am",
+      "duration": "8:30 - 10:30 am",
+      "title": "Tiempo libre en Narita",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "items": [
+        "Desayuno y compras dentro del aeropuerto.",
+        "Opciones: Starbucks, restaurantes japoneses, 7-Eleven y Don Quijote mini.",
+        "Buscar souvenirs, anime, Pokémon, dulces o tiendas curiosas.",
+        "Desayuno/compras ligeras 2 personas: $25 - $70."
+      ],
+      "detail": "Tiempo útil antes del vuelo a Osaka. Mantener las compras ligeras para no cargar de más desde el primer día.",
+      "showMap": false
+    },
+    {
+      "time": "10:30 am",
+      "duration": "10:30 - 11:30 am",
+      "title": "Descanso, gate y preparación",
+      "icon": "battery_charging_full",
+      "tone": "rest",
+      "items": [
+        "Cargar celulares.",
+        "Ir al baño.",
+        "Preparar boarding pass.",
+        "Revisar puerta de embarque y hora de abordaje."
+      ],
+      "detail": "Este bloque es para bajar el ritmo antes del vuelo. Mejor llegar al gate con margen que correr con equipaje.",
+      "showMap": false
+    },
+    {
+      "time": "11:30 am",
+      "duration": "11:30 - 12:15 pm",
+      "title": "Caminata al gate de Jetstar en Narita",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir hacia el gate de Jetstar Japan.",
+        "Narita T3 está separado del T1/T2: confirmar terminal correcta.",
+        "Usar el shuttle bus gratuito si es necesario entre terminales.",
+        "Llegar al gate con margen antes de las 12:00 pm."
+      ],
+      "detail": "Jetstar opera desde el Terminal 3 de Narita. Si vienen de T1 o T2, hay shuttle bus gratuito que tarda unos 10 minutos.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Narita International Airport Terminal 1, Chiba, Japan",
+        "destination": "Narita International Airport Terminal 3, Chiba, Japan",
+        "note": "Referencia de traslado entre terminales en Narita. El shuttle bus cubre este tramo si la caminata no es directa.",
+        "mapsQuery": "Narita International Airport Terminal 1 to Narita International Airport Terminal 3"
+      }
+    },
+    {
+      "time": "12:15 pm",
+      "duration": "1 h 45 min",
+      "title": "Vuelo Narita → Kansai",
+      "icon": "flight_takeoff",
+      "tone": "travel",
+      "items": [
+        "Vuelo directo con Jetstar Japan.",
+        "12:15 pm - Salida desde Narita (NRT).",
+        "2:00 pm - Llegada al Aeropuerto Internacional de Kansai (KIX)."
+      ],
+      "detail": "Tramo aéreo corto para conectar con Osaka. Tener a mano pasaportes, boarding pass y cualquier comprobante de equipaje.",
+      "showMap": false
+    },
+    {
+      "time": "2:00 pm",
+      "duration": "2:00 - 2:35 pm",
+      "title": "Llegada a Kansai - equipaje y salida",
+      "icon": "flight_land",
+      "tone": "arrival",
+      "items": [
+        "2:00 pm - Aterrizaje en KIX.",
+        "Recoger equipaje en cinta.",
+        "Salir hacia zona pública del aeropuerto.",
+        "Ubicarse en el nivel de trenes: bajar a la estación Kansai-Airport Station."
+      ],
+      "detail": "KIX tiene la estación de tren integrada en el edificio principal. Bajar al nivel B1 para acceder al Nankai Rapi:t.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Kansai International Airport arrivals, Osaka, Japan",
+        "destination": "Kansai-Airport Station, Osaka, Japan",
+        "note": "Caminata interna desde llegadas de KIX hacia la estación de tren.",
+        "mapsQuery": "Kansai International Airport arrivals to Kansai-Airport Station"
+      }
+    },
+    {
+      "time": "2:35 pm",
+      "duration": "2:35 - 2:45 pm",
+      "title": "Compra de boletos Rapi:t",
+      "icon": "confirmation_number",
+      "tone": "money",
+      "items": [
+        "Comprar boletos del Nankai Rapi:t Limited Express en taquilla o máquina.",
+        "Asiento reservado incluido en el precio.",
+        "Costo estimado 2 personas: aprox. $20.",
+        "Confirmar horario del próximo tren."
+      ],
+      "detail": "Las máquinas tienen opción en inglés. Guardar el boleto porque se necesita al salir en Namba.",
+      "showMap": false
+    },
+    {
+      "time": "2:45 pm",
+      "duration": "34-38 min",
+      "title": "Tren Rapi:t KIX → Namba",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Abordar el Nankai Rapi:t Limited Express.",
+        "Confirmar andén correcto hacia Namba.",
+        "Duración estimada: 34-38 min.",
+        "Costo visible en el recorrido."
+      ],
+      "detail": "El Rapi:t es cómodo y rápido. Buena oportunidad para relajarse después del vuelo y ordenar el bolso.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Kansai-Airport Station, Osaka, Japan",
+        "destination": "Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan",
+        "note": "Nankai Rapi:t Limited Express desde Kansai-Airport Station hasta Namba Station.",
+        "fixedDuration": "34-38 min",
+        "fixedDistance": "Nankai Rapi:t",
+        "fareEstimateJpy": 1410,
+        "fareEstimateLabel": "por persona, asiento regular",
+        "fallbackMessage": "Tramo ferroviario fijo: Nankai Rapi:t desde Kansai-Airport Station hasta Namba. El costo estimado aparece arriba con conversión a dólares y colones.",
+        "mapsQuery": "Kansai-Airport Station to Namba Station Osaka Nankai Rapi:t"
+      }
+    },
+    {
+      "time": "3:25 pm",
+      "duration": "3:25 - 3:40 pm",
+      "title": "Caminata Namba → Cross Hotel",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Namba Station hacia Shinsaibashi/Dotonbori.",
+        "Caminar con maletas hacia Cross Hotel Osaka.",
+        "Usar elevadores o salidas accesibles si llevan equipaje pesado."
+      ],
+      "detail": "Este tramo es corto, pero con maletas conviene tomarlo con calma y elegir una salida cómoda desde Namba.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan",
+        "destination": "Cross Hotel Osaka, 2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, Japan",
+        "note": "Caminata desde Namba Station hasta Cross Hotel Osaka.",
+        "mapsQuery": "Namba Station Osaka to Cross Hotel Osaka"
+      }
+    },
+    {
+      "time": "3:45 pm",
+      "duration": "3:45 - 5:00 pm",
+      "title": "Check-in - Cross Hotel Osaka",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Check-in y dejar maletas.",
+        "Descanso corto.",
+        "Bañarse, cargar teléfonos y cambiarse.",
+        "Dejar listo bolso liviano para Shinsekai y Dotonbori."
+      ],
+      "detail": "Pausa clave para no llegar fundidos a la primera noche. Dejar listo lo necesario antes de salir a Shinsekai y luego a Dotonbori.",
+      "location": {
+        "name": "Cross Hotel Osaka",
+        "mapsQuery": "Cross Hotel Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "5:05 pm",
+      "duration": "5:05 - 5:15 pm",
+      "title": "Caminata Cross Hotel → Namba Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del Cross Hotel Osaka hacia Namba Station.",
+        "Ir sin maletas, solo con bolso liviano.",
+        "Tener Suica/ICOCA lista para entrar al metro.",
+        "Costo: $0."
+      ],
+      "detail": "Primer tramo para moverse hacia Shinsekai. Es mejor ir en transporte público o taxi corto porque ya vienen cansados del viaje.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Cross Hotel Osaka, Osaka, Japan",
+        "destination": "Namba Station, Osaka, Japan",
+        "note": "Caminata desde Cross Hotel Osaka hasta Namba Station.",
+        "mapsQuery": "Cross Hotel Osaka to Namba Station Osaka"
+      }
+    },
+    {
+      "time": "5:15 pm",
+      "duration": "5:15 - 5:25 pm",
+      "title": "Metro: Namba → Dobutsuen-mae / Ebisucho",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Moverse desde Namba hacia la zona de Shinsekai.",
+        "Opción recomendada: Osaka Metro hacia Dobutsuen-mae o Ebisucho, según la ruta que muestre Maps.",
+        "Bajarse y seguir señales hacia Shinsekai / Tsutenkaku.",
+        "Costo estimado 2 personas: $3 - $6."
+      ],
+      "detail": "Este traslado evita caminar demasiado después del viaje. La meta es llegar a Shinsekai rápido y todavía con luz de tarde/noche.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Namba Station, Osaka, Japan",
+        "destination": "Dobutsuen-mae Station, Osaka, Japan",
+        "note": "Traslado desde Namba hacia la zona de Shinsekai. También puede usarse Ebisucho Station según la ruta más conveniente.",
+        "mapsQuery": "Namba Station Osaka to Shinsekai Osaka"
+      }
+    },
+    {
+      "time": "5:25 pm",
+      "duration": "5:25 - 5:35 pm",
+      "title": "Caminata estación → Shinsekai / Tsutenkaku",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Dobutsuen-mae o Ebisucho hacia Shinsekai.",
+        "Seguir hacia la zona de Tsutenkaku.",
+        "Ubicarse visualmente en la calle principal de Shinsekai.",
+        "Costo: $0."
+      ],
+      "detail": "Este tramo es corto y sirve para entrar directamente al ambiente retro de Shinsekai.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Dobutsuen-mae Station, Osaka, Japan",
+        "destination": "Tsutenkaku, Osaka, Japan",
+        "note": "Caminata desde la estación hacia Shinsekai y Tsutenkaku.",
+        "mapsQuery": "Dobutsuen-mae Station to Tsutenkaku Osaka"
+      }
+    },
+    {
+      "time": "5:35 pm",
+      "duration": "5:35 - 6:20 pm",
+      "title": "Shinsekai y Tsutenkaku",
+      "icon": "nightlife",
+      "tone": "night",
+      "marListStop": true,
+      "items": [
+        "Paseo por Shinsekai.",
+        "Ver Tsutenkaku por fuera.",
+        "Fotos de la zona retro de Osaka.",
+        "Ambiente visual, luces, letreros y calles clásicas.",
+        "Mantenerlo como paseo corto para no llegar tarde a Dotonbori."
+      ],
+      "detail": "Shinsekai funciona muy bien el Día 1 porque es visual, diferente y no exige hacer una visita pesada. Es el primer contraste fuerte con Dotonbori.",
+      "location": {
+        "name": "Shinsekai / Tsutenkaku",
+        "mapsQuery": "Shinsekai Tsutenkaku Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "6:20 pm",
+      "duration": "6:20 - 6:30 pm",
+      "title": "Caminata Tsutenkaku → Magic Cafe & Bar Shinsekai",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde la zona de Tsutenkaku hacia Magic Cafe & Bar Shinsekai.",
+        "Revisar la fachada o entrada correcta antes de entrar.",
+        "Mantener el bloque corto porque todavía falta Dotonbori.",
+        "Costo: $0."
+      ],
+      "detail": "Magic Cafe & Bar Shinsekai queda dentro de la zona de Shinsekai, por eso entra como parada real y no como punto suelto.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tsutenkaku, Osaka, Japan",
+        "destination": "Magic Cafe & Bar SHINSEKAI, Osaka, Japan",
+        "note": "Caminata corta dentro de Shinsekai hacia Magic Cafe & Bar.",
+        "mapsQuery": "Tsutenkaku to Magic Cafe & Bar SHINSEKAI Osaka"
+      }
+    },
+    {
+      "time": "6:30 pm",
+      "duration": "6:30 - 7:15 pm",
+      "title": "Magic Cafe & Bar Shinsekai",
+      "icon": "local_bar",
+      "tone": "night",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Café/bar de magia en Shinsekai.",
+        "Ideal como parada curiosa antes de volver a Namba.",
+        "Tomar algo ligero o vivir la experiencia sin hacer una cena pesada.",
+        "Presupuesto 2 personas: $20 - $45."
+      ],
+      "detail": "Se integra como parada real dentro de Shinsekai. No reemplaza Dotonbori; funciona como experiencia corta antes de la noche principal.",
+      "location": {
+        "name": "Magic Cafe & Bar Shinsekai",
+        "address": "3-2-27 Ebisuhigashi, Naniwa Ward, Osaka",
+        "mapsQuery": "Magic Cafe & Bar SHINSEKAI 3-2-27 Ebisuhigashi Naniwa Ward Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "7:15 pm",
+      "duration": "7:15 - 7:25 pm",
+      "title": "Caminata Magic Cafe → estación",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Magic Cafe & Bar Shinsekai.",
+        "Caminar hacia Dobutsuen-mae o Ebisucho Station.",
+        "Preparar Suica/ICOCA.",
+        "Costo: $0."
+      ],
+      "detail": "Este tramo conecta Shinsekai con el regreso a la zona de Namba/Dotonbori.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Magic Cafe & Bar SHINSEKAI, Osaka, Japan",
+        "destination": "Dobutsuen-mae Station, Osaka, Japan",
+        "note": "Caminata desde Magic Cafe & Bar hacia la estación más conveniente.",
+        "mapsQuery": "Magic Cafe & Bar SHINSEKAI to Dobutsuen-mae Station Osaka"
+      }
+    },
+    {
+      "time": "7:25 pm",
+      "duration": "7:25 - 7:40 pm",
+      "title": "Metro: Shinsekai → Namba / Dotonbori",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Moverse desde Shinsekai hacia Namba.",
+        "Bajarse en Namba para entrar caminando a Dotonbori.",
+        "Costo estimado 2 personas: $3 - $6.",
+        "Llegar directo a zona del canal y Glico."
+      ],
+      "detail": "La noche principal se mantiene en Dotonbori, como en el plan original, pero ahora con Shinsekai agregado antes.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Dobutsuen-mae Station, Osaka, Japan",
+        "destination": "Namba Station, Osaka, Japan",
+        "note": "Traslado desde Shinsekai hacia Namba para caminar a Dotonbori.",
+        "mapsQuery": "Dobutsuen-mae Station to Namba Station Osaka"
+      }
+    },
+    {
+      "time": "7:40 pm",
+      "duration": "7:40 - 7:50 pm",
+      "title": "Caminata Namba → Dotonbori",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Namba Station hacia Dotonbori.",
+        "Caminar hacia Ebisu Bridge / Glico Man.",
+        "Entrar por zona iluminada y principal.",
+        "Costo: $0."
+      ],
+      "detail": "Este tramo marca la entrada a la primera noche icónica de Osaka.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Namba Station, Osaka, Japan",
+        "destination": "Dotonbori Glico Sign, Osaka, Japan",
+        "note": "Caminata desde Namba Station hacia Dotonbori y el Glico.",
+        "mapsQuery": "Namba Station Osaka to Dotonbori Glico Sign"
+      }
+    },
+    {
+      "time": "8:00 pm",
+      "duration": "8:00 - 9:00 pm",
+      "title": "Ramen Hayashida Dotonbori store",
+      "icon": "ramen_dining",
+      "tone": "food",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Cena de ramen en Dotonbori.",
+        "Queda cerca del Glico y de la zona principal.",
+        "Buena opción porque no obliga a alejarse del hotel.",
+        "Cena 2 personas: $25 - $45."
+      ],
+      "detail": "Ramen Hayashida queda en Dotonbori, así que funciona perfecto como cena real de la primera noche.",
+      "location": {
+        "name": "Ramen Hayashida Dotonbori store",
+        "mapsQuery": "Ramen Hayashida Dotonbori store Osaka"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Dotonbori Glico Sign, Osaka, Japan",
+        "destination": "Ramen Hayashida Dotonbori store, Osaka, Japan",
+        "note": "Caminata corta dentro de Dotonbori hacia Ramen Hayashida.",
+        "mapsQuery": "Dotonbori Glico Sign to Ramen Hayashida Dotonbori store Osaka"
+      }
+    },
+    {
+      "time": "9:00 pm",
+      "duration": "9:00 - 10:00 pm",
+      "title": "Noche en Dotonbori",
+      "icon": "nightlife",
+      "tone": "night",
+      "items": [
+        "Recorrido nocturno por Glico Man, puentes, tiendas y Shinsaibashi.",
+        "Puestos de comida y fotos.",
+        "Ver el canal, luces y ambiente de la primera noche en Osaka.",
+        "Snacks o postre 2 personas: $10 - $25."
+      ],
+      "detail": "La primera noche bonita del viaje. Mantenerla caminable y flexible para disfrutar sin agotarse antes de Universal Studios.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Ramen Hayashida Dotonbori store, Osaka, Japan",
+        "destination": "Ebisu Bridge, Dotonbori, Osaka, Japan",
+        "note": "Paseo caminando por Dotonbori y zona del Glico.",
+        "mapsQuery": "Ramen Hayashida Dotonbori store to Ebisu Bridge Dotonbori Osaka"
+      }
+    },
+    {
+      "time": "10:00 pm",
+      "duration": "10:00 - 10:15 pm",
+      "title": "Caminata Dotonbori → Men joy Life",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Dotonbori hacia Men joy Life.",
+        "Ir por zona Shinsaibashi / Higashi-Shinsaibashi.",
+        "Mantenerse en calles principales.",
+        "Costo: $0."
+      ],
+      "detail": "Men joy Life queda cerca del hotel y de la zona de Shinsaibashi/Namba, por eso entra bien como parada nocturna o alternativa a la cena.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Dotonbori, Osaka, Japan",
+        "destination": "Men joy Life, Osaka, Japan",
+        "note": "Caminata desde Dotonbori/Shinsaibashi hacia Men joy Life.",
+        "mapsQuery": "Dotonbori to Men joy Life Osaka"
+      }
+    },
+    {
+      "time": "10:15 pm",
+      "duration": "10:15 - 10:40 pm",
+      "title": "Men joy Life",
+      "icon": "ramen_dining",
+      "tone": "food",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Parada nocturna cerca del hotel.",
+        "Puede funcionar como segunda comida ligera, snack final o alternativa si no comen en Ramen Hayashida.",
+        "Presupuesto 2 personas: $20 - $35."
+      ],
+      "detail": "Men joy Life se mete el Día 1 porque está cerca del hotel y funciona mejor como parada nocturna en la zona de Shinsaibashi/Namba.",
+      "location": {
+        "name": "Men joy Life",
+        "mapsQuery": "Men joy Life Higashi Shinsaibashi Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "10:40 pm",
+      "duration": "10:40 - 11:00 pm",
+      "title": "Regreso al Cross Hotel",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Volver al hotel caminando con calma.",
+        "Preparar lo básico para Universal Studios al día siguiente.",
+        "Cargar teléfonos y power bank.",
+        "Dormir lo antes posible."
+      ],
+      "detail": "Cierre del día. La meta es llegar con buena energía al Día 2.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Men joy Life, Osaka, Japan",
+        "destination": "Cross Hotel Osaka, Osaka, Japan",
+        "note": "Regreso caminando desde Men joy Life al Cross Hotel Osaka.",
+        "mapsQuery": "Men joy Life Osaka to Cross Hotel Osaka"
+      }
+    }
+  ],
+  "note": "Meta del día: aterrizar, resolver lo esencial en Narita, llegar a Osaka sin estrés, hacer check-in, sumar Shinsekai como primera salida visual y cerrar con Dotonbori cerca del hotel sin llegar agotados a Universal Studios."
+}

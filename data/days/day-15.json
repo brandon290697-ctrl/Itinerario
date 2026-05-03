@@ -1,0 +1,242 @@
+{
+  "title": "Día 15 - PokePark + Pokémon Cafe",
+  "subtitle": "Miércoles 21 de octubre - Parque Pokémon y cena temática en Nihonbashi",
+  "dateLabel": "Miércoles 21 de octubre de 2026",
+  "shortDateLabel": "Mié 21 oct",
+  "status": "Día Pokémon completo",
+  "costEstimateUsd": {
+    "low": 220,
+    "high": 400,
+    "note": "entradas PokePark, transporte, Pokémon Cafe y compras"
+  },
+  "route": [
+    "Asakusa",
+    "PokePark Kanto",
+    "Nihonbashi",
+    "Pokémon Cafe",
+    "Hotel"
+  ],
+  "blocks": [
+    {
+      "time": "6:00 am",
+      "duration": "inicio",
+      "title": "Despertar temprano",
+      "icon": "alarm",
+      "tone": "rest",
+      "items": [
+        "Día más especial del viaje para fans Pokémon.",
+        "Prepararse con calma.",
+        "Llevar batería externa y espacio en el celular."
+      ],
+      "detail": "Entrar temprano al PokePark es clave para aprovechar el día completo y llegar con energía al Pokémon Cafe.",
+      "showMap": false
+    },
+    {
+      "time": "6:20 am",
+      "duration": "6:20 - 6:50 am",
+      "title": "Desayuno ligero",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Convenience store (7-Eleven o Lawson).",
+        "Algo rápido y portátil.",
+        "Presupuesto 2 personas: $10 - $20."
+      ],
+      "showMap": false
+    },
+    {
+      "time": "7:00 am",
+      "duration": "60-90 min",
+      "title": "Asakusa → PokePark Kanto",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Metro + JR hacia la ubicación del parque.",
+        "Llegar antes de la apertura.",
+        "Costo 2 personas: $10 - $20."
+      ],
+      "detail": "Confirmar la ubicación exacta del parque con anticipación ya que puede variar. Llevar la dirección guardada en el celular.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Asakusa Station, Tokyo, Japan",
+        "destination": "PokePark Kanto, Japan",
+        "note": "Ruta variable según ubicación oficial del parque. Confirmar antes del día."
+      }
+    },
+    {
+      "time": "8:30 am",
+      "duration": "espera",
+      "title": "Fila antes de apertura",
+      "icon": "schedule",
+      "tone": "arrival",
+      "items": [
+        "Llegar antes de apertura.",
+        "Preparar tickets y app.",
+        "Planear qué zonas priorizar."
+      ],
+      "detail": "Entrar en los primeros grupos hace que el parque se sienta completamente diferente.",
+      "showMap": false
+    },
+    {
+      "time": "9:00 am",
+      "duration": "entrada",
+      "title": "Entrada al PokePark",
+      "icon": "sports_esports",
+      "tone": "arrival",
+      "items": [
+        "Ingreso al parque.",
+        "Ir directo a atracciones principales.",
+        "Evitar filas largas desde el inicio."
+      ],
+      "showMap": false
+    },
+    {
+      "time": "9:00 am",
+      "duration": "9:00 - 12:00 pm",
+      "title": "PokePark - mañana principal",
+      "icon": "sports_esports",
+      "tone": "arrival",
+      "items": [
+        "Atracciones con filas cortas.",
+        "Fotos con Pokémon.",
+        "Zonas temáticas."
+      ],
+      "detail": "Este bloque define cuánto aprovechan el parque. Moverse rápido entre atracciones mientras las filas son cortas.",
+      "showMap": false
+    },
+    {
+      "time": "12:00 pm",
+      "duration": "12:00 - 1:00 pm",
+      "title": "Almuerzo dentro del PokePark",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Comer dentro del parque.",
+        "Comida temática Pokémon.",
+        "Presupuesto 2 personas: $30 - $60."
+      ],
+      "detail": "Comer dentro evita perder tiempo saliendo y regresando al parque.",
+      "showMap": false
+    },
+    {
+      "time": "1:00 pm",
+      "duration": "1:00 - 2:30 pm",
+      "title": "PokePark - tienda y últimas atracciones",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "items": [
+        "Tienda oficial del parque.",
+        "Merch exclusivo PokePark.",
+        "Últimas atracciones pendientes.",
+        "Presupuesto compras: $40 - $120."
+      ],
+      "detail": "No dejar las compras para el final absoluto. Mejor hacer tienda antes de la salida con calma.",
+      "showMap": false
+    },
+    {
+      "time": "2:45 pm",
+      "duration": "40-60 min",
+      "title": "PokePark → Nihonbashi",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Metro + JR hacia Nihonbashi.",
+        "Donde está el Pokémon Center DX Tokyo y el Pokémon Cafe.",
+        "Costo 2 personas: $8 - $15."
+      ],
+      "detail": "Salir con margen para llegar descansados al Pokémon Cafe. El traslado es la transición entre las dos experiencias del día.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "PokePark Kanto, Japan",
+        "destination": "Nihonbashi Station, Tokyo, Japan",
+        "note": "Ruta hacia Nihonbashi donde está el Pokémon Center DX Tokyo y el Pokémon Cafe."
+      }
+    },
+    {
+      "time": "3:45 pm",
+      "duration": "3:45 - 5:00 pm",
+      "title": "Pokémon Center DX Tokyo",
+      "icon": "toys",
+      "tone": "shopping",
+      "items": [
+        "Pokémon Center más grande de Tokyo.",
+        "Merch exclusivo de la tienda.",
+        "Coleccionables, ropa y accesorios.",
+        "Presupuesto compras: $30 - $100."
+      ],
+      "detail": "Explorar la tienda antes del Cafe. Es el Pokémon Center más completo de todo Japón.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Nihonbashi Station, Tokyo, Japan",
+        "destination": "Pokemon Center DX Tokyo, Nihonbashi, Tokyo, Japan",
+        "note": "Caminata corta desde Nihonbashi Station hasta el Pokémon Center DX Tokyo."
+      }
+    },
+    {
+      "time": "5:00 pm",
+      "duration": "5:00 - 5:30 pm",
+      "title": "Pausa antes del Pokémon Cafe",
+      "icon": "schedule",
+      "tone": "rest",
+      "items": [
+        "Descansar antes de la cena temática.",
+        "Revisar la reserva del Pokémon Cafe.",
+        "Confirmar hora de entrada."
+      ],
+      "detail": "El Pokémon Cafe requiere reserva obligatoria con anticipación. Sin reserva no hay acceso. Confirmar la hora exacta con la reserva.",
+      "showMap": false
+    },
+    {
+      "time": "5:30 pm",
+      "duration": "5:30 - 7:30 pm",
+      "title": "Pokémon Cafe",
+      "icon": "ramen_dining",
+      "tone": "night",
+      "items": [
+        "Cena temática Pokémon.",
+        "Platos con diseños de personajes.",
+        "Fotos y decoración especial.",
+        "Presupuesto 2 personas: $60 - $100.",
+        "Requiere reserva previa obligatoria."
+      ],
+      "detail": "Una de las experiencias más únicas del viaje. Los platos tienen diseños de Pokémon y el ambiente es completamente temático. Reservar con meses de anticipación en el sitio oficial.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Pokemon Center DX Tokyo, Nihonbashi, Tokyo, Japan",
+        "destination": "Pokemon Cafe Tokyo, Nihonbashi, Tokyo, Japan",
+        "note": "El Pokémon Cafe está dentro del mismo edificio que el Pokémon Center DX Tokyo."
+      }
+    },
+    {
+      "time": "7:30 pm",
+      "duration": "50-60 min",
+      "title": "Nihonbashi → Asakusa",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Metro de regreso a Asakusa.",
+        "Costo 2 personas: $6 - $10."
+      ],
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Nihonbashi Station, Tokyo, Japan",
+        "destination": "Asakusa Station, Tokyo, Japan",
+        "note": "Metro de regreso desde Nihonbashi hasta Asakusa."
+      }
+    },
+    {
+      "time": "8:30 pm",
+      "duration": "cierre",
+      "title": "Regreso al hotel",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Llegar al hotel.",
+        "Descansar después del día más Pokémon del viaje.",
+        "Preparar el día siguiente."
+      ],
+      "showMap": false
+    }
+  ],
+  "note": "Meta del día: vivir el día Pokémon más completo del viaje, combinando PokePark en la mañana con el Pokémon Cafe en la tarde. Reservar el Cafe con meses de anticipación."
+}

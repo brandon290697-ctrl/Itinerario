@@ -1,0 +1,235 @@
+{
+  "title": "Día 5 - Osaka → Kyoto + primera tarde en Gion",
+  "subtitle": "Domingo 11 de octubre - traslado a Kyoto, check-in y primera tarde ligera en Gion",
+  "dateLabel": "Domingo 11 de octubre de 2026",
+  "shortDateLabel": "Dom 11 oct",
+  "status": "Traslado + Kyoto",
+  "costEstimateUsd": {
+    "low": 130,
+    "high": 230,
+    "note": "traslado Osaka-Kyoto, comida, café/postre, snacks y primera tarde en Gion"
+  },
+  "route": [
+    "Cross Hotel Osaka",
+    "Namba",
+    "Osaka Station",
+    "Kyoto Station",
+    "Henn na Hotel Premier Kyoto Sanjo",
+    "Gion",
+    "Saryo Tsujiri Tea House, Gion Main Store",
+    "Hotel"
+  ],
+  "marStops": [
+    "Saryo Tsujiri Tea House, Gion Main Store"
+  ],
+  "blocks": [
+    {
+      "time": "8:00 am",
+      "duration": "inicio",
+      "title": "Despertar y preparar maletas",
+      "icon": "luggage",
+      "tone": "rest",
+      "items": [
+        "Empacar con calma.",
+        "Revisar cargadores, pasaportes, efectivo y reservas.",
+        "Separar compras de Osaka para que no estorben durante el traslado.",
+        "Dejar a mano lo necesario para el trayecto a Kyoto."
+      ],
+      "detail": "Día de transición. La prioridad es salir de Osaka sin estrés y llegar a Kyoto con energía para una tarde ligera.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "9:00 am",
+      "duration": "9:00 - 9:45 am",
+      "title": "Desayuno cerca del Cross Hotel",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayuno sencillo en Namba o cerca del hotel.",
+        "Opciones: café, bakery japonesa, convenience store o desayuno ligero.",
+        "Presupuesto cómodo 2 personas: $18 - $30."
+      ],
+      "detail": "Conviene desayunar cerca para no mover maletas innecesariamente antes del check-out.",
+      "location": {
+        "name": "Cross Hotel Osaka / Namba",
+        "mapsQuery": "Cross Hotel Osaka breakfast near Namba"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "10:00 am",
+      "duration": "check-out",
+      "title": "Check-out Cross Hotel Osaka",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Hacer check-out.",
+        "Confirmar que no queda nada en habitación, baño, caja fuerte o cargadores.",
+        "Salir hacia Namba Station con margen."
+      ],
+      "detail": "Tener maletas bien organizadas para que el traslado a Kyoto sea cómodo.",
+      "location": {
+        "name": "Cross Hotel Osaka",
+        "mapsQuery": "Cross Hotel Osaka"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "10:30 am",
+      "duration": "10:30 - 11:45 am",
+      "title": "Traslado Osaka → Kyoto",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Moverse desde Namba hacia Osaka/Umeda o Shin-Osaka según la ruta elegida.",
+        "Tomar tren hacia Kyoto Station.",
+        "Presupuesto 2 personas: $20 - $45 según ruta y tipo de tren."
+      ],
+      "detail": "El objetivo es llegar a Kyoto a buena hora para dejar maletas, almorzar y salir a Gion sin correr.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Namba Station, Osaka, Japan",
+        "destination": "Kyoto Station, Kyoto, Japan",
+        "note": "Traslado desde Osaka hacia Kyoto.",
+        "mapsQuery": "Namba Station Osaka to Kyoto Station"
+      },
+      "marPick": false
+    },
+    {
+      "time": "12:00 pm",
+      "duration": "30-40 min",
+      "title": "Kyoto Station → Henn na Hotel Premier Kyoto Sanjo",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Trasladarse desde Kyoto Station hacia el hotel.",
+        "Dejar maletas si todavía no hay check-in.",
+        "Presupuesto 2 personas: $6 - $15."
+      ],
+      "detail": "Llegar primero al hotel ayuda a bajar el ritmo antes de salir a Gion.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Kyoto Station, Kyoto, Japan",
+        "destination": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "note": "Traslado desde Kyoto Station al hotel.",
+        "mapsQuery": "Kyoto Station to Henn na Hotel Premier Kyoto Sanjo"
+      },
+      "marPick": false
+    },
+    {
+      "time": "1:00 pm",
+      "duration": "1:00 - 2:15 pm",
+      "title": "Almuerzo tranquilo cerca del hotel",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almuerzo cerca de Sanjo, Kawaramachi o el hotel.",
+        "Opciones: ramen, sushi casual, donburi, curry japonés o tempura sencilla.",
+        "Presupuesto cómodo 2 personas: $30 - $50."
+      ],
+      "detail": "Mantener el almuerzo cerca del hotel para no convertir el día de traslado en un día pesado.",
+      "location": {
+        "name": "Sanjo / Kawaramachi",
+        "mapsQuery": "Sanjo Kawaramachi Kyoto restaurants"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "3:00 pm",
+      "duration": "3:00 - 5:15 pm",
+      "title": "Paseo ligero por Gion",
+      "icon": "temple_buddhist",
+      "tone": "night",
+      "items": [
+        "Primer contacto con Kyoto tradicional.",
+        "Caminar por calles bonitas y tranquilas.",
+        "Fotos, tiendas pequeñas y ambiente de tarde.",
+        "Extras/snacks 2 personas: $10 - $25."
+      ],
+      "detail": "Gion funciona perfecto para este día porque no exige una ruta pesada y permite sentir Kyoto desde el primer momento.",
+      "location": {
+        "name": "Gion",
+        "mapsQuery": "Gion Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "destination": "Gion, Kyoto, Japan",
+        "note": "Caminata ligera desde el hotel hacia Gion.",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo to Gion Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:30 pm",
+      "duration": "5:30 - 6:30 pm",
+      "title": "Saryo Tsujiri Tea House, Gion Main Store",
+      "icon": "local_cafe",
+      "tone": "food",
+      "marListStop": true,
+      "items": [
+        "Pausa definida para matcha, té o postre japonés.",
+        "Buena forma de iniciar Kyoto con algo tradicional.",
+        "Presupuesto 2 personas: $18 - $35."
+      ],
+      "detail": "Esta parada reemplaza el bloque genérico de café/postre del JSON original y queda como visita concreta en Gion.",
+      "location": {
+        "name": "Saryo Tsujiri Tea House, Gion Main Store",
+        "mapsQuery": "Saryo Tsujiri Gion Main Store Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Gion, Kyoto, Japan",
+        "destination": "Saryo Tsujiri Gion Main Store, Kyoto, Japan",
+        "note": "Parada de té/postre en Gion.",
+        "mapsQuery": "Gion Kyoto to Saryo Tsujiri Gion Main Store"
+      },
+      "marPick": false
+    },
+    {
+      "time": "7:00 pm",
+      "duration": "7:00 - 8:30 pm",
+      "title": "Cena relajada en Kyoto",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cena bonita pero sin exagerar.",
+        "Opciones: izakaya, sushi, tempura o ramen bueno.",
+        "Presupuesto cómodo 2 personas: $45 - $75."
+      ],
+      "detail": "Primera noche en Kyoto. Mejor cerrar temprano para guardar energía para Higashiyama al día siguiente.",
+      "location": {
+        "name": "Gion / Sanjo / Kawaramachi",
+        "mapsQuery": "Gion Sanjo Kawaramachi Kyoto dinner"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "9:00 pm",
+      "duration": "regreso",
+      "title": "Regreso al hotel",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Volver caminando o en taxi corto.",
+        "Preparar ropa cómoda para el día siguiente.",
+        "Cargar celulares y revisar batería externa."
+      ],
+      "detail": "Al día siguiente toca Kiyomizu, Sanneizaka, Hokan-ji, Yasaka, Gion y Nishiki, así que conviene dormir bien.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Gion, Kyoto, Japan",
+        "destination": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "note": "Regreso caminando desde Gion al hotel.",
+        "mapsQuery": "Gion Kyoto to Henn na Hotel Premier Kyoto Sanjo"
+      },
+      "marPick": false
+    }
+  ],
+  "note": "Meta del día: trasladarse de Osaka a Kyoto sin estrés, instalarse en el hotel y tener una primera tarde ligera en Gion, agregando Saryo Tsujiri como parada favorita."
+}

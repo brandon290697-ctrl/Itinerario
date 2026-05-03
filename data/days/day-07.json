@@ -1,0 +1,294 @@
+{
+  "title": "Día 7 - Arashiyama completo",
+  "subtitle": "Martes 13 de octubre - Bosque de bambú, Nonomiya, Togetsukyō Bridge y Kimono Forest",
+  "dateLabel": "Martes 13 de octubre de 2026",
+  "shortDateLabel": "Mar 13 oct",
+  "status": "Naturaleza",
+  "costEstimateUsd": {
+    "low": 165,
+    "high": 260,
+    "note": "transporte, templos, comida, snacks y compras en Arashiyama"
+  },
+  "route": [
+    "Hotel",
+    "Arashiyama",
+    "Tenryuji",
+    "Bamboo Grove",
+    "Nonomiya Shrine",
+    "Togetsukyō Bridge",
+    "Kimono Forest",
+    "Hotel"
+  ],
+  "marStops": [
+    "Bosque de Bambú de Arashiyama",
+    "Nonomiya-jinja",
+    "Togetsukyō Bridge",
+    "Kimono Forest"
+  ],
+  "blocks": [
+    {
+      "time": "7:30 am",
+      "duration": "inicio",
+      "title": "Despertar temprano",
+      "icon": "alarm",
+      "tone": "rest",
+      "items": [
+        "Levantarse temprano para evitar multitudes.",
+        "Llevar zapatos cómodos.",
+        "Preparar agua y efectivo.",
+        "Cargar celulares y revisar espacio para fotos."
+      ],
+      "detail": "Arashiyama se llena rápido, por eso conviene salir temprano.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:00 am",
+      "duration": "desayuno rápido",
+      "title": "Desayuno ligero",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayuno cerca del hotel o convenience store.",
+        "Algo simple antes del traslado.",
+        "Presupuesto 2 personas: $15 - $25."
+      ],
+      "detail": "El objetivo es llegar temprano a Arashiyama, no hacer un desayuno largo.",
+      "location": {
+        "name": "Sanjo / hotel",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo breakfast"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:30 am",
+      "duration": "45-60 min",
+      "title": "Traslado a Arashiyama",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR o tren local hacia Arashiyama.",
+        "Duración aproximada 45-60 min.",
+        "Costo 2 personas: $10 - $20."
+      ],
+      "detail": "Traslado principal del día hacia la zona natural de Kyoto.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "destination": "Arashiyama, Kyoto, Japan",
+        "note": "Ruta recomendada desde el hotel hacia Arashiyama.",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo to Arashiyama Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:30 am",
+      "duration": "45 min",
+      "title": "Tenryuji Temple",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "items": [
+        "Visitar Tenryuji si mantienen el bloque original de Arashiyama.",
+        "Jardines, templo y ambiente tranquilo.",
+        "Presupuesto entrada 2 personas: $8 - $15."
+      ],
+      "detail": "Tenryuji funciona como inicio cultural antes del bosque de bambú.",
+      "location": {
+        "name": "Tenryuji Temple",
+        "mapsQuery": "Tenryuji Temple Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Arashiyama Station, Kyoto, Japan",
+        "destination": "Tenryuji Temple, Kyoto, Japan",
+        "note": "Caminata desde Arashiyama Station hacia Tenryuji.",
+        "mapsQuery": "Arashiyama Station to Tenryuji Temple Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:20 am",
+      "duration": "1h",
+      "title": "Bosque de Bambú de Arashiyama",
+      "icon": "forest",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Caminar por el bosque de bambú.",
+        "Tomar fotos y videos.",
+        "Costo: $0."
+      ],
+      "detail": "Uno de los puntos visuales principales de Kyoto.",
+      "location": {
+        "name": "Bosque de Bambú de Arashiyama",
+        "mapsQuery": "Arashiyama Bamboo Forest Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tenryuji Temple, Kyoto, Japan",
+        "destination": "Arashiyama Bamboo Forest, Kyoto, Japan",
+        "note": "Caminata desde Tenryuji hacia el bosque de bambú.",
+        "mapsQuery": "Tenryuji Temple to Arashiyama Bamboo Forest Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:25 am",
+      "duration": "35 min",
+      "title": "Nonomiya-jinja",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Santuario pequeño y bonito dentro de la zona de Arashiyama.",
+        "Entrada libre.",
+        "Donación opcional."
+      ],
+      "detail": "Calza naturalmente después del bosque de bambú.",
+      "location": {
+        "name": "Nonomiya-jinja",
+        "mapsQuery": "Nonomiya Shrine Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Arashiyama Bamboo Forest, Kyoto, Japan",
+        "destination": "Nonomiya Shrine, Kyoto, Japan",
+        "note": "Caminata corta hacia Nonomiya-jinja.",
+        "mapsQuery": "Arashiyama Bamboo Forest to Nonomiya Shrine Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "12:15 pm",
+      "duration": "almuerzo",
+      "title": "Almuerzo en Arashiyama",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almuerzo por la zona de Arashiyama.",
+        "Opciones: soba, tempura, tofu, donburi o comida japonesa casual.",
+        "Presupuesto 2 personas: $35 - $60."
+      ],
+      "detail": "Después del bloque fuerte de la mañana conviene hacer pausa.",
+      "location": {
+        "name": "Arashiyama",
+        "mapsQuery": "Arashiyama Kyoto lunch"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:30 pm",
+      "duration": "45 min",
+      "title": "Togetsukyō Bridge",
+      "icon": "bridge",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Cruzar o ver el puente Togetsukyō.",
+        "Fotos con río y montaña.",
+        "Costo: $0."
+      ],
+      "detail": "Conviene dedicarle una parada propia, no solo verlo de paso.",
+      "location": {
+        "name": "Togetsukyō Bridge",
+        "mapsQuery": "Togetsukyo Bridge Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Arashiyama Bamboo Forest, Kyoto, Japan",
+        "destination": "Togetsukyo Bridge, Kyoto, Japan",
+        "note": "Caminata hacia Togetsukyō Bridge.",
+        "mapsQuery": "Arashiyama Bamboo Forest to Togetsukyo Bridge Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "2:30 pm",
+      "duration": "45 min",
+      "title": "Kimono Forest",
+      "icon": "photo_camera",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Zona de columnas decoradas con telas estilo kimono.",
+        "Buena para fotos.",
+        "Costo: $0."
+      ],
+      "detail": "Funciona muy bien después del puente y antes de regresar al centro.",
+      "location": {
+        "name": "Kimono Forest",
+        "mapsQuery": "Kimono Forest Arashiyama Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Togetsukyo Bridge, Kyoto, Japan",
+        "destination": "Kimono Forest, Kyoto, Japan",
+        "note": "Caminata hacia Kimono Forest.",
+        "mapsQuery": "Togetsukyo Bridge to Kimono Forest Arashiyama Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "3:30 pm",
+      "duration": "1h",
+      "title": "Tiendas, snacks y paseo final en Arashiyama",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "items": [
+        "Tiendas de recuerdos, snacks y postres.",
+        "Paseo tranquilo por la zona comercial.",
+        "Presupuesto 2 personas: $20 - $50."
+      ],
+      "detail": "Bloque para cerrar Arashiyama sin meter más traslados ni correr.",
+      "location": {
+        "name": "Arashiyama shopping street",
+        "mapsQuery": "Arashiyama Kyoto shopping street"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "4:45 pm",
+      "duration": "45-60 min",
+      "title": "Regreso a Kyoto centro / hotel",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Volver desde Arashiyama hacia Sanjo/Kawaramachi.",
+        "Descansar un rato en el hotel.",
+        "Costo 2 personas: $10 - $20."
+      ],
+      "detail": "Conviene descansar antes de cenar porque Arashiyama implica bastante caminata.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Arashiyama, Kyoto, Japan",
+        "destination": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "note": "Regreso desde Arashiyama al hotel.",
+        "mapsQuery": "Arashiyama Kyoto to Henn na Hotel Premier Kyoto Sanjo"
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:30 pm",
+      "duration": "6:30 - 8:00 pm",
+      "title": "Cena tranquila en Kyoto",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cena cerca del hotel o en Kawaramachi.",
+        "Opciones: izakaya, sushi, ramen o curry japonés.",
+        "Presupuesto 2 personas: $45 - $75."
+      ],
+      "detail": "Día bonito pero de caminata; cerrar sin apurarse.",
+      "location": {
+        "name": "Kawaramachi / Sanjo",
+        "mapsQuery": "Kawaramachi Sanjo Kyoto dinner"
+      },
+      "showMap": false,
+      "marPick": false
+    }
+  ],
+  "note": "Meta del día: cubrir las paradas favoritas en Arashiyama: Bamboo Grove, Nonomiya-jinja, Togetsukyō Bridge y Kimono Forest."
+}

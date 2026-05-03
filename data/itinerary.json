@@ -1,0 +1,26 @@
+{
+  "days": [
+    "data/days/day-00.json",
+    "data/days/day-01.json",
+    "data/days/day-02.json",
+    "data/days/day-03.json",
+    "data/days/day-04.json",
+    "data/days/day-05.json",
+    "data/days/day-06.json",
+    "data/days/day-07.json",
+    "data/days/day-08.json",
+    "data/days/day-09.json",
+    "data/days/day-10.json",
+    "data/days/day-11.json",
+    "data/days/day-12.json",
+    "data/days/day-13.json",
+    "data/days/day-14.json",
+    "data/days/day-15.json",
+    "data/days/day-16.json",
+    "data/days/day-17.json",
+    "data/days/day-18.json"
+  ],
+  "hidden": {
+    "proposalDay3": "data/hidden/proposal-day-03.json"
+  }
+}

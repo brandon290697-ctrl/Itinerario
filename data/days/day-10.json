@@ -1,0 +1,158 @@
+{
+  "title": "Día 10 - Kyoto → Tokyo",
+  "subtitle": "Viernes 16 de octubre - traslado de Kyoto a Tokyo",
+  "dateLabel": "Viernes 16 de octubre de 2026",
+  "shortDateLabel": "Vie 16 oct",
+  "status": "Traslado",
+  "costEstimateUsd": {
+    "low": 180,
+    "high": 320,
+    "note": "tren Kyoto-Tokyo, comida, transporte local y snacks"
+  },
+  "route": [
+    "Henn na Hotel Premier Kyoto Sanjo",
+    "Kyoto Station",
+    "Tokyo Station",
+    "Asakusa",
+    "Henn na Hotel Premier Tokyo Asakusa"
+  ],
+  "marStops": [],
+  "blocks": [
+    {
+      "time": "7:00 am",
+      "duration": "inicio",
+      "title": "Despertar y cerrar maletas",
+      "icon": "luggage",
+      "tone": "rest",
+      "items": [
+        "Revisar compras de Kyoto.",
+        "Empacar con calma.",
+        "Tener boletos, pasaportes y reservas a mano."
+      ],
+      "detail": "Día de traslado largo. Mejor no meter más turismo fuerte de Kyoto.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:00 am",
+      "duration": "desayuno",
+      "title": "Desayuno cerca del hotel",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayuno rápido y cómodo.",
+        "Presupuesto 2 personas: $18 - $30.",
+        "Evitar ir lejos antes del tren."
+      ],
+      "detail": "La prioridad es llegar bien a Kyoto Station.",
+      "location": {
+        "name": "Henn na Hotel Premier Kyoto Sanjo / Sanjo",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo breakfast"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "9:00 am",
+      "duration": "check-out",
+      "title": "Check-out en Kyoto",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Hacer check-out.",
+        "Confirmar que no queda nada en la habitación.",
+        "Salir hacia Kyoto Station."
+      ],
+      "detail": "Última revisión antes de moverse a Tokyo.",
+      "location": {
+        "name": "Henn na Hotel Premier Kyoto Sanjo",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "9:30 am",
+      "duration": "20-30 min",
+      "title": "Hotel → Kyoto Station",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Traslado hacia Kyoto Station.",
+        "Llegar con margen.",
+        "Comprar snacks/bento si hace falta."
+      ],
+      "detail": "Llegar temprano evita estrés con maletas.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "destination": "Kyoto Station, Kyoto, Japan",
+        "note": "Traslado desde el hotel hacia Kyoto Station.",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo to Kyoto Station"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:30 am",
+      "duration": "2h 15m - 2h 45m",
+      "title": "Kyoto → Tokyo",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tren de Kyoto hacia Tokyo.",
+        "Comprar bento, agua o snacks antes de subir.",
+        "Presupuesto variable según tren y reserva."
+      ],
+      "detail": "Traslado principal del día.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Kyoto Station, Kyoto, Japan",
+        "destination": "Tokyo Station, Tokyo, Japan",
+        "note": "Traslado Kyoto → Tokyo.",
+        "mapsQuery": "Kyoto Station to Tokyo Station"
+      },
+      "marPick": false
+    },
+    {
+      "time": "1:30 pm",
+      "duration": "45-60 min",
+      "title": "Tokyo Station → Asakusa",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Traslado hacia Asakusa.",
+        "Llegar al hotel y dejar maletas.",
+        "Presupuesto 2 personas: $6 - $15."
+      ],
+      "detail": "Primer contacto con Tokyo, sin cargar demasiado el día.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Tokyo Station, Tokyo, Japan",
+        "destination": "Henn na Hotel Premier Tokyo Asakusa, Tokyo, Japan",
+        "note": "Traslado desde Tokyo Station hacia el hotel en Asakusa.",
+        "mapsQuery": "Tokyo Station to Henn na Hotel Premier Tokyo Asakusa"
+      },
+      "marPick": false
+    },
+    {
+      "time": "3:00 pm",
+      "duration": "descanso",
+      "title": "Check-in / descanso en Tokyo",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Check-in o dejar maletas.",
+        "Descansar después del traslado.",
+        "Revisar el plan de Tokyo."
+      ],
+      "detail": "No conviene llegar a Tokyo y meter un día demasiado pesado.",
+      "location": {
+        "name": "Henn na Hotel Premier Tokyo Asakusa",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa"
+      },
+      "showMap": false,
+      "marPick": false
+    }
+  ],
+  "note": "Meta del día: salir de Kyoto sin estrés y llegar a Tokyo con energía para la siguiente etapa del viaje."
+}

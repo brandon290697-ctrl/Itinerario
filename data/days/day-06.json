@@ -1,0 +1,402 @@
+{
+  "title": "Día 6 - Kiyomizu, Hokan-ji, Gion, tiendas de Mar y Nishiki",
+  "subtitle": "Lunes 12 de octubre - Higashiyama, Kiyomizu, Pagoda Yasaka, tiendas tradicionales, Yasaka Shrine, Gion y Nishiki",
+  "dateLabel": "Lunes 12 de octubre de 2026",
+  "shortDateLabel": "Lun 12 oct",
+  "status": "Kyoto clásico",
+  "costEstimateUsd": {
+    "low": 210,
+    "high": 340,
+    "note": "templos, taxi, comidas, matcha, snacks, Nishiki y compras tradicionales"
+  },
+  "route": [
+    "Hotel",
+    "Kiyomizu-dera",
+    "Kimura Ohshido - Kiyomizu Store",
+    "Sanneizaka",
+    "Hokan-ji / Pagoda Yasaka",
+    "Hasiya Kaede Kodaiji",
+    "Tsubaki Do",
+    "Yasaka Shrine",
+    "Eirakuya Ihee Hosotsuji Gion shop",
+    "Saryo Tsujiri Gion Main Store",
+    "Nishiki Market",
+    "Hotel"
+  ],
+  "marStops": [
+    "Kimura Ohshido - Kiyomizu Store",
+    "Templo Hokan-ji / Pagoda Yasaka",
+    "Hasiya Kaede Kodaiji",
+    "Tsubaki Do",
+    "Santuario Yasaka",
+    "Eirakuya Ihee Hosotsuji shopping Gion shop",
+    "Saryo Tsujiri Tea House, Gion Main Store"
+  ],
+  "blocks": [
+    {
+      "time": "7:30 am",
+      "duration": "inicio",
+      "title": "Despertar",
+      "icon": "alarm",
+      "tone": "rest",
+      "items": [
+        "Levantarse con calma.",
+        "Llevar zapatos cómodos.",
+        "Cargar celulares y power bank.",
+        "Preparar efectivo para snacks y tiendas pequeñas."
+      ],
+      "detail": "Este es uno de los días más visuales de Kyoto, así que conviene salir con energía.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:00 am",
+      "duration": "8:00 - 8:40 am",
+      "title": "Desayuno cerca del hotel",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Desayuno tranquilo antes de subir hacia Kiyomizu.",
+        "Opciones: café, bakery japonesa o comida rápida ligera.",
+        "Presupuesto cómodo 2 personas: $20 - $35."
+      ],
+      "detail": "Mejor desayunar antes del traslado para no depender de las tiendas turísticas cerca del templo.",
+      "location": {
+        "name": "Henn na Hotel Premier Kyoto Sanjo / Sanjo",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo breakfast"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "8:45 am",
+      "duration": "15-25 min",
+      "title": "Hotel → Kiyomizu-dera",
+      "icon": "local_taxi",
+      "tone": "travel",
+      "items": [
+        "Tomar taxi hacia Kiyomizu-dera.",
+        "Recomendado para evitar la subida pesada.",
+        "Costo estimado 2 personas: $10 - $20."
+      ],
+      "detail": "Este taxi vale la pena porque ahorra cansancio desde temprano.",
+      "routeInfo": {
+        "mode": "driving",
+        "origin": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "destination": "Kiyomizu-dera, Kyoto, Japan",
+        "note": "Taxi recomendado desde el hotel hasta la zona de Kiyomizu-dera.",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Sanjo to Kiyomizu-dera"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:15 am",
+      "duration": "9:15 - 10:30 am",
+      "title": "Kiyomizu-dera",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "items": [
+        "Recorrer el templo y sus miradores.",
+        "Tomar fotos desde la plataforma principal.",
+        "Entrada estimada: ¥400 por persona.",
+        "Mantener ritmo tranquilo porque el día sigue caminando por Higashiyama."
+      ],
+      "detail": "Kiyomizu es el bloque fuerte de la mañana y marca el inicio de la ruta tradicional por Higashiyama.",
+      "location": {
+        "name": "Kiyomizu-dera",
+        "mapsQuery": "Kiyomizu-dera Kyoto"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "10:35 am",
+      "duration": "25-35 min",
+      "title": "Kimura Ohshido - Kiyomizu Store",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Tienda definida para recuerdos tradicionales.",
+        "Visita corta dentro de la bajada desde Kiyomizu.",
+        "Compras opcionales: $10 - $40."
+      ],
+      "detail": "Calza naturalmente al bajar de Kiyomizu hacia las calles tradicionales.",
+      "location": {
+        "name": "Kimura Ohshido - Kiyomizu Store",
+        "mapsQuery": "Kimura Ohshido Kiyomizu Store Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Kiyomizu-dera, Kyoto, Japan",
+        "destination": "Kimura Ohshido Kiyomizu Store, Kyoto, Japan",
+        "note": "Parada de tienda en la zona de Kiyomizu.",
+        "mapsQuery": "Kiyomizu-dera to Kimura Ohshido Kiyomizu Store Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:10 am",
+      "duration": "11:10 am - 12:00 pm",
+      "title": "Sanneizaka y Ninenzaka",
+      "icon": "photo_camera",
+      "tone": "arrival",
+      "items": [
+        "Caminar por las calles tradicionales.",
+        "Fotos, tiendas y snacks.",
+        "Mantener compras livianas para no cargar demasiadas bolsas.",
+        "Snacks/compras pequeñas 2 personas: $15 - $40."
+      ],
+      "detail": "Una de las zonas más bonitas de Kyoto para caminar despacio.",
+      "location": {
+        "name": "Sannenzaka / Ninenzaka",
+        "mapsQuery": "Sannenzaka Ninenzaka Kyoto"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "12:00 pm",
+      "duration": "20 min",
+      "title": "Templo Hokan-ji / Pagoda Yasaka",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Fotos de la Pagoda Yasaka desde las calles tradicionales.",
+        "Punto visual representativo de Kyoto.",
+        "Costo: $0 si se ve por fuera."
+      ],
+      "detail": "Este punto queda claro porque visualmente es una de las imágenes más reconocibles de Kyoto.",
+      "location": {
+        "name": "Templo Hokan-ji / Pagoda Yasaka",
+        "mapsQuery": "Hokan-ji Temple Yasaka Pagoda Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Sannenzaka, Kyoto, Japan",
+        "destination": "Hokan-ji Temple, Kyoto, Japan",
+        "note": "Caminata hacia Hokan-ji / Pagoda Yasaka.",
+        "mapsQuery": "Sannenzaka to Hokan-ji Temple Yasaka Pagoda Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "12:25 pm",
+      "duration": "30 min",
+      "title": "Hasiya Kaede Kodaiji",
+      "icon": "storefront",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Tienda definida para productos bonitos/tradicionales.",
+        "Visita corta dentro del recorrido Kodaiji-Gion.",
+        "Compras opcionales: $10 - $35."
+      ],
+      "detail": "Calza bien entre Hokan-ji, Kodaiji y Gion.",
+      "location": {
+        "name": "Hasiya Kaede Kodaiji",
+        "mapsQuery": "Hasiya Kaede Kodaiji Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hokan-ji Temple, Kyoto, Japan",
+        "destination": "Hasiya Kaede Kodaiji, Kyoto, Japan",
+        "note": "Parada de tienda cerca de Kodaiji.",
+        "mapsQuery": "Hokan-ji Temple to Hasiya Kaede Kodaiji Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "1:00 pm",
+      "duration": "1:00 - 2:00 pm",
+      "title": "Almuerzo en Higashiyama / Gion",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almuerzo por la zona antes de seguir a Yasaka y Gion.",
+        "Opciones: soba, tempura, donburi, ramen o comida japonesa casual.",
+        "Presupuesto 2 personas: $35 - $60."
+      ],
+      "detail": "Pausa necesaria antes de la tarde de tiendas, Gion y Nishiki.",
+      "location": {
+        "name": "Higashiyama / Gion",
+        "mapsQuery": "Higashiyama Gion Kyoto lunch"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "2:15 pm",
+      "duration": "25 min",
+      "title": "Tsubaki Do",
+      "icon": "storefront",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada definida dentro del recorrido de Higashiyama/Gion.",
+        "Visita corta para mirar productos y recuerdos.",
+        "Compras opcionales: $10 - $30."
+      ],
+      "detail": "Tsubaki Do queda integrado como parada secundaria del día clásico de Kyoto.",
+      "location": {
+        "name": "Tsubaki Do",
+        "mapsQuery": "Tsubaki Do Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Hasiya Kaede Kodaiji, Kyoto, Japan",
+        "destination": "Tsubaki Do, Kyoto, Japan",
+        "note": "Caminata hacia Tsubaki Do dentro del recorrido de Higashiyama/Gion.",
+        "mapsQuery": "Hasiya Kaede Kodaiji to Tsubaki Do Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "2:50 pm",
+      "duration": "35 min",
+      "title": "Santuario Yasaka",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Visitar Yasaka Shrine.",
+        "Entrada libre.",
+        "Fotos y paseo corto por el santuario.",
+        "Donación opcional: $0 - $5."
+      ],
+      "detail": "Conecta muy bien Higashiyama con Gion.",
+      "location": {
+        "name": "Santuario Yasaka",
+        "mapsQuery": "Yasaka Shrine Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tsubaki Do, Kyoto, Japan",
+        "destination": "Yasaka Shrine, Kyoto, Japan",
+        "note": "Caminata hacia Yasaka Shrine.",
+        "mapsQuery": "Tsubaki Do Kyoto to Yasaka Shrine Kyoto"
+      },
+      "marPick": false
+    },
+    {
+      "time": "3:40 pm",
+      "duration": "30 min",
+      "title": "Eirakuya Ihee Hosotsuji shopping Gion shop",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Buena para compras tradicionales y recuerdos.",
+        "Visita definida dentro del bloque de Gion.",
+        "Compras opcionales: $15 - $50."
+      ],
+      "detail": "Va perfecto dentro del bloque de Gion.",
+      "location": {
+        "name": "Eirakuya Ihee Hosotsuji shopping Gion shop",
+        "mapsQuery": "Eirakuya Ihee Hosotsuji shopping Gion shop Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Yasaka Shrine, Kyoto, Japan",
+        "destination": "Eirakuya Ihee Hosotsuji shopping Gion shop, Kyoto, Japan",
+        "note": "Parada de compras en Gion.",
+        "mapsQuery": "Yasaka Shrine Kyoto to Eirakuya Ihee Hosotsuji shopping Gion shop"
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:20 pm",
+      "duration": "45 min",
+      "title": "Saryo Tsujiri Tea House, Gion Main Store",
+      "icon": "local_cafe",
+      "tone": "food",
+      "marListStop": true,
+      "items": [
+        "Pausa definida de matcha/postre.",
+        "Buen descanso después de caminar bastante.",
+        "Presupuesto 2 personas: $18 - $35."
+      ],
+      "detail": "Este punto queda como pausa principal de matcha en Gion dentro del día clásico de Kyoto.",
+      "location": {
+        "name": "Saryo Tsujiri Tea House, Gion Main Store",
+        "mapsQuery": "Saryo Tsujiri Gion Main Store Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Eirakuya Ihee Hosotsuji shopping Gion shop, Kyoto, Japan",
+        "destination": "Saryo Tsujiri Gion Main Store, Kyoto, Japan",
+        "note": "Pausa de matcha/postre en Gion.",
+        "mapsQuery": "Eirakuya Ihee Hosotsuji Gion shop to Saryo Tsujiri Gion Main Store"
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:30 pm",
+      "duration": "5:30 - 6:45 pm",
+      "title": "Nishiki Market",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Probar snacks y comida local.",
+        "Ver tiendas y pasillos del mercado.",
+        "Ideal para picar varias cosas.",
+        "Presupuesto 2 personas: $20 - $45."
+      ],
+      "detail": "Nishiki es perfecto para probar varias cosas al cierre de la tarde.",
+      "location": {
+        "name": "Nishiki Market",
+        "mapsQuery": "Nishiki Market Kyoto"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Gion, Kyoto, Japan",
+        "destination": "Nishiki Market, Kyoto, Japan",
+        "note": "Caminata desde Gion hacia Nishiki Market.",
+        "mapsQuery": "Gion Kyoto to Nishiki Market"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:00 pm",
+      "duration": "8:00 - 9:30 pm",
+      "title": "Cena en Kyoto",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cena bonita pero cómoda.",
+        "Opciones: sushi, izakaya, ramen o yakiniku.",
+        "Presupuesto cómodo 2 personas: $45 - $80."
+      ],
+      "detail": "Después de Nishiki, la cena puede ser más ligera si ya probaron varios snacks.",
+      "location": {
+        "name": "Kawaramachi / Sanjo",
+        "mapsQuery": "Kawaramachi Sanjo Kyoto dinner"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "9:30 pm",
+      "duration": "regreso",
+      "title": "Regreso al hotel",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Volver caminando o en taxi corto.",
+        "Revisar planes del día siguiente.",
+        "Cargar dispositivos."
+      ],
+      "detail": "Cerrar temprano ayuda porque el siguiente día incluye Arashiyama.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Nishiki Market, Kyoto, Japan",
+        "destination": "Henn na Hotel Premier Kyoto Sanjo, Kyoto, Japan",
+        "note": "Regreso caminando desde Nishiki Market al hotel.",
+        "mapsQuery": "Nishiki Market to Henn na Hotel Premier Kyoto Sanjo"
+      },
+      "marPick": false
+    }
+  ],
+  "note": "Meta del día: vivir el Kyoto más clásico sin correr, mezclando templo, calles tradicionales, Gion, tiendas favoritas, matcha y comida local."
+}

@@ -1,0 +1,418 @@
+{
+  "title": "Día 3 - Yasaka, Castillo, Umeda, Pokémon y Dotonbori",
+  "subtitle": "Viernes 9 de octubre - Namba Yasaka, Osaka Castle, Umeda, Pokémon Center Osaka, Pokémon Center Osaka DX, posible Pokémon Café y Dotonbori",
+  "dateLabel": "Viernes 9 de octubre de 2026",
+  "shortDateLabel": "Vie 9 oct",
+  "status": "Día completo",
+  "costEstimateUsd": {
+    "low": 170,
+    "high": 320,
+    "note": "templo, castillo, comidas, Umeda, Pokémon Center Osaka, Pokémon Center Osaka DX, posible Pokémon Café, compras y transporte"
+  },
+  "route": [
+    "Cross Hotel",
+    "Namba Yasaka",
+    "Osaka Castle",
+    "Umeda",
+    "Pokémon Center Osaka - Umeda",
+    "Shinsaibashi",
+    "Pokémon Center Osaka DX",
+    "Pokémon Café Osaka",
+    "Dotonbori",
+    "Cross Hotel"
+  ],
+  "blocks": [
+    {
+      "time": "6:30 am",
+      "duration": "inicio",
+      "title": "Despertar y preparación",
+      "icon": "wb_sunny",
+      "tone": "rest",
+      "items": [
+        "Día largo: dejar mochila, cámara, efectivo y ropa cómoda listos.",
+        "Llevar botella de agua o comprar una al salir.",
+        "Salir del hotel sin desayuno pesado."
+      ],
+      "detail": "La mañana empieza temprano para ver Yasaka sin multitudes y llegar al castillo con buen margen.",
+      "showMap": false
+    },
+    {
+      "time": "6:50 am",
+      "duration": "10-12 min",
+      "title": "Caminata hotel → Namba Yasaka Shrine",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Desde Cross Hotel Osaka hacia Namba Yasaka Shrine.",
+        "Ruta caminando temprano, antes del movimiento fuerte de la ciudad.",
+        "Costo: $0."
+      ],
+      "detail": "Traslado corto y perfecto para empezar el día sin depender de trenes.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Cross Hotel Osaka, 2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, Japan",
+        "destination": "Namba Yasaka Shrine, Osaka, Japan",
+        "note": "Caminata desde Cross Hotel Osaka hasta Namba Yasaka Shrine."
+      }
+    },
+    {
+      "time": "6:55 am",
+      "duration": "en ruta",
+      "title": "Desayuno rápido de camino",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Opciones reales en ruta: 7-Eleven o Lawson.",
+        "Compra típica: 2 onigiri, 2 sándwiches, 2 cafés/bebidas y 1 dulce.",
+        "Presupuesto 2 personas: $12 - $18."
+      ],
+      "detail": "Desayuno práctico para no perder la ventaja de llegar temprano a Yasaka.",
+      "showMap": false
+    },
+    {
+      "time": "7:10 am",
+      "duration": "25 min",
+      "title": "Namba Yasaka Shrine",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "items": [
+        "Ver la cabeza gigante del león.",
+        "Ritual de purificación y fotos sin multitudes.",
+        "Entrada: $0.",
+        "Donación opcional: $2 - $4."
+      ],
+      "detail": "Una parada corta, visual y muy buena para fotos temprano. Evitar alargarla para llegar bien al castillo.",
+      "showMap": false
+    },
+    {
+      "time": "7:40 am",
+      "duration": "10 min",
+      "title": "Caminata hacia Namba Station del metro",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Destino: Namba Station, Osaka Metro Midosuji Line.",
+        "Buscar la entrada del metro rojo.",
+        "Costo: $0."
+      ],
+      "detail": "Este punto importa porque no es la misma zona exacta de trenes privados: buscar Osaka Metro / Midosuji Line.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Namba Yasaka Shrine, Osaka, Japan",
+        "destination": "Namba Station Midosuji Line, Osaka, Japan",
+        "note": "Caminata desde Namba Yasaka Shrine hacia Namba Station de Osaka Metro."
+      }
+    },
+    {
+      "time": "7:55 am",
+      "duration": "10 min",
+      "title": "Metro: Namba → Umeda",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Osaka Metro Midosuji Line, línea roja.",
+        "Sale de Namba Metro y llega a Umeda Station.",
+        "Costo estimado 2 personas: $3 - $4."
+      ],
+      "detail": "Primer tramo hacia la zona del castillo. Confirmar que van en dirección Umeda.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Namba Station Midosuji Line, Osaka, Japan",
+        "destination": "Umeda Station, Osaka, Japan",
+        "note": "Osaka Metro Midosuji Line desde Namba hasta Umeda.",
+        "fixedDuration": "10 min",
+        "fixedDistance": "Midosuji Line",
+        "fareEstimateJpy": 240,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Osaka Metro Midosuji Line."
+      }
+    },
+    {
+      "time": "8:10 am",
+      "duration": "20 min",
+      "title": "Metro: Umeda → Morinomiya",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Conexión hacia Osaka Metro Chuo Line, línea verde.",
+        "Llega a Morinomiya Station.",
+        "Costo estimado 2 personas: $4 - $5."
+      ],
+      "detail": "Tramo para acercarse al Castillo de Osaka por Morinomiya.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Umeda Station, Osaka, Japan",
+        "destination": "Morinomiya Station, Osaka, Japan",
+        "note": "Osaka Metro Chuo Line desde Umeda hasta Morinomiya.",
+        "fixedDuration": "20 min",
+        "fixedDistance": "Metro Osaka",
+        "fareEstimateJpy": 290,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo hacia Morinomiya."
+      }
+    },
+    {
+      "time": "8:35 am",
+      "duration": "15 min",
+      "title": "Caminata Morinomiya → Castillo",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Morinomiya Station hacia Osaka Castle.",
+        "Costo: $0.",
+        "Aprovechar la entrada por parque para fotos."
+      ],
+      "detail": "La caminata ya empieza a dar vistas del parque y del castillo.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Morinomiya Station, Osaka, Japan",
+        "destination": "Osaka Castle, Osaka, Japan",
+        "note": "Caminata desde Morinomiya Station hasta Osaka Castle."
+      }
+    },
+    {
+      "time": "9:00 am",
+      "duration": "2h 30m",
+      "title": "Castillo de Osaka",
+      "icon": "castle",
+      "tone": "arrival",
+      "items": [
+        "Jardines, murallas, museo interior y mirador superior.",
+        "Entrada: ¥600 x 2 = ¥1,200, aprox. $8.",
+        "Mantener agua a mano y no apurar el recorrido."
+      ],
+      "detail": "Bloque fuerte de la mañana. Buen balance entre historia, fotos y mirador.",
+      "showMap": false
+    },
+    {
+      "time": "11:30 am",
+      "duration": "20 min",
+      "title": "Caminata Castillo → Morinomiya",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Volver desde Osaka Castle hacia Morinomiya Station.",
+        "Costo: $0.",
+        "Salir con margen para almorzar en Umeda."
+      ],
+      "detail": "Cierre del bloque del castillo antes de volver a la zona comercial.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Osaka Castle, Osaka, Japan",
+        "destination": "Morinomiya Station, Osaka, Japan",
+        "note": "Caminata de regreso desde Osaka Castle hasta Morinomiya Station."
+      }
+    },
+    {
+      "time": "11:55 am",
+      "duration": "20 min",
+      "title": "Metro: Morinomiya → Umeda",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Osaka Metro Chuo con conexión a Midosuji.",
+        "Llegada a Umeda para almorzar.",
+        "Costo estimado 2 personas: $4 - $5."
+      ],
+      "detail": "Regreso a Umeda para almorzar y empezar la parte moderna/comercial del día.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Morinomiya Station, Osaka, Japan",
+        "destination": "Umeda Station, Osaka, Japan",
+        "note": "Metro desde Morinomiya hacia Umeda.",
+        "fixedDuration": "20 min",
+        "fixedDistance": "Metro Osaka",
+        "fareEstimateJpy": 290,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo de regreso a Umeda."
+      }
+    },
+    {
+      "time": "12:30 pm",
+      "duration": "almuerzo",
+      "title": "Almuerzo en Umeda",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Llegar a Umeda después del Castillo de Osaka.",
+        "Opciones: ramen, curry, donburi, sushi o comida rápida japonesa.",
+        "Presupuesto 2 personas: $28 - $45.",
+        "Aprovechar para descansar un rato antes de seguir caminando por la zona."
+      ],
+      "detail": "Umeda funciona como pausa fuerte del día: almuerzo, tiendas y ambiente urbano moderno de Osaka.",
+      "showMap": false
+    },
+    {
+      "time": "1:25 pm",
+      "duration": "45 min",
+      "title": "Pokémon Center Osaka - Umeda",
+      "icon": "toys",
+      "tone": "shopping",
+      "items": [
+        "Visita al Pokémon Center Osaka en Umeda.",
+        "Ideal para comparar productos con Osaka DX o buscar artículos diferentes.",
+        "Mantenerlo controlado para no gastar todo el tiempo aquí.",
+        "Compras opcionales 2 personas: $30 - $90."
+      ],
+      "detail": "Este bloque se mantiene porque quiere conocer Umeda. La visita debe ser relativamente corta para todavía llegar bien a Shinsaibashi.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Umeda Station, Osaka, Japan",
+        "destination": "Pokemon Center Osaka, Osaka Station City, Osaka, Japan",
+        "note": "Caminata dentro de la zona de Osaka/Umeda hacia Pokémon Center Osaka."
+      }
+    },
+    {
+      "time": "2:15 pm",
+      "duration": "45 min",
+      "title": "Conocer Umeda",
+      "icon": "location_city",
+      "tone": "shopping",
+      "items": [
+        "Caminar por la zona de Umeda, centros comerciales y alrededores de Osaka Station.",
+        "Ver el ambiente moderno de Osaka, tiendas y edificios altos.",
+        "Si hay energía, considerar una parada breve por Grand Front Osaka o la zona de HEP Five.",
+        "Mantener este bloque flexible según cansancio y clima."
+      ],
+      "detail": "La idea no es recorrer todo Umeda a profundidad, sino conocer la zona, sentir el contraste con Namba/Dotonbori y aprovechar que ya están ahí.",
+      "showMap": false
+    },
+    {
+      "time": "3:00 pm",
+      "duration": "10-15 min",
+      "title": "Metro: Umeda → Shinsaibashi",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Osaka Metro Midosuji Line desde Umeda hacia Shinsaibashi.",
+        "Bajarse en Shinsaibashi Station.",
+        "Costo estimado 2 personas: $3 - $4."
+      ],
+      "detail": "Traslado directo para llegar a Daimaru Shinsaibashi, donde están Pokémon Center Osaka DX y Pokémon Café Osaka.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Umeda Station, Osaka, Japan",
+        "destination": "Shinsaibashi Station, Osaka, Japan",
+        "note": "Osaka Metro Midosuji Line desde Umeda hasta Shinsaibashi.",
+        "fixedDuration": "10-15 min",
+        "fixedDistance": "Midosuji Line",
+        "fareEstimateJpy": 240,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo hacia Shinsaibashi por Midosuji Line."
+      }
+    },
+    {
+      "time": "3:20 pm",
+      "duration": "1h",
+      "title": "Pokémon Center Osaka DX",
+      "icon": "toys",
+      "tone": "shopping",
+      "items": [
+        "Visita al Pokémon Center Osaka DX en Daimaru Shinsaibashi.",
+        "Ideal para fotos, peluches, artículos exclusivos y souvenirs.",
+        "Como ya visitaron Umeda, aquí conviene enfocarse en lo diferente o en el ambiente del lugar.",
+        "Compras opcionales 2 personas: $30 - $100."
+      ],
+      "detail": "Este Pokémon Center queda perfecto porque está cerca del Pokémon Café Osaka, Shinsaibashi, Dotonbori y el hotel.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Shinsaibashi Station, Osaka, Japan",
+        "destination": "Pokemon Center Osaka DX, Daimaru Shinsaibashi, Osaka, Japan",
+        "note": "Caminata corta desde Shinsaibashi Station hasta Daimaru Shinsaibashi."
+      }
+    },
+    {
+      "time": "4:30 pm",
+      "duration": "reservación si se consigue",
+      "title": "Pokémon Café Osaka",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Intentar conseguir reservación para Pokémon Café Osaka.",
+        "Está junto al Pokémon Center Osaka DX, por eso encaja mejor después de Shinsaibashi.",
+        "Presupuesto 2 personas: $35 - $60 según platos, bebidas y postres.",
+        "Si no se consigue reservación, usar este bloque para más Shinsaibashi, compras o descanso."
+      ],
+      "detail": "Este sería el cierre ideal de la parte Pokémon del día. Si no hay reserva, el día sigue funcionando bien porque ya visitaron Umeda y Osaka DX.",
+      "showMap": false
+    },
+    {
+      "time": "5:45 pm",
+      "duration": "libre",
+      "title": "Shinsaibashi y descanso flexible",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "items": [
+        "Pasear por Shinsaibashi-suji Shopping Street.",
+        "Ver tiendas, arcades o comprar snacks.",
+        "Buen momento para volver al hotel a dejar compras si llevan muchas bolsas.",
+        "Snacks 2 personas: $8 - $16."
+      ],
+      "detail": "Bloque flexible para bajar ritmo después del castillo, Umeda y la parte Pokémon. Como el hotel queda cerca, pueden decidir si descansan o siguen caminando.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Pokemon Center Osaka DX, Daimaru Shinsaibashi, Osaka, Japan",
+        "destination": "Shinsaibashi-Suji Shopping Street, Osaka, Japan",
+        "note": "Caminata por la zona comercial de Shinsaibashi."
+      }
+    },
+    {
+      "time": "6:45 pm",
+      "duration": "cena",
+      "title": "Cena en Dotonbori",
+      "icon": "ramen_dining",
+      "tone": "food",
+      "items": [
+        "Opciones: okonomiyaki, yakisoba, kushikatsu o izakaya.",
+        "Presupuesto 2 personas: $30 - $50.",
+        "Si ya comieron fuerte en Pokémon Café, hacer solo cena ligera o postres."
+      ],
+      "detail": "Cierre gastronómico del día en la zona más conveniente para volver al hotel.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Daimaru Shinsaibashi, Osaka, Japan",
+        "destination": "Dotonbori, Osaka, Japan",
+        "note": "Caminata desde Daimaru Shinsaibashi hacia Dotonbori."
+      }
+    },
+    {
+      "time": "8:00 pm",
+      "duration": "paseo corto",
+      "title": "Dotonbori nocturno",
+      "icon": "nightlife",
+      "tone": "night",
+      "items": [
+        "Canal, Glico, tiendas finales y fotos.",
+        "Mantenerlo flexible según energía.",
+        "Buen momento para fotos nocturnas sin hacer el día demasiado pesado."
+      ],
+      "detail": "Paseo final sin presión, con margen para volver temprano si están cansados.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Dotonbori, Osaka, Japan",
+        "destination": "Ebisu Bridge, Dotonbori, Osaka, Japan",
+        "note": "Paseo caminando por Dotonbori y zona del Glico."
+      }
+    },
+    {
+      "time": "9:15 pm",
+      "duration": "10-15 min",
+      "title": "Regreso al Cross Hotel Osaka",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Regreso caminando desde Dotonbori al Cross Hotel.",
+        "Costo: $0.",
+        "Dejar lista la ropa del día siguiente antes de dormir."
+      ],
+      "detail": "Último tramo. Mantenerse en calles principales y bien iluminadas.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Dotonbori, Osaka, Japan",
+        "destination": "Cross Hotel Osaka, Osaka, Japan",
+        "note": "Caminata final desde Dotonbori hasta Cross Hotel Osaka."
+      }
+    }
+  ],
+  "note": "Meta del día: combinar Namba Yasaka, Castillo de Osaka, una visita real a Umeda, Pokémon Center Osaka en Umeda, Pokémon Center Osaka DX, posible Pokémon Café Osaka y cierre en Dotonbori. Es un día cargado, pero funciona si Umeda se mantiene como recorrido urbano breve y el Pokémon Café queda sujeto a reservación."
+}

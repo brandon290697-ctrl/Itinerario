@@ -1,0 +1,518 @@
+{
+  "title": "Día 3 oculto - Propuesta, Castillo, Namba, Pokémon y cena romántica",
+  "subtitle": "Viernes 9 de octubre - Día privado: propuesta en Osaka Castle Park, Namba Yasaka, Doguyasuji, Genji-soba, Pokémon Center Osaka DX, posible Pokémon Café y cena romántica",
+  "dateLabel": "Viernes 9 de octubre de 2026",
+  "shortDateLabel": "Vie 9 oct",
+  "status": "Día oculto",
+  "hidden": true,
+  "privateNote": "Este día no debe mostrarse en el itinerario compartido con Mar. Es el día de la propuesta sorpresa.",
+  "costEstimateUsd": {
+    "low": 430,
+    "high": 720,
+    "note": "sesión con Manu, taxis/Uber, comidas, Namba Yasaka, Genji-soba, Doguyasuji, Pokémon Center Osaka DX, posible Pokémon Café y cena romántica"
+  },
+  "route": [
+    "Cross Hotel",
+    "Osaka Castle Park",
+    "Jardín japonés con lago",
+    "Castillo Osaka",
+    "Cross Hotel",
+    "Genji-soba",
+    "Namba Yasaka",
+    "Doguyasuji",
+    "Shinsaibashi",
+    "Pokémon Center Osaka DX",
+    "Pokémon Café Osaka",
+    "Cena romántica",
+    "Dotonbori",
+    "Cross Hotel"
+  ],
+  "marStops": [
+    "Castillo Osaka",
+    "Santuario Yasaka Namba",
+    "Genji-soba",
+    "Sennichimae Doguyasuji Cookware Shopping Street",
+    "Pokémon Center Osaka DX"
+  ],
+  "proposalDetails": {
+    "photographer": "Manu",
+    "date": "October 9th, 2026",
+    "time": "8:00 AM - 9:00 AM",
+    "location": "Japanese garden with the pond at Osaka Castle Park",
+    "mapsUrl": "https://maps.app.goo.gl/GsusDNKETXPhAnGSA",
+    "bookingStatus": "Confirmado",
+    "depositStatus": "Pagado",
+    "plan": [
+      "Compartir ubicación en vivo por Google Maps el día de la sesión.",
+      "Avisarle a Manu cómo van vestidos.",
+      "Manu fingirá ser un turista y pedirá ayuda para tomarle una foto.",
+      "Mientras Mar toma la foto, preparar discretamente el anillo.",
+      "Luego Manu ofrecerá tomarles una foto a ambos.",
+      "Manu los guiará para una pose espalda con espalda.",
+      "Cuando Mar esté de espaldas, colocarse en posición de propuesta.",
+      "Manu capturará el momento completo con cámara."
+    ]
+  },
+  "blocks": [
+    {
+      "time": "5:45 am",
+      "duration": "inicio",
+      "title": "Despertar en secreto",
+      "icon": "wb_sunny",
+      "tone": "rest",
+      "items": [
+        "Despertar con calma y sin mencionar que hay sesión de fotos.",
+        "Revisar que el anillo esté seguro, accesible y bien escondido.",
+        "Llevar pañuelo, perfume, efectivo, batería externa y celulares cargados.",
+        "Mantener una excusa natural: paseo temprano por Osaka Castle Park porque se ve bonito y menos lleno."
+      ],
+      "detail": "Este bloque es solo para usted. La prioridad es no correr y mantener la sorpresa tranquila.",
+      "showMap": false
+    },
+    {
+      "time": "6:10 am",
+      "duration": "20 min",
+      "title": "Arreglarse para la propuesta",
+      "icon": "checkroom",
+      "tone": "rest",
+      "items": [
+        "Usar ropa cómoda pero bonita para fotos.",
+        "Evitar bolsos muy grandes o ropa que complique esconder el anillo.",
+        "Revisar clima antes de salir.",
+        "Tomar agua y comer algo pequeño si hace falta."
+      ],
+      "detail": "La idea es verse bien sin levantar sospechas. Puede decir que quiere fotos bonitas temprano en el castillo.",
+      "showMap": false
+    },
+    {
+      "time": "6:35 am",
+      "duration": "15 min",
+      "title": "Desayuno muy ligero",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Comprar algo pequeño en 7-Eleven, Lawson o café cercano.",
+        "Evitar desayuno pesado antes de las fotos.",
+        "Opciones: café, té, agua, onigiri, pan dulce o sándwich pequeño.",
+        "Presupuesto 2 personas: $8 - $15."
+      ],
+      "detail": "Desayuno funcional para no llegar con hambre, pero sin perder tiempo.",
+      "showMap": false
+    },
+    {
+      "time": "6:55 am",
+      "duration": "5 min",
+      "title": "Confirmar ubicación con Manu",
+      "icon": "location_on",
+      "tone": "travel",
+      "items": [
+        "Enviar mensaje corto a Manu confirmando que van saliendo.",
+        "Compartir ubicación en vivo por Google Maps.",
+        "Enviar descripción de ropa de ambos.",
+        "Confirmar que se dirigen al jardín japonés con lago."
+      ],
+      "detail": "Este paso es clave para que Manu los ubique sin que Mar sospeche.",
+      "showMap": false
+    },
+    {
+      "time": "7:00 am",
+      "duration": "20-25 min",
+      "title": "Uber/taxi: Cross Hotel Osaka → Osaka Castle Park",
+      "icon": "local_taxi",
+      "tone": "travel",
+      "items": [
+        "Salir del Cross Hotel Osaka alrededor de las 7:00 am.",
+        "Usar Uber/taxi para evitar estrés y llegar con margen.",
+        "Destino: jardín japonés con lago en Osaka Castle Park.",
+        "Presupuesto estimado: $18 - $35 según tráfico y demanda."
+      ],
+      "detail": "Conviene llegar antes de las 8:00 am para ubicarse, respirar y no arruinar el flujo de la sorpresa.",
+      "routeInfo": {
+        "mode": "driving",
+        "origin": "Cross Hotel Osaka, 2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, Japan",
+        "destination": "https://maps.app.goo.gl/GsusDNKETXPhAnGSA",
+        "note": "Traslado privado desde Cross Hotel Osaka hasta el jardín japonés con lago en Osaka Castle Park.",
+        "mapsQuery": "Cross Hotel Osaka to Osaka Castle Park Japanese garden pond"
+      }
+    },
+    {
+      "time": "7:25 am",
+      "duration": "25 min",
+      "title": "Llegada tranquila a Osaka Castle Park",
+      "icon": "park",
+      "tone": "arrival",
+      "items": [
+        "Llegar con margen y caminar despacio hacia el punto acordado.",
+        "No buscar a Manu de forma evidente.",
+        "Mantener el ambiente natural: fotos, paseo y vista del castillo.",
+        "Revisar discretamente que el anillo esté listo."
+      ],
+      "detail": "Este margen evita que todo se sienta forzado. La escena debe parecer un paseo normal temprano por Osaka.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Osaka Castle Park, Osaka, Japan",
+        "destination": "https://maps.app.goo.gl/GsusDNKETXPhAnGSA",
+        "note": "Caminata interna hacia el jardín japonés con lago acordado con Manu.",
+        "mapsQuery": "Osaka Castle Park Japanese garden pond"
+      }
+    },
+    {
+      "time": "8:00 am",
+      "duration": "1h",
+      "title": "Sesión sorpresa con Manu y propuesta",
+      "icon": "photo_camera",
+      "tone": "arrival",
+      "items": [
+        "Manu fingirá ser un turista y pedirá ayuda para tomarle una foto.",
+        "Mientras Mar toma la foto, preparar discretamente el anillo.",
+        "Manu ofrecerá tomarles una foto a ambos.",
+        "Hará la pose espalda con espalda.",
+        "Cuando Mar esté de espaldas, colocarse en posición de propuesta.",
+        "Momento de la propuesta con Osaka Castle Park de fondo.",
+        "Manu capturará fotos del momento completo."
+      ],
+      "detail": "Este es el momento central del viaje. No apurarse: respirar, hablar desde el corazón y dejar que Manu guíe el flujo.",
+      "showMap": false
+    },
+    {
+      "time": "9:00 am",
+      "duration": "30-45 min",
+      "title": "Fotos de pareja después de la propuesta",
+      "icon": "favorite",
+      "tone": "arrival",
+      "items": [
+        "Fotos caminando por el parque.",
+        "Fotos con el castillo de fondo.",
+        "Fotos del anillo y de las manos.",
+        "Fotos naturales, abrazos y reacción posterior.",
+        "Dejar que Manu guíe las poses."
+      ],
+      "detail": "Después de la propuesta viene la parte más bonita y relajada: fotos ya como prometidos.",
+      "showMap": false
+    },
+    {
+      "time": "9:45 am",
+      "duration": "30 min",
+      "title": "Caminar solos por Osaka Castle Park",
+      "icon": "forest",
+      "tone": "rest",
+      "items": [
+        "Quedarse un rato caminando sin prisa.",
+        "Buscar una banca o zona tranquila.",
+        "Tomarse algunas fotos propias.",
+        "Disfrutar el momento sin correr hacia la siguiente actividad."
+      ],
+      "detail": "Este bloque es importante emocionalmente. No conviene pasar directo a turismo normal después de la propuesta.",
+      "showMap": false
+    },
+    {
+      "time": "10:20 am",
+      "duration": "opcional corto",
+      "title": "Castillo de Osaka por fuera o entrada al museo",
+      "icon": "castle",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Opción suave: ver el castillo solo por fuera y tomar fotos.",
+        "Opción completa: entrar al museo del castillo si ambos tienen energía.",
+        "Entrada al museo: ¥600 por adulto."
+      ],
+      "detail": "Como ya hubo una mañana emocionalmente fuerte, este bloque debe mantenerse flexible en duración, pero el castillo queda cubierto dentro del día oculto.",
+      "location": {
+        "name": "Castillo Osaka",
+        "mapsQuery": "Osaka Castle Osaka"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Osaka Castle Park Japanese garden pond",
+        "destination": "Osaka Castle, Osaka, Japan",
+        "note": "Caminata interna desde la zona de la propuesta hacia el Castillo de Osaka.",
+        "mapsQuery": "Osaka Castle Park Japanese garden pond to Osaka Castle"
+      }
+    },
+    {
+      "time": "11:15 am",
+      "duration": "20-30 min",
+      "title": "Traslado de regreso a Namba",
+      "icon": "local_taxi",
+      "tone": "travel",
+      "items": [
+        "Tomar Uber/taxi de vuelta al Cross Hotel o zona Namba.",
+        "Evitar caminar demasiado después de la sesión.",
+        "Presupuesto estimado: $18 - $35.",
+        "Llegar al hotel para descansar y procesar el momento."
+      ],
+      "detail": "Después de la propuesta, lo mejor es volver cómodo y no meter metro de inmediato.",
+      "routeInfo": {
+        "mode": "driving",
+        "origin": "Osaka Castle Park, Osaka, Japan",
+        "destination": "Cross Hotel Osaka, Osaka, Japan",
+        "note": "Regreso cómodo desde Osaka Castle Park hacia Cross Hotel Osaka.",
+        "mapsQuery": "Osaka Castle Park to Cross Hotel Osaka"
+      }
+    },
+    {
+      "time": "12:00 pm",
+      "duration": "1h 15m",
+      "title": "Descanso en el hotel",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Volver al Cross Hotel Osaka.",
+        "Descansar, cargar celulares y guardar el anillo/caja si hace falta.",
+        "Escribir a Manu agradeciendo y confirmar próximos pasos de fotos.",
+        "Tomarse un rato para llamar o escribir a familia solo si ambos quieren."
+      ],
+      "detail": "Este descanso hace que el día se sienta especial y no como una agenda turística común.",
+      "showMap": false
+    },
+    {
+      "time": "1:30 pm",
+      "duration": "almuerzo",
+      "title": "Genji-soba",
+      "icon": "restaurant",
+      "tone": "food",
+      "marListStop": true,
+      "items": [
+        "Almuerzo de soba en Namba/Dotonbori.",
+        "Queda cerca del hotel y de la zona de Namba.",
+        "Presupuesto 2 personas: $25 - $45."
+      ],
+      "detail": "Genji-soba se mete aquí porque está en Namba, no en Umeda. Funciona como almuerzo real después del descanso y antes de Namba Yasaka.",
+      "location": {
+        "name": "Genji-soba",
+        "address": "4 Chome-5-8 Namba, Chuo Ward, Osaka, 542-0076",
+        "mapsQuery": "Genji Soba 4 Chome-5-8 Namba Chuo Ward Osaka"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Cross Hotel Osaka, Osaka, Japan",
+        "destination": "Genji Soba, Namba, Osaka, Japan",
+        "note": "Caminata desde Cross Hotel Osaka hacia Genji-soba en Namba.",
+        "mapsQuery": "Cross Hotel Osaka to Genji Soba Namba Osaka"
+      }
+    },
+    {
+      "time": "2:35 pm",
+      "duration": "15-20 min",
+      "title": "Caminata Genji-soba → Namba Yasaka Shrine",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Genji-soba hacia Namba Yasaka Shrine.",
+        "Caminar por la zona de Namba.",
+        "Costo: $0."
+      ],
+      "detail": "Traslado corto dentro de Namba para conectar el almuerzo con el santuario.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Genji Soba, Namba, Osaka, Japan",
+        "destination": "Namba Yasaka Shrine, Osaka, Japan",
+        "note": "Caminata desde Genji-soba hasta Namba Yasaka Shrine.",
+        "mapsQuery": "Genji Soba Namba to Namba Yasaka Shrine"
+      }
+    },
+    {
+      "time": "3:00 pm",
+      "duration": "30 min",
+      "title": "Namba Yasaka Shrine",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Ver la cabeza gigante del león.",
+        "Fotos rápidas y paseo corto.",
+        "Entrada libre."
+      ],
+      "detail": "Namba Yasaka queda cerca y se puede meter como parada suave de tarde sin romper el tono especial del día.",
+      "location": {
+        "name": "Namba Yasaka Shrine",
+        "mapsQuery": "Namba Yasaka Shrine Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "3:35 pm",
+      "duration": "15 min",
+      "title": "Caminata Namba Yasaka → Doguyasuji",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Namba Yasaka hacia Sennichimae Doguyasuji.",
+        "Pasar por la zona comercial de Namba.",
+        "Costo: $0."
+      ],
+      "detail": "Doguyasuji queda bien conectado con Namba y permite ir luego hacia Shinsaibashi/Dotonbori.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Namba Yasaka Shrine, Osaka, Japan",
+        "destination": "Sennichimae Doguyasuji Shopping Street, Osaka, Japan",
+        "note": "Caminata desde Namba Yasaka hacia Doguyasuji.",
+        "mapsQuery": "Namba Yasaka Shrine to Sennichimae Doguyasuji Shopping Street"
+      }
+    },
+    {
+      "time": "3:50 pm",
+      "duration": "40 min",
+      "title": "Sennichimae Doguyasuji Cookware Shopping Street",
+      "icon": "storefront",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Calle de utensilios de cocina, platos, cuchillos, decoración y artículos curiosos.",
+        "Ideal para mirar tiendas japonesas diferentes.",
+        "Compras opcionales: $10 - $60."
+      ],
+      "detail": "Doguyasuji se agrega como parada real de la tarde porque queda muy bien entre Namba Yasaka y Shinsaibashi/Dotonbori.",
+      "location": {
+        "name": "Sennichimae Doguyasuji Cookware Shopping Street",
+        "address": "10 Namba Sennichimae, Chuo-ku, Osaka-shi, Osaka 542-0075",
+        "mapsQuery": "Sennichimae Doguyasuji Shopping Street 10 Namba Sennichimae Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "4:30 pm",
+      "duration": "20 min",
+      "title": "Caminata Doguyasuji → Pokémon Center Osaka DX",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Doguyasuji hacia Daimaru Shinsaibashi.",
+        "Pasar por Namba/Shinsaibashi.",
+        "Costo: $0."
+      ],
+      "detail": "Traslado caminable dentro de la zona comercial central de Osaka.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Sennichimae Doguyasuji Shopping Street, Osaka, Japan",
+        "destination": "Pokemon Center Osaka DX, Daimaru Shinsaibashi, Osaka, Japan",
+        "note": "Caminata desde Doguyasuji hacia Pokémon Center Osaka DX.",
+        "mapsQuery": "Sennichimae Doguyasuji Shopping Street to Pokemon Center Osaka DX"
+      }
+    },
+    {
+      "time": "4:55 pm",
+      "duration": "1h",
+      "title": "Pokémon Center Osaka DX",
+      "icon": "toys",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Visita al Pokémon Center Osaka DX en Daimaru Shinsaibashi.",
+        "Ideal para fotos, peluches, artículos exclusivos y souvenirs.",
+        "Compras opcionales 2 personas: $30 - $100."
+      ],
+      "detail": "Este Pokémon Center queda perfecto porque está cerca del Pokémon Café Osaka, Shinsaibashi, Dotonbori y el hotel.",
+      "location": {
+        "name": "Pokémon Center Osaka DX",
+        "address": "9F Daimaru Shinsaibashi Main Building, 1-7-1 Shinsaibashisuji, Chuo-ku, Osaka 542-8501",
+        "mapsQuery": "Pokemon Center Osaka DX Daimaru Shinsaibashi 9F 1-7-1 Shinsaibashisuji Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "6:00 pm",
+      "duration": "reservación",
+      "title": "Pokémon Café Osaka",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Intentar conseguir reservación para Pokémon Café Osaka.",
+        "Está junto al Pokémon Center Osaka DX.",
+        "Presupuesto 2 personas: $35 - $60 según platos, bebidas y postres.",
+        "Bloque ideal como experiencia especial de tarde."
+      ],
+      "detail": "No estaba en la lista inicial de Mar, pero combina perfecto con Osaka DX y queda en el mismo edificio.",
+      "location": {
+        "name": "Pokémon Café Osaka",
+        "address": "9F Daimaru Shinsaibashi Main Building, 1-7-1 Shinsaibashisuji, Chuo-ku, Osaka 542-8501",
+        "mapsQuery": "Pokemon Cafe Osaka Daimaru Shinsaibashi 9F 1-7-1 Shinsaibashisuji Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "7:15 pm",
+      "duration": "15-20 min",
+      "title": "Traslado a cena romántica",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Daimaru Shinsaibashi hacia el restaurante reservado.",
+        "Opción principal: Table36 en Swissôtel Nankai Osaka.",
+        "Ir caminando o en taxi corto según zapatos, clima y cansancio."
+      ],
+      "detail": "Para una noche especial, no vale la pena llegar sudados o apurados. Si van bien vestidos, taxi corto puede ser mejor.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Daimaru Shinsaibashi, Osaka, Japan",
+        "destination": "Table36, Swissôtel Nankai Osaka, Osaka, Japan",
+        "note": "Traslado desde Daimaru Shinsaibashi hacia Table36.",
+        "mapsQuery": "Daimaru Shinsaibashi to Table36 Swissotel Nankai Osaka"
+      }
+    },
+    {
+      "time": "7:40 pm",
+      "duration": "2h",
+      "title": "Cena romántica de compromiso",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Cena especial de celebración por el compromiso.",
+        "Opción principal: Table36.",
+        "Pedir mesa con vista si es posible.",
+        "Ideal reservar con nota: engagement celebration / proposal celebration.",
+        "Presupuesto 2 personas: $130 - $230 o más según menú y bebidas."
+      ],
+      "detail": "La cena debe sentirse especial y no como una comida más del viaje. Table36 mantiene buena logística porque queda cerca de Namba y Dotonbori.",
+      "location": {
+        "name": "Table36",
+        "mapsQuery": "Table36 Swissotel Nankai Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "9:45 pm",
+      "duration": "30-45 min",
+      "title": "Dotonbori nocturno como prometidos",
+      "icon": "nightlife",
+      "tone": "night",
+      "items": [
+        "Caminar suave por Dotonbori.",
+        "Tomar una foto juntos en el Glico.",
+        "Comprar un postre pequeño o bebida caliente.",
+        "No alargar demasiado la noche si están cansados."
+      ],
+      "detail": "Este paseo puede ser muy simbólico: volver a Dotonbori ya comprometidos, sin convertirlo en una noche pesada.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Swissôtel Nankai Osaka, Osaka, Japan",
+        "destination": "Dotonbori, Osaka, Japan",
+        "note": "Paseo nocturno desde Namba hacia Dotonbori.",
+        "mapsQuery": "Swissotel Nankai Osaka to Dotonbori"
+      }
+    },
+    {
+      "time": "10:30 pm",
+      "duration": "10-15 min",
+      "title": "Regreso al Cross Hotel Osaka",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Regresar caminando al hotel.",
+        "Guardar bien el anillo, caja y cualquier recibo.",
+        "Cargar celulares.",
+        "Dejar respaldadas o guardadas las primeras fotos/videos si Manu manda avances."
+      ],
+      "detail": "Cierre tranquilo para un día muy importante.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Dotonbori, Osaka, Japan",
+        "destination": "Cross Hotel Osaka, Osaka, Japan",
+        "note": "Regreso final desde Dotonbori hasta Cross Hotel Osaka.",
+        "mapsQuery": "Dotonbori to Cross Hotel Osaka"
+      }
+    }
+  ],
+  "note": "Meta del día: que la propuesta sea el centro del viaje, sin saturar la agenda. Después de la sesión con Manu, el día mantiene Namba Yasaka, Genji-soba, Doguyasuji, Pokémon Center Osaka DX, posible Pokémon Café y una cena romántica especial."
+}

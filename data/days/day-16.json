@@ -1,0 +1,179 @@
+{
+  "title": "Día 16 - Kamakura",
+  "subtitle": "Jueves 22 de octubre - Templos, naturaleza y costa",
+  "dateLabel": "Jueves 22 de octubre de 2026",
+  "shortDateLabel": "Jue 22 oct",
+  "status": "Excursión",
+  "costEstimateUsd": {
+    "low": 140,
+    "high": 240,
+    "note": "transporte, entradas, comida y snacks"
+  },
+  "route": [
+    "Asakusa",
+    "Kamakura",
+    "Hasedera",
+    "Daibutsu",
+    "Costa",
+    "Regreso"
+  ],
+  "blocks": [
+    {
+      "time": "6:00 am",
+      "duration": "inicio",
+      "title": "Despertar temprano",
+      "icon": "alarm",
+      "tone": "rest",
+      "items": [
+        "Día de excursión.",
+        "Prepararse temprano.",
+        "Llevar agua y efectivo."
+      ],
+      "showMap": false
+    },
+    {
+      "time": "6:20 am",
+      "duration": "6:20 - 6:45 am",
+      "title": "Desayuno ligero",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Convenience store.",
+        "$10 - $20."
+      ]
+    },
+    {
+      "time": "7:00 am",
+      "duration": "70-90 min",
+      "title": "Asakusa → Kamakura",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Metro + JR.",
+        "Ruta hacia Kamakura Station.",
+        "$12 - $20."
+      ],
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Asakusa Station, Tokyo, Japan",
+        "destination": "Kamakura Station, Kanagawa, Japan"
+      }
+    },
+    {
+      "time": "8:45 am",
+      "duration": "8:45 - 9:15 am",
+      "title": "Llegada + orientación",
+      "icon": "directions_walk",
+      "tone": "arrival",
+      "items": [
+        "Ubicar estación.",
+        "Preparar ruta.",
+        "Caminar hacia zona principal."
+      ],
+      "showMap": false
+    },
+    {
+      "time": "9:15 am",
+      "duration": "9:15 - 11:00 am",
+      "title": "Hasedera Temple",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "items": [
+        "Templo con vistas.",
+        "Jardines.",
+        "Fotos.",
+        "$10 - $20."
+      ],
+      "detail": "Uno de los templos más bonitos de Kamakura.",
+      "showMap": false
+    },
+    {
+      "time": "11:15 am",
+      "duration": "11:15 - 12:15 pm",
+      "title": "Gran Buda (Daibutsu)",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "items": [
+        "Ver estatua gigante.",
+        "Fotos.",
+        "$5 - $10."
+      ],
+      "showMap": false
+    },
+    {
+      "time": "12:30 pm",
+      "duration": "12:30 - 1:30 pm",
+      "title": "Almuerzo",
+      "icon": "ramen_dining",
+      "tone": "food",
+      "items": [
+        "Comida local.",
+        "$30 - $55."
+      ]
+    },
+    {
+      "time": "1:45 pm",
+      "duration": "1:45 - 3:30 pm",
+      "title": "Costa de Kamakura",
+      "icon": "water",
+      "tone": "night",
+      "items": [
+        "Caminar cerca del mar.",
+        "Relajarse.",
+        "Fotos."
+      ],
+      "detail": "Cambio total de ambiente respecto a Tokyo.",
+      "showMap": false
+    },
+    {
+      "time": "3:45 pm",
+      "duration": "70-90 min",
+      "title": "Kamakura → Tokyo",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Regreso en tren.",
+        "$12 - $20."
+      ],
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Kamakura Station, Kanagawa, Japan",
+        "destination": "Asakusa Station, Tokyo, Japan"
+      }
+    },
+    {
+      "time": "5:30 pm",
+      "duration": "5:30 - 7:00 pm",
+      "title": "Descanso / tarde ligera",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Descansar.",
+        "Opcional paseo corto."
+      ]
+    },
+    {
+      "time": "7:15 pm",
+      "duration": "7:15 - 8:45 pm",
+      "title": "Cena",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cena tranquila.",
+        "$45 - $80."
+      ]
+    },
+    {
+      "time": "9:00 pm",
+      "duration": "cierre",
+      "title": "Regreso al hotel",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Descansar.",
+        "Preparar últimos días."
+      ]
+    }
+  ],
+  "note": "Meta del día: salir de Tokyo, ver templos y disfrutar un ambiente más relajado."
+}

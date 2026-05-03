@@ -1,0 +1,507 @@
+{
+  "title": "Día 4 - Katsō-ji, Umeda, Pokémon Center Osaka, teamLab y despedida de Osaka",
+  "subtitle": "Sábado 10 de octubre - Darumas, Umeda, Pokémon Center Osaka, Nagai y última noche en Dotonbori",
+  "dateLabel": "Sábado 10 de octubre de 2026",
+  "shortDateLabel": "Sáb 10 oct",
+  "status": "Darumas + Umeda + teamLab",
+  "costEstimateUsd": {
+    "low": 210,
+    "high": 340,
+    "note": "Katsō-ji, Umeda, Pokémon Center Osaka, museo Nagai, teamLab, comidas, transporte y souvenirs"
+  },
+  "route": [
+    "Cross Hotel",
+    "Namba",
+    "Umeda",
+    "Senri-Chūō",
+    "Katsō-ji",
+    "Umeda",
+    "Pokémon Center Osaka",
+    "Nagai",
+    "teamLab",
+    "Dotonbori"
+  ],
+  "marStops": [
+    "Pokémon Center Osaka",
+    "teamLab Botanical Garden Osaka"
+  ],
+  "blocks": [
+    {
+      "time": "6:50 am",
+      "duration": "inicio",
+      "title": "Despertar y preparación",
+      "icon": "wb_sunny",
+      "tone": "rest",
+      "items": [
+        "Día de salida temprana hacia Katsō-ji.",
+        "Llevar efectivo, cámara y zapatos cómodos.",
+        "Preparar mochila liviana para templo, Umeda, parque y teamLab."
+      ],
+      "detail": "La mañana conviene hacerla con ritmo claro porque Katsō-ji queda al norte de Osaka.",
+      "showMap": false
+    },
+    {
+      "time": "7:10 am",
+      "duration": "5-7 min",
+      "title": "Caminata hotel → Namba Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Desde Cross Hotel Osaka hacia Namba Station de Osaka Metro.",
+        "Costo: $0.",
+        "Buscar la entrada de Midosuji Line."
+      ],
+      "detail": "Tramo corto hasta la estación. Salir con margen para comprar desayuno antes del tren.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Cross Hotel Osaka, 2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, Japan",
+        "destination": "Namba Station Midosuji Line, Osaka, Japan",
+        "note": "Caminata desde Cross Hotel Osaka hasta Namba Station de Osaka Metro."
+      }
+    },
+    {
+      "time": "7:15 am",
+      "duration": "rápido",
+      "title": "Desayuno antes del tren",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Opciones: 7-Eleven o Lawson.",
+        "Compra simple para comer antes o durante el trayecto.",
+        "Presupuesto 2 personas: $12 - $18."
+      ],
+      "detail": "Mejor algo práctico para no perder la salida hacia Umeda.",
+      "showMap": false
+    },
+    {
+      "time": "7:30 am",
+      "duration": "10 min",
+      "title": "Metro: Namba → Umeda",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Osaka Metro Midosuji Line, línea roja.",
+        "Sale de Namba Metro y llega a Umeda Station.",
+        "Costo estimado 2 personas: $3 - $4."
+      ],
+      "detail": "Primer tramo hacia Katsō-ji. Confirmar dirección Umeda.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Namba Station Midosuji Line, Osaka, Japan",
+        "destination": "Umeda Station, Osaka, Japan",
+        "note": "Osaka Metro Midosuji Line desde Namba hasta Umeda.",
+        "fixedDuration": "10 min",
+        "fixedDistance": "Midosuji Line",
+        "fareEstimateJpy": 240,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo por Midosuji Line."
+      }
+    },
+    {
+      "time": "7:50 am",
+      "duration": "25 min",
+      "title": "Umeda → Senri-Chūō",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Kita-Osaka Kyūkō Line.",
+        "Sale de Umeda y llega a Senri-Chūō Station.",
+        "Costo estimado 2 personas: $6 - $8."
+      ],
+      "detail": "Tramo hacia la conexión de bus para Katsō-ji.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Umeda Station, Osaka, Japan",
+        "destination": "Senri-Chuo Station, Osaka, Japan",
+        "note": "Kita-Osaka Kyūkō Line desde Umeda hasta Senri-Chūō.",
+        "fixedDuration": "25 min",
+        "fixedDistance": "Kita-Osaka Kyūkō",
+        "fareEstimateJpy": 430,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo hacia Senri-Chūō."
+      }
+    },
+    {
+      "time": "8:20 am",
+      "duration": "5 min",
+      "title": "Caminata a terminal de bus en Senri-Chūō",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Senri-Chūō Station hacia la terminal de bus.",
+        "Buscar el andén del Bus 29 con destino Katsō-ji.",
+        "Confirmar horario de regreso desde la parada al llegar al templo."
+      ],
+      "detail": "La terminal de bus está cerca de la estación. Confirmar el andén correcto apenas lleguen.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Senri-Chuo Station, Osaka, Japan",
+        "destination": "Senri-Chuo Bus Terminal, Osaka, Japan",
+        "note": "Caminata interna desde la estación hacia la terminal de bus."
+      }
+    },
+    {
+      "time": "8:25 am",
+      "duration": "30 min",
+      "title": "Bus 29: Senri-Chūō → Katsō-ji",
+      "icon": "directions_bus",
+      "tone": "travel",
+      "items": [
+        "Bus 29 con destino Katsō-ji.",
+        "Sale de Senri-Chūō Bus Terminal.",
+        "Costo estimado 2 personas: $6 - $10."
+      ],
+      "detail": "Confirmar el horario de regreso al llegar al templo para no perder el bus.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Senri-Chuo Station, Osaka, Japan",
+        "destination": "Katsuo-ji Temple, Minoh, Osaka, Japan",
+        "note": "Bus 29 desde Senri-Chūō hasta Katsō-ji.",
+        "fixedDuration": "30 min",
+        "fixedDistance": "Bus 29",
+        "fareEstimateJpy": 500,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo en bus hacia Katsō-ji."
+      }
+    },
+    {
+      "time": "9:00 am",
+      "duration": "2 h",
+      "title": "Katsō-ji - templo de los darumas",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "items": [
+        "Miles de darumas en escalinatas, senderos naturales y miradores.",
+        "Entrada: ¥500 x 2 = ¥1,000, aprox. $7.",
+        "Daruma pequeño opcional: $5 - $12."
+      ],
+      "detail": "Bloque principal de la mañana. Ideal para fotos icónicas y caminar sin prisa.",
+      "location": {
+        "name": "Katsō-ji",
+        "mapsQuery": "Katsuo-ji Temple Minoh Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "11:05 am",
+      "duration": "30 min",
+      "title": "Bus 29: Katsō-ji → Senri-Chūō",
+      "icon": "directions_bus",
+      "tone": "travel",
+      "items": [
+        "Regreso en Bus 29 hacia Senri-Chūō.",
+        "Costo estimado 2 personas: $6 - $10.",
+        "Revisar horario de salida apenas lleguen al templo."
+      ],
+      "detail": "Conviene no perder este bus para mantener bien el almuerzo, Umeda y teamLab.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Katsuo-ji Temple, Minoh, Osaka, Japan",
+        "destination": "Senri-Chuo Station, Osaka, Japan",
+        "note": "Bus 29 de regreso desde Katsō-ji hasta Senri-Chūō.",
+        "fixedDuration": "30 min",
+        "fixedDistance": "Bus 29",
+        "fareEstimateJpy": 500,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo en bus de regreso."
+      }
+    },
+    {
+      "time": "11:45 am",
+      "duration": "25 min",
+      "title": "Senri-Chūō → Umeda",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Kita-Osaka Kyūkō de regreso a Umeda.",
+        "Costo estimado 2 personas: $6 - $8."
+      ],
+      "detail": "Regreso a Osaka centro para agrupar almuerzo, Umeda y Pokémon Center Osaka.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Senri-Chuo Station, Osaka, Japan",
+        "destination": "Umeda Station, Osaka, Japan",
+        "note": "Kita-Osaka Kyūkō de regreso desde Senri-Chūō hasta Umeda.",
+        "fixedDuration": "25 min",
+        "fixedDistance": "Kita-Osaka Kyūkō",
+        "fareEstimateJpy": 430,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo de regreso a Umeda."
+      }
+    },
+    {
+      "time": "12:15 pm",
+      "duration": "almuerzo",
+      "title": "Almuerzo en Umeda",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Opciones: ramen, curry, sushi o donburi.",
+        "Presupuesto 2 personas: $28 - $45.",
+        "Aprovechar para descansar un rato antes de recorrer Umeda."
+      ],
+      "detail": "Pausa necesaria entre Katsō-ji, Pokémon Center Osaka y teamLab. No conviene alargar demasiado.",
+      "location": {
+        "name": "Umeda / Osaka Station",
+        "mapsQuery": "Umeda Osaka Station restaurants"
+      },
+      "showMap": false
+    },
+    {
+      "time": "1:15 pm",
+      "duration": "45 min",
+      "title": "Conocer Umeda",
+      "icon": "location_city",
+      "tone": "shopping",
+      "items": [
+        "Caminar por la zona de Umeda, Osaka Station y centros comerciales.",
+        "Ver el ambiente moderno de Osaka, tiendas y edificios altos.",
+        "Opciones cercanas: Grand Front Osaka, LUCUA, HEP Five o alrededores.",
+        "Mantener este bloque con ritmo controlado para no afectar teamLab."
+      ],
+      "detail": "Este bloque se agrega porque usted quiere conocer Umeda, y entra perfecto al regresar desde Katsō-ji.",
+      "location": {
+        "name": "Umeda",
+        "mapsQuery": "Umeda Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "2:05 pm",
+      "duration": "45 min",
+      "title": "Pokémon Center Osaka - Umeda",
+      "icon": "toys",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Visita al Pokémon Center Osaka en Umeda.",
+        "Ideal para comparar productos con Osaka DX.",
+        "Compras opcionales 2 personas: $30 - $90."
+      ],
+      "detail": "Este Pokémon Center queda en Umeda y se separa del Osaka DX del Día 3. Así se conocen ambos sin duplicar el mismo bloque.",
+      "location": {
+        "name": "Pokémon Center Osaka",
+        "address": "LUCUA SOUTH 13F, 3-1-1 Umeda, Kita-ku, Osaka-shi, 530-8373",
+        "mapsQuery": "Pokemon Center Osaka LUCUA South 13F 3-1-1 Umeda Kita-ku Osaka"
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Umeda Station, Osaka, Japan",
+        "destination": "Pokemon Center Osaka, Osaka, Japan",
+        "note": "Caminata dentro de la zona de Osaka/Umeda hacia Pokémon Center Osaka.",
+        "mapsQuery": "Umeda Station to Pokemon Center Osaka LUCUA"
+      }
+    },
+    {
+      "time": "3:00 pm",
+      "duration": "30 min",
+      "title": "Pausa en Umeda antes de Nagai",
+      "icon": "local_cafe",
+      "tone": "rest",
+      "items": [
+        "Café, agua o snack rápido.",
+        "Revisar batería de celular.",
+        "Ordenar compras de Pokémon para no cargar incómodo.",
+        "Snacks 2 personas: $8 - $15."
+      ],
+      "detail": "Esta pausa protege el resto del día antes del traslado largo hacia Nagai.",
+      "showMap": false
+    },
+    {
+      "time": "3:35 pm",
+      "duration": "35 min",
+      "title": "Metro: Umeda → Nagai",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Osaka Metro Midosuji Line.",
+        "Sale de Umeda y llega a Nagai Station.",
+        "Costo estimado 2 personas: $4 - $6."
+      ],
+      "detail": "Traslado hacia Nagai Park para descansar antes de teamLab Botanical Garden.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Umeda Station, Osaka, Japan",
+        "destination": "Nagai Station, Osaka, Japan",
+        "note": "Midosuji Line desde Umeda hasta Nagai.",
+        "fixedDuration": "35 min",
+        "fixedDistance": "Midosuji Line",
+        "fareEstimateJpy": 290,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo hacia Nagai."
+      }
+    },
+    {
+      "time": "4:10 pm",
+      "duration": "10 min",
+      "title": "Caminata Nagai Station → Parque Nagai",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde Nagai Station hacia Nagai Park.",
+        "Costo: $0.",
+        "Ubicarse cerca de la zona de teamLab."
+      ],
+      "detail": "Tramo corto para llegar al parque y descansar.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Nagai Station, Osaka, Japan",
+        "destination": "Nagai Park, Osaka, Japan",
+        "note": "Caminata desde Nagai Station hasta Nagai Park."
+      }
+    },
+    {
+      "time": "4:20 pm",
+      "duration": "pausa",
+      "title": "Descanso en Parque Nagai",
+      "icon": "park",
+      "tone": "rest",
+      "items": [
+        "Cafecito, fotos y estirar piernas.",
+        "Snacks 2 personas: $6 - $10.",
+        "Bajar ritmo antes de teamLab."
+      ],
+      "detail": "Este bloque es intencionalmente tranquilo para llegar bien al resto de la tarde.",
+      "showMap": false
+    },
+    {
+      "time": "5:00 pm",
+      "duration": "pausa",
+      "title": "Pausa y traslado hacia teamLab",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Baño, agua y snack ligero.",
+        "Revisar batería del celular.",
+        "Caminar hacia la entrada de teamLab Botanical Garden dentro del parque.",
+        "Costo: $0."
+      ],
+      "detail": "La entrada de teamLab está dentro del Parque Nagai. No hay que salir del parque.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Nagai Park, Osaka, Japan",
+        "destination": "teamLab Botanical Garden Osaka, Nagai Park, Osaka, Japan",
+        "note": "Caminata interna dentro de Nagai Park hacia la entrada de teamLab.",
+        "mapsQuery": "Nagai Park to teamLab Botanical Garden Osaka"
+      }
+    },
+    {
+      "time": "5:30 pm",
+      "duration": "nocturno",
+      "title": "teamLab Botanical Garden Osaka",
+      "icon": "auto_awesome",
+      "tone": "night",
+      "marListStop": true,
+      "items": [
+        "Instalaciones de luz, arte interactivo, fotos y música ambiental.",
+        "Entrada teamLab 2 personas: $30 - $40.",
+        "Llegar con batería y espacio en el celular."
+      ],
+      "detail": "Experiencia principal de la tarde-noche. Ideal reservar la entrada con anticipación.",
+      "location": {
+        "name": "teamLab Botanical Garden Osaka",
+        "address": "1-23 Nagaikoen, Higashisumiyoshi Ward, Osaka, 546-0034",
+        "mapsQuery": "teamLab Botanical Garden Osaka 1-23 Nagaikoen Higashisumiyoshi Ward Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "7:10 pm",
+      "duration": "5 min",
+      "title": "Caminata teamLab → Nagai Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de teamLab hacia Nagai Station.",
+        "Costo: $0."
+      ],
+      "detail": "Tramo corto de regreso a la estación.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "teamLab Botanical Garden Osaka, Nagai Park, Osaka, Japan",
+        "destination": "Nagai Station, Osaka, Japan",
+        "note": "Caminata desde teamLab hasta Nagai Station."
+      }
+    },
+    {
+      "time": "7:20 pm",
+      "duration": "25 min",
+      "title": "Metro: Nagai → Namba",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Osaka Metro Midosuji Line.",
+        "Regreso directo a Namba.",
+        "Costo estimado 2 personas: $4 - $6."
+      ],
+      "detail": "Regreso a Namba para la cena especial de despedida.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Nagai Station, Osaka, Japan",
+        "destination": "Namba Station Midosuji Line, Osaka, Japan",
+        "note": "Midosuji Line desde Nagai hasta Namba.",
+        "fixedDuration": "25 min",
+        "fixedDistance": "Midosuji Line",
+        "fareEstimateJpy": 290,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo de regreso a Namba."
+      }
+    },
+    {
+      "time": "8:00 pm",
+      "duration": "despedida",
+      "title": "Cena especial en Dotonbori",
+      "icon": "ramen_dining",
+      "tone": "food",
+      "items": [
+        "Opciones: wagyu, ramen premium, izakaya top o sushi.",
+        "Presupuesto 2 personas: $40 - $70.",
+        "Elegir algo que se sienta como cierre de Osaka."
+      ],
+      "detail": "Cena de despedida de Osaka. Mejor reservar si eligen un lugar específico.",
+      "location": {
+        "name": "Dotonbori",
+        "mapsQuery": "Dotonbori Osaka dinner"
+      },
+      "showMap": false
+    },
+    {
+      "time": "9:30 pm",
+      "duration": "último paseo",
+      "title": "Souvenirs finales y Dotonbori",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "items": [
+        "Don Quijote y tiendas finales.",
+        "Souvenirs finales: $15 - $40.",
+        "Comprar solo lo que puedan empacar bien."
+      ],
+      "detail": "Última vuelta por Osaka. Mantener margen para ordenar maletas.",
+      "location": {
+        "name": "Dotonbori / Don Quijote",
+        "mapsQuery": "Don Quijote Dotonbori Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "10:45 pm",
+      "duration": "15 min",
+      "title": "Regreso al Cross Hotel Osaka",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Regreso caminando desde Dotonbori.",
+        "Costo: $0.",
+        "Preparar maletas para el día siguiente."
+      ],
+      "detail": "Cierre de Osaka. Dejar cargadores, documentos y compras ubicadas antes de dormir.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Dotonbori, Osaka, Japan",
+        "destination": "Cross Hotel Osaka, Osaka, Japan",
+        "note": "Caminata final desde Dotonbori hasta Cross Hotel Osaka."
+      }
+    }
+  ],
+  "note": "Meta del día: visitar Katsō-ji temprano, regresar por Umeda para conocer la zona y visitar Pokémon Center Osaka, descansar en Nagai antes de teamLab y cerrar Osaka con una cena especial sin llegar tarde al hotel."
+}

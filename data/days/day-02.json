@@ -1,0 +1,552 @@
+{
+  "title": "Día 2 - Universal Studios Japan",
+  "subtitle": "Jueves 8 de octubre - día completo en USJ + Halloween Horror Nights",
+  "dateLabel": "Jueves 8 de octubre de 2026",
+  "shortDateLabel": "Jue 8 oct",
+  "status": "Parque completo",
+  "costEstimateUsd": {
+    "low": 230,
+    "high": 380,
+    "note": "USJ, comidas, transporte y compras moderadas; Express Pass aparte"
+  },
+  "route": [
+    "Cross Hotel",
+    "Namba",
+    "Nishikujo",
+    "Universal City",
+    "USJ",
+    "Universal City",
+    "Nishikujo",
+    "Namba",
+    "Cross Hotel"
+  ],
+  "marStops": [
+    "Universal Studios Japan"
+  ],
+  "blocks": [
+    {
+      "time": "6:10 am",
+      "duration": "inicio",
+      "title": "Despertar y preparación",
+      "icon": "alarm",
+      "tone": "rest",
+      "items": [
+        "Levantarse temprano.",
+        "Revisar entradas, QR, pasaporte/copia, power bank y teléfonos.",
+        "Llevar ropa cómoda para día completo y noche de Halloween.",
+        "Revisar clima antes de salir.",
+        "Dejar definido qué llevan en bolso y qué se queda en el hotel."
+      ],
+      "detail": "La clave es salir sin improvisar. Dejar bolso y ropa listos desde la noche anterior para no perder tiempo en la mañana.",
+      "showMap": false
+    },
+    {
+      "time": "6:35 am",
+      "duration": "5-7 min",
+      "title": "Caminata hotel → Namba Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del Cross Hotel Osaka hacia Namba Station.",
+        "Caminar hacia la zona Osaka-Namba / Hanshin-Namba.",
+        "Tener Suica/ICOCA lista antes de entrar.",
+        "Objetivo: estar en estación cerca de las 7:00 am."
+      ],
+      "detail": "Tramo corto, pero conviene salir con margen porque hay que bajar al andén correcto de la línea Hanshin-Namba.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Cross Hotel Osaka, Osaka, Japan",
+        "destination": "Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan",
+        "note": "Caminata desde Cross Hotel Osaka hasta Namba Station.",
+        "mapsQuery": "Cross Hotel Osaka to Namba Station Osaka"
+      }
+    },
+    {
+      "time": "6:45 am",
+      "duration": "rápido",
+      "title": "Desayuno de camino",
+      "icon": "local_cafe",
+      "tone": "food",
+      "items": [
+        "Comprar algo rápido en ruta.",
+        "Opciones: 7-Eleven, Lawson o Starbucks Shinsaibashi.",
+        "Priorizar café, agua y algo fácil de comer en fila.",
+        "Comprar agua extra para llevar al parque.",
+        "Desayuno 2 personas: $10 - $18."
+      ],
+      "detail": "Desayuno funcional: rápido, portátil y sin atrasar la llegada a la estación.",
+      "location": {
+        "name": "Namba / Shinsaibashi",
+        "mapsQuery": "Namba Station Osaka convenience store breakfast"
+      },
+      "showMap": false
+    },
+    {
+      "time": "7:00 am",
+      "duration": "7:00 - 7:10 am",
+      "title": "Ubicarse en Osaka-Namba / Hanshin-Namba",
+      "icon": "confirmation_number",
+      "tone": "travel",
+      "items": [
+        "Entrar a la estación y buscar la línea Hanshin-Namba.",
+        "Confirmar dirección hacia Nishikujo.",
+        "Revisar pantalla de salida y andén.",
+        "Mantener las entradas/QR del parque accesibles para después."
+      ],
+      "detail": "Este bloque evita confusión entre Namba Station, Osaka-Namba y las diferentes líneas subterráneas.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Namba Station, Osaka, Japan",
+        "destination": "Osaka-Namba Station, Osaka, Japan",
+        "note": "Desplazamiento interno dentro del complejo de Namba hacia la línea Hanshin-Namba.",
+        "mapsQuery": "Namba Station to Osaka-Namba Station Hanshin Namba Line"
+      }
+    },
+    {
+      "time": "7:10 am",
+      "duration": "12 min",
+      "title": "Tramo 1: Namba → Nishikujo",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Línea: Hanshin-Namba.",
+        "4-5 estaciones.",
+        "Llegada estimada a Nishikujo: 7:22 am.",
+        "Costo visible en el recorrido.",
+        "Mantenerse atento para bajar en Nishikujo."
+      ],
+      "detail": "Tramo principal desde Osaka-Namba hacia Nishikujo.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan",
+        "destination": "Nishikujo Station, Osaka, Japan",
+        "note": "Hanshin-Namba Line desde Osaka-Namba hasta Nishikujo.",
+        "fixedDuration": "12 min",
+        "fixedDistance": "Hanshin-Namba",
+        "fareEstimateJpy": 220,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo ferroviario fijo: Hanshin-Namba Line desde Osaka-Namba hasta Nishikujo.",
+        "mapsQuery": "Osaka-Namba Station to Nishikujo Station Hanshin Namba Line"
+      }
+    },
+    {
+      "time": "7:22 am",
+      "duration": "6-10 min",
+      "title": "Transbordo en Nishikujo",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Nishikujo Station.",
+        "Caminar internamente entre andenes.",
+        "Buscar JR Yumesaki Line / Sakurajima Line.",
+        "Seguir señales hacia Universal City / Sakurajima.",
+        "Mantener el ritmo, pero sin correr."
+      ],
+      "detail": "Este transbordo es la bisagra del traslado. Si hay mucha gente, seguir el flujo de visitantes que van hacia USJ.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Nishikujo Station, Osaka, Japan",
+        "destination": "JR Yumesaki Line platform Nishikujo Station, Osaka, Japan",
+        "note": "Transbordo interno en Nishikujo hacia JR Yumesaki Line / Sakurajima Line.",
+        "mapsQuery": "Nishikujo Station transfer to JR Yumesaki Line"
+      }
+    },
+    {
+      "time": "7:35 am",
+      "duration": "6 min",
+      "title": "Tramo 2: Nishikujo → Universal City",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Línea: JR Yumesaki Line.",
+        "2 estaciones.",
+        "Llegada estimada: 7:41 am.",
+        "Costo visible en el recorrido.",
+        "Bajarse en Universal City Station."
+      ],
+      "detail": "Tramo corto hacia Universal City. Desde aquí ya se entra al ambiente de USJ.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Nishikujo Station, Osaka, Japan",
+        "destination": "Universal City Station, Osaka, Japan",
+        "note": "JR Yumesaki Line desde Nishikujo hasta Universal City.",
+        "fixedDuration": "6 min",
+        "fixedDistance": "JR Yumesaki",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo ferroviario fijo: JR Yumesaki Line desde Nishikujo hasta Universal City.",
+        "mapsQuery": "Nishikujo Station to Universal City Station JR Yumesaki Line"
+      }
+    },
+    {
+      "time": "7:41 am",
+      "duration": "8-9 min",
+      "title": "Caminata Universal City → USJ",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Universal City Station.",
+        "Caminar por Universal CityWalk.",
+        "Seguir flujo hacia entrada principal.",
+        "No detenerse demasiado en tiendas de CityWalk en la mañana.",
+        "Llegar a fila de acceso entre 7:50 y 8:10 am."
+      ],
+      "detail": "Universal CityWalk es parte de la llegada. Buen momento para ubicarse sin detenerse demasiado.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Universal City Station, Osaka, Japan",
+        "destination": "Universal Studios Japan entrance, Osaka, Japan",
+        "note": "Caminata desde Universal City Station hasta la entrada del parque.",
+        "mapsQuery": "Universal City Station to Universal Studios Japan entrance"
+      }
+    },
+    {
+      "time": "8:00 am",
+      "duration": "8:00 - 8:20 am",
+      "title": "Ingreso al parque",
+      "icon": "confirmation_number",
+      "tone": "arrival",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar: Universal Studios Japan.",
+        "Hacer fila de acceso.",
+        "Tener QR o entrada lista.",
+        "Tener Express Pass listo si lo compran.",
+        "Entrar directo con prioridades claras.",
+        "Entrada USJ 2 personas: $150 - $220."
+      ],
+      "detail": "Al entrar, enfocarse en llegar a Super Nintendo World según acceso disponible y condiciones del día.",
+      "location": {
+        "name": "Universal Studios Japan",
+        "mapsQuery": "Universal Studios Japan Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "8:20 am",
+      "duration": "8:20 - 10:15 am",
+      "title": "Super Nintendo World",
+      "icon": "sports_esports",
+      "tone": "night",
+      "items": [
+        "Prioridad alta del día.",
+        "Mario Kart.",
+        "Yoshi's Adventure.",
+        "Fotos en el castillo.",
+        "Tiendas Mario.",
+        "Revisar si necesitan área timed entry según operación del parque."
+      ],
+      "detail": "Bloque de prioridad alta. Hacer fotos y tiendas sin sacrificar demasiado tiempo de atracciones.",
+      "location": {
+        "name": "Super Nintendo World - Universal Studios Japan",
+        "mapsQuery": "Super Nintendo World Universal Studios Japan"
+      },
+      "showMap": false
+    },
+    {
+      "time": "10:15 am",
+      "duration": "10:15 - 10:30 am",
+      "title": "Traslado interno Nintendo → Harry Potter",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Super Nintendo World.",
+        "Caminar hacia The Wizarding World of Harry Potter.",
+        "Revisar mapa del parque para evitar rodeos.",
+        "Aprovechar para tomar agua en el camino."
+      ],
+      "detail": "Este traslado interno ayuda a ordenar el parque como ruta, no como bloques aislados.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Super Nintendo World, Universal Studios Japan, Osaka, Japan",
+        "destination": "The Wizarding World of Harry Potter, Universal Studios Japan, Osaka, Japan",
+        "note": "Caminata interna dentro de USJ desde Super Nintendo World hacia Harry Potter.",
+        "mapsQuery": "Super Nintendo World USJ to The Wizarding World of Harry Potter USJ"
+      }
+    },
+    {
+      "time": "10:30 am",
+      "duration": "10:30 am - 12:00 pm",
+      "title": "Harry Potter",
+      "icon": "auto_fix_high",
+      "tone": "night",
+      "items": [
+        "Forbidden Journey.",
+        "Flight of the Hippogriff.",
+        "Ollivanders.",
+        "Fotos en Hogsmeade.",
+        "Butterbeer si quieren pausa corta."
+      ],
+      "detail": "Segundo bloque fuerte del día. Mantener margen por filas y moverse con calma entre zonas.",
+      "location": {
+        "name": "The Wizarding World of Harry Potter - USJ",
+        "mapsQuery": "The Wizarding World of Harry Potter Universal Studios Japan"
+      },
+      "showMap": false
+    },
+    {
+      "time": "12:00 pm",
+      "duration": "12:00 - 12:15 pm",
+      "title": "Traslado interno hacia almuerzo",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de la zona de Harry Potter.",
+        "Revisar cuál restaurante tiene mejor fila.",
+        "Elegir entre Kinopio's Café, Three Broomsticks o Mel's Drive-In según ubicación y espera.",
+        "Evitar esperar a estar agotados."
+      ],
+      "detail": "Este mini bloque permite decidir el almuerzo por ubicación real y no caminar de más.",
+      "showMap": false
+    },
+    {
+      "time": "12:15 pm",
+      "duration": "12:15 - 1:15 pm",
+      "title": "Almuerzo",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Kinopio's Café.",
+        "Three Broomsticks.",
+        "Mel's Drive-In.",
+        "Elegir según filas y ubicación.",
+        "Almuerzo 2 personas: $35 - $60."
+      ],
+      "detail": "No esperar a estar agotados para comer. Elegir la opción con mejor balance entre antojo y tiempo de fila.",
+      "location": {
+        "name": "Universal Studios Japan restaurants",
+        "mapsQuery": "Universal Studios Japan restaurants Kinopio Cafe Three Broomsticks"
+      },
+      "showMap": false
+    },
+    {
+      "time": "1:15 pm",
+      "duration": "1:15 - 1:30 pm",
+      "title": "Reorganizar ruta de la tarde",
+      "icon": "map",
+      "tone": "rest",
+      "items": [
+        "Revisar tiempos de espera en la app de USJ.",
+        "Definir prioridades de la tarde.",
+        "Ir al baño y rellenar agua.",
+        "Acomodar compras si ya compraron algo."
+      ],
+      "detail": "Después del almuerzo, el parque se decide por tiempos de espera reales. Este bloque evita caminar sin rumbo.",
+      "showMap": false
+    },
+    {
+      "time": "1:30 pm",
+      "duration": "1:30 - 5:30 pm",
+      "title": "Atracciones de la tarde",
+      "icon": "attractions",
+      "tone": "night",
+      "items": [
+        "Flying Dinosaur.",
+        "Jurassic Park.",
+        "Spider-Man.",
+        "Minion Mayhem.",
+        "JAWS.",
+        "Hollywood Dream.",
+        "Priorizar según tiempos de espera y Express Pass."
+      ],
+      "detail": "Bloque flexible para ir tachando prioridades según tiempos de espera reales, pero dentro de una ruta clara para no desperdiciar energía.",
+      "location": {
+        "name": "Universal Studios Japan attractions",
+        "mapsQuery": "Universal Studios Japan Flying Dinosaur Jurassic Park JAWS Hollywood Dream"
+      },
+      "showMap": false
+    },
+    {
+      "time": "5:30 pm",
+      "duration": "5:30 - 6:00 pm",
+      "title": "Tiendas y souvenirs",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "items": [
+        "Comprar recuerdos principales.",
+        "Revisar snacks, ropa o artículos de temporada.",
+        "Evitar cargar demasiado antes de Halloween.",
+        "Guardar recibos y acomodar bolsas.",
+        "Compras opcionales: $30 - $120."
+      ],
+      "detail": "Buen bloque para compras antes de que la noche se ponga más llena.",
+      "location": {
+        "name": "Universal Studios Japan shops",
+        "mapsQuery": "Universal Studios Japan shops souvenirs"
+      },
+      "showMap": false
+    },
+    {
+      "time": "6:00 pm",
+      "duration": "6:00 - 8:30 pm",
+      "title": "Halloween Horror Nights",
+      "icon": "skull",
+      "tone": "night",
+      "items": [
+        "Calles temáticas.",
+        "Shows especiales.",
+        "Ambientación de temporada.",
+        "Mantener puntos de encuentro definidos.",
+        "Evitar separarse si hay mucha gente.",
+        "Revisar horarios oficiales del evento en la app o mapa del parque ese día."
+      ],
+      "detail": "Bloque especial de temporada. La operación puede variar, así que conviene confirmarlo en la app de USJ al entrar al parque.",
+      "location": {
+        "name": "Halloween Horror Nights - Universal Studios Japan",
+        "mapsQuery": "Halloween Horror Nights Universal Studios Japan"
+      },
+      "showMap": false
+    },
+    {
+      "time": "8:30 pm",
+      "duration": "8:30 - 9:15 pm",
+      "title": "Cena",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cena dentro del parque o en CityWalk.",
+        "Elegir algo práctico antes del regreso.",
+        "Comprar agua para el regreso.",
+        "Cena 2 personas: $30 - $55."
+      ],
+      "detail": "Cena sencilla para cerrar el parque sin extender demasiado la noche.",
+      "location": {
+        "name": "Universal CityWalk Osaka / USJ restaurants",
+        "mapsQuery": "Universal CityWalk Osaka restaurants"
+      },
+      "showMap": false
+    },
+    {
+      "time": "9:15 pm",
+      "duration": "9:15 - 9:20 pm",
+      "title": "Caminata USJ → Universal City Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del parque hacia Universal City Station.",
+        "Seguir flujo por Universal CityWalk.",
+        "Tener Suica/ICOCA lista.",
+        "Mantener bolsas y compras juntas."
+      ],
+      "detail": "Después del parque suele haber bastante gente, así que conviene salir con calma pero sin detenerse demasiado.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Universal Studios Japan exit, Osaka, Japan",
+        "destination": "Universal City Station, Osaka, Japan",
+        "note": "Caminata desde la salida de USJ hasta Universal City Station.",
+        "mapsQuery": "Universal Studios Japan exit to Universal City Station"
+      }
+    },
+    {
+      "time": "9:20 pm",
+      "duration": "6 min",
+      "title": "Regreso tramo 1: Universal City → Nishikujo",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Línea: JR Yumesaki.",
+        "Duración estimada: 6 minutos.",
+        "Costo visible en el recorrido.",
+        "Confirmar andén hacia Nishikujo."
+      ],
+      "detail": "Primer tramo del regreso. Confirmar andén hacia Nishikujo y seguir el flujo de salida del parque.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Universal City Station, Osaka, Japan",
+        "destination": "Nishikujo Station, Osaka, Japan",
+        "note": "JR Yumesaki Line de regreso desde Universal City hasta Nishikujo.",
+        "fixedDuration": "6 min",
+        "fixedDistance": "JR Yumesaki",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo ferroviario fijo: JR Yumesaki Line desde Universal City hasta Nishikujo.",
+        "mapsQuery": "Universal City Station to Nishikujo Station JR Yumesaki Line"
+      }
+    },
+    {
+      "time": "9:26 pm",
+      "duration": "9:26 - 9:35 pm",
+      "title": "Transbordo en Nishikujo",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Nishikujo.",
+        "Buscar Hanshin-Namba Line hacia Osaka-Namba.",
+        "Caminar internamente al andén correcto.",
+        "Mantener compras juntas y no separarse."
+      ],
+      "detail": "Segundo transbordo del día. Conviene seguir señales hacia Osaka-Namba / Namba.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Nishikujo Station JR platform, Osaka, Japan",
+        "destination": "Hanshin-Namba Line platform Nishikujo Station, Osaka, Japan",
+        "note": "Transbordo interno en Nishikujo para tomar Hanshin-Namba Line hacia Namba.",
+        "mapsQuery": "Nishikujo Station JR Yumesaki Line to Hanshin Namba Line transfer"
+      }
+    },
+    {
+      "time": "9:35 pm",
+      "duration": "12 min",
+      "title": "Regreso tramo 2: Nishikujo → Namba",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Línea: Hanshin-Namba.",
+        "Duración estimada: 12 minutos.",
+        "Costo visible en el recorrido.",
+        "Bajarse en Osaka-Namba / Namba."
+      ],
+      "detail": "Segundo tramo del regreso hacia Namba.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Nishikujo Station, Osaka, Japan",
+        "destination": "Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan",
+        "note": "Hanshin-Namba Line de regreso desde Nishikujo hasta Osaka-Namba.",
+        "fixedDuration": "12 min",
+        "fixedDistance": "Hanshin-Namba",
+        "fareEstimateJpy": 220,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo ferroviario fijo: Hanshin-Namba Line desde Nishikujo hasta Osaka-Namba.",
+        "mapsQuery": "Nishikujo Station to Osaka-Namba Station Hanshin Namba Line"
+      }
+    },
+    {
+      "time": "9:50 pm",
+      "duration": "5-7 min",
+      "title": "Caminata Namba → Cross Hotel",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Namba por una ruta cómoda.",
+        "Caminar desde Namba hasta Cross Hotel Osaka.",
+        "Llegada estimada al hotel: 10:00 pm.",
+        "Descansar para el día siguiente."
+      ],
+      "detail": "Último tramo del día. Salir por una ruta cómoda, iluminada y evitando vueltas innecesarias.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan",
+        "destination": "Cross Hotel Osaka, Osaka, Japan",
+        "note": "Caminata final desde Osaka-Namba hasta Cross Hotel Osaka.",
+        "mapsQuery": "Namba Station Osaka to Cross Hotel Osaka"
+      }
+    },
+    {
+      "time": "10:00 pm",
+      "duration": "cierre",
+      "title": "Llegada al hotel y recuperación",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Dejar compras y ropa ordenadas.",
+        "Cargar celulares y power bank.",
+        "Tomar agua.",
+        "Revisar brevemente el plan del Día 3.",
+        "Dormir lo antes posible."
+      ],
+      "detail": "Cierre de día pesado. La prioridad es recuperarse para el día siguiente.",
+      "showMap": false
+    }
+  ],
+  "note": "Meta del día: llegar temprano, priorizar Nintendo y Harry Potter, disfrutar Halloween Horror Nights y volver al hotel con margen para recuperarse."
+}

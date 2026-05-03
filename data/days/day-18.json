@@ -1,0 +1,147 @@
+{
+  "title": "Día 18 - Regreso",
+  "subtitle": "Sábado 24 de octubre - Tokyo → Narita → vuelo a Costa Rica",
+  "dateLabel": "Sábado 24 de octubre de 2026",
+  "shortDateLabel": "Sáb 24 oct",
+  "status": "Regreso",
+  "costEstimateUsd": {
+    "low": 60,
+    "high": 120,
+    "note": "transporte, desayuno y snacks; sin vuelo"
+  },
+  "route": [
+    "Hotel Asakusa",
+    "Narita Airport",
+    "Vuelo internacional"
+  ],
+  "blocks": [
+    {
+      "time": "6:00 am",
+      "duration": "inicio",
+      "title": "Despertar temprano",
+      "icon": "alarm",
+      "tone": "rest",
+      "items": [
+        "Último día del viaje.",
+        "Revisar documentos.",
+        "Verificar maletas y equipaje de mano."
+      ],
+      "detail": "Es clave no salir con prisa ni olvidar nada importante.",
+      "showMap": false
+    },
+    {
+      "time": "6:15 am",
+      "duration": "6:15 - 6:45 am",
+      "title": "Preparación final",
+      "icon": "luggage",
+      "tone": "hotel",
+      "items": [
+        "Revisar habitación completa.",
+        "Cerrar maletas.",
+        "Confirmar pasaportes y boarding pass.",
+        "Dejar todo listo para salida."
+      ],
+      "showMap": false
+    },
+    {
+      "time": "6:45 am",
+      "duration": "6:45 - 7:15 am",
+      "title": "Check-out",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Hacer check-out del hotel.",
+        "Confirmar transporte.",
+        "Salir con tiempo."
+      ],
+      "showMap": false
+    },
+    {
+      "time": "7:15 am",
+      "duration": "60-90 min",
+      "title": "Asakusa → Narita Airport",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Opciones:",
+        "→ Keisei Access Express (directo recomendado)",
+        "→ Skyliner (más rápido con transbordo)",
+        "Duración: 60-90 min",
+        "Costo: $12 - $25"
+      ],
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Asakusa Station, Tokyo, Japan",
+        "destination": "Narita International Airport, Japan",
+        "note": "Ruta recomendada: Keisei Access Express directo desde Asakusa a Narita."
+      }
+    },
+    {
+      "time": "8:45 am",
+      "duration": "8:45 - 9:30 am",
+      "title": "Llegada al aeropuerto",
+      "icon": "flight",
+      "tone": "arrival",
+      "items": [
+        "Ubicar terminal.",
+        "Ir a check-in.",
+        "Entregar equipaje."
+      ],
+      "detail": "Llegar mínimo 2.5 - 3 horas antes del vuelo internacional.",
+      "showMap": false
+    },
+    {
+      "time": "9:30 am",
+      "duration": "9:30 - 10:15 am",
+      "title": "Migración y seguridad",
+      "icon": "security",
+      "tone": "arrival",
+      "items": [
+        "Control de seguridad.",
+        "Migración.",
+        "Ingreso a zona internacional."
+      ],
+      "showMap": false
+    },
+    {
+      "time": "10:15 am",
+      "duration": "10:15 - 11:30 am",
+      "title": "Tiempo libre en Narita",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "items": [
+        "Compras finales.",
+        "Snacks japoneses.",
+        "Tiendas duty free.",
+        "$20 - $50."
+      ],
+      "detail": "Última oportunidad para comprar cosas pequeñas.",
+      "showMap": false
+    },
+    {
+      "time": "11:30 am",
+      "duration": "11:30 - 12:00 pm",
+      "title": "Ir al gate",
+      "icon": "flight_takeoff",
+      "tone": "travel",
+      "items": [
+        "Ubicar puerta.",
+        "Preparar boarding.",
+        "Esperar abordaje."
+      ],
+      "showMap": false
+    },
+    {
+      "time": "12:00 pm",
+      "duration": "vuelo",
+      "title": "Vuelo de regreso",
+      "icon": "flight",
+      "tone": "travel",
+      "items": [
+        "Salida desde Narita.",
+        "Inicio regreso a Costa Rica."
+      ]
+    }
+  ],
+  "note": "Meta del día: salir sin estrés, llegar con tiempo al aeropuerto y cerrar el viaje de forma ordenada."
+}
