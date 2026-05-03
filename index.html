@@ -5641,11 +5641,16 @@
       routeDuration.textContent = "Calculando...";
       routeDistance.textContent = "--";
       routeCost.textContent = "Consultando...";
-      routeMode.textContent = travelModes[route.mode] || "Ruta";
+      routeMode.textContent = routeModeLabel(route);
       routeOrigin.textContent = route.origin;
       routeDestination.textContent = route.destination;
       routeStatus.textContent = "Consultando Google Maps con la hora actual.";
       mapCanvas.innerHTML = '<div class="loading-map">Cargando mapa y recorrido...</div>';
+    }
+
+    function routeModeLabel(route) {
+      if (route.mode === "transit" && route.transitModes?.includes("SUBWAY")) return "Metro";
+      return travelModes[route.mode] || "Ruta";
     }
 
     async function openRouteModal(block) {
@@ -5787,9 +5792,20 @@
       }
 
       if (route.mode === "transit") {
+        const defaultTransitModes = [
+          google.maps.TransitMode.SUBWAY,
+          google.maps.TransitMode.RAIL,
+          google.maps.TransitMode.TRAIN,
+          google.maps.TransitMode.BUS
+        ];
+        const configuredTransitModes = Array.isArray(route.transitModes)
+          ? route.transitModes
+              .map(mode => google.maps.TransitMode[String(mode).toUpperCase()])
+              .filter(Boolean)
+          : [];
         request.transitOptions = {
           departureTime: new Date(),
-          modes: [google.maps.TransitMode.RAIL, google.maps.TransitMode.TRAIN, google.maps.TransitMode.BUS]
+          modes: configuredTransitModes.length ? configuredTransitModes : defaultTransitModes
         };
       }
 

@@ -202,7 +202,7 @@
         "origin": "Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan",
         "destination": "Cross Hotel Osaka, 2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, Japan",
         "note": "Caminata desde Namba Station hasta Cross Hotel Osaka.",
-        "mapsQuery": "Namba Station Osaka to Cross Hotel Osaka walking"
+        "mapsQuery": "Namba Station Osaka to Cross Hotel Osaka"
       }
     },
     {
@@ -236,65 +236,62 @@
         "Tener Suica/ICOCA lista para entrar al metro.",
         "Costo: $0."
       ],
-      "detail": "Primer tramo para moverse hacia Shinsekai. Se separa la caminata al metro del tramo real en tren para que Maps no lo mezcle como una caminata completa.",
+      "detail": "Primer tramo para moverse hacia Shinsekai. Es mejor ir en transporte público o taxi corto porque ya vienen cansados del viaje.",
       "routeInfo": {
         "mode": "walking",
         "origin": "Cross Hotel Osaka, Osaka, Japan",
-        "destination": "Namba Station Midosuji Line, Osaka, Japan",
-        "note": "Caminata desde Cross Hotel Osaka hasta la entrada de Namba Station / Osaka Metro Midosuji Line.",
-        "fixedDuration": "8-12 min",
-        "mapsQuery": "Cross Hotel Osaka to Namba Station Midosuji Line Osaka walking"
+        "destination": "Namba Station, Osaka, Japan",
+        "note": "Caminata desde Cross Hotel Osaka hasta Namba Station.",
+        "mapsQuery": "Cross Hotel Osaka to Namba Station Osaka"
       }
     },
     {
       "time": "5:15 pm",
-      "duration": "5:15 - 5:22 pm",
-      "title": "Metro: Namba → Dobutsuen-mae",
+      "duration": "5:15 - 5:25 pm",
+      "title": "Metro: Namba → Dobutsuen-mae / Ebisucho",
       "icon": "subway",
       "tone": "travel",
       "items": [
-        "Entrar a Osaka Metro por Namba Station.",
-        "Tomar Osaka Metro Midosuji Line, línea roja.",
-        "Dirección: Nakamozu.",
-        "Bajarse en Dobutsuen-mae Station.",
-        "Son aproximadamente 2 estaciones: Namba → Daikokucho → Dobutsuen-mae.",
-        "Costo estimado 2 personas: ¥480 aprox."
+        "Moverse desde Namba hacia la zona de Shinsekai.",
+        "Opción recomendada: Osaka Metro hacia Dobutsuen-mae o Ebisucho, según la ruta que muestre Maps.",
+        "Bajarse y seguir señales hacia Shinsekai / Tsutenkaku.",
+        "Costo estimado 2 personas: $3 - $6."
       ],
-      "detail": "Este traslado debe hacerse en metro, no caminando. Dobutsuen-mae es una estación práctica para entrar a Shinsekai por la zona de Tsutenkaku.",
+      "detail": "Este traslado evita caminar demasiado después del viaje. La meta es llegar a Shinsekai rápido y todavía con luz de tarde/noche.",
       "routeInfo": {
         "mode": "transit",
         "origin": "Namba Station Midosuji Line, Osaka, Japan",
-        "destination": "Dobutsuen-mae Station, Osaka, Japan",
-        "note": "Osaka Metro Midosuji Line desde Namba hasta Dobutsuen-mae.",
-        "fixedDuration": "4-7 min",
+        "destination": "Dobutsuen-mae Station Midosuji Line, Osaka, Japan",
+        "note": "Osaka Metro Midosuji Line desde Namba hasta Dobutsuen-mae. También puede usarse Ebisucho Station según la ruta más conveniente.",
+        "mapsQuery": "Namba Station Midosuji Line to Dobutsuen-mae Station Midosuji Line Osaka",
+        "fixedDuration": "5-7 min",
         "fixedDistance": "Osaka Metro Midosuji Line",
         "fareEstimateJpy": 240,
         "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Osaka Metro Midosuji Line: Namba → Daikokucho → Dobutsuen-mae.",
-        "mapsQuery": "Namba Station Midosuji Line Osaka to Dobutsuen-mae Station Osaka Metro Midosuji Line"
+        "transitModes": [
+          "SUBWAY"
+        ]
       }
     },
     {
-      "time": "5:22 pm",
-      "duration": "5:22 - 5:35 pm",
-      "title": "Caminata Dobutsuen-mae → Shinsekai / Tsutenkaku",
+      "time": "5:25 pm",
+      "duration": "5:25 - 5:35 pm",
+      "title": "Caminata estación → Shinsekai / Tsutenkaku",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir de Dobutsuen-mae Station.",
-        "Caminar hacia Shinsekai y Tsutenkaku.",
-        "Seguir señales hacia Tsutenkaku.",
+        "Salir de Dobutsuen-mae o Ebisucho hacia Shinsekai.",
+        "Seguir hacia la zona de Tsutenkaku.",
         "Ubicarse visualmente en la calle principal de Shinsekai.",
         "Costo: $0."
       ],
-      "detail": "Este tramo sí es caminando porque ya están en la zona de Shinsekai. La caminata final conecta la estación con el área visual de Tsutenkaku.",
+      "detail": "Este tramo es corto y sirve para entrar directamente al ambiente retro de Shinsekai.",
       "routeInfo": {
         "mode": "walking",
         "origin": "Dobutsuen-mae Station, Osaka, Japan",
         "destination": "Tsutenkaku, Osaka, Japan",
-        "note": "Caminata desde Dobutsuen-mae Station hacia Tsutenkaku y Shinsekai.",
-        "fixedDuration": "8-12 min",
-        "mapsQuery": "Dobutsuen-mae Station Osaka to Tsutenkaku Osaka walking"
+        "note": "Caminata desde la estación hacia Shinsekai y Tsutenkaku.",
+        "mapsQuery": "Dobutsuen-mae Station to Tsutenkaku Osaka"
       }
     },
     {
@@ -336,7 +333,7 @@
         "origin": "Tsutenkaku, Osaka, Japan",
         "destination": "Magic Cafe & Bar SHINSEKAI, Osaka, Japan",
         "note": "Caminata corta dentro de Shinsekai hacia Magic Cafe & Bar.",
-        "mapsQuery": "Tsutenkaku to Magic Cafe & Bar SHINSEKAI Osaka walking"
+        "mapsQuery": "Tsutenkaku to Magic Cafe & Bar SHINSEKAI Osaka"
       }
     },
     {
@@ -364,56 +361,55 @@
     {
       "time": "7:15 pm",
       "duration": "7:15 - 7:25 pm",
-      "title": "Caminata Magic Cafe → Dobutsuen-mae Station",
+      "title": "Caminata Magic Cafe → estación",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
         "Salir de Magic Cafe & Bar Shinsekai.",
-        "Caminar hacia Dobutsuen-mae Station.",
-        "Preparar Suica/ICOCA antes de entrar.",
+        "Caminar hacia Dobutsuen-mae o Ebisucho Station.",
+        "Preparar Suica/ICOCA.",
         "Costo: $0."
       ],
-      "detail": "Este tramo conecta Magic Cafe & Bar Shinsekai con la estación para volver en metro hacia Namba.",
+      "detail": "Este tramo conecta Shinsekai con el regreso a la zona de Namba/Dotonbori.",
       "routeInfo": {
         "mode": "walking",
         "origin": "Magic Cafe & Bar SHINSEKAI, Osaka, Japan",
         "destination": "Dobutsuen-mae Station, Osaka, Japan",
-        "note": "Caminata desde Magic Cafe & Bar Shinsekai hacia Dobutsuen-mae Station.",
-        "fixedDuration": "7-10 min",
-        "mapsQuery": "Magic Cafe & Bar SHINSEKAI Osaka to Dobutsuen-mae Station Osaka walking"
+        "note": "Caminata desde Magic Cafe & Bar hacia la estación más conveniente.",
+        "mapsQuery": "Magic Cafe & Bar SHINSEKAI to Dobutsuen-mae Station Osaka"
       }
     },
     {
       "time": "7:25 pm",
-      "duration": "7:25 - 7:32 pm",
-      "title": "Metro: Dobutsuen-mae → Namba",
+      "duration": "7:25 - 7:40 pm",
+      "title": "Metro: Shinsekai → Namba / Dotonbori",
       "icon": "subway",
       "tone": "travel",
       "items": [
-        "Entrar a Osaka Metro por Dobutsuen-mae Station.",
-        "Tomar Osaka Metro Midosuji Line, línea roja.",
-        "Dirección: Senri-Chuo / Esaka.",
-        "Bajarse en Namba Station.",
-        "Son aproximadamente 2 estaciones: Dobutsuen-mae → Daikokucho → Namba.",
-        "Costo estimado 2 personas: ¥480 aprox."
+        "Moverse desde Shinsekai hacia Namba.",
+        "Bajarse en Namba para entrar caminando a Dotonbori.",
+        "Costo estimado 2 personas: $3 - $6.",
+        "Llegar directo a zona del canal y Glico."
       ],
-      "detail": "Este regreso debe marcarse como metro, no como caminata. Usar estaciones exactas evita que Maps lo interprete como recorrido a pie por barrios.",
+      "detail": "La noche principal se mantiene en Dotonbori, como en el plan original, pero ahora con Shinsekai agregado antes.",
       "routeInfo": {
         "mode": "transit",
-        "origin": "Dobutsuen-mae Station, Osaka, Japan",
+        "origin": "Dobutsuen-mae Station Midosuji Line, Osaka, Japan",
         "destination": "Namba Station Midosuji Line, Osaka, Japan",
-        "note": "Osaka Metro Midosuji Line desde Dobutsuen-mae hasta Namba.",
-        "fixedDuration": "4-7 min",
+        "note": "Osaka Metro Midosuji Line desde Dobutsuen-mae hasta Namba para caminar a Dotonbori.",
+        "mapsQuery": "Dobutsuen-mae Station Midosuji Line to Namba Station Midosuji Line Osaka",
+        "fixedDuration": "5-7 min",
         "fixedDistance": "Osaka Metro Midosuji Line",
         "fareEstimateJpy": 240,
         "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Osaka Metro Midosuji Line: Dobutsuen-mae → Daikokucho → Namba.",
-        "mapsQuery": "Dobutsuen-mae Station Osaka to Namba Station Midosuji Line Osaka Metro Midosuji Line"
+        "transitModes": [
+          "SUBWAY"
+        ]
       }
     },
     {
-      "time": "7:32 pm",
-      "duration": "7:32 - 7:50 pm",
+      "time": "7:40 pm",
+      "duration": "7:40 - 7:50 pm",
       "title": "Caminata Namba → Dotonbori",
       "icon": "directions_walk",
       "tone": "travel",
@@ -423,14 +419,13 @@
         "Entrar por zona iluminada y principal.",
         "Costo: $0."
       ],
-      "detail": "Este tramo sí es caminando. Primero se vuelve en metro a Namba y después se camina a Dotonbori.",
+      "detail": "Este tramo marca la entrada a la primera noche icónica de Osaka.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Namba Station Midosuji Line, Osaka, Japan",
+        "origin": "Namba Station, Osaka, Japan",
         "destination": "Dotonbori Glico Sign, Osaka, Japan",
         "note": "Caminata desde Namba Station hacia Dotonbori y el Glico.",
-        "fixedDuration": "8-12 min",
-        "mapsQuery": "Namba Station Midosuji Line Osaka to Dotonbori Glico Sign walking"
+        "mapsQuery": "Namba Station Osaka to Dotonbori Glico Sign"
       }
     },
     {
@@ -457,7 +452,7 @@
         "origin": "Dotonbori Glico Sign, Osaka, Japan",
         "destination": "Ramen Hayashida Dotonbori store, Osaka, Japan",
         "note": "Caminata corta dentro de Dotonbori hacia Ramen Hayashida.",
-        "mapsQuery": "Dotonbori Glico Sign to Ramen Hayashida Dotonbori store Osaka walking"
+        "mapsQuery": "Dotonbori Glico Sign to Ramen Hayashida Dotonbori store Osaka"
       }
     },
     {
@@ -478,7 +473,7 @@
         "origin": "Ramen Hayashida Dotonbori store, Osaka, Japan",
         "destination": "Ebisu Bridge, Dotonbori, Osaka, Japan",
         "note": "Paseo caminando por Dotonbori y zona del Glico.",
-        "mapsQuery": "Ramen Hayashida Dotonbori store to Ebisu Bridge Dotonbori Osaka walking"
+        "mapsQuery": "Ramen Hayashida Dotonbori store to Ebisu Bridge Dotonbori Osaka"
       }
     },
     {
@@ -499,7 +494,7 @@
         "origin": "Dotonbori, Osaka, Japan",
         "destination": "Men joy Life, Osaka, Japan",
         "note": "Caminata desde Dotonbori/Shinsaibashi hacia Men joy Life.",
-        "mapsQuery": "Dotonbori to Men joy Life Osaka walking"
+        "mapsQuery": "Dotonbori to Men joy Life Osaka"
       }
     },
     {
@@ -540,7 +535,7 @@
         "origin": "Men joy Life, Osaka, Japan",
         "destination": "Cross Hotel Osaka, Osaka, Japan",
         "note": "Regreso caminando desde Men joy Life al Cross Hotel Osaka.",
-        "mapsQuery": "Men joy Life Osaka to Cross Hotel Osaka walking"
+        "mapsQuery": "Men joy Life Osaka to Cross Hotel Osaka"
       }
     }
   ],
