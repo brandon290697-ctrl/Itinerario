@@ -67,26 +67,31 @@
       "time": "7:00 am",
       "duration": "8-12 min",
       "title": "Hotel → Kyoto Station",
-      "icon": "local_taxi",
+      "icon": "train",
       "tone": "travel",
       "items": [
-        "Tomar taxi corto desde el hotel hacia Kyoto Station.",
+        "Caminar desde el hotel hacia Gojo Station.",
+        "Tomar Kyoto Subway Karasuma Line desde Gojo Station hasta Kyoto Station.",
         "Llegar con margen para comprar snacks/bento si hace falta.",
-        "Evitar caminar con maletas.",
-        "Presupuesto 2 personas: $8 - $15."
+        "Presupuesto 2 personas: $3 - $5."
       ],
-      "detail": "Desde Gojo Karasuma a Kyoto Station conviene taxi corto por comodidad con maletas.",
+      "detail": "Desde Gojo Karasuma conviene caminar a Gojo Station y tomar Karasuma Line directo a Kyoto Station.",
       "routeInfo": {
-        "mode": "local_taxi",
+        "mode": "transit",
         "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
         "destination": "Kyoto Station, Kyoto, Japan",
-        "note": "Taxi corto desde Henn na Hotel Premier Kyoto Gojo Karasuma hacia Kyoto Station.",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan to Kyoto Station",
+        "note": "Caminata corta a Gojo Station y Kyoto Subway Karasuma Line hacia Kyoto Station.",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan to Kyoto Station by train",
         "fixedDuration": "8-12 min",
-        "fixedDistance": "Taxi corto",
-        "fareEstimateJpy": 1200,
-        "fareEstimateLabel": "aprox. por taxi",
-        "fallbackMessage": "Tiempo estimado para taxi corto desde Henn na Hotel Premier Kyoto Gojo Karasuma hasta Kyoto Station."
+        "fixedDistance": "Caminata corta + Kyoto Subway Karasuma Line",
+        "fareEstimateJpy": 220,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Estimado fijo: caminata corta a Gojo Station y Karasuma Line hasta Kyoto Station.",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
       },
       "marPick": false
     },

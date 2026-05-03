@@ -7,7 +7,7 @@
   "costEstimateUsd": {
     "low": 210,
     "high": 340,
-    "note": "templos, taxi, comidas, matcha, snacks, Nishiki y compras tradicionales"
+    "note": "templos, transporte público, comidas, matcha, snacks, Nishiki y compras tradicionales"
   },
   "route": [
     "Hotel",
@@ -71,21 +71,33 @@
     {
       "time": "8:45 am",
       "duration": "15-25 min",
-      "title": "Hotel → Kiyomizu-dera",
-      "icon": "local_taxi",
+      "title": "Transporte público: hotel hacia Kiyomizu-dera",
+      "icon": "train",
       "tone": "travel",
       "items": [
-        "Tomar taxi hacia Kiyomizu-dera.",
-        "Recomendado para evitar la subida pesada.",
-        "Costo estimado 2 personas: $10 - $20."
+        "Salir desde Gojo Karasuma usando transporte público.",
+        "Ruta recomendada: subway/tren local y caminata final hacia Kiyomizu-dera segun indique Maps.",
+        "Salir con margen porque la zona de Kiyomizu implica subida y caminata.",
+        "Presupuesto 2 personas: $5 - $10."
       ],
-      "detail": "Este taxi vale la pena porque ahorra cansancio desde temprano.",
+      "detail": "Usar transporte público hasta la zona de Higashiyama/Kiyomizu y reservar energía para caminar la subida final.",
       "routeInfo": {
-        "mode": "driving",
+        "mode": "transit",
         "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
         "destination": "Kiyomizu-dera, Kyoto, Japan",
-        "note": "Taxi recomendado desde el hotel hasta la zona de Kiyomizu-dera.",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma to Kiyomizu-dera"
+        "note": "Transporte público desde Gojo Karasuma hacia la zona de Kiyomizu-dera y caminata final.",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan to Kiyomizu-dera by train",
+        "fixedDuration": "25-35 min",
+        "fixedDistance": "Transporte público + caminata final",
+        "fareEstimateJpy": 230,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Estimado fijo: transporte público hacia Higashiyama/Kiyomizu y caminata final al templo.",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN",
+          "BUS"
+        ]
       },
       "marPick": false
     },
@@ -383,7 +395,7 @@
       "icon": "bedtime",
       "tone": "rest",
       "items": [
-        "Volver caminando o en taxi corto.",
+        "Volver caminando o en transporte público si están cansados.",
         "Revisar planes del día siguiente.",
         "Cargar dispositivos."
       ],

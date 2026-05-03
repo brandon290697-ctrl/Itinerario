@@ -329,26 +329,31 @@
       "time": "4:40 pm",
       "duration": "8-12 min",
       "title": "Kyoto Station → Henn na Hotel Premier Kyoto Gojo Karasuma",
-      "icon": "local_taxi",
+      "icon": "train",
       "tone": "travel",
       "items": [
-        "Tomar taxi corto desde Kyoto Station hacia el hotel.",
-        "Ideal con maletas para no hacer transbordos ni caminar cargados.",
-        "Dejar maletas si todavía no hay check-in.",
-        "Presupuesto 2 personas: $8 - $15."
+        "Tomar Kyoto Subway Karasuma Line desde Kyoto Station hasta Gojo Station.",
+        "Caminar corto desde Gojo Station hacia el hotel.",
+        "Usar tren/subway con Suica/ICOCA.",
+        "Presupuesto 2 personas: $3 - $5."
       ],
-      "detail": "El hotel correcto está en Gojo Karasuma, bastante cerca de Kyoto Station. Con maletas conviene taxi corto.",
+      "detail": "El hotel est? en Gojo Karasuma, cerca de Kyoto Station. La ruta más práctica en transporte público es Karasuma Line hasta Gojo y caminata corta.",
       "routeInfo": {
-        "mode": "local_taxi",
+        "mode": "transit",
         "origin": "Kyoto Station, Kyoto, Japan",
         "destination": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
-        "note": "Taxi corto desde Kyoto Station hacia Henn na Hotel Premier Kyoto Gojo Karasuma.",
-        "mapsQuery": "Kyoto Station to Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
+        "note": "Kyoto Subway Karasuma Line desde Kyoto Station hasta Gojo Station y caminata corta al Henn na Hotel Premier Kyoto Gojo Karasuma.",
+        "mapsQuery": "Kyoto Station to Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan by train",
         "fixedDuration": "8-12 min",
-        "fixedDistance": "Taxi corto",
-        "fareEstimateJpy": 1200,
-        "fareEstimateLabel": "aprox. por taxi",
-        "fallbackMessage": "Tiempo estimado para taxi corto desde Kyoto Station hasta Henn na Hotel Premier Kyoto Gojo Karasuma."
+        "fixedDistance": "Kyoto Subway Karasuma Line + caminata corta",
+        "fareEstimateJpy": 220,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Estimado fijo: Kyoto Station a Gojo Station en Karasuma Line y caminata corta al hotel.",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
       },
       "marPick": false
     },

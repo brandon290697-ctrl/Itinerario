@@ -7,7 +7,7 @@
   "costEstimateUsd": {
     "low": 130,
     "high": 230,
-    "note": "traslado Osaka-Kyoto, comida, café/postre, snacks y primera tarde en Gion"
+    "note": "traslado Osaka-Kyoto, transporte público en Kyoto, comida, café/postre, snacks y primera tarde en Gion"
   },
   "route": [
     "Cross Hotel Osaka",
@@ -102,26 +102,31 @@
       "time": "12:00 pm",
       "duration": "8-12 min",
       "title": "Kyoto Station → Henn na Hotel Premier Kyoto Gojo Karasuma",
-      "icon": "local_taxi",
+      "icon": "train",
       "tone": "travel",
       "items": [
-        "Tomar taxi corto desde Kyoto Station hacia el hotel.",
-        "Ideal con maletas para no hacer transbordos ni caminar cargados.",
-        "Dejar maletas si todavía no hay check-in.",
-        "Presupuesto 2 personas: $8 - $15."
+        "Tomar Kyoto Subway Karasuma Line desde Kyoto Station hasta Gojo Station.",
+        "Caminar corto desde Gojo Station hacia el hotel.",
+        "Usar tren/subway con Suica/ICOCA.",
+        "Presupuesto 2 personas: $3 - $5."
       ],
-      "detail": "El hotel correcto está en Gojo Karasuma, bastante cerca de Kyoto Station. Con maletas conviene taxi corto.",
+      "detail": "El hotel est? en Gojo Karasuma, cerca de Kyoto Station. La ruta más práctica en transporte público es Karasuma Line hasta Gojo y caminata corta.",
       "routeInfo": {
-        "mode": "local_taxi",
+        "mode": "transit",
         "origin": "Kyoto Station, Kyoto, Japan",
         "destination": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
-        "note": "Taxi corto desde Kyoto Station hacia Henn na Hotel Premier Kyoto Gojo Karasuma.",
-        "mapsQuery": "Kyoto Station to Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
+        "note": "Kyoto Subway Karasuma Line desde Kyoto Station hasta Gojo Station y caminata corta al Henn na Hotel Premier Kyoto Gojo Karasuma.",
+        "mapsQuery": "Kyoto Station to Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan by train",
         "fixedDuration": "8-12 min",
-        "fixedDistance": "Taxi corto",
-        "fareEstimateJpy": 1200,
-        "fareEstimateLabel": "aprox. por taxi",
-        "fallbackMessage": "Tiempo estimado para taxi corto desde Kyoto Station hasta Henn na Hotel Premier Kyoto Gojo Karasuma."
+        "fixedDistance": "Kyoto Subway Karasuma Line + caminata corta",
+        "fareEstimateJpy": 220,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Estimado fijo: Kyoto Station a Gojo Station en Karasuma Line y caminata corta al hotel.",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
       },
       "marPick": false
     },
@@ -147,32 +152,37 @@
     {
       "time": "3:00 pm",
       "duration": "3:00 - 5:15 pm",
-      "title": "Paseo ligero por Gion",
-      "icon": "temple_buddhist",
+      "title": "Transporte público + paseo ligero por Gion",
+      "icon": "train",
       "tone": "night",
       "items": [
-        "Tomar taxi corto desde el hotel hacia Gion.",
-        "Primer contacto con Kyoto tradicional.",
-        "Caminar por calles bonitas y tranquilas ya estando en la zona.",
-        "Fotos, tiendas pequeñas y ambiente de tarde.",
-        "Taxi + extras/snacks 2 personas: $18 - $35."
+        "Caminar desde el hotel hacia Gojo Station.",
+        "Tomar Kyoto Subway Karasuma Line hacia Shijo Station.",
+        "Caminar desde Shijo/Kawaramachi hacia Gion.",
+        "Primer contacto con Kyoto tradicional: calles bonitas, tiendas pequeñas y fotos.",
+        "Transporte + extras/snacks 2 personas: $12 - $25."
       ],
-      "detail": "Conviene llegar a Gion en taxi para no gastar energía después del traslado desde Osaka. Una vez ahí, el paseo sí queda caminable y tranquilo.",
+      "detail": "Usar Karasuma Line hasta Shijo y caminar hacia Gion. Ya en Gion, el paseo queda tranquilo y caminable.",
       "location": {
         "name": "Gion",
         "mapsQuery": "Gion Kyoto"
       },
       "routeInfo": {
-        "mode": "local_taxi",
+        "mode": "transit",
         "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
         "destination": "Gion, Kyoto, Japan",
-        "note": "Taxi corto desde el hotel hacia Gion.",
-        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma to Gion Kyoto by taxi",
-        "fixedDuration": "10-15 min",
-        "fixedDistance": "Taxi corto",
-        "fareEstimateJpy": 1800,
-        "fareEstimateLabel": "aprox. por taxi",
-        "fallbackMessage": "Tiempo estimado para taxi corto desde el hotel hasta Gion."
+        "note": "Kyoto Subway Karasuma Line hacia Shijo/Kawaramachi y caminata hacia Gion.",
+        "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan to Gion Kyoto by train",
+        "fixedDuration": "20-25 min",
+        "fixedDistance": "Kyoto Subway Karasuma Line + caminata",
+        "fareEstimateJpy": 220,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Estimado fijo: Gojo Station a Shijo Station y caminata hacia Gion.",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
       },
       "marPick": false
     },
@@ -224,26 +234,32 @@
     {
       "time": "9:00 pm",
       "duration": "regreso",
-      "title": "Taxi de regreso al hotel",
-      "icon": "local_taxi",
+      "title": "Transporte público de regreso al hotel",
+      "icon": "train",
       "tone": "rest",
       "items": [
-        "Volver en taxi corto desde Gion al hotel.",
-        "Preparar ropa cómoda para el día siguiente.",
-        "Cargar celulares y revisar batería externa."
+        "Volver desde Gion hacia Shijo/Kawaramachi.",
+        "Tomar Kyoto Subway Karasuma Line hacia Gojo Station.",
+        "Caminar corto desde Gojo Station al hotel.",
+        "Preparar ropa cómoda para el día siguiente."
       ],
-      "detail": "Después de la primera tarde en Kyoto, taxi de regreso evita caminar de más y ayuda a cerrar temprano.",
+      "detail": "Regreso en transporte público: caminar hacia Shijo/Kawaramachi, tomar Karasuma Line a Gojo y caminar al hotel.",
       "routeInfo": {
-        "mode": "local_taxi",
+        "mode": "transit",
         "origin": "Gion, Kyoto, Japan",
         "destination": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
-        "note": "Taxi corto desde Gion hacia el hotel.",
-        "mapsQuery": "Gion Kyoto to Henn na Hotel Premier Kyoto Gojo Karasuma by taxi",
-        "fixedDuration": "10-15 min",
-        "fixedDistance": "Taxi corto",
-        "fareEstimateJpy": 1800,
-        "fareEstimateLabel": "aprox. por taxi",
-        "fallbackMessage": "Tiempo estimado para taxi corto desde Gion hasta el hotel."
+        "note": "Caminata hacia Shijo/Kawaramachi, Kyoto Subway Karasuma Line hacia Gojo y caminata corta al hotel.",
+        "mapsQuery": "Gion Kyoto to Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan by train",
+        "fixedDuration": "20-25 min",
+        "fixedDistance": "Caminata + Kyoto Subway Karasuma Line",
+        "fareEstimateJpy": 220,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Estimado fijo: Gion a Shijo/Kawaramachi, Karasuma Line hacia Gojo y caminata al hotel.",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
       },
       "marPick": false
     }
