@@ -1,56 +1,60 @@
 {
-  "title": "Día 10 - Kyoto → Tokyo / llegada a Ginza",
-  "subtitle": "Viernes 16 de octubre - traslado de Kyoto a Tokyo, check-in en Hotel Sunroute Ginza y tarde suave en Ginza",
+  "title": "Día 10 - Kyoto → Tokyo / llegada a Asakusa Tawaramachi",
+  "subtitle": "Viernes 16 de octubre - traslado temprano de Kyoto a Tokyo, dejar maletas en Henn na Hotel Premier Tokyo Asakusa Tawaramachi, check-in y tarde suave en Asakusa",
   "dateLabel": "Viernes 16 de octubre de 2026",
   "shortDateLabel": "Vie 16 oct",
-  "status": "Traslado + Ginza",
+  "status": "Traslado + Asakusa",
   "costEstimateUsd": {
     "low": 190,
     "high": 340,
-    "note": "tren Kyoto-Tokyo, transporte local, comida, cena y paseo suave en Ginza"
+    "note": "tren Kyoto-Tokyo, transporte local, comida, cena y paseo suave en Asakusa/Tawaramachi"
   },
   "route": [
     "Henn na Hotel Premier Kyoto Gojo Karasuma",
     "Gojo Station",
     "Kyoto Station",
     "Tokyo Station",
-    "Hotel Sunroute Ginza",
-    "Ginza",
-    "Tokyo Station / Marunouchi",
-    "Hotel Sunroute Ginza"
+    "Ueno Station",
+    "Tawaramachi Station",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+    "Asakusa / Tawaramachi",
+    "Kaminarimon / Nakamise-dori opcional",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi"
   ],
   "marStops": [],
   "blocks": [
     {
-      "time": "7:00 am",
+      "time": "5:30 am",
       "duration": "inicio",
-      "title": "Despertar y cerrar maletas",
+      "title": "Despertar y cerrar maletas temprano",
       "icon": "luggage",
       "tone": "rest",
       "items": [
+        "Levantarse temprano para llegar a Tokyo antes del mediodía.",
         "Revisar compras de Kyoto.",
-        "Empacar con calma.",
+        "Cerrar maletas con calma.",
         "Separar documentos, pasaportes, boletos y reservas.",
-        "Dejar a mano cargadores, batería externa y algo de efectivo.",
-        "Confirmar horario del tren Kyoto → Tokyo."
+        "Dejar a mano cargadores, batería externa, efectivo y Suica/ICOCA.",
+        "Confirmar horario del Shinkansen Kyoto → Tokyo."
       ],
-      "detail": "Día de traslado largo. La prioridad es salir de Kyoto sin estrés y llegar a Tokyo con energía para una tarde suave.",
+      "detail": "La idea es salir temprano de Kyoto para llegar a Tokyo con bastante margen, dejar maletas en el hotel y aprovechar una tarde suave en Asakusa antes del check-in.",
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "8:00 am",
-      "duration": "8:00 - 8:40 am",
-      "title": "Desayuno cerca del hotel",
+      "time": "6:00 am",
+      "duration": "6:00 - 6:30 am",
+      "title": "Desayuno rápido cerca del hotel",
       "icon": "local_cafe",
       "tone": "food",
       "items": [
         "Desayuno rápido y cómodo cerca del hotel.",
         "Opciones: convenience store, café o bakery cercana.",
         "Evitar ir lejos antes del tren.",
-        "Presupuesto 2 personas: $18 - $30."
+        "Comprar agua o snack para el tren.",
+        "Presupuesto 2 personas: $15 - $28."
       ],
-      "detail": "La prioridad es comer algo práctico y no complicar la salida hacia Kyoto Station.",
+      "detail": "Desayuno práctico para salir temprano hacia Kyoto Station sin complicar el traslado.",
       "location": {
         "name": "Henn na Hotel Premier Kyoto Gojo Karasuma / Gojo Karasuma",
         "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma breakfast"
@@ -59,18 +63,18 @@
       "marPick": false
     },
     {
-      "time": "9:00 am",
+      "time": "6:45 am",
       "duration": "check-out",
       "title": "Check-out en Kyoto",
       "icon": "hotel",
       "tone": "hotel",
       "items": [
-        "Hacer check-out.",
+        "Hacer check-out temprano.",
         "Confirmar que no queda nada en habitación, baño, caja fuerte o cargadores.",
         "Ordenar maletas para moverse cómodo en estación.",
         "Salir hacia Gojo Station."
       ],
-      "detail": "Última revisión antes de moverse a Tokyo. Mejor salir con margen porque Kyoto Station puede ser grande y concurrida.",
+      "detail": "Salir temprano permite llegar a Tokyo antes del check-in, dejar maletas y aprovechar el día sin correr.",
       "location": {
         "name": "Henn na Hotel Premier Kyoto Gojo Karasuma",
         "mapsQuery": "Henn na Hotel Premier Kyoto Gojo Karasuma"
@@ -79,7 +83,7 @@
       "marPick": false
     },
     {
-      "time": "9:20 am",
+      "time": "7:00 am",
       "duration": "5-7 min",
       "title": "Caminata hotel → Gojo Station",
       "icon": "directions_walk",
@@ -93,7 +97,7 @@
       "detail": "Se separa la caminata del tramo en metro para que el mapa no mezcle todo como caminata.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan",
+        "origin": "Henn na Hotel Premier Kyoto Gojo Karasuma, Kyoto, Japan",
         "destination": "Gojo Station, Kyoto, Japan",
         "note": "Caminata corta desde el hotel hacia Gojo Station.",
         "fixedDuration": "5-7 min",
@@ -102,7 +106,7 @@
       "marPick": false
     },
     {
-      "time": "9:30 am",
+      "time": "7:10 am",
       "duration": "3-5 min",
       "title": "Metro: Gojo Station → Kyoto Station",
       "icon": "train",
@@ -135,8 +139,8 @@
       "marPick": false
     },
     {
-      "time": "9:40 am",
-      "duration": "9:40 - 10:20 am",
+      "time": "7:20 am",
+      "duration": "7:20 - 7:55 am",
       "title": "Kyoto Station - ubicar andén y comprar snacks",
       "icon": "confirmation_number",
       "tone": "travel",
@@ -147,7 +151,7 @@
         "Revisar número de tren, vagón y asientos.",
         "Llegar al andén con margen."
       ],
-      "detail": "Kyoto Station es grande. Este bloque evita correr con maletas y permite abordar el tren con calma.",
+      "detail": "Kyoto Station es grande. Este bloque permite abordar el tren temprano sin correr.",
       "location": {
         "name": "Kyoto Station",
         "mapsQuery": "Kyoto Station Shinkansen gates"
@@ -156,7 +160,7 @@
       "marPick": false
     },
     {
-      "time": "10:30 am",
+      "time": "8:00 am",
       "duration": "2h 15m - 2h 45m",
       "title": "Kyoto → Tokyo",
       "icon": "train",
@@ -167,7 +171,7 @@
         "Comer bento/snack durante el trayecto.",
         "Revisar llegada a Tokyo Station antes de bajar."
       ],
-      "detail": "Traslado principal del día. Mantener boletos y pasaportes accesibles.",
+      "detail": "Traslado principal del día. Saliendo a esta hora, llegan a Tokyo con buen margen antes del check-in y pueden dejar maletas en recepción.",
       "routeInfo": {
         "mode": "transit",
         "origin": "Kyoto Station, Kyoto, Japan",
@@ -185,199 +189,350 @@
       "marPick": false
     },
     {
-      "time": "1:15 pm",
-      "duration": "1:15 - 1:35 pm",
+      "time": "10:35 am",
+      "duration": "10:35 - 10:50 am",
       "title": "Llegada a Tokyo Station",
       "icon": "train",
       "tone": "arrival",
       "items": [
         "Bajar del tren con calma.",
         "Revisar que no quede nada en el asiento o portaequipaje.",
-        "Seguir señales hacia salida Yaesu / Marunouchi según ruta al hotel.",
-        "Ubicar si conviene taxi o metro hacia Ginza."
+        "Seguir señales hacia JR Yamanote Line o salida de taxi.",
+        "Decidir si ir al hotel en tren/metro o taxi según cansancio y maletas."
       ],
-      "detail": "Tokyo Station es muy grande. Con maletas, vale la pena tomarse unos minutos para orientarse antes de moverse al hotel.",
+      "detail": "Como todavía no es hora de check-in, la prioridad es llegar al hotel, dejar maletas y quedar libres para almorzar.",
       "location": {
         "name": "Tokyo Station",
-        "mapsQuery": "Tokyo Station Yaesu Exit"
+        "mapsQuery": "Tokyo Station JR Yamanote Line"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "1:35 pm",
-      "duration": "10-15 min",
-      "title": "Taxi corto: Tokyo Station → Hotel Sunroute Ginza",
-      "icon": "local_taxi",
+      "time": "10:50 am",
+      "duration": "5-10 min",
+      "title": "Transbordo en Tokyo Station hacia JR Yamanote Line",
+      "icon": "sync_alt",
       "tone": "travel",
       "items": [
-        "Tomar taxi corto desde Tokyo Station hacia Hotel Sunroute Ginza.",
-        "Recomendado por comodidad al llegar con maletas desde Kyoto.",
-        "Guardar dirección del hotel en japonés o en Google Maps.",
-        "Presupuesto estimado 2 personas: $10 - $20."
+        "Seguir señales hacia JR Yamanote Line.",
+        "Buscar dirección Ueno / Ikebukuro.",
+        "Mantenerse juntos porque Tokyo Station puede ser confusa.",
+        "Tener Suica/ICOCA lista."
       ],
-      "detail": "Aunque se puede llegar en metro/caminata, con maletas es más cómodo usar taxi corto desde Tokyo Station hasta Ginza.",
+      "detail": "Para llegar a Asakusa Tawaramachi de forma práctica, se puede conectar primero hacia Ueno y luego usar Ginza Line hacia Tawaramachi.",
       "routeInfo": {
-        "mode": "driving",
-        "origin": "Tokyo Station, Tokyo, Japan",
-        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "note": "Taxi corto desde Tokyo Station hacia Hotel Sunroute Ginza.",
-        "fixedDuration": "10-15 min",
-        "mapsQuery": "Tokyo Station to Hotel Sunroute Ginza by taxi"
+        "mode": "walking",
+        "origin": "Tokyo Station Shinkansen gates, Tokyo, Japan",
+        "destination": "Tokyo Station JR Yamanote Line platform, Tokyo, Japan",
+        "note": "Transbordo interno en Tokyo Station desde Shinkansen hacia JR Yamanote Line.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Tokyo Station Shinkansen gates to JR Yamanote Line platform walking"
       },
       "marPick": false
     },
     {
-      "time": "2:00 pm",
-      "duration": "2:00 - 3:30 pm",
-      "title": "Llegada a Hotel Sunroute Ginza / dejar maletas",
+      "time": "11:00 am",
+      "duration": "7-10 min",
+      "title": "JR Yamanote: Tokyo Station → Ueno Station",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yamanote Line desde Tokyo Station.",
+        "Dirección: Ueno / Ikebukuro.",
+        "Bajarse en Ueno Station.",
+        "Costo estimado 2 personas: ¥340 aprox."
+      ],
+      "detail": "Ueno es la conexión práctica para tomar Tokyo Metro Ginza Line hacia Tawaramachi.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Tokyo Station, JR Yamanote Line, Tokyo, Japan",
+        "destination": "Ueno Station, JR Yamanote Line, Tokyo, Japan",
+        "note": "JR Yamanote Line desde Tokyo Station hasta Ueno Station.",
+        "fixedDuration": "7-10 min",
+        "fixedDistance": "JR Yamanote Line",
+        "fareEstimateJpy": 170,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yamanote Line: Tokyo Station → Ueno Station.",
+        "mapsQuery": "Tokyo Station JR Yamanote Line to Ueno Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:10 am",
+      "duration": "8-12 min",
+      "title": "Transbordo Ueno JR → Tokyo Metro Ginza Line",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Ueno Station.",
+        "Seguir señales hacia Tokyo Metro Ginza Line.",
+        "Buscar dirección Asakusa.",
+        "Tener paciencia por las maletas."
+      ],
+      "detail": "Este transbordo puede tomar unos minutos porque se pasa de JR a Tokyo Metro. Ir con calma.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "JR Ueno Station, Tokyo, Japan",
+        "destination": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "note": "Transbordo desde JR Ueno hacia Tokyo Metro Ginza Line.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "JR Ueno Station to Tokyo Metro Ginza Line Ueno Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:25 am",
+      "duration": "3-5 min",
+      "title": "Metro: Ueno → Tawaramachi",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Tomar Tokyo Metro Ginza Line desde Ueno Station.",
+        "Dirección: Asakusa.",
+        "Bajarse en Tawaramachi Station.",
+        "Son pocas estaciones y es un tramo corto.",
+        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
+      ],
+      "detail": "Tawaramachi es la estación más conveniente para llegar al Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "destination": "Tawaramachi Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "note": "Tokyo Metro Ginza Line desde Ueno Station hasta Tawaramachi Station.",
+        "fixedDuration": "3-5 min",
+        "fixedDistance": "Tokyo Metro Ginza Line",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Ginza Line: Ueno → Tawaramachi.",
+        "mapsQuery": "Ueno Station Ginza Line to Tawaramachi Station by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:35 am",
+      "duration": "3-5 min",
+      "title": "Caminata Tawaramachi Station → Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Tawaramachi Station.",
+        "Caminar hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Usar elevador si llevan maletas pesadas y está disponible.",
+        "Costo: $0."
+      ],
+      "detail": "El hotel queda muy cerca de Tawaramachi Station, así que este último tramo es corto.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tawaramachi Station, Tokyo, Japan",
+        "destination": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "note": "Caminata desde Tawaramachi Station hasta el hotel.",
+        "fixedDuration": "3-5 min",
+        "mapsQuery": "Tawaramachi Station to Henn na Hotel Premier Tokyo Asakusa Tawaramachi walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:45 am",
+      "duration": "11:45 am - 12:00 pm",
+      "title": "Llegada al hotel / dejar maletas",
       "icon": "hotel",
       "tone": "hotel",
       "items": [
-        "Llegar al Hotel Sunroute Ginza.",
-        "Hacer check-in si ya está disponible.",
-        "Si todavía no permiten check-in, dejar maletas en recepción.",
-        "Descansar un rato en lobby o tomar algo cerca.",
-        "Revisar el plan de la tarde."
+        "Llegar a Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Dejar maletas en recepción.",
+        "Confirmar que el check-in es a las 3:00 pm.",
+        "Guardar documentos importantes con ustedes.",
+        "Salir livianos a almorzar por Asakusa/Tawaramachi."
       ],
-      "detail": "El cambio de hotel a Ginza mejora la logística de Tokyo. Este día debe mantenerse suave para no llegar agotados.",
+      "detail": "Aunque el check-in sea a las 3:00 pm, se pueden dejar las maletas antes. Esto permite aprovechar el mediodía sin cargar equipaje.",
       "location": {
-        "name": "Hotel Sunroute Ginza",
-        "mapsQuery": "Hotel Sunroute Ginza Tokyo"
+        "name": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "3:30 pm",
-      "duration": "3:30 - 3:45 pm",
-      "title": "Caminata hotel → Ginza principal",
-      "icon": "directions_walk",
-      "tone": "travel",
+      "time": "12:00 pm",
+      "duration": "12:00 - 1:15 pm",
+      "title": "Almuerzo tranquilo en Asakusa / Tawaramachi",
+      "icon": "restaurant",
+      "tone": "food",
       "items": [
-        "Salir del hotel hacia la zona principal de Ginza.",
-        "Caminar hacia Ginza-itchome / Chuo-dori.",
-        "Ubicar tiendas, cafés y estaciones cercanas.",
-        "Costo: $0."
+        "Almorzar cerca del hotel.",
+        "Opciones: ramen, soba, sushi casual, tempura, curry japonés o café bonito.",
+        "No alejarse demasiado porque el check-in es a las 3:00 pm.",
+        "Presupuesto 2 personas: $35 - $70."
       ],
-      "detail": "Primer contacto con Tokyo desde una zona elegante, caminable y tranquila para empezar.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "destination": "Ginza, Tokyo, Japan",
-        "note": "Caminata desde Hotel Sunroute Ginza hacia la zona principal de Ginza.",
-        "fixedDuration": "8-15 min",
-        "mapsQuery": "Hotel Sunroute Ginza to Ginza Tokyo walking"
-      },
-      "marPick": false
-    },
-    {
-      "time": "3:45 pm",
-      "duration": "3:45 - 5:15 pm",
-      "title": "Paseo suave por Ginza",
-      "icon": "location_city",
-      "tone": "shopping",
-      "items": [
-        "Caminar por Ginza sin agenda pesada.",
-        "Ver tiendas, cafeterías y calles principales.",
-        "Tomar fotos del primer contacto con Tokyo.",
-        "Comprar snacks o farmacia si hace falta.",
-        "Presupuesto flexible 2 personas: $20 - $70."
-      ],
-      "detail": "Ginza es buena para una tarde de llegada porque permite caminar sin presión y regresar fácil al hotel.",
+      "detail": "Este almuerzo aprovecha que ya no llevan maletas. Conviene mantenerlo cerca del hotel para volver fácil al check-in.",
       "location": {
-        "name": "Ginza",
-        "mapsQuery": "Ginza Tokyo"
+        "name": "Asakusa / Tawaramachi restaurants",
+        "mapsQuery": "Asakusa Tawaramachi Tokyo lunch restaurants"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "5:15 pm",
-      "duration": "15-20 min",
-      "title": "Caminata Ginza → Tokyo Station / Marunouchi",
-      "icon": "directions_walk",
-      "tone": "travel",
-      "items": [
-        "Caminar desde Ginza hacia Tokyo Station / Marunouchi.",
-        "Ir sin prisa, viendo edificios y tiendas.",
-        "Usar esta caminata como paseo de reconocimiento.",
-        "Costo: $0."
-      ],
-      "detail": "Tokyo Station / Marunouchi queda suficientemente cerca para una tarde suave desde Ginza.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Ginza, Tokyo, Japan",
-        "destination": "Tokyo Station Marunouchi, Tokyo, Japan",
-        "note": "Caminata desde Ginza hacia Tokyo Station / Marunouchi.",
-        "fixedDuration": "15-20 min",
-        "mapsQuery": "Ginza Tokyo to Tokyo Station Marunouchi walking"
-      },
-      "marPick": false
-    },
-    {
-      "time": "5:40 pm",
-      "duration": "5:40 - 6:30 pm",
-      "title": "Tokyo Station / Marunouchi suave",
-      "icon": "apartment",
+      "time": "1:15 pm",
+      "duration": "1:15 - 2:10 pm",
+      "title": "Paseo suave antes del check-in",
+      "icon": "storefront",
       "tone": "arrival",
       "items": [
-        "Pasear por la zona de Tokyo Station / Marunouchi.",
-        "Ver la fachada de Tokyo Station si están del lado correcto.",
-        "Entrar a alguna tienda o café si hay energía.",
-        "No convertirlo en día de compras fuerte."
+        "Caminar suave por Tawaramachi / Asakusa.",
+        "Ver tiendas cercanas, cafés o convenience stores.",
+        "No hacer todavía el bloque fuerte de Sensō-ji, porque queda mejor para el Día 11.",
+        "Comprar agua o snacks para la habitación.",
+        "Mantenerse cerca del hotel para volver fácil al check-in."
       ],
-      "detail": "Este bloque sirve para ubicarse en Tokyo Station, que será clave para varios traslados posteriores.",
+      "detail": "Este bloque rellena el tiempo entre dejar maletas y hacer check-in, sin cansarse demasiado.",
       "location": {
-        "name": "Tokyo Station / Marunouchi",
-        "mapsQuery": "Tokyo Station Marunouchi Tokyo"
+        "name": "Tawaramachi / Asakusa",
+        "mapsQuery": "Tawaramachi Asakusa Tokyo"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "6:45 pm",
-      "duration": "6:45 - 8:15 pm",
-      "title": "Cena tranquila en Ginza / Tokyo Station",
+      "time": "2:10 pm",
+      "duration": "2:10 - 2:50 pm",
+      "title": "Café / descanso corto cerca del hotel",
+      "icon": "local_cafe",
+      "tone": "rest",
+      "items": [
+        "Tomar café, postre o bebida cerca del hotel.",
+        "Esperar con calma la hora de check-in.",
+        "Revisar fotos, mensajes y plan de la tarde.",
+        "Volver al hotel antes de las 3:00 pm."
+      ],
+      "detail": "Después de salir tan temprano de Kyoto, conviene hacer una pausa antes de subir a la habitación.",
+      "location": {
+        "name": "Tawaramachi cafes",
+        "mapsQuery": "Tawaramachi Asakusa cafe"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "3:00 pm",
+      "duration": "3:00 - 4:30 pm",
+      "title": "Check-in y descanso real en habitación",
+      "icon": "hotel",
+      "tone": "hotel",
+      "items": [
+        "Hacer check-in.",
+        "Subir maletas a la habitación.",
+        "Descansar.",
+        "Bañarse o cambiarse si hace falta.",
+        "Cargar teléfonos y batería externa.",
+        "Aprovechar la comodidad del hotel antes de salir de nuevo."
+      ],
+      "detail": "Este descanso es importante porque el hotel se eligió por comodidad. La idea es aprovechar la habitación y no salir corriendo apenas llegan.",
+      "location": {
+        "name": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "4:45 pm",
+      "duration": "4:45 - 5:00 pm",
+      "title": "Caminata hotel → zona de Asakusa",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del hotel hacia Asakusa.",
+        "Caminar sin maletas hacia la zona de Kaminarimon / Nakamise.",
+        "Tomarlo como reconocimiento suave del barrio.",
+        "Costo: $0."
+      ],
+      "detail": "Como ahora el hotel está en Asakusa Tawaramachi, la primera tarde puede ser local y tranquila, sin cruzar Tokyo.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "destination": "Kaminarimon Gate, Tokyo, Japan",
+        "note": "Caminata desde el hotel hacia la zona principal de Asakusa.",
+        "fixedDuration": "10-15 min",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi to Kaminarimon Gate walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:00 pm",
+      "duration": "5:00 - 6:15 pm",
+      "title": "Paseo suave por Asakusa",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
+      "items": [
+        "Caminar por Asakusa sin agenda pesada.",
+        "Ver Kaminarimon por fuera si no está demasiado lleno.",
+        "Entrar un poco a Nakamise-dori si les da tiempo.",
+        "No hacer todavía el bloque fuerte de Sensō-ji, porque queda mejor para el Día 11.",
+        "Comprar snack o bebida si tienen antojo."
+      ],
+      "detail": "Este paseo es solo para ubicarse y disfrutar la primera tarde en Tokyo. El Día 11 queda dedicado completo a Asakusa + Skytree.",
+      "location": {
+        "name": "Asakusa / Kaminarimon / Nakamise-dori",
+        "mapsQuery": "Asakusa Kaminarimon Nakamise-dori Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "6:30 pm",
+      "duration": "6:30 - 8:00 pm",
+      "title": "Cena tranquila en Asakusa / Tawaramachi",
       "icon": "dinner_dining",
       "tone": "food",
       "items": [
-        "Cena cerca de Ginza, Tokyo Station o Yurakucho.",
-        "Opciones: ramen, sushi casual, izakaya, curry japonés o comida en centro comercial.",
+        "Cenar cerca del hotel o en zona de Asakusa.",
+        "Opciones: ramen, sushi casual, tempura, izakaya tranquilo, soba o curry japonés.",
         "No hacer cena demasiado larga.",
         "Presupuesto 2 personas: $45 - $85."
       ],
-      "detail": "Primera noche en Tokyo. Mejor cena cómoda, buena y cerca del hotel.",
+      "detail": "Primera noche en Tokyo. Mejor cena cómoda y cerca del hotel para descansar bien.",
       "location": {
-        "name": "Ginza / Tokyo Station / Yurakucho",
-        "mapsQuery": "Ginza Tokyo Station Yurakucho dinner"
+        "name": "Asakusa / Tawaramachi restaurants",
+        "mapsQuery": "Asakusa Tawaramachi Tokyo dinner restaurants"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "8:15 pm",
-      "duration": "15-20 min",
-      "title": "Regreso caminando al Hotel Sunroute Ginza",
+      "time": "8:00 pm",
+      "duration": "8:00 - 8:20 pm",
+      "title": "Regreso caminando al hotel",
       "icon": "bedtime",
       "tone": "rest",
       "items": [
         "Volver caminando al hotel.",
         "Comprar agua o snacks si hace falta.",
         "Cargar teléfonos y batería externa.",
-        "Revisar el plan del Día 11: Asakusa + Skytree."
+        "Revisar el plan del Día 11: Asakusa + Skytree.",
+        "Dormir temprano."
       ],
-      "detail": "Cerrar temprano ayuda a empezar bien Tokyo al día siguiente.",
+      "detail": "Cerrar temprano ayuda a empezar bien el primer día completo en Tokyo.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Tokyo Station Marunouchi, Tokyo, Japan",
-        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "note": "Regreso caminando desde Tokyo Station / Marunouchi hacia Hotel Sunroute Ginza.",
-        "fixedDuration": "15-20 min",
-        "mapsQuery": "Tokyo Station Marunouchi to Hotel Sunroute Ginza walking"
+        "origin": "Asakusa, Tokyo, Japan",
+        "destination": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "note": "Regreso caminando desde zona de cena en Asakusa hacia el hotel.",
+        "fixedDuration": "5-15 min",
+        "mapsQuery": "Asakusa to Henn na Hotel Premier Tokyo Asakusa Tawaramachi walking"
       },
       "marPick": false
     }
   ],
-  "note": "Meta del día: salir de Kyoto sin estrés, llegar a Tokyo Station, instalarse en Hotel Sunroute Ginza y tener una primera tarde suave por Ginza/Tokyo Station sin cargar demasiado el itinerario."
+  "note": "Meta del día: salir temprano de Kyoto, llegar a Tokyo antes del mediodía, trasladarse a Henn na Hotel Premier Tokyo Asakusa Tawaramachi, dejar maletas antes del check-in, almorzar cerca del hotel, hacer check-in a las 3:00 pm, descansar bien y tener una primera tarde/noche suave por Asakusa/Tawaramachi. El bloque fuerte de Asakusa queda para el Día 11."
 }

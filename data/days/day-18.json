@@ -1,32 +1,32 @@
 {
   "title": "Día 18 - Regreso desde Tokyo / Narita",
-  "subtitle": "Sábado 24 de octubre - salida muy temprano desde Hotel Sunroute Ginza hacia Narita para vuelo de 9:35 am",
+  "subtitle": "Sábado 24 de octubre - salida muy temprano desde Henn na Hotel Premier Tokyo Asakusa Tawaramachi hacia Narita para vuelo de 9:30 am",
   "dateLabel": "Sábado 24 de octubre de 2026",
   "shortDateLabel": "Sáb 24 oct",
   "status": "Regreso temprano",
   "costEstimateUsd": {
     "low": 80,
     "high": 180,
-    "note": "taxi corto a Tokyo Station, tren/bus hacia Narita, desayuno/snacks rápidos y compras mínimas en aeropuerto; sin vuelos internacionales"
+    "note": "taxi corto a Keisei Ueno / Ueno, tren hacia Narita, desayuno/snacks rápidos y compras mínimas en aeropuerto; sin vuelos internacionales"
   },
   "flightInfo": {
     "departureAirport": "Narita International Airport",
-    "departureTime": "9:35 am",
+    "departureTime": "9:30 am",
     "recommendedAirportArrival": "6:30 am - 6:45 am",
     "hotelDepartureTarget": "5:00 am - 5:15 am",
-    "note": "Vuelo internacional temprano. No meter turismo ni compras largas este día."
+    "note": "Vuelo internacional temprano. No meter turismo ni compras largas este día. Todo debe quedar empacado desde la noche anterior."
   },
   "route": [
-    "Hotel Sunroute Ginza",
-    "Tokyo Station",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+    "Keisei Ueno Station",
     "Narita Airport Terminal correspondiente",
     "Check-in aerolínea",
-    "Equipaje",
+    "Entrega de equipaje",
     "Seguridad",
     "Migración de salida",
     "Desayuno rápido / compras mínimas",
     "Gate",
-    "Vuelo 9:35 am"
+    "Vuelo 9:30 am"
   ],
   "marStops": [],
   "blocks": [
@@ -41,9 +41,10 @@
         "No dejar empaque para esta mañana.",
         "Revisar pasaportes, boletos, reservas y documentos.",
         "Confirmar terminal de salida en Narita.",
-        "Revisar que baterías externas, cámaras y electrónicos vayan en equipaje de mano."
+        "Revisar que baterías externas, cámaras y electrónicos vayan en equipaje de mano.",
+        "Confirmar que no quede nada cargando en la habitación."
       ],
-      "detail": "Como el vuelo sale a las 9:35 am, este día debe ser completamente operativo. Todo debe quedar empacado desde la noche anterior.",
+      "detail": "Como el vuelo sale a las 9:30 am, este día debe ser completamente operativo. Todo debe quedar listo desde la noche anterior.",
       "showMap": false,
       "marPick": false
     },
@@ -58,16 +59,17 @@
         "Revisar baño, cama, caja fuerte, gavetas y enchufes.",
         "Confirmar que no quede nada cargando.",
         "Separar pasaportes, boarding pass, efectivo, tarjetas y celulares.",
-        "Dejar a mano snacks, agua y audífonos."
+        "Dejar a mano snacks, agua, audífonos y batería externa.",
+        "Revisar que artículos frágiles o figuras estén bien protegidos."
       ],
-      "detail": "Última revisión completa antes de bajar a recepción. Especial cuidado con caja fuerte, cargadores y documentos.",
+      "detail": "Última revisión completa antes de bajar a recepción. Especial cuidado con caja fuerte, cargadores, documentos y compras pequeñas.",
       "showMap": false,
       "marPick": false
     },
     {
       "time": "4:50 am",
       "duration": "check-out",
-      "title": "Check-out en Hotel Sunroute Ginza",
+      "title": "Check-out en Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
       "icon": "hotel",
       "tone": "hotel",
       "items": [
@@ -75,87 +77,88 @@
         "Hacer check-out.",
         "Confirmar que no haya cargos pendientes.",
         "Pedir taxi si no está solicitado desde la noche anterior.",
-        "Tener Tokyo Station o el punto de salida hacia Narita listo en Google Maps."
+        "Tener Keisei Ueno Station o Ueno Station listo en Google Maps."
       ],
-      "detail": "Lo ideal es pedir el taxi la noche anterior o confirmar con recepción para evitar esperar demasiado de madrugada.",
+      "detail": "Lo ideal es pedir o confirmar el taxi la noche anterior. A esta hora, con maletas y vuelo internacional, no conviene improvisar demasiado.",
       "location": {
-        "name": "Hotel Sunroute Ginza",
-        "mapsQuery": "Hotel Sunroute Ginza Tokyo"
+        "name": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi"
       },
       "showMap": false,
       "marPick": false
     },
     {
       "time": "5:00 am",
-      "duration": "10-15 min",
-      "title": "Taxi corto: Hotel Sunroute Ginza → Tokyo Station",
+      "duration": "15-25 min",
+      "title": "Taxi corto: hotel → Keisei Ueno Station",
       "icon": "local_taxi",
       "tone": "travel",
       "items": [
-        "Tomar taxi corto desde Hotel Sunroute Ginza hacia Tokyo Station.",
+        "Tomar taxi desde el hotel hacia Keisei Ueno Station.",
         "Recomendado por comodidad con maletas y hora temprana.",
-        "Presupuesto estimado 2 personas: $10 - $20.",
-        "Pedir que los deje cerca del acceso al servicio hacia Narita."
+        "Pedir que los deje cerca del acceso a Keisei Skyliner / tren hacia Narita.",
+        "Presupuesto estimado 2 personas: $15 - $30 según tráfico."
       ],
-      "detail": "A esta hora no conviene caminar con maletas ni depender de conexiones complejas. Taxi corto hasta Tokyo Station es lo más práctico.",
+      "detail": "Desde Asakusa/Tawaramachi, usar Ueno/Keisei Ueno es más lógico que ir hasta Tokyo Station. Con vuelo a las 9:30 am, taxi al punto de salida evita caminar con maletas de madrugada.",
       "routeInfo": {
         "mode": "driving",
-        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "destination": "Tokyo Station, Tokyo, Japan",
-        "note": "Taxi corto desde Hotel Sunroute Ginza hacia Tokyo Station.",
-        "fixedDuration": "10-15 min",
-        "mapsQuery": "Hotel Sunroute Ginza to Tokyo Station by taxi"
+        "origin": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "destination": "Keisei Ueno Station, Tokyo, Japan",
+        "note": "Taxi temprano desde el hotel hacia Keisei Ueno Station para tomar tren hacia Narita.",
+        "fixedDuration": "15-25 min",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi to Keisei Ueno Station by taxi"
       },
       "marPick": false
     },
     {
-      "time": "5:15 am",
-      "duration": "5:15 - 5:35 am",
-      "title": "Tokyo Station - ubicar transporte hacia Narita",
+      "time": "5:25 am",
+      "duration": "5:25 - 5:45 am",
+      "title": "Keisei Ueno Station - ubicar tren hacia Narita",
       "icon": "confirmation_number",
       "tone": "travel",
       "items": [
-        "Llegar a Tokyo Station.",
-        "Ubicar el transporte elegido hacia Narita.",
-        "Confirmar terminal correcta del vuelo.",
+        "Llegar a Keisei Ueno Station.",
+        "Ubicar el servicio elegido hacia Narita.",
+        "Opción recomendada: Keisei Skyliner si el horario calza.",
         "Comprar o validar boletos si no los tienen listos.",
+        "Confirmar terminal correcta del vuelo.",
         "Ir al baño antes del trayecto si hay tiempo."
       ],
-      "detail": "Para vuelo de 9:35 am, el margen aquí es importante. Idealmente ya deben haber definido la noche anterior si usarán Narita Express, bus aeroportuario o una ruta equivalente.",
+      "detail": "Para un vuelo de 9:30 am, el objetivo es tomar un tren que los deje en Narita alrededor de 6:30 - 6:45 am. Conviene revisar el horario real del Skyliner la noche anterior.",
       "location": {
-        "name": "Tokyo Station",
-        "mapsQuery": "Tokyo Station Narita Airport train bus"
+        "name": "Keisei Ueno Station",
+        "mapsQuery": "Keisei Ueno Station Skyliner to Narita Airport"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "5:35 am",
-      "duration": "60-90 min",
-      "title": "Traslado Tokyo Station → Narita Airport",
+      "time": "5:45 am",
+      "duration": "40-55 min",
+      "title": "Tren: Keisei Ueno → Narita Airport",
       "icon": "train",
       "tone": "travel",
       "items": [
-        "Tomar el transporte elegido hacia Narita Airport.",
-        "Confirmar que va a la terminal correcta.",
+        "Tomar el tren hacia Narita Airport.",
+        "Confirmar que vaya a la terminal correcta.",
         "Guardar maletas en espacio designado.",
         "Mantener pasaportes, boarding pass y celulares a mano.",
-        "Descansar durante el trayecto."
+        "Aprovechar el trayecto para descansar.",
+        "No dormir profundamente sin alarma."
       ],
-      "detail": "La meta es llegar a Narita entre 6:30 am y 6:45 am. Si el transporte público no calza bien con horarios reales, considerar bus aeroportuario reservado o taxi/servicio privado, aunque sea más caro.",
+      "detail": "Este es el traslado principal al aeropuerto. Si usan Skyliner, el trayecto suele ser más directo y cómodo; si usan otro servicio, dejar más margen.",
       "routeInfo": {
         "mode": "transit",
-        "origin": "Tokyo Station, Tokyo, Japan",
+        "origin": "Keisei Ueno Station, Tokyo, Japan",
         "destination": "Narita International Airport, Chiba, Japan",
-        "note": "Traslado desde Tokyo Station hacia Narita Airport. Confirmar servicio exacto y terminal la noche anterior.",
-        "fixedDuration": "60-90 min",
-        "fixedDistance": "Tokyo Station → Narita Airport",
-        "fallbackMessage": "Tramo principal de regreso al aeropuerto. Confirmar terminal, horario y servicio elegido el día anterior.",
-        "mapsQuery": "Tokyo Station to Narita International Airport by train or airport bus",
+        "note": "Tren desde Keisei Ueno hacia Narita Airport. Confirmar horario real, terminal y tipo de servicio la noche anterior.",
+        "fixedDuration": "40-55 min",
+        "fixedDistance": "Keisei Ueno → Narita Airport",
+        "fallbackMessage": "Tramo principal hacia Narita. Usar Keisei Skyliner si el horario calza; si no, usar alternativa con más margen.",
+        "mapsQuery": "Keisei Ueno Station to Narita International Airport by train",
         "transitModes": [
           "RAIL",
-          "TRAIN",
-          "BUS"
+          "TRAIN"
         ]
       },
       "marPick": false
@@ -171,9 +174,10 @@
         "Confirmar terminal correcta.",
         "Ubicar mostradores de la aerolínea.",
         "Reorganizar maletas antes del check-in.",
-        "Verificar que documentos y artículos de mano estén accesibles."
+        "Verificar que documentos y artículos de mano estén accesibles.",
+        "Revisar que baterías externas y electrónicos no estén en equipaje facturado."
       ],
-      "detail": "Esta es la hora objetivo para llegar. Para un vuelo internacional de 9:35 am, llegar cerca de 6:35 am da margen razonable para check-in, equipaje, seguridad y migración.",
+      "detail": "La meta es estar en Narita alrededor de 6:30 - 6:45 am. Para un vuelo internacional de 9:30 am, este margen es razonable y evita correr.",
       "location": {
         "name": "Narita International Airport",
         "mapsQuery": "Narita International Airport departures"
@@ -192,9 +196,10 @@
         "Entregar maletas facturadas.",
         "Confirmar asientos y conexiones.",
         "Confirmar si el equipaje va directo al destino final.",
-        "Guardar comprobantes de equipaje."
+        "Guardar comprobantes de equipaje.",
+        "Verificar que pasaportes y documentos queden en bolso de mano."
       ],
-      "detail": "Antes de entregar maletas, revisar que no vayan baterías externas, documentos, medicamentos necesarios o electrónicos importantes en equipaje facturado.",
+      "detail": "Antes de entregar maletas, revisar que no vayan documentos, baterías externas, medicamentos necesarios o electrónicos importantes en equipaje facturado.",
       "showMap": false,
       "marPick": false
     },
@@ -209,15 +214,16 @@
         "Pasar migración de salida.",
         "Tener pasaporte y boarding pass a mano.",
         "Guardar líquidos y electrónicos según indicaciones.",
-        "No dejar compras, documentos o electrónicos en bandejas."
+        "No dejar compras, documentos o electrónicos en bandejas.",
+        "Revisar pantallas del aeropuerto después de pasar controles."
       ],
-      "detail": "Este bloque puede variar por filas. Mejor pasar controles primero y dejar compras/desayuno para después.",
+      "detail": "Este bloque puede variar por filas. Mejor pasar controles primero y dejar desayuno o compras pequeñas para después.",
       "showMap": false,
       "marPick": false
     },
     {
       "time": "8:05 am",
-      "duration": "8:05 - 8:40 am",
+      "duration": "8:05 - 8:35 am",
       "title": "Desayuno rápido / compras mínimas en Narita",
       "icon": "local_cafe",
       "tone": "food",
@@ -237,8 +243,8 @@
       "marPick": false
     },
     {
-      "time": "8:40 am",
-      "duration": "8:40 - 9:00 am",
+      "time": "8:35 am",
+      "duration": "8:35 - 8:55 am",
       "title": "Ir al gate",
       "icon": "directions_walk",
       "tone": "travel",
@@ -261,7 +267,7 @@
       "marPick": false
     },
     {
-      "time": "9:00 am",
+      "time": "8:55 am",
       "duration": "espera / abordaje",
       "title": "Espera en gate y abordaje",
       "icon": "event_seat",
@@ -278,7 +284,7 @@
       "marPick": false
     },
     {
-      "time": "9:35 am",
+      "time": "9:30 am",
       "duration": "según itinerario",
       "title": "Vuelo de regreso desde Narita",
       "icon": "flight",
@@ -294,5 +300,5 @@
       "marPick": false
     }
   ],
-  "note": "Meta del día: salir muy temprano de Hotel Sunroute Ginza, llegar a Narita alrededor de 6:30 am - 6:45 am para el vuelo internacional de 9:35 am, completar check-in, seguridad y migración sin estrés, y dejar solo un margen corto para desayuno o compras mínimas."
+  "note": "Meta del día: salir muy temprano de Henn na Hotel Premier Tokyo Asakusa Tawaramachi, tomar taxi hacia Keisei Ueno, conectar con tren hacia Narita y llegar al aeropuerto alrededor de 6:30 - 6:45 am para el vuelo internacional de 9:30 am. Todo debe quedar empacado desde la noche anterior; este día solo es traslado, check-in, seguridad, migración, desayuno rápido y abordaje."
 }

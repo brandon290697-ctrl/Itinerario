@@ -1,118 +1,139 @@
 {
   "title": "Día 13 - Tokyo DisneySea",
-  "subtitle": "Lunes 19 de octubre - día completo en Tokyo DisneySea desde Hotel Sunroute Ginza",
+  "subtitle": "Lunes 19 de octubre - día completo en Tokyo DisneySea saliendo muy temprano desde Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
   "dateLabel": "Lunes 19 de octubre de 2026",
   "shortDateLabel": "Lun 19 oct",
   "status": "DisneySea",
   "costEstimateUsd": {
-    "low": 260,
-    "high": 480,
-    "note": "entradas DisneySea, transporte, comidas, snacks, souvenirs y posibles Premier Access; no incluye hotel"
+    "low": 270,
+    "high": 500,
+    "note": "entradas DisneySea, transporte, comidas, snacks, souvenirs, posibles Premier Access y taxi corto de regreso si vienen muy cansados; no incluye hotel"
   },
   "route": [
-    "Hotel Sunroute Ginza",
-    "Ginza-itchome Station",
-    "Yurakucho Station",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+    "Tawaramachi Station",
+    "Ueno Station",
     "Tokyo Station",
     "Maihama Station",
     "Resort Gateway Station",
     "Tokyo DisneySea Station",
     "Tokyo DisneySea",
+    "Tokyo DisneySea Station",
+    "Resort Gateway Station",
     "Maihama Station",
     "Tokyo Station",
-    "Ginza",
-    "Hotel Sunroute Ginza"
+    "Ueno Station",
+    "Tawaramachi Station",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi"
   ],
   "marStops": [
     "Tokyo DisneySea"
   ],
   "blocks": [
     {
-      "time": "5:45 am",
+      "time": "4:20 am",
       "duration": "inicio",
-      "title": "Despertar temprano para DisneySea",
+      "title": "Despertar muy temprano para DisneySea",
       "icon": "alarm",
       "tone": "rest",
       "items": [
-        "Levantarse temprano.",
+        "Levantarse apenas suene la alarma.",
         "Revisar entradas de Tokyo DisneySea.",
         "Revisar app oficial de Tokyo Disney Resort.",
-        "Preparar pasaportes/copia, celular, batería externa, agua, pañuelos y bolso cómodo.",
-        "Llevar ropa y zapatos muy cómodos porque será día completo de parque."
+        "Preparar celular, batería externa, agua, pañuelos y bolso cómodo.",
+        "Llevar ropa y zapatos muy cómodos porque será día completo de parque.",
+        "Dejar listo desde la noche anterior todo lo posible."
       ],
-      "detail": "DisneySea requiere salir temprano. La idea es llegar antes de la apertura para aprovechar mejor el día y organizar Premier Access/Standby Pass si aplica.",
+      "detail": "Este es el día más madrugador de Tokyo. Como el hotel está en Asakusa/Tawaramachi, salir a las 5:00 am da mejor margen para llegar temprano a DisneySea, hacer fila con calma y organizar la app al entrar.",
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "6:10 am",
-      "duration": "6:10 - 6:30 am",
-      "title": "Desayuno rápido cerca del hotel",
+      "time": "4:35 am",
+      "duration": "4:35 - 4:50 am",
+      "title": "Snack / desayuno rápido antes de salir",
       "icon": "local_cafe",
       "tone": "food",
       "items": [
-        "Comprar desayuno rápido en convenience store o café cercano.",
-        "Opciones: café, onigiri, sándwich, pan dulce, yogurt o agua.",
-        "Comprar agua extra para el parque.",
-        "Presupuesto 2 personas: $12 - $25."
+        "Comer algo rápido en la habitación o comprar en convenience store si hay una abierta cerca.",
+        "Opciones: onigiri, pan dulce, café, yogurt, agua o sándwich.",
+        "Llevar snack extra para el camino.",
+        "Presupuesto 2 personas: $10 - $20."
       ],
-      "detail": "Mejor desayuno portátil y rápido para no perder el tren temprano hacia Maihama.",
+      "detail": "No conviene perder tiempo desayunando formalmente. Mejor comer algo práctico y salir directo hacia la estación.",
       "location": {
-        "name": "Hotel Sunroute Ginza / Ginza",
-        "mapsQuery": "Hotel Sunroute Ginza convenience store breakfast"
+        "name": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi convenience store nearby"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "6:30 am",
-      "duration": "5-8 min",
-      "title": "Caminata hotel → Ginza-itchome Station",
+      "time": "4:50 am",
+      "duration": "4:50 - 4:58 am",
+      "title": "Última revisión antes de salir",
+      "icon": "checklist",
+      "tone": "rest",
+      "items": [
+        "Confirmar entradas de DisneySea.",
+        "Confirmar app de Tokyo Disney Resort.",
+        "Revisar batería externa, celular, agua y snacks.",
+        "Guardar Suica/ICOCA a mano.",
+        "Salir del hotel a las 5:00 am."
+      ],
+      "detail": "Este bloque evita olvidar algo importante antes de un día largo de parque.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "5:00 am",
+      "duration": "3-5 min",
+      "title": "Caminata hotel → Tawaramachi Station",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir del Hotel Sunroute Ginza hacia Ginza-itchome Station.",
-        "Buscar Tokyo Metro Yurakucho Line.",
+        "Salir del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Caminar hacia Tawaramachi Station.",
+        "Buscar Tokyo Metro Ginza Line.",
         "Tener Suica/ICOCA lista.",
         "Costo: $0."
       ],
-      "detail": "Se separa la caminata del tramo en metro para que el mapa no marque todo como caminata.",
+      "detail": "Tawaramachi Station queda muy cerca del hotel. Salir a esta hora da buen margen para llegar temprano a DisneySea.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "destination": "Ginza-itchome Station, Tokyo, Japan",
-        "note": "Caminata desde Hotel Sunroute Ginza hasta Ginza-itchome Station.",
-        "fixedDuration": "5-8 min",
-        "mapsQuery": "Hotel Sunroute Ginza to Ginza-itchome Station walking"
+        "origin": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "destination": "Tawaramachi Station, Tokyo, Japan",
+        "note": "Caminata corta desde el hotel hacia Tawaramachi Station.",
+        "fixedDuration": "3-5 min",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi to Tawaramachi Station walking"
       },
       "marPick": false
     },
     {
-      "time": "6:40 am",
-      "duration": "2-3 min",
-      "title": "Metro: Ginza-itchome → Yurakucho",
+      "time": "5:10 am",
+      "duration": "3-5 min",
+      "title": "Metro: Tawaramachi → Ueno",
       "icon": "subway",
       "tone": "travel",
       "items": [
-        "Entrar a Ginza-itchome Station.",
-        "Tomar Tokyo Metro Yurakucho Line.",
-        "Dirección: Shin-Kiba.",
-        "Bajarse en Yurakucho Station.",
-        "Es 1 estación.",
+        "Entrar a Tawaramachi Station.",
+        "Tomar Tokyo Metro Ginza Line.",
+        "Dirección: Shibuya.",
+        "Bajarse en Ueno Station.",
         "Costo estimado 2 personas: ¥360 - ¥440 aprox."
       ],
-      "detail": "Este tramo acerca el hotel a la conexión JR para llegar a Tokyo Station y tomar Keiyo Line hacia Maihama.",
+      "detail": "Primer tramo del traslado hacia DisneySea. Se usa Ueno para conectar con JR hacia Tokyo Station.",
       "routeInfo": {
         "mode": "transit",
-        "origin": "Ginza-itchome Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
-        "destination": "Yurakucho Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
-        "note": "Tokyo Metro Yurakucho Line desde Ginza-itchome hasta Yurakucho.",
-        "fixedDuration": "2-3 min",
-        "fixedDistance": "Tokyo Metro Yurakucho Line",
+        "origin": "Tawaramachi Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "destination": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "note": "Tokyo Metro Ginza Line desde Tawaramachi Station hasta Ueno Station.",
+        "fixedDuration": "3-5 min",
+        "fixedDistance": "Tokyo Metro Ginza Line",
         "fareEstimateJpy": 180,
         "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Tokyo Metro Yurakucho Line: Ginza-itchome → Yurakucho.",
-        "mapsQuery": "Ginza-itchome Station Yurakucho Line to Yurakucho Station by subway",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Ginza Line: Tawaramachi → Ueno.",
+        "mapsQuery": "Tawaramachi Station Ginza Line to Ueno Station by subway",
         "transitModes": [
           "SUBWAY",
           "RAIL",
@@ -122,31 +143,85 @@
       "marPick": false
     },
     {
-      "time": "6:45 am",
+      "time": "5:15 am",
       "duration": "8-12 min",
-      "title": "Transbordo Yurakucho → Tokyo Station / Keiyo Line",
+      "title": "Transbordo Ueno Metro → JR Ueno",
       "icon": "sync_alt",
       "tone": "travel",
       "items": [
-        "Bajarse en Yurakucho.",
-        "Conectar hacia JR / Tokyo Station.",
-        "Buscar señales hacia JR Keiyo Line.",
-        "Tener paciencia porque el acceso a Keiyo Line en Tokyo Station puede sentirse largo.",
-        "Mantenerse juntos y no correr."
+        "Bajarse en Ueno Station.",
+        "Seguir señales hacia JR Yamanote Line.",
+        "Buscar dirección Tokyo / Shinagawa.",
+        "Tener paciencia porque el transbordo entre Metro y JR puede tomar unos minutos."
       ],
-      "detail": "Para Disney desde Tokyo Station, el punto importante es llegar a JR Keiyo Line. El transbordo puede tomar más de lo esperado por la distancia interna.",
+      "detail": "Este transbordo conecta Tokyo Metro Ginza Line con JR Yamanote para llegar a Tokyo Station.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Yurakucho Station, Tokyo, Japan",
-        "destination": "Tokyo Station Keiyo Line platform, Tokyo, Japan",
-        "note": "Conexión caminando desde Yurakucho/Tokyo Station hacia andenes de JR Keiyo Line.",
-        "fixedDuration": "8-15 min",
-        "mapsQuery": "Yurakucho Station to Tokyo Station Keiyo Line platform walking"
+        "origin": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "destination": "JR Ueno Station, Yamanote Line, Tokyo, Japan",
+        "note": "Transbordo desde Tokyo Metro Ginza Line hacia JR Yamanote Line en Ueno.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "Ueno Station Ginza Line to JR Ueno Station Yamanote Line walking"
       },
       "marPick": false
     },
     {
-      "time": "7:00 am",
+      "time": "5:30 am",
+      "duration": "7-10 min",
+      "title": "JR Yamanote: Ueno → Tokyo Station",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yamanote Line desde Ueno Station.",
+        "Dirección: Tokyo / Shinagawa.",
+        "Bajarse en Tokyo Station.",
+        "Costo estimado 2 personas: ¥340 aprox."
+      ],
+      "detail": "Este tramo lleva a Tokyo Station para conectar con JR Keiyo Line hacia Maihama.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "JR Ueno Station, Yamanote Line, Tokyo, Japan",
+        "destination": "Tokyo Station, JR Yamanote Line, Tokyo, Japan",
+        "note": "JR Yamanote Line desde Ueno Station hasta Tokyo Station.",
+        "fixedDuration": "7-10 min",
+        "fixedDistance": "JR Yamanote Line",
+        "fareEstimateJpy": 170,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yamanote Line: Ueno → Tokyo Station.",
+        "mapsQuery": "JR Ueno Station Yamanote Line to Tokyo Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:40 am",
+      "duration": "15-20 min",
+      "title": "Transbordo Tokyo Station → JR Keiyo Line",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Tokyo Station.",
+        "Seguir señales hacia JR Keiyo Line.",
+        "Tener paciencia porque el acceso a Keiyo Line en Tokyo Station puede sentirse largo.",
+        "No correr; caminar con margen.",
+        "Confirmar dirección Maihama / Soga / Kaihin-Makuhari según tren."
+      ],
+      "detail": "Para Disney desde Tokyo Station, el punto importante es llegar a JR Keiyo Line. El transbordo puede tomar más de lo esperado por la distancia interna.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Tokyo Station JR Yamanote Line platform, Tokyo, Japan",
+        "destination": "Tokyo Station Keiyo Line platform, Tokyo, Japan",
+        "note": "Conexión caminando dentro de Tokyo Station hacia andenes de JR Keiyo Line.",
+        "fixedDuration": "15-20 min",
+        "mapsQuery": "Tokyo Station Yamanote Line platform to Keiyo Line platform walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:05 am",
       "duration": "15-20 min",
       "title": "JR Keiyo Line: Tokyo Station → Maihama",
       "icon": "train",
@@ -177,8 +252,8 @@
       "marPick": false
     },
     {
-      "time": "7:25 am",
-      "duration": "7:25 - 7:40 am",
+      "time": "6:30 am",
+      "duration": "6:30 - 6:40 am",
       "title": "Llegada a Maihama Station",
       "icon": "train",
       "tone": "arrival",
@@ -197,7 +272,7 @@
       "marPick": false
     },
     {
-      "time": "7:40 am",
+      "time": "6:40 am",
       "duration": "10-15 min",
       "title": "Disney Resort Line: Resort Gateway → Tokyo DisneySea Station",
       "icon": "train",
@@ -228,19 +303,20 @@
       "marPick": false
     },
     {
-      "time": "7:55 am",
-      "duration": "7:55 - 8:30 am",
-      "title": "Entrada / fila de Tokyo DisneySea",
+      "time": "7:00 am",
+      "duration": "7:00 - 8:00 am",
+      "title": "Llegada a Tokyo DisneySea / fila de entrada",
       "icon": "confirmation_number",
       "tone": "arrival",
       "items": [
         "Llegar a la entrada de Tokyo DisneySea.",
         "Tener entradas listas en la app.",
+        "Hacer fila con calma.",
         "Revisar mapas, horarios y disponibilidad de Premier Access o Standby Pass.",
         "Definir prioridades antes de entrar.",
         "Tener agua y batería lista."
       ],
-      "detail": "Este bloque es clave. Al entrar al parque, revisar inmediatamente la app para organizar Fantasy Springs, Soaring, Journey y otros favoritos según disponibilidad real.",
+      "detail": "Llegar entre 7:00 y 7:15 am da buen margen para estar listos antes de la apertura. Este bloque es clave para organizar la estrategia del día.",
       "location": {
         "name": "Tokyo DisneySea Entrance",
         "mapsQuery": "Tokyo DisneySea Entrance"
@@ -249,15 +325,15 @@
       "marPick": false
     },
     {
-      "time": "8:30 am",
-      "duration": "8:30 - 9:00 am",
+      "time": "8:00 am",
+      "duration": "8:00 - 9:00 am",
       "title": "Ingreso a Tokyo DisneySea",
       "icon": "castle",
       "tone": "arrival",
       "marListStop": true,
       "items": [
         "Parada explícita de la lista de Mar: Tokyo DisneySea.",
-        "Entrar al parque.",
+        "Entrar al parque cuando abra.",
         "Revisar app oficial apenas entren.",
         "Reservar Premier Access / Standby Pass si aplica.",
         "Tomar fotos iniciales en Mediterranean Harbor."
@@ -429,7 +505,7 @@
     },
     {
       "time": "7:30 pm",
-      "duration": "7:30 - 8:30 pm",
+      "duration": "7:30 - 8:45 pm",
       "title": "Noche en DisneySea / show / últimas fotos",
       "icon": "nightlight",
       "tone": "night",
@@ -437,9 +513,10 @@
         "Ver el ambiente nocturno del parque.",
         "Revisar si hay show nocturno disponible.",
         "Tomar últimas fotos en Mediterranean Harbor.",
-        "Hacer una última atracción si las filas bajan."
+        "Hacer una última atracción si las filas bajan.",
+        "No salir demasiado tarde si ya están agotados."
       ],
-      "detail": "La noche en DisneySea es parte importante de la experiencia. No salir demasiado temprano si todavía tienen energía.",
+      "detail": "La noche en DisneySea es parte importante de la experiencia. La salida se ajusta según energía y horario real del parque.",
       "location": {
         "name": "Mediterranean Harbor Tokyo DisneySea",
         "mapsQuery": "Mediterranean Harbor Tokyo DisneySea night"
@@ -448,8 +525,8 @@
       "marPick": false
     },
     {
-      "time": "8:30 pm",
-      "duration": "8:30 - 8:45 pm",
+      "time": "8:45 pm",
+      "duration": "8:45 - 9:00 pm",
       "title": "Salida de DisneySea → Tokyo DisneySea Station",
       "icon": "directions_walk",
       "tone": "travel",
@@ -471,7 +548,7 @@
       "marPick": false
     },
     {
-      "time": "8:45 pm",
+      "time": "9:00 pm",
       "duration": "10-15 min",
       "title": "Disney Resort Line: DisneySea → Resort Gateway",
       "icon": "train",
@@ -502,7 +579,7 @@
       "marPick": false
     },
     {
-      "time": "9:00 pm",
+      "time": "9:15 pm",
       "duration": "5-8 min",
       "title": "Caminata Resort Gateway → Maihama Station",
       "icon": "directions_walk",
@@ -513,7 +590,7 @@
         "Buscar JR Keiyo Line hacia Tokyo.",
         "Costo: $0."
       ],
-      "detail": "Conectar de vuelta hacia JR para regresar a Ginza/Tokyo Station.",
+      "detail": "Conectar de vuelta hacia JR para regresar a Tokyo.",
       "routeInfo": {
         "mode": "walking",
         "origin": "Resort Gateway Station, Maihama, Chiba, Japan",
@@ -525,7 +602,7 @@
       "marPick": false
     },
     {
-      "time": "9:10 pm",
+      "time": "9:25 pm",
       "duration": "15-20 min",
       "title": "JR Keiyo Line: Maihama → Tokyo Station",
       "icon": "train",
@@ -556,30 +633,30 @@
       "marPick": false
     },
     {
-      "time": "9:35 pm",
-      "duration": "10-15 min",
-      "title": "Tokyo Station → Hotel Sunroute Ginza",
+      "time": "9:50 pm",
+      "duration": "15-25 min",
+      "title": "Opción recomendada: taxi Tokyo Station → hotel",
       "icon": "local_taxi",
       "tone": "travel",
       "items": [
-        "Tomar taxi corto desde Tokyo Station hacia Hotel Sunroute Ginza.",
+        "Al llegar a Tokyo Station, tomar taxi hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
         "Recomendado por cansancio y compras del parque.",
-        "Presupuesto estimado 2 personas: $10 - $20.",
-        "Guardar bien souvenirs y celulares."
+        "Evita más transbordos hacia Ueno/Tawaramachi.",
+        "Presupuesto estimado 2 personas: $20 - $40 según tráfico."
       ],
-      "detail": "Después de DisneySea, el taxi corto evita caminar de más desde Tokyo Station. Vale la pena por comodidad.",
+      "detail": "Después de DisneySea, este taxi puede valer mucho la pena. El regreso en tren sería posible, pero con cansancio y compras se vuelve más incómodo.",
       "routeInfo": {
         "mode": "driving",
         "origin": "Tokyo Station, Tokyo, Japan",
-        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "note": "Taxi corto desde Tokyo Station hacia Hotel Sunroute Ginza.",
-        "fixedDuration": "10-15 min",
-        "mapsQuery": "Tokyo Station to Hotel Sunroute Ginza by taxi"
+        "destination": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "note": "Taxi desde Tokyo Station hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi después de DisneySea.",
+        "fixedDuration": "15-25 min",
+        "mapsQuery": "Tokyo Station to Henn na Hotel Premier Tokyo Asakusa Tawaramachi by taxi"
       },
       "marPick": false
     },
     {
-      "time": "9:55 pm",
+      "time": "10:20 pm",
       "duration": "cierre",
       "title": "Llegada al hotel y recuperación",
       "icon": "bedtime",
@@ -591,10 +668,10 @@
         "Descansar bien porque el Día 14 toca Akihabara + Odaiba.",
         "No extender la noche."
       ],
-      "detail": "DisneySea es un día largo. Lo más importante al llegar es recuperarse.",
+      "detail": "DisneySea es un día largo. Lo más importante al llegar es recuperarse. Si deciden volver en tren en lugar de taxi, la llegada puede acercarse más a 10:45 - 11:15 pm.",
       "showMap": false,
       "marPick": false
     }
   ],
-  "note": "Meta del día: dedicar el día completo a Tokyo DisneySea desde Hotel Sunroute Ginza, saliendo temprano, usando JR Keiyo Line hacia Maihama, priorizando Fantasy Springs/atracciones principales según app oficial, disfrutando tiendas y ambiente nocturno, y regresando cómodo en taxi corto desde Tokyo Station al hotel."
+  "note": "Meta del día: salir del Henn na Hotel Premier Tokyo Asakusa Tawaramachi a las 5:00 am, llegar a Tokyo DisneySea alrededor de 7:00 - 7:15 am, hacer fila con margen, organizar Premier Access / Standby Pass según disponibilidad, disfrutar el parque completo y regresar de forma cómoda, idealmente con taxi desde Tokyo Station al hotel para evitar transbordos al final del día."
 }

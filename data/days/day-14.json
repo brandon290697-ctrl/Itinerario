@@ -1,6 +1,6 @@
 {
   "title": "Día 14 - Akihabara + Odaiba",
-  "subtitle": "Martes 20 de octubre - anime, figuras, tiendas de Mar en Akihabara, Daiba 1-chome y Unicorn Gundam en Odaiba",
+  "subtitle": "Martes 20 de octubre - anime, figuras, tiendas de Mar en Akihabara, Daiba 1-chome y Unicorn Gundam en Odaiba desde Asakusa Tawaramachi",
   "dateLabel": "Martes 20 de octubre de 2026",
   "shortDateLabel": "Mar 20 oct",
   "status": "Anime + Odaiba",
@@ -10,9 +10,10 @@
     "note": "transporte local, comida, tiendas de figuras/anime, papelería, Odaiba, snacks, cena y compras moderadas"
   },
   "route": [
-    "Hotel Sunroute Ginza",
-    "Higashi-ginza Station",
-    "Akihabara Station",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+    "Tawaramachi Station",
+    "Suehirocho Station",
+    "Akihabara",
     "BOOKOFF Akihabara Ekimae Store",
     "Radio Kaikan",
     "AmiAmi Akihabara",
@@ -29,8 +30,7 @@
     "Unicorn Gundam",
     "Daiba Station",
     "Shimbashi Station",
-    "Ginza",
-    "Hotel Sunroute Ginza"
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi"
   ],
   "marStops": [
     "BOOKOFF Akihabara Ekimae Store",
@@ -47,94 +47,96 @@
     "Radio Kaikan",
     "AmiAmi Akihabara",
     "Mandarake Complex Akihabara",
-    "Akihabara figure shops"
+    "Akihabara figure shops",
+    "Unicorn Gundam"
   ],
   "blocks": [
     {
-      "time": "8:00 am",
+      "time": "7:30 am",
       "duration": "inicio",
-      "title": "Despertar en Ginza",
+      "title": "Despertar en Asakusa Tawaramachi",
       "icon": "wb_sunny",
       "tone": "rest",
       "items": [
-        "Levantarse con calma después del día de DisneySea.",
+        "Levantarse con calma después del día fuerte de DisneySea.",
         "Preparar batería externa, celular/cámara y efectivo.",
         "Llevar bolso o mochila con espacio para figuras, papelería y compras pequeñas.",
         "Usar zapatos cómodos.",
         "No llevar demasiadas cosas porque Akihabara puede tentar mucho con compras."
       ],
-      "detail": "Este día conviene empezarlo un poco más tarde que DisneySea para recuperar energía, pero sin salir demasiado tarde porque Akihabara tiene muchas tiendas.",
+      "detail": "Este día conviene empezarlo un poco más tarde que DisneySea para recuperar energía, pero sin salir demasiado tarde porque Akihabara tiene muchas tiendas. Desde Asakusa/Tawaramachi, Akihabara queda bastante cómodo.",
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "8:30 am",
-      "duration": "8:30 - 9:05 am",
-      "title": "Desayuno cerca del Hotel Sunroute Ginza",
+      "time": "8:00 am",
+      "duration": "8:00 - 8:35 am",
+      "title": "Desayuno cerca del hotel",
       "icon": "local_cafe",
       "tone": "food",
       "items": [
-        "Desayuno cerca del hotel.",
-        "Opciones: café, bakery japonesa, convenience store o desayuno simple.",
+        "Desayuno cerca del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Opciones: café, bakery japonesa, convenience store, onigiri o desayuno simple.",
         "Comprar agua antes de salir.",
-        "Presupuesto 2 personas: $18 - $30."
+        "Presupuesto 2 personas: $15 - $30."
       ],
       "detail": "Desayuno sencillo antes de ir a Akihabara. Hoy es día de caminar tiendas, así que conviene ir bien desayunados.",
       "location": {
-        "name": "Hotel Sunroute Ginza / Ginza",
-        "mapsQuery": "Hotel Sunroute Ginza breakfast nearby"
+        "name": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi breakfast nearby"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "9:10 am",
-      "duration": "7-10 min",
-      "title": "Caminata hotel → Higashi-ginza Station",
+      "time": "8:40 am",
+      "duration": "3-5 min",
+      "title": "Caminata hotel → Tawaramachi Station",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir del Hotel Sunroute Ginza hacia Higashi-ginza Station.",
-        "Buscar Tokyo Metro Hibiya Line.",
+        "Salir del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Caminar hacia Tawaramachi Station.",
+        "Buscar Tokyo Metro Ginza Line.",
         "Tener Suica/ICOCA lista.",
         "Costo: $0."
       ],
-      "detail": "Higashi-ginza funciona bien para llegar directo a Akihabara por Hibiya Line, sin hacer demasiados transbordos.",
+      "detail": "Tawaramachi es la estación más cómoda desde el hotel. Para Akihabara, conviene ir hacia Suehirocho y caminar desde ahí.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "destination": "Higashi-ginza Station, Tokyo, Japan",
-        "note": "Caminata desde Hotel Sunroute Ginza hasta Higashi-ginza Station.",
-        "fixedDuration": "7-10 min",
-        "mapsQuery": "Hotel Sunroute Ginza to Higashi-ginza Station walking"
+        "origin": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "destination": "Tawaramachi Station, Tokyo, Japan",
+        "note": "Caminata corta desde el hotel hacia Tawaramachi Station.",
+        "fixedDuration": "3-5 min",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi to Tawaramachi Station walking"
       },
       "marPick": false
     },
     {
-      "time": "9:25 am",
-      "duration": "12-15 min",
-      "title": "Metro: Higashi-ginza → Akihabara",
+      "time": "8:50 am",
+      "duration": "7-10 min",
+      "title": "Metro: Tawaramachi → Suehirocho",
       "icon": "subway",
       "tone": "travel",
       "items": [
-        "Entrar a Higashi-ginza Station.",
-        "Tomar Tokyo Metro Hibiya Line.",
-        "Dirección: Kita-senju / Minami-kurihashi.",
-        "Bajarse en Akihabara Station.",
-        "Costo estimado 2 personas: ¥420 aprox."
+        "Entrar a Tawaramachi Station.",
+        "Tomar Tokyo Metro Ginza Line.",
+        "Dirección: Shibuya.",
+        "Bajarse en Suehirocho Station.",
+        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
       ],
-      "detail": "Este traslado debe quedar como metro. Usar estaciones exactas evita que Maps lo marque como caminata o ruta genérica.",
+      "detail": "Suehirocho queda muy bien para entrar caminando a la zona de Akihabara sin hacer transbordos.",
       "routeInfo": {
         "mode": "transit",
-        "origin": "Higashi-ginza Station, Tokyo Metro Hibiya Line, Tokyo, Japan",
-        "destination": "Akihabara Station, Tokyo Metro Hibiya Line, Tokyo, Japan",
-        "note": "Tokyo Metro Hibiya Line desde Higashi-ginza Station hasta Akihabara Station.",
-        "fixedDuration": "12-15 min",
-        "fixedDistance": "Tokyo Metro Hibiya Line",
-        "fareEstimateJpy": 210,
+        "origin": "Tawaramachi Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "destination": "Suehirocho Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "note": "Tokyo Metro Ginza Line desde Tawaramachi Station hasta Suehirocho Station.",
+        "fixedDuration": "7-10 min",
+        "fixedDistance": "Tokyo Metro Ginza Line",
+        "fareEstimateJpy": 180,
         "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Tokyo Metro Hibiya Line: Higashi-ginza → Akihabara.",
-        "mapsQuery": "Higashi-ginza Station Hibiya Line to Akihabara Station Hibiya Line by subway",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Ginza Line: Tawaramachi → Suehirocho.",
+        "mapsQuery": "Tawaramachi Station Ginza Line to Suehirocho Station by subway",
         "transitModes": [
           "SUBWAY",
           "RAIL",
@@ -144,31 +146,32 @@
       "marPick": false
     },
     {
-      "time": "9:45 am",
-      "duration": "5-10 min",
-      "title": "Salida de Akihabara Station",
+      "time": "9:00 am",
+      "duration": "8-12 min",
+      "title": "Caminata Suehirocho → Akihabara Electric Town",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir de Akihabara Station.",
-        "Ubicar la zona Electric Town / tiendas principales.",
+        "Salir de Suehirocho Station.",
+        "Caminar hacia la zona principal de Akihabara.",
+        "Ubicar Electric Town / tiendas principales.",
         "Preparar mapa de tiendas.",
         "Costo: $0."
       ],
-      "detail": "Akihabara puede sentirse abrumador. Conviene empezar por puntos claros y no entrar a todas las tiendas sin orden.",
+      "detail": "Desde Suehirocho se entra muy bien al área de tiendas de Akihabara. Es una ventaja de dormir en Asakusa/Tawaramachi.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Akihabara Station, Tokyo, Japan",
-        "destination": "BOOKOFF Akihabara Ekimae Store, Tokyo, Japan",
-        "note": "Caminata desde Akihabara Station hacia BOOKOFF Akihabara Ekimae Store.",
-        "fixedDuration": "3-8 min",
-        "mapsQuery": "Akihabara Station to BOOKOFF Akihabara Ekimae Store walking"
+        "origin": "Suehirocho Station, Tokyo, Japan",
+        "destination": "Akihabara Electric Town, Tokyo, Japan",
+        "note": "Caminata desde Suehirocho Station hacia Akihabara Electric Town.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "Suehirocho Station to Akihabara Electric Town walking"
       },
       "marPick": false
     },
     {
-      "time": "10:00 am",
-      "duration": "40 min",
+      "time": "9:15 am",
+      "duration": "9:15 - 9:55 am",
       "title": "BOOKOFF Akihabara Ekimae Store",
       "icon": "storefront",
       "tone": "shopping",
@@ -190,7 +193,7 @@
       "marPick": true
     },
     {
-      "time": "10:40 am",
+      "time": "9:55 am",
       "duration": "5-10 min",
       "title": "Caminata BOOKOFF → Radio Kaikan",
       "icon": "directions_walk",
@@ -213,8 +216,8 @@
       "marPick": false
     },
     {
-      "time": "10:50 am",
-      "duration": "1h",
+      "time": "10:05 am",
+      "duration": "10:05 - 11:05 am",
       "title": "Radio Kaikan",
       "icon": "toys",
       "tone": "shopping",
@@ -235,7 +238,7 @@
       "marPick": false
     },
     {
-      "time": "11:50 am",
+      "time": "11:05 am",
       "duration": "5-10 min",
       "title": "Caminata Radio Kaikan → AmiAmi Akihabara",
       "icon": "directions_walk",
@@ -257,7 +260,7 @@
       "marPick": false
     },
     {
-      "time": "12:00 pm",
+      "time": "11:15 am",
       "duration": "45 min",
       "title": "AmiAmi Akihabara",
       "icon": "shopping_bag",
@@ -279,8 +282,8 @@
       "marPick": false
     },
     {
-      "time": "12:45 pm",
-      "duration": "12:45 - 1:45 pm",
+      "time": "12:00 pm",
+      "duration": "12:00 - 1:00 pm",
       "title": "Almuerzo en Akihabara",
       "icon": "restaurant",
       "tone": "food",
@@ -299,7 +302,7 @@
       "marPick": true
     },
     {
-      "time": "1:45 pm",
+      "time": "1:00 pm",
       "duration": "10 min",
       "title": "Caminata almuerzo → Dengama",
       "icon": "directions_walk",
@@ -321,7 +324,7 @@
       "marPick": false
     },
     {
-      "time": "2:00 pm",
+      "time": "1:15 pm",
       "duration": "30 min",
       "title": "Dengama",
       "icon": "storefront",
@@ -342,7 +345,7 @@
       "marPick": true
     },
     {
-      "time": "2:30 pm",
+      "time": "1:45 pm",
       "duration": "10 min",
       "title": "Caminata Dengama → FU WA RI",
       "icon": "directions_walk",
@@ -364,7 +367,7 @@
       "marPick": false
     },
     {
-      "time": "2:45 pm",
+      "time": "2:00 pm",
       "duration": "30 min",
       "title": "FU WA RI",
       "icon": "shopping_bag",
@@ -385,7 +388,7 @@
       "marPick": true
     },
     {
-      "time": "3:15 pm",
+      "time": "2:30 pm",
       "duration": "10 min",
       "title": "Caminata FU WA RI → tag stationery shop",
       "icon": "directions_walk",
@@ -407,7 +410,7 @@
       "marPick": false
     },
     {
-      "time": "3:30 pm",
+      "time": "2:45 pm",
       "duration": "35 min",
       "title": "tag stationery shop",
       "icon": "edit_note",
@@ -428,8 +431,8 @@
       "marPick": true
     },
     {
-      "time": "4:05 pm",
-      "duration": "25 min",
+      "time": "3:20 pm",
+      "duration": "30 min",
       "title": "Última vuelta rápida de figuras en Akihabara",
       "icon": "toys",
       "tone": "shopping",
@@ -449,8 +452,8 @@
       "marPick": false
     },
     {
-      "time": "4:30 pm",
-      "duration": "10 min",
+      "time": "3:50 pm",
+      "duration": "5-10 min",
       "title": "Caminata tiendas → Akihabara Station",
       "icon": "directions_walk",
       "tone": "travel",
@@ -472,7 +475,7 @@
       "marPick": false
     },
     {
-      "time": "4:45 pm",
+      "time": "4:05 pm",
       "duration": "12-15 min",
       "title": "JR Yamanote: Akihabara → Shimbashi",
       "icon": "train",
@@ -503,7 +506,7 @@
       "marPick": false
     },
     {
-      "time": "5:00 pm",
+      "time": "4:20 pm",
       "duration": "8-12 min",
       "title": "Transbordo en Shimbashi hacia Yurikamome",
       "icon": "sync_alt",
@@ -526,7 +529,7 @@
       "marPick": false
     },
     {
-      "time": "5:15 pm",
+      "time": "4:35 pm",
       "duration": "15-20 min",
       "title": "Yurikamome: Shimbashi → Daiba",
       "icon": "train",
@@ -558,7 +561,7 @@
       "marPick": false
     },
     {
-      "time": "5:35 pm",
+      "time": "5:00 pm",
       "duration": "5-10 min",
       "title": "Caminata Daiba Station → Daiba 1-chome Shopping Street",
       "icon": "directions_walk",
@@ -581,7 +584,7 @@
       "marPick": false
     },
     {
-      "time": "5:45 pm",
+      "time": "5:10 pm",
       "duration": "45 min",
       "title": "Daiba 1-chome Shopping Street",
       "icon": "storefront",
@@ -602,7 +605,7 @@
       "marPick": true
     },
     {
-      "time": "6:30 pm",
+      "time": "5:55 pm",
       "duration": "15-20 min",
       "title": "Caminata Daiba 1-chome → DiverCity / Unicorn Gundam",
       "icon": "directions_walk",
@@ -624,7 +627,7 @@
       "marPick": false
     },
     {
-      "time": "6:50 pm",
+      "time": "6:15 pm",
       "duration": "30 min",
       "title": "Unicorn Gundam",
       "icon": "smart_toy",
@@ -647,8 +650,8 @@
       "marPick": true
     },
     {
-      "time": "7:20 pm",
-      "duration": "7:20 - 8:30 pm",
+      "time": "6:45 pm",
+      "duration": "6:45 - 8:00 pm",
       "title": "Cena en Odaiba / DiverCity",
       "icon": "dinner_dining",
       "tone": "food",
@@ -657,7 +660,7 @@
         "Opciones: ramen, sushi casual, tonkatsu, curry, hamburguesa japonesa o food court.",
         "Presupuesto 2 personas: $45 - $90."
       ],
-      "detail": "Cenar en Odaiba evita regresar a Ginza con hambre y permite cerrar la noche con vistas de la bahía.",
+      "detail": "Cenar en Odaiba evita regresar a Asakusa con hambre y permite cerrar la noche con vistas de la bahía.",
       "location": {
         "name": "DiverCity Tokyo Plaza restaurants",
         "mapsQuery": "DiverCity Tokyo Plaza restaurants dinner"
@@ -666,8 +669,8 @@
       "marPick": false
     },
     {
-      "time": "8:30 pm",
-      "duration": "15-25 min",
+      "time": "8:00 pm",
+      "duration": "20-30 min",
       "title": "Paseo nocturno corto por Odaiba",
       "icon": "nightlight",
       "tone": "night",
@@ -686,7 +689,7 @@
       "marPick": false
     },
     {
-      "time": "8:55 pm",
+      "time": "8:30 pm",
       "duration": "8-12 min",
       "title": "Caminata DiverCity → Daiba Station",
       "icon": "directions_walk",
@@ -697,7 +700,7 @@
         "Tener Suica/ICOCA lista.",
         "Costo: $0."
       ],
-      "detail": "Primer tramo del regreso hacia Ginza.",
+      "detail": "Primer tramo del regreso hacia Asakusa/Tawaramachi.",
       "routeInfo": {
         "mode": "walking",
         "origin": "DiverCity Tokyo Plaza, Tokyo, Japan",
@@ -709,7 +712,7 @@
       "marPick": false
     },
     {
-      "time": "9:10 pm",
+      "time": "8:45 pm",
       "duration": "15-20 min",
       "title": "Yurikamome: Daiba → Shimbashi",
       "icon": "train",
@@ -740,30 +743,30 @@
       "marPick": false
     },
     {
-      "time": "9:30 pm",
-      "duration": "10-15 min",
-      "title": "Taxi corto: Shimbashi → Hotel Sunroute Ginza",
+      "time": "9:10 pm",
+      "duration": "20-30 min",
+      "title": "Opción recomendada: taxi Shimbashi → hotel",
       "icon": "local_taxi",
       "tone": "travel",
       "items": [
-        "Tomar taxi corto desde Shimbashi hacia Hotel Sunroute Ginza.",
+        "Al llegar a Shimbashi, tomar taxi hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
         "Recomendado por cansancio y compras de Akihabara/Odaiba.",
-        "Presupuesto estimado 2 personas: $8 - $18.",
-        "Guardar bien figuras, bolsas y compras."
+        "Evita más transbordos de noche.",
+        "Presupuesto estimado 2 personas: $25 - $45 según tráfico."
       ],
-      "detail": "También se puede caminar o usar metro, pero después de Akihabara + Odaiba el taxi corto vale la pena por comodidad.",
+      "detail": "También se puede volver en tren/metro, pero después de Akihabara + Odaiba el taxi corto desde Shimbashi puede valer la pena por comodidad.",
       "routeInfo": {
         "mode": "driving",
         "origin": "Shimbashi Station, Tokyo, Japan",
-        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "note": "Taxi corto desde Shimbashi Station hacia Hotel Sunroute Ginza.",
-        "fixedDuration": "10-15 min",
-        "mapsQuery": "Shimbashi Station to Hotel Sunroute Ginza by taxi"
+        "destination": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "note": "Taxi desde Shimbashi Station hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "fixedDuration": "20-30 min",
+        "mapsQuery": "Shimbashi Station to Henn na Hotel Premier Tokyo Asakusa Tawaramachi by taxi"
       },
       "marPick": false
     },
     {
-      "time": "9:50 pm",
+      "time": "9:40 pm",
       "duration": "cierre",
       "title": "Llegada al hotel y guardar compras",
       "icon": "bedtime",
@@ -773,12 +776,12 @@
         "Revisar que las cajas de figuras no se dañen.",
         "Cargar celulares y batería externa.",
         "Tomar agua y descansar.",
-        "Revisar el Día 15: PokePark + Pokémon Café / Nihonbashi."
+        "Revisar el Día 15: PokéPark + Pokémon Center Tokyo DX."
       ],
       "detail": "Día muy bueno para compras y anime. Lo importante al llegar es ordenar bien lo comprado para que no se dañe en maleta.",
       "showMap": false,
       "marPick": false
     }
   ],
-  "note": "Meta del día: dedicar la mañana y primera tarde a Akihabara con tiendas de figuras/anime y paradas de Mar como BOOKOFF, Dengama, FU WA RI, tag stationery shop y opción de comida en Sushiro/Yakiniku Syo; luego moverse a Odaiba para Daiba 1-chome Shopping Street, Unicorn Gundam, cena y regreso cómodo a Hotel Sunroute Ginza."
+  "note": "Meta del día: aprovechar que el hotel está en Asakusa/Tawaramachi para llegar fácil a Akihabara por Tawaramachi → Suehirocho, dedicar la mañana y primera tarde a tiendas de figuras/anime y paradas de Mar como BOOKOFF, Dengama, FU WA RI, tag stationery shop y opción de comida en Sushiro/Yakiniku Syo; luego moverse a Odaiba por Shimbashi + Yurikamome para Daiba 1-chome Shopping Street, Unicorn Gundam, cena y regreso cómodo al hotel, idealmente en taxi desde Shimbashi."
 }

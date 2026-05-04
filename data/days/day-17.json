@@ -1,78 +1,79 @@
 {
   "title": "Día 17 - Cierre de Tokyo / compras finales",
-  "subtitle": "Viernes 23 de octubre - Ginza, Tokyo Station, Nihonbashi, compras pendientes, farmacia, Don Quijote opcional y preparación para el regreso",
+  "subtitle": "Viernes 23 de octubre - Ueno, Ameyoko, Akihabara opcional, compras finales, farmacia, cena cerca de Asakusa/Ueno y empaque antes del vuelo",
   "dateLabel": "Viernes 23 de octubre de 2026",
   "shortDateLabel": "Vie 23 oct",
   "status": "Cierre Tokyo",
   "costEstimateUsd": {
-    "low": 160,
-    "high": 360,
-    "note": "comidas, transporte local, compras finales, farmacia, snacks, souvenirs y posible taxi corto; sin hotel"
+    "low": 150,
+    "high": 340,
+    "note": "comidas, transporte local, compras finales, farmacia, snacks, souvenirs, Akihabara opcional y posible taxi corto; sin hotel"
   },
   "route": [
-    "Hotel Sunroute Ginza",
-    "Ginza",
-    "Tokyo Station",
-    "Character Street / Tokyo Station",
-    "Nihonbashi",
-    "Matsumoto Kiyoshi / farmacia",
-    "Ginza",
-    "Don Quijote Ginza opcional",
-    "Cena final",
-    "Hotel Sunroute Ginza"
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+    "Tawaramachi Station",
+    "Ueno Station",
+    "Ameyoko Shopping District",
+    "Ueno / farmacia / snacks",
+    "Akihabara opcional",
+    "Asakusa / Tawaramachi",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+    "Cena final cerca de Asakusa / Ueno",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi"
   ],
   "marStops": [
     "Matsumoto Kiyoshi",
-    "Loft opcional",
     "MEGA Don Quijote opcional",
-    "Tokyo Station Character Street opcional"
+    "Akihabara opcional",
+    "Ameyoko opcional"
   ],
   "animeFigureStops": [
-    "Tokyo Station Character Street",
-    "Character shops",
-    "Pokémon Center Tokyo DX opcional"
+    "Akihabara opcional",
+    "BOOKOFF Akihabara opcional",
+    "Radio Kaikan opcional",
+    "Mandarake Complex Akihabara opcional"
   ],
   "blocks": [
     {
-      "time": "8:00 am",
+      "time": "7:30 am",
       "duration": "inicio",
       "title": "Despertar sin correr",
       "icon": "wb_sunny",
       "tone": "rest",
       "items": [
-        "Levantarse con calma.",
+        "Levantarse con calma después del día de Kamakura.",
         "Revisar todo lo comprado durante Tokyo.",
-        "Separar lo que falta comprar: snacks, regalos, farmacia, cosméticos o souvenirs.",
-        "Revisar peso/espacio de maletas.",
-        "No programar un día demasiado pesado porque mañana toca regreso."
+        "Separar lo que falta comprar: snacks, regalos, farmacia, cosméticos, figuras o souvenirs.",
+        "Revisar peso y espacio de maletas.",
+        "No programar un día demasiado pesado porque mañana toca vuelo temprano desde Narita."
       ],
-      "detail": "Este día debe funcionar como cierre inteligente: compras finales, zonas cercanas al hotel y preparación para volar al día siguiente.",
+      "detail": "Este día debe funcionar como cierre inteligente. Como ahora el hotel está en Asakusa/Tawaramachi, conviene cerrar con zonas cercanas como Ueno, Ameyoko, Akihabara opcional y Asakusa.",
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "8:30 am",
-      "duration": "8:30 - 9:15 am",
-      "title": "Desayuno cerca del Hotel Sunroute Ginza",
+      "time": "8:00 am",
+      "duration": "8:00 - 8:40 am",
+      "title": "Desayuno cerca del hotel",
       "icon": "local_cafe",
       "tone": "food",
       "items": [
-        "Desayuno tranquilo cerca del hotel.",
-        "Opciones: café, bakery japonesa, convenience store o restaurante cercano.",
+        "Desayuno tranquilo cerca del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Opciones: café, bakery japonesa, convenience store, onigiri, sándwich o desayuno simple.",
         "Hacer una lista rápida de compras pendientes.",
-        "Presupuesto 2 personas: $18 - $35."
+        "Presupuesto 2 personas: $15 - $30."
       ],
       "detail": "Último desayuno completo en Tokyo. Conviene usarlo para ordenar prioridades del día.",
       "location": {
-        "name": "Hotel Sunroute Ginza / Ginza",
-        "mapsQuery": "Hotel Sunroute Ginza breakfast nearby"
+        "name": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi breakfast nearby"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "9:20 am",
-      "duration": "9:20 - 9:40 am",
+      "time": "8:40 am",
+      "duration": "8:40 - 9:15 am",
       "title": "Primera revisión de maletas",
       "icon": "luggage",
       "tone": "rest",
@@ -80,289 +81,315 @@
         "Volver a la habitación o revisar antes de salir.",
         "Separar ropa sucia, regalos frágiles, figuras y documentos.",
         "Dejar espacio calculado para compras finales.",
-        "Confirmar hora de salida al aeropuerto del día siguiente."
+        "Separar ropa del vuelo de mañana.",
+        "Confirmar hora de salida hacia Narita para el vuelo de 9:35 am."
       ],
-      "detail": "Este bloque evita comprar de más sin saber si cabe en la maleta.",
+      "detail": "Este bloque evita comprar de más sin saber si cabe en la maleta. Es importante porque este viaje tiene compras Pokémon, anime, papelería y recuerdos.",
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "9:45 am",
+      "time": "9:20 am",
+      "duration": "3-5 min",
+      "title": "Caminata hotel → Tawaramachi Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Caminar hacia Tawaramachi Station.",
+        "Buscar Tokyo Metro Ginza Line.",
+        "Tener Suica/ICOCA lista.",
+        "Costo: $0."
+      ],
+      "detail": "Desde Tawaramachi se llega muy fácil a Ueno, que será la zona principal del cierre.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "destination": "Tawaramachi Station, Tokyo, Japan",
+        "note": "Caminata corta desde el hotel hacia Tawaramachi Station.",
+        "fixedDuration": "3-5 min",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi to Tawaramachi Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:30 am",
+      "duration": "3-5 min",
+      "title": "Metro: Tawaramachi → Ueno",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Entrar a Tawaramachi Station.",
+        "Tomar Tokyo Metro Ginza Line.",
+        "Dirección: Shibuya.",
+        "Bajarse en Ueno Station.",
+        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
+      ],
+      "detail": "Tramo muy corto. Ueno queda cómodo desde Asakusa/Tawaramachi y es ideal para el último día por cercanía a Keisei/Narita.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Tawaramachi Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "destination": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "note": "Tokyo Metro Ginza Line desde Tawaramachi Station hasta Ueno Station.",
+        "fixedDuration": "3-5 min",
+        "fixedDistance": "Tokyo Metro Ginza Line",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Ginza Line: Tawaramachi → Ueno.",
+        "mapsQuery": "Tawaramachi Station Ginza Line to Ueno Station by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:40 am",
       "duration": "10-15 min",
-      "title": "Caminata hotel → Ginza principal",
+      "title": "Caminata Ueno Station → Ameyoko",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir del Hotel Sunroute Ginza hacia la zona principal de Ginza.",
-        "Caminar hacia Ginza-itchome / Chuo-dori.",
-        "Ubicar tiendas, farmacias y cafés cercanos.",
+        "Salir de Ueno Station.",
+        "Caminar hacia Ameyoko Shopping District.",
+        "Ubicar calles comerciales, snacks y farmacias.",
         "Costo: $0."
       ],
-      "detail": "El cierre empieza cerca del hotel para no depender de traslados largos.",
+      "detail": "Ameyoko es una buena zona de cierre porque tiene snacks, tiendas, ambiente local y compras prácticas sin alejarse del hotel.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "destination": "Ginza, Tokyo, Japan",
-        "note": "Caminata desde Hotel Sunroute Ginza hacia la zona principal de Ginza.",
-        "fixedDuration": "10-15 min",
-        "mapsQuery": "Hotel Sunroute Ginza to Ginza Tokyo walking"
+        "origin": "Ueno Station, Tokyo, Japan",
+        "destination": "Ameyoko Shopping District, Tokyo, Japan",
+        "note": "Caminata desde Ueno Station hacia Ameyoko.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Ueno Station to Ameyoko Shopping District walking"
       },
       "marPick": false
     },
     {
-      "time": "10:00 am",
-      "duration": "10:00 - 11:00 am",
-      "title": "Ginza - paseo y compras suaves",
-      "icon": "shopping_bag",
-      "tone": "shopping",
-      "items": [
-        "Caminar por Ginza con calma.",
-        "Revisar tiendas pendientes, snacks, regalos o souvenirs bonitos.",
-        "No comprar cosas demasiado grandes.",
-        "Presupuesto flexible 2 personas: $30 - $120."
-      ],
-      "detail": "Ginza es ideal para un cierre bonito y ordenado, sin sentir que están corriendo por Tokyo.",
-      "location": {
-        "name": "Ginza",
-        "mapsQuery": "Ginza Tokyo shopping"
-      },
-      "showMap": false,
-      "marPick": false
-    },
-    {
-      "time": "11:00 am",
-      "duration": "15-20 min",
-      "title": "Caminata Ginza → Tokyo Station",
-      "icon": "directions_walk",
-      "tone": "travel",
-      "items": [
-        "Caminar desde Ginza hacia Tokyo Station.",
-        "Ir sin prisa por zona Marunouchi / Yaesu según ruta.",
-        "Usar la caminata como último paseo urbano.",
-        "Costo: $0."
-      ],
-      "detail": "Desde Ginza se puede caminar a Tokyo Station. Si están cansados o llueve, taxi corto también es válido.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Ginza, Tokyo, Japan",
-        "destination": "Tokyo Station, Tokyo, Japan",
-        "note": "Caminata desde Ginza hacia Tokyo Station.",
-        "fixedDuration": "15-20 min",
-        "mapsQuery": "Ginza Tokyo to Tokyo Station walking"
-      },
-      "marPick": false
-    },
-    {
-      "time": "11:25 am",
-      "duration": "11:25 am - 12:30 pm",
-      "title": "Tokyo Station Character Street",
+      "time": "9:55 am",
+      "duration": "9:55 - 11:15 am",
+      "title": "Ueno / Ameyoko Shopping District",
       "icon": "storefront",
       "tone": "shopping",
-      "animeFigureStop": true,
       "items": [
-        "Revisar tiendas de personajes dentro de Tokyo Station.",
-        "Buscar souvenirs pequeños de anime, personajes, dulces, llaveros o papelería.",
-        "Buena opción para compras livianas de último día.",
-        "Compras opcionales 2 personas: $25 - $100."
+        "Pasear por Ameyoko.",
+        "Buscar snacks japoneses, dulces, recuerdos, cosméticos, té, regalos pequeños o productos curiosos.",
+        "Comprar cosas livianas para no complicar maletas.",
+        "Presupuesto flexible 2 personas: $30 - $120."
       ],
-      "detail": "Este bloque cubre tiendas de personajes sin tener que volver hasta Akihabara. Es ideal para compras pequeñas de cierre.",
+      "detail": "Ameyoko es buena para compras finales más locales y prácticas. Desde Asakusa/Tawaramachi queda mucho mejor que ir hasta Ginza solo para cerrar compras.",
       "location": {
-        "name": "Tokyo Station Character Street",
-        "mapsQuery": "Tokyo Station Character Street"
+        "name": "Ameyoko Shopping District",
+        "mapsQuery": "Ameyoko Shopping District Ueno Tokyo"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "12:30 pm",
-      "duration": "12:30 - 1:30 pm",
-      "title": "Almuerzo en Tokyo Station / Marunouchi",
-      "icon": "restaurant",
-      "tone": "food",
-      "items": [
-        "Almorzar en Tokyo Station, Marunouchi o zona cercana.",
-        "Opciones: ramen, sushi casual, bento, curry japonés, tonkatsu o tempura.",
-        "Elegir algo práctico y rico sin alejarse demasiado.",
-        "Presupuesto 2 personas: $35 - $80."
-      ],
-      "detail": "Tokyo Station tiene muchas opciones de comida y queda cómodo para seguir con Nihonbashi o volver a Ginza.",
-      "location": {
-        "name": "Tokyo Station restaurants",
-        "mapsQuery": "Tokyo Station restaurants lunch"
-      },
-      "showMap": false,
-      "marPick": false
-    },
-    {
-      "time": "1:30 pm",
-      "duration": "10-15 min",
-      "title": "Caminata Tokyo Station → Nihonbashi",
-      "icon": "directions_walk",
-      "tone": "travel",
-      "items": [
-        "Caminar desde Tokyo Station hacia Nihonbashi.",
-        "Ir por calles principales.",
-        "Costo: $0."
-      ],
-      "detail": "Nihonbashi queda cerca y sirve para compras pendientes o repetir Pokémon Center Tokyo DX si algo faltó.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Tokyo Station, Tokyo, Japan",
-        "destination": "Nihonbashi, Tokyo, Japan",
-        "note": "Caminata desde Tokyo Station hacia Nihonbashi.",
-        "fixedDuration": "10-15 min",
-        "mapsQuery": "Tokyo Station to Nihonbashi walking"
-      },
-      "marPick": false
-    },
-    {
-      "time": "1:50 pm",
-      "duration": "1:50 - 2:40 pm",
-      "title": "Nihonbashi / Pokémon Center Tokyo DX opcional",
-      "icon": "catching_pokemon",
-      "tone": "shopping",
-      "animeFigureStop": true,
-      "items": [
-        "Bloque opcional si quedó algo pendiente de Pokémon Center Tokyo DX.",
-        "Buscar productos que no compraron el Día 15.",
-        "Si ya no hace falta, usar este bloque para café o paseo por Nihonbashi.",
-        "Compras opcionales 2 personas: $20 - $100."
-      ],
-      "detail": "Este bloque queda opcional porque el día fuerte de Pokémon ya fue el Día 15. Solo se usa si faltó algo.",
-      "location": {
-        "name": "Pokémon Center Tokyo DX / Nihonbashi",
-        "mapsQuery": "Pokémon Center Tokyo DX Nihonbashi Tokyo"
-      },
-      "showMap": false,
-      "marPick": false
-    },
-    {
-      "time": "2:40 pm",
-      "duration": "15-20 min",
-      "title": "Caminata Nihonbashi → Matsumoto Kiyoshi / farmacia",
-      "icon": "directions_walk",
-      "tone": "travel",
-      "items": [
-        "Caminar hacia una farmacia conveniente en Nihonbashi, Ginza o camino al hotel.",
-        "Revisar lista de cosméticos, skincare, snacks o artículos de cuidado personal.",
-        "Costo: $0."
-      ],
-      "detail": "La farmacia conviene hacerla antes de volver al hotel para guardar todo y no cargarlo en la noche.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Nihonbashi, Tokyo, Japan",
-        "destination": "Matsumoto Kiyoshi Ginza, Tokyo, Japan",
-        "note": "Caminata desde Nihonbashi/Ginza hacia Matsumoto Kiyoshi o farmacia cercana.",
-        "fixedDuration": "10-20 min",
-        "mapsQuery": "Nihonbashi Tokyo to Matsumoto Kiyoshi Ginza walking"
-      },
-      "marPick": false
-    },
-    {
-      "time": "3:00 pm",
-      "duration": "3:00 - 3:45 pm",
-      "title": "Matsumoto Kiyoshi / farmacia japonesa",
+      "time": "11:15 am",
+      "duration": "11:15 - 12:00 pm",
+      "title": "Matsumoto Kiyoshi / farmacia japonesa en Ueno",
       "icon": "local_pharmacy",
       "tone": "shopping",
       "marListStop": true,
       "items": [
         "Parada explícita de la lista de Mar.",
         "Comprar cosméticos, skincare, mascarillas, snacks, productos de farmacia y artículos pequeños.",
-        "Revisar restricciones de medicamentos antes de comprar cualquier producto sensible.",
-        "Compras opcionales 2 personas: $30 - $140."
+        "Revisar restricciones antes de comprar cualquier medicamento o producto sensible.",
+        "Mantener compras controladas para no sobrecargar maleta.",
+        "Compras opcionales 2 personas: $30 - $120."
       ],
-      "detail": "Este es buen momento para farmacia porque luego pueden volver al hotel y empacar todo de una vez.",
+      "detail": "Meter farmacia en Ueno tiene más sentido que volver a Ginza. Queda cerca del hotel y cerca de la ruta de Narita para el día siguiente.",
       "location": {
-        "name": "Matsumoto Kiyoshi Ginza / Nihonbashi",
-        "mapsQuery": "Matsumoto Kiyoshi Ginza Tokyo"
+        "name": "Matsumoto Kiyoshi Ueno / Ameyoko",
+        "mapsQuery": "Matsumoto Kiyoshi Ueno Ameyoko Tokyo"
       },
       "showMap": false,
       "marPick": true
     },
     {
-      "time": "3:45 pm",
-      "duration": "10-15 min",
-      "title": "Regreso al Hotel Sunroute Ginza",
-      "icon": "directions_walk",
+      "time": "12:00 pm",
+      "duration": "12:00 - 1:00 pm",
+      "title": "Almuerzo en Ueno",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almorzar en Ueno o Ameyoko.",
+        "Opciones: ramen, sushi casual, donburi, curry japonés, tonkatsu, tempura o comida rápida japonesa.",
+        "Elegir algo práctico y no demasiado largo.",
+        "Presupuesto 2 personas: $35 - $70."
+      ],
+      "detail": "Almorzar en Ueno evita moverse demasiado y deja la tarde flexible para Akihabara o regreso temprano al hotel.",
+      "location": {
+        "name": "Ueno / Ameyoko restaurants",
+        "mapsQuery": "Ueno Ameyoko lunch restaurants"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:00 pm",
+      "duration": "1:00 - 1:20 pm",
+      "title": "Decisión flexible: Akihabara o regreso a Asakusa",
+      "icon": "rule",
+      "tone": "rest",
+      "items": [
+        "Revisar energía y compras.",
+        "Si todavía falta alguna figura o tienda pendiente, ir a Akihabara.",
+        "Si ya compraron suficiente, regresar al hotel para empacar antes.",
+        "No forzar Akihabara si las maletas ya van muy cargadas."
+      ],
+      "detail": "Este bloque es intencionalmente flexible. Akihabara queda cerca de Ueno, pero solo conviene si realmente falta algo importante.",
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "1:20 pm",
+      "duration": "5-8 min",
+      "title": "Opción A - JR: Ueno → Akihabara",
+      "icon": "train",
       "tone": "travel",
       "items": [
-        "Volver caminando al hotel.",
-        "Guardar compras de farmacia, Character Street y Nihonbashi.",
-        "Descansar un rato antes de la cena final.",
-        "Costo: $0."
+        "Tomar JR Yamanote Line o JR Keihin-Tohoku Line desde Ueno.",
+        "Bajarse en Akihabara Station.",
+        "Usar esta opción solo si quieren una última vuelta de anime/figuras.",
+        "Costo estimado 2 personas: ¥300 - ¥400 aprox."
       ],
-      "detail": "Este regreso temprano permite ordenar maletas antes de la última noche.",
+      "detail": "Akihabara queda muy cerca de Ueno, por eso es la mejor opción si quieren una última vuelta de figuras sin cruzar Tokyo.",
       "routeInfo": {
-        "mode": "walking",
-        "origin": "Matsumoto Kiyoshi Ginza, Tokyo, Japan",
-        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "note": "Caminata desde farmacia/zona Ginza hacia Hotel Sunroute Ginza.",
-        "fixedDuration": "10-15 min",
-        "mapsQuery": "Matsumoto Kiyoshi Ginza to Hotel Sunroute Ginza walking"
+        "mode": "transit",
+        "origin": "Ueno Station, Tokyo, Japan",
+        "destination": "Akihabara Station, Tokyo, Japan",
+        "note": "Traslado corto desde Ueno hacia Akihabara en JR.",
+        "fixedDuration": "5-8 min",
+        "fixedDistance": "JR Yamanote Line / JR Keihin-Tohoku Line",
+        "fareEstimateJpy": 160,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo corto Ueno → Akihabara.",
+        "mapsQuery": "Ueno Station to Akihabara Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
       },
       "marPick": false
     },
     {
-      "time": "4:00 pm",
-      "duration": "4:00 - 5:30 pm",
-      "title": "Empaque parcial y descanso",
+      "time": "1:35 pm",
+      "duration": "1:35 - 3:00 pm",
+      "title": "Akihabara opcional - última vuelta de figuras/anime",
+      "icon": "toys",
+      "tone": "shopping",
+      "animeFigureStop": true,
+      "items": [
+        "Bloque opcional para tiendas que hayan quedado pendientes.",
+        "Opciones: BOOKOFF Akihabara, Radio Kaikan, AmiAmi, Mandarake Complex o tiendas cercanas.",
+        "Comprar solo cosas que realmente valgan la pena.",
+        "Revisar espacio de maleta antes de comprar figuras grandes.",
+        "Compras opcionales 2 personas: $30 - $150."
+      ],
+      "detail": "Este bloque es para cerrar compras de anime/figuras. Si ya cumplieron Akihabara el Día 14, puede omitirse sin problema.",
+      "location": {
+        "name": "Akihabara figure shops",
+        "mapsQuery": "Akihabara figure shops Mandarake AmiAmi Radio Kaikan BOOKOFF"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "3:00 pm",
+      "duration": "10-15 min",
+      "title": "Regreso Akihabara / Ueno → hotel",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Volver hacia Tawaramachi / Asakusa.",
+        "Opción desde Akihabara: JR/Metro hacia Ueno y luego Ginza Line a Tawaramachi.",
+        "Opción desde Ueno: Ginza Line directa a Tawaramachi.",
+        "Si llevan muchas compras, taxi corto puede valer la pena.",
+        "Presupuesto tren 2 personas: ¥360 - ¥700 aprox.; taxi corto: $10 - $25."
+      ],
+      "detail": "La meta es regresar relativamente temprano al hotel para empacar con calma.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Akihabara Station, Tokyo, Japan",
+        "destination": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "note": "Regreso desde Akihabara/Ueno hacia el hotel en Asakusa Tawaramachi. Usar tren/metro o taxi corto si llevan muchas compras.",
+        "fixedDuration": "15-25 min",
+        "mapsQuery": "Akihabara Station to Henn na Hotel Premier Tokyo Asakusa Tawaramachi by train or taxi",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "3:30 pm",
+      "duration": "3:30 - 5:00 pm",
+      "title": "Empaque parcial y descanso en el hotel",
       "icon": "luggage",
       "tone": "rest",
       "items": [
-        "Empacar compras frágiles, figuras y souvenirs.",
-        "Separar ropa para el vuelo del día siguiente.",
-        "Revisar peso aproximado de maletas.",
+        "Guardar compras de Ueno, Ameyoko, farmacia y Akihabara.",
+        "Separar figuras, peluches, papelería y souvenirs frágiles.",
+        "Revisar peso y espacio de maletas.",
+        "Separar ropa del vuelo y artículos de mano.",
         "Cargar celulares y batería externa.",
-        "Descansar antes de la cena final."
+        "Descansar un rato antes de la cena final."
       ],
-      "detail": "Este bloque es clave. No conviene dejar todo el empaque para la noche antes del vuelo.",
+      "detail": "Este bloque es clave. Como el vuelo sale temprano al día siguiente, no conviene dejar todo el empaque para la noche.",
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "5:30 pm",
-      "duration": "opcional",
-      "title": "Opción flexible: Don Quijote / Loft / compras pendientes",
-      "icon": "shopping_cart",
-      "tone": "shopping",
+      "time": "5:00 pm",
+      "duration": "5:00 - 5:45 pm",
+      "title": "Paseo final suave por Asakusa / Tawaramachi",
+      "icon": "temple_buddhist",
+      "tone": "arrival",
       "items": [
-        "Usar este bloque solo si todavía falta algo importante.",
-        "Opciones: Don Quijote cercano, Loft, farmacia adicional o tienda específica.",
-        "Si ya todo está comprado, convertirlo en descanso/café.",
-        "Presupuesto flexible 2 personas: $20 - $120."
+        "Dar una última vuelta suave por Asakusa o Tawaramachi.",
+        "Comprar snack, agua o algún recuerdo pequeño si hace falta.",
+        "No alejarse demasiado del hotel.",
+        "Usar este bloque como descanso activo antes de la cena final."
       ],
-      "detail": "Este bloque se deja flexible para no sobrecargar el último día. Solo se activa si realmente falta algo.",
+      "detail": "Como el hotel está en Asakusa, tiene sentido cerrar con un paseo local y no cruzar Tokyo otra vez.",
       "location": {
-        "name": "Ginza final shopping",
-        "mapsQuery": "Don Quijote Ginza Loft Ginza Tokyo"
+        "name": "Asakusa / Tawaramachi",
+        "mapsQuery": "Asakusa Tawaramachi Tokyo evening walk"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "6:45 pm",
-      "duration": "6:45 - 8:15 pm",
-      "title": "Cena final en Tokyo",
+      "time": "6:00 pm",
+      "duration": "6:00 - 7:30 pm",
+      "title": "Cena final cerca de Asakusa / Ueno",
       "icon": "dinner_dining",
       "tone": "food",
       "items": [
-        "Cena final cerca de Ginza, Yurakucho o Tokyo Station.",
+        "Cena final cerca del hotel, Asakusa o Ueno.",
+        "Opciones: sushi, tempura, ramen premium, izakaya tranquilo, tonkatsu, soba o yakiniku.",
         "Elegir algo bonito pero práctico para no volver tarde.",
-        "Opciones: sushi, yakiniku, izakaya elegante, ramen premium, tempura o restaurante con ambiente bonito.",
-        "Presupuesto 2 personas: $70 - $160."
+        "Presupuesto 2 personas: $60 - $140."
       ],
-      "detail": "Última cena en Japón. Debe sentirse especial, pero sin complicar el regreso al hotel y el empaque final.",
+      "detail": "Última cena en Japón. Debe sentirse especial, pero sin complicar el regreso ni el empaque final.",
       "location": {
-        "name": "Ginza / Yurakucho / Tokyo Station dinner",
-        "mapsQuery": "Ginza Yurakucho Tokyo Station dinner restaurant"
+        "name": "Asakusa / Ueno dinner restaurants",
+        "mapsQuery": "Asakusa Ueno Tokyo dinner restaurant"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "8:15 pm",
-      "duration": "10-20 min",
-      "title": "Regreso al Hotel Sunroute Ginza",
+      "time": "7:30 pm",
+      "duration": "5-15 min",
+      "title": "Regreso al hotel",
       "icon": "bedtime",
       "tone": "travel",
       "items": [
@@ -374,18 +401,18 @@
       "detail": "Mejor regresar temprano para cerrar maletas sin presión.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Ginza, Tokyo, Japan",
-        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "note": "Regreso desde zona de cena en Ginza/Yurakucho hacia Hotel Sunroute Ginza.",
-        "fixedDuration": "10-20 min",
-        "mapsQuery": "Ginza Tokyo to Hotel Sunroute Ginza walking"
+        "origin": "Asakusa, Tokyo, Japan",
+        "destination": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "note": "Regreso desde zona de cena en Asakusa/Ueno hacia el hotel.",
+        "fixedDuration": "5-15 min",
+        "mapsQuery": "Asakusa to Henn na Hotel Premier Tokyo Asakusa Tawaramachi walking"
       },
       "marPick": false
     },
     {
-      "time": "8:45 pm",
-      "duration": "8:45 - 10:15 pm",
-      "title": "Empaque final y preparación para regreso",
+      "time": "8:00 pm",
+      "duration": "8:00 - 9:30 pm",
+      "title": "Empaque final y preparación para Narita",
       "icon": "luggage",
       "tone": "rest",
       "items": [
@@ -393,13 +420,31 @@
         "Separar documentos, pasaportes, reservas y efectivo restante.",
         "Preparar ropa del vuelo.",
         "Cargar celulares, audífonos y batería externa.",
-        "Revisar hora de salida hacia el aeropuerto.",
+        "Revisar ruta hacia Keisei Ueno / Narita.",
+        "Confirmar terminal de salida del vuelo de 9:35 am.",
         "Dejar una bolsa pequeña con snacks, agua y artículos de mano."
       ],
       "detail": "Este bloque evita estrés el día del vuelo. La noche debe terminar con todo listo.",
       "showMap": false,
       "marPick": false
+    },
+    {
+      "time": "9:30 pm",
+      "duration": "cierre",
+      "title": "Dormir temprano",
+      "icon": "bedtime",
+      "tone": "rest",
+      "items": [
+        "Dormir temprano.",
+        "Dejar alarma lista.",
+        "No dejar nada cargando lejos de la vista.",
+        "Tener pasaportes y documentos en bolso de mano.",
+        "Mañana toca salida muy temprano hacia Narita."
+      ],
+      "detail": "El vuelo sale a las 9:35 am desde Narita, así que este cierre temprano es importante.",
+      "showMap": false,
+      "marPick": false
     }
   ],
-  "note": "Meta del día: cerrar Tokyo sin prisas desde Hotel Sunroute Ginza, usando zonas cercanas como Ginza, Tokyo Station y Nihonbashi para compras finales, Character Street, farmacia, posible repetición de Pokémon Center Tokyo DX, cena final y empaque completo antes del vuelo."
+  "note": "Meta del día: cerrar Tokyo de forma práctica desde Henn na Hotel Premier Tokyo Asakusa Tawaramachi, priorizando Ueno, Ameyoko, farmacia, snacks y compras finales, con Akihabara como bloque opcional si aún falta alguna figura o tienda. La tarde debe quedar para volver al hotel, empacar con calma, cenar cerca de Asakusa/Ueno y dormir temprano porque el Día 18 incluye salida muy temprana hacia Narita para el vuelo de 9:35 am."
 }

@@ -1,6 +1,6 @@
 {
   "title": "Día 12 - Shibuya + Harajuku + Shinjuku",
-  "subtitle": "Domingo 18 de octubre - Hachiko, Pokémon Center Shibuya, tiendas de Mar, Harajuku, Harry Potter Shop, Ayuntamiento de Tokio y Godzilla Head",
+  "subtitle": "Domingo 18 de octubre - Hachiko, Pokémon Center Shibuya, Mandarake, tiendas de Mar, Harajuku, Harry Potter Shop, Ayuntamiento de Tokio y Godzilla Head desde Asakusa Tawaramachi",
   "dateLabel": "Domingo 18 de octubre de 2026",
   "shortDateLabel": "Dom 18 oct",
   "status": "Shibuya + Harajuku + Shinjuku",
@@ -10,9 +10,9 @@
     "note": "transporte local, comida, cafés, tiendas de Shibuya, Harajuku, Shinjuku y compras moderadas"
   },
   "route": [
-    "Hotel Sunroute Ginza",
-    "Ginza-itchome Station",
-    "Nagatacho Station",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
+    "Tawaramachi Station",
+    "Ueno Station",
     "Shibuya Station",
     "Hachiko Square",
     "Shibuya Crossing",
@@ -28,8 +28,10 @@
     "Shinjuku Station",
     "Ayuntamiento de Tokio",
     "Godzilla Head",
-    "Ginza Station",
-    "Hotel Sunroute Ginza"
+    "Shinjuku Station",
+    "Ueno Station",
+    "Tawaramachi Station",
+    "Henn na Hotel Premier Tokyo Asakusa Tawaramachi"
   ],
   "marStops": [
     "Hachiko Square",
@@ -50,155 +52,156 @@
   ],
   "blocks": [
     {
-      "time": "7:30 am",
+      "time": "6:45 am",
       "duration": "inicio",
-      "title": "Despertar en Ginza",
+      "title": "Despertar en Asakusa Tawaramachi",
       "icon": "wb_sunny",
       "tone": "rest",
       "items": [
-        "Levantarse con calma.",
+        "Levantarse temprano porque este día sí tiene traslados más largos.",
         "Preparar batería externa, celular/cámara y efectivo.",
         "Llevar bolso cómodo para compras.",
         "Revisar clima antes de salir.",
-        "Usar zapatos cómodos porque este día tiene bastante caminata urbana."
+        "Usar zapatos cómodos porque será un día urbano largo."
       ],
-      "detail": "Este es uno de los días más cargados de Tokyo por compras, calles, tiendas y traslados entre zonas. Conviene salir temprano, pero sin hacerlo tan pesado como Disney.",
+      "detail": "Este es uno de los días más cargados de Tokyo por compras, calles, tiendas y traslados entre zonas. Al estar hospedados en Asakusa/Tawaramachi, conviene salir temprano para llegar a Shibuya antes de que se llene demasiado.",
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "8:00 am",
-      "duration": "8:00 - 8:35 am",
-      "title": "Desayuno cerca del Hotel Sunroute Ginza",
+      "time": "7:15 am",
+      "duration": "7:15 - 7:40 am",
+      "title": "Desayuno rápido cerca del hotel",
       "icon": "local_cafe",
       "tone": "food",
       "items": [
         "Desayuno ligero cerca del hotel.",
-        "Opciones: café, bakery japonesa, convenience store o restaurante cercano.",
+        "Opciones: café, bakery japonesa, convenience store, onigiri o sándwich.",
         "Comprar agua antes de salir.",
-        "Presupuesto 2 personas: $18 - $30."
+        "Presupuesto 2 personas: $15 - $28."
       ],
-      "detail": "Desayuno práctico antes de moverse a Shibuya. Este día tiene muchas tiendas, así que mejor salir ya desayunados.",
+      "detail": "Desayuno práctico antes de moverse hacia Shibuya. Este día tiene muchas tiendas, así que mejor salir ya desayunados.",
       "location": {
-        "name": "Hotel Sunroute Ginza / Ginza",
-        "mapsQuery": "Hotel Sunroute Ginza breakfast nearby"
+        "name": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi breakfast nearby"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "8:40 am",
-      "duration": "5-8 min",
-      "title": "Caminata hotel → Ginza-itchome Station",
+      "time": "7:45 am",
+      "duration": "3-5 min",
+      "title": "Caminata hotel → Tawaramachi Station",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir del Hotel Sunroute Ginza hacia Ginza-itchome Station.",
-        "Buscar la entrada de Tokyo Metro Yurakucho Line.",
+        "Salir del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Caminar hacia Tawaramachi Station.",
+        "Buscar Tokyo Metro Ginza Line.",
         "Tener Suica/ICOCA lista.",
         "Costo: $0."
       ],
-      "detail": "Se separa la caminata al metro del tramo en tren para que el mapa no lo marque como caminata completa.",
+      "detail": "Tawaramachi Station es la estación más cómoda para iniciar el traslado desde el hotel.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "destination": "Ginza-itchome Station, Tokyo, Japan",
-        "note": "Caminata desde Hotel Sunroute Ginza hasta Ginza-itchome Station.",
-        "fixedDuration": "5-8 min",
-        "mapsQuery": "Hotel Sunroute Ginza to Ginza-itchome Station walking"
+        "origin": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "destination": "Tawaramachi Station, Tokyo, Japan",
+        "note": "Caminata corta desde el hotel hacia Tawaramachi Station.",
+        "fixedDuration": "3-5 min",
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi to Tawaramachi Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "7:55 am",
+      "duration": "3-5 min",
+      "title": "Metro: Tawaramachi → Ueno",
+      "icon": "subway",
+      "tone": "travel",
+      "items": [
+        "Entrar a Tawaramachi Station.",
+        "Tomar Tokyo Metro Ginza Line.",
+        "Dirección: Shibuya.",
+        "Bajarse en Ueno Station para conectar con JR.",
+        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
+      ],
+      "detail": "Este tramo conecta Asakusa/Tawaramachi con Ueno, donde se puede tomar JR Yamanote hacia Shibuya.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Tawaramachi Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "destination": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "note": "Tokyo Metro Ginza Line desde Tawaramachi Station hasta Ueno Station.",
+        "fixedDuration": "3-5 min",
+        "fixedDistance": "Tokyo Metro Ginza Line",
+        "fareEstimateJpy": 180,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Ginza Line: Tawaramachi → Ueno.",
+        "mapsQuery": "Tawaramachi Station Ginza Line to Ueno Station by subway",
+        "transitModes": [
+          "SUBWAY",
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:00 am",
+      "duration": "8-12 min",
+      "title": "Transbordo Ueno Metro → JR Ueno",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Ueno Station.",
+        "Seguir señales hacia JR Yamanote Line.",
+        "Buscar dirección Tokyo / Shinagawa / Shibuya.",
+        "Tener paciencia porque el transbordo entre Metro y JR puede tomar unos minutos."
+      ],
+      "detail": "Este transbordo es importante para evitar que el traslado quede ambiguo. Desde Ueno, la Yamanote lleva directo a Shibuya.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "destination": "JR Ueno Station, Yamanote Line, Tokyo, Japan",
+        "note": "Transbordo desde Tokyo Metro Ginza Line hacia JR Yamanote Line en Ueno.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "Ueno Station Ginza Line to JR Ueno Station Yamanote Line walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "8:15 am",
+      "duration": "28-35 min",
+      "title": "JR Yamanote: Ueno → Shibuya",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yamanote Line desde Ueno Station.",
+        "Dirección: Tokyo / Shinagawa / Shibuya.",
+        "Bajarse en Shibuya Station.",
+        "Seguir señales hacia Hachiko Exit.",
+        "Costo estimado 2 personas: ¥420 - ¥520 aprox."
+      ],
+      "detail": "Este es el traslado principal del inicio del día. Desde Asakusa/Tawaramachi se siente más largo que desde Ginza, pero sigue siendo directo usando Ueno + Yamanote.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "JR Ueno Station, Yamanote Line, Tokyo, Japan",
+        "destination": "JR Shibuya Station, Yamanote Line, Tokyo, Japan",
+        "note": "JR Yamanote Line desde Ueno Station hasta Shibuya Station.",
+        "fixedDuration": "28-35 min",
+        "fixedDistance": "JR Yamanote Line",
+        "fareEstimateJpy": 210,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yamanote Line: Ueno → Shibuya.",
+        "mapsQuery": "JR Ueno Station Yamanote Line to JR Shibuya Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
       },
       "marPick": false
     },
     {
       "time": "8:50 am",
-      "duration": "8-10 min",
-      "title": "Metro: Ginza-itchome → Nagatacho",
-      "icon": "subway",
-      "tone": "travel",
-      "items": [
-        "Entrar a Ginza-itchome Station.",
-        "Tomar Tokyo Metro Yurakucho Line.",
-        "Dirección: Wakoshi / Ikebukuro.",
-        "Bajarse en Nagatacho Station.",
-        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
-      ],
-      "detail": "Primer tramo de metro hacia Shibuya. Usar estaciones exactas evita que Maps interprete el recorrido como caminata urbana.",
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Ginza-itchome Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
-        "destination": "Nagatacho Station, Tokyo Metro Yurakucho Line, Tokyo, Japan",
-        "note": "Tokyo Metro Yurakucho Line desde Ginza-itchome Station hasta Nagatacho Station.",
-        "fixedDuration": "8-10 min",
-        "fixedDistance": "Tokyo Metro Yurakucho Line",
-        "fareEstimateJpy": 180,
-        "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Tokyo Metro Yurakucho Line: Ginza-itchome → Nagatacho.",
-        "mapsQuery": "Ginza-itchome Station Yurakucho Line to Nagatacho Station by subway",
-        "transitModes": [
-          "SUBWAY",
-          "RAIL",
-          "TRAIN"
-        ]
-      },
-      "marPick": false
-    },
-    {
-      "time": "9:00 am",
-      "duration": "5-8 min",
-      "title": "Transbordo en Nagatacho",
-      "icon": "sync_alt",
-      "tone": "travel",
-      "items": [
-        "Bajarse en Nagatacho Station.",
-        "Seguir señales hacia Tokyo Metro Hanzomon Line.",
-        "Buscar dirección Shibuya.",
-        "Mantenerse juntos porque la estación puede sentirse grande."
-      ],
-      "detail": "Nagatacho es una estación de conexión. Este bloque evita que el traslado se vea como un solo salto sin instrucciones.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Nagatacho Station Yurakucho Line platform, Tokyo, Japan",
-        "destination": "Nagatacho Station Hanzomon Line platform, Tokyo, Japan",
-        "note": "Transbordo interno en Nagatacho desde Yurakucho Line hacia Hanzomon Line.",
-        "fixedDuration": "5-8 min",
-        "mapsQuery": "Nagatacho Station transfer Yurakucho Line to Hanzomon Line"
-      },
-      "marPick": false
-    },
-    {
-      "time": "9:10 am",
-      "duration": "8-10 min",
-      "title": "Metro: Nagatacho → Shibuya",
-      "icon": "subway",
-      "tone": "travel",
-      "items": [
-        "Tomar Tokyo Metro Hanzomon Line.",
-        "Dirección: Shibuya / Chuo-Rinkan.",
-        "Bajarse en Shibuya Station.",
-        "Seguir señales hacia Hachiko Exit."
-      ],
-      "detail": "Segundo tramo hacia Shibuya. Llegar por estación permite empezar directamente en Hachiko y Shibuya Crossing.",
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Nagatacho Station, Tokyo Metro Hanzomon Line, Tokyo, Japan",
-        "destination": "Shibuya Station, Tokyo Metro Hanzomon Line, Tokyo, Japan",
-        "note": "Tokyo Metro Hanzomon Line desde Nagatacho Station hasta Shibuya Station.",
-        "fixedDuration": "8-10 min",
-        "fixedDistance": "Tokyo Metro Hanzomon Line",
-        "fareEstimateJpy": 180,
-        "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Tokyo Metro Hanzomon Line: Nagatacho → Shibuya.",
-        "mapsQuery": "Nagatacho Station Hanzomon Line to Shibuya Station Hanzomon Line by subway",
-        "transitModes": [
-          "SUBWAY",
-          "RAIL",
-          "TRAIN"
-        ]
-      },
-      "marPick": false
-    },
-    {
-      "time": "9:25 am",
       "duration": "5-10 min",
       "title": "Salida Hachiko en Shibuya Station",
       "icon": "directions_walk",
@@ -221,7 +224,7 @@
       "marPick": false
     },
     {
-      "time": "9:35 am",
+      "time": "9:00 am",
       "duration": "20 min",
       "title": "Hachiko Square",
       "icon": "pets",
@@ -242,7 +245,7 @@
       "marPick": true
     },
     {
-      "time": "9:55 am",
+      "time": "9:20 am",
       "duration": "20 min",
       "title": "Shibuya Crossing",
       "icon": "crossing",
@@ -262,7 +265,7 @@
       "marPick": false
     },
     {
-      "time": "10:15 am",
+      "time": "9:40 am",
       "duration": "10-15 min",
       "title": "Caminata Hachiko → Shibuya PARCO",
       "icon": "directions_walk",
@@ -285,8 +288,8 @@
       "marPick": false
     },
     {
-      "time": "10:30 am",
-      "duration": "10:30 - 11:30 am",
+      "time": "10:00 am",
+      "duration": "10:00 - 11:00 am",
       "title": "Pokémon Center Shibuya",
       "icon": "toys",
       "tone": "shopping",
@@ -308,7 +311,7 @@
       "marPick": true
     },
     {
-      "time": "11:30 am",
+      "time": "11:00 am",
       "duration": "10 min",
       "title": "Caminata Shibuya PARCO → Mandarake Shibuya",
       "icon": "directions_walk",
@@ -331,7 +334,7 @@
       "marPick": false
     },
     {
-      "time": "11:40 am",
+      "time": "11:10 am",
       "duration": "40 min",
       "title": "Mandarake Shibuya",
       "icon": "storefront",
@@ -353,8 +356,8 @@
       "marPick": true
     },
     {
-      "time": "12:20 pm",
-      "duration": "12:20 - 1:20 pm",
+      "time": "11:50 am",
+      "duration": "11:50 am - 12:50 pm",
       "title": "Almuerzo en Shibuya",
       "icon": "restaurant",
       "tone": "food",
@@ -373,7 +376,7 @@
       "marPick": false
     },
     {
-      "time": "1:20 pm",
+      "time": "12:50 pm",
       "duration": "10 min",
       "title": "Caminata almuerzo → Loft Shibuya",
       "icon": "directions_walk",
@@ -395,7 +398,7 @@
       "marPick": false
     },
     {
-      "time": "1:30 pm",
+      "time": "1:00 pm",
       "duration": "35 min",
       "title": "Loft Shibuya",
       "icon": "shopping_bag",
@@ -416,7 +419,7 @@
       "marPick": true
     },
     {
-      "time": "2:05 pm",
+      "time": "1:35 pm",
       "duration": "10 min",
       "title": "Caminata Loft → Disney Store Shibuya",
       "icon": "directions_walk",
@@ -438,7 +441,7 @@
       "marPick": false
     },
     {
-      "time": "2:15 pm",
+      "time": "1:45 pm",
       "duration": "30 min",
       "title": "Disney Store Shibuya",
       "icon": "storefront",
@@ -459,7 +462,7 @@
       "marPick": true
     },
     {
-      "time": "2:45 pm",
+      "time": "2:15 pm",
       "duration": "10 min",
       "title": "Caminata Disney Store → MEGA Don Quijote Shibuya",
       "icon": "directions_walk",
@@ -481,7 +484,7 @@
       "marPick": false
     },
     {
-      "time": "2:55 pm",
+      "time": "2:25 pm",
       "duration": "45 min",
       "title": "MEGA Don Quijote Shibuya",
       "icon": "shopping_cart",
@@ -502,8 +505,8 @@
       "marPick": true
     },
     {
-      "time": "3:40 pm",
-      "duration": "20-30 min",
+      "time": "3:10 pm",
+      "duration": "25 min",
       "title": "Yoroshi Cosmetics",
       "icon": "spa",
       "tone": "shopping",
@@ -523,7 +526,7 @@
       "marPick": true
     },
     {
-      "time": "4:10 pm",
+      "time": "3:35 pm",
       "duration": "10-15 min",
       "title": "Caminata Shibuya → JR Shibuya Station",
       "icon": "directions_walk",
@@ -546,7 +549,7 @@
       "marPick": false
     },
     {
-      "time": "4:25 pm",
+      "time": "3:50 pm",
       "duration": "3-5 min",
       "title": "JR Yamanote: Shibuya → Harajuku",
       "icon": "train",
@@ -578,7 +581,7 @@
       "marPick": false
     },
     {
-      "time": "4:35 pm",
+      "time": "4:00 pm",
       "duration": "5-10 min",
       "title": "Caminata Harajuku Station → Takeshita Street Entrance",
       "icon": "directions_walk",
@@ -601,8 +604,8 @@
       "marPick": false
     },
     {
-      "time": "4:45 pm",
-      "duration": "4:45 - 5:25 pm",
+      "time": "4:10 pm",
+      "duration": "4:10 - 5:00 pm",
       "title": "Takeshita Street Entrance Arch / Meiji Street",
       "icon": "streetview",
       "tone": "arrival",
@@ -614,7 +617,7 @@
         "Ver tiendas, snacks, crepas, ropa y ambiente juvenil.",
         "Presupuesto 2 personas: $15 - $50."
       ],
-      "detail": "Harajuku se mete como bloque de tarde, no como día completo. Es suficiente para cumplir la parte de Mar sin destruir el itinerario.",
+      "detail": "Harajuku se mete como bloque de tarde. Es suficiente para cumplir la parte de Mar sin destruir el itinerario.",
       "location": {
         "name": "Takeshita Street Entrance Arch / Meiji Street",
         "mapsQuery": "Takeshita Street Entrance Arch Harajuku Tokyo"
@@ -623,7 +626,7 @@
       "marPick": true
     },
     {
-      "time": "5:25 pm",
+      "time": "5:00 pm",
       "duration": "10 min",
       "title": "Caminata Takeshita → Harry Potter Shop Harajuku",
       "icon": "directions_walk",
@@ -645,7 +648,7 @@
       "marPick": false
     },
     {
-      "time": "5:35 pm",
+      "time": "5:10 pm",
       "duration": "35 min",
       "title": "Harry Potter Shop Harajuku",
       "icon": "auto_fix_high",
@@ -666,7 +669,7 @@
       "marPick": true
     },
     {
-      "time": "6:10 pm",
+      "time": "5:45 pm",
       "duration": "10 min",
       "title": "Caminata Harry Potter Shop → Harajuku Station",
       "icon": "directions_walk",
@@ -689,7 +692,7 @@
       "marPick": false
     },
     {
-      "time": "6:20 pm",
+      "time": "5:55 pm",
       "duration": "5 min",
       "title": "JR Yamanote: Harajuku → Shinjuku",
       "icon": "train",
@@ -720,7 +723,7 @@
       "marPick": false
     },
     {
-      "time": "6:30 pm",
+      "time": "6:05 pm",
       "duration": "15-20 min",
       "title": "Caminata Shinjuku Station → Ayuntamiento de Tokio",
       "icon": "directions_walk",
@@ -743,8 +746,8 @@
       "marPick": false
     },
     {
-      "time": "6:50 pm",
-      "duration": "40 min",
+      "time": "6:25 pm",
+      "duration": "45 min",
       "title": "Ayuntamiento de Tokio",
       "icon": "apartment",
       "tone": "arrival",
@@ -765,7 +768,7 @@
       "marPick": true
     },
     {
-      "time": "7:30 pm",
+      "time": "7:10 pm",
       "duration": "20-25 min",
       "title": "Caminata Ayuntamiento → Godzilla Head",
       "icon": "directions_walk",
@@ -788,7 +791,7 @@
       "marPick": false
     },
     {
-      "time": "8:00 pm",
+      "time": "7:35 pm",
       "duration": "20 min",
       "title": "Godzilla Head",
       "icon": "theater_comedy",
@@ -809,8 +812,8 @@
       "marPick": true
     },
     {
-      "time": "8:20 pm",
-      "duration": "8:20 - 9:30 pm",
+      "time": "8:00 pm",
+      "duration": "8:00 - 9:10 pm",
       "title": "Cena en Shinjuku",
       "icon": "dinner_dining",
       "tone": "food",
@@ -829,52 +832,106 @@
       "marPick": false
     },
     {
-      "time": "9:30 pm",
+      "time": "9:10 pm",
       "duration": "10-15 min",
       "title": "Caminata cena → Shinjuku Station",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
         "Volver hacia Shinjuku Station.",
-        "Buscar Tokyo Metro Marunouchi Line.",
-        "Dirección: Ginza / Ikebukuro según andén correcto hacia Ginza.",
+        "Buscar JR Yamanote Line.",
+        "Dirección: Ueno / Ikebukuro.",
         "Mantener compras juntas."
       ],
       "detail": "Shinjuku Station puede ser confusa, así que conviene volver con margen y sin correr.",
       "routeInfo": {
         "mode": "walking",
         "origin": "Godzilla Head, Shinjuku, Tokyo, Japan",
-        "destination": "Shinjuku Station Marunouchi Line, Tokyo, Japan",
-        "note": "Caminata desde Kabukicho/Godzilla Head hacia Shinjuku Station para tomar Marunouchi Line.",
+        "destination": "JR Shinjuku Station, Tokyo, Japan",
+        "note": "Caminata desde Kabukicho/Godzilla Head hacia JR Shinjuku Station.",
         "fixedDuration": "10-15 min",
-        "mapsQuery": "Godzilla Head Shinjuku to Shinjuku Station Marunouchi Line walking"
+        "mapsQuery": "Godzilla Head Shinjuku to JR Shinjuku Station walking"
       },
       "marPick": false
     },
     {
-      "time": "9:45 pm",
-      "duration": "16-20 min",
-      "title": "Metro: Shinjuku → Ginza",
+      "time": "9:25 pm",
+      "duration": "25-35 min",
+      "title": "JR Yamanote: Shinjuku → Ueno",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yamanote Line desde Shinjuku Station.",
+        "Dirección: Ikebukuro / Ueno.",
+        "Bajarse en Ueno Station.",
+        "Costo estimado 2 personas: ¥420 - ¥520 aprox."
+      ],
+      "detail": "Regreso largo hacia la zona norte de Tokyo. Esta es la parte más pesada del día al dormir en Asakusa/Tawaramachi.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "JR Shinjuku Station, Yamanote Line, Tokyo, Japan",
+        "destination": "JR Ueno Station, Yamanote Line, Tokyo, Japan",
+        "note": "JR Yamanote Line desde Shinjuku Station hasta Ueno Station.",
+        "fixedDuration": "25-35 min",
+        "fixedDistance": "JR Yamanote Line",
+        "fareEstimateJpy": 210,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yamanote Line: Shinjuku → Ueno.",
+        "mapsQuery": "JR Shinjuku Station Yamanote Line to JR Ueno Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:00 pm",
+      "duration": "8-12 min",
+      "title": "Transbordo JR Ueno → Tokyo Metro Ginza Line",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Ueno Station.",
+        "Seguir señales hacia Tokyo Metro Ginza Line.",
+        "Buscar dirección Asakusa.",
+        "Mantener compras juntas."
+      ],
+      "detail": "Último transbordo del día para volver a Tawaramachi.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "JR Ueno Station, Tokyo, Japan",
+        "destination": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "note": "Transbordo desde JR Ueno hacia Tokyo Metro Ginza Line.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "JR Ueno Station to Tokyo Metro Ginza Line Ueno Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:15 pm",
+      "duration": "3-5 min",
+      "title": "Metro: Ueno → Tawaramachi",
       "icon": "subway",
       "tone": "travel",
       "items": [
-        "Tomar Tokyo Metro Marunouchi Line desde Shinjuku Station.",
-        "Dirección: Ikebukuro pasando por Ginza.",
-        "Bajarse en Ginza Station.",
-        "Costo estimado 2 personas: ¥420 aprox."
+        "Tomar Tokyo Metro Ginza Line desde Ueno.",
+        "Dirección: Asakusa.",
+        "Bajarse en Tawaramachi Station.",
+        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
       ],
-      "detail": "Este regreso debe ir como metro directo para no marcar caminata. Ginza Station deja cerca del hotel.",
+      "detail": "Tramo corto final hacia el hotel.",
       "routeInfo": {
         "mode": "transit",
-        "origin": "Shinjuku Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
-        "destination": "Ginza Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
-        "note": "Tokyo Metro Marunouchi Line desde Shinjuku Station hasta Ginza Station.",
-        "fixedDuration": "16-20 min",
-        "fixedDistance": "Tokyo Metro Marunouchi Line",
-        "fareEstimateJpy": 210,
+        "origin": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "destination": "Tawaramachi Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "note": "Tokyo Metro Ginza Line desde Ueno Station hasta Tawaramachi Station.",
+        "fixedDuration": "3-5 min",
+        "fixedDistance": "Tokyo Metro Ginza Line",
+        "fareEstimateJpy": 180,
         "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Tokyo Metro Marunouchi Line: Shinjuku → Ginza.",
-        "mapsQuery": "Shinjuku Station Marunouchi Line to Ginza Station Marunouchi Line by subway",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Ginza Line: Ueno → Tawaramachi.",
+        "mapsQuery": "Ueno Station Ginza Line to Tawaramachi Station by subway",
         "transitModes": [
           "SUBWAY",
           "RAIL",
@@ -884,45 +941,45 @@
       "marPick": false
     },
     {
-      "time": "10:05 pm",
-      "duration": "8-12 min",
-      "title": "Caminata Ginza Station → Hotel Sunroute Ginza",
+      "time": "10:20 pm",
+      "duration": "3-5 min",
+      "title": "Caminata Tawaramachi Station → hotel",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir de Ginza Station.",
-        "Caminar hacia Hotel Sunroute Ginza.",
-        "Comprar agua/snack si hace falta.",
+        "Salir de Tawaramachi Station.",
+        "Caminar hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Comprar agua o snack si hace falta.",
         "Costo: $0."
       ],
-      "detail": "Último tramo del día. Cerrar y descansar porque al día siguiente toca DisneySea.",
+      "detail": "Último tramo corto. La ventaja es que, aunque el regreso desde Shinjuku sea largo, desde Tawaramachi al hotel ya es muy cerca.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Ginza Station, Tokyo, Japan",
-        "destination": "Hotel Sunroute Ginza, Tokyo, Japan",
-        "note": "Caminata desde Ginza Station hacia Hotel Sunroute Ginza.",
-        "fixedDuration": "8-12 min",
-        "mapsQuery": "Ginza Station to Hotel Sunroute Ginza walking"
+        "origin": "Tawaramachi Station, Tokyo, Japan",
+        "destination": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "note": "Caminata desde Tawaramachi Station hacia el hotel.",
+        "fixedDuration": "3-5 min",
+        "mapsQuery": "Tawaramachi Station to Henn na Hotel Premier Tokyo Asakusa Tawaramachi walking"
       },
       "marPick": false
     },
     {
-      "time": "10:20 pm",
+      "time": "10:30 pm",
       "duration": "cierre",
-      "title": "Llegada al hotel y preparación para DisneySea",
+      "title": "Llegada al hotel y descanso",
       "icon": "bedtime",
       "tone": "rest",
       "items": [
         "Guardar compras de Shibuya, Harajuku y Shinjuku.",
         "Cargar celulares y batería externa.",
-        "Dejar ropa y bolso listos para DisneySea.",
-        "Revisar entradas, app de Disney y horarios.",
-        "Dormir lo antes posible."
+        "Tomar agua.",
+        "Preparar lo necesario para el Día 13: DisneySea.",
+        "Dormir lo antes posible porque DisneySea requiere salir muy temprano."
       ],
-      "detail": "Este día es largo. La prioridad al llegar es preparar DisneySea para no correr al día siguiente.",
+      "detail": "Este día es largo por dormir en Asakusa/Tawaramachi y cerrar en Shinjuku. La prioridad al llegar es ordenar rápido y dormir.",
       "showMap": false,
       "marPick": false
     }
   ],
-  "note": "Meta del día: dedicar el día urbano fuerte de Tokyo a Shibuya, Harajuku y Shinjuku desde Hotel Sunroute Ginza, integrando explícitamente las paradas de Mar: Hachiko Square, Pokémon Center Shibuya, Mandarake Shibuya, Disney Store, MEGA Don Quijote, Loft, Yoroshi Cosmetics, Takeshita Street, Harry Potter Shop Harajuku, Ayuntamiento de Tokio y Godzilla Head. El interés de anime/figuras se cubre con Pokémon Center Shibuya y Mandarake, dejando las compras fuertes de figuras para Akihabara."
+  "note": "Meta del día: hacer el día urbano fuerte de Tokyo desde Henn na Hotel Premier Tokyo Asakusa Tawaramachi, cubriendo Shibuya, Harajuku y Shinjuku con las paradas de Mar: Hachiko Square, Pokémon Center Shibuya, Mandarake Shibuya, Disney Store, MEGA Don Quijote, Loft, Yoroshi Cosmetics, Takeshita Street, Harry Potter Shop Harajuku, Ayuntamiento de Tokio y Godzilla Head. El interés de anime/figuras se cubre con Pokémon Center Shibuya y Mandarake, dejando las compras fuertes de figuras para Akihabara. Al dormir en Asakusa, el regreso desde Shinjuku es más largo, por eso se cierra el día apenas lleguen al hotel."
 }
