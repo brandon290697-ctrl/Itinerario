@@ -53,6 +53,72 @@
       color-scheme: dark;
     }
 
+    body.theme-sakura {
+      --bg: #fff6f8;
+      --surface: #ffffff;
+      --surface-soft: #fff0f4;
+      --ink: #2d1c2b;
+      --muted: #796374;
+      --line: #f0d8df;
+      --navy: #6d214f;
+      --blue: #c44569;
+      --coral: #e66767;
+      --mint: #edf8f2;
+      --mint-ink: #2f7d5f;
+      --amber: #fff3c4;
+      --amber-ink: #8a6100;
+      --glass: rgba(255, 255, 255, 0.84);
+      --control: #ffffff;
+      --control-hover: #fff7fa;
+      --primary: #c44569;
+      --primary-ink: #ffffff;
+      --shadow: 0 24px 70px rgba(109, 33, 79, 0.13);
+    }
+
+    body.theme-matcha {
+      --bg: #f3f6ed;
+      --surface: #ffffff;
+      --surface-soft: #eef5e8;
+      --ink: #172819;
+      --muted: #61705e;
+      --line: #dce8d4;
+      --navy: #24513f;
+      --blue: #5d8f6a;
+      --coral: #d56b4f;
+      --mint: #dff2df;
+      --mint-ink: #286a3e;
+      --amber: #fff1c9;
+      --amber-ink: #7b5a00;
+      --glass: rgba(255, 255, 255, 0.84);
+      --control: #ffffff;
+      --control-hover: #f7fbf3;
+      --primary: #2f6f4e;
+      --primary-ink: #ffffff;
+      --shadow: 0 24px 70px rgba(36, 81, 63, 0.12);
+    }
+
+    body.theme-indigo {
+      --bg: #f2f5fb;
+      --surface: #ffffff;
+      --surface-soft: #eef3fb;
+      --ink: #111f37;
+      --muted: #647085;
+      --line: #d8e0ef;
+      --navy: #1d3557;
+      --blue: #457b9d;
+      --coral: #e63946;
+      --mint: #e6f5f3;
+      --mint-ink: #26756d;
+      --amber: #fff0bf;
+      --amber-ink: #805700;
+      --glass: rgba(255, 255, 255, 0.84);
+      --control: #ffffff;
+      --control-hover: #f7faff;
+      --primary: #1d3557;
+      --primary-ink: #ffffff;
+      --shadow: 0 24px 70px rgba(29, 53, 87, 0.13);
+    }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html {
@@ -199,6 +265,113 @@
 
     .theme-toggle .material-symbols-rounded {
       font-size: 18px;
+    }
+
+    .theme-toggle {
+      display: none;
+    }
+
+    .theme-picker {
+      display: grid;
+      gap: 8px;
+      position: relative;
+      z-index: 25;
+    }
+
+    .theme-picker-toggle {
+      align-items: center;
+      background: var(--glass);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      box-shadow: 0 12px 30px rgba(16, 36, 63, 0.12);
+      color: var(--navy);
+      cursor: pointer;
+      display: inline-flex;
+      gap: 4px;
+      height: 40px;
+      justify-content: center;
+      padding: 0 10px;
+      backdrop-filter: blur(16px);
+    }
+
+    .theme-picker-toggle .material-symbols-rounded {
+      color: var(--coral);
+      font-size: 18px;
+    }
+
+    .theme-picker-toggle .theme-arrow {
+      color: var(--muted);
+      font-size: 16px;
+      transition: transform .18s ease;
+    }
+
+    .theme-picker.open .theme-arrow {
+      transform: rotate(180deg);
+    }
+
+    .theme-menu {
+      background: var(--glass);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 42px rgba(16, 36, 63, 0.16);
+      display: none;
+      gap: 4px;
+      min-width: 132px;
+      padding: 6px;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 8px);
+      backdrop-filter: blur(16px);
+    }
+
+    .theme-picker.open .theme-menu {
+      display: grid;
+    }
+
+    .theme-option {
+      align-items: center;
+      background: transparent;
+      border: 0;
+      border-radius: 13px;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      font-size: 12px;
+      gap: 8px;
+      font-weight: 900;
+      justify-content: flex-start;
+      min-height: 34px;
+      padding: 0 9px;
+      text-align: left;
+    }
+
+    .theme-option:hover,
+    .theme-option.active {
+      background: var(--control-hover);
+    }
+
+    .theme-swatch {
+      border: 1px solid rgba(16, 36, 63, 0.14);
+      border-radius: 999px;
+      display: inline-block;
+      flex: 0 0 auto;
+      height: 14px;
+      width: 14px;
+    }
+
+    body.dark-theme .theme-picker {
+      color-scheme: dark;
+    }
+
+    body.dark-theme .theme-picker-toggle,
+    body.dark-theme .theme-menu {
+      background: rgba(19, 27, 39, 0.86);
+      border-color: rgba(255, 255, 255, 0.14);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+    }
+
+    body.dark-theme .theme-option {
+      color: var(--ink);
     }
 
     body.dark-theme .hero {
@@ -514,7 +687,9 @@
     }
 
     .cost-actions {
+      align-items: center;
       display: flex;
+      flex-wrap: wrap;
       gap: 8px;
       justify-content: flex-end;
     }
@@ -943,6 +1118,46 @@
     .day-insight .material-symbols-rounded {
       color: var(--coral);
       font-size: 16px;
+    }
+
+    .day-assist-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 12px;
+    }
+
+    .day-assist-button {
+      align-items: center;
+      background: color-mix(in srgb, var(--control), var(--city-accent) 5%);
+      border: 1px solid color-mix(in srgb, var(--line), var(--city-accent) 18%);
+      border-radius: 999px;
+      color: var(--navy);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 6px;
+      min-height: 34px;
+      padding: 0 11px;
+      text-decoration: none;
+      transition: background .18s ease, border-color .18s ease, transform .18s ease;
+    }
+
+    .day-assist-button:hover {
+      background: var(--city-solid);
+      border-color: var(--city-solid);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .day-assist-button .material-symbols-rounded {
+      color: var(--city-accent);
+      font-size: 17px;
+    }
+
+    .day-assist-button:hover .material-symbols-rounded {
+      color: #ffffff;
     }
 
     .status-pill {
@@ -2801,7 +3016,7 @@
       border-bottom: 0;
       border-radius: 24px;
       margin: 0 14px 14px;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .workspace {
@@ -4346,6 +4561,219 @@
       color: var(--city-ink);
     }
 
+    body.light-mode.dark-theme {
+      --bg: #0b111a;
+      --surface: #111923;
+      --surface-soft: #151f2c;
+      --control: #182231;
+      --control-hover: #202c3d;
+      --ink: #f7fbff;
+      --muted: #a8b3c3;
+      --line: #263448;
+      --navy: #f4f7fb;
+      --blue: #7dd3fc;
+      --coral: #fb7185;
+      --primary: #3b82f6;
+      --primary-ink: #ffffff;
+      --glass: rgba(19, 27, 39, 0.80);
+      --shadow: 0 22px 62px rgba(0, 0, 0, 0.42);
+    }
+
+    body.light-mode.theme-sakura {
+      --bg: #fff6f8;
+      --surface: #ffffff;
+      --surface-soft: #fff0f4;
+      --control: #ffffff;
+      --control-hover: #fff7fa;
+      --ink: #2d1c2b;
+      --muted: #796374;
+      --line: #f0d8df;
+      --navy: #6d214f;
+      --blue: #c44569;
+      --coral: #e66767;
+      --primary: #c44569;
+      --primary-ink: #ffffff;
+      --glass: rgba(255, 255, 255, 0.86);
+      --jp-indigo: #6d214f;
+      --jp-vermillion: #c44569;
+      --jp-paper: #fff7fa;
+      --jp-paper-deep: #ffe7ef;
+      --jp-bamboo: #8b5b7e;
+      --jp-gold: #d99b48;
+      --city-ink: #6d214f;
+      --city-solid: #9f315f;
+      --city-accent: #e66767;
+      --city-accent-2: #f6a6b8;
+      --city-soft: #fff0f4;
+      --hero-overlay-start: rgba(72, 22, 55, 0.90);
+      --hero-overlay-end: rgba(230, 103, 103, 0.34);
+      --theme-wash: rgba(255, 214, 225, 0.48);
+      --theme-card: rgba(255, 255, 255, 0.92);
+      --theme-border: rgba(196, 69, 105, 0.28);
+      --theme-glow: rgba(196, 69, 105, 0.18);
+      --shadow: 0 24px 70px rgba(109, 33, 79, 0.13);
+    }
+
+    body.light-mode.theme-matcha {
+      --bg: #f3f6ed;
+      --surface: #ffffff;
+      --surface-soft: #eef5e8;
+      --control: #ffffff;
+      --control-hover: #f7fbf3;
+      --ink: #172819;
+      --muted: #61705e;
+      --line: #dce8d4;
+      --navy: #24513f;
+      --blue: #5d8f6a;
+      --coral: #d56b4f;
+      --primary: #2f6f4e;
+      --primary-ink: #ffffff;
+      --glass: rgba(255, 255, 255, 0.86);
+      --jp-indigo: #24513f;
+      --jp-vermillion: #d56b4f;
+      --jp-paper: #f8fbf3;
+      --jp-paper-deep: #e8f2df;
+      --jp-bamboo: #5d8f6a;
+      --jp-gold: #b08b3f;
+      --city-ink: #24513f;
+      --city-solid: #2f6f4e;
+      --city-accent: #86a865;
+      --city-accent-2: #d56b4f;
+      --city-soft: #eef5e8;
+      --hero-overlay-start: rgba(20, 54, 40, 0.90);
+      --hero-overlay-end: rgba(134, 168, 101, 0.34);
+      --theme-wash: rgba(213, 231, 199, 0.56);
+      --theme-card: rgba(255, 255, 255, 0.92);
+      --theme-border: rgba(47, 111, 78, 0.26);
+      --theme-glow: rgba(47, 111, 78, 0.18);
+      --shadow: 0 24px 70px rgba(36, 81, 63, 0.12);
+    }
+
+    body.light-mode.theme-indigo {
+      --bg: #f2f5fb;
+      --surface: #ffffff;
+      --surface-soft: #eef3fb;
+      --control: #ffffff;
+      --control-hover: #f7faff;
+      --ink: #111f37;
+      --muted: #647085;
+      --line: #d8e0ef;
+      --navy: #1d3557;
+      --blue: #457b9d;
+      --coral: #e63946;
+      --primary: #1d3557;
+      --primary-ink: #ffffff;
+      --glass: rgba(255, 255, 255, 0.86);
+      --jp-indigo: #1d3557;
+      --jp-vermillion: #e63946;
+      --jp-paper: #f7faff;
+      --jp-paper-deep: #e6edf8;
+      --jp-bamboo: #457b9d;
+      --jp-gold: #bd8d36;
+      --city-ink: #1d3557;
+      --city-solid: #1d3557;
+      --city-accent: #457b9d;
+      --city-accent-2: #e63946;
+      --city-soft: #eef3fb;
+      --hero-overlay-start: rgba(17, 31, 55, 0.91);
+      --hero-overlay-end: rgba(69, 123, 157, 0.36);
+      --theme-wash: rgba(217, 228, 244, 0.58);
+      --theme-card: rgba(255, 255, 255, 0.92);
+      --theme-border: rgba(29, 53, 87, 0.26);
+      --theme-glow: rgba(29, 53, 87, 0.18);
+      --shadow: 0 24px 70px rgba(29, 53, 87, 0.13);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) {
+      background:
+        radial-gradient(circle at 12% 8%, var(--theme-wash), transparent 32%),
+        linear-gradient(135deg, color-mix(in srgb, var(--city-accent), white 84%), transparent 38%),
+        var(--bg);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .shell {
+      border-color: var(--theme-border);
+      box-shadow: 0 24px 76px var(--theme-glow);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .quick-grid,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .workspace {
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--city-soft), white 48%), var(--surface-soft)),
+        radial-gradient(circle at 1px 1px, var(--theme-border) 1px, transparent 0) 0 0 / 22px 22px;
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .quick-card,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .cost-overview,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .day-summary-card,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .block,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .night-summary-card,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .detail-card,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .modal-panel {
+      background: var(--theme-card);
+      border-color: var(--theme-border);
+      box-shadow: 0 14px 34px var(--theme-glow);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .day-nav {
+      background:
+        linear-gradient(180deg, color-mix(in srgb, var(--surface), var(--city-soft) 40%), color-mix(in srgb, var(--surface-soft), var(--city-accent) 8%));
+      border-bottom-color: var(--theme-border);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .day-button {
+      background: color-mix(in srgb, var(--surface), var(--city-soft) 34%);
+      border-color: color-mix(in srgb, var(--theme-border), white 24%);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .day-button:hover {
+      background: color-mix(in srgb, var(--surface), var(--city-accent) 10%);
+      border-color: var(--city-accent);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .day-button.active,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .status-pill {
+      background: linear-gradient(135deg, var(--city-solid), var(--city-accent));
+      border-color: color-mix(in srgb, var(--city-accent), white 24%);
+      color: #ffffff;
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .quick-icon,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .activity-icon,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .day-summary-card summary > .material-symbols-rounded,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .night-summary-card > .material-symbols-rounded {
+      background: color-mix(in srgb, var(--city-accent), white 84%);
+      color: var(--city-solid);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .block::before {
+      background: linear-gradient(180deg, var(--city-accent), var(--city-accent-2));
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .block.open,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .block:hover {
+      border-color: var(--city-accent);
+      box-shadow: 0 18px 44px var(--theme-glow);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .time-box,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .icon-button,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .day-tool-button,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .cost-unlock-button,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .theme-picker-toggle,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .theme-menu {
+      background: color-mix(in srgb, var(--surface), var(--city-soft) 28%);
+      border-color: var(--theme-border);
+    }
+
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .icon-button:hover,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .day-tool-button:hover,
+    body.light-mode:is(.theme-sakura, .theme-matcha, .theme-indigo) .cost-unlock-button:hover {
+      background: var(--city-solid);
+      border-color: var(--city-solid);
+      color: #ffffff;
+    }
+
     @media print {
       body {
         background: white;
@@ -4394,7 +4822,7 @@
         display: block;
       }
     }
-  </style>
+</style>
 </head>
 <body class="light-mode">
   <main class="app">
@@ -4465,6 +4893,19 @@
             <span class="material-symbols-rounded">event_available</span>
             <span>Reservas criticas</span>
           </button>
+          <div class="theme-picker" id="themePicker">
+            <button class="theme-picker-toggle" type="button" id="themePickerToggle" aria-label="Abrir selector de temas" aria-expanded="false">
+              <span class="material-symbols-rounded" aria-hidden="true">palette</span>
+              <span class="material-symbols-rounded theme-arrow" aria-hidden="true">expand_more</span>
+            </button>
+            <div class="theme-menu" id="themeMenu" role="menu" aria-label="Seleccionar tema visual">
+              <button class="theme-option" type="button" data-theme-choice="classic" role="menuitem"><span class="theme-swatch" style="background:#e9f2f8"></span>Clásico</button>
+              <button class="theme-option" type="button" data-theme-choice="sakura" role="menuitem"><span class="theme-swatch" style="background:#c44569"></span>Sakura</button>
+              <button class="theme-option" type="button" data-theme-choice="matcha" role="menuitem"><span class="theme-swatch" style="background:#2f6f4e"></span>Matcha</button>
+              <button class="theme-option" type="button" data-theme-choice="indigo" role="menuitem"><span class="theme-swatch" style="background:#1d3557"></span>Indigo</button>
+              <button class="theme-option" type="button" data-theme-choice="dark" role="menuitem"><span class="theme-swatch" style="background:#0b111a"></span>Oscuro</button>
+            </div>
+          </div>
           <button class="cost-unlock-button" type="button" id="costUnlockButton">
             <span class="material-symbols-rounded" id="costUnlockIcon">lock</span>
             <span id="costUnlockLabel">Desbloquear montos</span>
@@ -4909,6 +5350,8 @@
     const themeToggle = document.getElementById("themeToggle");
     const themeIcon = document.getElementById("themeIcon");
     const themeLabel = document.getElementById("themeLabel");
+    const themePicker = document.getElementById("themePicker");
+    const themePickerToggle = document.getElementById("themePickerToggle");
     const quickToggle = document.getElementById("quickToggle");
     const quickToggleIcon = document.getElementById("quickToggleIcon");
     const quickToggleLabel = document.getElementById("quickToggleLabel");
@@ -5250,16 +5693,45 @@
 
     removeStoredValue(storageKey("proposalDayUnlocked"));
 
-    function applyTheme(theme) {
-      const isDark = theme === "dark";
+    const visualThemeClasses = ["theme-sakura", "theme-matcha", "theme-indigo"];
+    const themeStorageKey = storageKey("theme");
+    const legacyThemeStorageKey = "theme";
+
+    function normalizeTheme(theme) {
+      if (theme === "light" || !theme) return "classic";
+      return ["classic", "sakura", "matcha", "indigo", "dark"].includes(theme) ? theme : "classic";
+    }
+
+    function getSavedTheme() {
+      return getStoredValue(themeStorageKey, "") || getStoredValue(legacyThemeStorageKey, "");
+    }
+
+    function saveTheme(theme) {
+      const normalizedTheme = normalizeTheme(theme);
+      setStoredValue(themeStorageKey, normalizedTheme);
+      setStoredValue(legacyThemeStorageKey, normalizedTheme);
+      return normalizedTheme;
+    }
+
+    function applyTheme(theme, options = {}) {
+      const normalizedTheme = normalizeTheme(theme);
+      const isDark = normalizedTheme === "dark";
+      document.body.classList.remove(...visualThemeClasses);
       document.body.classList.toggle("dark-theme", isDark);
-      themeToggle.setAttribute("aria-pressed", String(isDark));
-      themeIcon.textContent = isDark ? "light_mode" : "dark_mode";
-      themeLabel.textContent = isDark ? "Tema claro" : "Tema oscuro";
+      if (!isDark && normalizedTheme !== "classic") {
+        document.body.classList.add(`theme-${normalizedTheme}`);
+      }
+      if (options.persist) saveTheme(normalizedTheme);
+      themeToggle?.setAttribute("aria-pressed", String(isDark));
+      if (themeIcon) themeIcon.textContent = isDark ? "light_mode" : "dark_mode";
+      if (themeLabel) themeLabel.textContent = isDark ? "Tema claro" : "Tema oscuro";
+      document.querySelectorAll("[data-theme-choice]").forEach(button => {
+        button.classList.toggle("active", button.dataset.themeChoice === normalizedTheme);
+      });
     }
 
     function initTheme() {
-      const storedTheme = getStoredValue(storageKey("theme"), "");
+      const storedTheme = getSavedTheme();
       const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
       applyTheme(storedTheme || (prefersDark ? "dark" : "light"));
     }
@@ -5437,6 +5909,10 @@
     }
 
     function bindDayUtilityButtons() {
+      document.querySelector("[data-assist-action='hunger']")?.addEventListener("click", () => {
+        openFoodModal(currentDayIndex);
+      });
+
       document.querySelector("[data-day-action='copy']")?.addEventListener("click", async event => {
         const button = event.currentTarget;
         const label = button.querySelector("[data-action-label]");
@@ -6601,6 +7077,43 @@
       `;
     }
 
+    function getAssistAreaQuery(index) {
+      const day = days[index];
+      const locationBlock = day.blocks.find(block => block.location?.mapsQuery || block.location?.address || block.location?.name);
+      if (locationBlock) return blockPlaceQuery(locationBlock);
+
+      const routeBlock = day.blocks.find(block => block.routeInfo?.destination);
+      if (routeBlock) return cleanPlaceQuery(routeBlock.routeInfo.destination);
+
+      return `${getDayBase(index)}, Japan`;
+    }
+
+    function mapsSearchUrl(query) {
+      return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+    }
+
+    function mapsDirectionsToHotelUrl(index) {
+      const destination = getTaxiDestination(index);
+      return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination.mapsQuery)}&travelmode=transit`;
+    }
+
+    function renderDayAssist(index) {
+      if (index === 0) return "";
+      const area = getAssistAreaQuery(index);
+      return `
+        <div class="day-assist-strip" aria-label="Ayudas rápidas del viaje">
+          <button class="day-assist-button" type="button" data-assist-action="hunger">
+            <span class="material-symbols-rounded">ramen_dining</span>Hambre
+          </button>
+          <a class="day-assist-button" href="${mapsSearchUrl(`public toilet restroom near ${area}`)}" target="_blank" rel="noopener">
+            <span class="material-symbols-rounded">wc</span>Baño
+          </a>
+          <a class="day-assist-button" href="${mapsDirectionsToHotelUrl(index)}" target="_blank" rel="noopener">
+            <span class="material-symbols-rounded">hotel</span>Hotel
+          </a>
+        </div>`;
+    }
+
     function renderNextStep(day) {
       const nextBlock = day.blocks.find(block => block.time && !/por definir|flexible/i.test(block.time)) || day.blocks[0];
       if (!nextBlock) return "";
@@ -6665,7 +7178,7 @@
       const day = days[index];
       content.innerHTML = `
         <div class="day-header">
-          <div><div class="day-date">${day.dateLabel}</div><h2>${day.title}</h2><p>${day.subtitle}</p>${renderNextStep(day)}${renderDayInsights(day)}</div>
+          <div><div class="day-date">${day.dateLabel}</div><h2>${day.title}</h2><p>${day.subtitle}</p>${renderNextStep(day)}${renderDayInsights(day)}${renderDayAssist(index)}</div>
           <div class="day-meta">
             <div class="day-pills">
               <div class="status-pill">${day.status}</div>
@@ -6815,10 +7328,31 @@
     window.addEventListener("online", () => renderDay(currentDayIndex));
     window.addEventListener("offline", () => renderDay(currentDayIndex));
 
-    themeToggle.addEventListener("click", () => {
-      const nextTheme = document.body.classList.contains("dark-theme") ? "light" : "dark";
-      setStoredValue(storageKey("theme"), nextTheme);
-      applyTheme(nextTheme);
+    themeToggle?.addEventListener("click", () => {
+      const nextTheme = document.body.classList.contains("dark-theme") ? "classic" : "dark";
+      applyTheme(nextTheme, { persist: true });
+    });
+
+    themePickerToggle?.addEventListener("click", event => {
+      event.stopPropagation();
+      const isOpen = themePicker?.classList.toggle("open");
+      themePickerToggle.setAttribute("aria-expanded", String(Boolean(isOpen)));
+    });
+
+    document.querySelectorAll("[data-theme-choice]").forEach(button => {
+      button.addEventListener("click", event => {
+        event.stopPropagation();
+        const nextTheme = button.dataset.themeChoice;
+        applyTheme(nextTheme, { persist: true });
+        themePicker?.classList.remove("open");
+        themePickerToggle?.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.addEventListener("click", event => {
+      if (themePicker?.contains(event.target)) return;
+      themePicker?.classList.remove("open");
+      themePickerToggle?.setAttribute("aria-expanded", "false");
     });
 
     quickToggle?.addEventListener("click", () => {
