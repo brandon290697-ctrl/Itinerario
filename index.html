@@ -3536,6 +3536,576 @@
       }
     }
 
+    /* Polished day navigation */
+    .day-nav {
+      align-items: stretch;
+      background: rgba(248, 250, 252, 0.86);
+      border-bottom: 1px solid rgba(205, 218, 234, 0.82);
+      gap: 9px;
+      padding: 14px 16px;
+    }
+
+    .day-nav-title {
+      align-self: center;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(205, 218, 234, 0.82);
+      border-radius: 999px;
+      color: #456078;
+      padding: 9px 12px;
+    }
+
+    .day-button {
+      align-items: center;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(204, 219, 236, 0.84);
+      border-radius: 16px;
+      box-shadow: none;
+      display: grid;
+      flex: 0 0 auto;
+      gap: 8px;
+      grid-template-columns: 28px minmax(0, 1fr);
+      justify-items: stretch;
+      min-height: 58px;
+      min-width: 136px;
+      overflow: hidden;
+      padding: 9px 11px;
+      position: relative;
+      text-align: left;
+      transform: translateZ(0);
+      transition: background .18s ease, border-color .18s ease, color .18s ease;
+      width: auto;
+    }
+
+    .day-button::before {
+      display: none;
+    }
+
+    .day-button:hover {
+      background: #ffffff;
+      border-color: rgba(47, 111, 165, 0.24);
+    }
+
+    .day-button.active {
+      background: #1f6fa8;
+      border-color: #1f6fa8;
+      box-shadow: 0 8px 18px rgba(31, 111, 168, 0.18);
+      color: #ffffff;
+      min-width: 142px;
+    }
+
+    .day-button.active::before {
+      display: none;
+    }
+
+    .day-icon {
+      background: transparent;
+      border: 0;
+      border-radius: 10px;
+      box-shadow: none;
+      display: grid;
+      height: 28px;
+      place-items: center;
+      width: 28px;
+    }
+
+    .day-icon .material-symbols-rounded {
+      font-size: 19px;
+    }
+
+    .day-button.active .day-icon {
+      background: transparent;
+      color: #ffffff;
+    }
+
+    .day-info {
+      min-width: 0;
+    }
+
+    .day-info strong {
+      color: #10233d;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: 1.05;
+      margin: 0 0 5px;
+      white-space: nowrap;
+    }
+
+    .day-info span {
+      color: #60738d;
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.15;
+      max-width: 96px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .day-button.active .day-info strong,
+    .day-button.active .day-info span {
+      color: #ffffff;
+    }
+
+    .day-button.active .day-info span {
+      opacity: .82;
+    }
+
+    body.dark-theme .day-nav {
+      background: rgba(15, 23, 34, 0.88);
+      border-bottom-color: rgba(83, 104, 132, 0.34);
+    }
+
+    body.dark-theme .day-nav-title,
+    body.dark-theme .day-button:not(.active) {
+      background: rgba(18, 28, 43, 0.76);
+      border-color: rgba(116, 139, 170, 0.26);
+    }
+
+    body.dark-theme .day-info strong {
+      color: #edf6ff;
+    }
+
+    body.dark-theme .day-info span {
+      color: #aebdd0;
+    }
+
+    @media (max-width: 620px) {
+      .day-nav {
+        gap: 8px;
+        padding: 9px;
+      }
+
+      .day-button {
+        border-radius: 999px;
+        grid-template-columns: 1fr;
+        min-height: 52px;
+        min-width: 78px;
+        padding: 10px 13px;
+        text-align: center;
+      }
+
+      .day-button::before,
+      .day-icon {
+        display: none;
+      }
+
+      .day-info strong {
+        font-size: 0;
+        margin: 0;
+      }
+
+      .day-info strong::after {
+        content: attr(data-short-label);
+        font-size: 13px;
+        font-weight: 950;
+      }
+
+      .day-info span {
+        font-size: 10px;
+        margin-top: 3px;
+        max-width: 76px;
+      }
+
+      .day-button.active {
+        min-width: 92px;
+      }
+    }
+
+    /* Japanese travel journal visual refresh */
+    :root {
+      --jp-ink: #15213a;
+      --jp-indigo: #183b59;
+      --jp-vermillion: #c94b3d;
+      --jp-paper: #fffaf1;
+      --jp-paper-deep: #f3eadb;
+      --jp-bamboo: #6f8f72;
+      --jp-gold: #c59a3d;
+    }
+
+    body.light-mode {
+      --bg: #edf2ef;
+      --surface: #fffaf1;
+      --surface-soft: #f5ecdc;
+      --control: #fffdf8;
+      --control-hover: #fbf5ea;
+      --ink: #15213a;
+      --muted: #6d756f;
+      --line: #e1d5c2;
+      --navy: #183b59;
+      --blue: #2f6f8f;
+      --coral: #c94b3d;
+      --primary: #183b59;
+    }
+
+    body {
+      background:
+        linear-gradient(135deg, rgba(201, 75, 61, 0.05) 0 12%, transparent 12% 100%),
+        repeating-linear-gradient(0deg, rgba(21, 33, 58, 0.025) 0 1px, transparent 1px 18px),
+        var(--bg);
+    }
+
+    .app {
+      max-width: 1260px;
+    }
+
+    .shell {
+      border-color: rgba(190, 171, 139, 0.52);
+      border-radius: 30px;
+      box-shadow: 0 24px 72px rgba(54, 42, 28, 0.13);
+    }
+
+    .hero {
+      background:
+        linear-gradient(90deg, rgba(18, 27, 45, 0.88), rgba(24, 59, 89, 0.58) 54%, rgba(18, 27, 45, 0.24)),
+        url("https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1800&q=80");
+      background-position: center;
+      background-size: cover;
+      border-bottom: 5px solid var(--jp-vermillion);
+      min-height: 272px;
+    }
+
+    .hero::before {
+      background:
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.10) 0 1px, transparent 1px 18px),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px 18px);
+      content: "";
+      inset: 0;
+      opacity: .34;
+      pointer-events: none;
+      position: absolute;
+    }
+
+    .hero > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      background: rgba(201, 75, 61, 0.82);
+      border-color: rgba(255, 255, 255, 0.24);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+    }
+
+    .hero h1 {
+      letter-spacing: 0;
+      text-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero-panel {
+      background: rgba(255, 250, 241, 0.16);
+      border-color: rgba(255, 250, 241, 0.34);
+      border-radius: 20px;
+    }
+
+    .quick-grid,
+    .workspace {
+      background:
+        radial-gradient(circle at 1px 1px, rgba(24, 59, 89, 0.08) 1px, transparent 0) 0 0 / 20px 20px,
+        var(--surface-soft);
+    }
+
+    .quick-card,
+    .cost-overview,
+    .day-summary-card,
+    .block,
+    .night-summary-card {
+      background: rgba(255, 250, 241, 0.88);
+      border-color: rgba(190, 171, 139, 0.48);
+    }
+
+    .quick-icon,
+    .day-summary-card summary > .material-symbols-rounded,
+    .night-summary-card > .material-symbols-rounded {
+      background: rgba(201, 75, 61, 0.11);
+      color: var(--jp-vermillion);
+    }
+
+    .day-nav {
+      background:
+        linear-gradient(180deg, rgba(255, 250, 241, 0.92), rgba(245, 236, 220, 0.92));
+      border-bottom-color: rgba(190, 171, 139, 0.54);
+    }
+
+    .day-button {
+      background: rgba(255, 253, 248, 0.82);
+      border-color: rgba(190, 171, 139, 0.46);
+    }
+
+    .day-button:hover {
+      background: #fffaf1;
+      border-color: rgba(201, 75, 61, 0.28);
+    }
+
+    .day-button.active {
+      background: var(--jp-indigo);
+      border-color: var(--jp-indigo);
+      box-shadow: 0 8px 18px rgba(24, 59, 89, 0.18);
+    }
+
+    .day-icon {
+      color: var(--jp-vermillion);
+    }
+
+    .day-date,
+    .time-box em {
+      color: var(--jp-vermillion);
+    }
+
+    .block {
+      box-shadow: 0 14px 34px rgba(54, 42, 28, 0.08);
+    }
+
+    .block::before {
+      background: linear-gradient(180deg, var(--jp-vermillion), var(--jp-gold));
+    }
+
+    .block h3,
+    .day-header h2,
+    .day-summary-card summary strong {
+      color: var(--jp-ink);
+    }
+
+    .activity-icon.arrival,
+    .activity-icon.rest {
+      background: rgba(111, 143, 114, 0.15);
+      color: #4e7453;
+    }
+
+    .activity-icon.travel,
+    .activity-icon.hotel {
+      background: rgba(24, 59, 89, 0.12);
+      color: var(--jp-indigo);
+    }
+
+    .activity-icon.food {
+      background: rgba(201, 75, 61, 0.12);
+      color: var(--jp-vermillion);
+    }
+
+    .activity-icon.shopping {
+      background: rgba(197, 154, 61, 0.16);
+      color: #8a641b;
+    }
+
+    .time-box {
+      background:
+        linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(252, 246, 236, 0.92));
+      border-color: rgba(190, 171, 139, 0.50);
+    }
+
+    .icon-button,
+    .day-tool-button,
+    .cost-unlock-button,
+    .reservation-action,
+    .reservation-check {
+      border-color: rgba(190, 171, 139, 0.46);
+    }
+
+    .icon-button:hover,
+    .day-tool-button:hover {
+      border-color: rgba(201, 75, 61, 0.34);
+    }
+
+    body.dark-theme {
+      --bg: #10151e;
+      --surface: #171f2b;
+      --surface-soft: #101923;
+      --line: #334052;
+      --navy: #e7f1ff;
+      --coral: #ff8a7f;
+    }
+
+    body.dark-theme .hero {
+      border-bottom-color: #f07868;
+    }
+
+    body.dark-theme .quick-grid,
+    body.dark-theme .workspace {
+      background:
+        radial-gradient(circle at 1px 1px, rgba(240, 120, 104, 0.09) 1px, transparent 0) 0 0 / 20px 20px,
+        #101923;
+    }
+
+    body.dark-theme .quick-card,
+    body.dark-theme .cost-overview,
+    body.dark-theme .day-summary-card,
+    body.dark-theme .block,
+    body.dark-theme .night-summary-card {
+      background: rgba(23, 31, 43, 0.92);
+      border-color: rgba(116, 139, 170, 0.30);
+    }
+
+    body.dark-theme .day-nav {
+      background: linear-gradient(180deg, rgba(16, 25, 35, 0.94), rgba(20, 29, 40, 0.94));
+      border-bottom-color: rgba(116, 139, 170, 0.25);
+    }
+
+    body.dark-theme .day-button.active {
+      background: #285c83;
+      border-color: #477fa8;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+    }
+
+    /* City/day adaptive theme */
+    :root {
+      --city-ink: #183b59;
+      --city-solid: #183b59;
+      --city-accent: #c94b3d;
+      --city-accent-2: #c59a3d;
+      --city-soft: #f5ecdc;
+      --hero-image: url("https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1800&q=80");
+      --hero-position: center;
+      --hero-overlay-start: rgba(18, 27, 45, 0.88);
+      --hero-overlay-end: rgba(24, 59, 89, 0.36);
+    }
+
+    body.trip-theme-flight {
+      --city-ink: #18345f;
+      --city-solid: #18345f;
+      --city-accent: #d4573f;
+      --city-accent-2: #e0aa3d;
+      --hero-overlay-start: rgba(15, 28, 52, 0.88);
+      --hero-overlay-end: rgba(31, 88, 135, 0.30);
+    }
+
+    body.trip-theme-osaka {
+      --city-ink: #143a5a;
+      --city-solid: #143a5a;
+      --city-accent: #e4572e;
+      --city-accent-2: #f0b429;
+      --hero-overlay-start: rgba(11, 24, 42, 0.90);
+      --hero-overlay-end: rgba(228, 87, 46, 0.28);
+    }
+
+    body.trip-theme-kyoto {
+      --city-ink: #33452d;
+      --city-solid: #33452d;
+      --city-accent: #b8473d;
+      --city-accent-2: #b88a32;
+      --hero-overlay-start: rgba(25, 43, 32, 0.90);
+      --hero-overlay-end: rgba(184, 138, 50, 0.30);
+    }
+
+    body.trip-theme-tokyo {
+      --city-ink: #102f53;
+      --city-solid: #102f53;
+      --city-accent: #d84563;
+      --city-accent-2: #33a6a6;
+      --hero-overlay-start: rgba(9, 22, 42, 0.91);
+      --hero-overlay-end: rgba(51, 166, 166, 0.24);
+    }
+
+    body.trip-theme-return {
+      --city-ink: #243046;
+      --city-solid: #243046;
+      --city-accent: #8a6fda;
+      --city-accent-2: #dd9f45;
+      --hero-overlay-start: rgba(19, 25, 39, 0.91);
+      --hero-overlay-end: rgba(138, 111, 218, 0.26);
+    }
+
+    body.dark-theme.trip-theme-flight,
+    body.dark-theme.trip-theme-osaka,
+    body.dark-theme.trip-theme-kyoto,
+    body.dark-theme.trip-theme-tokyo,
+    body.dark-theme.trip-theme-return {
+      --surface: #121923;
+      --surface-soft: #0d141d;
+      --control: #182231;
+      --control-hover: #202d3f;
+      --line: #34445a;
+      --hero-overlay-start: rgba(4, 8, 14, 0.93);
+    }
+
+    body.dark-theme.trip-theme-osaka {
+      --city-ink: #d9ecff;
+      --city-solid: #285c83;
+      --city-accent: #ff8b5f;
+      --city-accent-2: #ffd166;
+      --hero-overlay-end: rgba(255, 111, 70, 0.30);
+    }
+
+    body.dark-theme.trip-theme-kyoto {
+      --city-ink: #e9f2dc;
+      --city-solid: #41633f;
+      --city-accent: #ff9a8f;
+      --city-accent-2: #e7c56d;
+      --hero-overlay-end: rgba(126, 157, 107, 0.30);
+    }
+
+    body.dark-theme.trip-theme-tokyo {
+      --city-ink: #dff5ff;
+      --city-solid: #255f7c;
+      --city-accent: #ff6f91;
+      --city-accent-2: #55d6d6;
+      --hero-overlay-end: rgba(63, 188, 205, 0.30);
+    }
+
+    body.dark-theme.trip-theme-flight,
+    body.dark-theme.trip-theme-return {
+      --city-ink: #edf2ff;
+      --city-solid: #4e4f83;
+      --city-accent: #d5b8ff;
+      --city-accent-2: #f3be62;
+      --hero-overlay-end: rgba(128, 112, 214, 0.28);
+    }
+
+    .hero {
+      background:
+        linear-gradient(90deg, var(--hero-overlay-start), var(--hero-overlay-end)),
+        var(--hero-image);
+      background-position: var(--hero-position);
+      background-size: cover;
+      border-bottom-color: var(--city-accent);
+    }
+
+    body.light-mode .hero,
+    body.dark-theme .hero {
+      background:
+        linear-gradient(90deg, var(--hero-overlay-start), var(--hero-overlay-end)),
+        var(--hero-image);
+      background-position: var(--hero-position);
+      background-size: cover;
+      border-bottom-color: var(--city-accent);
+    }
+
+    .eyebrow,
+    .day-button.active,
+    .status-pill {
+      background: var(--city-solid);
+      border-color: color-mix(in srgb, var(--city-solid), white 24%);
+      color: #ffffff;
+    }
+
+    .day-button:hover {
+      border-color: color-mix(in srgb, var(--city-accent), white 26%);
+    }
+
+    .day-button.active {
+      box-shadow: 0 10px 24px color-mix(in srgb, var(--city-solid), transparent 76%);
+    }
+
+    .day-icon,
+    .day-date,
+    .time-box em,
+    .quick-icon,
+    .day-summary-card summary > .material-symbols-rounded,
+    .night-summary-card > .material-symbols-rounded {
+      color: var(--city-accent);
+    }
+
+    .block::before {
+      background: linear-gradient(180deg, var(--city-accent), var(--city-accent-2));
+    }
+
+    .block h3,
+    .day-header h2,
+    .day-summary-card summary strong {
+      color: var(--city-ink);
+    }
+
     @media print {
       body {
         background: white;
@@ -4159,10 +4729,154 @@
       "Universal Studios Japan"
     ]);
 
+    const tripThemeClasses = [
+      "trip-theme-flight",
+      "trip-theme-osaka",
+      "trip-theme-kyoto",
+      "trip-theme-tokyo",
+      "trip-theme-return"
+    ];
+
+    function unsplashImage(photoId) {
+      return `https://unsplash.com/photos/${photoId}/download?force=true&w=1800`;
+    }
+
+    function commonsImage(fileName) {
+      return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileName)}?width=1800`;
+    }
+
+    const tripThemeImages = {
+      flight: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=80",
+      osakaNight: "https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=1800&q=80",
+      usj: unsplashImage("4TyVuMNJs0I"),
+      osakaCastle: unsplashImage("I2GXk_8N8_E"),
+      daruma: unsplashImage("YCjaOILwtzA"),
+      kyotoGion: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1800&q=80",
+      arashiyama: commonsImage("Arashiyama Bamboo Forest, Kyoto, Japan (Unsplash).jpg"),
+      uji: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1800&q=80",
+      fushimi: commonsImage("Fushimi Inari Taisha, Kyoto, Japan (Unsplash).jpg"),
+      shinkansen: unsplashImage("CdZ5oRV5NII"),
+      tokyo: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1800&q=80",
+      shibuya: unsplashImage("eKAaGBlfOOQ"),
+      disneySea: unsplashImage("CsYI6qubumk"),
+      akihabara: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1800&q=80",
+      pokemon: commonsImage("Mega Tokyo Pokémon Center 1.jpg"),
+      kamakura: unsplashImage("nHIQTvGnDlk"),
+      ueno: "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1800&q=80",
+      return: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=80"
+    };
+
+    const tripDayScenes = {
+      0: "vuelo largo, escalas y llegada a Japon",
+      1: "primeras luces de Osaka, Shinsekai y Dotonbori",
+      2: "Universal Studios Japan y noche de Halloween",
+      3: "Osaka Castle, Namba y cena especial",
+      4: "darumas, Umeda y teamLab",
+      5: "primer paseo por Gion",
+      6: "Higashiyama, templos y calles tradicionales",
+      7: "bambu, rio y Arashiyama",
+      8: "Uji, matcha y Byodo-in",
+      9: "Fushimi Inari y compras en Kyoto centro",
+      10: "shinkansen hacia Tokyo",
+      18: "ultimo traslado y regreso"
+    };
+
+    const tripDayHeroThemes = {
+      0: { key: "flight", base: "Vuelo", image: tripThemeImages.flight, position: "center 48%" },
+      1: { key: "osaka", base: "Osaka", image: tripThemeImages.osakaNight, position: "center 54%" },
+      2: { key: "osaka", base: "Osaka", image: tripThemeImages.usj, position: "center 44%" },
+      3: { key: "osaka", base: "Osaka", image: tripThemeImages.osakaCastle, position: "center 45%" },
+      4: { key: "osaka", base: "Osaka", image: tripThemeImages.daruma, position: "center 48%" },
+      5: { key: "kyoto", base: "Kyoto", image: tripThemeImages.kyotoGion, position: "center 46%" },
+      6: { key: "kyoto", base: "Kyoto", image: tripThemeImages.kyotoGion, position: "center 40%" },
+      7: { key: "kyoto", base: "Kyoto", image: tripThemeImages.arashiyama, position: "center 45%" },
+      8: { key: "kyoto", base: "Kyoto", image: tripThemeImages.uji, position: "center 52%" },
+      9: { key: "kyoto", base: "Kyoto", image: tripThemeImages.fushimi, position: "center 46%" },
+      10: { key: "tokyo", base: "Tokyo", image: tripThemeImages.shinkansen, position: "center 50%" },
+      11: { key: "tokyo", base: "Tokyo", image: tripThemeImages.tokyo, position: "center 50%" },
+      12: { key: "tokyo", base: "Tokyo", image: tripThemeImages.shibuya, position: "center 48%" },
+      13: { key: "tokyo", base: "Tokyo", image: tripThemeImages.disneySea, position: "center 52%" },
+      14: { key: "tokyo", base: "Tokyo", image: tripThemeImages.akihabara, position: "center 52%" },
+      15: { key: "tokyo", base: "Tokyo", image: tripThemeImages.pokemon, position: "center 50%" },
+      16: { key: "tokyo", base: "Kamakura", image: tripThemeImages.kamakura, position: "center 46%" },
+      17: { key: "tokyo", base: "Tokyo", image: tripThemeImages.ueno, position: "center 54%" },
+      18: { key: "return", base: "Regreso", image: tripThemeImages.return, position: "center 44%" }
+    };
+
     function getDayBase(index) {
+      if (index === 0) return "Vuelo";
       if (index <= 4) return "Osaka";
       if (index <= 9) return "Kyoto";
       return "Tokyo";
+    }
+
+    function getDayTheme(index) {
+      if (tripDayHeroThemes[index]) return tripDayHeroThemes[index];
+
+      if (index <= 4) {
+        return {
+          key: "osaka",
+          base: "Osaka",
+          image: tripThemeImages.osakaNight,
+          position: "center 54%"
+        };
+      }
+
+      if (index <= 9) {
+        return {
+          key: "kyoto",
+          base: "Kyoto",
+          image: tripThemeImages.kyotoGion,
+          position: "center 46%"
+        };
+      }
+
+      return {
+        key: "tokyo",
+        base: "Tokyo",
+        image: tripThemeImages.tokyo,
+        position: "center 50%"
+      };
+    }
+
+    const preloadedHeroImages = new Set();
+
+    function preloadHeroImage(url) {
+      if (!url || preloadedHeroImages.has(url)) return;
+      preloadedHeroImages.add(url);
+      const image = new Image();
+      image.decoding = "async";
+      image.loading = "eager";
+      image.src = url;
+    }
+
+    function preloadAdjacentHeroImages(index) {
+      [index - 1, index, index + 1].forEach(dayIndex => {
+        if (dayIndex >= 0 && dayIndex < days.length) {
+          preloadHeroImage(getDayTheme(dayIndex).image);
+        }
+      });
+    }
+
+    function preloadAllHeroImages() {
+      Object.values(tripDayHeroThemes).forEach(theme => preloadHeroImage(theme.image));
+    }
+
+    function applyDayTheme(index) {
+      const day = days[index];
+      const theme = getDayTheme(index);
+      const scene = index === PROPOSAL_DAY_INDEX && proposalDayUnlocked
+        ? "Osaka Castle, propuesta y cena especial"
+        : tripDayScenes[index] || day?.status || "itinerario del dia";
+
+      document.body.classList.remove(...tripThemeClasses);
+      document.body.classList.add(`trip-theme-${theme.key}`);
+      document.documentElement.style.setProperty("--hero-image", `url("${theme.image}")`);
+      document.documentElement.style.setProperty("--hero-position", theme.position);
+      preloadAdjacentHeroImages(index);
+
+      baseCity.textContent = theme.base;
+      heroBase.textContent = `${theme.base} - ${scene}.`;
     }
 
     function getTaxiDestination(index) {
@@ -4199,9 +4913,7 @@
     }
 
     function updateBaseSummary(index) {
-      const base = getDayBase(index);
-      baseCity.textContent = base;
-      heroBase.textContent = `Costa Rica hacia Japón, base actual: ${base}.`;
+      applyDayTheme(index);
     }
 
     function storageKey(...parts) {
@@ -6109,6 +6821,15 @@
         </section>`;
     }
 
+    function registerServiceWorker() {
+      if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js").catch(error => {
+          console.warn("No se pudo registrar el cache offline.", error);
+        });
+      });
+    }
+
     async function bootApp() {
       updateJapanTime();
       setInterval(updateJapanTime, 60000);
@@ -6124,11 +6845,13 @@
         renderCostOverview();
         updateCurrencyConverter();
         setActiveDay(getAutoStartDayIndex());
+        preloadAllHeroImages();
       } catch (error) {
         renderItineraryLoadError(error);
       }
     }
 
+    registerServiceWorker();
     bootApp();
   </script>
 </body>
