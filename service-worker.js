@@ -1,4 +1,4 @@
-const CACHE_VERSION = "itinerario-japon-v1";
+const CACHE_VERSION = "itinerario-japon-v2";
 const APP_CACHE = `${CACHE_VERSION}:app`;
 const IMAGE_CACHE = `${CACHE_VERSION}:images`;
 

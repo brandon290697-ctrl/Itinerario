@@ -356,6 +356,13 @@
       grid-column: span 3;
     }
 
+    .quick-card.weather-card {
+      grid-template-rows: auto minmax(24px, auto) 32px;
+      height: 132px;
+      min-height: 132px;
+      overflow: hidden;
+    }
+
     .quick-card-header {
       align-items: center;
       display: flex;
@@ -395,12 +402,29 @@
       line-height: 1.1;
     }
 
+    .quick-card.weather-card .value {
+      display: -webkit-box;
+      max-height: 48px;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
     .quick-card .hint {
       color: var(--muted);
       font-size: 12px;
       font-weight: 700;
       line-height: 1.35;
       margin-top: 8px;
+    }
+
+    .quick-card.weather-card .hint {
+      display: -webkit-box;
+      margin-top: 0;
+      max-height: 34px;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
     }
 
     .converter-card {
@@ -2057,6 +2081,10 @@
       .quick-card.converter-card {
         grid-column: span 3;
       }
+      .quick-card.weather-card {
+        height: 122px;
+        min-height: 122px;
+      }
       .quick-card {
         min-height: 82px;
         padding: 12px;
@@ -2187,6 +2215,10 @@
       .quick-card.converter-card {
         grid-column: 1 / -1;
       }
+      .quick-card.weather-card {
+        height: 112px;
+        min-height: 112px;
+      }
       body:not(.quick-panel-open) .quick-card.weather-card,
       body:not(.quick-panel-open) .quick-card.converter-card,
       body:not(.quick-panel-open) .cost-overview:not([hidden]) {
@@ -2205,7 +2237,7 @@
       }
       body.quick-panel-open .quick-card.weather-card .hint,
       body.quick-panel-open .quick-card.converter-card .hint {
-        display: block;
+        display: -webkit-box;
       }
       .quick-icon {
         display: none;
@@ -2897,6 +2929,11 @@
       .quick-card {
         border-radius: 18px;
         min-height: 62px;
+      }
+
+      .quick-card.weather-card {
+        height: 112px;
+        min-height: 112px;
       }
 
       .day-nav {
@@ -3956,7 +3993,9 @@
       --city-accent-2: #c59a3d;
       --city-soft: #f5ecdc;
       --hero-image: url("https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1800&q=80");
+      --hero-next-image: url("https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1800&q=80");
       --hero-position: center;
+      --hero-next-position: center;
       --hero-overlay-start: rgba(18, 27, 45, 0.88);
       --hero-overlay-end: rgba(24, 59, 89, 0.36);
     }
@@ -4059,6 +4098,11 @@
       background-position: var(--hero-position);
       background-size: cover;
       border-bottom-color: var(--city-accent);
+      height: 300px;
+      isolation: isolate;
+      min-height: 300px;
+      overflow: hidden;
+      transition: border-color .25s ease;
     }
 
     body.light-mode .hero,
@@ -4069,6 +4113,68 @@
       background-position: var(--hero-position);
       background-size: cover;
       border-bottom-color: var(--city-accent);
+      height: 300px;
+      min-height: 300px;
+    }
+
+    .hero::after {
+      background:
+        linear-gradient(90deg, var(--hero-overlay-start), var(--hero-overlay-end)),
+        var(--hero-next-image);
+      background-position: var(--hero-next-position);
+      background-size: cover;
+      content: "";
+      inset: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      transition: opacity .52s ease;
+      z-index: 0;
+    }
+
+    .hero.hero-image-fading::after {
+      opacity: 1;
+    }
+
+    .hero::before {
+      z-index: 1;
+    }
+
+    .hero > * {
+      z-index: 2;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      body.light-mode .hero,
+      body.dark-theme .hero {
+        height: 270px;
+        min-height: 270px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .hero,
+      body.light-mode .hero,
+      body.dark-theme .hero {
+        height: 210px;
+        min-height: 210px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero,
+      body.light-mode .hero,
+      body.dark-theme .hero {
+        height: 198px;
+        min-height: 198px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero::after {
+        transition: none;
+      }
     }
 
     .eyebrow,
@@ -4645,6 +4751,7 @@
     const reservationButton = document.getElementById("reservationButton");
     const baseCity = document.getElementById("baseCity");
     const heroBase = document.getElementById("heroBase");
+    const hero = document.querySelector(".hero");
     const themeToggle = document.getElementById("themeToggle");
     const themeIcon = document.getElementById("themeIcon");
     const themeLabel = document.getElementById("themeLabel");
@@ -4840,6 +4947,8 @@
     }
 
     const preloadedHeroImages = new Set();
+    let activeHeroImage = "";
+    let activeHeroFadeTimer = null;
 
     function preloadHeroImage(url) {
       if (!url || preloadedHeroImages.has(url)) return;
@@ -4862,6 +4971,45 @@
       Object.values(tripDayHeroThemes).forEach(theme => preloadHeroImage(theme.image));
     }
 
+    function setHeroImage(theme) {
+      const rootStyle = document.documentElement.style;
+      const nextImage = `url("${theme.image}")`;
+      const nextPosition = theme.position || "center";
+      const shouldAnimate = hero
+        && activeHeroImage
+        && activeHeroImage !== theme.image
+        && !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (activeHeroFadeTimer) {
+        clearTimeout(activeHeroFadeTimer);
+        activeHeroFadeTimer = null;
+      }
+
+      if (!shouldAnimate) {
+        hero?.classList.remove("hero-image-fading");
+        rootStyle.setProperty("--hero-image", nextImage);
+        rootStyle.setProperty("--hero-next-image", nextImage);
+        rootStyle.setProperty("--hero-position", nextPosition);
+        rootStyle.setProperty("--hero-next-position", nextPosition);
+        activeHeroImage = theme.image;
+        return;
+      }
+
+      rootStyle.setProperty("--hero-next-image", nextImage);
+      rootStyle.setProperty("--hero-next-position", nextPosition);
+      hero.classList.remove("hero-image-fading");
+      void hero.offsetWidth;
+      hero.classList.add("hero-image-fading");
+
+      activeHeroFadeTimer = setTimeout(() => {
+        rootStyle.setProperty("--hero-image", nextImage);
+        rootStyle.setProperty("--hero-position", nextPosition);
+        hero.classList.remove("hero-image-fading");
+        activeHeroImage = theme.image;
+        activeHeroFadeTimer = null;
+      }, 560);
+    }
+
     function applyDayTheme(index) {
       const day = days[index];
       const theme = getDayTheme(index);
@@ -4871,8 +5019,7 @@
 
       document.body.classList.remove(...tripThemeClasses);
       document.body.classList.add(`trip-theme-${theme.key}`);
-      document.documentElement.style.setProperty("--hero-image", `url("${theme.image}")`);
-      document.documentElement.style.setProperty("--hero-position", theme.position);
+      setHeroImage(theme);
       preloadAdjacentHeroImages(index);
 
       baseCity.textContent = theme.base;
