@@ -1845,6 +1845,140 @@
       width: fit-content;
     }
 
+    .place-modal .modal-panel {
+      width: min(720px, calc(100vw - 28px));
+      grid-template-rows: auto 1fr;
+    }
+
+    .place-body {
+      display: grid;
+      gap: 14px;
+      overflow: auto;
+      padding: 18px;
+    }
+
+    .place-status {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.45;
+      padding: 12px;
+    }
+
+    .place-detail-card {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      display: grid;
+      gap: 13px;
+      padding: 16px;
+    }
+
+    .place-detail-card header {
+      align-items: start;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr auto;
+    }
+
+    .place-detail-card h3 {
+      color: var(--navy);
+      font-size: 20px;
+      line-height: 1.15;
+    }
+
+    .place-rating {
+      background: rgba(245, 213, 118, 0.24);
+      border: 1px solid rgba(245, 213, 118, 0.44);
+      border-radius: 999px;
+      color: var(--amber-ink);
+      font-size: 12px;
+      font-weight: 950;
+      padding: 7px 10px;
+      white-space: nowrap;
+    }
+
+    .place-meta-grid {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .place-meta-item {
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      display: grid;
+      gap: 4px;
+      padding: 10px;
+    }
+
+    .place-meta-item small {
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .place-meta-item span {
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .place-hours {
+      border-top: 1px solid var(--line);
+      display: grid;
+      gap: 6px;
+      padding-top: 12px;
+    }
+
+    .place-hours strong {
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    .place-hours p {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 750;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .place-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .place-action {
+      align-items: center;
+      background: var(--navy);
+      border: 1px solid var(--navy);
+      border-radius: 999px;
+      color: white;
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 7px;
+      min-height: 38px;
+      padding: 0 13px;
+      text-decoration: none;
+    }
+
+    .place-action.secondary {
+      background: var(--control);
+      border-color: var(--line);
+      color: var(--navy);
+    }
+
     .food-status {
       background: var(--surface-soft);
       border: 1px solid var(--line);
@@ -4526,6 +4660,26 @@
     </div>
   </section>
 
+  <section class="modal place-modal" id="placeModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="placeModalTitle">
+    <div class="modal-backdrop" data-close-place></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <div class="modal-kicker">Google Places</div>
+          <h2 class="modal-title" id="placeModalTitle">Info del lugar</h2>
+          <p class="modal-subtitle" id="placeModalSubtitle">Rating, horario y datos actuales del lugar.</p>
+        </div>
+        <button class="icon-button" type="button" aria-label="Cerrar info del lugar" data-close-place>
+          <span class="material-symbols-rounded">close</span>
+        </button>
+      </div>
+      <div class="place-body">
+        <div class="place-status" id="placeStatus">Buscando lugar...</div>
+        <div id="placeDetails"></div>
+      </div>
+    </div>
+  </section>
+
   <section class="modal taxi-modal" id="taxiModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="taxiModalTitle">
     <div class="modal-backdrop" data-close-taxi></div>
     <div class="modal-panel">
@@ -4792,6 +4946,11 @@
     const foodCategoryChips = document.getElementById("foodCategoryChips");
     const foodStatus = document.getElementById("foodStatus");
     const foodResults = document.getElementById("foodResults");
+    const placeModal = document.getElementById("placeModal");
+    const placeModalTitle = document.getElementById("placeModalTitle");
+    const placeModalSubtitle = document.getElementById("placeModalSubtitle");
+    const placeStatus = document.getElementById("placeStatus");
+    const placeDetails = document.getElementById("placeDetails");
     const taxiModal = document.getElementById("taxiModal");
     const taxiModalTitle = document.getElementById("taxiModalTitle");
     const taxiModalSubtitle = document.getElementById("taxiModalSubtitle");
@@ -4822,6 +4981,8 @@
     let foodPlacesMap;
     let foodPlacesService;
     let foodGeocoder;
+    let activePlaceQuery = "";
+    let activePlaceRequestId = 0;
     let activeTaxiCardText = "";
     let map;
     let directionsRenderer;
@@ -5759,6 +5920,216 @@
       return `https://www.google.com/maps/search/?api=1&query=${query}&query_place_id=${place.place_id}`;
     }
 
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "\"": "&quot;",
+        "'": "&#39;"
+      }[char]));
+    }
+
+    function blockPlaceQuery(block) {
+      const location = block.location;
+      if (!location) return "";
+      return cleanPlaceQuery(location.mapsQuery || location.address || location.name || block.title);
+    }
+
+    function canShowPlaceButton(block) {
+      return Boolean(blockPlaceQuery(block));
+    }
+
+    function placeCacheKey(query) {
+      return storageKey("placeDetails", query.toLowerCase().replace(/\s+/g, " ").trim());
+    }
+
+    function getCachedPlaceDetails(query) {
+      try {
+        const cached = JSON.parse(localStorage.getItem(placeCacheKey(query)) || "null");
+        if (!cached || Date.now() - cached.timestamp > 24 * 60 * 60 * 1000) return null;
+        return cached.data;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function setCachedPlaceDetails(query, data) {
+      try {
+        localStorage.setItem(placeCacheKey(query), JSON.stringify({ timestamp: Date.now(), data }));
+      } catch (error) {}
+    }
+
+    function findPlaceFromQuery(query) {
+      return new Promise((resolve, reject) => {
+        foodPlacesService.findPlaceFromQuery({
+          query,
+          fields: ["place_id", "name", "geometry"]
+        }, (results, status) => {
+          if (status !== google.maps.places.PlacesServiceStatus.OK || !results?.[0]?.place_id) {
+            reject(new Error("No se encontró el lugar."));
+            return;
+          }
+          resolve(results[0]);
+        });
+      });
+    }
+
+    function getPlaceDetails(placeId) {
+      return new Promise((resolve, reject) => {
+        foodPlacesService.getDetails({
+          placeId,
+          fields: [
+            "place_id",
+            "name",
+            "formatted_address",
+            "formatted_phone_number",
+            "international_phone_number",
+            "opening_hours",
+            "rating",
+            "user_ratings_total",
+            "website",
+            "url",
+            "business_status",
+            "price_level",
+            "types"
+          ]
+        }, (place, status) => {
+          if (status !== google.maps.places.PlacesServiceStatus.OK || !place) {
+            reject(new Error("No se pudo cargar el detalle del lugar."));
+            return;
+          }
+          resolve(place);
+        });
+      });
+    }
+
+    function serializePlaceDetails(place) {
+      return {
+        place_id: place.place_id,
+        name: place.name,
+        formatted_address: place.formatted_address,
+        formatted_phone_number: place.formatted_phone_number,
+        international_phone_number: place.international_phone_number,
+        opening_hours: place.opening_hours ? {
+          open_now: place.opening_hours.open_now,
+          weekday_text: place.opening_hours.weekday_text || []
+        } : null,
+        rating: place.rating,
+        user_ratings_total: place.user_ratings_total,
+        website: place.website,
+        url: place.url,
+        business_status: place.business_status,
+        price_level: place.price_level,
+        types: place.types || []
+      };
+    }
+
+    async function loadPlaceDetails(query) {
+      const cached = getCachedPlaceDetails(query);
+      if (cached) return { data: cached, fromCache: true };
+
+      await ensurePlacesService();
+      const found = await findPlaceFromQuery(query);
+      const details = await getPlaceDetails(found.place_id);
+      const data = serializePlaceDetails(details);
+      setCachedPlaceDetails(query, data);
+      return { data, fromCache: false };
+    }
+
+    function businessStatusText(status) {
+      if (status === "OPERATIONAL") return "Operando";
+      if (status === "CLOSED_TEMPORARILY") return "Cerrado temporalmente";
+      if (status === "CLOSED_PERMANENTLY") return "Cerrado permanentemente";
+      return "Estado no indicado";
+    }
+
+    function openNowText(place) {
+      const open = place.opening_hours?.open_now;
+      if (open === true) return "Abierto ahora";
+      if (open === false) return "Cerrado ahora";
+      return "Horario no indicado";
+    }
+
+    function placeRatingText(place) {
+      if (!place.rating) return "Sin rating";
+      return `${Number(place.rating).toFixed(1)} (${place.user_ratings_total || 0})`;
+    }
+
+    function placeMapsUrl(place, fallbackQuery) {
+      if (place.url) return place.url;
+      if (place.place_id) {
+        return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fallbackQuery)}&query_place_id=${place.place_id}`;
+      }
+      return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fallbackQuery)}`;
+    }
+
+    function renderPlaceDetails(place, query, fromCache) {
+      const phone = place.international_phone_number || place.formatted_phone_number || "No indicado";
+      const website = place.website || "";
+      const hours = place.opening_hours?.weekday_text || [];
+      const types = (place.types || []).slice(0, 3).map(type => type.replace(/_/g, " ")).join(", ") || "No indicado";
+      placeStatus.textContent = fromCache
+        ? "Datos guardados localmente hace menos de 24 horas. Verificá en Maps si es crítico."
+        : "Datos actuales de Google Places. Verificá horario y reserva antes de ir.";
+      placeDetails.innerHTML = `
+        <article class="place-detail-card">
+          <header>
+            <h3>${escapeHtml(place.name || "Lugar")}</h3>
+            <span class="place-rating">★ ${escapeHtml(placeRatingText(place))}</span>
+          </header>
+          <div class="place-meta-grid">
+            <div class="place-meta-item"><small>Estado</small><span>${escapeHtml(openNowText(place))}</span></div>
+            <div class="place-meta-item"><small>Negocio</small><span>${escapeHtml(businessStatusText(place.business_status))}</span></div>
+            <div class="place-meta-item"><small>Precio</small><span>${escapeHtml(priceLevelText(place.price_level))}</span></div>
+            <div class="place-meta-item"><small>Teléfono</small><span>${escapeHtml(phone)}</span></div>
+            <div class="place-meta-item"><small>Dirección</small><span>${escapeHtml(place.formatted_address || "Dirección no disponible.")}</span></div>
+            <div class="place-meta-item"><small>Tipo</small><span>${escapeHtml(types)}</span></div>
+          </div>
+          ${hours.length ? `<div class="place-hours"><strong>Horario publicado</strong>${hours.map(line => `<p>${escapeHtml(line)}</p>`).join("")}</div>` : ""}
+          <div class="place-actions">
+            <a class="place-action" href="${escapeHtml(placeMapsUrl(place, query))}" target="_blank" rel="noopener"><span class="material-symbols-rounded">map</span>Abrir Maps</a>
+            ${website ? `<a class="place-action secondary" href="${escapeHtml(website)}" target="_blank" rel="noopener"><span class="material-symbols-rounded">language</span>Sitio web</a>` : ""}
+          </div>
+        </article>`;
+    }
+
+    async function openPlaceModal(index, blockIndex) {
+      const block = days[index].blocks[blockIndex];
+      const query = blockPlaceQuery(block);
+      if (!query) return;
+
+      activePlaceQuery = query;
+      const requestId = ++activePlaceRequestId;
+      placeModalTitle.textContent = block.location?.name || block.title;
+      placeModalSubtitle.textContent = query;
+      placeStatus.textContent = "Buscando datos actuales del lugar...";
+      placeDetails.innerHTML = "";
+      placeModal.classList.add("open");
+      placeModal.setAttribute("aria-hidden", "false");
+
+      try {
+        const { data, fromCache } = await loadPlaceDetails(query);
+        if (requestId !== activePlaceRequestId || activePlaceQuery !== query) return;
+        renderPlaceDetails(data, query, fromCache);
+      } catch (error) {
+        if (requestId !== activePlaceRequestId) return;
+        placeStatus.textContent = "No se pudo consultar este lugar. Revisá que la API key tenga Places API habilitada.";
+        placeDetails.innerHTML = `
+          <article class="place-detail-card">
+            <p>Podés abrirlo directamente en Google Maps con la búsqueda guardada.</p>
+            <div class="place-actions">
+              <a class="place-action" href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(query)}" target="_blank" rel="noopener"><span class="material-symbols-rounded">map</span>Abrir Maps</a>
+            </div>
+          </article>`;
+      }
+    }
+
+    function closePlaceModal() {
+      placeModal.classList.remove("open");
+      placeModal.setAttribute("aria-hidden", "true");
+    }
+
     function renderFoodPlaces(results, origin, category) {
       if (!results.length) {
         foodResults.innerHTML = "";
@@ -6348,6 +6719,7 @@
         <div class="blocks" id="dayBlocks">
           ${day.blocks.map((block, blockIndex) => {
             const hasRouteButton = canShowRouteButton(block);
+            const hasPlaceButton = canShowPlaceButton(block);
             const visibleItems = normalItems(block);
             return `
             <article class="block tone-${block.tone || "travel"}">
@@ -6363,6 +6735,7 @@
                   ${renderBlockCost(block)}
                   <div class="block-actions">
                     ${hasRouteButton ? `<button class="icon-button route-button" type="button" data-block="${blockIndex}" aria-label="Ver recorrido de ${block.title}" title="Ver recorrido">${mapIcon}<span class="button-label">Mapa</span></button>` : ""}
+                    ${hasPlaceButton ? `<button class="icon-button place-button" type="button" data-block="${blockIndex}" aria-label="Ver info de ${block.title}" title="Info del lugar"><span class="material-symbols-rounded">travel_explore</span><span class="button-label">Lugar</span></button>` : ""}
                     <button class="icon-button chevron" type="button" aria-label="Ver detalles">${chevronIcon}<span class="button-label">Detalle</span></button>
                   </div>
                 </div>
@@ -6391,6 +6764,14 @@
           event.stopPropagation();
           if (button.disabled) return;
           openRouteModal(days[currentDayIndex].blocks[Number(button.dataset.block)]);
+        });
+      });
+
+      document.querySelectorAll(".place-button").forEach(button => {
+        button.addEventListener("click", event => {
+          event.stopPropagation();
+          if (button.disabled) return;
+          openPlaceModal(currentDayIndex, Number(button.dataset.block));
         });
       });
 
@@ -6904,6 +7285,10 @@
       element.addEventListener("click", closeFoodModal);
     });
 
+    document.querySelectorAll("[data-close-place]").forEach(element => {
+      element.addEventListener("click", closePlaceModal);
+    });
+
     document.querySelectorAll("[data-close-taxi]").forEach(element => {
       element.addEventListener("click", closeTaxiModal);
     });
@@ -6935,6 +7320,9 @@
       }
       if (event.key === "Escape" && foodModal.classList.contains("open")) {
         closeFoodModal();
+      }
+      if (event.key === "Escape" && placeModal.classList.contains("open")) {
+        closePlaceModal();
       }
       if (event.key === "Escape" && taxiModal.classList.contains("open")) {
         closeTaxiModal();
