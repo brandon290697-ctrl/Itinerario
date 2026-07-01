@@ -658,7 +658,15 @@
       padding: 0 18px 12px;
     }
 
+    .cost-overview.locked {
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+
     .cost-overview.locked > div:first-child {
+      display: none;
+    }
+
+    .cost-overview:not(.locked) .trip-countdown-line {
       display: none;
     }
 
@@ -684,6 +692,133 @@
       font-size: 13px;
       line-height: 1.4;
       margin-top: 4px;
+    }
+
+    .trip-countdown-line {
+      --trip-countdown-progress: 0;
+      align-self: center;
+      color: var(--muted);
+      display: grid;
+      gap: 7px;
+      min-width: 180px;
+      width: min(720px, 100%);
+    }
+
+    .trip-countdown-copy {
+      align-items: center;
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      line-height: 1.1;
+      min-width: 0;
+    }
+
+    .trip-countdown-copy strong {
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .02em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .trip-countdown-copy span {
+      color: var(--muted);
+      flex: 0 0 auto;
+      font-size: 11px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .trip-countdown-road {
+      align-items: center;
+      display: grid;
+      min-height: 30px;
+      padding-right: 34px;
+      position: relative;
+    }
+
+    .trip-countdown-track {
+      background: color-mix(in srgb, var(--control), var(--line) 44%);
+      border: 1px solid color-mix(in srgb, var(--line), transparent 18%);
+      border-radius: 999px;
+      height: 8px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .trip-countdown-fill {
+      background: linear-gradient(90deg, var(--city-solid), var(--city-accent), var(--city-accent-2));
+      border-radius: inherit;
+      box-shadow: 0 0 18px color-mix(in srgb, var(--city-accent), transparent 58%);
+      height: 100%;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 1.2s cubic-bezier(.16, 1, .3, 1);
+      width: 100%;
+    }
+
+    .trip-countdown-line.is-ready .trip-countdown-fill {
+      transform: scaleX(var(--trip-countdown-progress, 0));
+    }
+
+    .trip-countdown-line.is-resetting .trip-countdown-fill,
+    .trip-countdown-line.is-resetting .trip-countdown-plane {
+      transition: none;
+    }
+
+    .trip-countdown-line.is-loading .trip-countdown-fill::after {
+      animation: tripProgressSweep 1.45s ease-in-out infinite;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.72), transparent);
+      content: "";
+      inset: 0;
+      position: absolute;
+      transform: translateX(-120%);
+    }
+
+    .trip-countdown-plane,
+    .trip-countdown-destination {
+      align-items: center;
+      border-radius: 999px;
+      display: inline-flex;
+      height: 30px;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+    }
+
+    .trip-countdown-plane {
+      background: var(--city-solid);
+      color: #ffffff;
+      left: 0;
+      transition: left 1.2s cubic-bezier(.16, 1, .3, 1), transform .22s ease;
+      z-index: 2;
+    }
+
+    .trip-countdown-line.is-ready .trip-countdown-plane {
+      left: calc(var(--trip-countdown-progress, 0) * (100% - 64px));
+    }
+
+    .trip-countdown-destination {
+      background: color-mix(in srgb, var(--city-accent), white 82%);
+      border: 1px solid color-mix(in srgb, var(--city-accent), white 45%);
+      color: var(--city-solid);
+      right: 0;
+      z-index: 1;
+    }
+
+    .trip-countdown-plane .material-symbols-rounded,
+    .trip-countdown-destination .material-symbols-rounded {
+      font-size: 17px;
+    }
+
+    @keyframes tripProgressSweep {
+      0% { transform: translateX(-120%); }
+      55%, 100% { transform: translateX(120%); }
     }
 
     .cost-actions {
@@ -1602,6 +1737,141 @@
       font-size: 13px;
       font-weight: 800;
       line-height: 1.35;
+    }
+
+    .day-budget-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 14px 34px rgba(16, 36, 63, 0.07);
+      display: grid;
+      gap: 14px;
+      margin: 0 0 14px;
+      padding: 16px;
+    }
+
+    .day-budget-card.locked {
+      align-items: center;
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    .day-budget-card header {
+      align-items: flex-start;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    .day-budget-card h3 {
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 1.15;
+      margin-bottom: 4px;
+    }
+
+    .day-budget-card p {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    .day-budget-lock {
+      align-items: center;
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--navy);
+      cursor: pointer;
+      display: inline-flex;
+      flex: 0 0 auto;
+      font-size: 12px;
+      font-weight: 950;
+      gap: 7px;
+      min-height: 38px;
+      padding: 0 13px;
+    }
+
+    .day-budget-lock:hover {
+      background: var(--city-solid);
+      border-color: var(--city-solid);
+      color: #ffffff;
+    }
+
+    .day-budget-lock .material-symbols-rounded {
+      font-size: 17px;
+    }
+
+    .day-budget-metrics {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .day-budget-metric {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px;
+    }
+
+    .day-budget-metric small {
+      color: var(--muted);
+      display: block;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .day-budget-metric strong {
+      color: var(--navy);
+      display: block;
+      font-size: 17px;
+      line-height: 1.15;
+    }
+
+    .day-budget-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .day-budget-row {
+      align-items: start;
+      background: color-mix(in srgb, var(--surface), var(--city-soft) 18%);
+      border: 1px solid color-mix(in srgb, var(--line), var(--city-accent) 14%);
+      border-radius: 15px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: minmax(0, 1fr) auto;
+      padding: 11px 12px;
+    }
+
+    .day-budget-row strong {
+      color: var(--ink);
+      display: block;
+      font-size: 14px;
+      line-height: 1.25;
+      margin-bottom: 3px;
+    }
+
+    .day-budget-row span {
+      color: var(--muted);
+      display: block;
+      font-size: 12px;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    .day-budget-row em {
+      color: var(--city-solid);
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 950;
+      line-height: 1.2;
+      text-align: right;
+      white-space: nowrap;
     }
 
     .icon-button {
@@ -2786,6 +3056,16 @@
         padding: 9px 10px;
       }
       .block-cost span { font-size: 12px; }
+      .day-budget-card.locked,
+      .day-budget-row {
+        grid-template-columns: 1fr;
+      }
+      .day-budget-metrics {
+        grid-template-columns: 1fr;
+      }
+      .day-budget-row em {
+        text-align: left;
+      }
       .icon-button {
         align-items: center;
         display: inline-flex;
@@ -4888,6 +5168,17 @@
           <strong id="tripCostTotal">--</strong>
           <p id="tripCostNote">Estimado para 2 personas, sin vuelos internacionales ni hotel.</p>
         </div>
+        <div class="trip-countdown-line" id="tripProgressCard" aria-label="Progreso hacia el Día 0">
+          <div class="trip-countdown-copy">
+            <strong id="tripProgressTitle">Calculando avance</strong>
+            <span id="tripProgressHint">Camino al Día 0</span>
+          </div>
+          <div class="trip-countdown-road">
+            <div class="trip-countdown-track"><div class="trip-countdown-fill" id="tripProgressFill"></div></div>
+            <span class="trip-countdown-plane" aria-hidden="true"><span class="material-symbols-rounded">flight_takeoff</span></span>
+            <span class="trip-countdown-destination" aria-hidden="true"><span class="material-symbols-rounded">temple_buddhist</span></span>
+          </div>
+        </div>
         <div class="cost-actions">
           <button class="cost-unlock-button reservation-button" type="button" id="reservationButton" title="Reservas criticas" aria-label="Ver reservas criticas">
             <span class="material-symbols-rounded">event_available</span>
@@ -5205,6 +5496,7 @@
     const PROPOSAL_DAY_INDEX = 3;
     const USD_TO_CRC_ESTIMATE = 460;
     const JPY_TO_USD_ESTIMATE = 0.0068;
+    const BUDGET_BUFFER_RATE = 0.20;
     const criticalReservations = [
       {
         id: "pokemon-cafe-osaka",
@@ -5359,6 +5651,10 @@
     const clothingAdvice = document.getElementById("clothingAdvice");
     const countdownValue = document.getElementById("countdownValue");
     const countdownHint = document.getElementById("countdownHint");
+    const tripProgressCard = document.getElementById("tripProgressCard");
+    const tripProgressTitle = document.getElementById("tripProgressTitle");
+    const tripProgressFill = document.getElementById("tripProgressFill");
+    const tripProgressHint = document.getElementById("tripProgressHint");
     const currencyAmount = document.getElementById("currencyAmount");
     const currencyFrom = document.getElementById("currencyFrom");
     const currencyResults = document.getElementById("currencyResults");
@@ -5411,11 +5707,15 @@
     const todayModeExit = document.getElementById("todayModeExit");
 
     let currentDayIndex = 0;
+    let tripProgressAnimationTimer = null;
     let mapsPromise;
     let exchangeRatesPromise;
     let weatherRequestId = 0;
     let latestWeatherContext = null;
     let costsUnlocked = getStoredValue(storageKey("costsUnlocked")) === "1";
+    let unlockedBudgetDays = new Set(getStoredValue(storageKey("budgetUnlockedDays"), "")
+      .split(",")
+      .filter(Boolean));
     let phraseTimer;
     let activePhrases = [];
     let activePhraseIndex = 0;
@@ -5750,6 +6050,8 @@
       return new Date(Date.UTC(2026, 9, index === 0 ? 5 : 6 + index));
     }
 
+    const COUNTDOWN_PROGRESS_WINDOW_DAYS = 180;
+
     function updateCountdown() {
       const today = new Date();
       const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
@@ -5769,6 +6071,54 @@
         countdownValue.textContent = "En viaje";
         countdownHint.textContent = "según fecha real";
       }
+
+      updateTripProgress(diffDays);
+    }
+
+    function updateTripProgress(diffDaysOverride) {
+      if (!tripProgressCard || !tripProgressTitle || !tripProgressFill || !tripProgressHint) return;
+
+      const diffDays = Number.isFinite(diffDaysOverride)
+        ? diffDaysOverride
+        : Math.ceil((tripDateForIndex(0).getTime() - Date.UTC(new Date().getFullYear(), new Date().getMonth(), new Date().getDate())) / 86400000);
+      const clampedDays = Math.min(Math.max(diffDays, 0), COUNTDOWN_PROGRESS_WINDOW_DAYS);
+      const progress = diffDays <= 0
+        ? 1
+        : (COUNTDOWN_PROGRESS_WINDOW_DAYS - clampedDays) / COUNTDOWN_PROGRESS_WINDOW_DAYS;
+      const progressLabel = Math.round(progress * 100);
+
+      if (tripProgressAnimationTimer) {
+        clearTimeout(tripProgressAnimationTimer);
+        tripProgressAnimationTimer = null;
+      }
+
+      tripProgressCard.classList.remove("is-ready", "is-loading");
+      tripProgressCard.classList.add("is-resetting");
+      tripProgressCard.style.setProperty("--trip-countdown-progress", "0");
+
+      if (diffDays > 1) {
+        tripProgressTitle.textContent = `${progressLabel}% hacia el Día 0`;
+        tripProgressHint.textContent = `Faltan ${diffDays} días para iniciar.`;
+        tripProgressCard.classList.add("is-loading");
+      } else if (diffDays === 1) {
+        tripProgressTitle.textContent = "Último día de espera";
+        tripProgressHint.textContent = "Mañana empieza el viaje.";
+        tripProgressCard.classList.add("is-loading");
+      } else if (diffDays === 0) {
+        tripProgressTitle.textContent = "Día 0 desbloqueado";
+        tripProgressHint.textContent = "La barra llegó al inicio del viaje.";
+      } else {
+        tripProgressTitle.textContent = "Viaje iniciado";
+        tripProgressHint.textContent = "La cuenta regresiva ya terminó.";
+      }
+
+      tripProgressFill.getBoundingClientRect();
+      tripProgressAnimationTimer = setTimeout(() => {
+        tripProgressCard.classList.remove("is-resetting");
+        tripProgressCard.style.setProperty("--trip-countdown-progress", String(progress));
+        tripProgressCard.classList.add("is-ready");
+        tripProgressAnimationTimer = null;
+      }, 280);
     }
 
     function dayText(day) {
@@ -6952,8 +7302,98 @@
       return label;
     }
 
-    function canShowCostAmounts() {
-      return SHOW_COST_ESTIMATES && costsUnlocked;
+    function parseCostToUsd(text) {
+      const value = String(text || "");
+      const usdValues = [...value.matchAll(/\$\s*([\d,.]+(?:\.\d+)?)/g)]
+        .map(match => Number(match[1].replace(/,/g, "")))
+        .filter(Number.isFinite);
+      if (usdValues.length) {
+        let low = Math.min(...usdValues);
+        let high = Math.max(...usdValues);
+        if (/por persona|por adulto/i.test(value) && !/2 personas|x\s*2|dos personas/i.test(value)) {
+          low *= 2;
+          high *= 2;
+        }
+        return { low, high };
+      }
+
+      const yenValues = [...value.matchAll(/(?:[\u00a5\uffe5]|JPY|yenes?)\s*([\d,.]+)/gi)]
+        .map(match => Number(match[1].replace(/,/g, "")))
+        .filter(Number.isFinite);
+      if (yenValues.length) {
+        let lowJpy = Math.min(...yenValues);
+        let highJpy = Math.max(...yenValues);
+        if (/por persona|por adulto/i.test(value) && !/2 personas|x\s*2|dos personas/i.test(value)) {
+          lowJpy *= 2;
+          highJpy *= 2;
+        }
+        return {
+          low: lowJpy * JPY_TO_USD_ESTIMATE,
+          high: highJpy * JPY_TO_USD_ESTIMATE
+        };
+      }
+
+      return null;
+    }
+
+    function paddedUsd(value) {
+      return Math.ceil(value * (1 + BUDGET_BUFFER_RATE));
+    }
+
+    function formatBudgetAmount(usd) {
+      return `${formatMoney(usd, "USD", "en-US")} / ${formatMoney(usd * USD_TO_CRC_ESTIMATE, "CRC", "es-CR")}`;
+    }
+
+    function budgetLineLabel(text) {
+      return String(text || "")
+        .replace(/\s+/g, " ")
+        .replace(/\s*Â·.*/, "")
+        .trim();
+    }
+
+    function blockBudget(block) {
+      const parsedItems = costItems(block)
+        .map(text => ({ text, parsed: parseCostToUsd(text) }))
+        .filter(item => item.parsed);
+      const baseHigh = parsedItems.reduce((sum, item) => sum + item.parsed.high, 0);
+      if (!baseHigh) return null;
+
+      return {
+        title: block.title,
+        items: parsedItems.map(item => budgetLineLabel(item.text)),
+        baseHigh,
+        paddedHigh: paddedUsd(baseHigh)
+      };
+    }
+
+    function dayBudget(index) {
+      const day = days[index];
+      const activities = day.blocks.map(blockBudget).filter(Boolean);
+      const rawTotal = activities.reduce((sum, item) => sum + item.baseHigh, 0);
+      const fallbackHigh = day.costEstimateUsd?.high || 0;
+      const effectiveHigh = rawTotal || fallbackHigh;
+      return {
+        activities,
+        rawTotal,
+        paddedTotal: paddedUsd(effectiveHigh),
+        fallbackUsed: !rawTotal && Boolean(fallbackHigh)
+      };
+    }
+
+    function tripBudget() {
+      return days.reduce((total, day, index) => total + dayBudget(index).paddedTotal, 0);
+    }
+
+    function isDayBudgetUnlocked(index) {
+      return costsUnlocked || unlockedBudgetDays.has(String(index));
+    }
+
+    function persistUnlockedBudgetDays() {
+      setStoredValue(storageKey("budgetUnlockedDays"), [...unlockedBudgetDays].join(","));
+    }
+
+    function canShowCostAmounts(index = currentDayIndex) {
+      return SHOW_COST_ESTIMATES && isDayBudgetUnlocked(index);
     }
 
     function updateCostUnlockButton() {
@@ -7004,9 +7444,24 @@
       renderDay(currentDayIndex);
     }
 
-    function renderBlockCost(block) {
+    function unlockDayBudget(index) {
+      if (isDayBudgetUnlocked(index)) return;
+
+      const password = window.prompt("Ingrese la clave para desbloquear los gastos de este dia:");
+      if (password !== COST_UNLOCK_PASSWORD) {
+        window.alert("Clave incorrecta.");
+        return;
+      }
+
+      unlockedBudgetDays.add(String(index));
+      persistUnlockedBudgetDays();
+      renderCostOverview();
+      renderDay(index);
+    }
+
+    function renderBlockCost(block, dayIndex = currentDayIndex) {
       const costs = costItems(block);
-      if (!canShowCostAmounts() || !costs.length) return "";
+      if (!canShowCostAmounts(dayIndex) || !costs.length) return "";
 
       return `
         <div class="block-cost">
@@ -7032,6 +7487,75 @@
       return `${formatUsdRange(estimate)} · aprox. ${formatCrcRangeFromUsd(estimate)}`;
     }
 
+    function renderDayBudget(index) {
+      if (!SHOW_COST_ESTIMATES) return "";
+
+      const unlocked = isDayBudgetUnlocked(index);
+      const budget = dayBudget(index);
+      const activityRows = budget.activities.length
+        ? budget.activities.map(activity => `
+            <article class="day-budget-row">
+              <div>
+                <strong>${escapeHtml(activity.title)}</strong>
+                <span>${activity.items.map(escapeHtml).join(" · ")}</span>
+              </div>
+              <em>${formatBudgetAmount(activity.paddedHigh)}</em>
+            </article>`).join("")
+        : `
+            <article class="day-budget-row">
+              <div>
+                <strong>Estimado general del dia</strong>
+                <span>No hay gastos por actividad detectados; se usa el estimado alto del dia.</span>
+              </div>
+              <em>${formatBudgetAmount(budget.paddedTotal)}</em>
+            </article>`;
+
+      if (!unlocked) {
+        return `
+          <section class="day-budget-card locked" aria-label="Presupuesto bloqueado del dia">
+            <div>
+              <h3>Gastos holgados del dia</h3>
+              <p>Desbloquee este dia para ver cada actividad con colchon, total diario y total del viaje.</p>
+            </div>
+            <button class="day-budget-lock" type="button" data-day-budget-unlock="${index}">
+              <span class="material-symbols-rounded">lock</span>
+              Desbloquear dia
+            </button>
+          </section>`;
+      }
+
+      return `
+        <section class="day-budget-card" aria-label="Presupuesto holgado del dia">
+          <header>
+            <div>
+              <h3>Gastos holgados del dia</h3>
+              <p>Monto alto detectado por actividad, con +${Math.round(BUDGET_BUFFER_RATE * 100)}% de colchon para ir sin apretar.</p>
+            </div>
+            <button class="day-budget-lock" type="button" disabled>
+              <span class="material-symbols-rounded">lock_open</span>
+              Dia desbloqueado
+            </button>
+          </header>
+          <div class="day-budget-metrics">
+            <div class="day-budget-metric">
+              <small>Total del dia</small>
+              <strong>${formatBudgetAmount(budget.paddedTotal)}</strong>
+            </div>
+            <div class="day-budget-metric">
+              <small>Total viaje</small>
+              <strong>${formatBudgetAmount(tripBudget())}</strong>
+            </div>
+            <div class="day-budget-metric">
+              <small>Colchon</small>
+              <strong>+${Math.round(BUDGET_BUFFER_RATE * 100)}%</strong>
+            </div>
+          </div>
+          <div class="day-budget-list">
+            ${activityRows}
+          </div>
+        </section>`;
+    }
+
     function renderCostOverview() {
       if (!SHOW_COST_ESTIMATES) {
         costOverview.hidden = true;
@@ -7039,16 +7563,9 @@
         return;
       }
 
-      const totals = days.reduce((sum, day) => {
-        if (!day.costEstimateUsd) return sum;
-        sum.low += day.costEstimateUsd.low;
-        sum.high += day.costEstimateUsd.high;
-        return sum;
-      }, { low: 0, high: 0 });
-
-      tripCostTotal.textContent = costsUnlocked ? costEstimateText(totals) : "Montos bloqueados";
+      tripCostTotal.textContent = costsUnlocked ? `Holgado: ${formatBudgetAmount(tripBudget())}` : "Montos bloqueados";
       tripCostNote.textContent = costsUnlocked
-        ? "Estimado para 2 personas, sin vuelos internacionales ni hotel. Se puede ocultar cambiando SHOW_COST_ESTIMATES a false."
+        ? "Total holgado para 2 personas con colchon por actividad. No incluye vuelos internacionales ni hotel."
         : "Presione desbloquear e ingrese la clave para ver presupuestos y costos por actividad.";
       updateCostUnlockButton();
       costOverview.classList.toggle("locked", !costsUnlocked);
@@ -7184,7 +7701,7 @@
               <div class="status-pill">${day.status}</div>
               <div class="energy-pill ${energyClass(day)}">Energía: ${getEnergyLevel(day)}</div>
             </div>
-            <div class="day-cost-pill" ${canShowCostAmounts() && day.costEstimateUsd ? "" : "hidden"}>${day.costEstimateUsd ? `Costo estimado: ${costEstimateText(day.costEstimateUsd)}` : ""}</div>
+            <div class="day-cost-pill" ${canShowCostAmounts(index) && day.costEstimateUsd ? "" : "hidden"}>${day.costEstimateUsd ? `Costo estimado: ${costEstimateText(day.costEstimateUsd)}` : ""}</div>
           </div>
         </div>
         <details class="day-summary-card">
@@ -7229,6 +7746,7 @@
             </div>
           </div>
         </details>
+        ${renderDayBudget(index)}
         <div class="blocks" id="dayBlocks">
           ${day.blocks.map((block, blockIndex) => {
             const hasRouteButton = canShowRouteButton(block);
@@ -7245,7 +7763,7 @@
                     ${block.marPick || block.marListStop ? `<span class="favorite-stop-badge" title="Parada destacada" aria-label="Parada destacada"><span class="material-symbols-rounded">stars_2</span></span>` : ""}
                   </div>
                   ${visibleItems.length ? `<ul>${visibleItems.map(item => `<li>${item}</li>`).join("")}</ul>` : ""}
-                  ${renderBlockCost(block)}
+                  ${renderBlockCost(block, index)}
                   <div class="block-actions">
                     ${hasRouteButton ? `<button class="icon-button route-button" type="button" data-block="${blockIndex}" aria-label="Ver recorrido de ${block.title}" title="Ver recorrido">${mapIcon}<span class="button-label">Mapa</span></button>` : ""}
                     ${hasPlaceButton ? `<button class="icon-button place-button" type="button" data-block="${blockIndex}" aria-label="Ver info de ${block.title}" title="Info del lugar"><span class="material-symbols-rounded">travel_explore</span><span class="button-label">Lugar</span></button>` : ""}
@@ -7271,6 +7789,10 @@
         ${renderNightSummary(index)}
         <div class="footer-note"><strong>✓</strong><p>${day.note}</p></div>
       `;
+
+      document.querySelector("[data-day-budget-unlock]")?.addEventListener("click", () => {
+        unlockDayBudget(index);
+      });
 
       document.querySelectorAll(".route-button").forEach(button => {
         button.addEventListener("click", event => {
