@@ -479,17 +479,21 @@
       display: none;
     }
 
+    .block li:nth-child(n+4) {
+      display: none;
+    }
+
     body.light-mode .block-details {
       padding: 12px;
     }
 
     .quick-grid {
       display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
       background: var(--surface-soft);
       border-bottom: 1px solid var(--line);
-      padding: 12px;
+      padding: 10px 14px 12px;
     }
 
     .mobile-quick-toggle {
@@ -499,13 +503,14 @@
       border-radius: 999px;
       color: var(--navy);
       cursor: pointer;
-      display: none;
+      display: inline-flex;
       font-size: 12px;
       font-weight: 900;
       gap: 7px;
       justify-content: center;
-      margin: 8px 8px 0;
-      padding: 10px 12px;
+      margin: 10px 14px 0 auto;
+      padding: 9px 12px;
+      width: fit-content;
     }
 
     .mobile-quick-toggle .material-symbols-rounded {
@@ -515,18 +520,18 @@
     .quick-card {
       background: var(--surface);
       border: 1px solid var(--line);
-      border-radius: 16px;
+      border-radius: 14px;
       display: grid;
-      gap: 8px;
-      grid-column: span 2;
-      min-height: 88px;
-      padding: 14px;
+      gap: 5px;
+      grid-column: span 1;
+      min-height: 66px;
+      padding: 10px 11px;
       transition: background .22s ease, border-color .22s ease;
     }
 
     .quick-card.weather-card,
     .quick-card.converter-card {
-      grid-column: span 3;
+      grid-column: 1 / -1;
     }
 
     .quick-card.weather-card {
@@ -561,7 +566,7 @@
 
     .quick-card .label {
       color: var(--muted);
-      font-size: 11px;
+      font-size: 9px;
       font-weight: 800;
       letter-spacing: .06em;
       text-transform: uppercase;
@@ -570,7 +575,7 @@
 
     .quick-card .value {
       color: var(--navy);
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 900;
       line-height: 1.1;
     }
@@ -585,6 +590,7 @@
 
     .quick-card .hint {
       color: var(--muted);
+      display: none;
       font-size: 12px;
       font-weight: 700;
       line-height: 1.35;
@@ -598,6 +604,11 @@
       overflow: hidden;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
+    }
+
+    body:not(.quick-panel-open) .quick-card.weather-card,
+    body:not(.quick-panel-open) .quick-card.converter-card {
+      display: none;
     }
 
     .converter-card {
@@ -835,7 +846,7 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       color: var(--muted);
-      display: inline-flex;
+      display: none;
       font-size: 11px;
       font-weight: 950;
       gap: 6px;
@@ -1222,16 +1233,16 @@
       display: grid;
       grid-template-columns: 1fr auto;
       align-items: start;
-      gap: 16px;
-      margin-bottom: 20px;
+      gap: 14px;
+      margin-bottom: 14px;
     }
 
     .day-header h2 {
       color: var(--navy);
-      font-size: clamp(25px, 4vw, 38px);
-      line-height: 1.04;
+      font-size: clamp(23px, 3.2vw, 32px);
+      line-height: 1.08;
       letter-spacing: 0;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .day-date {
@@ -1247,13 +1258,14 @@
       color: var(--muted);
       font-size: 15px;
       line-height: 1.45;
+      max-width: 760px;
     }
 
     .day-insights {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 14px;
+      margin-top: 10px;
     }
 
     .day-insight {
@@ -1263,10 +1275,10 @@
       border-radius: 999px;
       color: var(--navy);
       display: inline-flex;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 900;
       gap: 6px;
-      padding: 8px 10px;
+      padding: 6px 9px;
       white-space: nowrap;
     }
 
@@ -1279,7 +1291,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 7px;
-      margin-top: 12px;
+      margin-top: 9px;
     }
 
     .day-assist-button {
@@ -1290,11 +1302,11 @@
       color: var(--navy);
       cursor: pointer;
       display: inline-flex;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 900;
       gap: 6px;
-      min-height: 34px;
-      padding: 0 11px;
+      min-height: 31px;
+      padding: 0 10px;
       text-decoration: none;
       transition: background .18s ease, border-color .18s ease, transform .18s ease;
     }
@@ -1762,17 +1774,18 @@
     .day-budget-card {
       background: var(--surface);
       border: 1px solid var(--line);
-      border-radius: 20px;
-      box-shadow: 0 14px 34px rgba(16, 36, 63, 0.07);
+      border-radius: 16px;
+      box-shadow: none;
       display: grid;
-      gap: 14px;
-      margin: 0 0 14px;
-      padding: 16px;
+      gap: 12px;
+      margin: 0 0 12px;
+      padding: 13px;
     }
 
     .day-budget-card.locked {
       align-items: center;
       grid-template-columns: minmax(0, 1fr) auto;
+      padding: 10px 12px;
     }
 
     .day-budget-card header {
@@ -1784,16 +1797,20 @@
 
     .day-budget-card h3 {
       color: var(--navy);
-      font-size: 18px;
+      font-size: 15px;
       line-height: 1.15;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .day-budget-card p {
       color: var(--muted);
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 750;
       line-height: 1.35;
+    }
+
+    .day-budget-card.locked p {
+      display: none;
     }
 
     .day-budget-lock {
@@ -1805,11 +1822,11 @@
       cursor: pointer;
       display: inline-flex;
       flex: 0 0 auto;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 950;
       gap: 7px;
-      min-height: 38px;
-      padding: 0 13px;
+      min-height: 32px;
+      padding: 0 11px;
     }
 
     .day-budget-lock:hover {
@@ -1824,15 +1841,15 @@
 
     .day-budget-metrics {
       display: grid;
-      gap: 10px;
+      gap: 8px;
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .day-budget-metric {
       background: var(--surface-soft);
       border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 12px;
+      border-radius: 13px;
+      padding: 10px;
     }
 
     .day-budget-metric small {
@@ -1848,7 +1865,7 @@
     .day-budget-metric strong {
       color: var(--navy);
       display: block;
-      font-size: 17px;
+      font-size: 14px;
       line-height: 1.15;
     }
 
@@ -5074,6 +5091,107 @@
       color: #ffffff;
     }
 
+    /* Declutter pass: keep the useful tools, but reduce what competes for attention. */
+    .quick-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      padding: 10px 14px 12px;
+    }
+
+    .quick-card {
+      border-radius: 14px;
+      gap: 5px;
+      grid-column: span 1;
+      min-height: 66px;
+      padding: 10px 11px;
+    }
+
+    .quick-card.weather-card,
+    .quick-card.converter-card {
+      grid-column: 1 / -1;
+    }
+
+    body:not(.quick-panel-open) .quick-card.weather-card,
+    body:not(.quick-panel-open) .quick-card.converter-card {
+      display: none;
+    }
+
+    .quick-card .label { font-size: 9px; }
+    .quick-card .value { font-size: 16px; }
+    .quick-card .hint { display: none; }
+
+    body.quick-panel-open .quick-card.weather-card .hint,
+    body.quick-panel-open .quick-card.converter-card .hint {
+      display: -webkit-box;
+    }
+
+    .mobile-quick-toggle {
+      display: inline-flex;
+      margin: 10px 14px 0 auto;
+      padding: 9px 12px;
+      width: fit-content;
+    }
+
+    .deploy-stamp { display: none; }
+
+    .day-header {
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .day-header h2 {
+      font-size: clamp(23px, 3.2vw, 32px);
+      line-height: 1.08;
+      margin-bottom: 6px;
+    }
+
+    .day-insights {
+      gap: 7px;
+      margin-top: 10px;
+    }
+
+    .day-insight {
+      font-size: 11px;
+      padding: 6px 9px;
+    }
+
+    .day-assist-strip { margin-top: 9px; }
+
+    .day-assist-button {
+      font-size: 11px;
+      min-height: 31px;
+      padding: 0 10px;
+    }
+
+    .day-budget-card {
+      border-radius: 16px;
+      box-shadow: none;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding: 13px;
+    }
+
+    .day-budget-card.locked {
+      padding: 10px 12px;
+    }
+
+    .day-budget-card h3 {
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+
+    .day-budget-card.locked p { display: none; }
+
+    .day-budget-lock {
+      font-size: 11px;
+      min-height: 32px;
+      padding: 0 11px;
+    }
+
+    .block li:nth-child(n+4) {
+      display: none;
+    }
+
     @media print {
       body {
         background: white;
@@ -6071,8 +6189,8 @@
       quickToggle.setAttribute("aria-expanded", String(isOpen));
       quickToggleIcon.textContent = isOpen ? "expand_less" : "expand_more";
       quickToggleLabel.textContent = isOpen
-        ? "Ocultar clima, conversor y presupuesto"
-        : "Ver clima, conversor y presupuesto";
+        ? "Menos datos"
+        : "Más datos";
     }
 
     function tripDateForIndex(index) {

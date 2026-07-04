@@ -1,0 +1,541 @@
+ITINERARIO JAPON 2026 - ACTIVIDADES PARA ESTIMAR COSTOS
+
+Instruccion sugerida para GPT:
+Estime un costo realista por actividad para 2 personas en USD y JPY, separando transporte, entradas, comidas, snacks/compras y experiencias. Use rango bajo/alto y agregue una nota breve por actividad. No incluya hoteles ni vuelos internacionales, salvo que la actividad lo indique.
+
+============================================================
+
+DIA 00 - Día 0 - Vuelo internacional
+Fecha: Lunes 5 de octubre de 2026
+Estado: Vuelo internacional
+Actividades para estimar costos:
+01. 9:30 am | sugerido | Salida desde casa | Lugar/destino: Juan Santamaría International Airport, Costa Rica | Tipo: driving
+02. 10:30 am | llegada sugerida | Aeropuerto en Costa Rica
+03. 1:30 pm | vuelo | Salida de Costa Rica
+04. 5:00 pm | conexión | Llegada a Ciudad de México
+05. 7:00 pm | vuelo | Vuelo hacia Monterrey
+06. 9:00 pm | espera técnica | Llegada a Monterrey / espera técnica
+07. 11:00 pm | vuelo largo | Salida rumbo a Narita, Japón
+
+DIA 01 - Día 1 - Llegada a Japón / Osaka
+Fecha: Miércoles 7 de octubre de 2026
+Estado: Llegada + Osaka
+Actividades para estimar costos:
+01. 6:30 am | 6:30 - 7:45 am | Llegada a Japón - primeros pasos en Narita
+02. 7:45 am | prioridad | Primero que todo: dinero, internet y transporte
+03. 8:30 am | 8:30 - 10:30 am | Tiempo libre en Narita
+04. 10:30 am | 10:30 - 11:30 am | Descanso, gate y preparación
+05. 11:30 am | 11:30 - 12:15 pm | Caminata al gate de Jetstar en Narita | Lugar/destino: Narita International Airport Terminal 3, Chiba, Japan | Tipo: walking
+06. 12:15 pm | 1 h 45 min | Vuelo Narita → Kansai
+07. 2:00 pm | 2:00 - 2:35 pm | Llegada a Kansai - equipaje y salida | Lugar/destino: Kansai-Airport Station, Osaka, Japan | Tipo: walking
+08. 2:35 pm | 2:35 - 2:45 pm | Compra de boletos Rapi:t
+09. 2:45 pm | 34-38 min | Tren Rapi:t KIX → Namba | Lugar/destino: Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan | Tipo: transit
+10. 3:25 pm | 3:25 - 3:40 pm | Caminata Namba → Cross Hotel | Lugar/destino: Cross Hotel Osaka, 2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, Japan | Tipo: walking
+11. 3:45 pm | 3:45 - 5:00 pm | Check-in - Cross Hotel Osaka
+12. 5:05 pm | 5:05 - 5:15 pm | Caminata Cross Hotel → Namba Station | Lugar/destino: Namba Station, Osaka, Japan | Tipo: walking
+13. 5:15 pm | 5:15 - 5:25 pm | Transporte público: Namba → Dobutsuen-mae / Ebisucho | Lugar/destino: Dobutsuen-mae Station Midosuji Line, Osaka, Japan | Tipo: transit
+14. 5:25 pm | 5:25 - 5:35 pm | Caminata estación → Shinsekai / Tsutenkaku | Lugar/destino: Tsutenkaku, Osaka, Japan | Tipo: walking
+15. 5:35 pm | 5:35 - 6:20 pm | Shinsekai y Tsutenkaku | Lugar/destino: Shinsekai / Tsutenkaku
+16. 6:20 pm | 6:20 - 6:30 pm | Caminata Tsutenkaku → Magic Cafe & Bar Shinsekai | Lugar/destino: Magic Cafe & Bar SHINSEKAI, Osaka, Japan | Tipo: walking
+17. 6:30 pm | 6:30 - 7:15 pm | Magic Cafe & Bar Shinsekai
+18. 7:15 pm | 7:15 - 7:25 pm | Caminata Magic Cafe → estación | Lugar/destino: Dobutsuen-mae Station, Osaka, Japan | Tipo: walking
+19. 7:25 pm | 7:25 - 7:40 pm | Transporte público: Shinsekai → Namba / Dotonbori | Lugar/destino: Namba Station Midosuji Line, Osaka, Japan | Tipo: transit
+20. 7:40 pm | 7:40 - 7:50 pm | Caminata Namba → Dotonbori | Lugar/destino: Dotonbori Glico Sign, Osaka, Japan | Tipo: walking
+21. 8:00 pm | 8:00 - 9:00 pm | Ramen Hayashida Dotonbori store | Tipo: walking
+22. 9:00 pm | 9:00 - 10:00 pm | Noche en Dotonbori | Lugar/destino: Ebisu Bridge, Dotonbori, Osaka, Japan | Tipo: walking
+23. 10:00 pm | 10:00 - 10:15 pm | Caminata Dotonbori → Men joy Life | Lugar/destino: Men joy Life, Osaka, Japan | Tipo: walking
+24. 10:15 pm | 10:15 - 10:40 pm | Men joy Life
+25. 10:40 pm | 10:40 - 11:00 pm | Regreso al Cross Hotel | Lugar/destino: Cross Hotel Osaka, Osaka, Japan | Tipo: walking
+
+DIA 02 - Día 2 - Universal Studios Japan
+Fecha: Jueves 8 de octubre de 2026
+Estado: Parque completo
+Actividades para estimar costos:
+01. 6:10 am | inicio | Despertar y preparación
+02. 6:35 am | 5-7 min | Caminata hotel → Namba Station | Lugar/destino: Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan | Tipo: walking
+03. 6:45 am | rápido | Desayuno de camino | Lugar/destino: Namba / Shinsaibashi
+04. 7:00 am | 7:00 - 7:10 am | Ubicarse en Osaka-Namba / Hanshin-Namba | Lugar/destino: Osaka-Namba Station, Osaka, Japan | Tipo: walking
+05. 7:10 am | 12 min | Tramo 1: Namba → Nishikujo | Lugar/destino: Nishikujo Station, Osaka, Japan | Tipo: transit
+06. 7:22 am | 6-10 min | Transbordo en Nishikujo | Lugar/destino: JR Yumesaki Line platform Nishikujo Station, Osaka, Japan | Tipo: walking
+07. 7:35 am | 6 min | Tramo 2: Nishikujo → Universal City | Lugar/destino: Universal City Station, Osaka, Japan | Tipo: transit
+08. 7:41 am | 8-9 min | Caminata Universal City → USJ | Lugar/destino: Universal Studios Japan entrance, Osaka, Japan | Tipo: walking
+09. 8:00 am | 8:00 - 8:20 am | Ingreso al parque | Lugar/destino: Universal Studios Japan
+10. 8:20 am | 8:20 - 10:15 am | Super Nintendo World | Lugar/destino: Super Nintendo World - Universal Studios Japan
+11. 10:15 am | 10:15 - 10:30 am | Traslado interno Nintendo → Harry Potter | Lugar/destino: The Wizarding World of Harry Potter, Universal Studios Japan, Osaka, Japan | Tipo: walking
+12. 10:30 am | 10:30 am - 12:00 pm | Harry Potter | Lugar/destino: The Wizarding World of Harry Potter - USJ
+13. 12:00 pm | 12:00 - 12:15 pm | Traslado interno hacia almuerzo
+14. 12:15 pm | 12:15 - 1:15 pm | Almuerzo | Lugar/destino: Universal Studios Japan restaurants
+15. 1:15 pm | 1:15 - 1:30 pm | Reorganizar ruta de la tarde
+16. 1:30 pm | 1:30 - 5:30 pm | Atracciones de la tarde | Lugar/destino: Universal Studios Japan attractions
+17. 5:30 pm | 5:30 - 6:00 pm | Tiendas y souvenirs | Lugar/destino: Universal Studios Japan shops
+18. 6:00 pm | 6:00 - 8:30 pm | Halloween Horror Nights | Lugar/destino: Halloween Horror Nights - Universal Studios Japan
+19. 8:30 pm | 8:30 - 9:15 pm | Cena | Lugar/destino: Universal CityWalk Osaka / USJ restaurants
+20. 9:15 pm | 9:15 - 9:20 pm | Caminata USJ → Universal City Station | Lugar/destino: Universal City Station, Osaka, Japan | Tipo: walking
+21. 9:20 pm | 6 min | Regreso tramo 1: Universal City → Nishikujo | Lugar/destino: Nishikujo Station, Osaka, Japan | Tipo: transit
+22. 9:26 pm | 9:26 - 9:35 pm | Transbordo en Nishikujo | Lugar/destino: Hanshin-Namba Line platform Nishikujo Station, Osaka, Japan | Tipo: walking
+23. 9:35 pm | 12 min | Regreso tramo 2: Nishikujo → Namba | Lugar/destino: Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan | Tipo: transit
+24. 9:50 pm | 5-7 min | Caminata Namba → Cross Hotel | Lugar/destino: Cross Hotel Osaka, Osaka, Japan | Tipo: walking
+25. 10:00 pm | cierre | Llegada al hotel y recuperación
+
+DIA 03 - Día 3 - Yasaka, Castillo, Umeda, Pokémon y Dotonbori
+Fecha: Viernes 9 de octubre de 2026
+Estado: Día completo
+Actividades para estimar costos:
+01. 6:30 am | inicio | Despertar y preparación
+02. 6:50 am | 10-12 min | Caminata hotel → Namba Yasaka Shrine | Lugar/destino: Namba Yasaka Shrine, Osaka, Japan | Tipo: walking
+03. 6:55 am | en ruta | Desayuno rápido de camino
+04. 7:10 am | 25 min | Namba Yasaka Shrine
+05. 7:40 am | 10 min | Caminata hacia Namba Station | Lugar/destino: Namba Station Midosuji Line, Osaka, Japan | Tipo: walking
+06. 7:55 am | 10 min | Transporte público: Namba → Umeda | Lugar/destino: Umeda Station, Osaka, Japan | Tipo: transit
+07. 8:10 am | 20 min | Transporte público: Umeda → Morinomiya | Lugar/destino: Morinomiya Station, Osaka, Japan | Tipo: transit
+08. 8:35 am | 15 min | Caminata Morinomiya → Castillo | Lugar/destino: Osaka Castle, Osaka, Japan | Tipo: walking
+09. 9:00 am | 2h 30m | Castillo de Osaka
+10. 11:30 am | 20 min | Caminata Castillo → Morinomiya | Lugar/destino: Morinomiya Station, Osaka, Japan | Tipo: walking
+11. 11:55 am | 20 min | Transporte público: Morinomiya → Umeda | Lugar/destino: Umeda Station, Osaka, Japan | Tipo: transit
+12. 12:30 pm | almuerzo | Almuerzo en Umeda
+13. 1:25 pm | 45 min | Pokémon Center Osaka - Umeda | Lugar/destino: Pokemon Center Osaka, Osaka Station City, Osaka, Japan | Tipo: walking
+14. 2:15 pm | 45 min | Conocer Umeda
+15. 3:00 pm | 10-15 min | Transporte público: Umeda → Shinsaibashi | Lugar/destino: Shinsaibashi Station, Osaka, Japan | Tipo: transit
+16. 3:20 pm | 1h | Pokémon Center Osaka DX | Lugar/destino: Pokemon Center Osaka DX, Daimaru Shinsaibashi, Osaka, Japan | Tipo: walking
+17. 4:30 pm | reservación si se consigue | Pokémon Café Osaka
+18. 5:45 pm | libre | Shinsaibashi y descanso flexible | Lugar/destino: Shinsaibashi-Suji Shopping Street, Osaka, Japan | Tipo: walking
+19. 6:45 pm | cena | Cena en Dotonbori | Lugar/destino: Dotonbori, Osaka, Japan | Tipo: walking
+20. 8:00 pm | paseo corto | Dotonbori nocturno | Lugar/destino: Ebisu Bridge, Dotonbori, Osaka, Japan | Tipo: walking
+21. 9:15 pm | 10-15 min | Regreso al Cross Hotel Osaka | Lugar/destino: Cross Hotel Osaka, Osaka, Japan | Tipo: walking
+
+DIA 04 - Día 4 - Katsō-ji, Umeda, Pokémon Center Osaka, teamLab y despedida de Osaka
+Fecha: Sábado 10 de octubre de 2026
+Estado: Darumas + Umeda + teamLab
+Actividades para estimar costos:
+01. 6:50 am | inicio | Despertar y preparación
+02. 7:10 am | 5-7 min | Caminata hotel → Namba Station | Lugar/destino: Namba Station Midosuji Line, Osaka, Japan | Tipo: walking
+03. 7:15 am | rápido | Desayuno antes del tren
+04. 7:30 am | 10 min | Transporte público: Namba → Umeda | Lugar/destino: Umeda Station, Osaka, Japan | Tipo: transit
+05. 7:50 am | 25 min | Umeda → Senri-Chūō | Lugar/destino: Senri-Chuo Station, Osaka, Japan | Tipo: transit
+06. 8:20 am | 5 min | Caminata a terminal de bus en Senri-Chūō | Lugar/destino: Senri-Chuo Bus Terminal, Osaka, Japan | Tipo: walking
+07. 8:25 am | 30 min | Bus 29: Senri-Chūō → Katsō-ji | Lugar/destino: Katsuo-ji Temple, Minoh, Osaka, Japan | Tipo: transit
+08. 9:00 am | 2 h | Katsō-ji - templo de los darumas
+09. 11:05 am | 30 min | Bus 29: Katsō-ji → Senri-Chūō | Lugar/destino: Senri-Chuo Station, Osaka, Japan | Tipo: transit
+10. 11:45 am | 25 min | Senri-Chūō → Umeda | Lugar/destino: Umeda Station, Osaka, Japan | Tipo: transit
+11. 12:15 pm | almuerzo | Almuerzo en Umeda | Lugar/destino: Umeda / Osaka Station
+12. 1:15 pm | 45 min | Conocer Umeda
+13. 2:05 pm | 45 min | Pokémon Center Osaka - Umeda | Tipo: walking
+14. 3:00 pm | 30 min | Pausa en Umeda antes de Nagai
+15. 3:35 pm | 35 min | Transporte público: Umeda → Nagai | Lugar/destino: Nagai Station, Osaka, Japan | Tipo: transit
+16. 4:10 pm | 10 min | Caminata Nagai Station → Parque Nagai | Lugar/destino: Nagai Park, Osaka, Japan | Tipo: walking
+17. 4:20 pm | pausa | Descanso en Parque Nagai
+18. 5:00 pm | pausa | Pausa y traslado hacia teamLab | Lugar/destino: teamLab Botanical Garden Osaka, Nagai Park, Osaka, Japan | Tipo: walking
+19. 5:30 pm | nocturno | teamLab Botanical Garden Osaka
+20. 7:10 pm | 5 min | Caminata teamLab → Nagai Station | Lugar/destino: Nagai Station, Osaka, Japan | Tipo: walking
+21. 7:20 pm | 25 min | Transporte público: Nagai → Namba | Lugar/destino: Namba Station Midosuji Line, Osaka, Japan | Tipo: transit
+22. 8:00 pm | despedida | Cena especial en Dotonbori
+23. 9:30 pm | último paseo | Souvenirs finales y Dotonbori | Lugar/destino: Dotonbori / Don Quijote
+24. 10:45 pm | 15 min | Regreso al Cross Hotel Osaka | Lugar/destino: Cross Hotel Osaka, Osaka, Japan | Tipo: walking
+
+DIA 05 - Día 5 - Osaka → Kyoto + primera tarde en Gion
+Fecha: Domingo 11 de octubre de 2026
+Estado: Traslado + Kyoto
+Actividades para estimar costos:
+01. 8:00 am | inicio | Despertar y preparar maletas
+02. 9:00 am | 9:00 - 9:45 am | Desayuno cerca del Cross Hotel | Lugar/destino: Cross Hotel Osaka / Namba
+03. 10:00 am | check-out | Check-out Cross Hotel Osaka
+04. 10:30 am | 10:30 - 11:45 am | Traslado Osaka → Kyoto | Lugar/destino: Kyoto Station, Kyoto, Japan | Tipo: transit
+05. 12:00 pm | 8-12 min | Kyoto Station → Henn na Hotel Premier Kyoto Gojo Karasuma | Lugar/destino: Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan | Tipo: transit
+06. 1:00 pm | 1:00 - 2:15 pm | Almuerzo tranquilo cerca del hotel | Lugar/destino: Gojo Karasuma / Kawaramachi
+07. 3:00 pm | 3:00 - 5:15 pm | Transporte público + paseo ligero por Gion | Tipo: transit
+08. 5:30 pm | 5:30 - 6:30 pm | Saryo Tsujiri Tea House, Gion Main Store | Tipo: walking
+09. 7:00 pm | 7:00 - 8:30 pm | Cena relajada en Kyoto | Lugar/destino: Gion / Gojo Karasuma / Kawaramachi
+10. 9:00 pm | regreso | Transporte público de regreso al hotel | Lugar/destino: Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan | Tipo: transit
+
+DIA 06 - Día 6 - Kiyomizu, Hokan-ji, Gion, tiendas de Mar y Nishiki
+Fecha: Lunes 12 de octubre de 2026
+Estado: Kyoto clásico
+Actividades para estimar costos:
+01. 7:30 am | inicio | Despertar
+02. 8:00 am | 8:00 - 8:40 am | Desayuno cerca del hotel | Lugar/destino: Henn na Hotel Premier Kyoto Gojo Karasuma / Gojo Karasuma
+03. 8:45 am | 15-25 min | Transporte público: hotel hacia Kiyomizu-dera | Lugar/destino: Kiyomizu-dera, Kyoto, Japan | Tipo: transit
+04. 9:15 am | 9:15 - 10:30 am | Kiyomizu-dera
+05. 10:35 am | 25-35 min | Kimura Ohshido - Kiyomizu Store | Tipo: walking
+06. 11:10 am | 11:10 am - 12:00 pm | Sanneizaka y Ninenzaka | Lugar/destino: Sannenzaka / Ninenzaka
+07. 12:00 pm | 20 min | Templo Hokan-ji / Pagoda Yasaka | Tipo: walking
+08. 12:25 pm | 30 min | Hasiya Kaede Kodaiji | Tipo: walking
+09. 1:00 pm | 1:00 - 2:00 pm | Almuerzo en Higashiyama / Gion
+10. 2:15 pm | 25 min | Tsubaki Do | Tipo: walking
+11. 2:50 pm | 35 min | Santuario Yasaka | Tipo: walking
+12. 3:40 pm | 30 min | Eirakuya Ihee Hosotsuji shopping Gion shop | Tipo: walking
+13. 4:20 pm | 45 min | Saryo Tsujiri Tea House, Gion Main Store | Tipo: walking
+14. 5:30 pm | 5:30 - 6:45 pm | Nishiki Market | Tipo: walking
+15. 8:00 pm | 8:00 - 9:30 pm | Cena en Kyoto | Lugar/destino: Kawaramachi / Gojo Karasuma
+16. 9:30 pm | regreso | Regreso al hotel | Lugar/destino: Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan | Tipo: walking
+
+DIA 07 - Día 7 - Arashiyama completo
+Fecha: Martes 13 de octubre de 2026
+Estado: Naturaleza
+Actividades para estimar costos:
+01. 7:30 am | inicio | Despertar temprano
+02. 8:00 am | desayuno rápido | Desayuno ligero | Lugar/destino: Gojo Karasuma / hotel
+03. 8:30 am | 45-60 min | Traslado a Arashiyama | Lugar/destino: Arashiyama, Kyoto, Japan | Tipo: transit
+04. 9:30 am | 45 min | Tenryuji Temple | Tipo: walking
+05. 10:20 am | 1h | Bosque de Bambú de Arashiyama | Tipo: walking
+06. 11:25 am | 35 min | Nonomiya-jinja | Tipo: walking
+07. 12:15 pm | almuerzo | Almuerzo en Arashiyama
+08. 1:30 pm | 45 min | Togetsukyō Bridge | Tipo: walking
+09. 2:30 pm | 45 min | Kimono Forest | Tipo: walking
+10. 3:30 pm | 1h | Tiendas, snacks y paseo final en Arashiyama | Lugar/destino: Arashiyama shopping street
+11. 4:45 pm | 45-60 min | Regreso a Kyoto centro / hotel | Lugar/destino: Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan | Tipo: transit
+12. 6:30 pm | 6:30 - 8:00 pm | Cena tranquila en Kyoto | Lugar/destino: Kawaramachi / Gojo Karasuma
+
+DIA 08 - Día 8 - Uji completo
+Fecha: Miércoles 14 de octubre de 2026
+Estado: Uji + té
+Actividades para estimar costos:
+01. 6:30 am | inicio | Despertar temprano
+02. 7:00 am | desayuno | Desayuno ligero | Lugar/destino: Kyoto Station / Gojo Karasuma
+03. 7:40 am | 40-50 min | Kyoto → Uji Station | Tipo: transit
+04. 8:35 am | 30 min | Uji Station y caminata inicial | Lugar/destino: Byodo-in Omotesando, Uji, Kyoto, Japan | Tipo: walking
+05. 9:05 am | 45 min | Byodo-in Omotesando
+06. 9:50 am | 30 min | Starbucks Coffee - Kyoto Uji Byodo-in Omotesando | Tipo: walking
+07. 10:30 am | 15 min | Byodo-in Omotemon / Front Gate | Tipo: walking
+08. 10:45 am | 1h 30m | Byodo-in Hoodo
+09. 12:30 pm | almuerzo | Almuerzo en Uji | Lugar/destino: Byodo-in Omotesando / Uji River
+10. 1:45 pm | 30 min | Tsuen Main Branch | Tipo: walking
+11. 2:30 pm | 45 min | Santuario Ujigami | Tipo: walking
+12. 3:30 pm | 45 min | Regreso por Byodo-in Omotesando
+13. 4:00 pm | 30-35 min | Uji Station → Kyoto Station | Lugar/destino: Kyoto Station, Kyoto, Japan | Tipo: transit
+14. 4:40 pm | 8-12 min | Kyoto Station → Henn na Hotel Premier Kyoto Gojo Karasuma | Lugar/destino: Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan | Tipo: transit
+15. 6:30 pm | 6:30 - 8:00 pm | Cena en Kyoto | Lugar/destino: Gojo Karasuma / Kawaramachi
+
+DIA 09 - Día 9 - Fushimi Inari + Mimuro Kimonos + Kyoto Centro
+Fecha: Jueves 15 de octubre de 2026
+Estado: Torii + Kimonos + Compras
+Actividades para estimar costos:
+01. 6:00 am | inicio | Despertar temprano
+02. 6:20 am | 6:20 - 6:50 am | Desayuno rápido | Lugar/destino: Gojo Karasuma / hotel
+03. 7:00 am | 8-12 min | Hotel → Kyoto Station | Lugar/destino: Kyoto Station, Kyoto, Japan | Tipo: transit
+04. 7:40 am | 5 min | Kyoto Station → Inari Station | Lugar/destino: Inari Station, Kyoto, Japan | Tipo: transit
+05. 7:50 am | 7:50 - 9:50 am | Fushimi Inari Taisha | Tipo: walking
+06. 10:00 am | 35-45 min | Fushimi Inari → Mimuro Kimonos | Lugar/destino: Mimuro Kimonos, Kyoto, Japan | Tipo: transit
+07. 10:45 am | 10:45 am - 12:15 pm | Mimuro Kimonos
+08. 12:15 pm | 20-25 min | Mimuro Kimonos → ICHIRAN Kyoto Karasuma | Lugar/destino: ICHIRAN Kyoto Karasuma, Kyoto, Japan | Tipo: transit
+09. 12:45 pm | 12:45 - 1:30 pm | ICHIRAN Kyoto Karasuma
+10. 1:40 pm | 1:40 - 2:15 pm | Daimaru Kyoto | Tipo: walking
+11. 2:30 pm | 2:30 - 3:30 pm | Pokémon Center Kyoto | Tipo: walking
+12. 3:45 pm | 3:45 - 4:45 pm | Nintendo KYOTO | Tipo: walking
+13. 5:00 pm | 5:00 - 5:45 pm | Donguri Kyowakoku / Ghibli Store | Tipo: walking
+14. 6:00 pm | 30 min | Pausa / ordenar compras en Kawaramachi | Lugar/destino: Kawaramachi / Shijo
+15. 6:45 pm | cena | Cena en Kyoto centro | Lugar/destino: Kawaramachi / Shijo
+16. 8:30 pm | regreso | Regreso al hotel | Lugar/destino: Henn na Hotel Premier Kyoto Gojo Karasuma, 195 Daikokucho, Shimogyo Ward, Kyoto, 600-8161, Japan | Tipo: walking
+
+DIA 10 - Día 10 - Kyoto → Tokyo / llegada a Asakusa Tawaramachi
+Fecha: Viernes 16 de octubre de 2026
+Estado: Traslado + Asakusa
+Actividades para estimar costos:
+01. 5:30 am | inicio | Despertar y cerrar maletas temprano
+02. 6:00 am | 6:00 - 6:30 am | Desayuno rápido cerca del hotel | Lugar/destino: Henn na Hotel Premier Kyoto Gojo Karasuma / Gojo Karasuma
+03. 6:45 am | check-out | Check-out en Kyoto | Lugar/destino: Henn na Hotel Premier Kyoto Gojo Karasuma
+04. 7:00 am | 5-7 min | Caminata hotel → Gojo Station | Lugar/destino: Gojo Station, Kyoto, Japan | Tipo: walking
+05. 7:10 am | 3-5 min | Metro: Gojo Station → Kyoto Station | Lugar/destino: Kyoto Station, Kyoto, Japan | Tipo: transit
+06. 7:20 am | 7:20 - 7:55 am | Kyoto Station - ubicar andén y comprar snacks
+07. 8:00 am | 2h 15m - 2h 45m | Kyoto → Tokyo | Lugar/destino: Tokyo Station, Tokyo, Japan | Tipo: transit
+08. 10:35 am | 10:35 - 10:50 am | Llegada a Tokyo Station
+09. 10:50 am | 5-10 min | Transbordo en Tokyo Station hacia JR Yamanote Line | Lugar/destino: Tokyo Station JR Yamanote Line platform, Tokyo, Japan | Tipo: walking
+10. 11:00 am | 7-10 min | JR Yamanote: Tokyo Station → Ueno Station | Lugar/destino: Ueno Station, JR Yamanote Line, Tokyo, Japan | Tipo: transit
+11. 11:10 am | 8-12 min | Transbordo Ueno JR → Tokyo Metro Ginza Line | Lugar/destino: Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: walking
+12. 11:25 am | 3-5 min | Metro: Ueno → Tawaramachi | Lugar/destino: Tawaramachi Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: transit
+13. 11:35 am | 3-5 min | Caminata Tawaramachi Station → Henn na Hotel Premier Tokyo Asakusa Tawaramachi | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: walking
+14. 11:45 am | 11:45 am - 12:00 pm | Llegada al hotel / dejar maletas | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi
+15. 12:00 pm | 12:00 - 1:15 pm | Almuerzo tranquilo en Asakusa / Tawaramachi | Lugar/destino: Asakusa / Tawaramachi restaurants
+16. 1:15 pm | 1:15 - 2:10 pm | Paseo suave antes del check-in | Lugar/destino: Tawaramachi / Asakusa
+17. 2:10 pm | 2:10 - 2:50 pm | Café / descanso corto cerca del hotel | Lugar/destino: Tawaramachi cafes
+18. 3:00 pm | 3:00 - 4:30 pm | Check-in y descanso real en habitación | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi
+19. 4:45 pm | 4:45 - 5:00 pm | Caminata hotel → zona de Asakusa | Lugar/destino: Kaminarimon Gate, Tokyo, Japan | Tipo: walking
+20. 5:00 pm | 5:00 - 6:15 pm | Paseo suave por Asakusa | Lugar/destino: Asakusa / Kaminarimon / Nakamise-dori
+21. 6:30 pm | 6:30 - 8:00 pm | Cena tranquila en Asakusa / Tawaramachi | Lugar/destino: Asakusa / Tawaramachi restaurants
+22. 8:00 pm | 8:00 - 8:20 pm | Regreso caminando al hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: walking
+
+DIA 11 - Día 11 - Asakusa + Skytree + tiendas de personajes
+Fecha: Sábado 17 de octubre de 2026
+Estado: Asakusa + Skytree
+Actividades para estimar costos:
+01. 5:45 am | inicio | Despertar temprano en Asakusa Tawaramachi
+02. 6:10 am | 6:10 - 6:25 am | Alistarse rápido
+03. 6:30 am | 10-15 min | Caminata hotel → Kaminarimon | Lugar/destino: Kaminarimon Gate, Tokyo, Japan | Tipo: walking
+04. 6:45 am | 6:45 - 7:10 am | Kaminarimon Gate temprano
+05. 7:10 am | 7:10 - 7:35 am | Nakamise-dori temprano | Lugar/destino: Nakamise-dori Street | Tipo: walking
+06. 7:35 am | 7:35 - 8:25 am | Sensō-ji temprano
+07. 8:25 am | 8:25 - 9:00 am | Desayuno / café cerca de Asakusa | Lugar/destino: Asakusa breakfast cafes
+08. 9:00 am | 9:00 - 9:40 am | Regreso a Nakamise-dori / tiendas abriendo | Lugar/destino: Nakamise-dori Street
+09. 9:40 am | 5-10 min | Caminata Sensō-ji / Nakamise → Masudaen Sohonten | Lugar/destino: Masudaen Sohonten, Tokyo, Japan | Tipo: walking
+10. 9:50 am | 9:50 - 10:25 am | Masudaen Sohonten
+11. 10:25 am | 10:25 - 11:00 am | Tiendas tradicionales / paseo por Asakusa | Lugar/destino: Asakusa shopping streets
+12. 11:00 am | 5-15 min | Caminata zona Asakusa → カイダ酒店 Kaida | Lugar/destino: カイダ酒店 Kaida, Tokyo, Japan | Tipo: walking
+13. 11:15 am | 11:15 - 11:45 am | カイダ酒店 Kaida
+14. 11:45 am | 11:45 am - 12:45 pm | Almuerzo temprano en Asakusa | Lugar/destino: Asakusa restaurants
+15. 12:45 pm | 12:45 - 1:15 pm | Descanso breve / volver al hotel si hace falta | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: walking
+16. 1:15 pm | 1:15 - 1:45 pm | Caminata Asakusa → Sumida River / rumbo a Skytree | Lugar/destino: Tokyo Skytree, Tokyo, Japan | Tipo: walking
+17. 1:45 pm | 1:45 - 2:30 pm | Fotos camino a Skytree / Sumida River | Lugar/destino: Sumida River / Tokyo Skytree view
+18. 2:30 pm | 2:30 - 3:30 pm | Tokyo Skytree
+19. 3:30 pm | 3:30 - 4:00 pm | Entrar a Tokyo Solamachi
+20. 4:00 pm | 4:00 - 5:15 pm | Tokyo Solamachi - tiendas, snacks y personajes | Lugar/destino: Tokyo Solamachi character shops
+21. 5:15 pm | 5:15 - 6:00 pm | Pokémon Center SKYTREE TOWN
+22. 6:00 pm | 6:00 - 6:45 pm | JUMP SHOP Tokyo Skytree Town Solamachi
+23. 6:45 pm | 6:45 - 7:45 pm | Cena en Skytree / Solamachi | Lugar/destino: Tokyo Solamachi restaurants
+24. 7:45 pm | 8-12 min | Caminata Skytree → Oshiage Station | Lugar/destino: Oshiage Station, Tokyo, Japan | Tipo: walking
+25. 8:00 pm | 10-20 min | Regreso a Asakusa / Tawaramachi | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: transit
+26. 8:30 pm | cierre | Llegada al hotel y descanso
+
+DIA 12 - Día 12 - Shibuya + Harajuku + Shinjuku
+Fecha: Domingo 18 de octubre de 2026
+Estado: Shibuya + Harajuku + Shinjuku
+Actividades para estimar costos:
+01. 6:45 am | inicio | Despertar en Asakusa Tawaramachi
+02. 7:15 am | 7:15 - 7:40 am | Desayuno rápido cerca del hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi
+03. 7:45 am | 3-5 min | Caminata hotel → Tawaramachi Station | Lugar/destino: Tawaramachi Station, Tokyo, Japan | Tipo: walking
+04. 7:55 am | 3-5 min | Metro: Tawaramachi → Ueno | Lugar/destino: Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: transit
+05. 8:00 am | 8-12 min | Transbordo Ueno Metro → JR Ueno | Lugar/destino: JR Ueno Station, Yamanote Line, Tokyo, Japan | Tipo: walking
+06. 8:15 am | 28-35 min | JR Yamanote: Ueno → Shibuya | Lugar/destino: JR Shibuya Station, Yamanote Line, Tokyo, Japan | Tipo: transit
+07. 8:50 am | 5-10 min | Salida Hachiko en Shibuya Station | Lugar/destino: Hachiko Square, Shibuya, Tokyo, Japan | Tipo: walking
+08. 9:00 am | 20 min | Hachiko Square
+09. 9:20 am | 20 min | Shibuya Crossing
+10. 9:40 am | 10-15 min | Caminata Hachiko → Shibuya PARCO | Lugar/destino: Shibuya PARCO, Tokyo, Japan | Tipo: walking
+11. 10:00 am | 10:00 - 11:00 am | Pokémon Center Shibuya
+12. 11:00 am | 10 min | Caminata Shibuya PARCO → Mandarake Shibuya | Lugar/destino: Mandarake Shibuya, Tokyo, Japan | Tipo: walking
+13. 11:10 am | 40 min | Mandarake Shibuya
+14. 11:50 am | 11:50 am - 12:50 pm | Almuerzo en Shibuya | Lugar/destino: Shibuya restaurants
+15. 12:50 pm | 10 min | Caminata almuerzo → Loft Shibuya | Lugar/destino: Loft Shibuya, Tokyo, Japan | Tipo: walking
+16. 1:00 pm | 35 min | Loft Shibuya
+17. 1:35 pm | 10 min | Caminata Loft → Disney Store Shibuya | Lugar/destino: Disney Store Shibuya, Tokyo, Japan | Tipo: walking
+18. 1:45 pm | 30 min | Disney Store Shibuya
+19. 2:15 pm | 10 min | Caminata Disney Store → MEGA Don Quijote Shibuya | Lugar/destino: MEGA Don Quijote Shibuya, Tokyo, Japan | Tipo: walking
+20. 2:25 pm | 45 min | MEGA Don Quijote Shibuya
+21. 3:10 pm | 25 min | Yoroshi Cosmetics
+22. 3:35 pm | 10-15 min | Caminata Shibuya → JR Shibuya Station | Lugar/destino: JR Shibuya Station, Tokyo, Japan | Tipo: walking
+23. 3:50 pm | 3-5 min | JR Yamanote: Shibuya → Harajuku | Lugar/destino: JR Harajuku Station, Yamanote Line, Tokyo, Japan | Tipo: transit
+24. 4:00 pm | 5-10 min | Caminata Harajuku Station → Takeshita Street Entrance | Lugar/destino: Takeshita Street Entrance Arch, Tokyo, Japan | Tipo: walking
+25. 4:10 pm | 4:10 - 5:00 pm | Takeshita Street Entrance Arch / Meiji Street
+26. 5:00 pm | 10 min | Caminata Takeshita → Harry Potter Shop Harajuku | Lugar/destino: Harry Potter Shop Harajuku, Tokyo, Japan | Tipo: walking
+27. 5:10 pm | 35 min | Harry Potter Shop Harajuku
+28. 5:45 pm | 10 min | Caminata Harry Potter Shop → Harajuku Station | Lugar/destino: JR Harajuku Station, Tokyo, Japan | Tipo: walking
+29. 5:55 pm | 5 min | JR Yamanote: Harajuku → Shinjuku | Lugar/destino: JR Shinjuku Station, Yamanote Line, Tokyo, Japan | Tipo: transit
+30. 6:05 pm | 15-20 min | Caminata Shinjuku Station → Ayuntamiento de Tokio | Lugar/destino: Tokyo Metropolitan Government Building, Tokyo, Japan | Tipo: walking
+31. 6:25 pm | 45 min | Ayuntamiento de Tokio | Lugar/destino: Ayuntamiento de Tokio / Tokyo Metropolitan Government Building
+32. 7:10 pm | 20-25 min | Caminata Ayuntamiento → Godzilla Head | Lugar/destino: Godzilla Head, Shinjuku, Tokyo, Japan | Tipo: walking
+33. 7:35 pm | 20 min | Godzilla Head
+34. 8:00 pm | 8:00 - 9:10 pm | Cena en Shinjuku | Lugar/destino: Shinjuku restaurants
+35. 9:10 pm | 10-15 min | Caminata cena → Shinjuku Station | Lugar/destino: JR Shinjuku Station, Tokyo, Japan | Tipo: walking
+36. 9:25 pm | 25-35 min | JR Yamanote: Shinjuku → Ueno | Lugar/destino: JR Ueno Station, Yamanote Line, Tokyo, Japan | Tipo: transit
+37. 10:00 pm | 8-12 min | Transbordo JR Ueno → Tokyo Metro Ginza Line | Lugar/destino: Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: walking
+38. 10:15 pm | 3-5 min | Metro: Ueno → Tawaramachi | Lugar/destino: Tawaramachi Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: transit
+39. 10:20 pm | 3-5 min | Caminata Tawaramachi Station → hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: walking
+40. 10:30 pm | cierre | Llegada al hotel y descanso
+
+DIA 13 - Día 13 - Tokyo DisneySea
+Fecha: Lunes 19 de octubre de 2026
+Estado: DisneySea
+Actividades para estimar costos:
+01. 4:20 am | inicio | Despertar muy temprano para DisneySea
+02. 4:35 am | 4:35 - 4:50 am | Snack / desayuno rápido antes de salir | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi
+03. 4:50 am | 4:50 - 4:58 am | Última revisión antes de salir
+04. 5:00 am | 3-5 min | Caminata hotel → Tawaramachi Station | Lugar/destino: Tawaramachi Station, Tokyo, Japan | Tipo: walking
+05. 5:10 am | 3-5 min | Metro: Tawaramachi → Ueno | Lugar/destino: Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: transit
+06. 5:15 am | 8-12 min | Transbordo Ueno Metro → JR Ueno | Lugar/destino: JR Ueno Station, Yamanote Line, Tokyo, Japan | Tipo: walking
+07. 5:30 am | 7-10 min | JR Yamanote: Ueno → Tokyo Station | Lugar/destino: Tokyo Station, JR Yamanote Line, Tokyo, Japan | Tipo: transit
+08. 5:40 am | 15-20 min | Transbordo Tokyo Station → JR Keiyo Line | Lugar/destino: Tokyo Station Keiyo Line platform, Tokyo, Japan | Tipo: walking
+09. 6:05 am | 15-20 min | JR Keiyo Line: Tokyo Station → Maihama | Lugar/destino: Maihama Station, JR Keiyo Line, Chiba, Japan | Tipo: transit
+10. 6:30 am | 6:30 - 6:40 am | Llegada a Maihama Station
+11. 6:40 am | 10-15 min | Disney Resort Line: Resort Gateway → Tokyo DisneySea Station | Lugar/destino: Tokyo DisneySea Station, Chiba, Japan | Tipo: transit
+12. 7:00 am | 7:00 - 8:00 am | Llegada a Tokyo DisneySea / fila de entrada | Lugar/destino: Tokyo DisneySea Entrance
+13. 8:00 am | 8:00 - 9:00 am | Ingreso a Tokyo DisneySea
+14. 9:00 am | 9:00 - 11:00 am | Bloque de prioridad: Fantasy Springs / atracciones principales | Lugar/destino: Fantasy Springs - Tokyo DisneySea
+15. 11:00 am | 11:00 - 12:15 pm | Atracciones fuertes de la mañana | Lugar/destino: Tokyo DisneySea attractions
+16. 12:15 pm | 12:15 - 1:20 pm | Almuerzo dentro de DisneySea | Lugar/destino: Tokyo DisneySea restaurants
+17. 1:20 pm | 1:20 - 1:40 pm | Reorganizar ruta de la tarde
+18. 1:40 pm | 1:40 - 4:00 pm | Tarde de atracciones y zonas temáticas | Lugar/destino: Tokyo DisneySea themed ports
+19. 4:00 pm | 4:00 - 5:00 pm | Snack / café / descanso | Lugar/destino: Tokyo DisneySea snacks
+20. 5:00 pm | 5:00 - 6:30 pm | Tiendas y souvenirs Disney | Lugar/destino: Tokyo DisneySea shops
+21. 6:30 pm | 6:30 - 7:30 pm | Cena dentro del parque | Lugar/destino: Tokyo DisneySea dinner
+22. 7:30 pm | 7:30 - 8:45 pm | Noche en DisneySea / show / últimas fotos | Lugar/destino: Mediterranean Harbor Tokyo DisneySea
+23. 8:45 pm | 8:45 - 9:00 pm | Salida de DisneySea → Tokyo DisneySea Station | Lugar/destino: Tokyo DisneySea Station, Chiba, Japan | Tipo: walking
+24. 9:00 pm | 10-15 min | Disney Resort Line: DisneySea → Resort Gateway | Lugar/destino: Resort Gateway Station, Maihama, Chiba, Japan | Tipo: transit
+25. 9:15 pm | 5-8 min | Caminata Resort Gateway → Maihama Station | Lugar/destino: Maihama Station, Chiba, Japan | Tipo: walking
+26. 9:25 pm | 15-20 min | JR Keiyo Line: Maihama → Tokyo Station | Lugar/destino: Tokyo Station, JR Keiyo Line, Tokyo, Japan | Tipo: transit
+27. 9:50 pm | 15-25 min | Opción recomendada: taxi Tokyo Station → hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: driving
+28. 10:20 pm | cierre | Llegada al hotel y recuperación
+
+DIA 14 - Día 14 - Akihabara + Odaiba
+Fecha: Martes 20 de octubre de 2026
+Estado: Anime + Odaiba
+Actividades para estimar costos:
+01. 7:30 am | inicio | Despertar en Asakusa Tawaramachi
+02. 8:00 am | 8:00 - 8:35 am | Desayuno cerca del hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi
+03. 8:40 am | 3-5 min | Caminata hotel → Tawaramachi Station | Lugar/destino: Tawaramachi Station, Tokyo, Japan | Tipo: walking
+04. 8:50 am | 7-10 min | Metro: Tawaramachi → Suehirocho | Lugar/destino: Suehirocho Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: transit
+05. 9:00 am | 8-12 min | Caminata Suehirocho → Akihabara Electric Town | Lugar/destino: Akihabara Electric Town, Tokyo, Japan | Tipo: walking
+06. 9:15 am | 9:15 - 9:55 am | BOOKOFF Akihabara Ekimae Store
+07. 9:55 am | 5-10 min | Caminata BOOKOFF → Radio Kaikan | Lugar/destino: Akihabara Radio Kaikan, Tokyo, Japan | Tipo: walking
+08. 10:05 am | 10:05 - 11:05 am | Radio Kaikan | Lugar/destino: Akihabara Radio Kaikan
+09. 11:05 am | 5-10 min | Caminata Radio Kaikan → AmiAmi Akihabara | Lugar/destino: AmiAmi Akihabara, Tokyo, Japan | Tipo: walking
+10. 11:15 am | 45 min | AmiAmi Akihabara
+11. 12:00 pm | 12:00 - 1:00 pm | Almuerzo en Akihabara | Lugar/destino: Sushiro / Yakiniku Syo Akihabara
+12. 1:00 pm | 10 min | Caminata almuerzo → Dengama | Lugar/destino: Dengama, Tokyo, Japan | Tipo: walking
+13. 1:15 pm | 30 min | Dengama
+14. 1:45 pm | 10 min | Caminata Dengama → FU WA RI | Lugar/destino: FU WA RI, Tokyo, Japan | Tipo: walking
+15. 2:00 pm | 30 min | FU WA RI
+16. 2:30 pm | 10 min | Caminata FU WA RI → tag stationery shop | Lugar/destino: tag stationery shop, Tokyo, Japan | Tipo: walking
+17. 2:45 pm | 35 min | tag stationery shop
+18. 3:20 pm | 30 min | Última vuelta rápida de figuras en Akihabara | Lugar/destino: Akihabara figure shops
+19. 3:50 pm | 5-10 min | Caminata tiendas → Akihabara Station | Lugar/destino: JR Akihabara Station, Tokyo, Japan | Tipo: walking
+20. 4:05 pm | 12-15 min | JR Yamanote: Akihabara → Shimbashi | Lugar/destino: JR Shimbashi Station, Yamanote Line, Tokyo, Japan | Tipo: transit
+21. 4:20 pm | 8-12 min | Transbordo en Shimbashi hacia Yurikamome | Lugar/destino: Yurikamome Shimbashi Station, Tokyo, Japan | Tipo: walking
+22. 4:35 pm | 15-20 min | Yurikamome: Shimbashi → Daiba | Lugar/destino: Daiba Station, Yurikamome Line, Tokyo, Japan | Tipo: transit
+23. 5:00 pm | 5-10 min | Caminata Daiba Station → Daiba 1-chome Shopping Street | Lugar/destino: Daiba 1-chome Shopping Street, Tokyo, Japan | Tipo: walking
+24. 5:10 pm | 45 min | Daiba 1-chome Shopping Street
+25. 5:55 pm | 15-20 min | Caminata Daiba 1-chome → DiverCity / Unicorn Gundam | Lugar/destino: Unicorn Gundam Statue, DiverCity Tokyo Plaza, Tokyo, Japan | Tipo: walking
+26. 6:15 pm | 30 min | Unicorn Gundam | Lugar/destino: Unicorn Gundam Statue
+27. 6:45 pm | 6:45 - 8:00 pm | Cena en Odaiba / DiverCity | Lugar/destino: DiverCity Tokyo Plaza restaurants
+28. 8:00 pm | 20-30 min | Paseo nocturno corto por Odaiba | Lugar/destino: Odaiba waterfront
+29. 8:30 pm | 8-12 min | Caminata DiverCity → Daiba Station | Lugar/destino: Daiba Station, Tokyo, Japan | Tipo: walking
+30. 8:45 pm | 15-20 min | Yurikamome: Daiba → Shimbashi | Lugar/destino: Yurikamome Shimbashi Station, Tokyo, Japan | Tipo: transit
+31. 9:10 pm | 20-30 min | Opción recomendada: taxi Shimbashi → hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: driving
+32. 9:40 pm | cierre | Llegada al hotel y guardar compras
+
+DIA 15 - Día 15 - PokéPark KANTO + Pokémon Center Tokyo DX
+Fecha: Miércoles 21 de octubre de 2026
+Estado: Pokémon day
+Actividades para estimar costos:
+01. 6:15 am | inicio | Despertar en Asakusa Tawaramachi
+02. 6:45 am | 6:45 - 7:05 am | Desayuno rápido cerca del hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi
+03. 7:10 am | 3-5 min | Caminata hotel → Tawaramachi Station | Lugar/destino: Tawaramachi Station, Tokyo, Japan | Tipo: walking
+04. 7:20 am | 3-5 min | Metro: Tawaramachi → Ueno | Lugar/destino: Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: transit
+05. 7:25 am | 8-12 min | Transbordo Ueno Metro → JR Ueno | Lugar/destino: JR Ueno Station, Yamanote Line, Tokyo, Japan | Tipo: walking
+06. 7:40 am | 25-35 min | JR Yamanote: Ueno → Shinjuku | Lugar/destino: JR Shinjuku Station, Yamanote Line, Tokyo, Japan | Tipo: transit
+07. 8:15 am | 10-15 min | Transbordo JR Shinjuku → Keio Line | Lugar/destino: Keio Shinjuku Station, Tokyo, Japan | Tipo: walking
+08. 8:30 am | 25-35 min | Keio Line: Shinjuku → Keio-yomiuri-land | Lugar/destino: Keio-yomiuri-land Station, Tokyo, Japan | Tipo: transit
+09. 9:10 am | 10-20 min | Keio-yomiuri-land Station → Yomiuriland / PokéPark KANTO | Lugar/destino: Yomiuriland, Tokyo, Japan | Tipo: transit
+10. 9:30 am | 9:30 - 10:00 am | Llegada a Yomiuriland / margen de entrada
+11. 10:00 am | 10:00 am - 2:30 pm | PokéPark KANTO / Yomiuriland
+12. 2:30 pm | 2:30 - 3:00 pm | Salida de PokéPark / pausa antes del regreso | Lugar/destino: Yomiuriland
+13. 3:00 pm | 10-20 min | Yomiuriland → Keio-yomiuri-land Station | Lugar/destino: Keio-yomiuri-land Station, Tokyo, Japan | Tipo: transit
+14. 3:25 pm | 25-35 min | Keio Line: Keio-yomiuri-land → Shinjuku | Lugar/destino: Keio Shinjuku Station, Tokyo, Japan | Tipo: transit
+15. 4:00 pm | 10-15 min | Transbordo Keio Shinjuku → Tokyo Metro Marunouchi | Lugar/destino: Shinjuku Station Tokyo Metro Marunouchi Line, Tokyo, Japan | Tipo: walking
+16. 4:15 pm | 18-22 min | Metro: Shinjuku → Ginza | Lugar/destino: Ginza Station, Tokyo Metro Marunouchi Line, Tokyo, Japan | Tipo: transit
+17. 4:40 pm | 5-10 min | Transbordo / traslado Ginza → Nihonbashi | Lugar/destino: Nihonbashi Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: transit
+18. 4:55 pm | 5-10 min | Caminata Nihonbashi Station → Pokémon Center Tokyo DX | Lugar/destino: Pokémon Center Tokyo DX, Nihonbashi, Tokyo, Japan | Tipo: walking
+19. 5:10 pm | 5:10 - 6:20 pm | Pokémon Center Tokyo DX
+20. 6:20 pm | 5-10 min | Caminata interna Pokémon Center DX → Pokémon Café | Lugar/destino: Pokémon Café Tokyo, Nihonbashi, Tokyo, Japan | Tipo: walking
+21. 6:35 pm | reservación | Pokémon Café Tokyo
+22. 8:00 pm | 20-30 min | Matsumoto Kiyoshi / farmacia japonesa | Lugar/destino: Matsumoto Kiyoshi Ginza / Nihonbashi
+23. 8:35 pm | 20-30 min | Opción recomendada: taxi Nihonbashi → hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: driving
+24. 9:05 pm | cierre | Llegada al hotel y ordenar compras Pokémon
+
+DIA 16 - Día 16 - Kamakura desde Tokyo
+Fecha: Jueves 22 de octubre de 2026
+Estado: Kamakura romántico
+Actividades para estimar costos:
+01. 5:00 am | inicio | Despertar temprano en Asakusa Tawaramachi
+02. 5:20 am | 5:20 - 5:35 am | Snack / desayuno rápido antes de salir | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi
+03. 5:40 am | 5:40 - 5:44 am | Última revisión antes de salir
+04. 5:45 am | 3-5 min | Caminata hotel → Tawaramachi Station | Lugar/destino: Tawaramachi Station, Tokyo, Japan | Tipo: walking
+05. 5:55 am | 3-5 min | Metro: Tawaramachi → Ueno | Lugar/destino: Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: transit
+06. 6:05 am | 8-12 min | Transbordo Ueno Metro → JR Ueno | Lugar/destino: JR Ueno Station, Yamanote Line, Tokyo, Japan | Tipo: walking
+07. 6:20 am | 7-10 min | JR Yamanote: Ueno → Tokyo Station | Lugar/destino: Tokyo Station, JR Yamanote Line, Tokyo, Japan | Tipo: transit
+08. 6:35 am | 10-15 min | Transbordo en Tokyo Station hacia JR Yokosuka Line | Lugar/destino: Tokyo Station JR Yokosuka Line platform, Tokyo, Japan | Tipo: walking
+09. 6:55 am | 55-65 min | JR Yokosuka Line: Tokyo Station → Kamakura | Lugar/destino: Kamakura Station, Kanagawa, Japan | Tipo: transit
+10. 8:00 am | 10 min | Llegada a Kamakura Station
+11. 8:10 am | 5 min | Caminata Kamakura Station → Komachi-dori | Lugar/destino: Komachi-dori Street, Kamakura, Kanagawa, Japan | Tipo: walking
+12. 8:15 am | 8:15 - 8:50 am | Komachi-dori temprano | Lugar/destino: Komachi-dori Street
+13. 8:50 am | 10-15 min | Caminata Komachi-dori → Tsurugaoka Hachimangu | Lugar/destino: Tsurugaoka Hachimangu, Kamakura, Kanagawa, Japan | Tipo: walking
+14. 9:05 am | 9:05 - 10:05 am | Tsurugaoka Hachimangu
+15. 10:05 am | 10:05 - 10:30 am | Regreso caminando hacia Komachi-dori / centro | Lugar/destino: Komachi-dori Street, Kamakura, Kanagawa, Japan | Tipo: walking
+16. 10:30 am | 10:30 - 11:15 am | Café / tiendas de Komachi-dori | Lugar/destino: Komachi-dori cafes and shops
+17. 11:15 am | 11:15 - 12:15 pm | Almuerzo temprano en Kamakura | Lugar/destino: Kamakura Station / Komachi-dori restaurants
+18. 12:15 pm | 5-8 min | Caminata restaurante → Kamakura Station / Enoden | Lugar/destino: Kamakura Station Enoden Line, Kanagawa, Japan | Tipo: walking
+19. 12:25 pm | 5 min | Enoden: Kamakura → Hase | Lugar/destino: Hase Station, Enoden Line, Kanagawa, Japan | Tipo: transit
+20. 12:35 pm | 10-15 min | Caminata Hase Station → Kotoku-in / Gran Buda | Lugar/destino: Kotoku-in, Kamakura, Kanagawa, Japan | Tipo: walking
+21. 12:50 pm | 12:50 - 1:35 pm | Kotoku-in / Gran Buda de Kamakura | Lugar/destino: Kotoku-in / Great Buddha of Kamakura
+22. 1:35 pm | 10-15 min | Caminata Kotoku-in → Hase-dera | Lugar/destino: Hase-dera Temple, Kamakura, Kanagawa, Japan | Tipo: walking
+23. 1:50 pm | 1:50 - 3:00 pm | Hase-dera | Lugar/destino: Hase-dera Temple
+24. 3:00 pm | 15-20 min | Caminata Hase-dera → Yuigahama Beach | Lugar/destino: Yuigahama Beach, Kamakura, Kanagawa, Japan | Tipo: walking
+25. 3:25 pm | 3:25 - 4:45 pm | Yuigahama Beach
+26. 4:45 pm | 10-15 min | Caminata Yuigahama Beach → Hase Station | Lugar/destino: Hase Station, Kamakura, Kanagawa, Japan | Tipo: walking
+27. 5:00 pm | 5 min | Enoden: Hase → Kamakura | Lugar/destino: Kamakura Station, Enoden Line, Kanagawa, Japan | Tipo: transit
+28. 5:10 pm | 5:10 - 6:10 pm | Cena ligera o café final en Kamakura | Lugar/destino: Kamakura Station restaurants
+29. 6:20 pm | 55-65 min | JR Yokosuka Line: Kamakura → Tokyo Station | Lugar/destino: Tokyo Station, JR Yokosuka Line, Tokyo, Japan | Tipo: transit
+30. 7:30 pm | 20-30 min | Opción recomendada: taxi Tokyo Station → hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: driving
+31. 8:00 pm | cierre | Llegada al hotel y descanso
+
+DIA 17 - Día 17 - Cierre de Tokyo / compras finales
+Fecha: Viernes 23 de octubre de 2026
+Estado: Cierre Tokyo
+Actividades para estimar costos:
+01. 7:30 am | inicio | Despertar sin correr
+02. 8:00 am | 8:00 - 8:40 am | Desayuno cerca del hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi
+03. 8:40 am | 8:40 - 9:15 am | Primera revisión de maletas
+04. 9:20 am | 3-5 min | Caminata hotel → Tawaramachi Station | Lugar/destino: Tawaramachi Station, Tokyo, Japan | Tipo: walking
+05. 9:30 am | 3-5 min | Metro: Tawaramachi → Ueno | Lugar/destino: Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan | Tipo: transit
+06. 9:40 am | 10-15 min | Caminata Ueno Station → Ameyoko | Lugar/destino: Ameyoko Shopping District, Tokyo, Japan | Tipo: walking
+07. 9:55 am | 9:55 - 11:15 am | Ueno / Ameyoko Shopping District
+08. 11:15 am | 11:15 - 12:00 pm | Matsumoto Kiyoshi / farmacia japonesa en Ueno | Lugar/destino: Matsumoto Kiyoshi Ueno / Ameyoko
+09. 12:00 pm | 12:00 - 1:00 pm | Almuerzo en Ueno | Lugar/destino: Ueno / Ameyoko restaurants
+10. 1:00 pm | 1:00 - 1:20 pm | Decisión flexible: Akihabara o regreso a Asakusa
+11. 1:20 pm | 5-8 min | Opción A - JR: Ueno → Akihabara | Lugar/destino: Akihabara Station, Tokyo, Japan | Tipo: transit
+12. 1:35 pm | 1:35 - 3:00 pm | Akihabara opcional - última vuelta de figuras/anime | Lugar/destino: Akihabara figure shops
+13. 3:00 pm | 10-15 min | Regreso Akihabara / Ueno → hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: transit
+14. 3:30 pm | 3:30 - 5:00 pm | Empaque parcial y descanso en el hotel
+15. 5:00 pm | 5:00 - 5:45 pm | Paseo final suave por Asakusa / Tawaramachi
+16. 6:00 pm | 6:00 - 7:30 pm | Cena final cerca de Asakusa / Ueno | Lugar/destino: Asakusa / Ueno dinner restaurants
+17. 7:30 pm | 5-15 min | Regreso al hotel | Lugar/destino: Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan | Tipo: walking
+18. 8:00 pm | 8:00 - 9:30 pm | Empaque final y preparación para Narita
+19. 9:30 pm | cierre | Dormir temprano
+
+DIA 18 - Día 18 - Regreso desde Tokyo / Narita
+Fecha: Sábado 24 de octubre de 2026
+Estado: Regreso temprano
+Actividades para estimar costos:
+01. 4:15 am | inicio | Despertar muy temprano
+02. 4:30 am | 4:30 - 4:50 am | Revisión final de habitación y maletas
+03. 4:50 am | check-out | Check-out en Henn na Hotel Premier Tokyo Asakusa Tawaramachi
+04. 5:00 am | 15-25 min | Taxi corto: hotel → Keisei Ueno Station | Lugar/destino: Keisei Ueno Station, Tokyo, Japan | Tipo: driving
+05. 5:25 am | 5:25 - 5:45 am | Keisei Ueno Station - ubicar tren hacia Narita
+06. 5:45 am | 40-55 min | Tren: Keisei Ueno → Narita Airport | Lugar/destino: Narita International Airport, Chiba, Japan | Tipo: transit
+07. 6:35 am | 6:35 - 6:50 am | Llegada a Narita Airport | Lugar/destino: Narita International Airport
+08. 6:50 am | 6:50 - 7:30 am | Check-in y entrega de equipaje
+09. 7:30 am | 7:30 - 8:05 am | Seguridad y migración de salida
+10. 8:05 am | 8:05 - 8:35 am | Desayuno rápido / compras mínimas en Narita | Lugar/destino: Narita Airport departures shops
+11. 8:35 am | 8:35 - 8:55 am | Ir al gate | Lugar/destino: Narita International Airport departure gate | Tipo: walking
+12. 8:55 am | espera / abordaje | Espera en gate y abordaje
+13. 9:30 am | según itinerario | Vuelo de regreso desde Narita
+
+============================================================
+DIA OCULTO / PROPUESTA
+============================================================
+
+DIA 03 OCULTO - Día 3 oculto - Propuesta, Castillo, Namba, Pokémon y cena romántica
+Fecha: Viernes 9 de octubre de 2026
+Estado: Día oculto
+Nota: dia privado/oculto, incluir costos aparte si aplica.
+Actividades para estimar costos:
+01. 5:45 am | inicio | Despertar en secreto
+02. 6:10 am | 20 min | Arreglarse para la propuesta
+03. 6:35 am | 15 min | Desayuno muy ligero
+04. 6:55 am | 5 min | Confirmar ubicación con Manu
+05. 7:00 am | 20-25 min | Uber/taxi: Cross Hotel Osaka → Osaka Castle Park | Lugar/destino: https://maps.app.goo.gl/GsusDNKETXPhAnGSA | Tipo: driving
+06. 7:25 am | 25 min | Llegada tranquila a Osaka Castle Park | Lugar/destino: https://maps.app.goo.gl/GsusDNKETXPhAnGSA | Tipo: walking
+07. 8:00 am | 1h | Sesión sorpresa con Manu y propuesta
+08. 9:00 am | 30-45 min | Fotos de pareja después de la propuesta
+09. 9:45 am | 30 min | Caminar solos por Osaka Castle Park
+10. 10:20 am | opcional corto | Castillo de Osaka por fuera o entrada al museo | Lugar/destino: Castillo Osaka | Tipo: walking
+11. 11:15 am | 20-30 min | Traslado de regreso a Namba | Lugar/destino: Cross Hotel Osaka, Osaka, Japan | Tipo: driving
+12. 12:00 pm | 1h 15m | Descanso en el hotel
+13. 1:30 pm | almuerzo | Genji-soba | Tipo: walking
+14. 2:35 pm | 15-20 min | Caminata Genji-soba → Namba Yasaka Shrine | Lugar/destino: Namba Yasaka Shrine, Osaka, Japan | Tipo: walking
+15. 3:00 pm | 30 min | Namba Yasaka Shrine
+16. 3:35 pm | 15 min | Caminata Namba Yasaka → Doguyasuji | Lugar/destino: Sennichimae Doguyasuji Shopping Street, Osaka, Japan | Tipo: walking
+17. 3:50 pm | 40 min | Sennichimae Doguyasuji Cookware Shopping Street
+18. 4:30 pm | 20 min | Caminata Doguyasuji → Pokémon Center Osaka DX | Lugar/destino: Pokemon Center Osaka DX, Daimaru Shinsaibashi, Osaka, Japan | Tipo: walking
+19. 4:55 pm | 1h | Pokémon Center Osaka DX
+20. 6:00 pm | reservación | Pokémon Café Osaka
+21. 7:15 pm | 15-20 min | Traslado a cena romántica | Lugar/destino: Table36, Swissôtel Nankai Osaka, Osaka, Japan | Tipo: walking
+22. 7:40 pm | 2h | Cena romántica de compromiso | Lugar/destino: Table36
+23. 9:45 pm | 30-45 min | Dotonbori nocturno como prometidos | Lugar/destino: Dotonbori, Osaka, Japan | Tipo: walking
+24. 10:30 pm | 10-15 min | Regreso al Cross Hotel Osaka | Lugar/destino: Cross Hotel Osaka, Osaka, Japan | Tipo: walking
