@@ -1771,145 +1771,6 @@
       line-height: 1.35;
     }
 
-    .day-budget-card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      box-shadow: none;
-      display: grid;
-      gap: 12px;
-      margin: 0 0 12px;
-      padding: 13px;
-    }
-
-    .day-budget-card.locked {
-      align-items: center;
-      grid-template-columns: minmax(0, 1fr) auto;
-      padding: 10px 12px;
-    }
-
-    .day-budget-card header {
-      align-items: flex-start;
-      display: flex;
-      gap: 10px;
-      justify-content: space-between;
-    }
-
-    .day-budget-card h3 {
-      color: var(--navy);
-      font-size: 15px;
-      line-height: 1.15;
-      margin-bottom: 2px;
-    }
-
-    .day-budget-card p {
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 750;
-      line-height: 1.35;
-    }
-
-    .day-budget-card.locked p {
-      display: none;
-    }
-
-    .day-budget-lock {
-      align-items: center;
-      background: var(--control);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: var(--navy);
-      cursor: pointer;
-      display: inline-flex;
-      flex: 0 0 auto;
-      font-size: 11px;
-      font-weight: 950;
-      gap: 7px;
-      min-height: 32px;
-      padding: 0 11px;
-    }
-
-    .day-budget-lock:hover {
-      background: var(--city-solid);
-      border-color: var(--city-solid);
-      color: #ffffff;
-    }
-
-    .day-budget-lock .material-symbols-rounded {
-      font-size: 17px;
-    }
-
-    .day-budget-metrics {
-      display: grid;
-      gap: 8px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .day-budget-metric {
-      background: var(--surface-soft);
-      border: 1px solid var(--line);
-      border-radius: 13px;
-      padding: 10px;
-    }
-
-    .day-budget-metric small {
-      color: var(--muted);
-      display: block;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: .06em;
-      margin-bottom: 5px;
-      text-transform: uppercase;
-    }
-
-    .day-budget-metric strong {
-      color: var(--navy);
-      display: block;
-      font-size: 14px;
-      line-height: 1.15;
-    }
-
-    .day-budget-list {
-      display: grid;
-      gap: 8px;
-    }
-
-    .day-budget-row {
-      align-items: start;
-      background: color-mix(in srgb, var(--surface), var(--city-soft) 18%);
-      border: 1px solid color-mix(in srgb, var(--line), var(--city-accent) 14%);
-      border-radius: 15px;
-      display: grid;
-      gap: 10px;
-      grid-template-columns: minmax(0, 1fr) auto;
-      padding: 11px 12px;
-    }
-
-    .day-budget-row strong {
-      color: var(--ink);
-      display: block;
-      font-size: 14px;
-      line-height: 1.25;
-      margin-bottom: 3px;
-    }
-
-    .day-budget-row span {
-      color: var(--muted);
-      display: block;
-      font-size: 12px;
-      font-weight: 750;
-      line-height: 1.35;
-    }
-
-    .day-budget-row em {
-      color: var(--city-solid);
-      font-size: 13px;
-      font-style: normal;
-      font-weight: 950;
-      line-height: 1.2;
-      text-align: right;
-      white-space: nowrap;
-    }
 
     .icon-button {
       width: 42px;
@@ -3093,16 +2954,6 @@
         padding: 9px 10px;
       }
       .block-cost span { font-size: 12px; }
-      .day-budget-card.locked,
-      .day-budget-row {
-        grid-template-columns: 1fr;
-      }
-      .day-budget-metrics {
-        grid-template-columns: 1fr;
-      }
-      .day-budget-row em {
-        text-align: left;
-      }
       .icon-button {
         align-items: center;
         display: inline-flex;
@@ -5163,33 +5014,364 @@
       padding: 0 10px;
     }
 
-    .day-budget-card {
-      border-radius: 16px;
-      box-shadow: none;
-      gap: 12px;
-      margin-bottom: 12px;
-      padding: 13px;
-    }
-
-    .day-budget-card.locked {
-      padding: 10px 12px;
-    }
-
-    .day-budget-card h3 {
-      font-size: 15px;
-      margin-bottom: 2px;
-    }
-
-    .day-budget-card.locked p { display: none; }
-
-    .day-budget-lock {
-      font-size: 11px;
-      min-height: 32px;
-      padding: 0 11px;
-    }
 
     .block li:nth-child(n+4) {
       display: none;
+    }
+
+    .home-screen,
+    .checklist-screen {
+      background:
+        radial-gradient(circle at top right, color-mix(in srgb, var(--city-accent), transparent 78%), transparent 34%),
+        linear-gradient(135deg, var(--surface), var(--surface-soft));
+      border-top: 1px solid var(--line);
+      display: grid;
+      gap: 18px;
+      padding: clamp(18px, 4vw, 34px);
+    }
+
+    body:not(.app-view-home) .home-screen,
+    body:not(.app-view-checklist) .checklist-screen {
+      display: none;
+    }
+
+    body.app-view-home .mobile-quick-toggle,
+    body.app-view-home .quick-grid,
+    body.app-view-home .cost-overview,
+    body.app-view-home .workspace,
+    body.app-view-home .bottom-nav,
+    body.app-view-home .action-fab,
+    body.app-view-checklist .mobile-quick-toggle,
+    body.app-view-checklist .quick-grid,
+    body.app-view-checklist .cost-overview,
+    body.app-view-checklist .workspace,
+    body.app-view-checklist .bottom-nav,
+    body.app-view-checklist .action-fab {
+      display: none !important;
+    }
+
+    .home-copy { max-width: 680px; }
+
+    .home-kicker {
+      color: var(--city-solid);
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: .12em;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .home-copy h2,
+    .checklist-hero h2 {
+      color: var(--navy);
+      font-size: clamp(27px, 5vw, 46px);
+      line-height: 1.02;
+      margin-bottom: 8px;
+    }
+
+    .home-copy p,
+    .checklist-hero p {
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .home-cards {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-card {
+      align-items: end;
+      background: linear-gradient(135deg, color-mix(in srgb, var(--surface), var(--city-soft) 24%), var(--surface));
+      border: 1px solid color-mix(in srgb, var(--line), var(--city-accent) 16%);
+      border-radius: 24px;
+      color: var(--ink);
+      cursor: pointer;
+      display: grid;
+      gap: 16px;
+      min-height: 210px;
+      overflow: hidden;
+      padding: 22px;
+      position: relative;
+      text-align: left;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .home-card::after {
+      background: color-mix(in srgb, var(--city-accent), transparent 82%);
+      border-radius: 999px;
+      content: "";
+      height: 150px;
+      position: absolute;
+      right: -44px;
+      top: -44px;
+      width: 150px;
+    }
+
+    .home-card.primary {
+      background: linear-gradient(135deg, color-mix(in srgb, var(--city-solid), #ffffff 12%), color-mix(in srgb, var(--city-accent), #ffffff 18%));
+      color: #ffffff;
+    }
+
+    .home-card:hover {
+      border-color: var(--city-accent);
+      box-shadow: 0 20px 54px color-mix(in srgb, var(--city-solid), transparent 78%);
+      transform: translateY(-2px);
+    }
+
+    .home-card-icon {
+      align-items: center;
+      background: rgba(255,255,255,.72);
+      border: 1px solid rgba(255,255,255,.46);
+      border-radius: 18px;
+      color: var(--city-solid);
+      display: inline-flex;
+      font-size: 28px;
+      height: 54px;
+      justify-content: center;
+      width: 54px;
+      z-index: 1;
+    }
+
+    .home-card.primary .home-card-icon {
+      background: rgba(255,255,255,.18);
+      color: #ffffff;
+    }
+
+    .home-card-copy,
+    .home-card-meta {
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-card-copy strong {
+      display: block;
+      font-size: 24px;
+      font-weight: 950;
+      line-height: 1.05;
+      margin-bottom: 7px;
+    }
+
+    .home-card-copy small {
+      color: inherit;
+      display: block;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.35;
+      opacity: .72;
+    }
+
+    .home-card-meta {
+      align-self: start;
+      background: rgba(255,255,255,.74);
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 999px;
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 950;
+      padding: 8px 11px;
+      width: fit-content;
+    }
+
+    .home-card.primary .home-card-meta {
+      background: rgba(255,255,255,.18);
+      color: #ffffff;
+    }
+
+    .screen-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+    }
+
+    .soft-back-button {
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--navy);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 950;
+      gap: 7px;
+      min-height: 38px;
+      padding: 0 13px;
+    }
+
+    .soft-back-button.strong {
+      background: var(--city-solid);
+      border-color: var(--city-solid);
+      color: #ffffff;
+    }
+
+    .checklist-hero {
+      align-items: center;
+      display: grid;
+      gap: 16px;
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    .checklist-ring {
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      display: grid;
+      height: 112px;
+      justify-items: center;
+      min-width: 112px;
+      padding: 14px;
+    }
+
+    .checklist-ring strong {
+      color: var(--city-solid);
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .checklist-ring span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .checklist-add {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: minmax(0, 1fr) auto;
+      padding: 10px;
+    }
+
+    .checklist-add input {
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 800;
+      min-height: 44px;
+      padding: 0 13px;
+    }
+
+    .checklist-add button {
+      align-items: center;
+      background: var(--city-solid);
+      border: 0;
+      border-radius: 13px;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 13px;
+      font-weight: 950;
+      gap: 6px;
+      padding: 0 16px;
+    }
+
+    .checklist-groups {
+      display: grid;
+      gap: 14px;
+    }
+
+    .checklist-group {
+      background: color-mix(in srgb, var(--surface), var(--city-soft) 12%);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 14px;
+    }
+
+    .checklist-group h3 {
+      color: var(--navy);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .checklist-items {
+      display: grid;
+      gap: 8px;
+    }
+
+    .check-item {
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      cursor: pointer;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      padding: 11px 12px;
+    }
+
+    .check-item input {
+      accent-color: var(--city-solid);
+      height: 18px;
+      width: 18px;
+    }
+
+    .check-item span {
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 850;
+      line-height: 1.3;
+    }
+
+    .check-item.done span {
+      color: var(--muted);
+      text-decoration: line-through;
+    }
+
+    .check-remove {
+      background: transparent;
+      border: 0;
+      color: var(--muted);
+      cursor: pointer;
+      display: inline-flex;
+      padding: 4px;
+    }
+
+    @media (max-width: 760px) {
+      .home-screen,
+      .checklist-screen {
+        padding: 18px 14px 24px;
+      }
+
+      .home-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .home-card {
+        min-height: 170px;
+      }
+
+      .checklist-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .checklist-ring {
+        height: auto;
+        min-width: 0;
+        width: 100%;
+      }
+
+      .checklist-add {
+        grid-template-columns: 1fr;
+      }
+
+      .checklist-add button {
+        justify-content: center;
+        min-height: 42px;
+      }
     }
 
     @media print {
@@ -5242,7 +5424,7 @@
     }
 </style>
 </head>
-<body class="light-mode">
+<body class="light-mode app-view-home">
   <main class="app">
     <section class="shell">
       <section class="hero">
@@ -5318,6 +5500,10 @@
           </div>
         </div>
         <div class="cost-actions">
+          <button class="cost-unlock-button" type="button" data-app-view="home" title="Volver al menu inicial">
+            <span class="material-symbols-rounded">home</span>
+            <span>Inicio</span>
+          </button>
           <span class="deploy-stamp" id="deployStamp" title="Marca para confirmar que GitHub Pages actualizo esta version">
             <span class="material-symbols-rounded" aria-hidden="true">verified</span>
             Build 2026.07.01-02
@@ -5344,6 +5530,64 @@
             <span id="costUnlockLabel">Desbloquear montos</span>
           </button>
         </div>
+      </section>
+
+      <section class="home-screen" id="homeScreen" aria-label="Menu inicial">
+        <div class="home-copy">
+          <span class="home-kicker">Centro del viaje</span>
+          <h2>Revise pendientes o abra la ruta.</h2>
+          <p>Entrada limpia para separar preparacion del itinerario diario.</p>
+        </div>
+        <div class="home-cards">
+          <button class="home-card primary" type="button" data-app-view="checklist">
+            <span class="home-card-icon material-symbols-rounded">fact_check</span>
+            <span class="home-card-copy">
+              <strong>Checklist pre-viaje</strong>
+              <small>Reservas, entradas, transporte y pendientes.</small>
+            </span>
+            <span class="home-card-meta" id="homeChecklistProgress">0/0 listo</span>
+          </button>
+          <button class="home-card" type="button" data-app-view="itinerary">
+            <span class="home-card-icon material-symbols-rounded">map</span>
+            <span class="home-card-copy">
+              <strong>Itinerario por dias</strong>
+              <small>Horarios, mapas, comida, frases y regreso al hotel.</small>
+            </span>
+            <span class="home-card-meta">Abrir ruta</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="checklist-screen" id="checklistScreen" aria-label="Checklist pre-viaje">
+        <div class="screen-toolbar">
+          <button class="soft-back-button" type="button" data-app-view="home">
+            <span class="material-symbols-rounded">arrow_back</span>
+            Inicio
+          </button>
+          <button class="soft-back-button strong" type="button" data-app-view="itinerary">
+            <span class="material-symbols-rounded">map</span>
+            Itinerario
+          </button>
+        </div>
+        <div class="checklist-hero">
+          <div>
+            <span class="home-kicker">Pre-viaje</span>
+            <h2>Checklist de reservas y pendientes</h2>
+            <p>Marque lo listo y agregue cualquier cosa nueva. Se guarda en este navegador.</p>
+          </div>
+          <div class="checklist-ring">
+            <strong id="checklistPercent">0%</strong>
+            <span>listo</span>
+          </div>
+        </div>
+        <form class="checklist-add" id="checklistAddForm">
+          <input id="checklistInput" type="text" placeholder="Agregar pendiente nuevo..." autocomplete="off">
+          <button type="submit">
+            <span class="material-symbols-rounded">add</span>
+            Agregar
+          </button>
+        </form>
+        <div class="checklist-groups" id="checklistGroups"></div>
       </section>
 
       <section class="workspace" id="mainWorkspace">
@@ -5639,7 +5883,6 @@
     const APP_BUILD_LABEL = "Build 2026.07.01-02";
     const USD_TO_CRC_ESTIMATE = 460;
     const JPY_TO_USD_ESTIMATE = 0.0068;
-    const BUDGET_BUFFER_RATE = 0.10;
     const criticalReservations = [
       {
         id: "pokemon-cafe-osaka",
@@ -5849,6 +6092,13 @@
     const bottomNav = document.getElementById("bottomNav");
     const actionFab = document.getElementById("actionFab");
     const todayModeExit = document.getElementById("todayModeExit");
+    const homeScreen = document.getElementById("homeScreen");
+    const checklistScreen = document.getElementById("checklistScreen");
+    const checklistGroups = document.getElementById("checklistGroups");
+    const checklistAddForm = document.getElementById("checklistAddForm");
+    const checklistInput = document.getElementById("checklistInput");
+    const checklistPercent = document.getElementById("checklistPercent");
+    const homeChecklistProgress = document.getElementById("homeChecklistProgress");
 
     deployStamp?.setAttribute("aria-label", APP_BUILD_LABEL);
     console.info(`Itinerario Japon 2026 - ${APP_BUILD_LABEL}`);
@@ -5860,9 +6110,6 @@
     let weatherRequestId = 0;
     let latestWeatherContext = null;
     let costsUnlocked = getStoredValue(storageKey("costsUnlocked")) === "1";
-    let unlockedBudgetDays = new Set(getStoredValue(storageKey("budgetUnlockedDays"), "")
-      .split(",")
-      .filter(Boolean));
     let phraseTimer;
     let activePhrases = [];
     let activePhraseIndex = 0;
@@ -5876,6 +6123,29 @@
     let activeTaxiCardText = "";
     let map;
     let directionsRenderer;
+
+    const checklistDefaults = [
+      { id: "hotels", group: "Pre-viaje", text: "Hoteles Osaka + Kyoto + Tokyo" },
+      { id: "esim", group: "Pre-viaje", text: "Holafly / eSIM Japon para 2 personas" },
+      { id: "insurance", group: "Pre-viaje", text: "Seguro de viaje para 2 personas" },
+      { id: "manu", group: "Pre-viaje", text: "Manu / fotos de propuesta" },
+      { id: "usj", group: "Pre-viaje", text: "Universal Studios Japan + Express Pass" },
+      { id: "disneysea", group: "Pre-viaje", text: "Tokyo DisneySea" },
+      { id: "pokepark", group: "Pre-viaje", text: "PokePark KANTO" },
+      { id: "teamlab-osaka", group: "Pre-viaje", text: "teamLab Osaka" },
+      { id: "shinkansen", group: "Pre-viaje", text: "Shinkansen Kyoto -> Tokyo" },
+      { id: "rapit", group: "Pre-viaje", text: "Rapi:t Kansai -> Namba" },
+      { id: "skyliner", group: "Pre-viaje", text: "Skyliner / tren hacia Narita regreso" },
+      { id: "nrt-kix-flight", group: "Pre-viaje", text: "Vuelo interno Narita -> Kansai - ya pagado" },
+      { id: "skyliner-confirm", group: "Pendiente de definir", text: "Skyliner / tren hacia Narita regreso" },
+      { id: "deposits", group: "Pendiente de definir", text: "Confirmar si alguna reserva requiere deposito previo" },
+      { id: "ticket-dates", group: "Pendiente de definir", text: "Confirmar fechas exactas de compra para entradas importantes: USJ, PokePark, DisneySea y Pokemon Cafe" }
+    ];
+
+    let checklistDone = new Set(getStoredValue(storageKey("checklistDone"), "")
+      .split(",")
+      .filter(Boolean));
+    let checklistCustom = parseStoredJson(storageKey("checklistCustom"), []);
 
     const blocksWithoutMapButton = new Set([
       "Aeropuerto en Costa Rica",
@@ -6193,6 +6463,91 @@
         : "Más datos";
     }
 
+    function parseStoredJson(key, fallback) {
+      try {
+        const raw = getStoredValue(key, "");
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (error) {
+        return fallback;
+      }
+    }
+
+    function setAppView(view) {
+      const safeView = ["home", "checklist", "itinerary"].includes(view) ? view : "home";
+      document.body.classList.remove("app-view-home", "app-view-checklist", "app-view-itinerary");
+      document.body.classList.add(`app-view-${safeView}`);
+      document.body.classList.remove("actions-open");
+      actionFab?.setAttribute("aria-expanded", "false");
+      if (safeView === "checklist") renderChecklist();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function allChecklistItems() {
+      return [...checklistDefaults, ...checklistCustom];
+    }
+
+    function saveChecklist() {
+      setStoredValue(storageKey("checklistDone"), [...checklistDone].join(","));
+      setStoredValue(storageKey("checklistCustom"), JSON.stringify(checklistCustom));
+    }
+
+    function checklistProgress() {
+      const items = allChecklistItems();
+      const done = items.filter(item => checklistDone.has(item.id)).length;
+      return {
+        total: items.length,
+        done,
+        percent: items.length ? Math.round((done / items.length) * 100) : 0
+      };
+    }
+
+    function updateChecklistProgress() {
+      const progress = checklistProgress();
+      if (checklistPercent) checklistPercent.textContent = `${progress.percent}%`;
+      if (homeChecklistProgress) homeChecklistProgress.textContent = `${progress.done}/${progress.total} listo`;
+    }
+
+    function renderChecklist() {
+      if (!checklistGroups) return;
+      const groups = allChecklistItems().reduce((acc, item) => {
+        if (!acc[item.group]) acc[item.group] = [];
+        acc[item.group].push(item);
+        return acc;
+      }, {});
+
+      checklistGroups.innerHTML = Object.entries(groups).map(([group, items]) => `
+        <section class="checklist-group">
+          <h3>${escapeHtml(group)}</h3>
+          <div class="checklist-items">
+            ${items.map(item => {
+              const done = checklistDone.has(item.id);
+              const custom = item.custom ? "true" : "false";
+              return `
+                <label class="check-item ${done ? "done" : ""}" data-check-id="${escapeHtml(item.id)}">
+                  <input type="checkbox" ${done ? "checked" : ""}>
+                  <span>${escapeHtml(item.text)}</span>
+                  ${item.custom ? `<button class="check-remove" type="button" data-remove-check="${escapeHtml(item.id)}" aria-label="Eliminar pendiente"><span class="material-symbols-rounded">close</span></button>` : `<small></small>`}
+                </label>`;
+            }).join("")}
+          </div>
+        </section>`).join("");
+
+      updateChecklistProgress();
+    }
+
+    function addChecklistItem(text) {
+      const cleanText = String(text || "").trim();
+      if (!cleanText) return;
+      checklistCustom.push({
+        id: `custom-${Date.now()}`,
+        group: "Agregados",
+        text: cleanText,
+        custom: true
+      });
+      saveChecklist();
+      renderChecklist();
+    }
+
     function tripDateForIndex(index) {
       return new Date(Date.UTC(2026, 9, index === 0 ? 5 : 6 + index));
     }
@@ -6496,7 +6851,9 @@
     function setActiveDay(index) {
       const safeIndex = index >= 0 ? index : 0;
       buttons.forEach(btn => btn.classList.toggle("active", Number(btn.dataset.day) === safeIndex));
-      buttons[safeIndex]?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      if (document.body.classList.contains("app-view-itinerary")) {
+        buttons[safeIndex]?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      }
       renderDay(safeIndex);
     }
 
@@ -7449,98 +7806,8 @@
       return label;
     }
 
-    function parseCostToUsd(text) {
-      const value = String(text || "");
-      const usdValues = [...value.matchAll(/\$\s*([\d,.]+(?:\.\d+)?)/g)]
-        .map(match => Number(match[1].replace(/,/g, "")))
-        .filter(Number.isFinite);
-      if (usdValues.length) {
-        let low = Math.min(...usdValues);
-        let high = Math.max(...usdValues);
-        if (/por persona|por adulto/i.test(value) && !/2 personas|x\s*2|dos personas/i.test(value)) {
-          low *= 2;
-          high *= 2;
-        }
-        return { low, high };
-      }
-
-      const yenValues = [...value.matchAll(/(?:[\u00a5\uffe5]|JPY|yenes?)\s*([\d,.]+)/gi)]
-        .map(match => Number(match[1].replace(/,/g, "")))
-        .filter(Number.isFinite);
-      if (yenValues.length) {
-        let lowJpy = Math.min(...yenValues);
-        let highJpy = Math.max(...yenValues);
-        if (/por persona|por adulto/i.test(value) && !/2 personas|x\s*2|dos personas/i.test(value)) {
-          lowJpy *= 2;
-          highJpy *= 2;
-        }
-        return {
-          low: lowJpy * JPY_TO_USD_ESTIMATE,
-          high: highJpy * JPY_TO_USD_ESTIMATE
-        };
-      }
-
-      return null;
-    }
-
-    function paddedUsd(value) {
-      return Math.ceil(value * (1 + BUDGET_BUFFER_RATE));
-    }
-
-    function formatBudgetAmount(usd) {
-      return `${formatMoney(usd, "USD", "en-US")} / ${formatMoney(usd * USD_TO_CRC_ESTIMATE, "CRC", "es-CR")}`;
-    }
-
-    function budgetLineLabel(text) {
-      return String(text || "")
-        .replace(/\s+/g, " ")
-        .replace(/\s*Â·.*/, "")
-        .trim();
-    }
-
-    function blockBudget(block) {
-      const parsedItems = costItems(block)
-        .map(text => ({ text, parsed: parseCostToUsd(text) }))
-        .filter(item => item.parsed);
-      const baseHigh = parsedItems.reduce((sum, item) => sum + item.parsed.high, 0);
-      if (!baseHigh) return null;
-
-      return {
-        title: block.title,
-        items: parsedItems.map(item => budgetLineLabel(item.text)),
-        baseHigh,
-        paddedHigh: paddedUsd(baseHigh)
-      };
-    }
-
-    function dayBudget(index) {
-      const day = days[index];
-      const activities = day.blocks.map(blockBudget).filter(Boolean);
-      const rawTotal = activities.reduce((sum, item) => sum + item.baseHigh, 0);
-      const fallbackHigh = day.costEstimateUsd?.high || 0;
-      const effectiveHigh = rawTotal || fallbackHigh;
-      return {
-        activities,
-        rawTotal,
-        paddedTotal: paddedUsd(effectiveHigh),
-        fallbackUsed: !rawTotal && Boolean(fallbackHigh)
-      };
-    }
-
-    function tripBudget() {
-      return days.reduce((total, day, index) => total + dayBudget(index).paddedTotal, 0);
-    }
-
-    function isDayBudgetUnlocked(index) {
-      return costsUnlocked || unlockedBudgetDays.has(String(index));
-    }
-
-    function persistUnlockedBudgetDays() {
-      setStoredValue(storageKey("budgetUnlockedDays"), [...unlockedBudgetDays].join(","));
-    }
-
-    function canShowCostAmounts(index = currentDayIndex) {
-      return SHOW_COST_ESTIMATES && isDayBudgetUnlocked(index);
+    function canShowCostAmounts() {
+      return SHOW_COST_ESTIMATES && costsUnlocked;
     }
 
     function updateCostUnlockButton() {
@@ -7591,21 +7858,6 @@
       renderDay(currentDayIndex);
     }
 
-    function unlockDayBudget(index) {
-      if (isDayBudgetUnlocked(index)) return;
-
-      const password = window.prompt("Ingrese la clave para desbloquear los gastos de este dia:");
-      if (password !== COST_UNLOCK_PASSWORD) {
-        window.alert("Clave incorrecta.");
-        return;
-      }
-
-      unlockedBudgetDays.add(String(index));
-      persistUnlockedBudgetDays();
-      renderCostOverview();
-      renderDay(index);
-    }
-
     function renderBlockCost(block, dayIndex = currentDayIndex) {
       const costs = costItems(block);
       if (!canShowCostAmounts(dayIndex) || !costs.length) return "";
@@ -7634,75 +7886,6 @@
       return `${formatUsdRange(estimate)} · aprox. ${formatCrcRangeFromUsd(estimate)}`;
     }
 
-    function renderDayBudget(index) {
-      if (!SHOW_COST_ESTIMATES) return "";
-
-      const unlocked = isDayBudgetUnlocked(index);
-      const budget = dayBudget(index);
-      const activityRows = budget.activities.length
-        ? budget.activities.map(activity => `
-            <article class="day-budget-row">
-              <div>
-                <strong>${escapeHtml(activity.title)}</strong>
-                <span>${activity.items.map(escapeHtml).join(" · ")}</span>
-              </div>
-              <em>${formatBudgetAmount(activity.paddedHigh)}</em>
-            </article>`).join("")
-        : `
-            <article class="day-budget-row">
-              <div>
-                <strong>Estimado general del dia</strong>
-                <span>No hay gastos por actividad detectados; se usa el estimado alto del dia.</span>
-              </div>
-              <em>${formatBudgetAmount(budget.paddedTotal)}</em>
-            </article>`;
-
-      if (!unlocked) {
-        return `
-          <section class="day-budget-card locked" aria-label="Presupuesto bloqueado del dia">
-            <div>
-              <h3>Gastos holgados del dia</h3>
-              <p>Desbloquee este dia para ver cada actividad con colchon, total diario y total del viaje.</p>
-            </div>
-            <button class="day-budget-lock" type="button" data-day-budget-unlock="${index}">
-              <span class="material-symbols-rounded">lock</span>
-              Desbloquear dia
-            </button>
-          </section>`;
-      }
-
-      return `
-        <section class="day-budget-card" aria-label="Presupuesto holgado del dia">
-          <header>
-            <div>
-              <h3>Gastos holgados del dia</h3>
-              <p>Monto alto detectado por actividad, con +${Math.round(BUDGET_BUFFER_RATE * 100)}% de margen para imprevistos pequenos.</p>
-            </div>
-            <button class="day-budget-lock" type="button" disabled>
-              <span class="material-symbols-rounded">lock_open</span>
-              Dia desbloqueado
-            </button>
-          </header>
-          <div class="day-budget-metrics">
-            <div class="day-budget-metric">
-              <small>Total del dia</small>
-              <strong>${formatBudgetAmount(budget.paddedTotal)}</strong>
-            </div>
-            <div class="day-budget-metric">
-              <small>Total viaje</small>
-              <strong>${formatBudgetAmount(tripBudget())}</strong>
-            </div>
-            <div class="day-budget-metric">
-              <small>Margen</small>
-              <strong>+${Math.round(BUDGET_BUFFER_RATE * 100)}%</strong>
-            </div>
-          </div>
-          <div class="day-budget-list">
-            ${activityRows}
-          </div>
-        </section>`;
-    }
-
     function renderCostOverview() {
       if (!SHOW_COST_ESTIMATES) {
         costOverview.hidden = true;
@@ -7710,9 +7893,16 @@
         return;
       }
 
-      tripCostTotal.textContent = costsUnlocked ? `Holgado: ${formatBudgetAmount(tripBudget())}` : "Montos bloqueados";
+      const totals = days.reduce((sum, day) => {
+        if (!day.costEstimateUsd) return sum;
+        sum.low += day.costEstimateUsd.low;
+        sum.high += day.costEstimateUsd.high;
+        return sum;
+      }, { low: 0, high: 0 });
+
+      tripCostTotal.textContent = costsUnlocked ? costEstimateText(totals) : "Montos bloqueados";
       tripCostNote.textContent = costsUnlocked
-        ? "Total para 2 personas con margen moderado por actividad. No incluye vuelos internacionales ni hotel."
+        ? "Estimado para 2 personas, sin vuelos internacionales ni hotel."
         : "Presione desbloquear e ingrese la clave para ver presupuestos y costos por actividad.";
       updateCostUnlockButton();
       costOverview.classList.toggle("locked", !costsUnlocked);
@@ -7893,7 +8083,6 @@
             </div>
           </div>
         </details>
-        ${renderDayBudget(index)}
         <div class="blocks" id="dayBlocks">
           ${day.blocks.map((block, blockIndex) => {
             const hasRouteButton = canShowRouteButton(block);
@@ -7937,10 +8126,6 @@
         <div class="footer-note"><strong>✓</strong><p>${day.note}</p></div>
       `;
 
-      document.querySelector("[data-day-budget-unlock]")?.addEventListener("click", () => {
-        unlockDayBudget(index);
-      });
-
       document.querySelectorAll(".route-button").forEach(button => {
         button.addEventListener("click", event => {
           event.stopPropagation();
@@ -7977,8 +8162,44 @@
 
     buttons.forEach(button => {
       button.addEventListener("click", () => {
+        setAppView("itinerary");
         setActiveDay(Number(button.dataset.day));
       });
+    });
+
+    document.querySelectorAll("[data-app-view]").forEach(button => {
+      button.addEventListener("click", () => {
+        setAppView(button.dataset.appView);
+      });
+    });
+
+    checklistAddForm?.addEventListener("submit", event => {
+      event.preventDefault();
+      addChecklistItem(checklistInput?.value);
+      if (checklistInput) checklistInput.value = "";
+    });
+
+    checklistGroups?.addEventListener("change", event => {
+      const input = event.target.closest("input[type='checkbox']");
+      const item = input?.closest("[data-check-id]");
+      if (!input || !item) return;
+      const id = item.dataset.checkId;
+      if (input.checked) checklistDone.add(id);
+      else checklistDone.delete(id);
+      saveChecklist();
+      renderChecklist();
+    });
+
+    checklistGroups?.addEventListener("click", event => {
+      const removeButton = event.target.closest("[data-remove-check]");
+      if (!removeButton) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const id = removeButton.dataset.removeCheck;
+      checklistCustom = checklistCustom.filter(item => item.id !== id);
+      checklistDone.delete(id);
+      saveChecklist();
+      renderChecklist();
     });
 
     currencyAmount?.addEventListener("input", updateCurrencyConverter);
@@ -8575,6 +8796,7 @@
       setInterval(updateCountdown, 3600000);
       initTheme();
       updateQuickToggle();
+      updateChecklistProgress();
       content.innerHTML = '<section class="day-card"><div class="day-header"><div><div class="day-date">Cargando</div><h2>Cargando itinerario...</h2><p>Leyendo archivos JSON.</p></div></div></section>';
 
       try {
