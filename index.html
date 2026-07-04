@@ -829,6 +829,26 @@
       justify-content: flex-end;
     }
 
+    .deploy-stamp {
+      align-items: center;
+      background: color-mix(in srgb, var(--surface), transparent 12%);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      display: inline-flex;
+      font-size: 11px;
+      font-weight: 950;
+      gap: 6px;
+      min-height: 38px;
+      padding: 0 11px;
+      white-space: nowrap;
+    }
+
+    .deploy-stamp .material-symbols-rounded {
+      color: var(--city-solid);
+      font-size: 15px;
+    }
+
     .cost-unlock-button {
       align-items: center;
       background: rgba(255, 255, 255, 0.10);
@@ -5180,6 +5200,10 @@
           </div>
         </div>
         <div class="cost-actions">
+          <span class="deploy-stamp" id="deployStamp" title="Marca para confirmar que GitHub Pages actualizo esta version">
+            <span class="material-symbols-rounded" aria-hidden="true">verified</span>
+            Build 2026.07.01-02
+          </span>
           <button class="cost-unlock-button reservation-button" type="button" id="reservationButton" title="Reservas criticas" aria-label="Ver reservas criticas">
             <span class="material-symbols-rounded">event_available</span>
             <span>Reservas criticas</span>
@@ -5494,9 +5518,10 @@
     const COST_UNLOCK_PASSWORD = "29972997";
     const PROPOSAL_DAY_UNLOCK_PASSWORD = "871987188717";
     const PROPOSAL_DAY_INDEX = 3;
+    const APP_BUILD_LABEL = "Build 2026.07.01-02";
     const USD_TO_CRC_ESTIMATE = 460;
     const JPY_TO_USD_ESTIMATE = 0.0068;
-    const BUDGET_BUFFER_RATE = 0.20;
+    const BUDGET_BUFFER_RATE = 0.10;
     const criticalReservations = [
       {
         id: "pokemon-cafe-osaka",
@@ -5636,6 +5661,7 @@
     const costUnlockIcon = document.getElementById("costUnlockIcon");
     const costUnlockLabel = document.getElementById("costUnlockLabel");
     const reservationButton = document.getElementById("reservationButton");
+    const deployStamp = document.getElementById("deployStamp");
     const baseCity = document.getElementById("baseCity");
     const heroBase = document.getElementById("heroBase");
     const hero = document.querySelector(".hero");
@@ -5705,6 +5731,9 @@
     const bottomNav = document.getElementById("bottomNav");
     const actionFab = document.getElementById("actionFab");
     const todayModeExit = document.getElementById("todayModeExit");
+
+    deployStamp?.setAttribute("aria-label", APP_BUILD_LABEL);
+    console.info(`Itinerario Japon 2026 - ${APP_BUILD_LABEL}`);
 
     let currentDayIndex = 0;
     let tripProgressAnimationTimer = null;
@@ -7529,7 +7558,7 @@
           <header>
             <div>
               <h3>Gastos holgados del dia</h3>
-              <p>Monto alto detectado por actividad, con +${Math.round(BUDGET_BUFFER_RATE * 100)}% de colchon para ir sin apretar.</p>
+              <p>Monto alto detectado por actividad, con +${Math.round(BUDGET_BUFFER_RATE * 100)}% de margen para imprevistos pequenos.</p>
             </div>
             <button class="day-budget-lock" type="button" disabled>
               <span class="material-symbols-rounded">lock_open</span>
@@ -7546,7 +7575,7 @@
               <strong>${formatBudgetAmount(tripBudget())}</strong>
             </div>
             <div class="day-budget-metric">
-              <small>Colchon</small>
+              <small>Margen</small>
               <strong>+${Math.round(BUDGET_BUFFER_RATE * 100)}%</strong>
             </div>
           </div>
@@ -7565,7 +7594,7 @@
 
       tripCostTotal.textContent = costsUnlocked ? `Holgado: ${formatBudgetAmount(tripBudget())}` : "Montos bloqueados";
       tripCostNote.textContent = costsUnlocked
-        ? "Total holgado para 2 personas con colchon por actividad. No incluye vuelos internacionales ni hotel."
+        ? "Total para 2 personas con margen moderado por actividad. No incluye vuelos internacionales ni hotel."
         : "Presione desbloquear e ingrese la clave para ver presupuestos y costos por actividad.";
       updateCostUnlockButton();
       costOverview.classList.toggle("locked", !costsUnlocked);

@@ -1,80 +1,95 @@
 {
-  "title": "Día 15 - PokéPark KANTO + Pokémon Center Tokyo DX",
-  "subtitle": "Miércoles 21 de octubre - PokéPark KANTO en Yomiuriland, regreso a Nihonbashi, Pokémon Center Tokyo DX y posible Pokémon Café desde Asakusa Tawaramachi",
+  "title": "Día 15 - Akihabara + Odaiba",
+  "subtitle": "Miércoles 21 de octubre - anime, figuras, tiendas de Mar en Akihabara, Daiba 1-chome y Unicorn Gundam en Odaiba desde Asakusa Tawaramachi",
   "dateLabel": "Miércoles 21 de octubre de 2026",
   "shortDateLabel": "Mié 21 oct",
-  "status": "Pokémon day",
+  "status": "Anime + Odaiba",
   "costEstimateUsd": {
-    "low": 270,
-    "high": 540,
-    "note": "entrada PokéPark/Yomiuriland, transporte, comida temática, Pokémon Center Tokyo DX, posible Pokémon Café, snacks, compras y taxi corto si vienen cansados"
+    "low": 220,
+    "high": 430,
+    "note": "transporte local, comida, tiendas de figuras/anime, papelería, Odaiba, snacks, cena y compras moderadas"
   },
   "route": [
     "Henn na Hotel Premier Tokyo Asakusa Tawaramachi",
     "Tawaramachi Station",
-    "Ueno Station",
-    "Shinjuku Station",
-    "Keio-yomiuri-land Station",
-    "Yomiuriland / PokéPark KANTO",
-    "Keio-yomiuri-land Station",
-    "Shinjuku Station",
-    "Nihonbashi Station",
-    "Pokémon Center Tokyo DX",
-    "Pokémon Café Tokyo",
-    "Matsumoto Kiyoshi",
+    "Suehirocho Station",
+    "Akihabara",
+    "BOOKOFF Akihabara Ekimae Store",
+    "Radio Kaikan",
+    "AmiAmi Akihabara",
+    "Mandarake Complex Akihabara",
+    "Dengama",
+    "FU WA RI",
+    "tag stationery shop",
+    "Sushiro / Yakiniku Syo Akihabara",
+    "Akihabara Station",
+    "Shimbashi Station",
+    "Daiba Station",
+    "Daiba 1-chome Shopping Street",
+    "DiverCity Tokyo Plaza",
+    "Unicorn Gundam",
+    "Daiba Station",
+    "Shimbashi Station",
     "Henn na Hotel Premier Tokyo Asakusa Tawaramachi"
   ],
   "marStops": [
-    "PokePark Kanto",
-    "Pokémon Center Tokyo DX",
-    "Matsumoto Kiyoshi"
+    "BOOKOFF Akihabara Ekimae Store",
+    "Sushiro",
+    "Yakiniku Syo Akihabara",
+    "Dengama",
+    "FU WA RI",
+    "tag stationery shop",
+    "Daiba 1-chome Shopping Street",
+    "Unicorn Gundam"
   ],
   "animeFigureStops": [
-    "PokéPark KANTO",
-    "Pokémon Center Tokyo DX",
-    "Pokémon Café Tokyo"
+    "BOOKOFF Akihabara Ekimae Store",
+    "Radio Kaikan",
+    "AmiAmi Akihabara",
+    "Mandarake Complex Akihabara",
+    "Akihabara figure shops",
+    "Unicorn Gundam"
   ],
   "blocks": [
     {
-      "time": "6:15 am",
+      "time": "7:30 am",
       "duration": "inicio",
       "title": "Despertar en Asakusa Tawaramachi",
       "icon": "wb_sunny",
       "tone": "rest",
       "items": [
-        "Levantarse temprano porque PokéPark queda fuera del centro de Tokyo.",
-        "Revisar entradas/reservas de PokéPark KANTO y Yomiuriland.",
-        "Preparar celular, batería externa, pasaportes/copia, efectivo y Suica/ICOCA.",
-        "Llevar zapatos cómodos porque será día de parque y caminata.",
-        "Dejar espacio en bolso para compras Pokémon."
+        "Levantarse con calma después del día de PokéPark KANTO en Yomiuriland.",
+        "Preparar batería externa, celular/cámara y efectivo.",
+        "Llevar bolso o mochila con espacio para figuras, papelería y compras pequeñas.",
+        "Usar zapatos cómodos.",
+        "No llevar demasiadas cosas porque Akihabara puede tentar mucho con compras."
       ],
-      "detail": "Este día depende de tener entrada/reserva confirmada para PokéPark KANTO. Desde Asakusa/Tawaramachi el traslado hacia Yomiuriland es largo, por eso conviene salir temprano.",
+      "detail": "Este día conviene empezarlo un poco más tarde que el día de PokéPark para recuperar energía, pero sin salir demasiado tarde porque Akihabara tiene muchas tiendas. Desde Asakusa/Tawaramachi, Akihabara queda bastante cómodo.",
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "6:45 am",
-      "duration": "6:45 - 7:05 am",
-      "title": "Desayuno rápido cerca del hotel",
+      "time": "8:00 am",
+      "duration": "8:00 - 8:35 am",
+      "title": "Desayuno cerca del hotel",
       "icon": "local_cafe",
       "tone": "food",
       "items": [
-        "Desayuno práctico cerca del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
-        "Opciones: café, convenience store, bakery japonesa, onigiri o sándwich.",
+        "Desayuno cerca del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Opciones: café, bakery japonesa, convenience store, onigiri o desayuno simple.",
         "Comprar agua antes de salir.",
-        "Llevar snack extra para el camino.",
-        "Presupuesto 2 personas: $15 - $28."
+        "Presupuesto 2 personas: $15 - $30."
       ],
-      "detail": "Mejor comer algo antes de salir porque el traslado a Yomiuriland toma bastante tiempo.",
+      "detail": "Desayuno sencillo antes de ir a Akihabara. Hoy es día de caminar tiendas, así que conviene ir bien desayunados.",
       "location": {
         "name": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi / Tawaramachi",
-        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi convenience store breakfast"
+        "mapsQuery": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi breakfast nearby"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "7:10 am",
+      "time": "8:40 am",
       "duration": "3-5 min",
       "title": "Caminata hotel → Tawaramachi Station",
       "icon": "directions_walk",
@@ -86,7 +101,7 @@
         "Tener Suica/ICOCA lista.",
         "Costo: $0."
       ],
-      "detail": "Tawaramachi Station es la estación más cómoda para iniciar el traslado desde el hotel.",
+      "detail": "Tawaramachi es la estación más cómoda desde el hotel. Para Akihabara, conviene ir hacia Suehirocho y caminar desde ahí.",
       "routeInfo": {
         "mode": "walking",
         "origin": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
@@ -98,30 +113,30 @@
       "marPick": false
     },
     {
-      "time": "7:20 am",
-      "duration": "3-5 min",
-      "title": "Metro: Tawaramachi → Ueno",
+      "time": "8:50 am",
+      "duration": "7-10 min",
+      "title": "Metro: Tawaramachi → Suehirocho",
       "icon": "subway",
       "tone": "travel",
       "items": [
         "Entrar a Tawaramachi Station.",
         "Tomar Tokyo Metro Ginza Line.",
         "Dirección: Shibuya.",
-        "Bajarse en Ueno Station.",
+        "Bajarse en Suehirocho Station.",
         "Costo estimado 2 personas: ¥360 - ¥440 aprox."
       ],
-      "detail": "Primer tramo para conectar Asakusa/Tawaramachi con JR y moverse hacia Shinjuku.",
+      "detail": "Suehirocho queda muy bien para entrar caminando a la zona de Akihabara sin hacer transbordos.",
       "routeInfo": {
         "mode": "transit",
         "origin": "Tawaramachi Station, Tokyo Metro Ginza Line, Tokyo, Japan",
-        "destination": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
-        "note": "Tokyo Metro Ginza Line desde Tawaramachi Station hasta Ueno Station.",
-        "fixedDuration": "3-5 min",
+        "destination": "Suehirocho Station, Tokyo Metro Ginza Line, Tokyo, Japan",
+        "note": "Tokyo Metro Ginza Line desde Tawaramachi Station hasta Suehirocho Station.",
+        "fixedDuration": "7-10 min",
         "fixedDistance": "Tokyo Metro Ginza Line",
         "fareEstimateJpy": 180,
         "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Tokyo Metro Ginza Line: Tawaramachi → Ueno.",
-        "mapsQuery": "Tawaramachi Station Ginza Line to Ueno Station by subway",
+        "fallbackMessage": "Tramo fijo en Tokyo Metro Ginza Line: Tawaramachi → Suehirocho.",
+        "mapsQuery": "Tawaramachi Station Ginza Line to Suehirocho Station by subway",
         "transitModes": [
           "SUBWAY",
           "RAIL",
@@ -131,442 +146,524 @@
       "marPick": false
     },
     {
-      "time": "7:25 am",
+      "time": "9:00 am",
       "duration": "8-12 min",
-      "title": "Transbordo Ueno Metro → JR Ueno",
-      "icon": "sync_alt",
-      "tone": "travel",
-      "items": [
-        "Bajarse en Ueno Station.",
-        "Seguir señales hacia JR Yamanote Line.",
-        "Buscar dirección Ikebukuro / Shinjuku.",
-        "Tener paciencia porque el transbordo entre Metro y JR puede tomar unos minutos."
-      ],
-      "detail": "Este transbordo conecta Tokyo Metro Ginza Line con JR Yamanote para llegar hacia Shinjuku.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan",
-        "destination": "JR Ueno Station, Yamanote Line, Tokyo, Japan",
-        "note": "Transbordo desde Tokyo Metro Ginza Line hacia JR Yamanote Line en Ueno.",
-        "fixedDuration": "8-12 min",
-        "mapsQuery": "Ueno Station Ginza Line to JR Ueno Station Yamanote Line walking"
-      },
-      "marPick": false
-    },
-    {
-      "time": "7:40 am",
-      "duration": "25-35 min",
-      "title": "JR Yamanote: Ueno → Shinjuku",
-      "icon": "train",
-      "tone": "travel",
-      "items": [
-        "Tomar JR Yamanote Line desde Ueno Station.",
-        "Dirección: Ikebukuro / Shinjuku.",
-        "Bajarse en Shinjuku Station.",
-        "Costo estimado 2 personas: ¥420 - ¥520 aprox."
-      ],
-      "detail": "Este es el tramo largo dentro de Tokyo para conectar con Keio Line hacia Yomiuriland.",
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "JR Ueno Station, Yamanote Line, Tokyo, Japan",
-        "destination": "JR Shinjuku Station, Yamanote Line, Tokyo, Japan",
-        "note": "JR Yamanote Line desde Ueno Station hasta Shinjuku Station.",
-        "fixedDuration": "25-35 min",
-        "fixedDistance": "JR Yamanote Line",
-        "fareEstimateJpy": 210,
-        "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en JR Yamanote Line: Ueno → Shinjuku.",
-        "mapsQuery": "JR Ueno Station Yamanote Line to JR Shinjuku Station by train",
-        "transitModes": [
-          "RAIL",
-          "TRAIN"
-        ]
-      },
-      "marPick": false
-    },
-    {
-      "time": "8:15 am",
-      "duration": "10-15 min",
-      "title": "Transbordo JR Shinjuku → Keio Line",
-      "icon": "sync_alt",
-      "tone": "travel",
-      "items": [
-        "Bajarse en Shinjuku Station.",
-        "Seguir señales hacia Keio Line.",
-        "Buscar tren hacia Keio-yomiuri-land / Hashimoto / Keio-Tama-Center según ruta disponible.",
-        "Confirmar si hay tren directo o si hace falta transbordo en Chofu."
-      ],
-      "detail": "Shinjuku es grande. Este bloque es importante porque el acceso a Keio Line puede tomar tiempo si no conocen la estación.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "JR Shinjuku Station, Tokyo, Japan",
-        "destination": "Keio Shinjuku Station, Tokyo, Japan",
-        "note": "Transbordo interno desde JR Shinjuku hacia Keio Line.",
-        "fixedDuration": "10-15 min",
-        "mapsQuery": "JR Shinjuku Station to Keio Shinjuku Station walking"
-      },
-      "marPick": false
-    },
-    {
-      "time": "8:30 am",
-      "duration": "25-35 min",
-      "title": "Keio Line: Shinjuku → Keio-yomiuri-land",
-      "icon": "train",
-      "tone": "travel",
-      "items": [
-        "Tomar Keio Line desde Shinjuku.",
-        "Dirección: Hashimoto / Keio-Tama-Center según tren.",
-        "Si Maps lo indica, hacer transbordo en Chofu hacia Keio Sagamihara Line.",
-        "Bajarse en Keio-yomiuri-land Station.",
-        "Costo estimado 2 personas: ¥700 - ¥900 aprox."
-      ],
-      "detail": "Este es el tramo principal hacia Yomiuriland/PokéPark KANTO. Conviene seguir Google Maps en vivo porque algunos trenes pueden requerir transbordo.",
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Keio Shinjuku Station, Tokyo, Japan",
-        "destination": "Keio-yomiuri-land Station, Tokyo, Japan",
-        "note": "Keio Line / Keio Sagamihara Line desde Shinjuku hasta Keio-yomiuri-land Station. Puede requerir transbordo en Chofu según tren.",
-        "fixedDuration": "25-35 min",
-        "fixedDistance": "Keio Line / Keio Sagamihara Line",
-        "fareEstimateJpy": 390,
-        "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo hacia Yomiuriland: Shinjuku → Keio-yomiuri-land, con posible transbordo en Chofu.",
-        "mapsQuery": "Keio Shinjuku Station to Keio-yomiuri-land Station by train",
-        "transitModes": [
-          "RAIL",
-          "TRAIN"
-        ]
-      },
-      "marPick": false
-    },
-    {
-      "time": "9:10 am",
-      "duration": "10-20 min",
-      "title": "Keio-yomiuri-land Station → Yomiuriland / PokéPark KANTO",
+      "title": "Caminata Suehirocho → Akihabara Electric Town",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Bajarse en Keio-yomiuri-land Station.",
-        "Seguir señales hacia Yomiuriland.",
-        "Usar la ruta que indique el parque/Maps ese día: bus, góndola o caminata según operación disponible.",
-        "Tener entradas/reservas listas antes de llegar al acceso."
+        "Salir de Suehirocho Station.",
+        "Caminar hacia la zona principal de Akihabara.",
+        "Ubicar Electric Town / tiendas principales.",
+        "Preparar mapa de tiendas.",
+        "Costo: $0."
       ],
-      "detail": "PokéPark KANTO está dentro de Yomiuriland. Este último tramo puede variar según el acceso disponible, por eso conviene revisar la ruta oficial y Google Maps el mismo día.",
+      "detail": "Desde Suehirocho se entra muy bien al área de tiendas de Akihabara. Es una ventaja de dormir en Asakusa/Tawaramachi.",
       "routeInfo": {
-        "mode": "transit",
-        "origin": "Keio-yomiuri-land Station, Tokyo, Japan",
-        "destination": "Yomiuriland, Tokyo, Japan",
-        "note": "Último tramo desde Keio-yomiuri-land Station hacia Yomiuriland / PokéPark KANTO. Revisar bus, góndola o acceso indicado ese día.",
-        "fixedDuration": "10-20 min",
-        "mapsQuery": "Keio-yomiuri-land Station to Yomiuriland PokéPark KANTO",
-        "transitModes": [
-          "BUS",
-          "RAIL",
-          "TRAIN"
-        ]
+        "mode": "walking",
+        "origin": "Suehirocho Station, Tokyo, Japan",
+        "destination": "Akihabara Electric Town, Tokyo, Japan",
+        "note": "Caminata desde Suehirocho Station hacia Akihabara Electric Town.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "Suehirocho Station to Akihabara Electric Town walking"
       },
       "marPick": false
     },
     {
-      "time": "9:30 am",
-      "duration": "9:30 - 10:00 am",
-      "title": "Llegada a Yomiuriland / margen de entrada",
-      "icon": "confirmation_number",
-      "tone": "arrival",
+      "time": "9:15 am",
+      "duration": "9:15 - 9:55 am",
+      "title": "BOOKOFF Akihabara Ekimae Store",
+      "icon": "storefront",
+      "tone": "shopping",
+      "marListStop": true,
+      "animeFigureStop": true,
       "items": [
-        "Llegar a Yomiuriland.",
-        "Ubicar entrada o acceso de PokéPark KANTO.",
-        "Revisar entradas/reservas.",
-        "Ir al baño antes de entrar.",
-        "Comprar agua si hace falta."
+        "Parada explícita de la lista de Mar.",
+        "Buscar manga, videojuegos, figuras pequeñas, CDs, merch y artículos de segunda mano.",
+        "Buena primera parada porque puede tener precios más razonables.",
+        "Revisar estado de cajas si compran figuras.",
+        "Compras opcionales 2 personas: $20 - $100."
       ],
-      "detail": "Este margen permite absorber cualquier atraso del traslado desde Asakusa/Tawaramachi.",
+      "detail": "BOOKOFF es buena entrada a Akihabara porque permite revisar segunda mano antes de ir a tiendas más especializadas.",
       "location": {
-        "name": "Yomiuriland",
-        "mapsQuery": "Yomiuriland Tokyo"
+        "name": "BOOKOFF Akihabara Ekimae Store",
+        "mapsQuery": "BOOKOFF Akihabara Ekimae Store Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "9:55 am",
+      "duration": "5-10 min",
+      "title": "Caminata BOOKOFF → Radio Kaikan",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de BOOKOFF hacia Radio Kaikan.",
+        "Caminar dentro de la zona central de Akihabara.",
+        "Mantener compras compactas.",
+        "Costo: $0."
+      ],
+      "detail": "Radio Kaikan es uno de los mejores edificios para ver muchas tiendas de figuras en un solo lugar.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "BOOKOFF Akihabara Ekimae Store, Tokyo, Japan",
+        "destination": "Akihabara Radio Kaikan, Tokyo, Japan",
+        "note": "Caminata desde BOOKOFF Akihabara hacia Radio Kaikan.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "BOOKOFF Akihabara Ekimae Store to Akihabara Radio Kaikan walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "10:05 am",
+      "duration": "10:05 - 11:05 am",
+      "title": "Radio Kaikan",
+      "icon": "toys",
+      "tone": "shopping",
+      "animeFigureStop": true,
+      "items": [
+        "Bloque fuerte para usted: tiendas de figuras, anime, manga, videojuegos y coleccionables.",
+        "Revisar vitrinas y pisos principales.",
+        "Buscar figuras nuevas y usadas.",
+        "Comparar precios antes de comprar.",
+        "Compras opcionales 2 personas: $40 - $180."
+      ],
+      "detail": "Radio Kaikan es ideal para ver muchas opciones sin caminar por toda la zona. Es buen punto para figuras, pero conviene no comprar impulsivamente en la primera vitrina.",
+      "location": {
+        "name": "Akihabara Radio Kaikan",
+        "mapsQuery": "Akihabara Radio Kaikan Tokyo"
       },
       "showMap": false,
       "marPick": false
     },
     {
-      "time": "10:00 am",
-      "duration": "10:00 am - 2:30 pm",
-      "title": "PokéPark KANTO / Yomiuriland",
-      "icon": "catching_pokemon",
-      "tone": "arrival",
-      "marListStop": true,
+      "time": "11:05 am",
+      "duration": "5-10 min",
+      "title": "Caminata Radio Kaikan → AmiAmi Akihabara",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Radio Kaikan hacia AmiAmi Akihabara.",
+        "Mantener lista de figuras o series que quiere buscar.",
+        "Costo: $0."
+      ],
+      "detail": "AmiAmi es buena parada para figuras y productos más especializados.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Akihabara Radio Kaikan, Tokyo, Japan",
+        "destination": "AmiAmi Akihabara, Tokyo, Japan",
+        "note": "Caminata desde Radio Kaikan hacia AmiAmi Akihabara.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Akihabara Radio Kaikan to AmiAmi Akihabara walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "11:15 am",
+      "duration": "45 min",
+      "title": "AmiAmi Akihabara",
+      "icon": "shopping_bag",
+      "tone": "shopping",
       "animeFigureStop": true,
       "items": [
-        "Parada explícita de la lista de Mar: PokePark Kanto.",
-        "Entrar a Yomiuriland / PokéPark KANTO con entradas/reserva listas.",
-        "Recorrer las áreas principales del parque Pokémon.",
-        "Priorizar Pokémon Forest y Sedge Town si están disponibles con su tipo de entrada.",
-        "Revisar horarios de shows, encuentros, tienda y comida temática.",
-        "Comprar merch exclusivo si les gusta.",
-        "Presupuesto 2 personas: alto y variable según entrada/compras."
+        "Tienda recomendada para figuras y coleccionables.",
+        "Buscar figuras nuevas, pre-owned, nendoroids, scale figures o goods.",
+        "Revisar condición de productos usados.",
+        "Comparar contra Radio Kaikan antes de decidir.",
+        "Compras opcionales 2 personas: $30 - $150."
       ],
-      "detail": "PokéPark KANTO es el bloque principal del día. Este día debe dejar bastante margen para recorrerlo sin correr.",
+      "detail": "AmiAmi es muy buena para figuras. Si ve algo grande, piense en espacio de maleta antes de comprar.",
       "location": {
-        "name": "PokéPark KANTO / Yomiuriland",
-        "mapsQuery": "PokéPark KANTO Yomiuriland Tokyo"
+        "name": "AmiAmi Akihabara",
+        "mapsQuery": "AmiAmi Akihabara Tokyo"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "12:00 pm",
+      "duration": "12:00 - 1:00 pm",
+      "title": "Almuerzo en Akihabara",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Almorzar en Akihabara.",
+        "Opciones de la lista de Mar: Sushiro o Yakiniku Syo Akihabara.",
+        "Elegir según hambre y tiempo.",
+        "Presupuesto 2 personas: $35 - $80."
+      ],
+      "detail": "Después de varias tiendas de figuras conviene hacer pausa antes de seguir con las paradas de Mar.",
+      "location": {
+        "name": "Sushiro / Yakiniku Syo Akihabara",
+        "mapsQuery": "Sushiro Akihabara or Yakiniku Syo Akihabara"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "1:00 pm",
+      "duration": "10 min",
+      "title": "Caminata almuerzo → Dengama",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Caminar desde la zona de almuerzo hacia Dengama.",
+        "Mantener compras de figuras bien guardadas.",
+        "Costo: $0."
+      ],
+      "detail": "Dengama queda como primera parada de tarde de la lista de Mar.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Akihabara, Tokyo, Japan",
+        "destination": "Dengama, Tokyo, Japan",
+        "note": "Caminata dentro de Akihabara hacia Dengama.",
+        "fixedDuration": "5-15 min",
+        "mapsQuery": "Akihabara Tokyo to Dengama Tokyo walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "1:15 pm",
+      "duration": "30 min",
+      "title": "Dengama",
+      "icon": "storefront",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Entrar a revisar la tienda y productos.",
+        "Mantener visita corta para poder cubrir FU WA RI y tag stationery.",
+        "Compras opcionales: $10 - $60."
+      ],
+      "detail": "Se deja como parada definida dentro del bloque de Akihabara, sin moverla a otro día.",
+      "location": {
+        "name": "Dengama",
+        "mapsQuery": "Dengama Akihabara Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "1:45 pm",
+      "duration": "10 min",
+      "title": "Caminata Dengama → FU WA RI",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Dengama hacia FU WA RI.",
+        "Seguir la ruta de Maps por calles principales.",
+        "Costo: $0."
+      ],
+      "detail": "Este bloque mantiene las tiendas de Mar ordenadas sin saltos vagos.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Dengama, Tokyo, Japan",
+        "destination": "FU WA RI, Tokyo, Japan",
+        "note": "Caminata desde Dengama hacia FU WA RI.",
+        "fixedDuration": "5-15 min",
+        "mapsQuery": "Dengama Akihabara to FU WA RI Tokyo walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "2:00 pm",
+      "duration": "30 min",
+      "title": "FU WA RI",
+      "icon": "shopping_bag",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Tienda definida para revisar productos y compras pequeñas.",
+        "Mantener visita ligera.",
+        "Compras opcionales: $10 - $60."
+      ],
+      "detail": "FU WA RI queda como parada de compras tranquila antes de papelería y cierre de Akihabara.",
+      "location": {
+        "name": "FU WA RI",
+        "mapsQuery": "FU WA RI Tokyo"
       },
       "showMap": false,
       "marPick": true
     },
     {
       "time": "2:30 pm",
-      "duration": "2:30 - 3:00 pm",
-      "title": "Salida de PokéPark / pausa antes del regreso",
-      "icon": "local_cafe",
-      "tone": "rest",
-      "items": [
-        "Hacer pausa antes de volver a Tokyo centro.",
-        "Ir al baño.",
-        "Comprar agua o snack.",
-        "Revisar compras y guardar bien merch.",
-        "Confirmar ruta de regreso a Keio-yomiuri-land Station."
-      ],
-      "detail": "Antes del regreso conviene ordenar bolsas y descansar un poco. El regreso a Nihonbashi toma tiempo.",
-      "location": {
-        "name": "Yomiuriland",
-        "mapsQuery": "Yomiuriland Tokyo"
-      },
-      "showMap": false,
-      "marPick": false
-    },
-    {
-      "time": "3:00 pm",
-      "duration": "10-20 min",
-      "title": "Yomiuriland → Keio-yomiuri-land Station",
+      "duration": "10 min",
+      "title": "Caminata FU WA RI → tag stationery shop",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir de Yomiuriland hacia Keio-yomiuri-land Station.",
-        "Usar el acceso disponible: bus, góndola o caminata según operación.",
-        "Tener Suica/ICOCA lista.",
-        "Costo variable según opción."
-      ],
-      "detail": "Se repite el último tramo en sentido contrario para conectar con Keio Line.",
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Yomiuriland, Tokyo, Japan",
-        "destination": "Keio-yomiuri-land Station, Tokyo, Japan",
-        "note": "Regreso desde Yomiuriland / PokéPark KANTO hacia Keio-yomiuri-land Station.",
-        "fixedDuration": "10-20 min",
-        "mapsQuery": "Yomiuriland to Keio-yomiuri-land Station",
-        "transitModes": [
-          "BUS",
-          "RAIL",
-          "TRAIN"
-        ]
-      },
-      "marPick": false
-    },
-    {
-      "time": "3:25 pm",
-      "duration": "25-35 min",
-      "title": "Keio Line: Keio-yomiuri-land → Shinjuku",
-      "icon": "train",
-      "tone": "travel",
-      "items": [
-        "Tomar Keio Sagamihara Line / Keio Line de regreso.",
-        "Dirección: Shinjuku.",
-        "Hacer transbordo en Chofu si Maps lo indica.",
-        "Bajarse en Shinjuku Station.",
-        "Costo estimado 2 personas: ¥700 - ¥900 aprox."
-      ],
-      "detail": "Regreso principal desde Yomiuriland hacia Tokyo centro.",
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Keio-yomiuri-land Station, Tokyo, Japan",
-        "destination": "Keio Shinjuku Station, Tokyo, Japan",
-        "note": "Keio Sagamihara Line / Keio Line desde Keio-yomiuri-land Station hasta Shinjuku. Puede requerir transbordo en Chofu.",
-        "fixedDuration": "25-35 min",
-        "fixedDistance": "Keio Line / Keio Sagamihara Line",
-        "fareEstimateJpy": 390,
-        "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo de regreso hacia Shinjuku desde Keio-yomiuri-land.",
-        "mapsQuery": "Keio-yomiuri-land Station to Keio Shinjuku Station by train",
-        "transitModes": [
-          "RAIL",
-          "TRAIN"
-        ]
-      },
-      "marPick": false
-    },
-    {
-      "time": "4:00 pm",
-      "duration": "10-15 min",
-      "title": "Transbordo Keio Shinjuku → Tokyo Metro Marunouchi",
-      "icon": "sync_alt",
-      "tone": "travel",
-      "items": [
-        "Llegar a Shinjuku.",
-        "Seguir señales hacia Tokyo Metro Marunouchi Line.",
-        "Buscar dirección Ginza / Tokyo Station.",
-        "Mantener compras Pokémon juntas."
-      ],
-      "detail": "Este transbordo permite moverse hacia Ginza/Tokyo Station y conectar hacia Nihonbashi.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Keio Shinjuku Station, Tokyo, Japan",
-        "destination": "Shinjuku Station Tokyo Metro Marunouchi Line, Tokyo, Japan",
-        "note": "Transbordo interno desde Keio Shinjuku hacia Tokyo Metro Marunouchi Line.",
-        "fixedDuration": "10-15 min",
-        "mapsQuery": "Keio Shinjuku Station to Shinjuku Station Marunouchi Line walking"
-      },
-      "marPick": false
-    },
-    {
-      "time": "4:15 pm",
-      "duration": "18-22 min",
-      "title": "Metro: Shinjuku → Ginza",
-      "icon": "subway",
-      "tone": "travel",
-      "items": [
-        "Tomar Tokyo Metro Marunouchi Line desde Shinjuku.",
-        "Dirección: Ikebukuro pasando por Ginza.",
-        "Bajarse en Ginza Station.",
-        "Costo estimado 2 personas: ¥420 aprox."
-      ],
-      "detail": "Regreso hacia el centro de Tokyo para conectar con Nihonbashi/Pokémon Center Tokyo DX.",
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Shinjuku Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
-        "destination": "Ginza Station, Tokyo Metro Marunouchi Line, Tokyo, Japan",
-        "note": "Tokyo Metro Marunouchi Line desde Shinjuku Station hasta Ginza Station.",
-        "fixedDuration": "18-22 min",
-        "fixedDistance": "Tokyo Metro Marunouchi Line",
-        "fareEstimateJpy": 210,
-        "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Tokyo Metro Marunouchi Line: Shinjuku → Ginza.",
-        "mapsQuery": "Shinjuku Station Marunouchi Line to Ginza Station Marunouchi Line by subway",
-        "transitModes": [
-          "SUBWAY",
-          "RAIL",
-          "TRAIN"
-        ]
-      },
-      "marPick": false
-    },
-    {
-      "time": "4:40 pm",
-      "duration": "5-10 min",
-      "title": "Transbordo / traslado Ginza → Nihonbashi",
-      "icon": "subway",
-      "tone": "travel",
-      "items": [
-        "Moverse desde Ginza hacia Nihonbashi.",
-        "Opción práctica: Tokyo Metro Ginza Line hacia Nihonbashi.",
-        "Bajarse en Nihonbashi Station.",
-        "Costo estimado 2 personas: ¥360 - ¥440 aprox."
-      ],
-      "detail": "Pokémon Center Tokyo DX queda en Nihonbashi, así que desde Ginza es un tramo corto.",
-      "routeInfo": {
-        "mode": "transit",
-        "origin": "Ginza Station, Tokyo Metro Ginza Line, Tokyo, Japan",
-        "destination": "Nihonbashi Station, Tokyo Metro Ginza Line, Tokyo, Japan",
-        "note": "Tokyo Metro Ginza Line desde Ginza Station hacia Nihonbashi Station.",
-        "fixedDuration": "5-10 min",
-        "fixedDistance": "Tokyo Metro Ginza Line",
-        "fareEstimateJpy": 180,
-        "fareEstimateLabel": "por persona",
-        "fallbackMessage": "Tramo fijo en Tokyo Metro Ginza Line: Ginza → Nihonbashi.",
-        "mapsQuery": "Ginza Station Ginza Line to Nihonbashi Station by subway",
-        "transitModes": [
-          "SUBWAY",
-          "RAIL",
-          "TRAIN"
-        ]
-      },
-      "marPick": false
-    },
-    {
-      "time": "4:55 pm",
-      "duration": "5-10 min",
-      "title": "Caminata Nihonbashi Station → Pokémon Center Tokyo DX",
-      "icon": "directions_walk",
-      "tone": "travel",
-      "items": [
-        "Salir de Nihonbashi Station.",
-        "Caminar hacia Pokémon Center Tokyo DX.",
-        "Ir con compras de PokéPark bien organizadas.",
+        "Caminar desde FU WA RI hacia tag stationery shop.",
+        "Revisar si llevan efectivo suficiente para tiendas pequeñas.",
         "Costo: $0."
       ],
-      "detail": "Este tramo es corto y deja listo el bloque de Pokémon Center Tokyo DX.",
+      "detail": "Papelería entra muy bien como cierre de compras de tarde antes de moverse a Odaiba.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Nihonbashi Station, Tokyo, Japan",
-        "destination": "Pokémon Center Tokyo DX, Nihonbashi, Tokyo, Japan",
-        "note": "Caminata desde Nihonbashi Station hacia Pokémon Center Tokyo DX.",
-        "fixedDuration": "5-10 min",
-        "mapsQuery": "Nihonbashi Station to Pokémon Center Tokyo DX walking"
+        "origin": "FU WA RI, Tokyo, Japan",
+        "destination": "tag stationery shop, Tokyo, Japan",
+        "note": "Caminata desde FU WA RI hacia tag stationery shop.",
+        "fixedDuration": "5-15 min",
+        "mapsQuery": "FU WA RI Tokyo to tag stationery shop Tokyo walking"
       },
       "marPick": false
     },
     {
-      "time": "5:10 pm",
-      "duration": "5:10 - 6:20 pm",
-      "title": "Pokémon Center Tokyo DX",
-      "icon": "catching_pokemon",
+      "time": "2:45 pm",
+      "duration": "35 min",
+      "title": "tag stationery shop",
+      "icon": "edit_note",
       "tone": "shopping",
       "marListStop": true,
-      "animeFigureStop": true,
       "items": [
         "Parada explícita de la lista de Mar.",
-        "Visitar Pokémon Center Tokyo DX en Nihonbashi.",
-        "Buscar productos diferentes a Osaka, Kyoto, Shibuya y Skytree.",
-        "Revisar peluches, figuras pequeñas, cartas, llaveros, ropa y souvenirs.",
-        "Compras opcionales 2 personas: $40 - $150."
+        "Buscar papelería japonesa, stickers, libretas, plumas, sellos o regalos pequeños.",
+        "Buena tienda para souvenirs livianos.",
+        "Compras opcionales: $15 - $70."
       ],
-      "detail": "Pokémon Center Tokyo DX es una parada fuerte para cerrar el día Pokémon. Aunque vengan desde PokéPark, vale la pena si tienen energía.",
+      "detail": "Papelería japonesa es buena compra porque no ocupa demasiado espacio y suele ser especial.",
       "location": {
-        "name": "Pokémon Center Tokyo DX",
-        "mapsQuery": "Pokémon Center Tokyo DX Nihonbashi Tokyo"
+        "name": "tag stationery shop",
+        "mapsQuery": "tag stationery shop Tokyo"
       },
       "showMap": false,
       "marPick": true
     },
     {
-      "time": "6:20 pm",
+      "time": "3:20 pm",
+      "duration": "30 min",
+      "title": "Última vuelta rápida de figuras en Akihabara",
+      "icon": "toys",
+      "tone": "shopping",
+      "animeFigureStop": true,
+      "items": [
+        "Último bloque corto para regresar por una figura o tienda que haya quedado pendiente.",
+        "Opciones: Mandarake Complex, Radio Kaikan, AmiAmi o tiendas cercanas.",
+        "No extender demasiado porque todavía falta Odaiba.",
+        "Compras opcionales: $20 - $120."
+      ],
+      "detail": "Este bloque existe para usted: si vio algo antes, puede volver a comprarlo. Si no, se usa como margen de descanso antes de Odaiba.",
+      "location": {
+        "name": "Akihabara figure shops",
+        "mapsQuery": "Akihabara figure shops Mandarake AmiAmi Radio Kaikan"
+      },
+      "showMap": false,
+      "marPick": false
+    },
+    {
+      "time": "3:50 pm",
       "duration": "5-10 min",
-      "title": "Caminata interna Pokémon Center DX → Pokémon Café",
+      "title": "Caminata tiendas → Akihabara Station",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Moverse desde Pokémon Center Tokyo DX hacia Pokémon Café Tokyo.",
-        "Tener reserva lista si lograron conseguirla.",
-        "Llegar unos minutos antes de la hora reservada.",
-        "Mantener compras organizadas."
+        "Volver hacia Akihabara Station.",
+        "Buscar JR Yamanote Line.",
+        "Dirección: Tokyo / Shinagawa.",
+        "Mantener compras organizadas antes de subir al tren."
       ],
-      "detail": "Pokémon Café está asociado a la zona de Pokémon Center Tokyo DX, así que es el cierre ideal si consiguen reservación.",
+      "detail": "Este tramo prepara la conexión hacia Odaiba por Shimbashi y Yurikamome.",
       "routeInfo": {
         "mode": "walking",
-        "origin": "Pokémon Center Tokyo DX, Nihonbashi, Tokyo, Japan",
-        "destination": "Pokémon Café Tokyo, Nihonbashi, Tokyo, Japan",
-        "note": "Traslado interno/corto desde Pokémon Center Tokyo DX hacia Pokémon Café Tokyo.",
+        "origin": "Akihabara Electric Town, Tokyo, Japan",
+        "destination": "JR Akihabara Station, Tokyo, Japan",
+        "note": "Caminata desde zona de tiendas de Akihabara hacia JR Akihabara Station.",
         "fixedDuration": "5-10 min",
-        "mapsQuery": "Pokémon Center Tokyo DX to Pokémon Café Tokyo walking"
+        "mapsQuery": "Akihabara Electric Town to JR Akihabara Station walking"
       },
       "marPick": false
     },
     {
-      "time": "6:35 pm",
-      "duration": "reservación",
-      "title": "Pokémon Café Tokyo",
-      "icon": "local_cafe",
-      "tone": "food",
+      "time": "4:05 pm",
+      "duration": "12-15 min",
+      "title": "JR Yamanote: Akihabara → Shimbashi",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar JR Yamanote Line desde Akihabara Station.",
+        "Dirección: Tokyo / Shinagawa.",
+        "Bajarse en Shimbashi Station.",
+        "Costo estimado 2 personas: ¥340 aprox."
+      ],
+      "detail": "Primer tramo hacia Odaiba. Shimbashi es la conexión práctica para tomar Yurikamome.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "JR Akihabara Station, Yamanote Line, Tokyo, Japan",
+        "destination": "JR Shimbashi Station, Yamanote Line, Tokyo, Japan",
+        "note": "JR Yamanote Line desde Akihabara Station hasta Shimbashi Station.",
+        "fixedDuration": "12-15 min",
+        "fixedDistance": "JR Yamanote Line",
+        "fareEstimateJpy": 170,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en JR Yamanote Line: Akihabara → Shimbashi.",
+        "mapsQuery": "JR Akihabara Station Yamanote Line to JR Shimbashi Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:20 pm",
+      "duration": "8-12 min",
+      "title": "Transbordo en Shimbashi hacia Yurikamome",
+      "icon": "sync_alt",
+      "tone": "travel",
+      "items": [
+        "Bajarse en Shimbashi Station.",
+        "Seguir señales hacia Yurikamome Line.",
+        "Buscar dirección Toyosu.",
+        "Tener Suica/ICOCA lista."
+      ],
+      "detail": "Yurikamome es el tren elevado hacia Odaiba. El transbordo puede requerir caminar dentro de la estación.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "JR Shimbashi Station, Tokyo, Japan",
+        "destination": "Yurikamome Shimbashi Station, Tokyo, Japan",
+        "note": "Transbordo caminando desde JR Shimbashi hacia Yurikamome Shimbashi Station.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "JR Shimbashi Station to Yurikamome Shimbashi Station walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "4:35 pm",
+      "duration": "15-20 min",
+      "title": "Yurikamome: Shimbashi → Daiba",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar Yurikamome Line desde Shimbashi.",
+        "Dirección: Toyosu.",
+        "Bajarse en Daiba Station.",
+        "Disfrutar vistas desde el tren elevado.",
+        "Costo estimado 2 personas: ¥660 - ¥800 aprox."
+      ],
+      "detail": "Este tramo es parte bonita del día porque Yurikamome da vistas de la bahía y Odaiba.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Yurikamome Shimbashi Station, Tokyo, Japan",
+        "destination": "Daiba Station, Yurikamome Line, Tokyo, Japan",
+        "note": "Yurikamome Line desde Shimbashi Station hasta Daiba Station.",
+        "fixedDuration": "15-20 min",
+        "fixedDistance": "Yurikamome Line",
+        "fareEstimateJpy": 330,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Yurikamome Line: Shimbashi → Daiba.",
+        "mapsQuery": "Yurikamome Shimbashi Station to Daiba Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:00 pm",
+      "duration": "5-10 min",
+      "title": "Caminata Daiba Station → Daiba 1-chome Shopping Street",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Daiba Station.",
+        "Caminar hacia Daiba 1-chome Shopping Street.",
+        "Ubicar la zona retro/comercial.",
+        "Costo: $0."
+      ],
+      "detail": "Este tramo sí es caminando porque ya están en Odaiba.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Daiba Station, Tokyo, Japan",
+        "destination": "Daiba 1-chome Shopping Street, Tokyo, Japan",
+        "note": "Caminata desde Daiba Station hacia Daiba 1-chome Shopping Street.",
+        "fixedDuration": "5-10 min",
+        "mapsQuery": "Daiba Station to Daiba 1-chome Shopping Street walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "5:10 pm",
+      "duration": "45 min",
+      "title": "Daiba 1-chome Shopping Street",
+      "icon": "storefront",
+      "tone": "shopping",
+      "marListStop": true,
+      "items": [
+        "Parada explícita de la lista de Mar.",
+        "Pasear por la zona retro de tiendas.",
+        "Ver snacks, juegos, dulces y souvenirs.",
+        "Presupuesto 2 personas: $15 - $60."
+      ],
+      "detail": "Daiba 1-chome es buen contraste después de Akihabara: más retro, casual y divertido.",
+      "location": {
+        "name": "Daiba 1-chome Shopping Street",
+        "mapsQuery": "Daiba 1-chome Shopping Street Tokyo"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "5:55 pm",
+      "duration": "15-20 min",
+      "title": "Caminata Daiba 1-chome → DiverCity / Unicorn Gundam",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Daiba 1-chome hacia DiverCity Tokyo Plaza.",
+        "Caminar hacia la plaza del Unicorn Gundam.",
+        "Costo: $0."
+      ],
+      "detail": "El Gundam queda en DiverCity, así que conviene caminar desde Daiba 1-chome y cerrar la tarde ahí.",
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Daiba 1-chome Shopping Street, Tokyo, Japan",
+        "destination": "Unicorn Gundam Statue, DiverCity Tokyo Plaza, Tokyo, Japan",
+        "note": "Caminata desde Daiba 1-chome hacia Unicorn Gundam en DiverCity Tokyo Plaza.",
+        "fixedDuration": "15-20 min",
+        "mapsQuery": "Daiba 1-chome Shopping Street to Unicorn Gundam Statue DiverCity walking"
+      },
+      "marPick": false
+    },
+    {
+      "time": "6:15 pm",
+      "duration": "30 min",
+      "title": "Unicorn Gundam",
+      "icon": "smart_toy",
+      "tone": "arrival",
+      "marListStop": true,
       "animeFigureStop": true,
       "items": [
-        "Bloque con reservación previa.",
-        "Cena o merienda temática Pokémon.",
-        "Revisar menú, postres y bebidas especiales.",
+        "Parada explícita de la lista de Mar.",
+        "Ver el Unicorn Gundam en DiverCity.",
+        "Tomar fotos de día/tarde y con luces si ya está anocheciendo.",
+        "Revisar si hay cambio de luces o presentación según horario.",
+        "Costo: $0."
+      ],
+      "detail": "El Unicorn Gundam es una parada perfecta para cerrar la parte anime/figuras del día en Odaiba.",
+      "location": {
+        "name": "Unicorn Gundam Statue",
+        "mapsQuery": "Unicorn Gundam Statue DiverCity Tokyo Plaza"
+      },
+      "showMap": false,
+      "marPick": true
+    },
+    {
+      "time": "6:45 pm",
+      "duration": "6:45 - 8:00 pm",
+      "title": "Cena en Odaiba / DiverCity",
+      "icon": "dinner_dining",
+      "tone": "food",
+      "items": [
+        "Cenar en DiverCity, Aqua City u otra zona cercana de Odaiba.",
+        "Opciones: ramen, sushi casual, tonkatsu, curry, hamburguesa japonesa o food court.",
         "Presupuesto 2 personas: $45 - $90."
       ],
-      "detail": "Este bloque depende totalmente de conseguir reservación. Si no se consigue, se reemplaza por cena en Nihonbashi/Ginza y más tiempo en Pokémon Center Tokyo DX.",
+      "detail": "Cenar en Odaiba evita regresar a Asakusa con hambre y permite cerrar la noche con vistas de la bahía.",
       "location": {
-        "name": "Pokémon Café Tokyo",
-        "mapsQuery": "Pokémon Café Tokyo Nihonbashi"
+        "name": "DiverCity Tokyo Plaza restaurants",
+        "mapsQuery": "DiverCity Tokyo Plaza restaurants dinner"
       },
       "showMap": false,
       "marPick": false
@@ -574,64 +671,117 @@
     {
       "time": "8:00 pm",
       "duration": "20-30 min",
-      "title": "Matsumoto Kiyoshi / farmacia japonesa",
-      "icon": "local_pharmacy",
-      "tone": "shopping",
-      "marListStop": true,
+      "title": "Paseo nocturno corto por Odaiba",
+      "icon": "nightlight",
+      "tone": "night",
       "items": [
-        "Parada explícita de la lista de Mar.",
-        "Comprar cosméticos, skincare, medicamentos básicos permitidos, snacks o artículos japoneses.",
-        "Mantener compras controladas para no sobrecargar maleta.",
-        "Presupuesto 2 personas: $20 - $100."
+        "Dar una vuelta corta por la zona de Odaiba.",
+        "Ver luces, bahía y ambiente nocturno.",
+        "No alargar demasiado porque el regreso toma tiempo.",
+        "Comprar algún snack si hace falta."
       ],
-      "detail": "Matsumoto Kiyoshi se mete al final porque en Nihonbashi/Ginza hay opciones cercanas y es una compra práctica antes de volver al hotel.",
+      "detail": "Odaiba de noche es bonita, pero el día ya viene cargado desde Akihabara. Mantenerlo corto.",
       "location": {
-        "name": "Matsumoto Kiyoshi Ginza / Nihonbashi",
-        "mapsQuery": "Matsumoto Kiyoshi Ginza Nihonbashi Tokyo"
+        "name": "Odaiba waterfront",
+        "mapsQuery": "Odaiba waterfront night view Tokyo"
       },
       "showMap": false,
-      "marPick": true
+      "marPick": false
     },
     {
-      "time": "8:35 pm",
-      "duration": "20-30 min",
-      "title": "Opción recomendada: taxi Nihonbashi → hotel",
-      "icon": "local_taxi",
+      "time": "8:30 pm",
+      "duration": "8-12 min",
+      "title": "Caminata DiverCity → Daiba Station",
+      "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Tomar taxi desde Nihonbashi hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
-        "Recomendado por cansancio y compras de PokéPark / Pokémon Center.",
-        "Evita más transbordos de noche.",
-        "Presupuesto estimado 2 personas: $15 - $30 según tráfico."
+        "Caminar desde DiverCity hacia Daiba Station.",
+        "Buscar Yurikamome Line.",
+        "Tener Suica/ICOCA lista.",
+        "Costo: $0."
       ],
-      "detail": "Después de PokéPark + Pokémon Center, el taxi desde Nihonbashi al hotel ayuda bastante. En tren también es viable, pero menos cómodo con compras.",
+      "detail": "Primer tramo del regreso hacia Asakusa/Tawaramachi.",
       "routeInfo": {
-        "mode": "driving",
-        "origin": "Nihonbashi, Tokyo, Japan",
-        "destination": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
-        "note": "Taxi desde Nihonbashi hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
-        "fixedDuration": "20-30 min",
-        "mapsQuery": "Nihonbashi to Henn na Hotel Premier Tokyo Asakusa Tawaramachi by taxi"
+        "mode": "walking",
+        "origin": "DiverCity Tokyo Plaza, Tokyo, Japan",
+        "destination": "Daiba Station, Tokyo, Japan",
+        "note": "Caminata desde DiverCity Tokyo Plaza hacia Daiba Station.",
+        "fixedDuration": "8-12 min",
+        "mapsQuery": "DiverCity Tokyo Plaza to Daiba Station walking"
       },
       "marPick": false
     },
     {
-      "time": "9:05 pm",
+      "time": "8:45 pm",
+      "duration": "15-20 min",
+      "title": "Yurikamome: Daiba → Shimbashi",
+      "icon": "train",
+      "tone": "travel",
+      "items": [
+        "Tomar Yurikamome Line desde Daiba Station.",
+        "Dirección: Shimbashi.",
+        "Bajarse en Shimbashi Station.",
+        "Costo estimado 2 personas: ¥660 - ¥800 aprox."
+      ],
+      "detail": "Regreso elevado desde Odaiba hacia Shimbashi.",
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Daiba Station, Yurikamome Line, Tokyo, Japan",
+        "destination": "Yurikamome Shimbashi Station, Tokyo, Japan",
+        "note": "Yurikamome Line desde Daiba Station hasta Shimbashi Station.",
+        "fixedDuration": "15-20 min",
+        "fixedDistance": "Yurikamome Line",
+        "fareEstimateJpy": 330,
+        "fareEstimateLabel": "por persona",
+        "fallbackMessage": "Tramo fijo en Yurikamome Line: Daiba → Shimbashi.",
+        "mapsQuery": "Daiba Station Yurikamome Line to Shimbashi Station by train",
+        "transitModes": [
+          "RAIL",
+          "TRAIN"
+        ]
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:10 pm",
+      "duration": "20-30 min",
+      "title": "Opción recomendada: taxi Shimbashi → hotel",
+      "icon": "local_taxi",
+      "tone": "travel",
+      "items": [
+        "Al llegar a Shimbashi, tomar taxi hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "Recomendado por cansancio y compras de Akihabara/Odaiba.",
+        "Evita más transbordos de noche.",
+        "Presupuesto estimado 2 personas: $25 - $45 según tráfico."
+      ],
+      "detail": "También se puede volver en tren/metro, pero después de Akihabara + Odaiba el taxi corto desde Shimbashi puede valer la pena por comodidad.",
+      "routeInfo": {
+        "mode": "driving",
+        "origin": "Shimbashi Station, Tokyo, Japan",
+        "destination": "Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan",
+        "note": "Taxi desde Shimbashi Station hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.",
+        "fixedDuration": "20-30 min",
+        "mapsQuery": "Shimbashi Station to Henn na Hotel Premier Tokyo Asakusa Tawaramachi by taxi"
+      },
+      "marPick": false
+    },
+    {
+      "time": "9:40 pm",
       "duration": "cierre",
-      "title": "Llegada al hotel y ordenar compras Pokémon",
+      "title": "Llegada al hotel y guardar compras",
       "icon": "bedtime",
       "tone": "rest",
       "items": [
-        "Guardar merch de PokéPark y Pokémon Center.",
-        "Separar figuras/peluches para no dañarlos.",
-        "Cargar celulares.",
+        "Guardar figuras, papelería y compras de Odaiba.",
+        "Revisar que las cajas de figuras no se dañen.",
+        "Cargar celulares y batería externa.",
         "Tomar agua y descansar.",
-        "Dormir con margen para el día de Kamakura."
+        "Revisar el Día 16: Kamakura desde Tokyo."
       ],
-      "detail": "Este día puede terminar con muchas compras Pokémon, así que conviene ordenar antes de que se acumulen bolsas.",
+      "detail": "Día muy bueno para compras y anime. Lo importante al llegar es ordenar bien lo comprado para que no se dañe en maleta.",
       "showMap": false,
       "marPick": false
     }
   ],
-  "note": "Meta del día: dedicar el día al universo Pokémon desde Henn na Hotel Premier Tokyo Asakusa Tawaramachi: salir temprano hacia Yomiuriland / PokéPark KANTO, volver al centro para Pokémon Center Tokyo DX, intentar Pokémon Café Tokyo si consiguen reserva, hacer una parada corta en Matsumoto Kiyoshi y regresar cómodo al hotel, idealmente en taxi desde Nihonbashi para evitar transbordos de noche."
+  "note": "Meta del día: convertir el miércoles 21 de octubre en el Día 15 de Akihabara + Odaiba, después de haber pasado PokéPark KANTO al Día 14. Aprovechar que el hotel está en Asakusa/Tawaramachi para llegar fácil a Akihabara por Tawaramachi → Suehirocho, dedicar la mañana y primera tarde a tiendas de figuras/anime y paradas de Mar como BOOKOFF, Dengama, FU WA RI, tag stationery shop y opción de comida en Sushiro/Yakiniku Syo; luego moverse a Odaiba por Shimbashi + Yurikamome para Daiba 1-chome Shopping Street, Unicorn Gundam, cena y regreso cómodo al hotel, idealmente en taxi desde Shimbashi."
 }
