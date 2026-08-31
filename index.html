@@ -5685,6 +5685,731 @@
       }
     }
 
+    /* Modern minimal redesign */
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --ink: #111827;
+      --muted: #667085;
+      --line: #e5e7eb;
+      --navy: #101828;
+      --blue: #2563eb;
+      --coral: #ef4444;
+      --mint: #ecfdf5;
+      --mint-ink: #047857;
+      --amber: #fffbeb;
+      --amber-ink: #b45309;
+      --radius: 18px;
+      --radius-sm: 12px;
+      --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+      --glass: rgba(255, 255, 255, 0.88);
+      --control: #f8fafc;
+      --control-hover: #eef2f7;
+      --primary: #111827;
+      --primary-ink: #ffffff;
+    }
+
+    body.light-mode {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --ink: #111827;
+      --muted: #667085;
+      --line: #e5e7eb;
+      --navy: #101828;
+      --blue: #2563eb;
+      --coral: #ef4444;
+      --mint: #ecfdf5;
+      --mint-ink: #047857;
+      --amber: #fffbeb;
+      --amber-ink: #b45309;
+      --glass: rgba(255, 255, 255, 0.9);
+      --control: #f8fafc;
+      --control-hover: #eef2f7;
+      --primary: #111827;
+      --primary-ink: #ffffff;
+    }
+
+    body.dark-theme {
+      --bg: #090d14;
+      --surface: #121821;
+      --surface-soft: #0f141d;
+      --ink: #f8fafc;
+      --muted: #9aa4b2;
+      --line: #242c38;
+      --navy: #f8fafc;
+      --blue: #60a5fa;
+      --coral: #fb7185;
+      --mint: #0d2822;
+      --mint-ink: #5eead4;
+      --amber: #2d2110;
+      --amber-ink: #fbbf24;
+      --shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
+      --glass: rgba(18, 24, 33, 0.9);
+      --control: #192231;
+      --control-hover: #202b3b;
+      --primary: #f8fafc;
+      --primary-ink: #111827;
+    }
+
+    html,
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 28rem),
+        linear-gradient(180deg, var(--bg), var(--surface-soft));
+    }
+
+    .app {
+      max-width: 1180px;
+      padding: 18px;
+    }
+
+    .shell {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: none;
+    }
+
+    .hero,
+    body.light-mode .hero,
+    body.dark-theme .hero {
+      background:
+        linear-gradient(90deg, rgba(17, 24, 39, 0.78), rgba(17, 24, 39, 0.35)),
+        var(--hero-image);
+      background-position: var(--hero-position);
+      background-size: cover;
+      min-height: 236px;
+      padding: 28px;
+    }
+
+    .hero::before {
+      background-image:
+        linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+      content: "";
+      inset: 0;
+      opacity: .4;
+      pointer-events: none;
+      position: absolute;
+    }
+
+    .eyebrow,
+    .hero-panel,
+    .theme-toggle {
+      background: rgba(255,255,255,.13);
+      border-color: rgba(255,255,255,.22);
+      box-shadow: none;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5.5vw, 62px);
+      letter-spacing: 0;
+      max-width: 12ch;
+    }
+
+    body.light-mode .hero p,
+    body.light-mode .hero-panel span {
+      display: block !important;
+    }
+
+    .hero p {
+      color: rgba(255,255,255,.82);
+      max-width: 560px;
+    }
+
+    .hero-panel {
+      min-width: 210px;
+      padding: 18px;
+    }
+
+    .hero-panel strong {
+      font-size: 24px;
+    }
+
+    .quick-grid {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      gap: 10px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      padding: 14px 18px;
+    }
+
+    .quick-card,
+    .cost-overview,
+    .content,
+    .day-nav,
+    .day-header,
+    .day-summary-card,
+    .night-summary-card,
+    .block,
+    .detail-card,
+    .checklist-group,
+    .check-item,
+    .home-card,
+    .home-status-card,
+    .checklist-hero {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .quick-card {
+      border-radius: 16px;
+      min-height: 72px;
+      padding: 12px;
+    }
+
+    .quick-card.weather-card,
+    .quick-card.converter-card {
+      grid-column: span 2;
+    }
+
+    .quick-icon,
+    .activity-icon,
+    .day-icon {
+      background: var(--control);
+      border: 1px solid var(--line);
+      color: var(--blue);
+    }
+
+    .cost-overview {
+      border-inline: 0;
+      border-radius: 0;
+      padding: 13px 18px;
+    }
+
+    .workspace {
+      background: var(--surface-soft);
+      gap: 0;
+      grid-template-columns: 230px minmax(0, 1fr);
+    }
+
+    .day-nav {
+      border-block: 0;
+      border-left: 0;
+      border-radius: 0;
+      border-top: 0;
+      display: grid;
+      gap: 8px;
+      max-height: none;
+      padding: 18px 12px;
+    }
+
+    .day-nav-title {
+      color: var(--muted);
+      font-size: 11px;
+      margin: 0 6px 4px;
+    }
+
+    .day-button {
+      border-radius: 14px;
+      box-shadow: none;
+      gap: 10px;
+      min-height: 52px;
+      padding: 9px 10px;
+    }
+
+    .day-button.active {
+      background: var(--primary);
+      color: var(--primary-ink);
+      transform: none;
+    }
+
+    .day-button:hover {
+      transform: none;
+    }
+
+    .day-button .day-icon {
+      height: 34px;
+      width: 34px;
+    }
+
+    .day-button .day-icon .material-symbols-rounded {
+      font-size: 18px;
+    }
+
+    .day-info strong::after {
+      content: none !important;
+      display: none !important;
+    }
+
+    .content {
+      background: transparent;
+      border: 0;
+      border-left: 1px solid var(--line);
+      border-radius: 0;
+      padding: 22px;
+    }
+
+    .day-header {
+      border-radius: 20px;
+      gap: 16px;
+      margin-bottom: 14px;
+      padding: 20px;
+    }
+
+    .day-date {
+      color: var(--blue);
+      font-size: 12px;
+      letter-spacing: .08em;
+    }
+
+    .day-header h2 {
+      color: var(--ink);
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing: 0;
+      line-height: 1;
+      max-width: 760px;
+    }
+
+    .day-header p {
+      color: var(--muted);
+      max-width: 680px;
+    }
+
+    .day-insights,
+    .day-assist-strip {
+      gap: 8px;
+    }
+
+    .day-insight,
+    .day-assist-button,
+    .day-tool-button,
+    .status-pill,
+    .energy-pill,
+    .day-cost-pill,
+    .home-card-meta,
+    .soft-back-button {
+      border-radius: 999px;
+      box-shadow: none;
+    }
+
+    .day-summary-card {
+      border-radius: 18px;
+      margin-bottom: 14px;
+    }
+
+    .day-summary-card summary {
+      padding: 14px 16px;
+    }
+
+    .route-line {
+      background: var(--control);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      gap: 6px;
+      padding: 10px;
+    }
+
+    .route-line div,
+    .route-line span {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+    }
+
+    .route-line span {
+      background: transparent;
+      border: 0;
+      color: var(--muted);
+      padding-inline: 0;
+    }
+
+    .blocks {
+      gap: 10px;
+    }
+
+    .block {
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .block::before {
+      bottom: 0;
+      left: 0;
+      top: 0;
+      width: 4px;
+    }
+
+    .block:hover,
+    .block.open {
+      border-color: color-mix(in srgb, var(--blue), var(--line) 60%);
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.06);
+      transform: none;
+    }
+
+    .block-main {
+      grid-template-columns: 104px minmax(0, 1fr);
+      padding: 14px 16px;
+    }
+
+    body.light-mode .block-main {
+      grid-template-columns: 104px minmax(0, 1fr);
+      padding: 14px 16px;
+    }
+
+    .time-box {
+      background: var(--control);
+      border-radius: 14px;
+      min-height: 86px;
+      padding: 10px;
+    }
+
+    .time-box strong {
+      color: var(--ink);
+      font-size: 18px;
+    }
+
+    .time-box span,
+    .time-box em {
+      color: var(--muted);
+    }
+
+    .activity-icon {
+      border-radius: 13px;
+      height: 38px;
+      width: 38px;
+    }
+
+    .activity-icon .material-symbols-rounded {
+      font-size: 20px;
+    }
+
+    .block h3 {
+      color: var(--ink);
+      font-size: 18px;
+    }
+
+    .block li {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .block li::before {
+      background: var(--blue);
+      height: 5px;
+      width: 5px;
+    }
+
+    .block-actions {
+      margin-top: 11px;
+      position: static;
+    }
+
+    .icon-button,
+    .day-tool-button,
+    .reservation-action,
+    .reservation-check {
+      background: var(--control);
+      border: 1px solid var(--line);
+      color: var(--ink);
+    }
+
+    .block-details {
+      border-top: 1px solid var(--line);
+      padding: 14px 16px;
+    }
+
+    .detail-card,
+    .night-summary-card {
+      border-radius: 16px;
+    }
+
+    .home-screen,
+    .checklist-screen {
+      background: var(--surface-soft);
+      padding: 20px;
+    }
+
+    .home-hero-card {
+      background:
+        linear-gradient(135deg, rgba(17,24,39,.92), rgba(37,99,235,.68)),
+        var(--hero-image);
+      background-position: center;
+      background-size: cover;
+      border: 0;
+      border-radius: 24px;
+      box-shadow: none;
+    }
+
+    .home-hero-card .home-status-card {
+      background: rgba(255,255,255,.14);
+      border-color: rgba(255,255,255,.22);
+      color: #ffffff;
+    }
+
+    .home-hero-card .home-status-card small,
+    .home-hero-card .home-status-card strong,
+    .home-hero-card .home-status-card em {
+      color: #ffffff;
+    }
+
+    .home-hero-card .home-progress-track {
+      background: rgba(255,255,255,.22);
+    }
+
+    .home-card {
+      border-radius: 20px;
+      min-height: 148px;
+    }
+
+    .checklist-hero {
+      border-radius: 20px;
+      padding: 18px;
+    }
+
+    .checklist-add,
+    .checklist-group {
+      border-radius: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .app {
+        padding: 10px;
+      }
+
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+
+      .content {
+        border-left: 0;
+        padding: 14px;
+      }
+
+      .day-nav {
+        align-items: stretch;
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 10px 14px;
+      }
+
+      .day-button {
+        flex: 0 0 118px;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        min-height: 64px;
+      }
+
+      .day-button .day-icon {
+        display: none;
+      }
+
+      .quick-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .quick-card.weather-card,
+      .quick-card.converter-card {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 620px) {
+      html,
+      body {
+        background: var(--surface-soft);
+      }
+
+      .app {
+        padding: 0;
+      }
+
+      .shell {
+        border: 0;
+        border-radius: 0;
+        min-height: 100dvh;
+      }
+
+      .hero,
+      body.light-mode .hero,
+      body.dark-theme .hero {
+        border-radius: 0 0 24px 24px;
+        min-height: 174px;
+        padding: 18px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+        max-width: 9ch;
+      }
+
+      .hero p,
+      .hero-panel {
+        display: none !important;
+      }
+
+      .theme-strip {
+        margin: -22px 12px 10px;
+        position: relative;
+        z-index: 4;
+      }
+
+      .quick-grid {
+        background: var(--surface-soft);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 10px 12px;
+      }
+
+      .quick-card:nth-child(1),
+      .quick-card:nth-child(2),
+      .quick-card:nth-child(3) {
+        min-height: 76px;
+      }
+
+      .quick-card .value {
+        font-size: 17px;
+      }
+
+      .cost-overview {
+        margin: 0;
+        padding: 12px;
+      }
+
+      .day-nav {
+        padding: 9px 12px;
+        scroll-padding-inline: 12px;
+      }
+
+      .day-button {
+        flex-basis: 104px;
+        min-height: 58px;
+        padding: 9px;
+      }
+
+      .day-info strong {
+        font-size: 13px;
+      }
+
+      .day-info strong::after {
+        content: none !important;
+      }
+
+      .day-info span {
+        font-size: 10px;
+        max-width: 10ch;
+      }
+
+      .content {
+        padding: 12px;
+      }
+
+      .day-header {
+        border-radius: 20px;
+        grid-template-columns: 1fr;
+        margin-bottom: 10px;
+        padding: 16px;
+      }
+
+      .day-header h2 {
+        font-size: 28px;
+        line-height: 1.04;
+      }
+
+      .day-header p {
+        display: -webkit-box;
+        font-size: 13px;
+        line-height: 1.4;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+
+      .next-step-card,
+      .day-insights {
+        margin-top: 10px;
+      }
+
+      .day-insight,
+      .day-assist-button {
+        font-size: 11px;
+        min-height: 34px;
+      }
+
+      .day-summary-card summary {
+        grid-template-columns: auto minmax(0, 1fr);
+      }
+
+      .day-summary-card summary small {
+        display: none;
+      }
+
+      .route-line {
+        overflow-x: auto;
+      }
+
+      .block-main,
+      body.light-mode .block-main {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 14px;
+      }
+
+      .time-box {
+        align-items: center;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        min-height: 48px;
+      }
+
+      .time-box span {
+        text-align: center;
+      }
+
+      .time-box em {
+        text-align: right;
+      }
+
+      .block-title-row {
+        align-items: start;
+        gap: 10px;
+      }
+
+      .activity-icon {
+        height: 34px;
+        width: 34px;
+      }
+
+      .block h3 {
+        font-size: 17px;
+      }
+
+      .block ul {
+        margin-left: 44px;
+      }
+
+      .block-actions {
+        margin-left: 44px;
+      }
+
+      .home-screen,
+      .checklist-screen {
+        padding: 14px;
+      }
+
+      .home-hero-card {
+        border-radius: 24px;
+        padding: 20px;
+      }
+
+      .home-hero-card h2 {
+        font-size: 31px;
+        max-width: 12ch;
+      }
+
+      .home-card {
+        min-height: 108px;
+      }
+    }
+
     @media print {
       body {
         background: white;

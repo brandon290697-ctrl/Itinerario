@@ -1,25 +1,105 @@
 {
   "title": "Día 1 - Llegada a Japón / Osaka",
-  "subtitle": "Miércoles 7 de octubre - Narita, vuelo a Osaka, Shinsekai y primera noche en Dotonbori",
+  "subtitle": "Miércoles 7 de octubre - Narita, Pokémon Store, vuelo a Osaka, Pet Paradise, Shinsekai y primera noche en Dotonbori",
   "dateLabel": "Miércoles 7 de octubre de 2026",
   "shortDateLabel": "Mié 7 oct",
   "status": "Llegada + Osaka",
   "costEstimateUsd": {
-    "low": 125,
-    "high": 225,
-    "note": "traslados locales, comidas, Shinsekai, Magic Cafe & Bar, Dotonbori y primera noche; sin vuelo Narita-Kansai"
+    "low": 105,
+    "high": 220,
+    "note": "Incluye traslados locales, comidas, Magic Cafe & Bar, Dotonbori y primera noche. No incluye vuelo Narita-Kansai, Holafly ya comprado ni compras variables en Pokémon Store o Pet Paradise."
   },
+  "importantNotes": [
+    {
+      "type": "internet",
+      "title": "Holafly ya va comprado",
+      "detail": "No comprar SIM ni eSIM en Japón. La eSIM de Holafly debe quedar instalada antes del viaje. Al aterrizar, solamente activar la línea, habilitar datos móviles y comprobar que tenga conexión."
+    },
+    {
+      "type": "money",
+      "title": "Cambiar dólares a yenes en Narita",
+      "detail": "Cambiar parte de los dólares a yenes después de salir de migración y aduanas. No es necesario cambiar todo el presupuesto del viaje el primer día."
+    },
+    {
+      "type": "shopping",
+      "title": "Pokémon Store Narita",
+      "detail": "La tienda abre a las 9:00 am. Está en Terminal 1, South Wing, piso 4, antes del control de seguridad. La meta es entrar apenas abra y salir alrededor de las 9:30 am.",
+      "hours": "9:00 am - 8:00 pm",
+      "scheduleStatus": "Horario verificado para planificación; reconfirmar cerca de la fecha del viaje."
+    },
+    {
+      "type": "flight",
+      "title": "No arriesgar el vuelo por Pokémon",
+      "detail": "Jetstar Japan GK215 está planificado desde Narita Terminal 3 a las 12:00 pm. La meta es estar en Terminal 3 alrededor de las 10:00 am y no utilizar los límites de check-in como horario objetivo."
+    },
+    {
+      "type": "transport",
+      "title": "Tarjeta IC en Kansai",
+      "detail": "Para proteger el margen de Narita, no dedicar tiempo a buscar Suica antes del vuelo. Al llegar a Kansai se puede obtener ICOCA para usar posteriormente en Osaka. Suica e ICOCA son interoperables para la mayoría de los transportes que utilizaremos."
+    },
+    {
+      "type": "shopping",
+      "title": "Pet Paradise después del hotel",
+      "detail": "Después del check-in en Cross Hotel Osaka, ir primero a Pet Paradise Shinsaibashi antes de comenzar Shinsekai. La tienda cierra aproximadamente a las 8:00 pm.",
+      "hours": "11:00 am - 8:00 pm",
+      "scheduleStatus": "Horario verificado para planificación; reconfirmar cerca de la fecha del viaje."
+    }
+  ],
+  "clothingGuide": {
+    "weatherBasis": "Recomendación basada en el clima habitual de principios de octubre. El pronóstico exacto todavía no está disponible y debe revisarse nuevamente 48-72 horas antes.",
+    "strategy": "Vestirse por capas. El aeropuerto, trenes y tiendas pueden tener aire acondicionado, mientras que durante la tarde y noche se caminará bastante al aire libre.",
+    "baseOutfit": [
+      "Camiseta cómoda y transpirable.",
+      "Pantalón largo ligero o pantalón de viaje cómodo.",
+      "Tenis cerrados muy cómodos para caminar.",
+      "Calcetines cómodos.",
+      "Chaqueta ligera, cardigan o sobrecamisa fácil de guardar."
+    ],
+    "carryInDayBag": [
+      "Chaqueta ligera.",
+      "Sombrilla compacta si el pronóstico muestra posibilidad de lluvia.",
+      "Power bank.",
+      "Pañuelos.",
+      "Bolsa pequeña o crossbody.",
+      "Una camiseta limpia opcional para cambiarse en el hotel."
+    ],
+    "avoid": [
+      "Zapatos nuevos que no se hayan usado antes.",
+      "Ropa demasiado pesada.",
+      "Abrigo grueso de invierno.",
+      "Llevar demasiadas capas mientras se camina durante la tarde."
+    ]
+  },
+  "planningDecisions": [
+    "Holafly se lleva comprado e instalado desde antes del viaje.",
+    "Cambiar dólares a yenes en Narita.",
+    "Pokémon Store Narita es prioridad de 9:00 a 9:30 am.",
+    "Salir de Terminal 1 hacia Terminal 3 inmediatamente después de Pokémon.",
+    "Meta de llegada a Terminal 3: aproximadamente 10:00 am.",
+    "Vuelo Jetstar Japan GK215 planificado 12:00 pm Narita - 1:45 pm Kansai.",
+    "Comprar ICOCA en Kansai en vez de gastar tiempo buscando Suica en Narita.",
+    "Pet Paradise se visita inmediatamente después de dejar las maletas en Cross Hotel.",
+    "Después de Pet Paradise comienza la salida de Shinsekai.",
+    "La noche termina en Dotonbori y alrededores del hotel."
+  ],
   "route": [
-    "Narita",
-    "Kansai",
+    "Narita International Airport",
+    "Pokémon Store Narita Airport",
+    "Narita Terminal 3",
+    "Kansai International Airport",
+    "Kansai-Airport Station",
     "Namba",
-    "Cross Hotel",
+    "Cross Hotel Osaka",
+    "Pet Paradise Shinsaibashi",
+    "Namba Station",
     "Shinsekai",
+    "Tsutenkaku",
     "Magic Cafe & Bar Shinsekai",
+    "Namba",
     "Dotonbori",
     "Ramen Hayashida Dotonbori store",
     "Men joy Life",
-    "Cross Hotel"
+    "Cross Hotel Osaka"
   ],
   "marStops": [
     "Magic Cafe & Bar Shinsekai",
@@ -37,166 +117,434 @@
         "6:30 am - Aterrizaje en Narita.",
         "6:30 - 7:10 am - Migración.",
         "7:10 - 7:30 am - Recoger equipaje.",
-        "7:30 - 7:45 am - Aduanas y salida a zona pública."
+        "7:30 - 7:45 am - Aduanas y salida a zona pública.",
+        "Mantener pasaportes y documentos importantes siempre accesibles."
       ],
-      "detail": "Primer objetivo del día: salir a zona pública con calma, sin perder documentos ni conexión con el siguiente vuelo.",
+      "detail": "Primer objetivo del viaje: entrar oficialmente a Japón con calma y quedar en zona pública con tiempo suficiente para organizar lo esencial antes del vuelo doméstico.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta cómoda.",
+          "Pantalón largo ligero o pantalón de viaje.",
+          "Tenis cerrados cómodos.",
+          "Calcetines cómodos.",
+          "Chaqueta ligera o cardigan a mano."
+        ],
+        "reason": "Después del vuelo largo conviene priorizar comodidad y utilizar capas fáciles de quitar dentro del aeropuerto."
+      },
       "showMap": false
     },
     {
       "time": "7:45 am",
-      "duration": "prioridad",
-      "title": "Primero que todo: dinero, internet y transporte",
+      "duration": "7:45 - 8:15 am",
+      "title": "Dinero y conexión - prioridades al llegar",
       "icon": "payments",
       "tone": "money",
       "items": [
-        "Cambiar dólares a yenes en casas de cambio dentro del aeropuerto.",
-        "Cambiar solo lo necesario para el primer día.",
-        "Activar eSIM de Japón ilimitada o por días.",
-        "Comprar 2 tarjetas Suica en máquinas expendedoras JR.",
-        "eSIM + recarga inicial Suica 2 personas: $35 - $90."
+        "Buscar una casa de cambio dentro de Narita.",
+        "Cambiar dólares a yenes.",
+        "Cambiar una cantidad suficiente para comenzar el viaje, sin necesidad de convertir todo el efectivo.",
+        "Activar la eSIM Holafly que ya llevamos comprada e instalada.",
+        "Comprobar que ambos celulares tengan internet.",
+        "No comprar otra SIM ni eSIM en el aeropuerto.",
+        "No perder tiempo buscando Suica en Narita; la tarjeta IC se resolverá en Kansai."
       ],
-      "detail": "Resolver esto en Narita ahorra fricción después: efectivo básico, internet activo y transporte listo antes de moverse por Japón.",
+      "detail": "Este bloque elimina dos preocupaciones desde el inicio: quedar con efectivo japonés y tener internet funcionando. Holafly ya está comprado, por lo que solo hay que activarlo.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Mantener la misma ropa cómoda del vuelo.",
+          "Chaqueta ligera solo si sienten frío por el aire acondicionado.",
+          "Tenis cómodos."
+        ],
+        "reason": "Todo el bloque ocurre dentro del aeropuerto."
+      },
       "showMap": false
     },
     {
-      "time": "8:30 am",
-      "duration": "8:30 - 10:30 am",
-      "title": "Tiempo libre en Narita",
-      "icon": "shopping_bag",
+      "time": "8:15 am",
+      "duration": "8:15 - 8:50 am",
+      "title": "Desayuno y ubicación en Terminal 1",
+      "icon": "restaurant",
+      "tone": "food",
+      "items": [
+        "Tomar un desayuno relativamente rápido.",
+        "Evitar una comida demasiado larga porque Pokémon Store abre a las 9:00 am.",
+        "Ubicarse en Terminal 1, South Wing, piso 4.",
+        "Tener claro dónde está Pokémon Store antes de las 9:00 am.",
+        "Compras adicionales en Narita quedan como secundarias.",
+        "Presupuesto desayuno 2 personas: $15 - $35."
+      ],
+      "detail": "La idea ya no es utilizar dos horas para recorrer Narita. El tiempo de la mañana se concentra en desayunar, ubicarse y estar listos para Pokémon a la hora de apertura.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta cómoda.",
+          "Pantalón largo ligero.",
+          "Tenis cómodos.",
+          "Chaqueta ligera opcional."
+        ],
+        "reason": "Seguimos dentro de Narita y todavía estaremos moviéndonos con equipaje."
+      },
+      "location": {
+        "name": "Narita International Airport Terminal 1",
+        "mapsQuery": "Narita International Airport Terminal 1"
+      },
+      "showMap": false
+    },
+    {
+      "time": "8:50 am",
+      "duration": "8:50 - 9:00 am",
+      "title": "Esperar apertura de Pokémon Store Narita",
+      "icon": "schedule",
       "tone": "shopping",
       "items": [
-        "Desayuno y compras dentro del aeropuerto.",
-        "Opciones: Starbucks, restaurantes japoneses, 7-Eleven y Don Quijote mini.",
-        "Buscar souvenirs, anime, Pokémon, dulces o tiendas curiosas.",
-        "Desayuno/compras ligeras 2 personas: $25 - $70."
+        "Llegar a Pokémon Store antes de las 9:00 am.",
+        "La tienda abre a las 9:00 am.",
+        "Está en Terminal 1, South Wing, piso 4.",
+        "Está antes del control de seguridad.",
+        "Prepararse para entrar apenas abra y aprovechar el tiempo."
       ],
-      "detail": "Tiempo útil antes del vuelo a Osaka. Mantener las compras ligeras para no cargar de más desde el primer día.",
+      "detail": "Llegar unos minutos antes permite utilizar prácticamente todo el bloque de compras sin comprometer el traslado posterior a Terminal 3.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Mantener ropa cómoda de aeropuerto.",
+          "Tenis cómodos.",
+          "Chaqueta ligera guardada o puesta según temperatura interior."
+        ],
+        "reason": "Es una espera corta dentro de la terminal."
+      },
+      "location": {
+        "name": "Pokémon Store Narita Airport",
+        "address": "Narita International Airport Terminal 1 South Wing 4F, Chiba, Japan",
+        "mapsQuery": "Pokemon Store Narita Airport Terminal 1"
+      },
       "showMap": false
     },
     {
-      "time": "10:30 am",
-      "duration": "10:30 - 11:30 am",
-      "title": "Descanso, gate y preparación",
+      "time": "9:00 am",
+      "duration": "9:00 - 9:30 am",
+      "title": "Pokémon Store Narita Airport",
+      "icon": "catching_pokemon",
+      "tone": "shopping",
+      "items": [
+        "9:00 am - Entrar apenas abra.",
+        "Ver mercancía exclusiva o temática de Pokémon.",
+        "Priorizar artículos que realmente sean especiales.",
+        "Evitar recorrer otras tiendas después.",
+        "Guardar las compras de manera que sean fáciles de llevar en el vuelo doméstico.",
+        "9:25 am - Comenzar a terminar la compra.",
+        "9:30 am - Salir hacia Terminal 3.",
+        "Las compras Pokémon no están incluidas en el presupuesto base del día."
+      ],
+      "detail": "Esta es la única compra importante planificada en Narita. El límite de 30 minutos existe para proteger el vuelo a Osaka.",
+      "openingHours": {
+        "open": "9:00 am",
+        "close": "8:00 pm",
+        "note": "Reconfirmar el horario cerca de la fecha del viaje."
+      },
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta cómoda.",
+          "Pantalón cómodo.",
+          "Tenis cerrados.",
+          "Chaqueta ligera fácil de guardar."
+        ],
+        "reason": "La tienda está dentro del aeropuerto; la prioridad sigue siendo movilidad y comodidad."
+      },
+      "location": {
+        "name": "Pokémon Store Narita Airport",
+        "address": "Narita International Airport Terminal 1 South Wing 4F, Chiba, Japan",
+        "mapsQuery": "Pokemon Store Narita Airport Terminal 1"
+      },
+      "showMap": false
+    },
+    {
+      "time": "9:30 am",
+      "duration": "9:30 - 10:00 am",
+      "title": "Traslado Terminal 1 → Terminal 3",
+      "icon": "airport_shuttle",
+      "tone": "travel",
+      "items": [
+        "Salir de Pokémon Store directamente hacia el transporte entre terminales.",
+        "Utilizar el shuttle gratuito del aeropuerto hacia Terminal 3.",
+        "El recorrido en bus puede rondar los 14 minutos.",
+        "Agregar margen para caminar y esperar el shuttle.",
+        "Meta: estar ubicados en Terminal 3 alrededor de las 10:00 am."
+      ],
+      "detail": "Este margen es deliberado. No queremos terminar las compras y luego descubrir que todavía falta caminar, esperar el shuttle o encontrar los mostradores de Jetstar.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta cómoda.",
+          "Pantalón largo ligero.",
+          "Tenis cómodos.",
+          "Chaqueta ligera accesible."
+        ],
+        "reason": "Habrá caminatas con equipaje entre la tienda, las paradas del shuttle y Terminal 3."
+      },
+      "routeInfo": {
+        "mode": "transit",
+        "origin": "Narita International Airport Terminal 1, Chiba, Japan",
+        "destination": "Narita International Airport Terminal 3, Chiba, Japan",
+        "note": "Traslado entre terminales utilizando el shuttle gratuito del Aeropuerto de Narita.",
+        "fixedDuration": "aprox. 14 min de bus + espera y caminatas",
+        "transitModes": [
+          "BUS"
+        ],
+        "mapsQuery": "Narita International Airport Terminal 1 to Terminal 3"
+      }
+    },
+    {
+      "time": "10:00 am",
+      "duration": "10:00 - 10:40 am",
+      "title": "Jetstar - check-in y entrega de equipaje",
+      "icon": "luggage",
+      "tone": "travel",
+      "items": [
+        "Ubicar Jetstar Japan en Terminal 3.",
+        "Revisar nuevamente el número de vuelo.",
+        "Vuelo planificado: GK215.",
+        "Preparar boarding pass y pasaportes.",
+        "Realizar check-in si todavía es necesario.",
+        "Entregar equipaje facturado.",
+        "Confirmar el gate y cualquier actualización del vuelo.",
+        "No esperar al límite oficial para entregar maletas."
+      ],
+      "detail": "Llegar aproximadamente dos horas antes crea un margen saludable después de la conexión internacional y permite resolver cualquier problema sin correr.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Ropa cómoda del viaje.",
+          "Tenis cómodos.",
+          "Chaqueta ligera opcional por aire acondicionado."
+        ],
+        "reason": "Seguimos dentro del aeropuerto y todavía estamos moviendo equipaje."
+      },
+      "location": {
+        "name": "Narita International Airport Terminal 3",
+        "mapsQuery": "Narita International Airport Terminal 3 Jetstar"
+      },
+      "showMap": false
+    },
+    {
+      "time": "10:40 am",
+      "duration": "10:40 - 11:30 am",
+      "title": "Seguridad, gate y descanso",
       "icon": "battery_charging_full",
       "tone": "rest",
       "items": [
-        "Cargar celulares.",
+        "Pasar el control correspondiente al vuelo doméstico.",
+        "Ir al gate indicado para GK215.",
+        "Cargar celulares y power bank si hay oportunidad.",
         "Ir al baño.",
-        "Preparar boarding pass.",
-        "Revisar puerta de embarque y hora de abordaje."
+        "Comprar agua o snack si hace falta.",
+        "No alejarse demasiado del gate.",
+        "Revisar las pantallas por cualquier cambio."
       ],
-      "detail": "Este bloque es para bajar el ritmo antes del vuelo. Mejor llegar al gate con margen que correr con equipaje.",
+      "detail": "A partir de este momento el vuelo es la única prioridad. Todo lo importante de Narita ya debería estar terminado.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta cómoda.",
+          "Pantalón cómodo.",
+          "Tenis.",
+          "Chaqueta ligera para esperar sentado si el aeropuerto está frío."
+        ],
+        "reason": "Bloque de descanso dentro de una terminal climatizada."
+      },
       "showMap": false
     },
     {
       "time": "11:30 am",
-      "duration": "11:30 - 12:15 pm",
-      "title": "Caminata al gate de Jetstar en Narita",
-      "icon": "directions_walk",
+      "duration": "11:30 - 12:00 pm",
+      "title": "Embarque Jetstar hacia Osaka",
+      "icon": "flight_takeoff",
       "tone": "travel",
       "items": [
-        "Salir hacia el gate de Jetstar Japan.",
-        "Narita T3 está separado del T1/T2: confirmar terminal correcta.",
-        "Usar el shuttle bus gratuito si es necesario entre terminales.",
-        "Llegar al gate con margen antes de las 12:00 pm."
+        "Estar físicamente cerca del gate antes de las 11:30 am.",
+        "Tener boarding pass listo.",
+        "Tener pasaporte/documento a mano.",
+        "Guardar compras de Pokémon correctamente.",
+        "Subir al avión cuando corresponda.",
+        "No hacer compras adicionales durante este bloque."
       ],
-      "detail": "Jetstar opera desde el Terminal 3 de Narita. Si vienen de T1 o T2, hay shuttle bus gratuito que tarda unos 10 minutos.",
-      "routeInfo": {
-        "mode": "walking",
-        "origin": "Narita International Airport Terminal 1, Chiba, Japan",
-        "destination": "Narita International Airport Terminal 3, Chiba, Japan",
-        "note": "Referencia de traslado entre terminales en Narita. El shuttle bus cubre este tramo si la caminata no es directa.",
-        "mapsQuery": "Narita International Airport Terminal 1 to Narita International Airport Terminal 3"
-      }
+      "detail": "Margen reservado exclusivamente para embarque. No se programa ninguna actividad adicional aquí.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Ropa cómoda.",
+          "Tenis cerrados.",
+          "Chaqueta ligera a mano para el avión."
+        ],
+        "reason": "El avión puede sentirse más frío que el exterior."
+      },
+      "showMap": false
     },
     {
-      "time": "12:15 pm",
+      "time": "12:00 pm",
       "duration": "1 h 45 min",
       "title": "Vuelo Narita → Kansai",
       "icon": "flight_takeoff",
       "tone": "travel",
       "items": [
         "Vuelo directo con Jetstar Japan.",
-        "12:15 pm - Salida desde Narita (NRT).",
-        "2:00 pm - Llegada al Aeropuerto Internacional de Kansai (KIX)."
+        "Vuelo planificado: GK215.",
+        "12:00 pm - Salida desde Narita Terminal 3.",
+        "1:45 pm - Llegada al Aeropuerto Internacional de Kansai.",
+        "Mantener documentos importantes en el bolso personal."
       ],
-      "detail": "Tramo aéreo corto para conectar con Osaka. Tener a mano pasaportes, boarding pass y cualquier comprobante de equipaje.",
+      "detail": "Tramo doméstico hacia Osaka. La hora debe compararse nuevamente con la reserva definitiva antes del viaje por si Jetstar modifica el horario.",
+      "flightInfo": {
+        "airline": "Jetstar Japan",
+        "flightNumber": "GK215",
+        "origin": "NRT",
+        "destination": "KIX",
+        "departure": "12:00 pm",
+        "arrival": "1:45 pm",
+        "departureTerminal": "Terminal 3",
+        "duration": "1 h 45 min"
+      },
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta cómoda.",
+          "Pantalón largo cómodo.",
+          "Calcetines.",
+          "Tenis.",
+          "Chaqueta ligera o cardigan."
+        ],
+        "reason": "Capas ligeras permiten adaptarse fácilmente al aire acondicionado del avión."
+      },
       "showMap": false
     },
     {
-      "time": "2:00 pm",
-      "duration": "2:00 - 2:35 pm",
+      "time": "1:45 pm",
+      "duration": "1:45 - 2:20 pm",
       "title": "Llegada a Kansai - equipaje y salida",
       "icon": "flight_land",
       "tone": "arrival",
       "items": [
-        "2:00 pm - Aterrizaje en KIX.",
-        "Recoger equipaje en cinta.",
-        "Salir hacia zona pública del aeropuerto.",
-        "Ubicarse en el nivel de trenes: bajar a la estación Kansai-Airport Station."
+        "1:45 pm - Aterrizaje en KIX.",
+        "Bajar del avión.",
+        "Recoger equipaje.",
+        "Salir hacia zona pública.",
+        "Seguir señales hacia Kansai-Airport Station.",
+        "No hay una segunda migración internacional porque el tramo Narita-Kansai es doméstico."
       ],
-      "detail": "KIX tiene la estación de tren integrada en el edificio principal. Bajar al nivel B1 para acceder al Nankai Rapi:t.",
+      "detail": "KIX tiene conexión directa con la estación ferroviaria. El siguiente objetivo es dejar listo transporte para Osaka.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta cómoda.",
+          "Pantalón ligero.",
+          "Tenis cómodos.",
+          "Chaqueta ligera guardada si la tarde está cálida."
+        ],
+        "reason": "Al salir del aeropuerto puede sentirse más cálido que dentro de los aviones y terminales."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Kansai International Airport arrivals, Osaka, Japan",
         "destination": "Kansai-Airport Station, Osaka, Japan",
-        "note": "Caminata interna desde llegadas de KIX hacia la estación de tren.",
+        "note": "Caminata interna desde llegadas hacia la estación ferroviaria.",
         "mapsQuery": "Kansai International Airport arrivals to Kansai-Airport Station"
       }
     },
     {
-      "time": "2:35 pm",
-      "duration": "2:35 - 2:45 pm",
-      "title": "Compra de boletos Rapi:t",
+      "time": "2:20 pm",
+      "duration": "2:20 - 2:35 pm",
+      "title": "ICOCA + boletos Nankai Rapi:t",
       "icon": "confirmation_number",
       "tone": "money",
       "items": [
-        "Comprar boletos del Nankai Rapi:t Limited Express en taquilla o máquina.",
-        "Asiento reservado incluido en el precio.",
-        "Costo estimado 2 personas: aprox. $20.",
-        "Confirmar horario del próximo tren."
+        "Llegar a Kansai-Airport Station.",
+        "Comprar 2 tarjetas ICOCA si resulta rápido y conveniente.",
+        "Hacer la carga inicial necesaria para Metro y transportes posteriores.",
+        "Comprar boletos del Nankai Rapi:t Limited Express hacia Namba.",
+        "El Rapi:t utiliza asiento reservado.",
+        "Confirmar el próximo horario disponible.",
+        "Si comprar ICOCA genera una fila excesiva, priorizar el Rapi:t y resolver la tarjeta IC posteriormente."
       ],
-      "detail": "Las máquinas tienen opción en inglés. Guardar el boleto porque se necesita al salir en Namba.",
+      "detail": "Movemos la tarjeta IC a Kansai para no poner en riesgo el vuelo en Narita. ICOCA funcionará posteriormente en gran parte del transporte que utilizaremos.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Misma ropa cómoda.",
+          "Tenis cómodos.",
+          "Chaqueta ligera guardada o puesta según temperatura."
+        ],
+        "reason": "Todo ocurre alrededor de la estación integrada al aeropuerto."
+      },
+      "location": {
+        "name": "Kansai-Airport Station",
+        "mapsQuery": "Kansai-Airport Station Nankai ticket office"
+      },
       "showMap": false
     },
     {
-      "time": "2:45 pm",
+      "time": "2:35 pm aprox.",
       "duration": "34-38 min",
       "title": "Tren Rapi:t KIX → Namba",
       "icon": "train",
       "tone": "travel",
       "items": [
-        "Abordar el Nankai Rapi:t Limited Express.",
+        "Tomar el próximo Nankai Rapi:t Limited Express conveniente.",
         "Confirmar andén correcto hacia Namba.",
-        "Duración estimada: 34-38 min.",
-        "Costo visible en el recorrido."
+        "Guardar boleto hasta terminar el trayecto.",
+        "Duración aproximada: 34-38 minutos.",
+        "Costo estimado: ¥1,410 por persona según tarifa de referencia.",
+        "Descansar durante el recorrido."
       ],
-      "detail": "El Rapi:t es cómodo y rápido. Buena oportunidad para relajarse después del vuelo y ordenar el bolso.",
+      "detail": "No se fija un tren exacto porque la hora real dependerá del desembarque y recogida de equipaje. La regla es tomar el siguiente Rapi:t razonable sin correr.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta cómoda.",
+          "Pantalón cómodo.",
+          "Tenis.",
+          "Chaqueta ligera opcional."
+        ],
+        "reason": "Momento ideal para descansar después de dos vuelos y organizar el bolso."
+      },
       "routeInfo": {
         "mode": "transit",
         "origin": "Kansai-Airport Station, Osaka, Japan",
         "destination": "Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan",
-        "note": "Nankai Rapi:t Limited Express desde Kansai-Airport Station hasta Namba Station.",
+        "note": "Nankai Rapi:t Limited Express desde Kansai-Airport Station hasta Namba.",
         "fixedDuration": "34-38 min",
         "fixedDistance": "Nankai Rapi:t",
         "fareEstimateJpy": 1410,
         "fareEstimateLabel": "por persona, asiento regular",
-        "fallbackMessage": "Tramo ferroviario fijo: Nankai Rapi:t desde Kansai-Airport Station hasta Namba. El costo estimado aparece arriba con conversión a dólares y colones.",
+        "fallbackMessage": "Tomar el siguiente Rapi:t disponible que permita viajar sin correr.",
         "mapsQuery": "Kansai-Airport Station to Namba Station Osaka Nankai Rapi:t"
       }
     },
     {
-      "time": "3:25 pm",
-      "duration": "3:25 - 3:40 pm",
+      "time": "3:20 pm aprox.",
+      "duration": "10-15 min",
       "title": "Caminata Namba → Cross Hotel",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir de Namba Station hacia Shinsaibashi/Dotonbori.",
-        "Caminar con maletas hacia Cross Hotel Osaka.",
-        "Usar elevadores o salidas accesibles si llevan equipaje pesado."
+        "Salir de Namba hacia Shinsaibashi/Dotonbori.",
+        "Caminar con las maletas hasta Cross Hotel Osaka.",
+        "Utilizar elevadores y salidas accesibles cuando sea posible.",
+        "No preocuparse por desviarse a ninguna tienda todavía."
       ],
-      "detail": "Este tramo es corto, pero con maletas conviene tomarlo con calma y elegir una salida cómoda desde Namba.",
+      "detail": "La hora puede moverse según el Rapi:t utilizado. La prioridad al llegar a Namba es llevar las maletas directamente al hotel.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta transpirable.",
+          "Pantalón cómodo.",
+          "Tenis muy cómodos.",
+          "Chaqueta ligera guardada si hace calor."
+        ],
+        "reason": "Primera caminata real por Osaka y además se hará cargando equipaje."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Namba Station, 1-chōme-9 Namba, Chuo Ward, Osaka, 542-0076, Japan",
@@ -206,64 +554,171 @@
       }
     },
     {
-      "time": "3:45 pm",
-      "duration": "3:45 - 5:00 pm",
+      "time": "3:35 pm aprox.",
+      "duration": "3:35 - 4:15 pm aprox.",
       "title": "Check-in - Cross Hotel Osaka",
       "icon": "hotel",
       "tone": "hotel",
       "items": [
-        "Check-in y dejar maletas.",
-        "Descanso corto.",
-        "Bañarse, cargar teléfonos y cambiarse.",
-        "Dejar listo bolso liviano para Shinsekai y Dotonbori."
+        "Hacer check-in.",
+        "Dejar las maletas.",
+        "Organizar rápidamente compras y documentos.",
+        "Bañarse o refrescarse si hace falta.",
+        "Cambiarse la camiseta si quieren salir más cómodos.",
+        "Cargar teléfonos durante unos minutos.",
+        "Preparar bolso pequeño para el resto del día.",
+        "No hacer un descanso demasiado largo porque queremos visitar Pet Paradise antes de continuar."
       ],
-      "detail": "Pausa clave para no llegar fundidos a la primera noche. Dejar listo lo necesario antes de salir a Shinsekai y luego a Dotonbori.",
+      "detail": "La función principal del hotel en este momento es liberarnos de las maletas y reiniciar un poco después del viaje.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Cambiar a una camiseta limpia y ligera.",
+          "Pantalón largo cómodo o jeans ligeros.",
+          "Tenis de caminar ya probados.",
+          "Calcetines limpios si lo desean.",
+          "Chaqueta ligera o sobrecamisa para llevar en el bolso."
+        ],
+        "reason": "Este será el outfit principal de la tarde y noche en Osaka. Debe verse bien para fotos pero seguir siendo muy cómodo."
+      },
       "location": {
         "name": "Cross Hotel Osaka",
+        "address": "2 Chome-5-15 Shinsaibashisuji, Chuo Ward, Osaka, Japan",
         "mapsQuery": "Cross Hotel Osaka"
       },
       "showMap": false
     },
     {
-      "time": "5:05 pm",
-      "duration": "5:05 - 5:15 pm",
-      "title": "Caminata Cross Hotel → Namba Station",
+      "time": "4:15 pm aprox.",
+      "duration": "3-5 min",
+      "title": "Caminata Cross Hotel → Pet Paradise",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir del Cross Hotel Osaka hacia Namba Station.",
-        "Ir sin maletas, solo con bolso liviano.",
-        "Tener Suica/ICOCA lista para entrar al transporte público.",
-        "Costo: $0."
+        "Salir del Cross Hotel sin maletas.",
+        "Llevar únicamente bolso pequeño.",
+        "Caminar por Shinsaibashisuji hacia Pet Paradise.",
+        "Pet Paradise está en la misma zona comercial del hotel.",
+        "No tomar transporte para este tramo."
       ],
-      "detail": "Primer tramo para moverse hacia Shinsekai. Es mejor ir en transporte público o taxi corto porque ya vienen cansados del viaje.",
+      "detail": "Pet Paradise queda lo suficientemente cerca como para convertirlo en la primera parada después del check-in.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta limpia.",
+          "Pantalón cómodo.",
+          "Tenis de caminar.",
+          "Chaqueta ligera en el bolso."
+        ],
+        "reason": "A partir de aquí comienza la caminata turística real del día."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Cross Hotel Osaka, Osaka, Japan",
-        "destination": "Namba Station, Osaka, Japan",
-        "note": "Caminata desde Cross Hotel Osaka hasta Namba Station.",
-        "mapsQuery": "Cross Hotel Osaka to Namba Station Osaka"
+        "destination": "Pet Paradise Shinsaibashi, Osaka, Japan",
+        "note": "Caminata corta por Shinsaibashisuji desde el hotel hasta Pet Paradise.",
+        "mapsQuery": "Cross Hotel Osaka to Pet Paradise Shinsaibashi"
       }
     },
     {
-      "time": "5:15 pm",
-      "duration": "5:15 - 5:25 pm",
-      "title": "Transporte público: Namba → Dobutsuen-mae / Ebisucho",
+      "time": "4:20 pm aprox.",
+      "duration": "4:20 - 4:50 pm",
+      "title": "Pet Paradise Shinsaibashi",
+      "icon": "pets",
+      "tone": "shopping",
+      "items": [
+        "Primera tienda después de llegar al hotel.",
+        "Ver ropa, accesorios y artículos para mascotas.",
+        "Revisar especialmente cosas que puedan servir para Berlín.",
+        "Comprar ahora lo que sea realmente especial para evitar tener que regresar únicamente por eso.",
+        "Mantener la visita alrededor de 30 minutos.",
+        "Las compras de Pet Paradise no están incluidas en el presupuesto base del día."
+      ],
+      "detail": "Esta parada se hace temprano porque Pet Paradise cierra antes que la zona nocturna de Osaka. Después podremos movernos a Shinsekai sin preocuparnos por regresar antes del cierre.",
+      "openingHours": {
+        "open": "11:00 am",
+        "close": "8:00 pm",
+        "note": "Reconfirmar horario cerca de la fecha del viaje."
+      },
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta ligera.",
+          "Pantalón cómodo.",
+          "Tenis.",
+          "Chaqueta ligera fácil de llevar."
+        ],
+        "reason": "La tienda es interior pero inmediatamente después seguiremos caminando por Osaka."
+      },
+      "location": {
+        "name": "Pet Paradise Shinsaibashi",
+        "address": "2-3-28 Shinsaibashisuji, Chuo Ward, Osaka, Japan",
+        "mapsQuery": "Pet Paradise Shinsaibashi Osaka"
+      },
+      "showMap": false
+    },
+    {
+      "time": "4:50 pm",
+      "duration": "4:50 - 5:00 pm",
+      "title": "Pet Paradise → Namba Station",
+      "icon": "directions_walk",
+      "tone": "travel",
+      "items": [
+        "Salir de Pet Paradise hacia Namba.",
+        "Caminar por la zona comercial.",
+        "Guardar bien cualquier compra realizada.",
+        "Tener ICOCA preparada.",
+        "Dirigirse al acceso del Osaka Metro."
+      ],
+      "detail": "Desde aquí comienza el traslado hacia Shinsekai.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta ligera.",
+          "Pantalón cómodo.",
+          "Tenis.",
+          "Chaqueta ligera todavía puede ir guardada."
+        ],
+        "reason": "Caminata corta de tarde con temperatura normalmente agradable."
+      },
+      "routeInfo": {
+        "mode": "walking",
+        "origin": "Pet Paradise Shinsaibashi, Osaka, Japan",
+        "destination": "Namba Station Midosuji Line, Osaka, Japan",
+        "note": "Caminata desde Pet Paradise hacia Namba para tomar Metro.",
+        "mapsQuery": "Pet Paradise Shinsaibashi to Namba Station Osaka"
+      }
+    },
+    {
+      "time": "5:00 pm",
+      "duration": "5-7 min",
+      "title": "Metro Namba → Dobutsuen-mae",
       "icon": "subway",
       "tone": "travel",
       "items": [
-        "Moverse desde Namba hacia la zona de Shinsekai.",
-        "Opción recomendada: Osaka Metro hacia Dobutsuen-mae o Ebisucho, según la ruta que muestre Maps.",
-        "Bajarse y seguir señales hacia Shinsekai / Tsutenkaku.",
-        "Costo estimado 2 personas: $3 - $6."
+        "Entrar al Osaka Metro usando ICOCA.",
+        "Tomar la Midosuji Line desde Namba.",
+        "Bajarse en Dobutsuen-mae.",
+        "Seguir señales para salir hacia Shinsekai.",
+        "Costo estimado: ¥240 por persona."
       ],
-      "detail": "Este traslado evita caminar demasiado después del viaje. La meta es llegar a Shinsekai rápido y todavía con luz de tarde/noche.",
+      "detail": "Traslado corto para ahorrar energía después de un día con vuelos y equipaje.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta ligera.",
+          "Pantalón cómodo.",
+          "Tenis.",
+          "Chaqueta ligera a mano."
+        ],
+        "reason": "Al comenzar a caer la tarde puede empezar a sentirse más fresco al salir nuevamente a la calle."
+      },
       "routeInfo": {
         "mode": "transit",
         "origin": "Namba Station Midosuji Line, Osaka, Japan",
         "destination": "Dobutsuen-mae Station Midosuji Line, Osaka, Japan",
-        "note": "Osaka Metro Midosuji Line desde Namba hasta Dobutsuen-mae. También puede usarse Ebisucho Station según la ruta más conveniente.",
-        "mapsQuery": "Namba Station Midosuji Line to Dobutsuen-mae Station Midosuji Line Osaka",
+        "note": "Osaka Metro Midosuji Line desde Namba hasta Dobutsuen-mae.",
+        "mapsQuery": "Namba Station Midosuji Line to Dobutsuen-mae Station Osaka",
         "fixedDuration": "5-7 min",
         "fixedDistance": "Osaka Metro Midosuji Line",
         "fareEstimateJpy": 240,
@@ -274,18 +729,29 @@
       }
     },
     {
-      "time": "5:25 pm",
-      "duration": "5:25 - 5:35 pm",
+      "time": "5:10 pm",
+      "duration": "5:10 - 5:20 pm",
       "title": "Caminata estación → Shinsekai / Tsutenkaku",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir de Dobutsuen-mae o Ebisucho hacia Shinsekai.",
-        "Seguir hacia la zona de Tsutenkaku.",
-        "Ubicarse visualmente en la calle principal de Shinsekai.",
+        "Salir de Dobutsuen-mae.",
+        "Seguir hacia Shinsekai.",
+        "Buscar visualmente Tsutenkaku.",
+        "Entrar por las calles principales de la zona.",
         "Costo: $0."
       ],
-      "detail": "Este tramo es corto y sirve para entrar directamente al ambiente retro de Shinsekai.",
+      "detail": "Primer contacto fuerte con el ambiente urbano y retro de Osaka.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta.",
+          "Pantalón largo ligero.",
+          "Tenis.",
+          "Chaqueta ligera opcional según temperatura."
+        ],
+        "reason": "Habrá caminata al aire libre y comenzará a bajar la temperatura de la tarde."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Dobutsuen-mae Station, Osaka, Japan",
@@ -295,20 +761,31 @@
       }
     },
     {
-      "time": "5:35 pm",
-      "duration": "5:35 - 6:20 pm",
+      "time": "5:20 pm",
+      "duration": "5:20 - 6:00 pm",
       "title": "Shinsekai y Tsutenkaku",
       "icon": "nightlife",
       "tone": "night",
       "marListStop": true,
       "items": [
-        "Paseo por Shinsekai.",
+        "Pasear por Shinsekai.",
         "Ver Tsutenkaku por fuera.",
-        "Fotos de la zona retro de Osaka.",
-        "Ambiente visual, luces, letreros y calles clásicas.",
-        "Mantenerlo como paseo corto para no llegar tarde a Dotonbori."
+        "Tomar fotos.",
+        "Ver los letreros, restaurantes y ambiente retro.",
+        "No convertirlo en una visita demasiado larga.",
+        "Dejar margen para Magic Cafe y Dotonbori."
       ],
-      "detail": "Shinsekai funciona muy bien el Día 1 porque es visual, diferente y no exige hacer una visita pesada. Es el primer contraste fuerte con Dotonbori.",
+      "detail": "Shinsekai funciona especialmente bien el primer día porque es una experiencia muy visual que no exige reservas ni una actividad física complicada.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta cómoda.",
+          "Pantalón largo.",
+          "Tenis de caminar.",
+          "Chaqueta ligera o sobrecamisa si comienza a refrescar."
+        ],
+        "reason": "Ya estaremos principalmente al aire libre y la temperatura irá bajando progresivamente."
+      },
       "location": {
         "name": "Shinsekai / Tsutenkaku",
         "mapsQuery": "Shinsekai Tsutenkaku Osaka"
@@ -316,41 +793,61 @@
       "showMap": false
     },
     {
-      "time": "6:20 pm",
-      "duration": "6:20 - 6:30 pm",
-      "title": "Caminata Tsutenkaku → Magic Cafe & Bar Shinsekai",
+      "time": "6:00 pm",
+      "duration": "6:00 - 6:10 pm",
+      "title": "Caminata Tsutenkaku → Magic Cafe & Bar",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Caminar desde la zona de Tsutenkaku hacia Magic Cafe & Bar Shinsekai.",
-        "Revisar la fachada o entrada correcta antes de entrar.",
-        "Mantener el bloque corto porque todavía falta Dotonbori.",
+        "Salir de la zona principal de Tsutenkaku.",
+        "Caminar hacia Magic Cafe & Bar Shinsekai.",
+        "Comprobar fachada y entrada.",
         "Costo: $0."
       ],
-      "detail": "Magic Cafe & Bar Shinsekai queda dentro de la zona de Shinsekai, por eso entra como parada real y no como punto suelto.",
+      "detail": "Es una conexión corta dentro de la misma zona de Shinsekai.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta.",
+          "Pantalón largo.",
+          "Tenis.",
+          "Chaqueta ligera recomendada a partir de esta hora si sienten fresco."
+        ],
+        "reason": "A partir del anochecer una capa ligera empieza a ser más útil."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Tsutenkaku, Osaka, Japan",
         "destination": "Magic Cafe & Bar SHINSEKAI, Osaka, Japan",
-        "note": "Caminata corta dentro de Shinsekai hacia Magic Cafe & Bar.",
+        "note": "Caminata corta dentro de Shinsekai.",
         "mapsQuery": "Tsutenkaku to Magic Cafe & Bar SHINSEKAI Osaka"
       }
     },
     {
-      "time": "6:30 pm",
-      "duration": "6:30 - 7:15 pm",
+      "time": "6:10 pm",
+      "duration": "6:10 - 6:55 pm",
       "title": "Magic Cafe & Bar Shinsekai",
       "icon": "local_bar",
       "tone": "night",
       "marListStop": true,
       "items": [
         "Parada explícita de la lista de Mar.",
-        "Café/bar de magia en Shinsekai.",
-        "Ideal como parada curiosa antes de volver a Namba.",
-        "Tomar algo ligero o vivir la experiencia sin hacer una cena pesada.",
+        "Disfrutar la experiencia de magia.",
+        "Tomar algo ligero.",
+        "Evitar hacer aquí una cena pesada porque todavía queremos cenar en Dotonbori.",
         "Presupuesto 2 personas: $20 - $45."
       ],
-      "detail": "Se integra como parada real dentro de Shinsekai. No reemplaza Dotonbori; funciona como experiencia corta antes de la noche principal.",
+      "detail": "Experiencia curiosa dentro de Shinsekai que funciona como pausa después de caminar y antes de la noche principal en Dotonbori.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta o parte superior casual.",
+          "Pantalón largo cómodo.",
+          "Tenis limpios y cómodos.",
+          "Chaqueta ligera que pueda quitarse dentro del local."
+        ],
+        "reason": "El lugar es interior, así que conviene seguir utilizando capas."
+      },
       "location": {
         "name": "Magic Cafe & Bar Shinsekai",
         "address": "3-2-27 Ebisuhigashi, Naniwa Ward, Osaka",
@@ -359,45 +856,66 @@
       "showMap": false
     },
     {
-      "time": "7:15 pm",
-      "duration": "7:15 - 7:25 pm",
-      "title": "Caminata Magic Cafe → estación",
+      "time": "6:55 pm",
+      "duration": "6:55 - 7:05 pm",
+      "title": "Magic Cafe → estación",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir de Magic Cafe & Bar Shinsekai.",
-        "Caminar hacia Dobutsuen-mae o Ebisucho Station.",
-        "Preparar Suica/ICOCA.",
+        "Salir del Magic Cafe.",
+        "Caminar hacia Dobutsuen-mae.",
+        "Preparar ICOCA.",
+        "Guardar compras y pertenencias.",
         "Costo: $0."
       ],
-      "detail": "Este tramo conecta Shinsekai con el regreso a la zona de Namba/Dotonbori.",
+      "detail": "Comienza el regreso hacia la zona de Namba y Dotonbori.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta.",
+          "Pantalón largo.",
+          "Tenis.",
+          "Chaqueta ligera recomendada."
+        ],
+        "reason": "Ya será de noche y estaremos nuevamente caminando al aire libre."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Magic Cafe & Bar SHINSEKAI, Osaka, Japan",
         "destination": "Dobutsuen-mae Station, Osaka, Japan",
-        "note": "Caminata desde Magic Cafe & Bar hacia la estación más conveniente.",
+        "note": "Caminata desde Magic Cafe hacia la estación.",
         "mapsQuery": "Magic Cafe & Bar SHINSEKAI to Dobutsuen-mae Station Osaka"
       }
     },
     {
-      "time": "7:25 pm",
-      "duration": "7:25 - 7:40 pm",
-      "title": "Transporte público: Shinsekai → Namba / Dotonbori",
+      "time": "7:05 pm",
+      "duration": "5-7 min",
+      "title": "Metro Shinsekai → Namba",
       "icon": "subway",
       "tone": "travel",
       "items": [
-        "Moverse desde Shinsekai hacia Namba.",
-        "Bajarse en Namba para entrar caminando a Dotonbori.",
-        "Costo estimado 2 personas: $3 - $6.",
-        "Llegar directo a zona del canal y Glico."
+        "Tomar la Midosuji Line desde Dobutsuen-mae.",
+        "Bajarse en Namba.",
+        "Usar ICOCA.",
+        "Costo estimado: ¥240 por persona."
       ],
-      "detail": "La noche principal se mantiene en Dotonbori, como en el plan original, pero ahora con Shinsekai agregado antes.",
+      "detail": "Regreso rápido para comenzar la primera noche de Dotonbori.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta.",
+          "Pantalón largo.",
+          "Tenis.",
+          "Chaqueta ligera que pueda quitarse dentro del Metro."
+        ],
+        "reason": "Capas ligeras funcionan mejor al alternar Metro climatizado y calles nocturnas."
+      },
       "routeInfo": {
         "mode": "transit",
         "origin": "Dobutsuen-mae Station Midosuji Line, Osaka, Japan",
         "destination": "Namba Station Midosuji Line, Osaka, Japan",
-        "note": "Osaka Metro Midosuji Line desde Dobutsuen-mae hasta Namba para caminar a Dotonbori.",
-        "mapsQuery": "Dobutsuen-mae Station Midosuji Line to Namba Station Midosuji Line Osaka",
+        "note": "Osaka Metro Midosuji Line desde Dobutsuen-mae hasta Namba.",
+        "mapsQuery": "Dobutsuen-mae Station to Namba Station Osaka",
         "fixedDuration": "5-7 min",
         "fixedDistance": "Osaka Metro Midosuji Line",
         "fareEstimateJpy": 240,
@@ -408,41 +926,63 @@
       }
     },
     {
-      "time": "7:40 pm",
-      "duration": "7:40 - 7:50 pm",
+      "time": "7:15 pm",
+      "duration": "7:15 - 7:25 pm",
       "title": "Caminata Namba → Dotonbori",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
-        "Salir de Namba Station hacia Dotonbori.",
-        "Caminar hacia Ebisu Bridge / Glico Man.",
-        "Entrar por zona iluminada y principal.",
+        "Salir de Namba hacia Dotonbori.",
+        "Caminar hacia Ebisu Bridge.",
+        "Buscar el Glico Man.",
+        "Entrar por la zona principal iluminada.",
         "Costo: $0."
       ],
-      "detail": "Este tramo marca la entrada a la primera noche icónica de Osaka.",
+      "detail": "Entrada oficial a la primera noche icónica de Osaka.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta o top casual.",
+          "Pantalón largo cómodo.",
+          "Tenis.",
+          "Chaqueta ligera.",
+          "Bolso pequeño cruzado."
+        ],
+        "reason": "Outfit cómodo para caminar, cenar y salir bien en las primeras fotos nocturnas de Osaka."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Namba Station, Osaka, Japan",
         "destination": "Dotonbori Glico Sign, Osaka, Japan",
-        "note": "Caminata desde Namba Station hacia Dotonbori y el Glico.",
+        "note": "Caminata desde Namba hacia Dotonbori.",
         "mapsQuery": "Namba Station Osaka to Dotonbori Glico Sign"
       }
     },
     {
-      "time": "8:00 pm",
-      "duration": "8:00 - 9:00 pm",
+      "time": "7:30 pm",
+      "duration": "7:30 - 8:30 pm",
       "title": "Ramen Hayashida Dotonbori store",
       "icon": "ramen_dining",
       "tone": "food",
       "marListStop": true,
       "items": [
         "Parada explícita de la lista de Mar.",
-        "Cena de ramen en Dotonbori.",
-        "Queda cerca del Glico y de la zona principal.",
-        "Buena opción porque no obliga a alejarse del hotel.",
-        "Cena 2 personas: $25 - $45."
+        "Cena principal de la primera noche.",
+        "Comer ramen en Dotonbori.",
+        "Queda cerca del Glico y del área que queremos recorrer.",
+        "Cena estimada 2 personas: $25 - $45."
       ],
-      "detail": "Ramen Hayashida queda en Dotonbori, así que funciona perfecto como cena real de la primera noche.",
+      "detail": "Después de un día largo, esta es la comida principal antes de continuar recorriendo Dotonbori con más calma.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta o top casual.",
+          "Pantalón largo.",
+          "Tenis.",
+          "Chaqueta ligera para quitarse dentro del restaurante."
+        ],
+        "reason": "No hace falta ropa formal. La prioridad es comodidad después de muchas horas de viaje."
+      },
       "location": {
         "name": "Ramen Hayashida Dotonbori store",
         "mapsQuery": "Ramen Hayashida Dotonbori store Osaka"
@@ -451,44 +991,70 @@
         "mode": "walking",
         "origin": "Dotonbori Glico Sign, Osaka, Japan",
         "destination": "Ramen Hayashida Dotonbori store, Osaka, Japan",
-        "note": "Caminata corta dentro de Dotonbori hacia Ramen Hayashida.",
+        "note": "Caminata corta dentro de Dotonbori.",
         "mapsQuery": "Dotonbori Glico Sign to Ramen Hayashida Dotonbori store Osaka"
       }
     },
     {
-      "time": "9:00 pm",
-      "duration": "9:00 - 10:00 pm",
+      "time": "8:30 pm",
+      "duration": "8:30 - 9:30 pm",
       "title": "Noche en Dotonbori",
       "icon": "nightlife",
       "tone": "night",
       "items": [
-        "Recorrido nocturno por Glico Man, puentes, tiendas y Shinsaibashi.",
-        "Puestos de comida y fotos.",
-        "Ver el canal, luces y ambiente de la primera noche en Osaka.",
-        "Snacks o postre 2 personas: $10 - $25."
+        "Recorrer el canal.",
+        "Ver Glico Man y Ebisu Bridge.",
+        "Tomar fotos nocturnas.",
+        "Ver tiendas, luces y letreros.",
+        "Caminar por parte de Shinsaibashi.",
+        "Comprar algún snack o postre si quieren.",
+        "Presupuesto snacks 2 personas: $10 - $25."
       ],
-      "detail": "La primera noche bonita del viaje. Mantenerla caminable y flexible para disfrutar sin agotarse antes de Universal Studios.",
+      "detail": "Primera noche propiamente turística en Japón. Mantenerla flexible porque el cansancio real dependerá de cómo haya salido el viaje.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta o top casual.",
+          "Pantalón largo.",
+          "Tenis muy cómodos.",
+          "Chaqueta ligera.",
+          "Bolso pequeño.",
+          "Sombrilla compacta solamente si el pronóstico indica lluvia."
+        ],
+        "reason": "Habrá bastante caminata nocturna al aire libre."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Ramen Hayashida Dotonbori store, Osaka, Japan",
         "destination": "Ebisu Bridge, Dotonbori, Osaka, Japan",
-        "note": "Paseo caminando por Dotonbori y zona del Glico.",
+        "note": "Paseo caminando por Dotonbori, canal, Glico y Shinsaibashi.",
         "mapsQuery": "Ramen Hayashida Dotonbori store to Ebisu Bridge Dotonbori Osaka"
       }
     },
     {
-      "time": "10:00 pm",
-      "duration": "10:00 - 10:15 pm",
-      "title": "Caminata Dotonbori → Men joy Life",
+      "time": "9:30 pm",
+      "duration": "9:30 - 9:45 pm",
+      "title": "Dotonbori → Men joy Life",
       "icon": "directions_walk",
       "tone": "travel",
       "items": [
         "Caminar desde Dotonbori hacia Men joy Life.",
-        "Ir por zona Shinsaibashi / Higashi-Shinsaibashi.",
-        "Mantenerse en calles principales.",
+        "Ir por Shinsaibashi / Higashi-Shinsaibashi.",
+        "Mantenerse por calles principales.",
+        "Evaluar el cansancio antes de hacer la última parada.",
         "Costo: $0."
       ],
-      "detail": "Men joy Life queda cerca del hotel y de la zona de Shinsaibashi/Namba, por eso entra bien como parada nocturna o alternativa a la cena.",
+      "detail": "Men joy Life es una parada flexible. Si estamos demasiado cansados después del viaje, puede omitirse sin alterar el resto del día.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Camiseta.",
+          "Pantalón largo.",
+          "Tenis.",
+          "Chaqueta ligera."
+        ],
+        "reason": "Última caminata turística importante de la noche."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Dotonbori, Osaka, Japan",
@@ -498,19 +1064,31 @@
       }
     },
     {
-      "time": "10:15 pm",
-      "duration": "10:15 - 10:40 pm",
+      "time": "9:45 pm",
+      "duration": "9:45 - 10:15 pm",
       "title": "Men joy Life",
       "icon": "ramen_dining",
       "tone": "food",
       "marListStop": true,
+      "optional": true,
       "items": [
         "Parada explícita de la lista de Mar.",
-        "Parada nocturna cerca del hotel.",
-        "Puede funcionar como segunda comida ligera, snack final o alternativa si no comen en Ramen Hayashida.",
-        "Presupuesto 2 personas: $20 - $35."
+        "Mantenerla como parada nocturna flexible.",
+        "Puede funcionar como snack, comida ligera o simplemente visita.",
+        "Si estamos muy cansados, pasarla a otro momento del viaje.",
+        "Presupuesto estimado 2 personas: $20 - $35."
       ],
-      "detail": "Men joy Life se mete el Día 1 porque está cerca del hotel y funciona mejor como parada nocturna en la zona de Shinsaibashi/Namba.",
+      "detail": "No queremos que una última parada convierta el Día 1 en una obligación pesada. Se mantiene en el itinerario pero con carácter opcional según energía.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Mismo outfit de Dotonbori.",
+          "Pantalón largo.",
+          "Tenis.",
+          "Chaqueta ligera."
+        ],
+        "reason": "No hace falta ningún cambio de ropa adicional."
+      },
       "location": {
         "name": "Men joy Life",
         "mapsQuery": "Men joy Life Higashi Shinsaibashi Osaka"
@@ -518,26 +1096,38 @@
       "showMap": false
     },
     {
-      "time": "10:40 pm",
-      "duration": "10:40 - 11:00 pm",
+      "time": "10:15 pm",
+      "duration": "10:15 - 10:30 pm",
       "title": "Regreso al Cross Hotel",
       "icon": "bedtime",
       "tone": "rest",
       "items": [
-        "Volver al hotel caminando con calma.",
-        "Preparar lo básico para Universal Studios al día siguiente.",
-        "Cargar teléfonos y power bank.",
+        "Regresar caminando al Cross Hotel.",
+        "Guardar las compras de Pokémon y Pet Paradise.",
+        "Preparar ropa y bolso para Universal Studios al día siguiente.",
+        "Poner celulares y power bank a cargar.",
+        "Revisar alarmas.",
         "Dormir lo antes posible."
       ],
-      "detail": "Cierre del día. La meta es llegar con buena energía al Día 2.",
+      "detail": "El objetivo es cerrar la primera noche relativamente temprano porque el Día 2 será Universal Studios Japan y necesitará bastante más energía.",
+      "recommendedClothing": {
+        "for": "ambos",
+        "items": [
+          "Mantener chaqueta ligera durante la caminata si hace fresco.",
+          "Al llegar al hotel cambiar a ropa cómoda para dormir.",
+          "Dejar los tenis aireándose.",
+          "Preparar desde esta noche el outfit completo de Universal Studios."
+        ],
+        "reason": "Cierre del día y preparación para madrugar."
+      },
       "routeInfo": {
         "mode": "walking",
         "origin": "Men joy Life, Osaka, Japan",
         "destination": "Cross Hotel Osaka, Osaka, Japan",
-        "note": "Regreso caminando desde Men joy Life al Cross Hotel Osaka.",
+        "note": "Regreso caminando hacia Cross Hotel Osaka.",
         "mapsQuery": "Men joy Life Osaka to Cross Hotel Osaka"
       }
     }
   ],
-  "note": "Meta del día: aterrizar, resolver lo esencial en Narita, llegar a Osaka sin estrés, hacer check-in, sumar Shinsekai como primera salida visual y cerrar con Dotonbori cerca del hotel sin llegar agotados a Universal Studios."
+  "note": "Meta del Día 1: aterrizar en Japón, activar Holafly, cambiar dólares a yenes, visitar Pokémon Store Narita apenas abra sin poner en riesgo el vuelo, llegar a Osaka, dejar las maletas, visitar Pet Paradise antes de que cierre y después disfrutar Shinsekai y Dotonbori de manera flexible sin agotarnos antes de Universal Studios."
 }
