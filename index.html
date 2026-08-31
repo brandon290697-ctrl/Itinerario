@@ -6,14 +6,14 @@
   <title>Itinerario Japón 2026</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,500,1,0" />
   <link rel="icon" type="image/png" href="icon-192.png" />
-  <link rel="stylesheet" href="app.css?v=20260831-08" />
+  <link rel="stylesheet" href="app.css?v=20260831-09" />
 </head>
 <body class="light-mode app-view-itinerary">
   <main class="app">
     <section class="shell">
       <header class="app-topbar">
         <div class="top-brand">
-          <span class="top-mark material-symbols-rounded" aria-hidden="true">temple_buddhist</span>
+            <span class="top-mark material-symbols-rounded" aria-hidden="true">travel_explore</span>
           <div>
             <small>Japón 2026</small>
             <strong>Itinerario</strong>
@@ -22,7 +22,7 @@
         <div class="top-actions">
           <span class="deploy-stamp" id="deployStamp" title="Marca para confirmar que GitHub Pages actualizó esta versión">
             <span class="material-symbols-rounded" aria-hidden="true">verified</span>
-            Build 2026.08.31-08
+            Build 2026.08.31-09
           </span>
           <button class="icon-action reservation-button" type="button" id="reservationButton" title="Reservas críticas" aria-label="Ver reservas críticas">
             <span class="material-symbols-rounded">event_available</span>
@@ -391,7 +391,7 @@
     const COST_UNLOCK_PASSWORD = "29972997";
     const PROPOSAL_DAY_UNLOCK_PASSWORD = "871987188717";
     const PROPOSAL_DAY_INDEX = 3;
-    const APP_BUILD_LABEL = "Build 2026.08.31-08";
+    const APP_BUILD_LABEL = "Build 2026.08.31-09";
     const USD_TO_CRC_ESTIMATE = 460;
     const JPY_TO_USD_ESTIMATE = 0.0068;
     const criticalReservations = [
@@ -536,7 +536,7 @@
     const deployStamp = document.getElementById("deployStamp");
     const baseCity = document.getElementById("baseCity");
     const heroBase = document.getElementById("heroBase");
-    const hero = document.querySelector(".hero");
+    const hero = document.querySelector(".day-overview");
     const themeToggle = document.getElementById("themeToggle");
     const themeIcon = document.getElementById("themeIcon");
     const themeLabel = document.getElementById("themeLabel");
@@ -774,9 +774,10 @@
 
     function setHeroImage(theme) {
       const rootStyle = document.documentElement.style;
+      const heroElement = document.querySelector(".day-overview") || hero;
       const nextImage = `url("${theme.image}")`;
       const nextPosition = theme.position || "center";
-      const shouldAnimate = hero
+      const shouldAnimate = heroElement
         && activeHeroImage
         && activeHeroImage !== theme.image
         && !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -787,7 +788,7 @@
       }
 
       if (!shouldAnimate) {
-        hero?.classList.remove("hero-image-fading");
+        heroElement?.classList.remove("hero-image-fading");
         rootStyle.setProperty("--hero-image", nextImage);
         rootStyle.setProperty("--hero-next-image", nextImage);
         rootStyle.setProperty("--hero-position", nextPosition);
@@ -798,14 +799,14 @@
 
       rootStyle.setProperty("--hero-next-image", nextImage);
       rootStyle.setProperty("--hero-next-position", nextPosition);
-      hero.classList.remove("hero-image-fading");
-      void hero.offsetWidth;
-      hero.classList.add("hero-image-fading");
+      heroElement.classList.remove("hero-image-fading");
+      void heroElement.offsetWidth;
+      heroElement.classList.add("hero-image-fading");
 
       activeHeroFadeTimer = setTimeout(() => {
         rootStyle.setProperty("--hero-image", nextImage);
         rootStyle.setProperty("--hero-position", nextPosition);
-        hero.classList.remove("hero-image-fading");
+        heroElement.classList.remove("hero-image-fading");
         activeHeroImage = theme.image;
         activeHeroFadeTimer = null;
       }, 560);
@@ -2420,22 +2421,71 @@
       `;
     }
 
+    function shortDayTitle(day) {
+      return (day.title || "").replace(/^Día\s+\d+\s*-\s*/i, "").trim() || day.title;
+    }
+
+    function firstRealStop(day) {
+      return day.blocks?.find(block => !/despertar|preparar|desayuno/i.test(`${block.title} ${block.duration}`)) || day.blocks?.[0];
+    }
+
+    function renderDayActionsBar(index) {
+      const todayMode = document.body.classList.contains("today-mode");
+      return `
+        <div class="day-actions day-actions-compact">
+          <button class="day-tool-button" type="button" data-day-action="copy">
+            <span class="material-symbols-rounded">content_copy</span>
+            <span data-action-label>Copiar</span>
+          </button>
+          <button class="day-tool-button" type="button" data-day-action="day-map">
+            <span class="material-symbols-rounded">route</span>
+            <span>Ruta</span>
+          </button>
+          <button class="day-tool-button" type="button" data-day-action="food">
+            <span class="material-symbols-rounded">restaurant</span>
+            <span>Comida</span>
+          </button>
+          <button class="day-tool-button" type="button" data-day-action="taxi">
+            <span class="material-symbols-rounded">hotel</span>
+            <span>Hotel</span>
+          </button>
+          <button class="day-tool-button" type="button" data-day-action="today-mode" aria-pressed="${todayMode ? "true" : "false"}">
+            <span class="material-symbols-rounded">${todayMode ? "close_fullscreen" : "today"}</span>
+            <span data-action-label>${todayMode ? "Todo" : "Hoy"}</span>
+          </button>
+        </div>
+      `;
+    }
+
     function renderDay(index) {
       currentDayIndex = index;
       updateBaseSummary(index);
       updateWeatherSummary(index);
       const day = days[index];
+      const firstStop = firstRealStop(day);
+      const routeCount = day.route?.length || 0;
+      const stopCount = day.blocks?.length || 0;
       content.innerHTML = `
-        <div class="day-header">
-          <div><div class="day-date">${day.dateLabel}</div><h2>${day.title}</h2><p>${day.subtitle}</p>${renderNextStep(day)}${renderDayInsights(day)}${renderDayAssist(index)}</div>
-          <div class="day-meta">
-            <div class="day-pills">
-              <div class="status-pill">${day.status}</div>
-              <div class="energy-pill ${energyClass(day)}">Energía: ${getEnergyLevel(day)}</div>
+        <section class="day-overview">
+          <div class="day-overview-top">
+            <div>
+              <div class="day-date">${day.shortDateLabel || day.dateLabel}</div>
+              <h1>${shortDayTitle(day)}</h1>
+              <p>${day.status}${firstStop ? ` · primera parada ${firstStop.time}` : ""}</p>
             </div>
-            <div class="day-cost-pill" ${canShowCostAmounts(index) && day.costEstimateUsd ? "" : "hidden"}>${day.costEstimateUsd ? `Costo estimado: ${costEstimateText(day.costEstimateUsd)}` : ""}</div>
+            <span class="day-city-mark">${getDayBase(index).slice(0, 3).toUpperCase()}</span>
           </div>
-        </div>
+          <div class="day-stats">
+            <span><strong>${String(index).padStart(2, "0")}</strong><small>día</small></span>
+            <span><strong>${stopCount}</strong><small>paradas</small></span>
+            <span><strong>${routeCount}</strong><small>ruta</small></span>
+            <span><strong>${getEnergyLevel(day)}</strong><small>energía</small></span>
+          </div>
+          ${renderDayActionsBar(index)}
+          ${renderNextStep(day)}
+          ${renderDayInsights(day)}
+          ${renderDayAssist(index)}
+        </section>
         <details class="day-summary-card">
           <summary>
             <span class="material-symbols-rounded">checklist</span>
@@ -2446,36 +2496,7 @@
             <div class="route-line">${day.route.map((item, i) => `${i > 0 ? "<span>→</span>" : ""}<div>${item}</div>`).join("")}</div>
             ${renderPrepNote(day, index)}
             ${renderPrivateDayExtras(day)}
-            <div class="day-actions">
-              <button class="day-tool-button" type="button" data-day-action="copy">
-                <span class="material-symbols-rounded">content_copy</span>
-                <span data-action-label>Copiar día</span>
-              </button>
-              <button class="day-tool-button" type="button" data-day-action="day-map">
-                <span class="material-symbols-rounded">route</span>
-                <span>Mapa del día</span>
-              </button>
-              <button class="day-tool-button" type="button" data-day-action="phrases">
-                <span class="material-symbols-rounded">translate</span>
-                <span>Frases</span>
-              </button>
-              <button class="day-tool-button" type="button" data-day-action="food">
-                <span class="material-symbols-rounded">restaurant</span>
-                <span>Comida</span>
-              </button>
-              <button class="day-tool-button" type="button" data-day-action="taxi">
-                <span class="material-symbols-rounded">local_taxi</span>
-                <span>Taxi</span>
-              </button>
-              <button class="day-tool-button" type="button" data-day-action="print">
-                <span class="material-symbols-rounded">print</span>
-                <span>Imprimir</span>
-              </button>
-              <button class="day-tool-button" type="button" data-day-action="today-mode" aria-pressed="${document.body.classList.contains("today-mode") ? "true" : "false"}">
-                <span class="material-symbols-rounded">${document.body.classList.contains("today-mode") ? "close_fullscreen" : "today"}</span>
-                <span data-action-label>${document.body.classList.contains("today-mode") ? "Salir de solo hoy" : "Solo hoy"}</span>
-              </button>
-            </div>
+            ${renderDayActionsBar(index)}
           </div>
         </details>
         <div class="blocks" id="dayBlocks">
