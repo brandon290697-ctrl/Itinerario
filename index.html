@@ -6,12 +6,43 @@
   <title>Itinerario Japón 2026</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,500,1,0" />
   <link rel="icon" type="image/png" href="icon-192.png" />
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <link rel="stylesheet" href="app.css?v=20260831-06" />
+  <link rel="stylesheet" href="app.css?v=20260831-08" />
 </head>
-<body class="light-mode app-view-home">
+<body class="light-mode app-view-itinerary">
   <main class="app">
     <section class="shell">
+      <header class="app-topbar">
+        <div class="top-brand">
+          <span class="top-mark material-symbols-rounded" aria-hidden="true">temple_buddhist</span>
+          <div>
+            <small>Japón 2026</small>
+            <strong>Itinerario</strong>
+          </div>
+        </div>
+        <div class="top-actions">
+          <span class="deploy-stamp" id="deployStamp" title="Marca para confirmar que GitHub Pages actualizó esta versión">
+            <span class="material-symbols-rounded" aria-hidden="true">verified</span>
+            Build 2026.08.31-08
+          </span>
+          <button class="icon-action reservation-button" type="button" id="reservationButton" title="Reservas críticas" aria-label="Ver reservas críticas">
+            <span class="material-symbols-rounded">event_available</span>
+          </button>
+          <div class="theme-picker" id="themePicker">
+            <button class="icon-action theme-picker-toggle" type="button" id="themePickerToggle" aria-label="Abrir selector de temas" aria-expanded="false">
+              <span class="material-symbols-rounded" aria-hidden="true">palette</span>
+              <span class="material-symbols-rounded theme-arrow" aria-hidden="true">expand_more</span>
+            </button>
+            <div class="theme-menu" id="themeMenu" role="menu" aria-label="Seleccionar tema visual">
+              <button class="theme-option" type="button" data-theme-choice="classic" role="menuitem"><span class="theme-swatch" style="background:#f6f4ef"></span>Clásico</button>
+              <button class="theme-option" type="button" data-theme-choice="sakura" role="menuitem"><span class="theme-swatch" style="background:#e84855"></span>Sakura</button>
+              <button class="theme-option" type="button" data-theme-choice="matcha" role="menuitem"><span class="theme-swatch" style="background:#2f8f68"></span>Matcha</button>
+              <button class="theme-option" type="button" data-theme-choice="indigo" role="menuitem"><span class="theme-swatch" style="background:#3157d5"></span>Indigo</button>
+              <button class="theme-option" type="button" data-theme-choice="dark" role="menuitem"><span class="theme-swatch" style="background:#0d121c"></span>Oscuro</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
       <button class="mobile-quick-toggle" type="button" id="quickToggle" aria-expanded="false">
         <span class="material-symbols-rounded" id="quickToggleIcon">expand_more</span>
         <span id="quickToggleLabel">Ver clima, conversor y presupuesto</span>
@@ -68,103 +99,6 @@
             <span class="trip-countdown-destination" aria-hidden="true"><span class="material-symbols-rounded">temple_buddhist</span></span>
           </div>
         </div>
-        <div class="cost-actions">
-          <button class="cost-unlock-button" type="button" data-app-view="home" title="Volver al menú inicial">
-            <span class="material-symbols-rounded">home</span>
-            <span>Inicio</span>
-          </button>
-          <span class="deploy-stamp" id="deployStamp" title="Marca para confirmar que GitHub Pages actualizó esta versión">
-            <span class="material-symbols-rounded" aria-hidden="true">verified</span>
-            Build 2026.08.31-06
-          </span>
-          <button class="cost-unlock-button reservation-button" type="button" id="reservationButton" title="Reservas críticas" aria-label="Ver reservas críticas">
-            <span class="material-symbols-rounded">event_available</span>
-            <span>Reservas críticas</span>
-          </button>
-          <div class="theme-picker" id="themePicker">
-            <button class="theme-picker-toggle" type="button" id="themePickerToggle" aria-label="Abrir selector de temas" aria-expanded="false">
-              <span class="material-symbols-rounded" aria-hidden="true">palette</span>
-              <span class="material-symbols-rounded theme-arrow" aria-hidden="true">expand_more</span>
-            </button>
-            <div class="theme-menu" id="themeMenu" role="menu" aria-label="Seleccionar tema visual">
-              <button class="theme-option" type="button" data-theme-choice="classic" role="menuitem"><span class="theme-swatch" style="background:#e9f2f8"></span>Clásico</button>
-              <button class="theme-option" type="button" data-theme-choice="sakura" role="menuitem"><span class="theme-swatch" style="background:#c44569"></span>Sakura</button>
-              <button class="theme-option" type="button" data-theme-choice="matcha" role="menuitem"><span class="theme-swatch" style="background:#2f6f4e"></span>Matcha</button>
-              <button class="theme-option" type="button" data-theme-choice="indigo" role="menuitem"><span class="theme-swatch" style="background:#1d3557"></span>Indigo</button>
-              <button class="theme-option" type="button" data-theme-choice="dark" role="menuitem"><span class="theme-swatch" style="background:#0b111a"></span>Oscuro</button>
-            </div>
-          </div>
-          <button class="cost-unlock-button" type="button" id="costUnlockButton">
-            <span class="material-symbols-rounded" id="costUnlockIcon">lock</span>
-            <span id="costUnlockLabel">Desbloquear montos</span>
-          </button>
-        </div>
-      </section>
-
-      <section class="home-screen" id="homeScreen" aria-label="Menú inicial">
-        <div class="home-hero-card">
-          <div class="home-copy">
-            <span class="home-kicker">Japan 2026</span>
-            <h2>Todo el viaje en orden</h2>
-            <p>Primero reservas y pendientes. Después la ruta diaria, rápida y fácil de leer en el celular.</p>
-          </div>
-          <div class="home-status-card">
-            <small>Checklist</small>
-            <strong id="homeChecklistProgress">0/0 listo</strong>
-            <div class="home-progress-track"><span id="homeChecklistFill"></span></div>
-            <em id="homeSyncStatus">Sincronizando...</em>
-          </div>
-        </div>
-        <div class="home-cards">
-          <button class="home-card primary" type="button" data-app-view="checklist">
-            <span class="home-card-icon material-symbols-rounded">fact_check</span>
-            <span class="home-card-copy">
-              <strong>Checklist pre-viaje</strong>
-              <small>Reservas, entradas, transporte y pendientes.</small>
-            </span>
-            <span class="home-card-meta">Continuar</span>
-          </button>
-          <button class="home-card" type="button" data-app-view="itinerary">
-            <span class="home-card-icon material-symbols-rounded">map</span>
-            <span class="home-card-copy">
-              <strong>Itinerario por días</strong>
-              <small>Horarios, mapas, comida, frases y regreso al hotel.</small>
-            </span>
-            <span class="home-card-meta">Abrir ruta</span>
-          </button>
-        </div>
-      </section>
-
-      <section class="checklist-screen" id="checklistScreen" aria-label="Checklist pre-viaje">
-        <div class="screen-toolbar">
-          <button class="soft-back-button" type="button" data-app-view="home">
-            <span class="material-symbols-rounded">arrow_back</span>
-            Inicio
-          </button>
-          <button class="soft-back-button strong" type="button" data-app-view="itinerary">
-            <span class="material-symbols-rounded">map</span>
-            Itinerario
-          </button>
-        </div>
-        <div class="checklist-hero">
-          <div>
-            <span class="home-kicker">Pre-viaje</span>
-            <h2>Checklist de reservas y pendientes</h2>
-            <p>Marque lo listo y agregue cualquier cosa nueva. Se guarda en este navegador.</p>
-          </div>
-          <div class="checklist-ring">
-            <strong id="checklistPercent">0%</strong>
-            <span>listo</span>
-          </div>
-        </div>
-        <form class="checklist-add" id="checklistAddForm">
-          <input id="checklistInput" type="text" placeholder="Agregar pendiente nuevo..." autocomplete="off">
-          <button type="submit">
-            <span class="material-symbols-rounded">add</span>
-            Agregar
-          </button>
-        </form>
-        <div class="checklist-groups" id="checklistGroups"></div>
       </section>
 
       <section class="workspace" id="mainWorkspace">
@@ -457,11 +391,7 @@
     const COST_UNLOCK_PASSWORD = "29972997";
     const PROPOSAL_DAY_UNLOCK_PASSWORD = "871987188717";
     const PROPOSAL_DAY_INDEX = 3;
-    const APP_BUILD_LABEL = "Build 2026.08.31-06";
-    const SUPABASE_URL = "https://bqqwivlvlwpafvqmmdjb.supabase.co";
-    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJxcXdpdmx2bHdwYWZ2cW1tZGpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMxNzU3NDIsImV4cCI6MjA5ODc1MTc0Mn0.ZBdBwPbZSL2kfQtauartsWhElSA7Nq9_FME_cQOyY1A";
-    const SUPABASE_CHECKLIST_TABLE = "trip_checklist";
-    const SUPABASE_TRIP_KEY = "japon-2026-brandon-mar";
+    const APP_BUILD_LABEL = "Build 2026.08.31-08";
     const USD_TO_CRC_ESTIMATE = 460;
     const JPY_TO_USD_ESTIMATE = 0.0068;
     const criticalReservations = [
@@ -673,15 +603,6 @@
     const bottomNav = document.getElementById("bottomNav");
     const actionFab = document.getElementById("actionFab");
     const todayModeExit = document.getElementById("todayModeExit");
-    const homeScreen = document.getElementById("homeScreen");
-    const checklistScreen = document.getElementById("checklistScreen");
-    const checklistGroups = document.getElementById("checklistGroups");
-    const checklistAddForm = document.getElementById("checklistAddForm");
-    const checklistInput = document.getElementById("checklistInput");
-    const checklistPercent = document.getElementById("checklistPercent");
-    const homeChecklistProgress = document.getElementById("homeChecklistProgress");
-    const homeChecklistFill = document.getElementById("homeChecklistFill");
-    const homeSyncStatus = document.getElementById("homeSyncStatus");
 
     deployStamp?.setAttribute("aria-label", APP_BUILD_LABEL);
     console.info(`Itinerario Japon 2026 - ${APP_BUILD_LABEL}`);
@@ -706,33 +627,6 @@
     let activeTaxiCardText = "";
     let map;
     let directionsRenderer;
-    const supabaseClient = window.supabase?.createClient
-      ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
-      : null;
-    let checklistSyncMode = supabaseClient ? "syncing" : "local";
-
-    const checklistDefaults = [
-      { id: "hotels", group: "Pre-viaje", text: "Hoteles Osaka + Kyoto + Tokyo" },
-      { id: "esim", group: "Pre-viaje", text: "Holafly / eSIM Japon para 2 personas" },
-      { id: "insurance", group: "Pre-viaje", text: "Seguro de viaje para 2 personas" },
-      { id: "usj", group: "Pre-viaje", text: "Universal Studios Japan + Express Pass" },
-      { id: "disneysea", group: "Pre-viaje", text: "Tokyo DisneySea" },
-      { id: "pokepark", group: "Pre-viaje", text: "PokePark KANTO" },
-      { id: "teamlab-osaka", group: "Pre-viaje", text: "teamLab Osaka" },
-      { id: "shinkansen", group: "Pre-viaje", text: "Shinkansen Kyoto -> Tokyo" },
-      { id: "rapit", group: "Pre-viaje", text: "Rapi:t Kansai -> Namba" },
-      { id: "skyliner", group: "Pre-viaje", text: "Skyliner / tren hacia Narita regreso" },
-      { id: "nrt-kix-flight", group: "Pre-viaje", text: "Vuelo interno Narita -> Kansai - ya pagado" },
-      { id: "skyliner-confirm", group: "Pendiente de definir", text: "Skyliner / tren hacia Narita regreso" },
-      { id: "deposits", group: "Pendiente de definir", text: "Confirmar si alguna reserva requiere deposito previo" },
-      { id: "ticket-dates", group: "Pendiente de definir", text: "Confirmar fechas exactas de compra para entradas importantes: USJ, PokePark, DisneySea y Pokemon Cafe" }
-    ];
-
-    let checklistDone = new Set(getStoredValue(storageKey("checklistDone"), "")
-      .split(",")
-      .filter(Boolean));
-    let checklistCustom = parseStoredJson(storageKey("checklistCustom"), []);
-
     const blocksWithoutMapButton = new Set([
       "Aeropuerto en Costa Rica",
       "Salida de Costa Rica",
@@ -1047,201 +941,6 @@
       quickToggleLabel.textContent = isOpen
         ? "Menos datos"
         : "Más datos";
-    }
-
-    function parseStoredJson(key, fallback) {
-      try {
-        const raw = getStoredValue(key, "");
-        return raw ? JSON.parse(raw) : fallback;
-      } catch (error) {
-        return fallback;
-      }
-    }
-
-    function setAppView(view) {
-      const safeView = ["home", "checklist", "itinerary"].includes(view) ? view : "home";
-      document.body.classList.remove("app-view-home", "app-view-checklist", "app-view-itinerary");
-      document.body.classList.add(`app-view-${safeView}`);
-      document.body.classList.remove("actions-open");
-      actionFab?.setAttribute("aria-expanded", "false");
-      if (safeView === "checklist") renderChecklist();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    function allChecklistItems() {
-      return [...checklistDefaults, ...checklistCustom];
-    }
-
-    function updateChecklistSyncStatus(status = checklistSyncMode) {
-      checklistSyncMode = status;
-      if (!homeSyncStatus) return;
-      const labels = {
-        cloud: "Sincronizado",
-        syncing: "Sincronizando...",
-        local: "Guardado",
-        error: "Guardado"
-      };
-      homeSyncStatus.textContent = labels[status] || labels.local;
-    }
-
-    function saveChecklistLocal() {
-      setStoredValue(storageKey("checklistDone"), [...checklistDone].join(","));
-      setStoredValue(storageKey("checklistCustom"), JSON.stringify(checklistCustom));
-    }
-
-    function checklistRowsForCloud() {
-      return allChecklistItems().map((item, index) => ({
-        id: item.id,
-        trip_key: SUPABASE_TRIP_KEY,
-        group_name: item.group,
-        text: item.text,
-        done: checklistDone.has(item.id),
-        custom: Boolean(item.custom),
-        sort_order: index * 10,
-        updated_at: new Date().toISOString()
-      }));
-    }
-
-    async function syncChecklistToCloud() {
-      if (!supabaseClient) {
-        updateChecklistSyncStatus("local");
-        return;
-      }
-
-      updateChecklistSyncStatus("syncing");
-      const { error } = await supabaseClient
-        .from(SUPABASE_CHECKLIST_TABLE)
-        .upsert(checklistRowsForCloud(), { onConflict: "id" });
-
-      if (error) throw error;
-      updateChecklistSyncStatus("cloud");
-    }
-
-    function saveChecklist() {
-      saveChecklistLocal();
-      syncChecklistToCloud().catch(error => {
-        console.warn("Checklist en modo local.", error);
-        updateChecklistSyncStatus("error");
-      });
-    }
-
-    async function deleteChecklistFromCloud(id) {
-      if (!supabaseClient) return;
-      const { error } = await supabaseClient
-        .from(SUPABASE_CHECKLIST_TABLE)
-        .delete()
-        .eq("trip_key", SUPABASE_TRIP_KEY)
-        .eq("id", id);
-      if (error) throw error;
-    }
-
-    async function loadChecklistFromCloud() {
-      if (!supabaseClient) {
-        updateChecklistSyncStatus("local");
-        return;
-      }
-
-      updateChecklistSyncStatus("syncing");
-      const { data, error } = await supabaseClient
-        .from(SUPABASE_CHECKLIST_TABLE)
-        .select("id, group_name, text, done, custom, sort_order")
-        .eq("trip_key", SUPABASE_TRIP_KEY)
-        .order("sort_order", { ascending: true });
-
-      if (error) throw error;
-
-      const rows = data || [];
-      const remoteIds = new Set(rows.map(row => row.id));
-      const missingDefaults = checklistDefaults.filter(item => !remoteIds.has(item.id));
-
-      if (!rows.length || missingDefaults.length) {
-        const defaultsToSeed = missingDefaults.length ? missingDefaults : checklistDefaults;
-        const seedRows = defaultsToSeed.map((item, index) => ({
-          id: item.id,
-          trip_key: SUPABASE_TRIP_KEY,
-          group_name: item.group,
-          text: item.text,
-          done: checklistDone.has(item.id),
-          custom: false,
-          sort_order: index * 10,
-          updated_at: new Date().toISOString()
-        }));
-        const { error: seedError } = await supabaseClient
-          .from(SUPABASE_CHECKLIST_TABLE)
-          .upsert(seedRows, { onConflict: "id" });
-        if (seedError) throw seedError;
-        return loadChecklistFromCloud();
-      }
-
-      checklistDone = new Set(rows.filter(row => row.done).map(row => row.id));
-      checklistCustom = rows
-        .filter(row => row.custom)
-        .map(row => ({
-          id: row.id,
-          group: row.group_name || "Agregados",
-          text: row.text,
-          custom: true
-        }));
-      saveChecklistLocal();
-      updateChecklistSyncStatus("cloud");
-    }
-
-    function checklistProgress() {
-      const items = allChecklistItems();
-      const done = items.filter(item => checklistDone.has(item.id)).length;
-      return {
-        total: items.length,
-        done,
-        percent: items.length ? Math.round((done / items.length) * 100) : 0
-      };
-    }
-
-    function updateChecklistProgress() {
-      const progress = checklistProgress();
-      if (checklistPercent) checklistPercent.textContent = `${progress.percent}%`;
-      if (homeChecklistProgress) homeChecklistProgress.textContent = `${progress.done}/${progress.total} listo`;
-      if (homeChecklistFill) homeChecklistFill.style.width = `${progress.percent}%`;
-    }
-
-    function renderChecklist() {
-      if (!checklistGroups) return;
-      const groups = allChecklistItems().reduce((acc, item) => {
-        if (!acc[item.group]) acc[item.group] = [];
-        acc[item.group].push(item);
-        return acc;
-      }, {});
-
-      checklistGroups.innerHTML = Object.entries(groups).map(([group, items]) => `
-        <section class="checklist-group">
-          <h3>${escapeHtml(group)}</h3>
-          <div class="checklist-items">
-            ${items.map(item => {
-              const done = checklistDone.has(item.id);
-              const custom = item.custom ? "true" : "false";
-              return `
-                <label class="check-item ${done ? "done" : ""}" data-check-id="${escapeHtml(item.id)}">
-                  <input type="checkbox" ${done ? "checked" : ""}>
-                  <span>${escapeHtml(item.text)}</span>
-                  ${item.custom ? `<button class="check-remove" type="button" data-remove-check="${escapeHtml(item.id)}" aria-label="Eliminar pendiente"><span class="material-symbols-rounded">close</span></button>` : `<small></small>`}
-                </label>`;
-            }).join("")}
-          </div>
-        </section>`).join("");
-
-      updateChecklistProgress();
-    }
-
-    function addChecklistItem(text) {
-      const cleanText = String(text || "").trim();
-      if (!cleanText) return;
-      checklistCustom.push({
-        id: `custom-${Date.now()}`,
-        group: "Agregados",
-        text: cleanText,
-        custom: true
-      });
-      saveChecklist();
-      renderChecklist();
     }
 
     function tripDateForIndex(index) {
@@ -2858,48 +2557,10 @@
 
     buttons.forEach(button => {
       button.addEventListener("click", () => {
-        setAppView("itinerary");
+        document.body.classList.remove("actions-open");
+        actionFab?.setAttribute("aria-expanded", "false");
         setActiveDay(Number(button.dataset.day));
       });
-    });
-
-    document.querySelectorAll("[data-app-view]").forEach(button => {
-      button.addEventListener("click", () => {
-        setAppView(button.dataset.appView);
-      });
-    });
-
-    checklistAddForm?.addEventListener("submit", event => {
-      event.preventDefault();
-      addChecklistItem(checklistInput?.value);
-      if (checklistInput) checklistInput.value = "";
-    });
-
-    checklistGroups?.addEventListener("change", event => {
-      const input = event.target.closest("input[type='checkbox']");
-      const item = input?.closest("[data-check-id]");
-      if (!input || !item) return;
-      const id = item.dataset.checkId;
-      if (input.checked) checklistDone.add(id);
-      else checklistDone.delete(id);
-      saveChecklist();
-      renderChecklist();
-    });
-
-    checklistGroups?.addEventListener("click", event => {
-      const removeButton = event.target.closest("[data-remove-check]");
-      if (!removeButton) return;
-      event.preventDefault();
-      event.stopPropagation();
-      const id = removeButton.dataset.removeCheck;
-      checklistCustom = checklistCustom.filter(item => item.id !== id);
-      checklistDone.delete(id);
-      saveChecklist();
-      deleteChecklistFromCloud(id).catch(error => {
-        console.warn("No se pudo borrar el pendiente en Supabase.", error);
-        updateChecklistSyncStatus("error");
-      });
-      renderChecklist();
     });
 
     currencyAmount?.addEventListener("input", updateCurrencyConverter);
@@ -3497,17 +3158,6 @@
       setInterval(updateCountdown, 3600000);
       initTheme();
       updateQuickToggle();
-      updateChecklistProgress();
-      loadChecklistFromCloud()
-        .then(() => {
-          updateChecklistProgress();
-          if (document.body.classList.contains("app-view-checklist")) renderChecklist();
-        })
-        .catch(error => {
-          console.warn("Checklist remoto no disponible.", error);
-          updateChecklistSyncStatus("error");
-          updateChecklistProgress();
-        });
       content.innerHTML = '<section class="day-card"><div class="day-header"><div><div class="day-date">Cargando</div><h2>Cargando itinerario...</h2><p>Leyendo archivos JSON.</p></div></div></section>';
 
       try {
