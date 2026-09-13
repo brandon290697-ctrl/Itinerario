@@ -1,0 +1,26 @@
+JAPÓN 2026 · ITINERARIO INTERACTIVO
+
+1. Extraiga todo el ZIP conservando la carpeta.
+2. Abra index.html.
+3. Entre al día que quiera.
+4. Use Anterior / Siguiente para recorrer el plan.
+5. “Abrir este tramo” abre Google Maps con origen, destino y modo de transporte.
+6. “Navegar desde mi ubicación” usa su ubicación real hacia el destino.
+7. Los horarios de tren/bus deben reconfirmarse la noche anterior.
+
+Archivos:
+- index.html
+- dia_00.html ... dia_18.html
+
+
+VERSIÓN VISUAL
+- Las paradas importantes muestran fotos reales de referencia cargadas desde Wikimedia Commons.
+- Las fotos exactas de Google Maps no se incrustan porque Google Places Photos requiere una API key.
+- Cada foto incluye enlace a su fuente/licencia y botón para abrir el lugar en Google Maps.
+- Se necesita conexión a Internet para cargar fotos y mapas.
+
+
+ACTUALIZACIÓN
+- Día 3: Osaka Castle + Pokémon Café + Namba + cena.
+- Día 12: Harry Potter Shop Harajuku + Butterbeer Bar + Harry Potter Cafe Akasaka a las 18:00.
+- Este paquete está preparado como versión general/compartible del itinerario.

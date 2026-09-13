@@ -1,6 +1,0 @@
-{
-  "scripts": {
-    "build:data": "node scripts/build-itinerary-data.js",
-    "start": "node scripts/serve.js"
-  }
-}

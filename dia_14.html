@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Día 14 · PokéPark KANTO + Yomiuriland</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--text:#111827;--muted:#667085;--border:#e5e7eb;--accent:#2563eb;--soft:#eff6ff;--ok:#15803d;--warn:#9a3412}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.topnav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.topnav-inner{max-width:1080px;margin:auto;padding:9px 12px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px}
+.topnav-inner>*:last-child{justify-self:end}.home{font-weight:900;text-decoration:none;color:var(--text);padding:8px 10px;border-radius:10px;border:1px solid var(--border)}
+.navbtn{text-decoration:none;color:var(--text);font-weight:800;font-size:13px;padding:8px 10px;border-radius:10px;border:1px solid var(--border);background:#fff}
+.app{max-width:1080px;margin:auto;padding:18px 12px 44px}
+.hero{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.eyebrow{font-size:13px;color:var(--muted);font-weight:900}h1{font-size:27px;line-height:1.12;margin:4px 0 6px}
+.subtitle{font-size:14px;color:var(--muted);line-height:1.5;margin:0;max-width:760px}.daypill{white-space:nowrap;padding:9px 12px;border-radius:999px;border:1px solid var(--border);background:#fff;font-weight:900;font-size:13px}
+.infochips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.chip{padding:7px 10px;border:1px solid var(--border);border-radius:999px;background:#fff;font-size:12px;font-weight:800}.chip.early{background:#fff7ed;border-color:#fed7aa;color:#9a3412}
+.progress-shell{height:8px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:12px 0 16px}.progress{height:100%;background:var(--accent);transition:width .35s}
+.grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px}
+.stophead{display:flex;gap:12px;align-items:center}.icon{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--soft);font-size:27px;flex:0 0 auto}.time{font-size:13px;color:var(--muted);font-weight:900}.title{font-size:20px;font-weight:950;line-height:1.2;margin-top:2px}
+.tag{display:inline-block;margin-top:7px;padding:4px 7px;border-radius:999px;background:#fef3c7;color:#92400e;font-size:10px;font-weight:900}.detail{font-size:15px;line-height:1.55;margin:15px 0 10px}
+.items{margin:0 0 12px 0;padding-left:20px;color:#374151;font-size:14px;line-height:1.5}.items:empty{display:none}
+.leg{background:var(--soft);border:1px solid #dbeafe;border-radius:14px;padding:13px;margin-top:12px}.leg small,.mini small,.note small{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:900;letter-spacing:.04em}
+.leg strong{display:block;font-size:15px;margin-top:4px}.route{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.4}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.mini{background:#f8fafc;border-radius:12px;padding:10px}.mini strong{display:block;margin-top:4px;font-size:13px}
+.note{border:1px solid var(--border);border-radius:12px;padding:10px;margin-top:10px}.note div{font-size:13px;line-height:1.4;margin-top:3px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}button,a.action{appearance:none;min-height:44px;border-radius:12px;padding:10px 13px;font-size:13px;font-weight:900;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.primary{border:0;background:var(--accent);color:#fff}.secondary{border:1px solid var(--border);background:#fff;color:var(--text)}button:disabled{opacity:.35;cursor:not-allowed}
+.mapcard{padding:0;overflow:hidden}.maptop{padding:12px 14px;border-bottom:1px solid var(--border)}.maptitle{font-weight:900;font-size:14px}.mapsub{font-size:12px;color:var(--muted);margin-top:2px}iframe{display:block;width:100%;height:470px;border:0;background:#e5e7eb}
+.timeline{margin-top:14px}.timeline h2{font-size:16px;margin:0 0 9px}.step{display:flex;gap:10px;padding:9px 8px;border-radius:12px;cursor:pointer;transition:.15s}.step:hover{background:#f8fafc}.step.active{background:var(--soft)}.step.future{opacity:.5}
+.dot{width:29px;height:29px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--border);background:#fff;flex:0 0 auto;font-size:12px;font-weight:900}.step.active .dot{background:var(--accent);color:#fff;border-color:var(--accent)}.step.done .dot{background:#dcfce7;color:var(--ok);border-color:#bbf7d0}.stepname{font-size:13px;font-weight:850;line-height:1.3}.steptime{font-size:11px;color:var(--muted);margin-top:2px}.stepmode{font-size:10px;font-weight:800;color:var(--accent);margin-top:3px}
+.verify{margin-top:14px;background:#fff;border:1px solid var(--border);border-radius:18px;padding:14px}.verify-title{font-size:14px;font-weight:950;margin-bottom:8px}.verify-row{display:grid;grid-template-columns:160px 1fr auto;gap:8px;padding:8px 0;border-top:1px solid var(--border);font-size:12px;align-items:center}.verify-row:first-of-type{border-top:0}.verify-row span{color:var(--muted)}.verify-row a{color:var(--accent);font-weight:800;text-decoration:none}.verify-foot{font-size:11px;color:var(--muted);margin-top:8px}
+.tip{margin-top:14px;padding:13px;border-radius:16px;border:1px solid #fde68a;background:#fffbeb;color:#713f12;font-size:12px;line-height:1.45}
+@media(max-width:780px){.grid{grid-template-columns:1fr}iframe{height:340px}.hero{display:block}.daypill{display:inline-block;margin-top:10px}h1{font-size:23px}.verify-row{grid-template-columns:1fr}.topnav-inner{grid-template-columns:1fr auto 1fr}.navbtn{font-size:11px;padding:7px}.home{font-size:12px}}
+
+.photo-ref{margin:14px 0 4px;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#f8fafc;display:none}
+.photo-media{position:relative;aspect-ratio:16/9;background:#e5e7eb;overflow:hidden}
+.photo-media img{width:100%;height:100%;display:block;object-fit:cover}
+.photo-loading{position:absolute;inset:0;display:grid;place-items:center;padding:20px;text-align:center;color:var(--muted);font-size:12px;font-weight:800;background:#f8fafc}
+.photo-body{padding:10px 12px}
+.photo-title{font-size:12px;font-weight:950}
+.photo-caption{font-size:11px;color:var(--muted);line-height:1.4;margin-top:3px}
+.photo-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.photo-links a{font-size:11px;font-weight:850;text-decoration:none;color:var(--accent)}
+.photo-unavailable{padding:16px;text-align:center;color:var(--muted);font-size:12px}
+
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner"><a class="navbtn" href="dia_13.html">← Día 13</a><a class="home" href="index.html">☰ Todos los días</a><a class="navbtn" href="dia_15.html">Día 15 →</a></div></nav>
+<main class="app">
+<div class="hero"><div><div class="eyebrow">Día 14 · Martes 20 de octubre de 2026</div><h1>PokéPark KANTO + Yomiuriland</h1><p class="subtitle">Ruta interactiva tramo por tramo. El mapa muestra cómo llegar desde el punto anterior y el botón de navegación abre Google Maps con el modo planificado.</p></div><div class="daypill"><span id="count">1</span> / 27</div></div>
+<div class="infochips"><span class="chip">Tokyo / Yomiuriland</span><span class="chip">Parque</span><span class="chip ">Salida: 7:50 a. m. del hotel</span></div>
+<div class="progress-shell"><div id="progress" class="progress"></div></div>
+<div class="grid">
+<section class="card">
+<div class="stophead"><div id="icon" class="icon"></div><div><div id="time" class="time"></div><div id="title" class="title"></div><div id="tag" class="tag" style="display:none"></div></div></div>
+
+<div id="photoRef" class="photo-ref">
+  <div id="photoMedia" class="photo-media">
+    <div id="photoLoading" class="photo-loading">Cargando foto de referencia…</div>
+    <img id="photoImg" alt="" style="display:none">
+  </div>
+  <div class="photo-body">
+    <div class="photo-title">📷 Foto de referencia del lugar</div>
+    <div id="photoCaption" class="photo-caption">Imagen pública de referencia para reconocer visualmente la parada.</div>
+    <div class="photo-links">
+      <a id="photoSource" target="_blank" rel="noopener">Ver imagen / licencia ↗</a>
+      <a id="photoMaps" target="_blank" rel="noopener">Abrir lugar en Google Maps ↗</a>
+    </div>
+  </div>
+</div>
+
+<div id="detail" class="detail"></div><ul id="items" class="items"></ul>
+<div class="leg"><small>Cómo llegar desde el punto anterior</small><strong id="legLabel"></strong><div id="route" class="route"></div></div>
+<div class="mini-grid"><div class="mini"><small>Tiempo en este punto</small><strong id="duration"></strong></div><div class="mini"><small>Traslado</small><strong id="legDuration"></strong></div></div>
+<div class="note"><small>Nota</small><div id="note"></div></div>
+<div class="controls">
+<button id="prev" class="secondary">← Anterior</button><button id="next" class="primary">Siguiente →</button>
+<a id="mapsLeg" class="action secondary" target="_blank" rel="noopener">🗺️ Abrir este tramo</a>
+<a id="mapsCurrent" class="action secondary" target="_blank" rel="noopener">📍 Navegar desde mi ubicación</a>
+</div>
+</section>
+<section class="card mapcard"><div class="maptop"><div id="mapTitle" class="maptitle"></div><div id="mapSub" class="mapsub"></div></div><iframe id="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Google Maps"></iframe></section>
+</div>
+<section class="card timeline"><h2>Todo el Día 14</h2><div id="timeline"></div></section>
+
+<div class="tip"><strong>Regla de uso durante el viaje:</strong> las horas son el plan base. Para trenes, metros, buses, filas de parques y tráfico, pulse <strong>“Abrir este tramo”</strong> la noche anterior y otra vez al salir. Google Maps usará la red disponible en ese momento. En días de templos hemos adelantado la salida cuando realmente aporta.</div>
+</main>
+<script>
+const stops=[{"name":"Despertar en Asakusa Tawaramachi","time":"6:50 am","duration":"inicio","icon":"🏨","detail":"Este día depende de tener entrada/reserva confirmada para PokéPark KANTO. Como la entrada es a las 11:00 am, la meta es llegar a Yomiuriland a las 10:00 am para entrar sin correr.","items":["Levantarse temprano porque la meta es llegar a Yomiuriland una hora antes de la entrada a PokéPark.","Revisar entradas/reservas de PokéPark KANTO y Yomiuriland.","Preparar celular, batería externa, pasaportes/copia, efectivo y Suica/ICOCA.","Llevar zapatos cómodos porque será día de parque y caminata.","Dejar espacio en bolso para compras Pokémon."],"query":"Tokyo, Japan","leg_mode":null,"leg_label":"Inicio del día","leg_duration":"—","note":"Levantarse temprano porque la meta es llegar a Yomiuriland una hora antes de la entrada a PokéPark.","tag":"","photo_query":""},{"name":"Desayuno rápido cerca del hotel","time":"7:15 am","duration":"7:15 - 7:40 am","icon":"🏨","detail":"Mejor comer algo antes de salir porque el traslado a Yomiuriland toma bastante tiempo y la entrada al PokéPark es a las 11:00 am.","items":["Desayuno práctico cerca del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.","Opciones: café, convenience store, bakery japonesa, onigiri o sándwich.","Comprar agua antes de salir.","Llevar snack extra para el camino.","Presupuesto 2 personas: $15 - $28."],"query":"Henn na Hotel Premier Tokyo Asakusa Tawaramachi convenience store breakfast","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Desayuno práctico cerca del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.","tag":"","photo_query":"Asakusa Tokyo"},{"name":"Última revisión antes de salir","time":"7:45 am","duration":"5 min","icon":"📍","detail":"Este mini bloque evita salir corriendo y ayuda a no olvidar entradas, batería o tarjetas de transporte.","items":["Confirmar entradas de PokéPark KANTO.","Revisar batería del celular y batería externa.","Tener Suica/ICOCA lista.","Guardar agua, snack y efectivo.","Salir con margen porque el objetivo es llegar al parque a las 10:00 am."],"query":"Henn na Hotel Premier Tokyo Asakusa Tawaramachi convenience store breakfast","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Confirmar entradas de PokéPark KANTO.","tag":"","photo_query":"Asakusa Tokyo"},{"name":"Caminata hotel → Tawaramachi Station","time":"7:50 am","duration":"3-5 min","icon":"🏨","detail":"Tawaramachi Station es la estación más cómoda para iniciar el traslado desde el hotel.","items":["Salir del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.","Caminar hacia Tawaramachi Station.","Buscar Tokyo Metro Ginza Line.","Tener Suica/ICOCA lista.","Costo: $0."],"query":"Tawaramachi Station, Tokyo, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"3-5 min","note":"Caminata corta desde el hotel hacia Tawaramachi Station.","tag":"","photo_query":""},{"name":"Metro: Tawaramachi → Ueno","time":"8:00 am","duration":"3-5 min","icon":"🚆","detail":"Primer tramo para conectar Asakusa/Tawaramachi con JR y moverse hacia Shinjuku.","items":["Entrar a Tawaramachi Station.","Tomar Tokyo Metro Ginza Line.","Dirección: Shibuya.","Bajarse en Ueno Station.","Costo estimado 2 personas: ¥360 - ¥440 aprox."],"query":"Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"3-5 min","note":"Tokyo Metro Ginza Line desde Tawaramachi Station hasta Ueno Station.","tag":"","photo_query":""},{"name":"Transbordo Ueno Metro → JR Ueno","time":"8:10 am","duration":"8-12 min","icon":"🚆","detail":"Este transbordo conecta Tokyo Metro Ginza Line con JR Yamanote para llegar hacia Shinjuku.","items":["Bajarse en Ueno Station.","Seguir señales hacia JR Yamanote Line.","Buscar dirección Ikebukuro / Shinjuku.","Tener paciencia porque el transbordo entre Metro y JR puede tomar unos minutos."],"query":"JR Ueno Station, Yamanote Line, Tokyo, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"8-12 min","note":"Transbordo desde Tokyo Metro Ginza Line hacia JR Yamanote Line en Ueno.","tag":"","photo_query":""},{"name":"JR Yamanote: Ueno → Shinjuku","time":"8:25 am","duration":"25-35 min","icon":"📍","detail":"Este es el tramo largo dentro de Tokyo para conectar con Keio Line hacia Yomiuriland.","items":["Tomar JR Yamanote Line desde Ueno Station.","Dirección: Ikebukuro / Shinjuku.","Bajarse en Shinjuku Station.","Costo estimado 2 personas: ¥420 - ¥520 aprox."],"query":"JR Shinjuku Station, Yamanote Line, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"25-35 min","note":"JR Yamanote Line desde Ueno Station hasta Shinjuku Station.","tag":"","photo_query":"Shinjuku Tokyo Kabukicho"},{"name":"Transbordo JR Shinjuku → Keio Line","time":"9:00 am","duration":"10-15 min","icon":"🚆","detail":"Shinjuku es grande. Este bloque es importante porque el acceso a Keio Line puede tomar tiempo si no conocen la estación.","items":["Bajarse en Shinjuku Station.","Seguir señales hacia Keio Line.","Buscar tren hacia Keio-yomiuri-land / Hashimoto / Keio-Tama-Center según ruta disponible.","Confirmar si hay tren directo o si hace falta transbordo en Chofu."],"query":"Keio Shinjuku Station, Tokyo, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"10-15 min","note":"Transbordo interno desde JR Shinjuku hacia Keio Line.","tag":"","photo_query":"Shinjuku Tokyo Kabukicho"},{"name":"Keio Line: Shinjuku → Keio-yomiuri-land","time":"9:15 am","duration":"25-35 min","icon":"📍","detail":"Este es el tramo principal hacia Yomiuriland/PokéPark KANTO. Conviene seguir Google Maps en vivo porque algunos trenes pueden requerir transbordo.","items":["Tomar Keio Line desde Shinjuku.","Dirección: Hashimoto / Keio-Tama-Center según tren.","Si Maps lo indica, hacer transbordo en Chofu hacia Keio Sagamihara Line.","Bajarse en Keio-yomiuri-land Station.","Costo estimado 2 personas: ¥700 - ¥900 aprox."],"query":"Keio-yomiuri-land Station, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"25-35 min","note":"Keio Line / Keio Sagamihara Line desde Shinjuku hasta Keio-yomiuri-land Station. Puede requerir transbordo en Chofu según tren.","tag":"","photo_query":"Shinjuku Tokyo Kabukicho"},{"name":"Keio-yomiuri-land Station → Yomiuriland / PokéPark KANTO","time":"9:50 am","duration":"10-20 min","icon":"🚆","detail":"PokéPark KANTO está dentro de Yomiuriland. Este último tramo puede variar según el acceso disponible, por eso conviene revisar la ruta oficial y Google Maps el mismo día.","items":["Bajarse en Keio-yomiuri-land Station.","Seguir señales hacia Yomiuriland.","Usar la ruta que indique el parque/Maps ese día: bus, góndola o caminata según operación disponible.","Tener entradas/reservas listas antes de llegar al acceso."],"query":"Yomiuriland, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"10-20 min","note":"Último tramo desde Keio-yomiuri-land Station hacia Yomiuriland / PokéPark KANTO. Revisar bus, góndola o acceso indicado ese día.","tag":"","photo_query":"Yomiuriland Tokyo"},{"name":"Llegada a Yomiuriland / una hora antes de la entrada","time":"10:00 am","duration":"10:00 - 10:50 am","icon":"📍","detail":"Este margen es intencional. La entrada a PokéPark es a las 11:00 am, pero llegar a las 10:00 am evita correr, permite ubicarse bien y absorbe cualquier atraso del traslado desde Asakusa/Tawaramachi.","items":["Llegar a Yomiuriland una hora antes de la entrada de PokéPark KANTO.","Ubicar la entrada o acceso correcto de PokéPark dentro de Yomiuriland.","Revisar entradas/reservas.","Ir al baño antes de entrar.","Comprar agua o snack si hace falta.","Tomar fotos de entrada y revisar el mapa del parque."],"query":"Yomiuriland Tokyo PokéPark KANTO entrance","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Llegar a Yomiuriland una hora antes de la entrada de PokéPark KANTO.","tag":"","photo_query":"Yomiuriland Tokyo"},{"name":"Entrada a PokéPark KANTO / primer bloque fuerte","time":"11:00 am","duration":"11:00 am - 1:00 pm","icon":"📍","detail":"Este es el primer bloque principal del día. Como la entrada es a las 11:00 am, conviene usar las primeras dos horas para las zonas más importantes y fotos prioritarias.","items":["Parada explícita de la lista de Mar: PokePark Kanto.","Entrar a PokéPark KANTO con entradas/reserva listas.","Recorrer las áreas principales del parque Pokémon.","Priorizar Pokémon Forest y Sedge Town si están disponibles con su tipo de entrada.","Revisar horarios de shows, encuentros, tienda y comida temática.","Tomar fotos principales antes de que avance mucho el día."],"query":"PokéPark KANTO Yomiuriland Tokyo","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Parada explícita de la lista de Mar: PokePark Kanto.","tag":"Lista de Mar","photo_query":"Yomiuriland Tokyo"},{"name":"Almuerzo dentro de Yomiuriland / PokéPark","time":"1:00 pm","duration":"1:00 - 2:00 pm","icon":"🍜","detail":"Después de las primeras dos horas de PokéPark, conviene parar a comer sin salir del parque para no perder tiempo.","items":["Hacer pausa para almorzar dentro de Yomiuriland o en la zona disponible del PokéPark.","Buscar comida temática si hay opciones Pokémon.","Comprar agua o bebida para la tarde.","Revisar compras y guardar bien lo que ya tengan.","Presupuesto 2 personas: $35 - $70."],"query":"Yomiuriland restaurants PokéPark KANTO","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Hacer pausa para almorzar dentro de Yomiuriland o en la zona disponible del PokéPark.","tag":"","photo_query":"Yomiuriland Tokyo"},{"name":"Segundo bloque PokéPark + tienda + fotos","time":"2:00 pm","duration":"2:00 - 4:30 pm","icon":"🛍️","detail":"Este bloque deja suficiente tiempo real para disfrutar PokéPark después de la entrada de las 11:00 am. No conviene salir demasiado temprano porque este es el objetivo principal del día.","items":["Seguir recorriendo PokéPark KANTO con más calma.","Volver a zonas favoritas si vale la pena.","Revisar actividades pendientes, shows o encuentros.","Hacer compras de merch exclusivo.","Tomar fotos finales en spots importantes.","Presupuesto 2 personas: alto y variable según compras."],"query":"PokéPark KANTO Yomiuriland Tokyo merchandise shop","leg_mode":"walking","leg_label":"Caminando","leg_duration":"2:00 - 4:30 pm","note":"Seguir recorriendo PokéPark KANTO con más calma.","tag":"Lista de Mar","photo_query":"Yomiuriland Tokyo"},{"name":"Pausa final en Yomiuriland antes del regreso","time":"4:30 pm","duration":"4:30 - 5:00 pm","icon":"📍","detail":"Antes del regreso conviene ordenar bolsas y descansar un poco. El regreso hacia Nihonbashi o Asakusa toma tiempo.","items":["Hacer pausa antes de volver a Tokyo centro.","Ir al baño.","Comprar agua o snack.","Revisar compras y guardar bien merch.","Confirmar ruta de regreso a Keio-yomiuri-land Station.","Decidir si todavía tienen energía para Pokémon Center Tokyo DX."],"query":"Yomiuriland Tokyo","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Hacer pausa antes de volver a Tokyo centro.","tag":"","photo_query":"Yomiuriland Tokyo"},{"name":"Yomiuriland → Keio-yomiuri-land Station","time":"5:00 pm","duration":"10-20 min","icon":"🚆","detail":"Se repite el último tramo en sentido contrario para conectar con Keio Line.","items":["Salir de Yomiuriland hacia Keio-yomiuri-land Station.","Usar el acceso disponible: bus, góndola o caminata según operación.","Tener Suica/ICOCA lista.","Costo variable según opción."],"query":"Keio-yomiuri-land Station, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"10-20 min","note":"Regreso desde Yomiuriland / PokéPark KANTO hacia Keio-yomiuri-land Station.","tag":"","photo_query":"Yomiuriland Tokyo"},{"name":"Keio Line: Keio-yomiuri-land → Shinjuku","time":"5:25 pm","duration":"25-35 min","icon":"📍","detail":"Regreso principal desde Yomiuriland hacia Tokyo centro.","items":["Tomar Keio Sagamihara Line / Keio Line de regreso.","Dirección: Shinjuku.","Hacer transbordo en Chofu si Maps lo indica.","Bajarse en Shinjuku Station.","Costo estimado 2 personas: ¥700 - ¥900 aprox."],"query":"Keio Shinjuku Station, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"25-35 min","note":"Keio Sagamihara Line / Keio Line desde Keio-yomiuri-land Station hasta Shinjuku. Puede requerir transbordo en Chofu.","tag":"","photo_query":"Shinjuku Tokyo Kabukicho"},{"name":"Transbordo Keio Shinjuku → Tokyo Metro Marunouchi","time":"6:00 pm","duration":"10-15 min","icon":"🚆","detail":"Este transbordo permite moverse hacia Ginza/Tokyo Station y conectar hacia Nihonbashi si deciden cerrar con Pokémon Center Tokyo DX.","items":["Llegar a Shinjuku.","Seguir señales hacia Tokyo Metro Marunouchi Line.","Buscar dirección Ginza / Tokyo Station.","Mantener compras Pokémon juntas."],"query":"Shinjuku Station Tokyo Metro Marunouchi Line, Tokyo, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"10-15 min","note":"Transbordo interno desde Keio Shinjuku hacia Tokyo Metro Marunouchi Line.","tag":"","photo_query":"Shinjuku Tokyo Kabukicho"},{"name":"Metro: Shinjuku → Ginza","time":"6:15 pm","duration":"18-22 min","icon":"🚆","detail":"Regreso hacia el centro de Tokyo para conectar con Nihonbashi/Pokémon Center Tokyo DX.","items":["Tomar Tokyo Metro Marunouchi Line desde Shinjuku.","Dirección: Ikebukuro pasando por Ginza.","Bajarse en Ginza Station.","Costo estimado 2 personas: ¥420 aprox."],"query":"Ginza Station, Tokyo Metro Marunouchi Line, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"18-22 min","note":"Tokyo Metro Marunouchi Line desde Shinjuku Station hasta Ginza Station.","tag":"","photo_query":"Shinjuku Tokyo Kabukicho"},{"name":"Transbordo / traslado Ginza → Nihonbashi","time":"6:40 pm","duration":"5-10 min","icon":"🚆","detail":"Pokémon Center Tokyo DX queda en Nihonbashi, así que desde Ginza es un tramo corto.","items":["Moverse desde Ginza hacia Nihonbashi.","Opción práctica: Tokyo Metro Ginza Line hacia Nihonbashi.","Bajarse en Nihonbashi Station.","Costo estimado 2 personas: ¥360 - ¥440 aprox."],"query":"Nihonbashi Station, Tokyo Metro Ginza Line, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"5-10 min","note":"Tokyo Metro Ginza Line desde Ginza Station hacia Nihonbashi Station.","tag":"","photo_query":""},{"name":"Caminata Nihonbashi Station → Pokémon Center Tokyo DX","time":"6:55 pm","duration":"5-10 min","icon":"🚆","detail":"Este tramo es corto y deja listo el bloque opcional de Pokémon Center Tokyo DX.","items":["Salir de Nihonbashi Station.","Caminar hacia Pokémon Center Tokyo DX.","Ir con compras de PokéPark bien organizadas.","Costo: $0."],"query":"Pokémon Center Tokyo DX, Nihonbashi, Tokyo, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"5-10 min","note":"Caminata desde Nihonbashi Station hacia Pokémon Center Tokyo DX.","tag":"","photo_query":""},{"name":"Opción: Pokémon Center Tokyo DX","time":"7:05 pm","duration":"7:05 - 7:50 pm","icon":"⚡","detail":"Pokémon Center Tokyo DX puede cerrar muy bien el día Pokémon, pero si vienen muy cansados de Yomiuriland, este bloque se puede cambiar por cena tranquila y regreso al hotel.","items":["Parada opcional de la lista de Mar si todavía tienen energía.","Visitar Pokémon Center Tokyo DX en Nihonbashi.","Buscar productos diferentes a Osaka, Kyoto, Shibuya y Skytree.","Revisar peluches, figuras pequeñas, cartas, llaveros, ropa y souvenirs.","Compras opcionales 2 personas: $40 - $150."],"query":"Pokémon Center Tokyo DX Nihonbashi Tokyo","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Parada opcional de la lista de Mar si todavía tienen energía.","tag":"OPCIONAL","photo_query":"Pokémon Center Tokyo DX Nihonbashi Tokyo"},{"name":"Caminata interna Pokémon Center DX → Pokémon Café","time":"7:50 pm","duration":"5-10 min","icon":"🚶","detail":"Pokémon Café está asociado a la zona de Pokémon Center Tokyo DX, así que es el cierre ideal si consiguen reservación y todavía tienen energía.","items":["Moverse desde Pokémon Center Tokyo DX hacia Pokémon Café Tokyo.","Tener reserva lista si lograron conseguirla.","Llegar unos minutos antes de la hora reservada.","Mantener compras organizadas."],"query":"Pokémon Café Tokyo, Nihonbashi, Tokyo, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"5-10 min","note":"Traslado interno/corto desde Pokémon Center Tokyo DX hacia Pokémon Café Tokyo.","tag":"OPCIONAL","photo_query":"Pokémon Café Tokyo, Nihonbashi, Tokyo"},{"name":"Opción: Pokémon Café Tokyo o cena en Nihonbashi","time":"8:00 pm","duration":"reservación / cena","icon":"🍜","detail":"Este bloque depende de la reserva y del cansancio del día. Si no se consigue Pokémon Café, se reemplaza por cena normal cerca de Nihonbashi o Ginza.","items":["Bloque opcional con reservación previa.","Cena o merienda temática Pokémon si consiguieron espacio.","Si no hay reserva, cenar en Nihonbashi/Ginza.","Revisar menú, postres y bebidas especiales si entran al café.","Presupuesto 2 personas: $45 - $90."],"query":"Pokémon Café Tokyo Nihonbashi dinner","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Bloque opcional con reservación previa.","tag":"OPCIONAL","photo_query":""},{"name":"Matsumoto Kiyoshi / farmacia japonesa","time":"8:50 pm","duration":"20-30 min","icon":"📍","detail":"Matsumoto Kiyoshi se puede dejar como parada corta solo si todavía tienen energía. Si vienen muy cansados, mejor pasarla al día de compras finales.","items":["Parada opcional de la lista de Mar.","Comprar cosméticos, skincare, medicamentos básicos permitidos, snacks o artículos japoneses.","Mantener compras controladas para no sobrecargar maleta.","Presupuesto 2 personas: $20 - $100."],"query":"Matsumoto Kiyoshi Ginza Nihonbashi Tokyo","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Parada opcional de la lista de Mar.","tag":"Lista de Mar","photo_query":""},{"name":"Opción recomendada: taxi Nihonbashi → hotel","time":"9:25 pm","duration":"20-30 min","icon":"🏨","detail":"Después de PokéPark + posible Pokémon Center, el taxi desde Nihonbashi al hotel ayuda bastante. En tren también es viable, pero menos cómodo con compras.","items":["Tomar taxi desde Nihonbashi hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.","Recomendado por cansancio y compras de PokéPark / Pokémon Center.","Evita más transbordos de noche.","Presupuesto estimado 2 personas: $15 - $30 según tráfico."],"query":"Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan","leg_mode":"driving","leg_label":"Taxi / carro","leg_duration":"20-30 min","note":"Taxi desde Nihonbashi hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.","tag":"OPCIONAL","photo_query":"Asakusa Tokyo"},{"name":"Llegada al hotel y ordenar compras Pokémon","time":"9:55 pm","duration":"cierre","icon":"🏨","detail":"Este día puede terminar con muchas compras Pokémon, así que conviene ordenar antes de que se acumulen bolsas.","items":["Guardar merch de PokéPark y Pokémon Center.","Separar figuras/peluches para no dañarlos.","Cargar celulares.","Tomar agua y descansar.","Revisar el Día 15: Akihabara + Odaiba."],"query":"Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Guardar merch de PokéPark y Pokémon Center.","tag":"","photo_query":"Asakusa Tokyo"}];
+const KEY='japon2026_dia_14_paso';
+let index=Math.max(0,Math.min(stops.length-1,Number(localStorage.getItem(KEY)||0)));
+const $=id=>document.getElementById(id);
+const el={count:$('count'),progress:$('progress'),icon:$('icon'),time:$('time'),title:$('title'),tag:$('tag'),detail:$('detail'),items:$('items'),legLabel:$('legLabel'),route:$('route'),duration:$('duration'),legDuration:$('legDuration'),note:$('note'),prev:$('prev'),next:$('next'),mapsLeg:$('mapsLeg'),mapsCurrent:$('mapsCurrent'),map:$('map'),mapTitle:$('mapTitle'),mapSub:$('mapSub'),timeline:$('timeline')};
+const enc=s=>encodeURIComponent(s);
+function label(m){return m==='walking'?'Caminando':m==='transit'?'Transporte público':m==='driving'?'Taxi / carro':m==='flight'?'Vuelo':m==='same'?'Misma zona':'Inicio'}
+function travel(m){return m==='walking'?'walking':m==='transit'?'transit':m==='driving'?'driving':''}
+
+const photoRef=$('photoRef'),photoImg=$('photoImg'),photoLoading=$('photoLoading'),photoCaption=$('photoCaption'),photoSource=$('photoSource'),photoMaps=$('photoMaps');
+let photoRequestToken=0;
+
+function commonsApi(query){
+  const params=new URLSearchParams({
+    action:'query',
+    generator:'search',
+    gsrsearch:'file:'+query,
+    gsrnamespace:'6',
+    gsrlimit:'10',
+    prop:'imageinfo',
+    iiprop:'url|mime|extmetadata',
+    iiurlwidth:'1000',
+    format:'json',
+    origin:'*'
+  });
+  return 'https://commons.wikimedia.org/w/api.php?'+params.toString();
+}
+
+function cleanPhotoPages(data){
+  const pages=Object.values((data&&data.query&&data.query.pages)||{});
+  return pages.filter(p=>{
+    const ii=p.imageinfo&&p.imageinfo[0];
+    if(!ii) return false;
+    const mime=(ii.mime||'').toLowerCase();
+    const title=(p.title||'').toLowerCase();
+    if(!mime.startsWith('image/')) return false;
+    if(mime.includes('svg')||mime.includes('gif')) return false;
+    const bad=['map','logo','icon','diagram','poster','ticket','floor plan','route'];
+    if(bad.some(x=>title.includes(x))) return false;
+    return !!(ii.thumburl||ii.url);
+  });
+}
+
+async function loadPhoto(s){
+  const token=++photoRequestToken;
+  const q=(s.photo_query||'').trim();
+  if(!q){photoRef.style.display='none';return;}
+
+  photoRef.style.display='block';
+  photoImg.style.display='none';
+  photoImg.removeAttribute('src');
+  photoLoading.style.display='grid';
+  photoLoading.textContent='Cargando foto de referencia…';
+  photoCaption.textContent='Imagen pública de referencia para reconocer visualmente la parada.';
+  photoSource.style.display='none';
+  photoMaps.href='https://www.google.com/maps/search/?api=1&query='+enc(s.query||q);
+
+  const cacheKey='commons_photo_v2_'+q.toLowerCase();
+  try{
+    const cached=localStorage.getItem(cacheKey);
+    if(cached){
+      const hit=JSON.parse(cached);
+      if(token!==photoRequestToken)return;
+      showPhoto(hit,s);
+      return;
+    }
+  }catch(e){}
+
+  try{
+    const res=await fetch(commonsApi(q));
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data=await res.json();
+    const pages=cleanPhotoPages(data);
+    if(!pages.length) throw new Error('Sin foto');
+    const p=pages[0],ii=p.imageinfo[0];
+    const hit={
+      url:ii.thumburl||ii.url,
+      source:'https://commons.wikimedia.org/wiki/'+encodeURIComponent((p.title||'').replace(/ /g,'_')),
+      title:(p.title||'').replace(/^File:/,'')
+    };
+    try{localStorage.setItem(cacheKey,JSON.stringify(hit));}catch(e){}
+    if(token!==photoRequestToken)return;
+    showPhoto(hit,s);
+  }catch(e){
+    if(token!==photoRequestToken)return;
+    photoImg.style.display='none';
+    photoLoading.style.display='grid';
+    photoLoading.innerHTML='No pude cargar una foto pública para esta parada.<br><span style="font-weight:600">Use “Abrir lugar en Google Maps” para ver sus fotos.</span>';
+    photoSource.style.display='none';
+  }
+}
+
+function showPhoto(hit,s){
+  photoImg.alt='Foto de referencia: '+s.name;
+  photoImg.onload=()=>{photoLoading.style.display='none';photoImg.style.display='block';};
+  photoImg.onerror=()=>{photoImg.style.display='none';photoLoading.style.display='grid';photoLoading.textContent='No se pudo cargar esta imagen. Abra el lugar en Google Maps.';};
+  photoImg.src=hit.url;
+  photoCaption.textContent=hit.title?'Referencia visual · '+hit.title:'Foto de referencia del lugar';
+  photoSource.href=hit.source;
+  photoSource.style.display='inline';
+}
+
+function dirUrl(i){
+  const s=stops[i];
+  if(i===0 || s.leg_mode==='same' || s.leg_mode==='flight') return 'https://www.google.com/maps/search/?api=1&query='+enc(s.query);
+  const a=stops[i-1],m=travel(s.leg_mode);
+  return 'https://www.google.com/maps/dir/?api=1&origin='+enc(a.query)+'&destination='+enc(s.query)+(m?'&travelmode='+m:'');
+}
+function currentUrl(i){
+  const s=stops[i],m=travel(s.leg_mode);
+  return 'https://www.google.com/maps/dir/?api=1&destination='+enc(s.query)+(m?'&travelmode='+m:'');
+}
+function embedUrl(i){
+  const s=stops[i];
+  if(i===0 || s.leg_mode==='same' || s.leg_mode==='flight') return 'https://www.google.com/maps?q='+enc(s.query)+'&output=embed';
+  const a=stops[i-1],f=s.leg_mode==='walking'?'w':s.leg_mode==='transit'?'r':s.leg_mode==='driving'?'d':'';
+  return 'https://www.google.com/maps?saddr='+enc(a.query)+'&daddr='+enc(s.query)+(f?'&dirflg='+f:'')+'&output=embed';
+}
+function timeline(){
+ el.timeline.innerHTML='';
+ stops.forEach((s,i)=>{
+   const row=document.createElement('div');row.className='step '+(i<index?'done ':'')+(i===index?'active ':'')+(i>index?'future':'');
+   const d=document.createElement('div');d.className='dot';d.textContent=i<index?'✓':i+1;
+   const t=document.createElement('div');const tag=s.tag?' · '+s.tag:'';
+   t.innerHTML='<div class="stepname">'+s.icon+' '+s.name+'</div><div class="steptime">'+s.time+tag+'</div>'+(i>0?'<div class="stepmode">'+label(s.leg_mode)+' · desde '+stops[i-1].name+'</div>':'');
+   row.append(d,t);row.onclick=()=>{index=i;save()};el.timeline.appendChild(row);
+ });
+}
+function save(){localStorage.setItem(KEY,String(index));render()}
+function render(){
+ const s=stops[index];el.count.textContent=index+1;el.progress.style.width=((index+1)/stops.length*100)+'%';el.icon.textContent=s.icon;el.time.textContent=s.time;el.title.textContent=s.name;el.detail.textContent=s.detail||'';
+ el.tag.style.display=s.tag?'inline-block':'none';el.tag.textContent=s.tag||'';
+ el.items.innerHTML='';(s.items||[]).forEach(x=>{const li=document.createElement('li');li.textContent=x;el.items.appendChild(li)});
+ el.duration.textContent=s.duration||'—';el.legDuration.textContent=s.leg_duration||'—';el.note.textContent=s.note||'Sin nota adicional.';
+ el.prev.disabled=index===0;el.next.disabled=index===stops.length-1;el.next.textContent=index===stops.length-1?'Día completado ✓':'Siguiente →';
+ if(index===0){el.legLabel.textContent='Punto de inicio';el.route.textContent=s.name;el.mapTitle.textContent='Punto de inicio';el.mapSub.textContent=s.name}
+ else{const p=stops[index-1];el.legLabel.textContent=s.leg_label||label(s.leg_mode);el.route.textContent=p.name+' → '+s.name+' · '+label(s.leg_mode);el.mapTitle.textContent=p.name+' → '+s.name;el.mapSub.textContent=label(s.leg_mode)+' · '+(s.leg_duration||'')}
+ el.mapsLeg.href=dirUrl(index);el.mapsCurrent.href=currentUrl(index);el.map.src=embedUrl(index);loadPhoto(s);timeline();
+}
+el.prev.onclick=()=>{if(index>0){index--;save()}};el.next.onclick=()=>{if(index<stops.length-1){index++;save()}};render();
+</script>
+</body></html>

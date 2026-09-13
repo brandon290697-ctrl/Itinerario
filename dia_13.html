@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Día 13 · Tokyo DisneySea</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--text:#111827;--muted:#667085;--border:#e5e7eb;--accent:#2563eb;--soft:#eff6ff;--ok:#15803d;--warn:#9a3412}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.topnav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.topnav-inner{max-width:1080px;margin:auto;padding:9px 12px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px}
+.topnav-inner>*:last-child{justify-self:end}.home{font-weight:900;text-decoration:none;color:var(--text);padding:8px 10px;border-radius:10px;border:1px solid var(--border)}
+.navbtn{text-decoration:none;color:var(--text);font-weight:800;font-size:13px;padding:8px 10px;border-radius:10px;border:1px solid var(--border);background:#fff}
+.app{max-width:1080px;margin:auto;padding:18px 12px 44px}
+.hero{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.eyebrow{font-size:13px;color:var(--muted);font-weight:900}h1{font-size:27px;line-height:1.12;margin:4px 0 6px}
+.subtitle{font-size:14px;color:var(--muted);line-height:1.5;margin:0;max-width:760px}.daypill{white-space:nowrap;padding:9px 12px;border-radius:999px;border:1px solid var(--border);background:#fff;font-weight:900;font-size:13px}
+.infochips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.chip{padding:7px 10px;border:1px solid var(--border);border-radius:999px;background:#fff;font-size:12px;font-weight:800}.chip.early{background:#fff7ed;border-color:#fed7aa;color:#9a3412}
+.progress-shell{height:8px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:12px 0 16px}.progress{height:100%;background:var(--accent);transition:width .35s}
+.grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px}
+.stophead{display:flex;gap:12px;align-items:center}.icon{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--soft);font-size:27px;flex:0 0 auto}.time{font-size:13px;color:var(--muted);font-weight:900}.title{font-size:20px;font-weight:950;line-height:1.2;margin-top:2px}
+.tag{display:inline-block;margin-top:7px;padding:4px 7px;border-radius:999px;background:#fef3c7;color:#92400e;font-size:10px;font-weight:900}.detail{font-size:15px;line-height:1.55;margin:15px 0 10px}
+.items{margin:0 0 12px 0;padding-left:20px;color:#374151;font-size:14px;line-height:1.5}.items:empty{display:none}
+.leg{background:var(--soft);border:1px solid #dbeafe;border-radius:14px;padding:13px;margin-top:12px}.leg small,.mini small,.note small{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:900;letter-spacing:.04em}
+.leg strong{display:block;font-size:15px;margin-top:4px}.route{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.4}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.mini{background:#f8fafc;border-radius:12px;padding:10px}.mini strong{display:block;margin-top:4px;font-size:13px}
+.note{border:1px solid var(--border);border-radius:12px;padding:10px;margin-top:10px}.note div{font-size:13px;line-height:1.4;margin-top:3px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}button,a.action{appearance:none;min-height:44px;border-radius:12px;padding:10px 13px;font-size:13px;font-weight:900;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.primary{border:0;background:var(--accent);color:#fff}.secondary{border:1px solid var(--border);background:#fff;color:var(--text)}button:disabled{opacity:.35;cursor:not-allowed}
+.mapcard{padding:0;overflow:hidden}.maptop{padding:12px 14px;border-bottom:1px solid var(--border)}.maptitle{font-weight:900;font-size:14px}.mapsub{font-size:12px;color:var(--muted);margin-top:2px}iframe{display:block;width:100%;height:470px;border:0;background:#e5e7eb}
+.timeline{margin-top:14px}.timeline h2{font-size:16px;margin:0 0 9px}.step{display:flex;gap:10px;padding:9px 8px;border-radius:12px;cursor:pointer;transition:.15s}.step:hover{background:#f8fafc}.step.active{background:var(--soft)}.step.future{opacity:.5}
+.dot{width:29px;height:29px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--border);background:#fff;flex:0 0 auto;font-size:12px;font-weight:900}.step.active .dot{background:var(--accent);color:#fff;border-color:var(--accent)}.step.done .dot{background:#dcfce7;color:var(--ok);border-color:#bbf7d0}.stepname{font-size:13px;font-weight:850;line-height:1.3}.steptime{font-size:11px;color:var(--muted);margin-top:2px}.stepmode{font-size:10px;font-weight:800;color:var(--accent);margin-top:3px}
+.verify{margin-top:14px;background:#fff;border:1px solid var(--border);border-radius:18px;padding:14px}.verify-title{font-size:14px;font-weight:950;margin-bottom:8px}.verify-row{display:grid;grid-template-columns:160px 1fr auto;gap:8px;padding:8px 0;border-top:1px solid var(--border);font-size:12px;align-items:center}.verify-row:first-of-type{border-top:0}.verify-row span{color:var(--muted)}.verify-row a{color:var(--accent);font-weight:800;text-decoration:none}.verify-foot{font-size:11px;color:var(--muted);margin-top:8px}
+.tip{margin-top:14px;padding:13px;border-radius:16px;border:1px solid #fde68a;background:#fffbeb;color:#713f12;font-size:12px;line-height:1.45}
+@media(max-width:780px){.grid{grid-template-columns:1fr}iframe{height:340px}.hero{display:block}.daypill{display:inline-block;margin-top:10px}h1{font-size:23px}.verify-row{grid-template-columns:1fr}.topnav-inner{grid-template-columns:1fr auto 1fr}.navbtn{font-size:11px;padding:7px}.home{font-size:12px}}
+
+.photo-ref{margin:14px 0 4px;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#f8fafc;display:none}
+.photo-media{position:relative;aspect-ratio:16/9;background:#e5e7eb;overflow:hidden}
+.photo-media img{width:100%;height:100%;display:block;object-fit:cover}
+.photo-loading{position:absolute;inset:0;display:grid;place-items:center;padding:20px;text-align:center;color:var(--muted);font-size:12px;font-weight:800;background:#f8fafc}
+.photo-body{padding:10px 12px}
+.photo-title{font-size:12px;font-weight:950}
+.photo-caption{font-size:11px;color:var(--muted);line-height:1.4;margin-top:3px}
+.photo-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.photo-links a{font-size:11px;font-weight:850;text-decoration:none;color:var(--accent)}
+.photo-unavailable{padding:16px;text-align:center;color:var(--muted);font-size:12px}
+
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner"><a class="navbtn" href="dia_12.html">← Día 12</a><a class="home" href="index.html">☰ Todos los días</a><a class="navbtn" href="dia_14.html">Día 14 →</a></div></nav>
+<main class="app">
+<div class="hero"><div><div class="eyebrow">Día 13 · Lunes 19 de octubre de 2026</div><h1>Tokyo DisneySea</h1><p class="subtitle">Ruta interactiva tramo por tramo. El mapa muestra cómo llegar desde el punto anterior y el botón de navegación abre Google Maps con el modo planificado.</p></div><div class="daypill"><span id="count">1</span> / 28</div></div>
+<div class="infochips"><span class="chip">Tokyo Disney Resort</span><span class="chip">Parque</span><span class="chip early">Salida: 5:00 a. m. del hotel</span></div>
+<div class="progress-shell"><div id="progress" class="progress"></div></div>
+<div class="grid">
+<section class="card">
+<div class="stophead"><div id="icon" class="icon"></div><div><div id="time" class="time"></div><div id="title" class="title"></div><div id="tag" class="tag" style="display:none"></div></div></div>
+
+<div id="photoRef" class="photo-ref">
+  <div id="photoMedia" class="photo-media">
+    <div id="photoLoading" class="photo-loading">Cargando foto de referencia…</div>
+    <img id="photoImg" alt="" style="display:none">
+  </div>
+  <div class="photo-body">
+    <div class="photo-title">📷 Foto de referencia del lugar</div>
+    <div id="photoCaption" class="photo-caption">Imagen pública de referencia para reconocer visualmente la parada.</div>
+    <div class="photo-links">
+      <a id="photoSource" target="_blank" rel="noopener">Ver imagen / licencia ↗</a>
+      <a id="photoMaps" target="_blank" rel="noopener">Abrir lugar en Google Maps ↗</a>
+    </div>
+  </div>
+</div>
+
+<div id="detail" class="detail"></div><ul id="items" class="items"></ul>
+<div class="leg"><small>Cómo llegar desde el punto anterior</small><strong id="legLabel"></strong><div id="route" class="route"></div></div>
+<div class="mini-grid"><div class="mini"><small>Tiempo en este punto</small><strong id="duration"></strong></div><div class="mini"><small>Traslado</small><strong id="legDuration"></strong></div></div>
+<div class="note"><small>Nota</small><div id="note"></div></div>
+<div class="controls">
+<button id="prev" class="secondary">← Anterior</button><button id="next" class="primary">Siguiente →</button>
+<a id="mapsLeg" class="action secondary" target="_blank" rel="noopener">🗺️ Abrir este tramo</a>
+<a id="mapsCurrent" class="action secondary" target="_blank" rel="noopener">📍 Navegar desde mi ubicación</a>
+</div>
+</section>
+<section class="card mapcard"><div class="maptop"><div id="mapTitle" class="maptitle"></div><div id="mapSub" class="mapsub"></div></div><iframe id="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Google Maps"></iframe></section>
+</div>
+<section class="card timeline"><h2>Todo el Día 13</h2><div id="timeline"></div></section>
+
+<div class="tip"><strong>Regla de uso durante el viaje:</strong> las horas son el plan base. Para trenes, metros, buses, filas de parques y tráfico, pulse <strong>“Abrir este tramo”</strong> la noche anterior y otra vez al salir. Google Maps usará la red disponible en ese momento. En días de templos hemos adelantado la salida cuando realmente aporta.</div>
+</main>
+<script>
+const stops=[{"name":"Despertar muy temprano para DisneySea","time":"4:20 am","duration":"inicio","icon":"🏨","detail":"Este es el día más madrugador de Tokyo. Como el hotel está en Asakusa/Tawaramachi, salir a las 5:00 am da mejor margen para llegar temprano a DisneySea, hacer fila con calma y organizar la app al entrar.","items":["Levantarse apenas suene la alarma.","Revisar entradas de Tokyo DisneySea.","Revisar app oficial de Tokyo Disney Resort.","Preparar celular, batería externa, agua, pañuelos y bolso cómodo.","Llevar ropa y zapatos muy cómodos porque será día completo de parque.","Dejar listo desde la noche anterior todo lo posible."],"query":"Tokyo, Japan","leg_mode":null,"leg_label":"Inicio del día","leg_duration":"—","note":"Levantarse apenas suene la alarma.","tag":"","photo_query":""},{"name":"Snack / desayuno rápido antes de salir","time":"4:35 am","duration":"4:35 - 4:50 am","icon":"🍜","detail":"No conviene perder tiempo desayunando formalmente. Mejor comer algo práctico y salir directo hacia la estación.","items":["Comer algo rápido en la habitación o comprar en convenience store si hay una abierta cerca.","Opciones: onigiri, pan dulce, café, yogurt, agua o sándwich.","Llevar snack extra para el camino.","Presupuesto 2 personas: $10 - $20."],"query":"Henn na Hotel Premier Tokyo Asakusa Tawaramachi convenience store nearby","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Comer algo rápido en la habitación o comprar en convenience store si hay una abierta cerca.","tag":"","photo_query":"Asakusa Tokyo"},{"name":"Última revisión antes de salir","time":"4:50 am","duration":"4:50 - 4:58 am","icon":"📍","detail":"Este bloque evita olvidar algo importante antes de un día largo de parque.","items":["Confirmar entradas de DisneySea.","Confirmar app de Tokyo Disney Resort.","Revisar batería externa, celular, agua y snacks.","Guardar Suica/ICOCA a mano.","Salir del hotel a las 5:00 am."],"query":"Henn na Hotel Premier Tokyo Asakusa Tawaramachi convenience store nearby","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Confirmar entradas de DisneySea.","tag":"","photo_query":"Asakusa Tokyo"},{"name":"Caminata hotel → Tawaramachi Station","time":"5:00 am","duration":"3-5 min","icon":"🏨","detail":"Tawaramachi Station queda muy cerca del hotel. Salir a esta hora da buen margen para llegar temprano a DisneySea.","items":["Salir del Henn na Hotel Premier Tokyo Asakusa Tawaramachi.","Caminar hacia Tawaramachi Station.","Buscar Tokyo Metro Ginza Line.","Tener Suica/ICOCA lista.","Costo: $0."],"query":"Tawaramachi Station, Tokyo, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"3-5 min","note":"Caminata corta desde el hotel hacia Tawaramachi Station.","tag":"","photo_query":""},{"name":"Metro: Tawaramachi → Ueno","time":"5:10 am","duration":"3-5 min","icon":"🚆","detail":"Primer tramo del traslado hacia DisneySea. Se usa Ueno para conectar con JR hacia Tokyo Station.","items":["Entrar a Tawaramachi Station.","Tomar Tokyo Metro Ginza Line.","Dirección: Shibuya.","Bajarse en Ueno Station.","Costo estimado 2 personas: ¥360 - ¥440 aprox."],"query":"Ueno Station, Tokyo Metro Ginza Line, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"3-5 min","note":"Tokyo Metro Ginza Line desde Tawaramachi Station hasta Ueno Station.","tag":"","photo_query":""},{"name":"Transbordo Ueno Metro → JR Ueno","time":"5:15 am","duration":"8-12 min","icon":"🚆","detail":"Este transbordo conecta Tokyo Metro Ginza Line con JR Yamanote para llegar a Tokyo Station.","items":["Bajarse en Ueno Station.","Seguir señales hacia JR Yamanote Line.","Buscar dirección Tokyo / Shinagawa.","Tener paciencia porque el transbordo entre Metro y JR puede tomar unos minutos."],"query":"JR Ueno Station, Yamanote Line, Tokyo, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"8-12 min","note":"Transbordo desde Tokyo Metro Ginza Line hacia JR Yamanote Line en Ueno.","tag":"","photo_query":""},{"name":"JR Yamanote: Ueno → Tokyo Station","time":"5:30 am","duration":"7-10 min","icon":"🚆","detail":"Este tramo lleva a Tokyo Station para conectar con JR Keiyo Line hacia Maihama.","items":["Tomar JR Yamanote Line desde Ueno Station.","Dirección: Tokyo / Shinagawa.","Bajarse en Tokyo Station.","Costo estimado 2 personas: ¥340 aprox."],"query":"Tokyo Station, JR Yamanote Line, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"7-10 min","note":"JR Yamanote Line desde Ueno Station hasta Tokyo Station.","tag":"","photo_query":""},{"name":"Transbordo Tokyo Station → JR Keiyo Line","time":"5:40 am","duration":"15-20 min","icon":"🚆","detail":"Para Disney desde Tokyo Station, el punto importante es llegar a JR Keiyo Line. El transbordo puede tomar más de lo esperado por la distancia interna.","items":["Bajarse en Tokyo Station.","Seguir señales hacia JR Keiyo Line.","Tener paciencia porque el acceso a Keiyo Line en Tokyo Station puede sentirse largo.","No correr; caminar con margen.","Confirmar dirección Maihama / Soga / Kaihin-Makuhari según tren."],"query":"Tokyo Station Keiyo Line platform, Tokyo, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"15-20 min","note":"Conexión caminando dentro de Tokyo Station hacia andenes de JR Keiyo Line.","tag":"","photo_query":""},{"name":"JR Keiyo Line: Tokyo Station → Maihama","time":"6:05 am","duration":"15-20 min","icon":"🚆","detail":"Maihama es la estación principal para Tokyo Disney Resort. Este tramo debe quedar como tren, no caminata.","items":["Tomar JR Keiyo Line desde Tokyo Station.","Dirección: Soga / Kaihin-Makuhari / Maihama, según tren.","Bajarse en Maihama Station.","Costo estimado 2 personas: ¥460 - ¥700 aprox."],"query":"Maihama Station, JR Keiyo Line, Chiba, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"15-20 min","note":"JR Keiyo Line desde Tokyo Station hasta Maihama Station.","tag":"","photo_query":""},{"name":"Llegada a Maihama Station","time":"6:30 am","duration":"6:30 - 6:40 am","icon":"🚆","detail":"La prioridad es llegar a la entrada de DisneySea con margen. Ikspiari y tiendas pueden quedar para la salida si todavía hay energía.","items":["Bajarse en Maihama Station.","Seguir señales hacia Tokyo Disney Resort Line.","Comprar o usar IC card para Disney Resort Line.","No detenerse demasiado en tiendas de la estación al llegar."],"query":"Maihama Station Tokyo Disney Resort","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Bajarse en Maihama Station.","tag":"","photo_query":""},{"name":"Disney Resort Line: Resort Gateway → Tokyo DisneySea Station","time":"6:40 am","duration":"10-15 min","icon":"🚆","detail":"Este tramo conecta Maihama con la entrada de DisneySea. Es parte de la experiencia del resort.","items":["Entrar a Resort Gateway Station.","Tomar Disney Resort Line.","Bajarse en Tokyo DisneySea Station.","Costo estimado 2 personas: ¥600 aprox."],"query":"Tokyo DisneySea Station, Chiba, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"10-15 min","note":"Disney Resort Line desde Resort Gateway Station hasta Tokyo DisneySea Station.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Llegada a Tokyo DisneySea / fila de entrada","time":"7:00 am","duration":"7:00 - 8:00 am","icon":"🏰","detail":"Llegar entre 7:00 y 7:15 am da buen margen para estar listos antes de la apertura. Este bloque es clave para organizar la estrategia del día.","items":["Llegar a la entrada de Tokyo DisneySea.","Tener entradas listas en la app.","Hacer fila con calma.","Revisar mapas, horarios y disponibilidad de Premier Access o Standby Pass.","Definir prioridades antes de entrar.","Tener agua y batería lista."],"query":"Tokyo DisneySea Entrance","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Llegar a la entrada de Tokyo DisneySea.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Ingreso a Tokyo DisneySea","time":"8:00 am","duration":"8:00 - 9:00 am","icon":"🏰","detail":"Tokyo DisneySea es uno de los días fuertes de Tokyo. La estrategia debe ajustarse en tiempo real con la app del parque.","items":["Parada explícita de la lista de Mar: Tokyo DisneySea.","Entrar al parque cuando abra.","Revisar app oficial apenas entren.","Reservar Premier Access / Standby Pass si aplica.","Tomar fotos iniciales en Mediterranean Harbor."],"query":"Tokyo DisneySea Chiba Japan","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Parada explícita de la lista de Mar: Tokyo DisneySea.","tag":"Lista de Mar","photo_query":"Tokyo DisneySea"},{"name":"Bloque de prioridad: Fantasy Springs / atracciones principales","time":"9:00 am","duration":"9:00 - 11:00 am","icon":"📍","detail":"Este bloque depende de las reglas y disponibilidad del parque ese día. La idea es usar las primeras horas para lo más demandado.","items":["Priorizar Fantasy Springs si tienen acceso disponible.","Revisar opciones como Anna and Elsa's Frozen Journey, Rapunzel's Lantern Festival o Peter Pan según disponibilidad.","Usar Premier Access / Standby Pass si aplica.","No perder demasiado tiempo en tiendas temprano."],"query":"Fantasy Springs Tokyo DisneySea","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Priorizar Fantasy Springs si tienen acceso disponible.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Atracciones fuertes de la mañana","time":"11:00 am","duration":"11:00 - 12:15 pm","icon":"📍","detail":"La mañana debe usarse para atracciones de alta demanda. No conviene cruzar el parque sin revisar tiempos de espera.","items":["Revisar tiempos de espera en la app.","Priorizar Soaring: Fantastic Flight si está viable.","Considerar Journey to the Center of the Earth.","Considerar Indiana Jones Adventure o Tower of Terror según ruta y filas.","Tomar agua entre atracciones."],"query":"Tokyo DisneySea attractions Soaring Journey to the Center of the Earth","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Revisar tiempos de espera en la app.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Almuerzo dentro de DisneySea","time":"12:15 pm","duration":"12:15 - 1:20 pm","icon":"🍜","detail":"Elegir restaurante según ubicación real y filas. En DisneySea caminar de más cansa mucho.","items":["Almorzar dentro del parque.","Opciones según zona: comida rápida temática, restaurante casual o snack fuerte.","Evitar esperar a tener demasiada hambre.","Presupuesto 2 personas: $35 - $70."],"query":"Tokyo DisneySea restaurants","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Almorzar dentro del parque.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Reorganizar ruta de la tarde","time":"1:20 pm","duration":"1:20 - 1:40 pm","icon":"📍","detail":"Después del almuerzo, la estrategia debe actualizarse. DisneySea funciona mejor si se adapta a la app y no a un orden rígido.","items":["Revisar tiempos de espera en la app.","Revisar shows, snacks y reservas disponibles.","Definir si conviene seguir atracciones o hacer tiendas/fotos.","Ir al baño y rellenar agua."],"query":"Tokyo DisneySea restaurants","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Revisar tiempos de espera en la app.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Tarde de atracciones y zonas temáticas","time":"1:40 pm","duration":"1:40 - 4:00 pm","icon":"📍","detail":"DisneySea es muy visual. La tarde no debe ser solo correr entre atracciones; también vale la pena disfrutar el parque.","items":["Recorrer zonas como Mysterious Island, Arabian Coast, Mermaid Lagoon, Port Discovery o Lost River Delta.","Ajustar según esperas reales.","Hacer fotos en zonas bonitas.","Comprar snacks especiales si aparecen en ruta."],"query":"Tokyo DisneySea themed ports","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Recorrer zonas como Mysterious Island, Arabian Coast, Mermaid Lagoon, Port Discovery o Lost River Delta.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Snack / café / descanso","time":"4:00 pm","duration":"4:00 - 5:00 pm","icon":"🏨","detail":"Esta pausa es importante para no llegar agotados a la noche del parque.","items":["Hacer pausa para café, snack o postre.","Buscar algún snack especial de temporada.","Sentarse un rato si ya están cansados.","Presupuesto 2 personas: $15 - $35."],"query":"Tokyo DisneySea snacks","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Hacer pausa para café, snack o postre.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Tiendas y souvenirs Disney","time":"5:00 pm","duration":"5:00 - 6:30 pm","icon":"🛍️","detail":"DisneySea tiene souvenirs específicos que no siempre se ven igual en Disney Store. Conviene revisar con calma.","items":["Revisar tiendas principales del parque.","Buscar souvenirs de DisneySea, Duffy, ShellieMay, Fantasy Springs o temporada.","Comprar antes del cierre para no hacerlo con todo el mundo al final.","Compras opcionales 2 personas: $50 - $180."],"query":"Tokyo DisneySea shops souvenirs","leg_mode":"walking","leg_label":"Caminando","leg_duration":"5:00 - 6:30 pm","note":"Revisar tiendas principales del parque.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Cena dentro del parque","time":"6:30 pm","duration":"6:30 - 7:30 pm","icon":"🍜","detail":"Cenar dentro del parque permite disfrutar la noche sin salir con hambre hacia Tokyo.","items":["Cenar dentro de DisneySea.","Elegir restaurante según zona y energía.","Comprar agua para el regreso.","Presupuesto 2 personas: $40 - $80."],"query":"Tokyo DisneySea restaurants dinner","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Cenar dentro de DisneySea.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Noche en DisneySea / show / últimas fotos","time":"7:30 pm","duration":"7:30 - 8:45 pm","icon":"📸","detail":"La noche en DisneySea es parte importante de la experiencia. La salida se ajusta según energía y horario real del parque.","items":["Ver el ambiente nocturno del parque.","Revisar si hay show nocturno disponible.","Tomar últimas fotos en Mediterranean Harbor.","Hacer una última atracción si las filas bajan.","No salir demasiado tarde si ya están agotados."],"query":"Mediterranean Harbor Tokyo DisneySea night","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Ver el ambiente nocturno del parque.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Salida de DisneySea → Tokyo DisneySea Station","time":"8:45 pm","duration":"8:45 - 9:00 pm","icon":"🚆","detail":"Después del parque puede haber bastante gente, así que conviene moverse sin correr pero con claridad.","items":["Salir del parque con calma.","Caminar hacia Tokyo DisneySea Station.","Tener Suica/ICOCA lista.","Mantener compras juntas."],"query":"Tokyo DisneySea Station, Chiba, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"5-10 min","note":"Caminata desde la salida de Tokyo DisneySea hacia Tokyo DisneySea Station.","tag":"","photo_query":"Tokyo DisneySea"},{"name":"Disney Resort Line: DisneySea → Resort Gateway","time":"9:00 pm","duration":"10-15 min","icon":"🏰","detail":"Primer tramo del regreso hacia Tokyo.","items":["Tomar Disney Resort Line desde Tokyo DisneySea Station.","Bajarse en Resort Gateway Station.","Caminar hacia Maihama Station.","Costo estimado 2 personas: ¥600 aprox."],"query":"Resort Gateway Station, Maihama, Chiba, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"10-15 min","note":"Disney Resort Line desde Tokyo DisneySea Station hasta Resort Gateway Station.","tag":"","photo_query":""},{"name":"Caminata Resort Gateway → Maihama Station","time":"9:15 pm","duration":"5-8 min","icon":"🚆","detail":"Conectar de vuelta hacia JR para regresar a Tokyo.","items":["Salir de Resort Gateway Station.","Caminar hacia Maihama Station.","Buscar JR Keiyo Line hacia Tokyo.","Costo: $0."],"query":"Maihama Station, Chiba, Japan","leg_mode":"walking","leg_label":"Caminando","leg_duration":"5-8 min","note":"Caminata desde Resort Gateway Station hacia Maihama Station.","tag":"","photo_query":""},{"name":"JR Keiyo Line: Maihama → Tokyo Station","time":"9:25 pm","duration":"15-20 min","icon":"🚆","detail":"Regreso principal desde Disney hacia Tokyo. Este tramo debe quedar como tren.","items":["Tomar JR Keiyo Line desde Maihama Station.","Dirección: Tokyo.","Bajarse en Tokyo Station.","Costo estimado 2 personas: ¥460 - ¥700 aprox."],"query":"Tokyo Station, JR Keiyo Line, Tokyo, Japan","leg_mode":"transit","leg_label":"Transporte público","leg_duration":"15-20 min","note":"JR Keiyo Line desde Maihama Station hasta Tokyo Station.","tag":"","photo_query":""},{"name":"Opción recomendada: taxi Tokyo Station → hotel","time":"9:50 pm","duration":"15-25 min","icon":"🏨","detail":"Después de DisneySea, este taxi puede valer mucho la pena. El regreso en tren sería posible, pero con cansancio y compras se vuelve más incómodo.","items":["Al llegar a Tokyo Station, tomar taxi hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi.","Recomendado por cansancio y compras del parque.","Evita más transbordos hacia Ueno/Tawaramachi.","Presupuesto estimado 2 personas: $20 - $40 según tráfico."],"query":"Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan","leg_mode":"driving","leg_label":"Taxi / carro","leg_duration":"15-25 min","note":"Taxi desde Tokyo Station hacia Henn na Hotel Premier Tokyo Asakusa Tawaramachi después de DisneySea.","tag":"","photo_query":"Asakusa Tokyo"},{"name":"Llegada al hotel y recuperación","time":"10:20 pm","duration":"cierre","icon":"🏨","detail":"DisneySea es un día largo. Lo más importante al llegar es recuperarse. Si deciden volver en tren en lugar de taxi, la llegada puede acercarse más a 10:45 - 11:15 pm.","items":["Guardar souvenirs y compras de Disney.","Cargar celulares y batería externa.","Tomar agua.","Descansar bien porque el Día 14 toca Akihabara + Odaiba.","No extender la noche."],"query":"Henn na Hotel Premier Tokyo Asakusa Tawaramachi, Tokyo, Japan","leg_mode":"same","leg_label":"Misma zona","leg_duration":"—","note":"Guardar souvenirs y compras de Disney.","tag":"","photo_query":"Asakusa Tokyo"}];
+const KEY='japon2026_dia_13_paso';
+let index=Math.max(0,Math.min(stops.length-1,Number(localStorage.getItem(KEY)||0)));
+const $=id=>document.getElementById(id);
+const el={count:$('count'),progress:$('progress'),icon:$('icon'),time:$('time'),title:$('title'),tag:$('tag'),detail:$('detail'),items:$('items'),legLabel:$('legLabel'),route:$('route'),duration:$('duration'),legDuration:$('legDuration'),note:$('note'),prev:$('prev'),next:$('next'),mapsLeg:$('mapsLeg'),mapsCurrent:$('mapsCurrent'),map:$('map'),mapTitle:$('mapTitle'),mapSub:$('mapSub'),timeline:$('timeline')};
+const enc=s=>encodeURIComponent(s);
+function label(m){return m==='walking'?'Caminando':m==='transit'?'Transporte público':m==='driving'?'Taxi / carro':m==='flight'?'Vuelo':m==='same'?'Misma zona':'Inicio'}
+function travel(m){return m==='walking'?'walking':m==='transit'?'transit':m==='driving'?'driving':''}
+
+const photoRef=$('photoRef'),photoImg=$('photoImg'),photoLoading=$('photoLoading'),photoCaption=$('photoCaption'),photoSource=$('photoSource'),photoMaps=$('photoMaps');
+let photoRequestToken=0;
+
+function commonsApi(query){
+  const params=new URLSearchParams({
+    action:'query',
+    generator:'search',
+    gsrsearch:'file:'+query,
+    gsrnamespace:'6',
+    gsrlimit:'10',
+    prop:'imageinfo',
+    iiprop:'url|mime|extmetadata',
+    iiurlwidth:'1000',
+    format:'json',
+    origin:'*'
+  });
+  return 'https://commons.wikimedia.org/w/api.php?'+params.toString();
+}
+
+function cleanPhotoPages(data){
+  const pages=Object.values((data&&data.query&&data.query.pages)||{});
+  return pages.filter(p=>{
+    const ii=p.imageinfo&&p.imageinfo[0];
+    if(!ii) return false;
+    const mime=(ii.mime||'').toLowerCase();
+    const title=(p.title||'').toLowerCase();
+    if(!mime.startsWith('image/')) return false;
+    if(mime.includes('svg')||mime.includes('gif')) return false;
+    const bad=['map','logo','icon','diagram','poster','ticket','floor plan','route'];
+    if(bad.some(x=>title.includes(x))) return false;
+    return !!(ii.thumburl||ii.url);
+  });
+}
+
+async function loadPhoto(s){
+  const token=++photoRequestToken;
+  const q=(s.photo_query||'').trim();
+  if(!q){photoRef.style.display='none';return;}
+
+  photoRef.style.display='block';
+  photoImg.style.display='none';
+  photoImg.removeAttribute('src');
+  photoLoading.style.display='grid';
+  photoLoading.textContent='Cargando foto de referencia…';
+  photoCaption.textContent='Imagen pública de referencia para reconocer visualmente la parada.';
+  photoSource.style.display='none';
+  photoMaps.href='https://www.google.com/maps/search/?api=1&query='+enc(s.query||q);
+
+  const cacheKey='commons_photo_v2_'+q.toLowerCase();
+  try{
+    const cached=localStorage.getItem(cacheKey);
+    if(cached){
+      const hit=JSON.parse(cached);
+      if(token!==photoRequestToken)return;
+      showPhoto(hit,s);
+      return;
+    }
+  }catch(e){}
+
+  try{
+    const res=await fetch(commonsApi(q));
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data=await res.json();
+    const pages=cleanPhotoPages(data);
+    if(!pages.length) throw new Error('Sin foto');
+    const p=pages[0],ii=p.imageinfo[0];
+    const hit={
+      url:ii.thumburl||ii.url,
+      source:'https://commons.wikimedia.org/wiki/'+encodeURIComponent((p.title||'').replace(/ /g,'_')),
+      title:(p.title||'').replace(/^File:/,'')
+    };
+    try{localStorage.setItem(cacheKey,JSON.stringify(hit));}catch(e){}
+    if(token!==photoRequestToken)return;
+    showPhoto(hit,s);
+  }catch(e){
+    if(token!==photoRequestToken)return;
+    photoImg.style.display='none';
+    photoLoading.style.display='grid';
+    photoLoading.innerHTML='No pude cargar una foto pública para esta parada.<br><span style="font-weight:600">Use “Abrir lugar en Google Maps” para ver sus fotos.</span>';
+    photoSource.style.display='none';
+  }
+}
+
+function showPhoto(hit,s){
+  photoImg.alt='Foto de referencia: '+s.name;
+  photoImg.onload=()=>{photoLoading.style.display='none';photoImg.style.display='block';};
+  photoImg.onerror=()=>{photoImg.style.display='none';photoLoading.style.display='grid';photoLoading.textContent='No se pudo cargar esta imagen. Abra el lugar en Google Maps.';};
+  photoImg.src=hit.url;
+  photoCaption.textContent=hit.title?'Referencia visual · '+hit.title:'Foto de referencia del lugar';
+  photoSource.href=hit.source;
+  photoSource.style.display='inline';
+}
+
+function dirUrl(i){
+  const s=stops[i];
+  if(i===0 || s.leg_mode==='same' || s.leg_mode==='flight') return 'https://www.google.com/maps/search/?api=1&query='+enc(s.query);
+  const a=stops[i-1],m=travel(s.leg_mode);
+  return 'https://www.google.com/maps/dir/?api=1&origin='+enc(a.query)+'&destination='+enc(s.query)+(m?'&travelmode='+m:'');
+}
+function currentUrl(i){
+  const s=stops[i],m=travel(s.leg_mode);
+  return 'https://www.google.com/maps/dir/?api=1&destination='+enc(s.query)+(m?'&travelmode='+m:'');
+}
+function embedUrl(i){
+  const s=stops[i];
+  if(i===0 || s.leg_mode==='same' || s.leg_mode==='flight') return 'https://www.google.com/maps?q='+enc(s.query)+'&output=embed';
+  const a=stops[i-1],f=s.leg_mode==='walking'?'w':s.leg_mode==='transit'?'r':s.leg_mode==='driving'?'d':'';
+  return 'https://www.google.com/maps?saddr='+enc(a.query)+'&daddr='+enc(s.query)+(f?'&dirflg='+f:'')+'&output=embed';
+}
+function timeline(){
+ el.timeline.innerHTML='';
+ stops.forEach((s,i)=>{
+   const row=document.createElement('div');row.className='step '+(i<index?'done ':'')+(i===index?'active ':'')+(i>index?'future':'');
+   const d=document.createElement('div');d.className='dot';d.textContent=i<index?'✓':i+1;
+   const t=document.createElement('div');const tag=s.tag?' · '+s.tag:'';
+   t.innerHTML='<div class="stepname">'+s.icon+' '+s.name+'</div><div class="steptime">'+s.time+tag+'</div>'+(i>0?'<div class="stepmode">'+label(s.leg_mode)+' · desde '+stops[i-1].name+'</div>':'');
+   row.append(d,t);row.onclick=()=>{index=i;save()};el.timeline.appendChild(row);
+ });
+}
+function save(){localStorage.setItem(KEY,String(index));render()}
+function render(){
+ const s=stops[index];el.count.textContent=index+1;el.progress.style.width=((index+1)/stops.length*100)+'%';el.icon.textContent=s.icon;el.time.textContent=s.time;el.title.textContent=s.name;el.detail.textContent=s.detail||'';
+ el.tag.style.display=s.tag?'inline-block':'none';el.tag.textContent=s.tag||'';
+ el.items.innerHTML='';(s.items||[]).forEach(x=>{const li=document.createElement('li');li.textContent=x;el.items.appendChild(li)});
+ el.duration.textContent=s.duration||'—';el.legDuration.textContent=s.leg_duration||'—';el.note.textContent=s.note||'Sin nota adicional.';
+ el.prev.disabled=index===0;el.next.disabled=index===stops.length-1;el.next.textContent=index===stops.length-1?'Día completado ✓':'Siguiente →';
+ if(index===0){el.legLabel.textContent='Punto de inicio';el.route.textContent=s.name;el.mapTitle.textContent='Punto de inicio';el.mapSub.textContent=s.name}
+ else{const p=stops[index-1];el.legLabel.textContent=s.leg_label||label(s.leg_mode);el.route.textContent=p.name+' → '+s.name+' · '+label(s.leg_mode);el.mapTitle.textContent=p.name+' → '+s.name;el.mapSub.textContent=label(s.leg_mode)+' · '+(s.leg_duration||'')}
+ el.mapsLeg.href=dirUrl(index);el.mapsCurrent.href=currentUrl(index);el.map.src=embedUrl(index);loadPhoto(s);timeline();
+}
+el.prev.onclick=()=>{if(index>0){index--;save()}};el.next.onclick=()=>{if(index<stops.length-1){index++;save()}};render();
+</script>
+</body></html>

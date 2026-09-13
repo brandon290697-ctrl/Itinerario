@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Día 9 · Fushimi Inari + Kyoto centro</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--text:#111827;--muted:#667085;--border:#e5e7eb;--accent:#2563eb;--soft:#eff6ff;--ok:#15803d;--warn:#9a3412}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.topnav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.topnav-inner{max-width:1080px;margin:auto;padding:9px 12px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px}
+.topnav-inner>*:last-child{justify-self:end}.home{font-weight:900;text-decoration:none;color:var(--text);padding:8px 10px;border-radius:10px;border:1px solid var(--border)}
+.navbtn{text-decoration:none;color:var(--text);font-weight:800;font-size:13px;padding:8px 10px;border-radius:10px;border:1px solid var(--border);background:#fff}
+.app{max-width:1080px;margin:auto;padding:18px 12px 44px}
+.hero{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.eyebrow{font-size:13px;color:var(--muted);font-weight:900}h1{font-size:27px;line-height:1.12;margin:4px 0 6px}
+.subtitle{font-size:14px;color:var(--muted);line-height:1.5;margin:0;max-width:760px}.daypill{white-space:nowrap;padding:9px 12px;border-radius:999px;border:1px solid var(--border);background:#fff;font-weight:900;font-size:13px}
+.infochips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.chip{padding:7px 10px;border:1px solid var(--border);border-radius:999px;background:#fff;font-size:12px;font-weight:800}.chip.early{background:#fff7ed;border-color:#fed7aa;color:#9a3412}
+.progress-shell{height:8px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:12px 0 16px}.progress{height:100%;background:var(--accent);transition:width .35s}
+.grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px}
+.stophead{display:flex;gap:12px;align-items:center}.icon{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--soft);font-size:27px;flex:0 0 auto}.time{font-size:13px;color:var(--muted);font-weight:900}.title{font-size:20px;font-weight:950;line-height:1.2;margin-top:2px}
+.tag{display:inline-block;margin-top:7px;padding:4px 7px;border-radius:999px;background:#fef3c7;color:#92400e;font-size:10px;font-weight:900}.detail{font-size:15px;line-height:1.55;margin:15px 0 10px}
+.items{margin:0 0 12px 0;padding-left:20px;color:#374151;font-size:14px;line-height:1.5}.items:empty{display:none}
+.leg{background:var(--soft);border:1px solid #dbeafe;border-radius:14px;padding:13px;margin-top:12px}.leg small,.mini small,.note small{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:900;letter-spacing:.04em}
+.leg strong{display:block;font-size:15px;margin-top:4px}.route{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.4}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.mini{background:#f8fafc;border-radius:12px;padding:10px}.mini strong{display:block;margin-top:4px;font-size:13px}
+.note{border:1px solid var(--border);border-radius:12px;padding:10px;margin-top:10px}.note div{font-size:13px;line-height:1.4;margin-top:3px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}button,a.action{appearance:none;min-height:44px;border-radius:12px;padding:10px 13px;font-size:13px;font-weight:900;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.primary{border:0;background:var(--accent);color:#fff}.secondary{border:1px solid var(--border);background:#fff;color:var(--text)}button:disabled{opacity:.35;cursor:not-allowed}
+.mapcard{padding:0;overflow:hidden}.maptop{padding:12px 14px;border-bottom:1px solid var(--border)}.maptitle{font-weight:900;font-size:14px}.mapsub{font-size:12px;color:var(--muted);margin-top:2px}iframe{display:block;width:100%;height:470px;border:0;background:#e5e7eb}
+.timeline{margin-top:14px}.timeline h2{font-size:16px;margin:0 0 9px}.step{display:flex;gap:10px;padding:9px 8px;border-radius:12px;cursor:pointer;transition:.15s}.step:hover{background:#f8fafc}.step.active{background:var(--soft)}.step.future{opacity:.5}
+.dot{width:29px;height:29px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--border);background:#fff;flex:0 0 auto;font-size:12px;font-weight:900}.step.active .dot{background:var(--accent);color:#fff;border-color:var(--accent)}.step.done .dot{background:#dcfce7;color:var(--ok);border-color:#bbf7d0}.stepname{font-size:13px;font-weight:850;line-height:1.3}.steptime{font-size:11px;color:var(--muted);margin-top:2px}.stepmode{font-size:10px;font-weight:800;color:var(--accent);margin-top:3px}
+.verify{margin-top:14px;background:#fff;border:1px solid var(--border);border-radius:18px;padding:14px}.verify-title{font-size:14px;font-weight:950;margin-bottom:8px}.verify-row{display:grid;grid-template-columns:160px 1fr auto;gap:8px;padding:8px 0;border-top:1px solid var(--border);font-size:12px;align-items:center}.verify-row:first-of-type{border-top:0}.verify-row span{color:var(--muted)}.verify-row a{color:var(--accent);font-weight:800;text-decoration:none}.verify-foot{font-size:11px;color:var(--muted);margin-top:8px}
+.tip{margin-top:14px;padding:13px;border-radius:16px;border:1px solid #fde68a;background:#fffbeb;color:#713f12;font-size:12px;line-height:1.45}
+@media(max-width:780px){.grid{grid-template-columns:1fr}iframe{height:340px}.hero{display:block}.daypill{display:inline-block;margin-top:10px}h1{font-size:23px}.verify-row{grid-template-columns:1fr}.topnav-inner{grid-template-columns:1fr auto 1fr}.navbtn{font-size:11px;padding:7px}.home{font-size:12px}}
+
+.photo-ref{margin:14px 0 4px;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#f8fafc;display:none}
+.photo-media{position:relative;aspect-ratio:16/9;background:#e5e7eb;overflow:hidden}
+.photo-media img{width:100%;height:100%;display:block;object-fit:cover}
+.photo-loading{position:absolute;inset:0;display:grid;place-items:center;padding:20px;text-align:center;color:var(--muted);font-size:12px;font-weight:800;background:#f8fafc}
+.photo-body{padding:10px 12px}
+.photo-title{font-size:12px;font-weight:950}
+.photo-caption{font-size:11px;color:var(--muted);line-height:1.4;margin-top:3px}
+.photo-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.photo-links a{font-size:11px;font-weight:850;text-decoration:none;color:var(--accent)}
+.photo-unavailable{padding:16px;text-align:center;color:var(--muted);font-size:12px}
+
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner"><a class="navbtn" href="dia_08.html">← Día 8</a><a class="home" href="index.html">☰ Todos los días</a><a class="navbtn" href="dia_10.html">Día 10 →</a></div></nav>
+<main class="app">
+<div class="hero"><div><div class="eyebrow">Día 9 · Jueves 15 de octubre de 2026</div><h1>Fushimi Inari + Kyoto centro</h1><p class="subtitle">Ruta interactiva tramo por tramo. El mapa muestra cómo llegar desde el punto anterior y el botón de navegación abre Google Maps con el modo planificado.</p></div><div class="daypill"><span id="count">1</span> / 14</div></div>
+<div class="infochips"><span class="chip">Kyoto</span><span class="chip">Santuario + compras</span><span class="chip early">Salida: 5:30 a. m. del hotel</span></div>
+<div class="progress-shell"><div id="progress" class="progress"></div></div>
+<div class="grid">
+<section class="card">
+<div class="stophead"><div id="icon" class="icon"></div><div><div id="time" class="time"></div><div id="title" class="title"></div><div id="tag" class="tag" style="display:none"></div></div></div>
+
+<div id="photoRef" class="photo-ref">
+  <div id="photoMedia" class="photo-media">
+    <div id="photoLoading" class="photo-loading">Cargando foto de referencia…</div>
+    <img id="photoImg" alt="" style="display:none">
+  </div>
+  <div class="photo-body">
+    <div class="photo-title">📷 Foto de referencia del lugar</div>
+    <div id="photoCaption" class="photo-caption">Imagen pública de referencia para reconocer visualmente la parada.</div>
+    <div class="photo-links">
+      <a id="photoSource" target="_blank" rel="noopener">Ver imagen / licencia ↗</a>
+      <a id="photoMaps" target="_blank" rel="noopener">Abrir lugar en Google Maps ↗</a>
+    </div>
+  </div>
+</div>
+
+<div id="detail" class="detail"></div><ul id="items" class="items"></ul>
+<div class="leg"><small>Cómo llegar desde el punto anterior</small><strong id="legLabel"></strong><div id="route" class="route"></div></div>
+<div class="mini-grid"><div class="mini"><small>Tiempo en este punto</small><strong id="duration"></strong></div><div class="mini"><small>Traslado</small><strong id="legDuration"></strong></div></div>
+<div class="note"><small>Nota</small><div id="note"></div></div>
+<div class="controls">
+<button id="prev" class="secondary">← Anterior</button><button id="next" class="primary">Siguiente →</button>
+<a id="mapsLeg" class="action secondary" target="_blank" rel="noopener">🗺️ Abrir este tramo</a>
+<a id="mapsCurrent" class="action secondary" target="_blank" rel="noopener">📍 Navegar desde mi ubicación</a>
+</div>
+</section>
+<section class="card mapcard"><div class="maptop"><div id="mapTitle" class="maptitle"></div><div id="mapSub" class="mapsub"></div></div><iframe id="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Google Maps"></iframe></section>
+</div>
+<section class="card timeline"><h2>Todo el Día 9</h2><div id="timeline"></div></section>
+
+<div class="tip"><strong>Regla de uso durante el viaje:</strong> las horas son el plan base. Para trenes, metros, buses, filas de parques y tráfico, pulse <strong>“Abrir este tramo”</strong> la noche anterior y otra vez al salir. Google Maps usará la red disponible en ese momento. En días de templos hemos adelantado la salida cuando realmente aporta.</div>
+</main>
+<script>
+const stops=[{"name":"Hotel · preparación","time":"4:50–5:30 a. m.","duration":"40 min","icon":"🏨","detail":"Despertar, snack rápido y salir con agua.","query":"Henn na Hotel Premier Kyoto Gojo Karasuma, Kyoto, Japan","leg_mode":null,"leg_label":"Inicio del día","leg_duration":"—","note":"Salida 5:30.","items":[],"tag":"","photo_query":"Kyoto city Japan"},{"name":"Hotel → Fushimi Inari","time":"5:30–5:55 a. m.","duration":"20–25 min","icon":"🚕","detail":"Taxi temprano directo para aprovechar los torii antes de las multitudes.","query":"Fushimi Inari Taisha, Kyoto, Japan","leg_mode":"driving","leg_label":"Taxi desde Gojo","leg_duration":"20–25 min aprox.","note":"A esta hora conviene pagar comodidad y ahorrar conexiones.","items":[],"tag":"","photo_query":"Fushimi Inari Taisha Kyoto torii"},{"name":"Fushimi Inari Taisha","time":"6:00–8:15 a. m.","duration":"2 h 15 min","icon":"⛩️","detail":"Torii, sendero y fotos a primera hora.","query":"Fushimi Inari Taisha, Kyoto, Japan","leg_mode":"same","leg_label":"Ya están en el santuario","leg_duration":"—","note":"No bloquear el paso al tomar fotos.","items":[],"tag":"TEMPRANO","photo_query":"Fushimi Inari Taisha Kyoto torii"},{"name":"Desayuno cerca de Inari","time":"8:20–8:55 a. m.","duration":"35 min","icon":"☕","detail":"Desayuno después del recorrido.","query":"Inari Station Kyoto breakfast, Japan","leg_mode":"walking","leg_label":"Caminando desde el santuario","leg_duration":"5–10 min","note":"—","items":[],"tag":"","photo_query":""},{"name":"Fushimi Inari → Mimuro Kimonos","time":"9:00–10:30 a. m.","duration":"60–90 min con margen","icon":"🚆","detail":"Traslado hacia la zona de Mimuro Kimonos.","query":"Mimuro Kimonos, Kyoto, Japan","leg_mode":"transit","leg_label":"Tren/subway + caminata","leg_duration":"35–45 min aprox.","note":"Llegar con margen para la visita.","items":[],"tag":"","photo_query":"Fushimi Inari Taisha Kyoto torii"},{"name":"Mimuro Kimonos","time":"10:45 a. m.–12:15 p. m.","duration":"1 h 30 min","icon":"👘","detail":"Bloque reservado para kimonos.","query":"Mimuro Kimonos, Kyoto, Japan","leg_mode":"same","leg_label":"Mismo lugar","leg_duration":"—","note":"Mantener la hora reservada.","items":[],"tag":"RESERVA","photo_query":""},{"name":"ICHIRAN Kyoto Karasuma","time":"12:45–1:30 p. m.","duration":"45 min","icon":"🍜","detail":"Almuerzo en Ichiran.","query":"ICHIRAN Kyoto Karasuma, Kyoto, Japan","leg_mode":"transit","leg_label":"Transporte público + caminata","leg_duration":"20–25 min","note":"—","items":[],"tag":"","photo_query":""},{"name":"Daimaru Kyoto","time":"1:40–2:15 p. m.","duration":"35 min","icon":"🛍️","detail":"Paseo corto y compras.","query":"Daimaru Kyoto, Kyoto, Japan","leg_mode":"walking","leg_label":"Caminando desde Ichiran","leg_duration":"5–10 min","note":"—","items":[],"tag":"","photo_query":""},{"name":"Pokémon Center Kyoto","time":"2:30–3:30 p. m.","duration":"1 h","icon":"⚡","detail":"Pokémon Center Kyoto.","query":"Pokemon Center Kyoto, Kyoto, Japan","leg_mode":"walking","leg_label":"Caminando / mismo complejo","leg_duration":"5–10 min","note":"—","items":[],"tag":"","photo_query":"Pokemon Center Kyoto"},{"name":"Nintendo KYOTO","time":"3:45–4:45 p. m.","duration":"1 h","icon":"🎮","detail":"Nintendo KYOTO y exclusivos.","query":"Nintendo KYOTO, Kyoto Takashimaya S.C., Kyoto, Japan","leg_mode":"walking","leg_label":"Caminando hacia Takashimaya","leg_duration":"10–15 min","note":"—","items":[],"tag":"","photo_query":"Nintendo Kyoto store"},{"name":"Donguri Kyowakoku / Ghibli Store","time":"5:00–5:45 p. m.","duration":"45 min","icon":"🌱","detail":"Tienda Ghibli y recuerdos.","query":"Donguri Kyowakoku Kyoto, Japan","leg_mode":"walking","leg_label":"Caminando por el centro","leg_duration":"5–15 min","note":"—","items":[],"tag":"","photo_query":"Ghibli Donguri Kyoto"},{"name":"Pausa · ordenar compras","time":"5:45–6:20 p. m.","duration":"35 min","icon":"☕","detail":"Descansar y ordenar bolsas.","query":"Kawaramachi Kyoto, Japan","leg_mode":"walking","leg_label":"Misma zona","leg_duration":"5 min","note":"—","items":[],"tag":"","photo_query":""},{"name":"Cena en Kyoto centro","time":"6:30–7:45 p. m.","duration":"1 h 15 min","icon":"🍣","detail":"Cena en Kawaramachi.","query":"Kawaramachi Kyoto restaurants, Japan","leg_mode":"walking","leg_label":"Misma zona","leg_duration":"5–10 min","note":"—","items":[],"tag":"","photo_query":""},{"name":"Hotel","time":"8:15 p. m. aprox.","duration":"Fin del día","icon":"🛏️","detail":"Regreso y preparar maletas para Tokyo.","query":"Henn na Hotel Premier Kyoto Gojo Karasuma, Kyoto, Japan","leg_mode":"transit","leg_label":"Metro hacia Gojo","leg_duration":"15–25 min","note":"Día 10 empieza temprano.","items":[],"tag":"","photo_query":"Kyoto city Japan"}];
+const KEY='japon2026_dia_09_paso';
+let index=Math.max(0,Math.min(stops.length-1,Number(localStorage.getItem(KEY)||0)));
+const $=id=>document.getElementById(id);
+const el={count:$('count'),progress:$('progress'),icon:$('icon'),time:$('time'),title:$('title'),tag:$('tag'),detail:$('detail'),items:$('items'),legLabel:$('legLabel'),route:$('route'),duration:$('duration'),legDuration:$('legDuration'),note:$('note'),prev:$('prev'),next:$('next'),mapsLeg:$('mapsLeg'),mapsCurrent:$('mapsCurrent'),map:$('map'),mapTitle:$('mapTitle'),mapSub:$('mapSub'),timeline:$('timeline')};
+const enc=s=>encodeURIComponent(s);
+function label(m){return m==='walking'?'Caminando':m==='transit'?'Transporte público':m==='driving'?'Taxi / carro':m==='flight'?'Vuelo':m==='same'?'Misma zona':'Inicio'}
+function travel(m){return m==='walking'?'walking':m==='transit'?'transit':m==='driving'?'driving':''}
+
+const photoRef=$('photoRef'),photoImg=$('photoImg'),photoLoading=$('photoLoading'),photoCaption=$('photoCaption'),photoSource=$('photoSource'),photoMaps=$('photoMaps');
+let photoRequestToken=0;
+
+function commonsApi(query){
+  const params=new URLSearchParams({
+    action:'query',
+    generator:'search',
+    gsrsearch:'file:'+query,
+    gsrnamespace:'6',
+    gsrlimit:'10',
+    prop:'imageinfo',
+    iiprop:'url|mime|extmetadata',
+    iiurlwidth:'1000',
+    format:'json',
+    origin:'*'
+  });
+  return 'https://commons.wikimedia.org/w/api.php?'+params.toString();
+}
+
+function cleanPhotoPages(data){
+  const pages=Object.values((data&&data.query&&data.query.pages)||{});
+  return pages.filter(p=>{
+    const ii=p.imageinfo&&p.imageinfo[0];
+    if(!ii) return false;
+    const mime=(ii.mime||'').toLowerCase();
+    const title=(p.title||'').toLowerCase();
+    if(!mime.startsWith('image/')) return false;
+    if(mime.includes('svg')||mime.includes('gif')) return false;
+    const bad=['map','logo','icon','diagram','poster','ticket','floor plan','route'];
+    if(bad.some(x=>title.includes(x))) return false;
+    return !!(ii.thumburl||ii.url);
+  });
+}
+
+async function loadPhoto(s){
+  const token=++photoRequestToken;
+  const q=(s.photo_query||'').trim();
+  if(!q){photoRef.style.display='none';return;}
+
+  photoRef.style.display='block';
+  photoImg.style.display='none';
+  photoImg.removeAttribute('src');
+  photoLoading.style.display='grid';
+  photoLoading.textContent='Cargando foto de referencia…';
+  photoCaption.textContent='Imagen pública de referencia para reconocer visualmente la parada.';
+  photoSource.style.display='none';
+  photoMaps.href='https://www.google.com/maps/search/?api=1&query='+enc(s.query||q);
+
+  const cacheKey='commons_photo_v2_'+q.toLowerCase();
+  try{
+    const cached=localStorage.getItem(cacheKey);
+    if(cached){
+      const hit=JSON.parse(cached);
+      if(token!==photoRequestToken)return;
+      showPhoto(hit,s);
+      return;
+    }
+  }catch(e){}
+
+  try{
+    const res=await fetch(commonsApi(q));
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data=await res.json();
+    const pages=cleanPhotoPages(data);
+    if(!pages.length) throw new Error('Sin foto');
+    const p=pages[0],ii=p.imageinfo[0];
+    const hit={
+      url:ii.thumburl||ii.url,
+      source:'https://commons.wikimedia.org/wiki/'+encodeURIComponent((p.title||'').replace(/ /g,'_')),
+      title:(p.title||'').replace(/^File:/,'')
+    };
+    try{localStorage.setItem(cacheKey,JSON.stringify(hit));}catch(e){}
+    if(token!==photoRequestToken)return;
+    showPhoto(hit,s);
+  }catch(e){
+    if(token!==photoRequestToken)return;
+    photoImg.style.display='none';
+    photoLoading.style.display='grid';
+    photoLoading.innerHTML='No pude cargar una foto pública para esta parada.<br><span style="font-weight:600">Use “Abrir lugar en Google Maps” para ver sus fotos.</span>';
+    photoSource.style.display='none';
+  }
+}
+
+function showPhoto(hit,s){
+  photoImg.alt='Foto de referencia: '+s.name;
+  photoImg.onload=()=>{photoLoading.style.display='none';photoImg.style.display='block';};
+  photoImg.onerror=()=>{photoImg.style.display='none';photoLoading.style.display='grid';photoLoading.textContent='No se pudo cargar esta imagen. Abra el lugar en Google Maps.';};
+  photoImg.src=hit.url;
+  photoCaption.textContent=hit.title?'Referencia visual · '+hit.title:'Foto de referencia del lugar';
+  photoSource.href=hit.source;
+  photoSource.style.display='inline';
+}
+
+function dirUrl(i){
+  const s=stops[i];
+  if(i===0 || s.leg_mode==='same' || s.leg_mode==='flight') return 'https://www.google.com/maps/search/?api=1&query='+enc(s.query);
+  const a=stops[i-1],m=travel(s.leg_mode);
+  return 'https://www.google.com/maps/dir/?api=1&origin='+enc(a.query)+'&destination='+enc(s.query)+(m?'&travelmode='+m:'');
+}
+function currentUrl(i){
+  const s=stops[i],m=travel(s.leg_mode);
+  return 'https://www.google.com/maps/dir/?api=1&destination='+enc(s.query)+(m?'&travelmode='+m:'');
+}
+function embedUrl(i){
+  const s=stops[i];
+  if(i===0 || s.leg_mode==='same' || s.leg_mode==='flight') return 'https://www.google.com/maps?q='+enc(s.query)+'&output=embed';
+  const a=stops[i-1],f=s.leg_mode==='walking'?'w':s.leg_mode==='transit'?'r':s.leg_mode==='driving'?'d':'';
+  return 'https://www.google.com/maps?saddr='+enc(a.query)+'&daddr='+enc(s.query)+(f?'&dirflg='+f:'')+'&output=embed';
+}
+function timeline(){
+ el.timeline.innerHTML='';
+ stops.forEach((s,i)=>{
+   const row=document.createElement('div');row.className='step '+(i<index?'done ':'')+(i===index?'active ':'')+(i>index?'future':'');
+   const d=document.createElement('div');d.className='dot';d.textContent=i<index?'✓':i+1;
+   const t=document.createElement('div');const tag=s.tag?' · '+s.tag:'';
+   t.innerHTML='<div class="stepname">'+s.icon+' '+s.name+'</div><div class="steptime">'+s.time+tag+'</div>'+(i>0?'<div class="stepmode">'+label(s.leg_mode)+' · desde '+stops[i-1].name+'</div>':'');
+   row.append(d,t);row.onclick=()=>{index=i;save()};el.timeline.appendChild(row);
+ });
+}
+function save(){localStorage.setItem(KEY,String(index));render()}
+function render(){
+ const s=stops[index];el.count.textContent=index+1;el.progress.style.width=((index+1)/stops.length*100)+'%';el.icon.textContent=s.icon;el.time.textContent=s.time;el.title.textContent=s.name;el.detail.textContent=s.detail||'';
+ el.tag.style.display=s.tag?'inline-block':'none';el.tag.textContent=s.tag||'';
+ el.items.innerHTML='';(s.items||[]).forEach(x=>{const li=document.createElement('li');li.textContent=x;el.items.appendChild(li)});
+ el.duration.textContent=s.duration||'—';el.legDuration.textContent=s.leg_duration||'—';el.note.textContent=s.note||'Sin nota adicional.';
+ el.prev.disabled=index===0;el.next.disabled=index===stops.length-1;el.next.textContent=index===stops.length-1?'Día completado ✓':'Siguiente →';
+ if(index===0){el.legLabel.textContent='Punto de inicio';el.route.textContent=s.name;el.mapTitle.textContent='Punto de inicio';el.mapSub.textContent=s.name}
+ else{const p=stops[index-1];el.legLabel.textContent=s.leg_label||label(s.leg_mode);el.route.textContent=p.name+' → '+s.name+' · '+label(s.leg_mode);el.mapTitle.textContent=p.name+' → '+s.name;el.mapSub.textContent=label(s.leg_mode)+' · '+(s.leg_duration||'')}
+ el.mapsLeg.href=dirUrl(index);el.mapsCurrent.href=currentUrl(index);el.map.src=embedUrl(index);loadPhoto(s);timeline();
+}
+el.prev.onclick=()=>{if(index>0){index--;save()}};el.next.onclick=()=>{if(index<stops.length-1){index++;save()}};render();
+</script>
+</body></html>
