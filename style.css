@@ -396,6 +396,116 @@ body.is-home .daycard[hidden] {
   display: block;
 }
 
+.home-smart {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 14px;
+}
+
+.smart-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 6.8rem;
+  padding: 1rem;
+  border: 1px solid rgba(17, 24, 39, .08);
+  border-radius: 24px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 92% 18%, rgba(255,255,255,.24), transparent 4.8rem),
+    linear-gradient(135deg, var(--jp-night), var(--jp-blue));
+  box-shadow: var(--jp-soft-shadow);
+  text-decoration: none;
+}
+
+.smart-card::after {
+  content: "";
+  position: absolute;
+  right: -1.8rem;
+  bottom: -2.6rem;
+  width: 8rem;
+  height: 8rem;
+  border: 1.35rem solid rgba(255,255,255,.11);
+  border-radius: 50%;
+}
+
+.smart-continue {
+  background:
+    radial-gradient(circle at 92% 18%, rgba(255,255,255,.22), transparent 4.8rem),
+    linear-gradient(135deg, #0f766e, var(--jp-green));
+}
+
+.smart-kicker,
+.smart-card small {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.smart-kicker {
+  margin-bottom: .65rem;
+  font-size: .68rem;
+  font-weight: 950;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .82;
+}
+
+.smart-card strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+  font-size: 1.05rem;
+  line-height: 1.12;
+}
+
+.smart-card small {
+  margin-top: .45rem;
+  color: rgba(255,255,255,.76);
+  font-size: .76rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.day-status-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.7rem;
+  padding: .25rem .58rem;
+  border: 1px solid rgba(255,255,255,.32);
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(17,24,39,.72);
+  box-shadow: 0 8px 22px rgba(17,24,39,.18);
+  font-size: .65rem;
+  font-weight: 950;
+  backdrop-filter: blur(10px);
+}
+
+.day-status-badge.today {
+  background: var(--jp-red);
+}
+
+.day-status-badge.started {
+  background: var(--jp-blue);
+}
+
+.day-status-badge.past {
+  background: rgba(100, 116, 139, .9);
+}
+
+body.is-home .daycard.day-today {
+  outline: 3px solid color-mix(in srgb, var(--jp-red) 38%, transparent);
+}
+
+body.is-home .daycard.day-started:not(.day-today) {
+  outline: 2px solid color-mix(in srgb, var(--jp-blue) 22%, transparent);
+}
+
 .topnav {
   background: rgba(255, 254, 250, .86) !important;
   border-bottom: 1px solid rgba(17, 24, 39, .08) !important;
@@ -434,6 +544,63 @@ body.is-day .infochips {
 
 body.is-day .infochips::-webkit-scrollbar {
   display: none;
+}
+
+.day-assist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .85rem;
+  margin: -2px 0 12px;
+  padding: .75rem .85rem;
+  border: 1px solid rgba(17,24,39,.08);
+  border-radius: 20px;
+  background: rgba(255,254,250,.9);
+  box-shadow: var(--jp-soft-shadow);
+  backdrop-filter: blur(14px);
+}
+
+.day-assist span {
+  display: block;
+  color: var(--jp-red);
+  font-size: .65rem;
+  font-weight: 950;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.day-assist strong {
+  display: block;
+  margin-top: .15rem;
+  font-size: .83rem;
+  line-height: 1.2;
+}
+
+.day-assist-actions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: .42rem;
+}
+
+.day-assist-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.25rem;
+  padding: .45rem .7rem;
+  border: 1px solid var(--jp-line);
+  border-radius: 999px;
+  color: var(--jp-ink);
+  background: #fff;
+  font-size: .72rem;
+  font-weight: 950;
+  text-decoration: none;
+}
+
+.day-assist-link.hotel {
+  border-color: transparent;
+  color: #fff;
+  background: var(--jp-night);
 }
 
 .chip {
@@ -601,7 +768,7 @@ iframe {
   left: 12px;
   z-index: 40;
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto auto auto;
   gap: .45rem;
   max-width: 42rem;
   margin: 0 auto;
@@ -639,6 +806,11 @@ iframe {
   background: var(--jp-blue);
 }
 
+.travel-dock .dock-hotel {
+  color: #fff;
+  background: var(--jp-green);
+}
+
 .travel-dock .dock-toggle.active {
   color: #fff;
   background: var(--jp-red);
@@ -655,12 +827,24 @@ body.route-mode .verify {
   display: none !important;
 }
 
+body.route-mode .photo-ref,
+body.route-mode .detail-toggle,
+body.route-mode .detail,
+body.route-mode .items,
+body.route-mode .note {
+  display: none !important;
+}
+
 body.route-mode .app {
   padding-top: 10px !important;
 }
 
 body.route-mode .hero {
   min-height: 8rem;
+}
+
+body.route-mode .subtitle {
+  display: none;
 }
 
 @media (max-width: 850px) {
@@ -681,6 +865,10 @@ body.route-mode .hero {
     top: 8px;
     margin-inline: -2px;
     border-radius: 22px;
+  }
+
+  .home-smart {
+    grid-template-columns: 1fr;
   }
 
   body.is-home .grid {
@@ -760,7 +948,7 @@ body.route-mode .hero {
   }
 
   .travel-dock {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     right: 8px;
     left: 8px;
     border-radius: 22px;
@@ -771,6 +959,16 @@ body.route-mode .hero {
     min-height: 2.75rem;
     padding: .45rem .4rem;
     font-size: .68rem;
+  }
+
+  .day-assist {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .day-assist-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
